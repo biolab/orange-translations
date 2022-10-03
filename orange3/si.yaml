@@ -10019,91 +10019,92 @@ widgets/unsupervised/owdistancetransformation.py:
     __main__: null
     iris: null
 widgets/unsupervised/owhierarchicalclustering.py:
-    OWHierarchicalClustering: null
-    Single: null
-    Average: null
-    Weighted: null
-    Complete: null
-    Ward: null
+    OWHierarchicalClustering: false
+    Single: false
+    Average: false
+    Weighted: false
+    Complete: false
+    Ward: false
     class `SaveStateSettingsHandler`:
         def `initialize`:
-            __session_state_data: null
+            __session_state_data: false
         def `pack_data`:
-            __session_state_data: null
+            __session_state_data: false
     class `OWHierarchicalClustering`:
-        Hierarchical Clustering: null
-        'Display a dendrogram of a hierarchical clustering ': null
-        constructed from the input distance matrix.: null
-        icons/HierarchicalClustering.svg: null
+        Hierarchical Clustering: Hierarhično razvrščanje
+        'Display a dendrogram of a hierarchical clustering ': 'Prikaži dendrogram
+            hierarhičnega razvrščanja v skupine, '
+        constructed from the input distance matrix.: zgrajenega iz matrike razdalj.
+        icons/HierarchicalClustering.svg: false
         class `Inputs`:
-            Distances: null
+            Distances: false
         class `Outputs`:
-            Selected Data: null
-        Enumeration: null
-        Name: null
-        Enumerate: null
-        scene: null
-        None: null
+            Selected Data: false
+        Enumeration: Številčenje
+        Name: Ime
+        Enumerate: false
+        scene: false
+        None: Brez
         class `Error`:
-            Some distances are infinite: null
+            Some distances are infinite: Nekatere razdalje so neskončne.
         def `__init__`:
-            linkage: null
-            Linkage: null
-            Annotations: null
-            annotation: null
-            pruning: null
-            Pruning: null
-            None: null
-            max_depth: null
-            'Max depth:': null
-            selection_method: null
-            Selection: null
-            Manual: null
-            'Height ratio:': null
-            cut_ratio: null
-            '%': null
-            'Top N:': null
-            top_n: null
-            zoom_factor: null
-            Zoom: null
-            Zoom in: null
-            Zoom out: null
-            Reset zoom: null
-            autocommit: null
-            top: null
-            bottom: null
+            linkage: false
+            Linkage: Metoda razdalj
+            Annotations: Oznake
+            annotation: false
+            pruning: false
+            Pruning: Rezanje
+            None: Brez
+            max_depth: false
+            'Max depth:': Največja globina
+            selection_method: false
+            Selection: Izbor
+            Manual: Ročno
+            'Height ratio:': 'Razmerje višine:'
+            cut_ratio: false
+            '%': true
+            'Top N:': Prvih N
+            top_n: false
+            zoom_factor: false
+            Zoom: true
+            Zoom in: Povečaj
+            Zoom out: Pomanjšaj
+            Reset zoom: Ponastavi zoom
+            autocommit: false
+            top: false
+            bottom: false
         def `set_distances`:
-            Empty distance matrix: null
+            Empty distance matrix: Prazna matrika razdalj
         def `_set_items`:
-            Enumeration: null
-            Name: null
+            Enumeration: Številčenje
+            Name: Ime
         def `_update_labels`:
-            None: null
-            Enumeration: null
-            Name: null
-            ', ': null
+            None: Brez
+            Enumeration: Številčenje
+            Name: Ime
+            ', ': true
         def `commit`:
-            items: null
-            Cluster: null
-            C{i + 1}: null
-            Other: null
-            cluster: null
+            items: false
+            Cluster: Gruča
+            C{i + 1}: true
+            Other: Drugo
+            cluster: false
         def `save_state`:
-            version: null
-            selection_state: null
+            version: false
+            selection_state: false
         def `set_restore_state`:
-            selection_state: null
+            selection_state: false
         def `send_report`:
-            manual: null
-            at {:.1f} of height: null
-            top {} clusters: null
-            Linkage: null
-            Annotation: null
-            Prunning: null
-            '{} levels': null
-            Selection: null
-    __main__: null
-    iris: null
+            manual: ročno
+            at {:.1f} of height: pri {:.1f} višine
+            top {} clusters: prvih {} gruč
+            Linkage: Metoda povezovanja skupin
+            Annotation: Oznake
+            Prunning: Rezanje
+            '{} levels': '{} nivojev'
+            Selection: Izbor
+    __main__: false
+    iris: false
 widgets/unsupervised/owkmeans.py:
     class `ClusterTableModel`:
         def `data`:
