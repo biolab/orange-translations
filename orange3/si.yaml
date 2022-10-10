@@ -10020,11 +10020,11 @@ widgets/unsupervised/owdistancetransformation.py:
     iris: null
 widgets/unsupervised/owhierarchicalclustering.py:
     OWHierarchicalClustering: false
-    Single: false
-    Average: false
-    Weighted: false
-    Complete: false
-    Ward: false
+    Single: Minimalna
+    Average: Povprečna
+    Weighted: Utežena
+    Complete: Maksimalna
+    Ward: Wardova
     class `SaveStateSettingsHandler`:
         def `initialize`:
             __session_state_data: false
@@ -10042,14 +10042,14 @@ widgets/unsupervised/owhierarchicalclustering.py:
             Selected Data: false
         Enumeration: Številčenje
         Name: Ime
-        Enumerate: false
+        Enumerate: Številčenje
         scene: false
         None: Brez
         class `Error`:
             Some distances are infinite: Nekatere razdalje so neskončne.
         def `__init__`:
             linkage: false
-            Linkage: Metoda razdalj
+            Linkage: Razdalja med gručami
             Annotations: Oznake
             annotation: false
             pruning: false
@@ -10063,10 +10063,10 @@ widgets/unsupervised/owhierarchicalclustering.py:
             'Height ratio:': 'Razmerje višine:'
             cut_ratio: false
             '%': true
-            'Top N:': Prvih N
+            'Top N:': 'Prvih N:'
             top_n: false
             zoom_factor: false
-            Zoom: true
+            Zoom: Povečava
             Zoom in: Povečaj
             Zoom out: Pomanjšaj
             Reset zoom: Ponastavi zoom
@@ -10088,7 +10088,7 @@ widgets/unsupervised/owhierarchicalclustering.py:
             Cluster: Gruča
             C{i + 1}: true
             Other: Drugo
-            cluster: false
+            cluster: Gruča
         def `save_state`:
             version: false
             selection_state: false
@@ -10098,7 +10098,7 @@ widgets/unsupervised/owhierarchicalclustering.py:
             manual: ročno
             at {:.1f} of height: pri {:.1f} višine
             top {} clusters: prvih {} gruč
-            Linkage: Metoda povezovanja skupin
+            Linkage: Razdalja med gručami
             Annotation: Oznake
             Prunning: Rezanje
             '{} levels': '{} nivojev'
