@@ -13046,89 +13046,89 @@ widgets/visualize/owmosaic.py:
 widgets/visualize/ownomogram.py:
     class `SortBy`:
         def `items`:
-            No sorting: null
-            Name: null
-            Absolute importance: null
-            Positive influence: null
-            Negative influence: null
+            No sorting: "Brez razvrščanja"
+            Name: "Ime"
+            Absolute importance: "Absolutna pomembnost"
+            Positive influence: "Pozitiven vpliv"
+            Negative influence: "Negativen vpliv"
     class `DotItem`:
-        'ul {margin-top: 1px; margin-bottom: 1px;}': null
+        'ul {margin-top: 1px; margin-bottom: 1px;}': false
         ? "<html><head><style type=\"text/css\">{}</style>\n    </head><body><b>{}</b><hr/>{}</body></html>\n\
             \    "
-        : null
+        : false
     class `ProbabilitiesDotItem`:
         def `get_tooltip_text`:
-            'Total: {} <br/>Probability: {:.0%}': null
+            'Total: {} <br/>Probability: {:.0%}': 'Skupno: {} <br/>Verjetnost: {:.0%}'
     class `DiscreteMovableDotItem`:
         def `get_tooltip_text`:
-            'Points: {}': null
-            '{}: {:.0%}<br/>': null
+            'Points: {}': 'Točke: {}'
+            '{}: {:.0%}<br/>': false
         def `_get_tooltip_labels_with_percentages`:
-            <: null
-            '&lt;': null
+            <: false
+            '&lt;': false
     class `GraphicsColorAnimator`:
         def `__init__`:
-            brushColor: null
+            brushColor: false
     class `ContinuousItemMixin`:
         def `get_tooltip_text`:
-            'Points: {}': null
-            'Value: {}': null
+            'Points: {}': 'Točke: {}'
+            'Value: {}': 'Vrednost: {}'
     class `ProbabilitiesRulerItem`:
         def `__init__`:
-            Total: null
-            ' ': null
+            Total: "Skupno"
+            ' ': false
     class `OWNomogram`:
-        Nomogram: null
-        ' Nomograms for Visualization of Naive Bayesian': null
-        ' and Logistic Regression Classifiers.': null
-        icons/Nomogram.svg: null
+        Nomogram: true
+        ' Nomograms for Visualization of Naive Bayesian': "Nomogram za prikaz modelov"
+        ' and Logistic Regression Classifiers.': "naivni Bayes ter logistične regresije."
+        icons/Nomogram.svg: false
         class `Inputs`:
-            Classifier: null
-            Data: null
+            Classifier: false
+            Data: false
         class `Outputs`:
-            Features: null
-        scene: null
+            Features: false
+        scene: false
         class `Error`:
-            'Nomogram accepts only Naive Bayes and ': null
-            Logistic Regression classifiers.: null
+            'Nomogram accepts only Naive Bayes and ': "Nomogram sprejema zgolj naivni Bayesov"
+            Logistic Regression classifiers.: "klasifikator ter logistično regresijo."
         def `__init__`:
-            Target class: null
-            target_class_index: null
-            normalize_probabilities: null
-            Normalize probabilities: null
-            For multiclass data 1 vs. all probabilities do not: null
-            ' sum to 1 and therefore could be normalized.': null
-            scale: null
-            Point scale: null
-            Log odds ratios: null
-            Scale: null
-            Display features: null
-            display_index: null
-            All: null
-            'Best ranked:': null
-            n_attributes: null
-            ' ': null
-            sort_index: null
-            'Rank by:': null
-            cont_feature_dim_index: null
-            'Numeric features: ': null
-            1D projection: null
-            2D curve: null
+            Target class: "Tarčni razred"
+            target_class_index: false
+            normalize_probabilities: false
+            Normalize probabilities: "Normaliziraj verjetnosti"
+            For multiclass data 1 vs. all probabilities do not: "Za večrazredne podatke '1 proti vsem' se verjetnosti"
+            ' sum to 1 and therefore could be normalized.': " ne seštejejo v 1 in s tem niso normalizirane."
+            scale: false
+            Point scale: "Točkovna lestvica"
+            Log odds ratios: "Razmerje logaritma verjetnosti"
+            Scale: "Lestvica"
+            Display features: "Prikazane spremenljivke"
+            display_index: false
+            All: "Vse"
+            'Best ranked:': "Najvišje razvrščene:"
+            n_attributes: false
+            ' ': false
+            sort_index: false
+            'Rank by:': "Razvrsti po:"
+            cont_feature_dim_index: false
+            'Numeric features: ': "Številske spremenljivke: "
+            1D projection: "1D projekcija"
+            2D curve: "2D krivulja"
             class `GraphicsView`:
                 def `__init__`:
-                    'QGraphicsView {background: white}': null
+                    'QGraphicsView {background: white}': false
         def `_class_combo_changed`:
-            ignore: null
+            ignore: false
         def `update_scene`:
-            Points: null
-            Probabilities (%): null
+            Points: "Točke"
+            Probabilities (%): "Verjetnosti (%)"
         def `create_footer_nomogram`:
-            '{}=''{}''': null
+            '{}=''{}''': false
         def `reset_settings`:
-            ignore: null
-            combo box 'target_class_index' is empty: null
-    __main__: null
-    heart_disease: null
+            ignore: false
+            combo box 'target_class_index' is empty: false
+    __main__: false
+    heart_disease: false
 widgets/visualize/owpythagorastree.py:
     class `OWPythagorasTree`:
         Pythagorean Tree: null
