@@ -12377,85 +12377,85 @@ widgets/visualize/owbarplot.py:
     __main__: null
     iris: null
 widgets/visualize/owboxplot.py:
-    ContDataRange: null
-    low: null
-    high: null
-    group_value: null
-    DiscDataRange: null
-    value: null
+    ContDataRange: false
+    low: false
+    high: false
+    group_value: false
+    DiscDataRange: false
+    value: false
     class `BoxData`:
         def `__init__`:
-            midpoint: null
+            midpoint: false
     class `OWBoxPlot`:
-        Box Plot: null
-        Visualize the distribution of feature values in a box plot.: null
-        icons/BoxPlot.svg: null
-        whisker: null
+        Box Plot: "Škatla za brki"
+        Visualize the distribution of feature values in a box plot.: "Prikaži porazdelitev vrednosti spremenljivke v škatli z brki."
+        icons/BoxPlot.svg: false
+        whisker: "škatla z brki"
         class `Inputs`:
-            Data: null
+            Data: false
         class `Outputs`:
-            Selected Data: null
+            Selected Data: false
         class `Warning`:
-            Data contains no categorical or numeric variables: null
-        median: null
-        mean: null
-        box_scene: null
+            Data contains no categorical or numeric variables: "Podatki ne vsebujejo kategoričnih ali številskih spremenljivk"
+        median: false
+        mean: false
+        box_scene: false
         def `__init__`:
-            Variable: null
-            order_by_importance: null
-            Order by relevance to subgroups: null
-            Order by 𝜒² or ANOVA over the subgroups: null
-            None: null
-            Subgroups: null
-            order_grouping_by_importance: null
-            Order by relevance to variable: null
-            Order by 𝜒² or ANOVA over the variable values: null
-            Display: null
-            show_annotations: null
-            Annotate: null
-            compare: null
-            No comparison: null
-            Compare medians: null
-            Compare means: null
-            stretched: null
-            Stretch bars: null
-            show_labels: null
-            Show box labels: null
-            sort_freqs: null
-            Sort by subgroup frequencies: null
+            Variable: "Spremenljivka"
+            order_by_importance: false
+            Order by relevance to subgroups: "Uredi glede na ločitev po skupinah"
+            Order by 𝜒² or ANOVA over the subgroups: "Uredi glede na vrednost 𝜒² ali ANOVA po skupinah"
+            None: "Brez"
+            Subgroups: "Skupine"
+            order_grouping_by_importance: false
+            Order by relevance to variable: "Uredi glede na pomembnost spremenljivke"
+            Order by 𝜒² or ANOVA over the variable values: "Uredi glede na vrednost 𝜒² ali ANOVA za vrednosti spremenljivke"
+            Display: "Prikaz"
+            show_annotations: false
+            Annotate: "Oznake"
+            compare: false
+            No comparison: "Brez oznak"
+            Compare medians: "Primerjaj srednje vrednosti"
+            Compare means: "Primerjaj povprečja"
+            stretched: false
+            Stretch bars: "Raztegni črte"
+            show_labels: false
+            Show box labels: "Prikaži oznake črt"
+            sort_freqs: false
+            Sort by subgroup frequencies: "Uredi glede na pogostost skupin"
         def `reset_attrs`:
-            hidden: null
+            hidden: false
         def `reset_groups`:
-            hidden: null
+            hidden: false
         def `compute_box_data`:
-            missing '{self.group_var.name}': null
+            missing '{self.group_var.name}': "(neznana vrednost)"
         def `_display_changed_disc`:
-            '{}': null
+            '{}': false
         def `_compute_tests_cont`:
-            'At least one group has just one instance, ': null
-            cannot compute significance: null
-            'Student''s t: {t:.3f} (p={p:.3f}, N={n})': null
-            'ANOVA: {F:.3f} (p={p:.3f}, N={n})': null
+            'At least one group has just one instance, ': "Vsaj ena skupina ima zgolj en primer, "
+            cannot compute significance: "ne morem izračunati pomembnosti."
+            'Student''s t: {t:.3f} (p={p:.3f}, N={n})': "Študentov t-test: {t:.3f} (p={p:.3f}, N={n})"
+            'ANOVA: {F:.3f} (p={p:.3f}, N={n})': true
         def `_compute_tests_disc`:
-            'χ²: {chi:.2f} (p={p:.3f}, dof={dof})': null
+            'χ²: {chi:.2f} (p={p:.3f}, dof={dof})': true
         def `mean_label`:
-            ' \u00b1 ': null
-            '%.*f': null
-            ': ': null
+            ' \u00b1 ': true
+            '%.*f': true
+            ': ': true
         def `draw_axis`:
-            '?': null
+            '?': true
         def `strudel`:
-            missing '{attr.name}': null
-            '{value}: {100 * freq / total:.2f}%': null
-            '{value}: ({int(freq)})': null
+            missing '{attr.name}': "(neznana vrednost)"
+            '{value}: {100 * freq / total:.2f}%': true
+            '{value}: ({int(freq)})': true
         def `_show_posthoc`:
-            median: null
-            mean: null
+            median: false
+            mean: false
         def `send_report`:
-            'Box plot for attribute ''{}'' ': null
-            grouped by '{}': null
-    __main__: null
-    heart_disease.tab: null
+            'Box plot for attribute ''{}'' ': "Škatla za brki za spremenljivko '{}' "
+            grouped by '{}': "urejeno po '{}'"
+    __main__: false
+    heart_disease.tab: false
 widgets/visualize/owdistributions.py:
     class `ScatterPlotItem`:
         def `paint`:
