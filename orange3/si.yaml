@@ -9920,71 +9920,71 @@ widgets/unsupervised/owdistancematrix.py:
     __main__: null
     iris: null
 widgets/unsupervised/owdistances.py:
-    Euclidean: null
-    Manhattan: null
-    Cosine: null
-    Jaccard: null
-    Spearman: null
-    Absolute Spearman: null
-    Pearson: null
-    Absolute Pearson: null
-    Hamming: null
-    Mahalanobis: null
-    Bhattacharyya: null
+    Euclidean: "evklidska"
+    Manhattan: "manhattanska"
+    Cosine: "kosinusna"
+    Jaccard: "Jaccardova"
+    Spearman: "Spearmanova"
+    Absolute Spearman: "absolutna Spearmanova"
+    Pearson: "Pearsonova"
+    Absolute Pearson: "absolutna Pearsonova"
+    Hamming: "Hammingova"
+    Mahalanobis: "Mahalanobisova"
+    Bhattacharyya: "Bhattacharyyeva"
     class `DistanceRunner`:
         def `run`:
-            Calculating...: null
-            axis: null
-            impute: null
-            callback: null
-            normalize: null
+            Calculating...: "Računam ..."
+            axis: false
+            impute: false
+            callback: false
+            normalize: false
     class `OWDistances`:
-        Distances: null
-        Compute a matrix of pairwise distances.: null
-        icons/Distance.svg: null
+        Distances: "Razdalje"
+        Compute a matrix of pairwise distances.: "Izračunaj matriko razdalj."
+        icons/Distance.svg: false
         class `Inputs`:
-            Data: null
+            Data: false
         class `Outputs`:
-            Distances: null
+            Distances: false
         class `Error`:
-            No numeric features: null
-            No binary features: null
-            '{} requires dense data.': null
-            Not enough memory: null
-            Problem in calculation:\n{}: null
-            Mahalanobis handles up to 1000 {}.: null
+            No numeric features: "Ni številskih spremenljivk"
+            No binary features: "Ni binarnih spremenljivk"
+            '{} requires dense data.': "{} zahteva goste podatke."
+            Not enough memory: "Ni dovolj pomnilnika"
+            Problem in calculation:\n{}: 'Težava pri izračunu:\n{}'
+            Mahalanobis handles up to 1000 {}.: 'Mahalanobisova razdalja zmore do 1000 {}.'
         class `Warning`:
-            Ignoring categorical features: null
-            Ignoring non-binary features: null
-            Missing values were imputed: null
+            Ignoring categorical features: "Kategoričnih spremenljivk ne upoštevam"
+            Ignoring non-binary features: "Ne-binarnih spremenljivk ne upoštevam"
+            Missing values were imputed: "Manjkajoče vrednosti so bile nadomeščene"
         def `__init__`:
-            axis: null
-            Rows: null
-            Columns: null
-            Distances between: null
-            Distance Metric: null
-            metric_idx: null
-            normalized_dist: null
-            Normalized: null
-            All dimensions are (implicitly) scaled to a common: null
-            scale to normalize the influence across the domain.: null
-            autocommit: null
+            axis: false
+            Rows: "Vrsticami"
+            Columns: "Stolpci"
+            Distances between: "Razdalje med"
+            Distance Metric: "Razdalja"
+            metric_idx: false
+            normalized_dist: false
+            Normalized: "Normalizirano"
+            All dimensions are (implicitly) scaled to a common: "Vse spremenljivke so preslikane na enak razpon, "
+            scale to normalize the influence across the domain.: "s čimer se izenači njihov vpliv na izračunano razdaljo."
+            autocommit: false
         def `compute_distances`:
             def `_fix_discrete`:
-                fallback: null
+                fallback: false
             def `_check_tractability`:
-                rows: null
-                columns: null
+                rows: "vrstic"
+                columns: "stolpcev"
         def `send_report`:
-            Distances Between: null
-            Rows: null
-            Columns: null
-            Metric: null
+            Distances Between: "Razdalje med"
+            Rows: "vrsticami"
+            Columns: "stolpci"
+            Metric: "Razdalja"
         def `migrate_settings`:
-            normalized_dist: null
-            metric_idx: null
-    __main__: null
-    iris: null
+            normalized_dist: false
+            metric_idx: false
+    __main__: false
+    iris: false
 widgets/unsupervised/owdistancetransformation.py:
     class `OWDistanceTransformation`:
         Distance Transformation: null
