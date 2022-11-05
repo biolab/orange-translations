@@ -4152,7 +4152,7 @@ widgets/data/owcsvimport.py:
                 filter: false
         def `_might_be_binary_mb`:
             The '{basename}' may be a binary file.\n: "'{basename}' je najbrž binarna datoteka.\\n"
-            Are you sure you want to continue?: Vseeno nadaljujeva?
+            Are you sure you want to continue?: Vseeno nadaljujem?
         def `_path_must_be_relative_mb`:
             Invalid path: Napačna mapa
             Selected path is not within '{prefix}': Mapa mora biti znotraj '{prefix}'
@@ -5301,7 +5301,7 @@ widgets/data/owfeaturestatistics.py:
     __main__: null
     iris: null
 widgets/data/owfile.py:
-    Automatically detect type: Samodejno zaznaj tip datoteke
+    Automatically detect type: Samodejno zaznaj vrsto datoteke
     def `add_origin`:
         type: false
         origin: false
@@ -5309,10 +5309,10 @@ widgets/data/owfile.py:
         File: Datoteka
         orange.widgets.data.file: false
         'Read data from an input file or network ': 'Preberi podatke iz datoteke ali
-            omrežja '
-        and send a data table to the output.: in jih pošlji na izhod.
+            omrežja'
+        and send a data table to the output.: ''
         icons/File.svg: false
-        Data: Podatki
+        Data: false
         file: datoteka
         load: naloži
         read: preberi
@@ -5333,21 +5333,20 @@ widgets/data/owfile.py:
         class `Warning`:
             The file is too large to load automatically.: Datoteka je prevelika za
                 samodejno branje.
-            ' Press Reload to load.': ' Pritisni Ponovno naloži za branje.'
+            ' Press Reload to load.': " Pritisni 'Ponovno naloži' za branje."
             Read warning:\n{}: Opozorilo ob branju:\n{}
             Categorical variables with >100 values may decrease performance.: Kategorične
-                spremenljivke z >100 vrednostmi lahko upočasne delovanje.
-            'Some variables have been renamed ': 'Nekatere spremenljivke so bile preimenovane
-                v izogib '
-            to avoid duplicates.\n{}: ponovljenim imenom.\n{}
+                spremenljivke z veliko vrednostmi lahko upočasnijo delovanje.
+            'Some variables have been renamed ': 'Spremenljivke s podvojenimi imeni so preimenovane.'
+            to avoid duplicates.\n{}: \n{}
             Most widgets do not support multiple targets: Večina gradnikov ne podpira
                 večih ciljnih spremenljivk.
         class `Error`:
-            File not found.: Datoteka ni najdena
-            Missing reader.: Bralnik za ta tip ne obstaja
+            File not found.: Datoteka ni najdena.
+            Missing reader.: Bralnik za ta tip ne obstaja.
             Error listing available sheets.: Napaka ob ustvarjanju seznama listov.
             Read error:\n{}: Napaka ob branju:\n{}
-        'Use CSV File Import widget for advanced options ': 'Uporavi Bralnik CSV za
+        'Use CSV File Import widget for advanced options ': 'Uporabi Bralnik CSV za
             napredne možnosti '
         for comma-separated files: za datoteke ločene z vejico
         use-csv-file-import: falxe
@@ -5379,7 +5378,7 @@ widgets/data/owfile.py:
             Apply: Uveljavi
             Browse documentation datasets: Odpri podatke iz dokumentacije
         def `_url_set`:
-            http://: true
+            http://: false
         def `browse_file`:
             File: Datoteka
             Cannot find the directory with documentation datasets: Ne najdem mape
@@ -5388,27 +5387,26 @@ widgets/data/owfile.py:
         def `load_data`:
             No data.: Ni podatkov.
         def `_get_reader`:
-            Can not find reader "{qname}": Bralnik "{qname}" ne obstaja
+            Can not find reader "{qname}": Bralnik "{qname}" ne obstaja.
         def `_describe`:
             def `missing_prop`:
-                ({prop * 100:.1f}% missing values): ({prop * 100:.1f}% manjkajočih
-                    vrednosti)
+                "({prop * 100:.1f}% missing values)": "({prop * 100:.1f}% manjkajočih vrednosti)"
                 (no missing values): (ni manjkajočih vrednosti)
             attributes: false
             Name: Ime
             Description: Opis
             <b>{descs[0]}</b>: false
             <p>{'<br/>'.join(descs)}</p>: false
-            <p>{len(table)} instance(s): null
-            <br/>{len(domain.attributes)} feature(s) {missing_in_attr}: null
+            <p>{len(table)} {pl(len(table), 'instance')}: <p>{len(table)} {plsi(len(table), 'primer')}
+            <br/>{nattrs} {pl(nattrs, 'feature')} {missing_in_attr}: <br/>{nattrs} {plsi(nattrs, 'spremenljivka')} {missing_in_attr}
             <br/>Regression; numerical class {missing_in_class}: <br/>Regresija {missing_in_class}
             '<br/>Classification; categorical class ': '<br/>Klasifikacija: '
-            with {len(domain.class_var.values)} values {missing_in_class}: null
+            "with {nvals} {pl(nvals, 'value')} {missing_in_class}": "{plsi_sz(nvals)} {nvals} {plsi(nvals, 'razredom|razredoma|razredi')} {missing_in_class}"
             '<br/>Multi-target; ': '<br/>Večrazredni; '
-            '{len(table.domain.class_vars)} target variables ': null
-            '{missing_in_class}': null
-            <br/>Data has no target variable.: <br/>Podatki nimajo ciljne spremenljivke
-            <br/>{len(domain.metas)} meta attribute(s): null
+            "{ntargets} target {pl(ntargets, 'variable')}": "{ntargets} {plsi(ntargets, 'ciljna spremenljivka|ciljni spremenljivki|ciljne spremenljivke|ciljnih spremenljivk')}"
+            '{missing_in_class}': true
+            <br/>Data has no target variable.: <br/>Podatki nimajo ciljne spremenljivke.
+            <br/>{nmetas} {pl(nmetas, 'meta attribute')}: <br/>{nmetas} {plsi(nmetas, 'meta spremenljivka')}
             </p>: false
             Timestamp: false
             '<p>First entry: {table[0, ''Timestamp'']}<br/>': '<p>Prvi vnos: {table[0,
@@ -5416,9 +5414,9 @@ widgets/data/owfile.py:
             'Last entry: {table[-1, ''Timestamp'']}</p>': 'Zadnji vnos: {table[-1,
                 ''Timestamp'']}</p>'
         def `retrieveSpecificSettings`:
-            modified_variables: null
+            modified_variables: false
         def `apply_domain_edit`:
-            attributes: null
+            attributes:
             'Renamed: {'', ''.join(renamed)}': 'Preimenovano: {'', ''.join(renamed)}'
         def `send_report`:
             def `get_ext_name`:
@@ -11872,7 +11870,7 @@ widgets/utils/textimport.py:
             'Decimal:': "Decimalni del: "
             'Number separators:': 'Ločila med števkami: '
             column-type-edit-combo-box: false
-            Auto: Prepoznaj
+            Auto: (prepoznaj)
             'The type will be determined automatically based ': 'Tip bo prepoznan samodejno '
             on column contents.: glede na vsebino
             Numeric: Številka
