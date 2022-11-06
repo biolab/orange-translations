@@ -1,0 +1,1 @@
+auto-import: "from Orange.widgets.utils.localization import plsi, plsi_sz  # pylint: disable=wrong-import-order"
