@@ -7117,82 +7117,82 @@ widgets/data/owselectrows.py:
     heart_disease: null
 widgets/data/owsql.py:
     def `is_postgres`:
-        display_name: null
-        PostgreSQL: null
+        display_name: false
+        PostgreSQL: false
     class `OWSql`:
-        SQL Table: null
-        orange.widgets.data.sql: null
-        Load dataset from SQL.: null
-        icons/SQLTable.svg: null
-        Data: null
-        load: null
+        SQL Table: Branje SQL
+        orange.widgets.data.sql: false
+        Load dataset from SQL.: Naloži podatke iz baze SQL
+        icons/SQLTable.svg: false
+        Data: false
+        load: true
         class `Outputs`:
-            Data: null
-            Attribute-valued dataset read from the input file.: null
+            Data: Podatki
+            Attribute-valued dataset read from the input file.: Podatki prebrani iz baze
         class `Information`:
-            Data description was generated from a sample.: null
+            Data description was generated from a sample.: Podatki vsebujejo samo vzorec.
         class `Warning`:
-            'Database is missing extensions: {}': null
+            'Database is missing extensions: {}': 'Podatkovna baza nima razširitev: {}'
         class `Error`:
-            Please install a backend to use this widget.: null
+            Please install a backend to use this widget.: Namestite knjižnico za podatkovno bazo.
         def `_add_tables_controls`:
-            Tables: null
-            table: null
-            materialize: null
-            'Materialize to table ': null
-            Save results of the query in a table: null
-            materialize_table_name: null
-            Execute: null
-            guess_values: null
-            Auto-discover categorical variables: null
-            download: null
-            Download data to local memory: null
+            Tables: Tabele
+            table: tabela
+            materialize: false
+            'Materialize to table ': 'Materializiraj v tabelo '
+            Save results of the query in a table: Shrani podatke poizvedbe v tabelo
+            materialize_table_name: false
+            Execute: Izvedi
+            guess_values: false
+            Auto-discover categorical variables: Samodejno zaznaj kategorične spremenljivke
+            download: false
+            Download data to local memory: Shrani podatke v pomnilnik
         def `highlight_error`:
-            'QLineEdit {border: 2px solid red;}': null
-            server: null
-            host: null
-            role: null
-            database: null
+            'QLineEdit {border: 2px solid red;}': false
+            server: false
+            host: false
+            role: false
+            database: false
         def `on_connection_success`:
-            missing_extension: null
-            ', ': null
+            missing_extension: false
+            ', ': true
         def `on_connection_error`:
-            \n: null
+            \n: false
         def `refresh_tables`:
-            Select a table: null
-            Custom SQL: null
+            Select a table: Izberi tabelo
+            Custom SQL: Prikrojen SQL
         def `select_table`:
-            Custom SQL: null
-            Table: null
-            (None): null
+            Custom SQL: Prikrojen SQL
+            Table: Tabela
+            (None): (Brez)
         def `get_table`:
             Table: null
-            (None): null
-            Custom SQL: null
-            Query: null
-            Specify a table name to materialize the query: null
-            'DROP TABLE IF EXISTS ': null
-            'CREATE TABLE ': null
-            ' AS ': null
-            'ANALYZE ': null
-            'Attribute discovery might take ': null
-            a long time on large tables.\n: null
-            Do you want to auto discover attributes?: null
-            'Yes': null
-            'No': null
-            Yes, on a sample: null
-            'Data appears to be big. Do you really ': null
-            want to download it to local memory?: null
-            Yes, a sample: null
-            Warning: null
-            Data is too big to download.\n: null
-            Question: null
+            (None): (Brez)
+            Custom SQL: Prikrojen SQL
+            Query: Poizvedba
+            Specify a table name to materialize the query: Določi ime materializirane tabele
+            'DROP TABLE IF EXISTS ': false
+            'CREATE TABLE ': false
+            ' AS ': false
+            'ANALYZE ': false
+            'Attribute discovery might take ': 'Samodejno zaznavanje v velikih tabelah lahko zahteva '
+            a long time on large tables.\n: veliko časa.\n
+            Do you want to auto discover attributes?: Želite samodejno zaznavanje?
+            'Yes': 'Da'
+            'No': 'Ne'
+            Yes, on a sample: 'Da, na vzorcu'
+            'Data appears to be big. Do you really ': 'Podatki so videti veliki. Jih res želite '
+            want to download it to local memory?: naložiti v pomnilnik?
+            Yes, a sample: Da, vzorec
+            Warning: Opozorilo
+            Data is too big to download.\n: Podatki so preveliki.
+            Question: Vprašanje
         def `migrate_settings`:
-            host: null
-            port: null
-            username: null
-            password: null
-    __main__: null
+            host: false
+            port: false
+            username: false
+            password: false
+    __main__: false
 widgets/data/owtable.py:
     class `RichTableModel`:
         def `__init__`:
@@ -11517,35 +11517,35 @@ widgets/utils/overlay.py:
 widgets/utils/owbasesql.py:
     class `OWBaseSql`:
         class `Outputs`:
-            Data: null
+            Data: Podatki
         class `Error`:
-            '{}': null
+            '{}': true
         def `_setup_gui`:
-            Server: null
-            '{}:{}': null
-            Database[/Schema]: null
-            Database or optionally Database/Schema: null
-            '{}/{}': null
-            Username: null
-            Password: null
-            Connect: null
+            Server: Strežnik
+            '{}:{}': true
+            Database[/Schema]: Baza[/Shema]
+            Database or optionally Database/Schema: Baza ali, opcijsko, Baza/Shema
+            '{}/{}': true
+            Username: Uporabniško ime
+            Password: Geslo
+            Connect: Poveži
         def `_credential_manager`:
-            'SQL Table: {}:{}': null
+            'SQL Table: {}:{}': true
         def `_parse_host_port`:
-            ':': null
+            ':': false
         def `_check_db_settings`:
-            /: null
+            /: false
         def `on_connection_success`:
-            Host: null
-            Port: null
-            Database: null
-            User name: null
+            Host: Strežnik
+            Port: Vrata
+            Database: Baza
+            User name: Uporabniško ime
         def `on_connection_error`:
-            \n: null
+            \n: true
         def `send_report`:
-            No database connection.: null
-            Database: null
-            Data: null
+            No database connection.: Ni povezave z bazo.
+            Database: Baza
+            Data: Podatki
 widgets/utils/owlearnerwidget.py:
     class `OWBaseLearnerMeta`:
         def `__new__`:
