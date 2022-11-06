@@ -5871,143 +5871,143 @@ widgets/data/owoutliers.py:
     __main__: null
     iris: null
 widgets/data/owpaintdata.py:
-    Append: null
-    points: null
-    Insert: null
-    indices: null
-    Move: null
-    delta: null
-    DeleteIndices: null
-    Composite: null
-    f: null
-    g: null
-    AirBrush: null
-    pos: null
-    radius: null
-    intensity: null
-    rstate: null
-    Jitter: null
-    Magnet: null
-    density: null
-    SelectRegion: null
-    region: null
-    DeleteSelection: null
-    MoveSelection: null
+    Append: false
+    points: false
+    Insert: false
+    indices: false
+    Move: false
+    delta: false
+    DeleteIndices: false
+    Composite: false
+    f: false
+    g: false
+    AirBrush: false
+    pos: false
+    radius: false
+    intensity: false
+    rstate: false
+    Jitter: false
+    Magnet: false
+    density: false
+    SelectRegion: false
+    region: false
+    DeleteSelection: false
+    MoveSelection: false
     class `PaintViewBox`:
         def `__init__`:
-            mousePressEvent: null
-            mouseMoveEvent: null
-            mouseReleaseEvent: null
-            mouseClickEvent: null
-            mouseDragEvent: null
-            mouseEnterEvent: null
-            mouseLeaveEvent: null
+            mousePressEvent: false
+            mouseMoveEvent: false
+            mouseReleaseEvent: false
+            mouseClickEvent: false
+            mouseDragEvent: false
+            mouseEnterEvent: false
+            mouseLeaveEvent: false
     class `SelectTool`:
         def `__init__`:
-            Delete: null
-            Backspace: null
+            Delete: false
+            Backspace: false
     def `_icon`:
-        icons/paintdata: null
+        icons/paintdata: false
     class `OWPaintData`:
-        Brush: null
-        Create multiple instances: null
-        brush.svg: null
-        Put: null
-        Put individual instances: null
-        put.svg: null
-        Select: null
-        Select and move instances: null
-        select-transparent_42px.png: null
-        Jitter: null
-        Jitter instances: null
-        jitter.svg: null
-        Magnet: null
-        Attract multiple instances: null
-        magnet.svg: null
-        Clear: null
-        Clear the plot: null
-        ../../../icons/Dlg_clear.png: null
-        Paint Data: null
-        Create data by painting data points on a plane.: null
-        icons/PaintData.svg: null
-        create: null
-        draw: null
+        Brush: Pršilo
+        Create multiple instances: Postavi več točk
+        brush.svg: false
+        Put: Pisalo
+        Put individual instances: Postavi posamične točke
+        put.svg: false
+        Select: Izbor
+        Select and move instances: Izberi in premikaj točke
+        select-transparent_42px.png: false
+        Jitter: Potresi
+        Jitter instances: Potresi točke
+        jitter.svg: false
+        Magnet: Pritegni
+        Attract multiple instances: Pritegni točke
+        magnet.svg: false
+        Clear: Pobriši
+        Clear the plot: Pobriši vse točke
+        ../../../icons/Dlg_clear.png: false
+        Paint Data: Risanje podatkov
+        Create data by painting data points on a plane.: Risanje podatkov v graf
+        icons/PaintData.svg: false
+        create: sestavi
+        draw: nariši
         class `Inputs`:
-            Data: null
+            Data: Podatki
         class `Outputs`:
-            Data: null
-        Painted data: null
-        x: null
-        y: null
-        C1: null
-        C2: null
-        plot: null
+            Data: Podatki
+        Painted data: Narisani podatki
+        x: true
+        y: true
+        C1: true
+        C2: true
+        plot: true
         class `Warning`:
-            Input data has no variables: null
-            Numeric target value can not be used.: null
-            Sparse data is ignored.: null
-            'Some variables have been renamed ': null
-            to avoid duplicates.\n{}: null
+            Input data has no variables: Vhodni podatki nimajo spremenljivk
+            Numeric target value can not be used.: Numerične ciljne spremenljivke ne morem uporabiti
+            Sparse data is ignored.: Ignoriram redke podatke
+            'Some variables have been renamed ': 'Spremenljivke s podvojenimi imeni '
+            to avoid duplicates.\n{}: 'so preimenovane.\n{}'
         class `Information`:
-            Paint Data uses data from the first two attributes.: null
+            Paint Data uses data from the first two attributes.: Gradnik uporablja prvi dve spremenljivki.
         def `_init_ui`:
-            Names: null
-            attr1: null
-            'Variable X: ': null
-            attr2: null
-            'Variable Y: ': null
-            hasAttr2: null
-            Labels: null
-            +: null
-            Add new class label: null
-            MINUS SIGN: null
-            Remove selected class label: null
-            Tools: null
+            Names: Imena
+            attr1: false
+            'Variable X: ': 'Spremenljivka X: '
+            attr2: false
+            'Variable Y: ': 'Spremenljivka Y: '
+            hasAttr2: true
+            Labels: Razredi
+            +: true
+            Add new class label: Dodaj nov razred
+            MINUS SIGN: true
+            Remove selected class label: Odstrani razred
+            Tools: Orodja
             brushRadius: null
-            'Radius:': null
+            'Radius:': 'Polmer:'
             density: null
-            'Intensity:': null
+            'Intensity:': 'Gostota:'
             symbol_size: null
-            'Symbol:': null
-            Reset to Input Data: null
-            autocommit: null
-            bottom: null
-            left: null
+            'Symbol:': 'Velikost:'
+            Reset to Input Data: Ponastavi na vhodne podatke
+            autocommit: false
+            bottom: false
+            left: false
         def `set_dimensions`:
-            left: null
+            left: false
         def `set_data`:
-            C1: null
+            C1: true
         def `add_new_class_label`:
-            C: null
+            C: true
         def `remove_selected_class_label`:
-            Delete class label: null
+            Delete class label: false
         def `_on_editing_started`:
-            macro: null
+            macro: false
         def `execute`:
-            Non normalized command: null
+            Non normalized command: false
         def `_add_command`:
-            Name: null
-            Delete: null
-            Move: null
-            unreachable: null
+            Name: false
+            Delete: false
+            Move: false
+            unreachable: false
         def `_replot`:
-            +: null
+            +: true
         def `_attr_name_changed`:
-            bottom: null
-            left: null
+            bottom: false
+            left: false
         def `commit`:
-            Class: null
-            ', ': null
-            bottom: null
-            left: null
+            Class: Razred
+            ', ': true
+            bottom: false
+            left: false
         def `send_report`:
-            x: null
-            y: null
-            Axis x: null
-            Axis y: null
-            Number of points: null
-            Painted data: null
-    __main__: null
+            x: true
+            y: true
+            Axis x: Os x
+            Axis y: Os y
+            Number of points: Število točk
+            Painted data: Narisani podatki
+    __main__: false
 widgets/data/owpivot.py:
     class `AggregationFunctionsEnum`:
         def `__str__`:
