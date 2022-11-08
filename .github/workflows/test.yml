@@ -22,8 +22,9 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         python -m pip install trubar
-        git clone https://github.com/biolab/orange-translations.git orange3-orig
-    - name: Run tests
+        git clone https://github.com/biolab/orange3.git
+        git clone https://github.com/biolab/orange-translations.git
+    - name: Translate and check syntax
       run: |
-        mkdir orange3-trans
-        trubar translate -s orange3-orig/Orange -d ../orange3-trans/Orange orange3/si.yaml
+        trubar translate -s orange3/Orange -d orange3-trans/Orange orange-translations/orange3/si.yaml
+        find ../orange3-trans -name "*.py" -exec python -m compileall -q {} \;
