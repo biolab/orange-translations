@@ -25,7 +25,8 @@ jobs:
         git clone https://github.com/biolab/orange3.git orange3-orig
     - name: Translate and check syntax
       run: |
-        ls
+        trubar
+        ls orange3
         trubar translate -s orange3-orig/Orange -d orange3-trans/Orange orange3/si.yaml
         ls
         find orange3-trans -name "*.py" -exec python -m compileall -q {} \;
