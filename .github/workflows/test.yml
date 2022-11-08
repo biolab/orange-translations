@@ -26,4 +26,4 @@ jobs:
     - name: Translate and check syntax
       run: |
         trubar translate -s orange3-orig/Orange -d orange3-trans/Orange orange3/si.yaml
-        find ../orange3-trans -name "*.py" -exec python -m compileall -q {} \;
+        find orange3-trans -name "*.py" -exec python -m compileall -q {} \;
