@@ -22,7 +22,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         python -m pip install trubar
-        git clone git@github.com:biolab/orange3.git orange3-orig
+        git clone https://github.com/biolab/orange-translations.git orange3-orig
     - name: Run tests
       run: |
         mkdir orange3-trans
