@@ -3619,98 +3619,97 @@ widgets/data/owaggregatecolumns.py:
 widgets/data/owcolor.py:
     class `AttrDesc`:
         def `to_dict`:
-            rename: null
+            rename: false
         def `from_dict`:
-            rename: null
+            rename: false
     class `DiscAttrDesc`:
         def `to_dict`:
-            renamed_values: null
-            colors: null
+            renamed_values: false
+            colors: false
         def `from_dict`:
-            renamed_values: null
-            '{var.name}: ': null
-            renaming of values ignored due to duplicate names: null
-            colors: null
+            renamed_values: false
+            '{var.name}: ': false
+            renaming of values ignored due to duplicate names: preimenovanje ni upoštevano zaradi podvojenih imen
+            colors: false
     class `ContAttrDesc`:
         def `create_variable`:
-            palette: null
+            palette: false
         def `to_dict`:
-            colors: null
+            colors: false
         def `from_dict`:
-            colors: null
+            colors: false
     class `ContColorTableModel`:
         def `data`:
             def `_column2`:
-                Copy to all: null
+                Copy to all: Dodeli vsem
     class `OWColor`:
-        Color: null
-        Set color legend for variables.: null
-        icons/Colors.svg: null
+        Color: Obarvaj
+        Set color legend for variables.: Določi barvne legende za spremenljivke
+        icons/Colors.svg: false
         class `Inputs`:
-            Data: null
+            Data: Podatki
         class `Outputs`:
-            Data: null
+            Data: Podatki
         def `__init__`:
-            Discrete Variables: null
-            Numeric Variables: null
-            Save: null
-            Load: null
-            Reset: null
-            auto_apply: null
+            Discrete Variables: Kategorične spremenljivke
+            Numeric Variables: Številske spremenljivke
+            Save: Shrani
+            Load: Naloži
+            Reset: Povrni
+            auto_apply: false
         def `save`:
-            File name: null
-            Variable definitions (*.colors): null
-            colorwidget/last-location: null
+            File name: Ime datoteke
+            Variable definitions (*.colors): Nastavitve barv (*.colors)
+            colorwidget/last-location: false
         def `_save_var_defs`:
-            w: null
-            categorical: null
-            numeric: null
+            w: false
+            categorical: false
+            numeric: false
         def `load`:
-            File name: null
-            Variable definitions (*.colors): null
-            File error: null
-            File cannot be opened.: null
-            Invalid file format.: null
+            File name: Ime datoteke
+            Variable definitions (*.colors): Nastavitve barv (*.colors)
+            File error: Napaka pri branju
+            File cannot be opened.: Datoteke ni mogoče odpreti.
+            Invalid file format.: Napačna oblika datoteke.
         def `_parse_var_defs`:
-            categorical: null
-            numeric: null
-            rename: null
-            Duplicated variable names: null
-            Variables will not be renamed due to duplicated names.: null
-            '''{name}''': null
-            'Definition for variable {names[0]}, which does not ': null
-            appear in the data, was ignored.\n: null
-            'Definitions for variables ': null
-            '{", ".join(names[:-1])} and {names[-1]}': null
-            'Definitions for {", ".join(names[:4])} ': null
-            and {len(names) - 4} other variables: null
-            ', which do not appear in the data, were ignored.\n': null
-            Invalid definitions: null
-            \n: null
+            categorical: false
+            numeric: false
+            rename: false
+            Duplicated variable names: Podvojena imena spremenljivk
+            Variables will not be renamed due to duplicated names.: Zaradi podvojenih imen spremenljivke ne bodo preimenovane.
+            '''{name}''': false
+            'Definition for variable {names[0]}, which does not ': Nastavitve za spremenljivko {names[0]}, ki je ni v podatkih,
+            appear in the data, was ignored.\n: niso uporabljene.\n
+            'Definitions for variables ': 'Nastavitve za {plsi(len(names), "|spremenljivki|spremenljivke")}'
+            '{", ".join(names[:-1])} and {names[-1]}': '{", ".join(names[:-1])} in {names[-1]}'
+            'Definitions for {", ".join(names[:4])} ': 'Nastavitve za {", ".join(names[:4])} '
+            and {len(names) - 4} other variables: 'in še {z_besedo(len(names) - 4, 4, "f")} {plsi(len(names) - 4, "|drugi spremenljivki|druge spremenljivke|drugih spremenljivk")}'
+            ', which do not appear in the data, were ignored.\n': ', ki jih ni v podatkih, niso uporabljene.\n'
+            Invalid definitions: Neuporabljene definicije
+            \n: false
         def `_start_dir`:
-            basedir: null
-            colorwidget/last-location: null
-            ~{os.sep}: null
+            basedir: false
+            colorwidget/last-location: false
+            ~{os.sep}: false
         def `send_report`:
             def `_report_variables`:
                 def `was`:
-                    '{n} (was: {o})': null
-                '    \n': null
-                <td>{square(*color)} {was(value, old_value)}</td>: null
-                <td colspan="{max_values}">: null
-                '{pal.friendly_name}</td>': null
-                '<tr style="height: 2em">\n': null
-                '  <th style="text-align: right">{names}</th>': null
-                '  {value_cols}\n': null
-                </tr>\n: null
-            Features: null
-            Outcome: null
-            s: null
-            Meta attributes: null
-            <tr><th>{name}</th></tr>{rows}: null
-            <table>{table}</table>: null
-    __main__: null
-    heart_disease.tab: null
+                    '{n} (was: {o})': '{n} (prej: {o})'
+                '    \n': false
+                <td>{square(*color)} {was(value, old_value)}</td>: false
+                <td colspan="{max_values}">: false
+                '{pal.friendly_name}</td>': false
+                '<tr style="height: 2em">\n': false
+                '  <th style="text-align: right">{names}</th>': false
+                '  {value_cols}\n': false
+                </tr>\n: false
+            Features: Spremenljivke
+            '{pl(len(dom.class_vars), "Outcome")}': '{plsi(len(dom.class_vars), "Ciljna spremenljivka|Ciljni spremenljivki|Ciljne spremenljivke")}'
+            Meta attributes: Meta spremenljivke
+            <tr><th>{name}</th></tr>{rows}: false
+            <table>{table}</table>: false
+    __main__: false
+    heart_disease.tab: false
 widgets/data/owconcatenate.py:
     class `OWConcatenate`:
         Concatenate: null
