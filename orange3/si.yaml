@@ -6860,20 +6860,20 @@ widgets/data/owsave.py:
     iris: false
 widgets/data/owselectbydataindex.py:
     class `OWSelectByDataIndex`:
-        Select by Data Index: null
-        Match instances by index from data subset.: null
-        Transform: null
-        icons/SelectByDataIndex.svg: null
+        Select by Data Index: Izberi iste vrstice
+        Match instances by index from data subset.: Izberi primere, ki ustrezajo vrsticam iz podmnožice
+        Transform: false
+        icons/SelectByDataIndex.svg: false
         class `Inputs`:
-            Data: null
-            Data Subset: null
+            Data: Podatki
+            Data Subset: Podmnožica
         class `Outputs`:
-            Matching Data: null
-            Data: null
-            Unmatched Data: null
-            Annotated Data: null
+            Matching Data: Izbrani podatki
+            Data: false
+            Unmatched Data: Ostali podatki
+            Annotated Data: Označeni podatki
         class `Warning`:
-            Input tables do not share any instances.: null
+            Input tables do not share any instances.: Vhodni tabeli nimata skupnih vrstic.
         def `__init__`:
             ? '
 
@@ -6889,17 +6889,24 @@ widgets/data/owselectbydataindex.py:
                 that appear in Data Subset, based on row identity and not actual data.
 
                 '
-            : null
+            : "
+            Vrstice ohranijo identiteto tudi, če so nekatere ali vse spremenljivke\n
+            zamenjane z novimi, izračunanimi iz starih.\n
+            \n
+            Ta gradnik sprejme dve tabeli, \"Podatki\" in \"Podmnožica\", ki izhajata\n
+            iz istega vira. Gradnik izbere vse vrstice prve, ki se pojavijo tudi v drugi.\n
+            Pri tem se ozira na identiteto vrstic in ne na vrednosti spremenljivk.
+            "
         def `send_report`:
             def `data_info_text`:
-                No data.: null
-                '{}\n{} instances\n{} variables': null
-            \n: null
-            ', ': null
-            Data: null
-            Data Subset: null
-    __main__: null
-    iris.tab: null
+                No data.: "-"
+                "{data.name}, ": true
+                "{len(data)} {pl(len(data), 'instance')}, ": "{len(data)} {plsi(len(data), 'vrstica')}, "
+                "{nvars} {pl(nvars, 'variable')}": "{nvars} {plsi(nvars, 'spremenljivka')}"
+            Data: Podatki
+            Data Subset: Podmnožica
+    __main__: false
+    iris.tab: false
 widgets/data/owselectcolumns.py:
     class `VariablesListItemModel`:
         application/x-Orange-VariableListModelData: false
