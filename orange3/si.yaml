@@ -6987,21 +6987,21 @@ widgets/data/owselectcolumns.py:
 widgets/data/owselectrows.py:
     class `SelectRowsContextHandler`:
         def `encode_setting`:
-            conditions: null
-            x: null
+            conditions: false
+            x: false
         def `decode_setting`:
-            conditions: null
-            x: null
-            f: null
+            conditions: false
+            x: false
+            f: false
         def `match`:
-            conditions: null
+            conditions: false
         def `filter_value`:
-            conditions: null
+            conditions: false
     class `FilterDiscreteType`:
-        Equal: null
-        NotEqual: null
-        In: null
-        IsDefined: null
+        Equal: false
+        NotEqual: false
+        In: false
+        IsDefined: false
     def `_plural`:
         'is ': null
         'are ': null
@@ -7010,108 +7010,124 @@ widgets/data/owselectrows.py:
         begins: null
         ends: null
     class `OWSelectRows`:
-        Select Rows: null
-        Select rows from the data based on values of variables.: null
-        icons/SelectRows.svg: null
-        Transform: null
-        filter: null
+        Select Rows: Izberi vrstice
+        Select rows from the data based on values of variables.: Izberi vrstice glede na vrednosti spremenljivk.
+        icons/SelectRows.svg: false
+        Transform: false
+        filter: true
         class `Inputs`:
-            Data: null
+            Data: Podatki
         class `Outputs`:
-            Matching Data: null
-            Unmatched Data: null
-        equals: null
-        is not: null
-        is below: null
-        is at most: null
-        is greater than: null
-        is at least: null
-        is between: null
-        is outside: null
-        is defined: null
-        is: null
-        is one of: null
-        is before: null
-        is equal or before: null
-        is after: null
-        is equal or after: null
-        contains: null
-        begins with: null
-        ends with: null
-        All variables: null
-        are defined: null
-        All numeric variables: null
-        All string variables: null
+            Matching Data: Izbrani podatki
+            Unmatched Data: Neizbrani podatki
+        equals: je
+        equal: so
+        is not: ni
+        are not: niso
+        is below: je manjši kot
+        are below: so manjše kot
+        is at most: je največ
+        are at most: so največ
+        is greater than: je večji kot
+        are greater than: so večje kot
+        is at least: je vsaj
+        are at least: so vsaj
+        is between: je med
+        are between: so med
+        is outside: je izven
+        are outside: so izven
+        is defined: je znan
+        are defined: so znane
+        is: je
+        is one of: je eden izmed
+        is before: je pred
+        are before: so pred
+        is equal or before: je enak ali pred
+        are equal or before: so enake ali pred
+        is after: je za
+        are after: so za
+        is equal or after: je enak ali za
+        are equal or after: so enake ali za
+        contains: vsebuje
+        contain: vsebujejo
+        begins with: se začne z
+        begin with: se začnejo z
+        ends with: se konča z
+        end with: se končajo z
+        All variables: Vse spremenljivke
+        All numeric variables: Vse številke spremenljivke
+        All string variables: Vse besedilne spremenljivke
         class `Error`:
-            '{}': null
+            '{}': false
         def `__init__`:
-            Conditions: null
-            Add Condition: null
-            Add All Variables: null
-            Remove All: null
-            purge_attributes: null
-            Remove unused features: null
-            purge_classes: null
-            Remove unused classes: null
-            auto_commit: null
+            Conditions: Pogoji
+            Add Condition: Dodaj pogoj
+            Add All Variables: Dodaj vse spremenljivke
+            Remove All: Odstrani vse
+            purge_attributes: false
+            Remove unused features: Odstrani neuporabljene vrednosti
+            purge_classes: false
+            Remove unused classes: Odstrani prazne razrede
+            auto_commit: false
         def `add_row`:
-            ×: null
-            '* {font-size: 16pt; color: palette(button-text) }': null
-            '*:hover {color: palette(bright-text)}': null
+            ×: true
+            '* {font-size: 16pt; color: palette(button-text) }': true
+            '*:hover {color: palette(bright-text)}': true
         def `add_all`:
-            Remove existing filters: null
-            'This will replace the existing filters with ': null
-            filters for all variables.: null
+            Remove existing filters: Odstrani vse pogoje
+            'This will replace the existing filters with ': "Zamenjam obstoječe pogoje s "
+            filters for all variables.: pogoji za vse spremenljivke?
         def `_get_lineedit_contents`:
-            controls: null
+            controls: false
         def `_get_value_contents`:
-            controls: null
-            ', ': null
-            Type %s not supported.: null
+            controls: false
+            ', ': false
+            Type %s not supported.: false
         def `set_new_values`:
-            ' defined': null
-            ' one of': null
-            ' and ': null
+            'defined': znan
+            ' one of': ' eden izmed '
+            ' and ': ' in '
         def `_values_to_floats`:
-            Some values could not be parsed as floats: null
-            'in the current locale: {}': null
+            Some values could not be parsed as floats: Nekaterih vrednosti ni mogoče prebrati kot števila
+            'in the current locale: {values}': "pri trenutni nastavitvi sistema: {values}"
         def `commit`:
-            invalid operand: null
+            invalid operand: false
         def `send_report`:
-            No data.: null
-            Data instances: null
-            '{} {}': null
-            is one of: null
-            '{'', ''.join(valnames[:-1])} or {valnames[-1]}': null
-            '{attr} is {valstr}': null
-            '{attr} {name} {attr.values[value]}': null
-            '{attr} {name} {'' and ''.join(map(repr, values))}': null
-            '{attr} {name} {'' and ''.join(values)}': null
-            Instances: null
-            Condition: null
-            ' AND ': null
-            no conditions: null
-            Data: null
-            Matching data: null
-            Non-matching data: null
-            Output: null
-            '{} instances': null
-            None: null
+            No data.: Ni podatkov.
+            Data instances: Število primerov
+            '{} {}': false
+            is one of: je eden izmed
+            '{'', ''.join(valnames[:-1])} or {valnames[-1]}': '{'', ''.join(valnames[:-1])} ali {valnames[-1]}'
+            '{attr} is {valstr}': '{attr} je {valstr}'
+            '{attr} {name} {attr.values[value]}': false
+            '{attr} {name} {'' and ''.join(map(repr, values))}': '{attr} {name} {'' in ''.join(map(repr, values))}'
+            '{attr} {name} {'' and ''.join(values)}': '{attr} {name} {'' in ''.join(values)}'
+            Instances: Primerov
+            Condition: Pogoji
+            ' AND ': ' IN '
+            no conditions: ni pogojev
+            Data: Podatki
+            Matching data: Izbrani podatki
+            "{match_inst} {pl(match_inst, 'instance')}": "{match_inst} {plsi(match_inst, 'primer')}"
+            Non-matching data: Neizbrani podatki
+            "{nonmatch_inst} {pl(nonmatch_inst, 'instance')}": "{nonmatch_inst} {plsi(nonmatch_inst, 'primer')}"
+            Output: Izhod
+            None: Prazno
         def `migrate_context`:
-            conditions: null
+            conditions: false
     class `CheckBoxPopup`:
         def `__init__`:
-            ', ': null
+            ', ': false
     class `DateTimeWidget`:
         def `set_format`:
-            yyyy-MM-dd hh:mm:ss: null
-            '%Y-%m-%d %H:%M:%S': null
-            yyyy-MM-dd: null
-            '%Y-%m-%d': null
-            hh:mm:ss: null
-            '%H:%M:%S': null
-    __main__: null
-    heart_disease: null
+            yyyy-MM-dd hh:mm:ss: false
+            '%Y-%m-%d %H:%M:%S': false
+            yyyy-MM-dd: false
+            '%Y-%m-%d': false
+            hh:mm:ss: false
+            '%H:%M:%S': false
+    __main__: false
+    heart_disease: false
 widgets/data/owsql.py:
     def `is_postgres`:
         display_name: false
@@ -9523,7 +9539,7 @@ widgets/report/report.py:
         Numeric variable '{}': null
         Targets: null
     def `describe_data_brief`:
-        Data instances: null
+        Data instances: Število primerov
 widgets/report/tests/__init__.py:
     def `suite`:
         test*.py: null
