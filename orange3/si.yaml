@@ -4341,81 +4341,82 @@ widgets/data/owdatainfo.py:
     iris: null
 widgets/data/owdatasampler.py:
     class `OWDataSampler`:
-        Data Sampler: null
-        'Randomly draw a subset of data points ': null
-        from the input dataset.: null
-        icons/DataSampler.svg: null
-        Transform: null
-        random: null
+        Data Sampler: Vzorčenje
+        'Randomly draw a subset of data points ': "Naključni vzorec "
+        from the input dataset.: iz vhodne tabele.
+        icons/DataSampler.svg: false
+        Transform: false
+        random: naključno
         class `Inputs`:
-            Data: null
+            Data: Podatki
         class `Outputs`:
-            Data Sample: null
-            Remaining Data: null
+            Data Sample: Vzorec podatkov
+            Remaining Data: Preostali podatki
         class `Information`:
-            Compatibility mode\n: null
-            New versions of widget have swapped outputs for cross validation: null
+            Compatibility mode\n: Združljivostni način\n
+            New versions of widget have swapped outputs for cross validation: Nova različica gradnika ima zamenjane izhode pri prečnem preverjanju
         class `Warning`:
-            Stratification failed\n{}: null
-            Sample is bigger than input: null
+            Stratification failed\n{}: Stratifikacija ni uspela.\n{}
+            Sample is bigger than input: Zahtevani vzorec presega število primerov.
         class `Error`:
-            Number of subsets exceeds data size: null
-            Sample can't be larger than data: null
-            Data is too small to stratify: null
-            Dataset is empty: null
+            Number of subsets exceeds data size: Zahtevano število podmnožic presega število primerov.
+            Sample can't be larger than data: Vzorec ne more imeti več primerov, kot jih je na voljo v vhodni tabeli.
+            Data is too small to stratify: Podatkov ni dovolj za stratifikacijo.
+            Dataset is empty: Tabela podatkov je prazna.
         def `__init__`:
-            Sampling Type: null
-            sampling_type: null
-            'Fixed proportion of data:': null
-            sampleSizePercentage: null
-            '%d %%': null
-            Fixed sample size: null
-            sampleSizeNumber: null
-            'Instances: ': null
-            replacement: null
-            Sample with replacement: null
-            Cross validation: null
-            'Number of subsets:': null
-            number_of_folds: null
-            selectedFold: null
-            'Unused subset:': null
-            'Selected subset:': null
-            Bootstrap: null
-            'Time:': null
-            sampleSizeSqlTime: null
-            ' sec': null
-            Percentage: null
-            sampleSizeSqlPercentage: null
-            ' %': null
-            Options: null
-            use_seed: null
-            Replicable (deterministic) sampling: null
-            stratify: null
-            Stratify sample (when possible): null
-            sql_dl: null
-            Download data to local memory: null
-            Sample Data: null
+            Sampling Type: Vrsta vzorčenja
+            sampling_type: false
+            'Fixed proportion of data:': "Predpisani delež podatkov:"
+            sampleSizePercentage: false
+            '%d %%': true
+            Fixed sample size: "Predpisana velikost vzorca:"
+            sampleSizeNumber: false
+            'Instances: ': "Število primerov: "
+            replacement: false
+            Sample with replacement: "Vzorči s ponavljanjem: "
+            Cross validation: Prečno preverjanje
+            'Number of subsets:': 'Število podmnožic:'
+            number_of_folds: false
+            selectedFold: false
+            'Unused subset:': 'Neuporabljena podmnožica:'
+            'Selected subset:': 'Izbrana podmnožica:'
+            Bootstrap: Zankanje (bootstrap)
+            'Time:': 'Čas:'
+            sampleSizeSqlTime: false
+            ' sec': ' sek'
+            Percentage: Delež
+            sampleSizeSqlPercentage: false
+            ' %': false
+            Options: Možnosti
+            use_seed: false
+            Replicable (deterministic) sampling: Ponovljivo vzorčenje
+            stratify: false
+            Stratify sample (when possible): Stratificiraj (če je možno)
+            sql_dl: false
+            Download data to local memory: Preberi podatke v pomnilnik
+            Sample Data: Vzorči
         def `send_report`:
-            Random sample with {} % of data: null
-            Random data instance: null
-            Random sample with {} data instances: null
-            ', with replacement': null
-            '{self.number_of_folds}-fold cross-validation ': null
-            'without subset #{self.selectedFold}': null
-            Bootstrap: null
-            Undefined: null
-            ', stratified (if possible)': null
-            ', deterministic': null
-            Sampling type: null
-            Input: null
-            '{} instances': null
-            Sample: null
-            Remaining: null
+            "Random sample with {self.sampleSizePercentage} % of data": "Naključen vzorec {plsi_sz(self.sampleSizePercentage)} {self.sampleSizePercentage} % podatkov"
+            Random data instance: Naključen primer iz podatkov
+            "Random sample with {self.sampleSizeNumber} data instances": "Naključen vzorec {plsi_sz(self.sampleSizeNumber)} {self.sampleSizeNumber} {plsi(self.sampleSizeNumber, 'primerom|primeroma|primeri')}"
+            ', with replacement': ', s ponavljanjem'
+            '{self.number_of_folds}-fold cross-validation ': "{self.number_of_folds}-kratno prečno preverjanje "
+            'without subset #{self.selectedFold}': "brez podmnožice #{self.selectedFold}"
+            Bootstrap: Zankanje
+            ', stratified (if possible)': ", stratificirano (če je možno)"
+            ', deterministic': ", ponovljivo"
+            Sampling type: Vrsta vzorčenja
+            Input: Vhod
+            "{len(self.data)} {pl(len(self.data), 'instance')}": "{len(self.data)} {plsi(len(self.data), 'primer')}"
+            Sample: Vzorec
+            "{self.sampled_instances} {pl(self.sampled_instances, 'instance')}": "{self.sampled_instances} {plsi(self.sampled_instances, 'primer')}"
+            Remaining: Preostali
+            "{self.remaining_instances} {pl(self.remaining_instances, 'instance')}": "{self.remaining_instances} {plsi(self.remaining_instances, 'primer')}"
         def `migrate_settings`:
-            sampling_type: null
-            compatibility_mode: null
-    __main__: null
-    iris: null
+            sampling_type: false
+            compatibility_mode: false
+    __main__: false
+    iris: false
 widgets/data/owdatasets.py:
     def `format_exception`:
         \n: false
