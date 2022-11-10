@@ -7340,40 +7340,40 @@ widgets/data/owtransform.py:
     iris: null
 widgets/data/owtranspose.py:
     class `OWTranspose`:
-        Transpose: null
-        Transpose data table.: null
-        Transform: null
-        icons/Transpose.svg: null
+        Transpose: Transponiraj
+        Transpose data table.: Spremeni vrstice v stolpce in obratno
+        Transform: false
+        icons/Transpose.svg: false
         class `Inputs`:
-            Data: null
+            Data: Podatki
         class `Outputs`:
-            Data: null
-        Feature: null
+            Data: Podatki
+        Feature: Spremenljivka
         class `Warning`:
-            'Values are not unique.\nTo avoid multiple ': null
-            'features with the same name, values \nof ': null
-            '''{}'' have been augmented with indices.': null
-            Categorical features have been encoded as numbers.: null
+            'Values are not unique.\nTo avoid multiple ': 'Vrednosti niso unikatne.\n K vrednostim'
+            'features with the same name, values \nof ': '''{}'' so zato dodane številke.'
+            '''{}'' have been augmented with indices.': ''
+            Categorical features have been encoded as numbers.: Kategorične vrednosti so predstavljene z indeksi.
         class `Error`:
-            '{}': null
+            '{}': false
         def `__init__`:
-            feature_type: null
-            Feature names: null
-            Generic: null
-            feature_name: null
-            Type a prefix ...: null
-            Custom feature name: null
-            'From variable:': null
-            feature_names_column: null
-            remove_redundant_inst: null
-            Remove redundant instance: null
+            feature_type: false
+            Feature names: Imena spremenljivk
+            Generic: Generična imena
+            feature_name: false
+            Type a prefix ...: Določi predpono ...
+            Custom feature name: Določi predpono imen spremenljivk
+            'From variable:': 'Po vrednosti spremenljivke:'
+            feature_names_column: false
+            remove_redundant_inst: false
+            Remove redundant instance: Odstrani odvečni primer
         def `send_report`:
-            from variable: null
-            '  ''{}''': null
-            Feature names: null
-            Data: null
-    __main__: null
-    iris: null
+            from variable: po spremenljivki
+            '  ''{}''': false
+            Feature names: Imena spremenljivk
+            Data: Podatki
+    __main__: false
+    iris: false
 widgets/data/owunique.py:
     class `OWUnique`:
         Unique: null
