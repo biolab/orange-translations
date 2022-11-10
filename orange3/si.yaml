@@ -3712,70 +3712,70 @@ widgets/data/owcolor.py:
     heart_disease.tab: false
 widgets/data/owconcatenate.py:
     class `OWConcatenate`:
-        Concatenate: null
-        Concatenate (append) two or more datasets.: null
-        Transform: null
-        icons/Concatenate.svg: null
-        append: null
-        join: null
-        extend: null
+        Concatenate: Stakni tabele
+        Concatenate (append) two or more datasets.: Stakni več tabel eno pod drugo
+        Transform: false
+        icons/Concatenate.svg: false
+        append: stakni
+        join: združi
+        extend: razširi
         class `Inputs`:
-            Primary Data: null
-            Additional Data: null
+            Primary Data: Osnovna tabela
+            Additional Data: Dodatne tabele
         class `Outputs`:
-            Data: null
+            Data: Podatki
         class `Error`:
-            Inputs must be of the same type.: null
+            Inputs must be of the same type.: Podatki morajo biti enake vrste.
         class `Warning`:
-            Variables with duplicated names have been renamed.: null
-        Source ID: null
-        all variables that appear in input tables: null
-        only variables that appear in all tables: null
-        Class attribute: null
-        Attribute: null
-        Meta attribute: null
+            Variables with duplicated names have been renamed.: Spremenljivk s podvojenimi imeni so preimenovane.
+        Source ID: Vir
+        all variables that appear in input tables: spremenljivke iz vseh tabel
+        only variables that appear in all tables: spremenljivke, ki se pojavijo v vseh tabelah
+        Class attribute: Ciljna spremenljivka
+        Attribute: Spremenljivka
+        Meta attribute: Meta spremenljivka
         def `__init__`:
-            Variable Merging: null
-            merge_type: null
-            'When there is no primary table, ': null
-            'the output should contain:': null
-            'The resulting table will have a class only if there ': null
-            is no conflict between input classes.: null
-            ignore_compute_value: null
-            Treat variables with the same name as the same variable,\n: null
-            even if they are computed using different formulae.: null
-            Source Identification: null
-            append_source_column: null
-            Append data source IDs: null
-            'Feature name:': null
-            source_attr_name: null
-            'Place:': null
-            source_column_role: null
-            auto_commit: null
+            Variable Merging: Združevanje spremenljivk
+            merge_type: true
+            'When there is no primary table, ': 'Kadar ni podana osnovna tabela, '
+            'the output should contain:': 'bo izhodna tabela vsebovala:'
+            'The resulting table will have a class only if there ': 'Ciljna spremenljivka bo ohranjena le, če imajo '
+            is no conflict between input classes.: 'vse vhodne tabele isto ciljno spremenljivko.'
+            ignore_compute_value: false
+            Treat variables with the same name as the same variable,\n: Obravnavaj spremenljivke z enakimi imeni kot isto spremenljivko,\n
+            even if they are computed using different formulae.: četudi so izračunane z različnimi formulami oz. iz različnih izvornih spremenljivk.
+            Source Identification: Oznaka vira
+            append_source_column: false
+            Append data source IDs: Vsaki vrstici dodaj ime tabele, iz katere izhaja
+            'Feature name:': 'Ime spremenljivke:'
+            source_attr_name: false
+            'Place:': 'Vrsta:'
+            source_column_role: false
+            auto_commit: false
         def `commit`:
-            name: null
-            '{} ({})': null
-            class_vars: null
-            attributes: null
-            metas: null
+            name: false
+            '{} ({})': true
+            class_vars: false
+            attributes: false
+            metas: false
         def `send_report`:
-            Domain: null
-            from primary data: null
-            Source data ID: null
-            '{} (as {})': null
+            Domain: Domena
+            from primary data: iz osnovne tabele
+            Source data ID: Spremenljivka z imenom vira
+            '{} (as {})': '{} (kot {})'
         def `merge_domains`:
-            attributes: null
-            class_vars: null
-            metas: null
+            attributes: false
+            class_vars: false
+            metas: false
         def `_unique_vars`:
-            AttrDesc: null
-            template: null
-            original: null
-            values: null
-            number_of_decimals: null
-    __main__: null
-    iris: null
-    zoo: null
+            AttrDesc: false
+            template: false
+            original: false
+            values: false
+            number_of_decimals: false
+    __main__: false
+    iris: false
+    zoo: false
 widgets/data/owcontinuize.py:
     class `OWContinuize`:
         Continuize: null
