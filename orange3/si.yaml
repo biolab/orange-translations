@@ -5617,109 +5617,109 @@ widgets/data/owmelt.py:
     __main__: null
     zoo: null
 widgets/data/owmergedata.py:
-    Instance id: null
-    Row index: null
+    Instance id: Identiteta vrstice
+    Row index: Številka vrstice
     class `ConditionBox`:
-        RowItems: null
-        pre_label: null
-        left_combo: null
-        in_label: null
-        right_combo: null
-        remove_button: null
+        RowItems: false
+        pre_label: false
+        left_combo: false
+        in_label: false
+        right_combo: false
+        remove_button: false
         def `add_row`:
-            and: null
-            ×: null
+            and: in
+            ×: true
         def `add_plus_row`:
-            +: null
+            +: true
     class `DomainModelWithTooltips`:
         def `data`:
-            Match rows sequentially: null
-            'Re-match rows from tables obtained from the same ': null
-            source,\n: null
-            'e.g. data from the same file that was split within ': null
-            the workflow.: null
+            Match rows sequentially: Združi istoležne vrstice
+            'Re-match rows from tables obtained from the same ': Združi vrstice, dobljene iz istega vira,
+            source,\n: \n
+            'e.g. data from the same file that was split within ': na primer iste datoteke, ki je bila razdeljena v delotoku.
+            the workflow.: ''
     class `MergeDataContextHandler`:
         def `settings_from_widget`:
-            attr_pairs: null
+            attr_pairs: false
         def `settings_to_widget`:
-            attr_pairs: null
+            attr_pairs: false
         def `match`:
-            attr_pairs: null
+            attr_pairs: false
     class `OWMergeData`:
-        Merge Data: null
-        Merge datasets based on the values of selected features.: null
-        Transform: null
-        icons/MergeData.svg: null
-        join: null
+        Merge Data: Združi vrstice
+        Merge datasets based on the values of selected features.: Združi tabele glede na vrednosti izbranih spremenljivk.
+        Transform: false
+        icons/MergeData.svg: false
+        join: zlivanje
         class `Inputs`:
-            Data: null
-            Data A: null
-            Extra Data: null
-            Data B: null
+            Data: Podatki
+            Data A: false
+            Extra Data: Dodatni podatki
+            Data B: false
         class `Outputs`:
-            Data: null
-            Merged Data A+B: null
-            Merged Data B+A: null
-            Merged Data: null
-        Append columns from Extra data: null
-        Find matching pairs of rows: null
-        Concatenate tables: null
-        The first table may contain, for instance, city names,\n: null
-        and the second would be a list of cities and their coordinates.\n: null
-        Columns with coordinates would then be appended to the output.: null
-        'Input tables contain different features describing the same data ': null
-        instances.\n: null
-        Output contains matched instances. Rows without matches are removed.: null
-        'Output contains all instances. Data from merged instances is ': null
-        merged into single rows.: null
-        Confused about merging options?\nSee the tooltips!: null
-        merging_types: null
+            Data: Podatki
+            Merged Data A+B: false
+            Merged Data B+A: false
+            Merged Data: false
+        Append columns from Extra data: Dodaj podatke iz druge tabele
+        Find matching pairs of rows: Sestavi pare vrstic, ki se ujemajo
+        Concatenate tables: Zlij tabeli
+        The first table may contain, for instance, city names,\n: Prva tabela vključuje stolpec z imeni mest,\n
+        and the second would be a list of cities and their coordinates.\n: druga tabela pa so imena mest in njihove koordinate.\n
+        Columns with coordinates would then be appended to the output.: Koordinate iz druge tabele bodo dodane v pripadajoče vrstice prve.
+        'Input tables contain different features describing the same data ': Tabeli vsebujeta različne lastnosti istih primerov.\n
+        instances.\n: ""
+        Output contains matched instances. Rows without matches are removed.: Gradnik poišče pare, ki se ujemajo. Preostale zavrže.
+        'Output contains all instances. Data from merged instances is ': Izhodni podatki vsebujejo vse primere.\n
+        merged into single rows.: Ujemajoče se vrstice so združene.
+        Confused about merging options?\nSee the tooltips!: Zbegani? Ne razumete izbir?\nObiščite jih z miško in preberite razlage!
+        merging_types: false
         class `Warning`:
-            'Some variables have been renamed ': null
-            to avoid duplicates.\n{}: null
+            'Some variables have been renamed ': Zaradi podvojenih imen so nekatere spremenljivke preimenovane.\n
+            to avoid duplicates.\n{}: "{}"
         class `Error`:
-            Numeric and non-numeric columns ({} and {}) cannot be matched.: null
-            Row index cannot be matched with {}.: null
-            Instance cannot be matched with {}.: null
-            Some combinations of values on the left appear in multiple rows.\n: null
-            'For this type of merging, every possible combination of values ': null
-            on the left should appear at most once.: null
-            Some combinations of values on the right appear in multiple rows.: null
-            \n: null
-            'Every possible combination of values on the right should appear ': null
-            at most once.: null
+            Numeric and non-numeric columns ({} and {}) cannot be matched.: Številskih in kategoričnih stolpcev ({} in {}) ni mogoče primerjati.
+            Row index cannot be matched with {}.: Številke vrstice ni mogoče primerjati z {}.
+            Instance cannot be matched with {}.: Identitete vrstice ni mogoče primerjati z {}.
+            Some combinations of values on the left appear in multiple rows.\n: Nekatere kombinacije vrednosti na levi se pojavijo v več vrsticah.\n
+            'For this type of merging, every possible combination of values ': Za to vrsto združevanja morajo biti vse kombinacije unikatne.
+            on the left should appear at most once.: ""
+            Some combinations of values on the right appear in multiple rows.: Nekatere kombinacije vrednosti na desni se pojavijo v več vrsticah.
+            \n: true
+            'Every possible combination of values on the right should appear ': Vsaka kombinacija vrednosti se sme pojaviti največ enkrat.
+            at most once.: ""
         def `__init__`:
-            merging: null
-            Merging: null
-            matches: null
-            Row matching: null
+            merging: false
+            Merging: Združevanje
+            matches: se ujema z
+            Row matching: Kriteriji za ujemanje vrstic
         def `send_report`:
-            Merging: null
-            Match: null
-            ', ': null
-            '{self._get_col_name(left)} with {self._get_col_name(right)}': null
+            Merging: Združevanje
+            Match: Ujemanje
+            ', ': false
+            '{self._get_col_name(left)} with {self._get_col_name(right)}': '{self._get_col_name(left)} (levo) in {self._get_col_name(right)} (desno)'
         def `_get_col_name`:
-            '''{obj.name}''': null
+            '''{obj.name}''': false
         def `_join_table_by_indices`:
-            name: null
-            attributes: null
+            name: false
+            attributes: false
         def `_domain_rename_duplicates`:
-            ', ': null
+            ', ': false
         def `migrate_settings`:
             def `mig_value`:
-                Position (index): null
-                Source position (index): null
-            augment: null
-            merge: null
-            combine: null
-            merging: null
-            attr_pairs: null
-            attr_{oper}_data: null
-            attr_{oper}_extra: null
-            context_settings: null
-    __main__: null
-    tests/data-gender-region: null
-    tests/data-regions: null
+                Position (index): false
+                Source position (index): false
+            augment: false
+            merge: false
+            combine: false
+            merging: false
+            attr_pairs: false
+            attr_{oper}_data: false
+            attr_{oper}_extra: false
+            context_settings: false
+    __main__: false
+    tests/data-gender-region: false
+    tests/data-regions: false
 widgets/data/owneighbors.py:
     Euclidean: null
     Manhattan: null
