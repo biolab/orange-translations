@@ -6902,88 +6902,88 @@ widgets/data/owselectbydataindex.py:
     iris.tab: null
 widgets/data/owselectcolumns.py:
     class `VariablesListItemModel`:
-        application/x-Orange-VariableListModelData: null
+        application/x-Orange-VariableListModelData: false
         def `mimeData`:
-            _items: null
+            _items: false
         def `dropMimeData`:
-            _items: null
+            _items: false
     class `SelectAttributesDomainContextHandler`:
         def `encode_setting`:
-            domain_role_hints: null
+            domain_role_hints: false
         def `decode_setting`:
-            domain_role_hints: null
+            domain_role_hints: false
         def `match`:
-            domain_role_hints: null
+            domain_role_hints: false
             available: null
         def `filter_value`:
-            domain_role_hints: null
+            domain_role_hints: false
     class `OWSelectAttributes`:
-        Select Columns: null
-        'Select columns from the data table and assign them to ': null
-        data features, classes or meta variables.: null
-        Transform: null
-        icons/SelectColumns.svg: null
-        filter: null
-        attributes: null
-        target: null
-        variable: null
+        Select Columns: Izbor stolpcev
+        'Select columns from the data table and assign them to ': 'Izbor stolpcev in določitev njihovih vlog '
+        data features, classes or meta variables.: '(spremenljivka, ciljna spremenljivka, meta spremenljivka)'
+        Transform: false
+        icons/SelectColumns.svg: false
+        filter: false
+        attributes: false
+        target: false
+        variable: false
         class `Inputs`:
-            Data: null
-            Features: null
+            Data: Podatki
+            Features: Spremenljivke
         class `Outputs`:
-            Data: null
-            Features: null
+            Data: Podatki
+            Features: Spremenljivke
         class `Warning`:
-            Features and data domain do not match: null
-            Most widgets do not support multiple targets: null
+            Features and data domain do not match: Tabela ne vsebuje nobene od podanih vhodnih spremenljivk.
+            Most widgets do not support multiple targets: Večina gradnikov podpira le eno ciljno spremenljivko.
         def `__init__`:
-            Ignored: null
-            Features: null
-            use_input_features: null
-            Use input features: null
-            Always use input features: null
-            Target: null
-            Metas: null
-            '>': null
-            Reset: null
-            ignore_new_features: null
-            Ignore new variables by default: null
-            'When the widget receives data with additional columns ': null
-            'they are added to the available attributes column if ': null
-            <i>Ignore new variables by default</i> is checked.: null
-            auto_commit: null
+            Ignored: Odstranjeno
+            Features: Spremenljivke
+            use_input_features: false
+            Use input features: Uporabi vhodne spremenljivke
+            Always use input features: Vedno uporabi vhodne spremenljivke
+            Target: Cilj
+            Metas: Meta spremenljivke
+            '>': true
+            Reset: Povrni
+            ignore_new_features: false
+            Ignore new variables by default: Privzeto odstrani nove spremenljivke
+            'When the widget receives data with additional columns ': 'Če je ta možnost izbrana, bo gradnik v primeru,\n'
+            'they are added to the available attributes column if ': 'da prejme podatke z novimi stolpci, le-te\n'
+            <i>Ignore new variables by default</i> is checked.: 'privzeto dodal med odstranjene spremenljivke.'
+            auto_commit: false
         def `__use_features_changed`:
-            use_features_box: null
+            use_features_box: false
         def `set_data`:
-            attribute: null
-            class: null
-            meta: null
-            available: null
+            attribute: false
+            class: false
+            meta: false
+            available: false
         def `restore_hints`:
-            attribute: null
-            meta: null
-            class: null
-            available: null
+            attribute: false
+            meta: false
+            class: false
+            available: false
         def `update_domain_role_hints`:
-            available: null
-            attribute: null
-            class: null
-            meta: null
+            available: false
+            attribute: false
+            class: false
+            meta: false
         def `update_var_counts`:
-            '{name} ({nvars}/{nall})': null
-            '{name} ({nvars})': null
+            '{name} ({nvars}/{nall})': true
+            '{name} ({nvars})': true
         def `update_interface_state`:
-            '>': null
-            <: null
+            '>': true
+            <: true
         def `send_report`:
-            Input data: null
-            Output data: null
-            No changes.: null
-            '%i (%s)': null
+            Input data: Vhodni podatki
+            Output data: Izhodni podatki
+            No changes.: Ni sprememb.
+            '{len(diff)} ({", ".join(x.name for x in diff)})': true
             ', ': null
-            Removed: null
-    __main__: null
-    brown-selected: null
+            Removed: Odstranjene
+    __main__: false
+    brown-selected: false
 widgets/data/owselectrows.py:
     class `SelectRowsContextHandler`:
         def `encode_setting`:
