@@ -7383,28 +7383,28 @@ widgets/data/owtranspose.py:
     iris: false
 widgets/data/owunique.py:
     class `OWUnique`:
-        Unique: null
-        icons/Unique.svg: null
-        Filter instances unique by specified key attribute(s).: null
-        Transform: null
+        Unique: Enkratni
+        icons/Unique.svg: false
+        Filter instances unique by specified key attribute(s).: Filtriraj primere tako, da se ključne vrednosti ne ponavljajo
+        Transform: false
         class `Inputs`:
-            Data: null
+            Data: Podatki
         class `Outputs`:
-            Data: null
-        Last instance: null
-        First instance: null
-        Middle instance: null
-        Random instance: null
-        Discard non-unique instances: null
+            Data: Podatki
+        Last instance: Zadnji primer
+        First instance: Prvi primer
+        Middle instance: Srednji primer
+        Random instance: Naključni primer
+        Discard non-unique instances: Zavrzi skupine z več primeri
         def `__init__`:
-            selected_vars: null
-            Group by: null
-            tiebreaker: null
-            'Instance to select in each group:': null
-            autocommit: null
-            Commit: null
-    __main__: null
-    iris: null
+            selected_vars: false
+            Group by: Upoštevane spremenljivke
+            tiebreaker: false
+            'Instance to select in each group:': 'Primer, ki predstavlja posamično skupino:'
+            autocommit: false
+            Commit: Uveljavi
+    __main__: false
+    iris: false
 widgets/data/utils/histogram.py:
     class `ProportionalBarItem`:
         def `__init__`:
