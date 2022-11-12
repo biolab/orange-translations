@@ -5452,70 +5452,70 @@ widgets/data/owfile.py:
             recent_urls: false
     __main__: false
 widgets/data/owgroupby.py:
-    Aggregation: null
-    function: null
-    types: null
+    Aggregation: false
+    function: false
+    types: false
     def `concatenate`:
-        ' ': null
-    Mean: null
-    mean: null
-    Median: null
-    median: null
-    Mode: null
-    Standard deviation: null
-    std: null
-    Variance: null
-    var: null
-    Sum: null
-    sum: null
-    Concatenate: null
-    Min. value: null
-    min: null
-    Max. value: null
-    max: null
-    Span: null
-    First value: null
-    first: null
-    Last value: null
-    last: null
-    Random value: null
-    Count defined: null
-    count: null
-    Count: null
-    size: null
-    Proportion defined: null
+        ' ': false
+    Mean: Povprečje
+    mean: false
+    Median: Mediana
+    median: false
+    Mode: Najpogostejša
+    Standard deviation: Standardna deviacija
+    std: false
+    Variance: Varianca
+    var: false
+    Sum: Vsota
+    sum: false
+    Concatenate: Stakni
+    Min. value: Najmanjša vrednost
+    min: false
+    Max. value: Največja vrednost
+    max: false
+    Span: Razpon
+    First value: Prva vrednost
+    first: false
+    Last value: Zadnja vrednost
+    last: false
+    Random value: Naključna
+    Count defined: Število znanih
+    count: false
+    Count: Velikost skupine
+    size: false
+    Proportion defined: Delež znanih
     def `_run`:
-        Aggregating: null
-    Attributes: null
-    Aggregations: null
+        Aggregating: Računam
+    Attributes: Spremenljivke
+    Aggregations: Funkcije
     class `VarTableModel`:
         def `__init__`:
-            OWGroupBy: null
+            OWGroupBy: false
         def `data`:
-            ' and {len(aggs) - 3} more': null
-            ', ': null
+            ' and {len(aggs) - 3} more': " in {len(aggs) - 3} {plsi(len(aggs) - 3, 'druga|drugi|druge|drugih')}"
+            ', ': false
     class `OWGroupBy`:
-        Group by: null
-        Transform: null
-        icons/GroupBy.svg: null
-        aggregate: null
-        group by: null
+        Group by: Združi po
+        Transform: false
+        icons/GroupBy.svg: false
+        aggregate: agregiraj
+        group by: skupine
         class `Inputs`:
-            Data: null
-            Input data table: null
+            Data: Podatki
+            Input data table: Tabela vhodnih podatkov
         class `Outputs`:
-            Data: null
-            Aggregated data: null
+            Data: Podatki
+            Aggregated data: Agregirani podatki
         class `Error`:
-            '{}': null
+            '{}': false
         def `__init_control_area`:
-            Group by: null
-            auto_commit: null
+            Group by: Združi po
+            auto_commit: false
         def `__init_main_area`:
-            ' ': null
-            Aggregations: null
-    __main__: null
-    iris: null
+            ' ': false
+            Aggregations: Funkcije
+    __main__: false
+    iris: false
 widgets/data/owimpute.py:
     class `DisplayFormatDelegate`:
         def `initStyleOption`:
