@@ -3577,45 +3577,54 @@ widgets/data/__init__.py:
     '#FFD39F': null
 widgets/data/owaggregatecolumns.py:
     class `OWAggregateColumns`:
-        Aggregate Columns: null
-        Compute a sum, max, min ... of selected columns.: null
-        Transform: null
-        icons/AggregateColumns.svg: null
-        aggregate: null
-        sum: null
-        product: null
-        max: null
-        min: null
-        mean: null
-        median: null
-        variance: null
+        Aggregate Columns: Agregiraj stolpce
+        Compute a sum, max, min ... of selected columns.: Izračunaj vsoto, minimum, maksimum ... izbranih stolpcev.
+        Transform: false
+        icons/AggregateColumns.svg: false
+        aggregate: agregacija
+        sum: vsota
+        product: zmnožek
+        max: maksimum
+        min: minimum
+        mean: povprečje
+        median: mediana
+        variance: varianca
         class `Inputs`:
-            Data: null
+            Data: Podatki
         class `Outputs`:
-            Data: null
-        Sum: null
-        agg: null
-        Product: null
-        Min: null
-        Max: null
-        Mean: null
-        Variance: null
-        Median: null
+            Data: Podatki
+        Sum: Vsota
+        agg: false
+        Product: Produkt
+        Min: false
+        Minimal value: Najmanjša vrednost
+        Max: Maksimum
+        Maximal value: Največja vrednost
+        Mean: false
+        Mean value: Povprečna vrednost
+        Variance: Varianca
+        Median: Mediana
         def `__init__`:
-            variables: null
-            operation: null
-            'Operator: ': null
-            var_name: null
-            'Variable name: ': null
+            Variable selection: Izbor spremenljivk
+            All: "Vse"
+            All, including meta attributes: Vse, vključno z meta atributi
+            Features from separate input signal: Stolpci, določeni z vhodnim signalom
+            Selected variables: Izbrane spremenljivke
+            variables: false
+            operation: false
+            Operation: Operacija
+            var_name: false
+            'Output variable name: ': "Ime izhodne spremenljivke: "
+        def `_and_others`:
+            ', ': true
+            "'{variables[0].name}'": true
+            " and {len(variables) - limit} more": ' in še {len(variables) - limit} {plsi(len(variables) - limit, "druga|drugi|druge|drugih")}'
+            ' and ''{variables[-1].name}''': ' in ''{variables[-1].name}'''
         def `send_report`:
-            ', ': null
-            '''{var.name}''': null
-            ' and {len(self.variables) - 30} others': null
-            ' and ''{self.variables[-1].name}''': null
-            'Output:': null
-            '''{self._new_var_name()}'' as {self.operation.lower()} of {var_list}': null
-    __main__: null
-    brown-selected: null
+            'Output:': "Izhod:"
+            '''{self._new_var_name()}'' as {self.operation.lower()} of {var_list}': '''{self._new_var_name()}'' kot {self.operation.lower()} stolpcev {var_list}'
+    __main__: false
+    brown-selected: false
 widgets/data/owcolor.py:
     class `AttrDesc`:
         def `to_dict`:
