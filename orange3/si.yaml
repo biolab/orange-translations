@@ -6021,92 +6021,92 @@ widgets/data/owpaintdata.py:
 widgets/data/owpivot.py:
     class `AggregationFunctionsEnum`:
         def `__str__`:
-            _: null
-            ' ': null
+            _: false
+            ' ': false
     class `Pivot`:
         def `__init__`:
-            Row variable should be DiscreteVariable: null
-            ' or ContinuousVariable': null
-            Column variable should be DiscreteVariable: null
-            Total: null
-            total: null
+            Row variable should be DiscreteVariable: false
+            ' or ContinuousVariable': false
+            Column variable should be DiscreteVariable: false
+            Total: Skupno
+            total: false
         def `_create_group_tables`:
-            ({str(fun).lower()}): null
-            '{var.name} ({str(fun).lower()})': null
-            table: null
-            total_h: null
-            total_v: null
-            total: null
+            ({str(fun).lower()}): false
+            '{var.name} ({str(fun).lower()})': false
+            table: false
+            total_h: false
+            total_v: false
+            total: false
         def `_create_pivot_tables`:
-            table: null
-            total_h: null
-            total_v: null
-            total: null
+            table: false
+            total_h: false
+            total_v: false
+            total: false
         def `__get_pivot_tab_domain`:
             def `map_values`:
-                nan: null
-            have_date: null
-            have_time: null
-            '{v}': null
-            Total: null
-            Aggregate: null
+                nan: false
+            have_date: false
+            have_time: false
+            '{v}': false
+            Total: Skupno
+            Aggregate: Vrednost
         def `__get_pivot_tab_x`:
-            fill_value: null
-            dtype: null
+            fill_value: false
+            dtype: false
         def `count_defined`:
-            nan: null
+            nan: false
     class `PivotTableView`:
-        Total: null
+        Total: Skupno
         def `_draw_lines`:
-            t: null
+            t: false
         def `_resize`:
-            ' ': null
+            ' ': false
     class `OWPivot`:
-        Pivot Table: null
-        Reshape data table based on column values.: null
-        Transform: null
-        icons/Pivot.svg: null
-        pivot: null
-        group: null
-        aggregate: null
+        Pivot Table: Pivotna tabela
+        Reshape data table based on column values.: Preoblikuj podatke glede na vrednosti stolpcev.
+        Transform: false
+        icons/Pivot.svg: false
+        pivot: pivot
+        group: skupine
+        aggregate: agregacija
         class `Inputs`:
-            Data: null
+            Data: Podatki
         class `Outputs`:
-            Pivot Table: null
-            Filtered Data: null
-            Grouped Data: null
+            Pivot Table: Pivotna tabela
+            Filtered Data: Izbrani podatki
+            Grouped Data: Skupine podatkov
         class `Warning`:
-            Column feature should be selected.: null
-            Some aggregations ({}) cannot be computed.: null
-            Some variables have been renamed in some tables: null
-            to avoid duplicates.\n{}: null
-            Selected variable has too many values.: null
-            At least 1 primitive variable is required.: null
+            Column feature should be selected.: Izbrani je potrebno spremenljivko za stolpce.
+            Some aggregations ({}) cannot be computed.: Nekaterih vrednosti ({}) ni mogoče izračunati.
+            Some variables have been renamed in some tables: Spremenljivke s podvojenimi imeni so
+            to avoid duplicates.\n{}: preimenovane.\n{}
+            Selected variable has too many values.: Izbrana spremenljivka ima preveč različnih vrendosti.
+            At least 1 primitive variable is required.: Podatki morajo vsebovati vsaj eno nebesedilno spremenljivko.
         def `_add_control_area_controls`:
-            Rows: null
-            row_feature: null
-            Columns: null
-            col_feature: null
-            (Same as rows): null
-            Values: null
-            val_feature: null
-            (None): null
-            auto_commit: null
+            Rows: Vrstice
+            row_feature: false
+            Columns: Stolpci
+            col_feature: false
+            (Same as rows): (Isti kot vrstice)
+            Values: Vrednosti
+            val_feature: false
+            (None): (Brez)
+            auto_commit: false
         def `__add_aggregation_controls`:
-            Aggregations: null
+            Aggregations: Združevanje
         def `skipped_aggs`:
-            ', ': null
+            ', ': false
         def `init_attr_values`:
-            row_feature: null
-            col_feature: null
-            val_feature: null
+            row_feature: false
+            col_feature: false
+            val_feature: false
         def `send_report`:
-            Row feature: null
-            Column feature: null
-            Value feature: null
-            Group by: null
-    __main__: null
-    heart_disease: null
+            Row feature: Spremenljivka v vrsticah
+            Column feature: Spremenljivka v stolpcih
+            Value feature: Vrednost
+            Group by: Združi po
+    __main__: false
+    heart_disease: false
 widgets/data/owpreprocess.py:
     class `DiscretizeEditor`:
         n: null
@@ -7320,18 +7320,18 @@ widgets/data/owtable.py:
     housing: false
 widgets/data/owtransform.py:
     class `OWTransform`:
-        Apply Domain: null
-        Applies template domain on data table.: null
-        Transform: null
-        icons/Transform.svg: null
-        transform: null
+        Apply Domain: Spremeni domeno
+        Applies template domain on data table.: Spremeni vhodne podatke glede na domeno iz vzorca.
+        Transform: false
+        icons/Transform.svg: false
+        transform: false
         class `Inputs`:
-            Data: null
-            Template Data: null
+            Data: Podatki
+            Template Data: Podatki z domeno
         class `Outputs`:
-            Transformed Data: null
+            Transformed Data: Spremenjeni podatki
         class `Error`:
-            An error occurred while transforming data.\n{}: null
+            An error occurred while transforming data.\n{}: Napake med spreminjanjem domene.\n{}
         def `__init__`:
             ? '
 
@@ -7347,13 +7347,17 @@ widgets/data/owtransform.py:
                 like, for instance, discretization, feature construction, PCA etc.
 
                 '
-            : null
+            : "Gradnik prejme tablo Podatki in na njej izvede enake transformacije,\n
+               kot so doletele tabelo Podatki z domeno.\n\n
+               To vključuje izbiranje podmnožic sprmenljivk kot tudi računanje\n
+               spremenljivk iz drugih sporemenljivk, na primer diskretizacija, PCA ipd.
+            "
         def `send_report`:
-            Data: null
-            Template data: null
-            Transformed data: null
-    __main__: null
-    iris: null
+            Data: Podatki
+            Template data: Podatki z domeno
+            Transformed data: Spremenjeni podatki
+    __main__: false
+    iris: false
 widgets/data/owtranspose.py:
     class `OWTranspose`:
         Transpose: Transponiraj
