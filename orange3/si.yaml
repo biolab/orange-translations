@@ -4421,82 +4421,82 @@ widgets/data/owdatasampler.py:
     iris: null
 widgets/data/owdatasets.py:
     def `format_exception`:
-        \n: null
+        \n: false
     class `OWDataSets`:
-        Datasets: null
-        Load a dataset from an online repository: null
-        icons/DataSets.svg: null
-        orangecontrib.prototypes.widgets.owdatasets.OWDataSets: null
-        online: null
-        data sets: null
-        https://datasets.biolab.si/: null
-        datasets: null
-        islocal: null
-        label: null
-        title: null
-        Title: null
-        size: null
-        Size: null
-        instances: null
-        Instances: null
-        variables: null
-        Variables: null
-        target: null
-        Target: null
-        tags: null
-        Tags: null
+        Datasets: Zbirke podatkov
+        Load a dataset from an online repository: Naloži podatke s spletnega skladišča
+        icons/DataSets.svg: false
+        orangecontrib.prototypes.widgets.owdatasets.OWDataSets: false
+        online: true
+        data sets: true
+        https://datasets.biolab.si/: false
+        datasets: false
+        islocal: false
+        label: false
+        title: false
+        Title: Ime
+        size: false
+        Size: Velikost
+        instances: false
+        Instances: Primerov
+        variables: false
+        Variables: Spremenljivke
+        target: false
+        Target: Ciljna spr.
+        tags: false
+        Tags: Oznake
         class `Error`:
-            Could not fetch dataset list: null
+            Could not fetch dataset list: Ne morem prebrati seznama
         class `Warning`:
-            'Could not fetch datasets list, only local ': null
-            cached datasets are shown: null
+            'Could not fetch datasets list, only local ': Ne morem prebrati seznama, kažem
+            cached datasets are shown: le lokalno shranjene podatke
         class `Outputs`:
-            Data: null
+            Data: Podatki
         def `__init__`:
-            label: null
-            _header_index: null
-            Search for data set ...: null
-            Press Return or double-click to send: null
-            Description: null
-            splitter_state: null
-            Initializing: null
+            label: false
+            _header_index: false
+            Search for data set ...: Poišči podatke ...
+            Press Return or double-click to send: Pritisni Enter ali dvoklikni za izbor
+            Description: Opis
+            splitter_state: false
+            Initializing: Zaganjam
         def `_parse_info`:
-            version: null
+            version: false
         def `create_model`:
-            ' ': null
-            ', ': null
+            ' ': false
+            ', ': true
         def `__set_index`:
             Error while fetching updated index: null
             X: null
-            '888 bytes ': null
-            '9999.9 MB ': null
-            '100000000': null
-            '1000000': null
+            '888 bytes ': '888 bajtov '
+            '9999.9 MB ': true
+            '100000000': false
+            '1000000': false
         def `__update_cached_state`:
-            ' ': null
+            ' ': false
         def `commit`:
-            Fetching...: null
+            Fetching...: Pobiram...
         def `__commit_complete`:
-            'Error:': null
+            'Error:': 'Napaka:'
     def `variable_icon`:
-        categorical: null
-        x: null
-        numeric: null
+        categorical: false
+        x: false
+        numeric: false
     def `make_html_list`:
-        '"margin: 5px; text-indent: -40px; margin-left: 40px;"': null
+        '"margin: 5px; text-indent: -40px; margin-left: 40px;"': false
         def `format_item`:
-            <p style={}><small>{}</small></p>: null
-        \n: null
+            <p style={}><small>{}</small></p>: false
+        \n: false
     def `description_html`:
-        ' ({})': null
-        ', from {}': null
-        <b>{}</b>{}{}: null
-        <p>{}</p>: null
-        <small><b>See Also</b>\n: null
-        </small>: null
-        <small><b>References</b>\n: null
-        \n: null
-    __main__: null
+        ' ({})': true
+        ', from {}': ', z {}'
+        <b>{}</b>{}{}: true
+        <p>{}</p>: true
+        <small><b>See Also</b>\n: <small><b>Glej tudi</b>\n
+        </small>: true
+        <small><b>References</b>\n: <small><b>Viri</b>\n
+        \n: true
+    __main__: false
 widgets/data/owdiscretize.py:
     \s*,\s*: null
     year: null
