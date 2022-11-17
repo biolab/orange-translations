@@ -4021,245 +4021,243 @@ widgets/data/owcreateinstance.py:
     __main__: null
     housing: null
 widgets/data/owcsvimport.py:
-    T: null
-    K: null
-    E: null
-    OWCSVFileImport: null
+    T: false
+    K: false
+    E: false
+    OWCSVFileImport: false
     class `Options`:
         def `__init__`:
-            utf-8: null
-            ColumnType: null
-            .: null
+            utf-8: false
+            ColumnType: false
+            .: ","
         def `__repr__`:
-            '{}{!r}': null
+            '{}{!r}': false
         def `as_dict`:
-            encoding: null
-            delimiter: null
-            quotechar: null
-            doublequote: null
-            skipinitialspace: null
-            quoting: null
-            columntypes: null
-            rowspec: null
-            decimal_separator: null
-            group_separator: null
+            encoding: false
+            delimiter: false
+            quotechar: false
+            doublequote: false
+            skipinitialspace: false
+            quoting: false
+            columntypes: false
+            rowspec: false
+            decimal_separator: false
+            group_separator: false
         def `from_dict`:
-            encoding: null
-            delimiter: null
-            quotechar: null
-            doublequote: null
-            quoting: null
-            skipinitialspace: null
-            columntypes: null
-            rowspec: null
-            decimal_separator: null
-            .: null
-            group_separator: null
+            encoding: false
+            delimiter: false
+            quotechar: false
+            doublequote: false
+            quoting: false
+            skipinitialspace: false
+            columntypes: false
+            rowspec: false
+            decimal_separator: false
+            .: ","
+            group_separator: false
         def `spec_as_encodable`:
-            start: null
-            stop: null
-            value: null
+            start: false
+            stop: false
+            value: false
         def `spec_from_encodable`:
-            start: null
-            stop: null
-            value: null
+            start: false
+            stop: false
+            value: false
     class `CSVImportDialog`:
         def `__init__`:
-            dialog-button-box: null
+            dialog-button-box: false
         def `options`:
-            decimal: null
-            group: null
+            decimal: false
+            group: false
         def `restoreDefaults`:
-            utf-8: null
+            utf-8: false
         def `__update_preview`:
-            rb: null
+            rb: false
     def `dialog_button_box_set_enabled`:
-        __p_dialog_button_box_set_enabled: null
+        __p_dialog_button_box_set_enabled: false
     class `VarPathItem`:
         def `data`:
-            ${{{vpath.name}}}/{vpath.relpath}: null
-            ' (missing)': null
+            ${{{vpath.name}}}/{vpath.relpath}: true
+            ' (missing)': ' (ne obstaja)'
     class `ImportItem`:
         def `fromPath`:
-            ImportItem: null
-            ${{{path.name}}}/{path.relpath}: null
+            ImportItem: false
+            ${{{path.name}}}/{path.relpath}: true
     text/csv: null
-    Text - comma separated: null
-    '*.csv': null
-    '*': null
-    text/tab-separated-values: null
-    Text - tab separated: null
-    '*.tsv': null
-    text/plain: null
-    Text - all files: null
-    '*.txt': null
+    Text - comma separated: Besedilo - stolpci ločeni z vejicami
+    '*.csv': false
+    '*': false
+    text/tab-separated-values: false
+    Text - tab separated: Besedilo - stolpci ločeni s tabulatorji
+    '*.tsv': false
+    text/plain: false
+    Text - all files: Vse besedilne datoteke
+    '*.txt': false
     class `FileDialog`:
         def `filterStr`:
-            '{f.name} ({'', ''.join(f.globs)})': null
+            '{f.name} ({'', ''.join(f.globs)})': true
     def `default_options_for_mime_type`:
-        text/csv: null
-        text/tab-separated-values: null
-        utf-8: null
-        utf-16: null
-        iso8859-1: null
+        text/csv: false
+        text/tab-separated-values: false
+        utf-8: false
+        utf-16: false
+        iso8859-1: iso8859-2
     class `OWCSVFileImport`:
-        CSV File Import: null
-        Import a data table from a CSV formatted file.: null
-        icons/CSVFile.svg: null
-        Data: null
-        file: null
-        load: null
-        read: null
-        open: null
-        csv: null
+        CSV File Import: Uvoz datoteke CSV
+        Import a data table from a CSV formatted file.: Prebere podatkovno tabelo v obliki CSV
+        icons/CSVFile.svg: false
+        Data: true
+        file: datoteka
+        load: nalaganje
+        read: branje
+        open: odpri
+        csv: true
         class `Outputs`:
-            Data: null
-            Loaded data set.: null
-            Data Frame: null
+            Data: Podatki
+            Loaded data set.: Prebrani podatki.
+            Data Frame: Podatkovni okvir
         class `Error`:
-            Unexpected error: null
-            Encoding error\n: null
-            'The file might be encoded in an unsupported encoding or it ': null
-            might be binary: null
-        directory: null
-        filter: null
+            Unexpected error: Nepričakovana napaka
+            Encoding error\n: Napaka v kodiranju besedila
+            'The file might be encoded in an unsupported encoding or it ': 'Datoteka uporablja nepodprto kodiranje, '
+            might be binary: 'morda pa je binarna'
+        directory: false
+        filter: false
         def `__init__`:
-            'File:': null
-            recent-combo: null
-            Recent files.: null
-            Recent files…: null
-            …: null
-            Browse filesystem: null
+            'File:': 'Datoteka:'
+            recent-combo: falsed
+            Recent files.: Nedavne datoteke.
+            Recent files…: Nedavne datoteke…
+            …: true
+            Browse filesystem: Izberi datoteko
             Import any file…: null
-            Import relative to workflow file…: null
-            Import a file within the workflow file directory: null
-            basedir: null
-            Info: null
-            Load: null
-            Import Options…: null
-            'button-layout: {:d};': null
+            Import relative to workflow file…: Uvozi poljubno datoteko…
+            Import a file within the workflow file directory: Uvozi datoteko v mapi s trenutnim delotokom
+            basedir: false
+            Info: true
+            Load: Naloži
+            Import Options…: Nastavitve branja…
+            'button-layout: {:d};': false
         def `workflowEnvChanged`:
-            basedir: null
+            basedir: false
         def `_browse_for_missing`:
             def `accepted`:
-                text/plain: null
+                text/plain: false
         def `_browse_dialog`:
-            Open Data File: null
-            directory: null
-            filter: null
+            Open Data File: Odpri datoteko s podatki
+            directory: false
+            filter: false
             def `store_state`:
-                directory: null
-                filter: null
+                directory: false
+                filter: false
         def `_might_be_binary_mb`:
-            The '{basename}' may be a binary file.\n: null
-            Are you sure you want to continue?: null
+            The '{basename}' may be a binary file.\n: "'{basename}' je najbrž binarna datoteka.\\n"
+            Are you sure you want to continue?: Vseeno nadaljujem?
         def `_path_must_be_relative_mb`:
-            Invalid path: null
-            Selected path is not within '{prefix}': null
+            Invalid path: Napačna mapa
+            Selected path is not within '{prefix}': Mapa mora biti znotraj '{prefix}'
         def `browse`:
-            text/plain: null
-            Import Options: null
+            text/plain: false
+            Import Options: Nastavitve branja
         def `_activate_import_dialog`:
-            Import Options: null
-            size: null
+            Import Options: Nastavitve branja
+            size: false
             def `store_size`:
-                size: null
-        path: null
-        options: null
+                size: false
+        path: false
+        options: false
         def `_local_settings`:
-            '{}.ini': null
+            '{}.ini': false
         def `_note_recent`:
-            recent: null
-            path: null
-            options: null
+            recent: false
+            path: false
+            options: false
         def `__set_read_progress`:
-            qint64: null
+            qint64: false
         def `cancel`:
-            Cancelled: null
-            <div>Cancelled<br/><small>Press 'Reload' to try again</small></div>: null
+            Cancelled: Prekinjeno
+            <div>Cancelled<br/><small>Press 'Reload' to try again</small></div>: <div>Prekinjeno<br/><small>Pritisni 'Naloži ponovno', da ponovim poskus</small></div>
         def `__set_running_state`:
-            Running: null
-            Restart: null
-            '<div>Loading: <i>{}</i><br/>': null
+            Running: V teku
+            Restart: Ponovno
+            '<div>Loading: <i>{}</i><br/>': '<div>Branje: <i>{}</i><br/>'
         def `__clear_running_state`:
-            Reload: null
+            Reload: Naloži ponovno
         def `__set_error_state`:
-            '<div><i>{basename}</i> was not loaded due to a text encoding ': null
-            'error. The file might be saved in an unknown or invalid ': null
-            encoding, or it might be a binary file.</div>: null
-            '<div><i>{basename}</i> was not loaded due to an error:': null
-            '<p style=''white-space: pre;''>{err}</p>': null
+            '<div><i>{basename}</i> was not loaded due to a text encoding ': 'Datoteke <div><i>{basename}</i> ne morem prebrati, ker je shranjena v neznanem'
+            'error. The file might be saved in an unknown or invalid ': kodiranju ali pa je binarna.
+            encoding, or it might be a binary file.</div>: </div>
+            '<div><i>{basename}</i> was not loaded due to an error:': 'Datoteke <div><i>{basename}</i> ne morem prebrati:'
+            '<p style=''white-space: pre;''>{err}</p>': true
         def `_update_status_messages`:
-            def `pluralize`:
-                s: null
-            '{n_instances} row{plural_1}, ': null
-            '{n_features} feature{plural_2}, ': null
-            '{n_meta} meta{plural_3}': null
+            "{n_instances} {pl(n_instances, 'row')}, ": "{n_instances} {plsi(n_instances, 'vrstica')}, "
+            "{n_features} {pl(n_features, 'feature')}, ": "{n_features} {plsi(n_features, 'spremenljivka')}, "
+            "{n_meta} {pl(n_meta, 'meta')}": "{n_meta} meta {plsi(n_meta, 'spremenljivka')}"
         def `itemsFromSettings`:
-            recent: null
-            path: null
-            options: null
-            Could not reconstruct options for '%s': null
+            recent: false
+            path: false
+            options: false
+            Could not reconstruct options for '%s': false
         def `_replacements`:
-            basedir: null
+            basedir: false
         def `_restoreState`:
-            Failed to restore '%s': null
+            Failed to restore '%s': false
         def `migrate_settings`:
-            compatibility_mode: null
-            _session_items: null
-            _session_items_v2: null
+            compatibility_mode: false
+            _session_items: false
+            _session_items_v2: false
     def `sniff_csv_with_path`:
-        utf-8: null
-        rt: null
+        utf-8: false
+        rt: false
     def `_open`:
-        r: null
-        rb: null
-        rt: null
-        .gz: null
-        .bz2: null
-        .xz: null
-        .zip: null
-        t: null
-        Expected a single file in the archive.: null
-    application/gzip: null
-    application/zip: null
-    application/x-xz: null
-    application/x-bzip: null
+        r: false
+        rb: false
+        rt: false
+        .gz: false
+        .bz2: false
+        .xz: false
+        .zip: false
+        t: false
+        Expected a single file in the archive.: Pričakujem arhiv z eno samo datoteko.
+    application/gzip: false
+    application/zip: false
+    application/x-xz: false
+    application/x-bzip: false
     def `_mime_type_for_path`:
-        rb: null
-    '?': null
-    .: null
-    '~': null
-    nan: null
-    NAN: null
-    NaN: null
-    N/A: null
-    n/a: null
-    NA: null
-    NaT: null
-    NAT: null
+        rb: false
+    '?': false
+    .: false
+    '~': false
+    nan: false
+    NAN: false
+    NaN: false
+    N/A: false
+    n/a: false
+    NA: false
+    NaT: false
+    NAT: false
     def `load_csv`:
         def `dtype`:
-            float: null
-            category: null
-            object: null
-        X.: null
-        .: null
-        decimal: null
-        thousands: null
-        float_precision: null
-        high: null
-        round_trip: null
-        rb: null
-        read: null
+            float: false
+            category: false
+            object: false
+        X.: false
+        .: ","
+        decimal: false
+        thousands: false
+        float_precision: false
+        high: false
+        round_trip: false
+        rb: false
+        read: false
     def `guess_data_type`:
-        category: null
+        category: false
     class `TaskState`:
-        qint64: null
+        qint64: false
     def `pandas_to_table`:
-        str: null
-        M8[ns]: null
-        'Column ''{}'' with dtype: {} skipped.': null
+        str: false
+        M8[ns]: false
+        'Column ''{}'' with dtype: {} skipped.': false
     __main__: null
 widgets/data/owdatainfo.py:
     class `OWDataInfo`:
@@ -5303,7 +5301,7 @@ widgets/data/owfeaturestatistics.py:
     __main__: null
     iris: null
 widgets/data/owfile.py:
-    Automatically detect type: Samodejno zaznaj tip datoteke
+    Automatically detect type: Samodejno zaznaj vrsto datoteke
     def `add_origin`:
         type: false
         origin: false
@@ -5311,10 +5309,10 @@ widgets/data/owfile.py:
         File: Datoteka
         orange.widgets.data.file: false
         'Read data from an input file or network ': 'Preberi podatke iz datoteke ali
-            omrežja '
-        and send a data table to the output.: in jih pošlji na izhod.
+            omrežja'
+        and send a data table to the output.: ''
         icons/File.svg: false
-        Data: Podatki
+        Data: false
         file: datoteka
         load: naloži
         read: preberi
@@ -5335,21 +5333,20 @@ widgets/data/owfile.py:
         class `Warning`:
             The file is too large to load automatically.: Datoteka je prevelika za
                 samodejno branje.
-            ' Press Reload to load.': ' Pritisni Ponovno naloži za branje.'
+            ' Press Reload to load.': " Pritisni 'Ponovno naloži' za branje."
             Read warning:\n{}: Opozorilo ob branju:\n{}
             Categorical variables with >100 values may decrease performance.: Kategorične
-                spremenljivke z >100 vrednostmi lahko upočasne delovanje.
-            'Some variables have been renamed ': 'Nekatere spremenljivke so bile preimenovane
-                v izogib '
-            to avoid duplicates.\n{}: ponovljenim imenom.\n{}
+                spremenljivke z veliko vrednostmi lahko upočasnijo delovanje.
+            'Some variables have been renamed ': 'Spremenljivke s podvojenimi imeni so preimenovane.'
+            to avoid duplicates.\n{}: \n{}
             Most widgets do not support multiple targets: Večina gradnikov ne podpira
                 večih ciljnih spremenljivk.
         class `Error`:
-            File not found.: Datoteka ni najdena
-            Missing reader.: Bralnik za ta tip ne obstaja
+            File not found.: Datoteka ni najdena.
+            Missing reader.: Bralnik za ta tip ne obstaja.
             Error listing available sheets.: Napaka ob ustvarjanju seznama listov.
             Read error:\n{}: Napaka ob branju:\n{}
-        'Use CSV File Import widget for advanced options ': 'Uporavi Bralnik CSV za
+        'Use CSV File Import widget for advanced options ': 'Uporabi Bralnik CSV za
             napredne možnosti '
         for comma-separated files: za datoteke ločene z vejico
         use-csv-file-import: falxe
@@ -5381,7 +5378,7 @@ widgets/data/owfile.py:
             Apply: Uveljavi
             Browse documentation datasets: Odpri podatke iz dokumentacije
         def `_url_set`:
-            http://: true
+            http://: false
         def `browse_file`:
             File: Datoteka
             Cannot find the directory with documentation datasets: Ne najdem mape
@@ -5390,27 +5387,26 @@ widgets/data/owfile.py:
         def `load_data`:
             No data.: Ni podatkov.
         def `_get_reader`:
-            Can not find reader "{qname}": Bralnik "{qname}" ne obstaja
+            Can not find reader "{qname}": Bralnik "{qname}" ne obstaja.
         def `_describe`:
             def `missing_prop`:
-                ({prop * 100:.1f}% missing values): ({prop * 100:.1f}% manjkajočih
-                    vrednosti)
+                "({prop * 100:.1f}% missing values)": "({prop * 100:.1f}% manjkajočih vrednosti)"
                 (no missing values): (ni manjkajočih vrednosti)
             attributes: false
             Name: Ime
             Description: Opis
             <b>{descs[0]}</b>: false
             <p>{'<br/>'.join(descs)}</p>: false
-            <p>{len(table)} instance(s): null
-            <br/>{len(domain.attributes)} feature(s) {missing_in_attr}: null
+            <p>{len(table)} {pl(len(table), 'instance')}: <p>{len(table)} {plsi(len(table), 'primer')}
+            <br/>{nattrs} {pl(nattrs, 'feature')} {missing_in_attr}: <br/>{nattrs} {plsi(nattrs, 'spremenljivka')} {missing_in_attr}
             <br/>Regression; numerical class {missing_in_class}: <br/>Regresija {missing_in_class}
             '<br/>Classification; categorical class ': '<br/>Klasifikacija: '
-            with {len(domain.class_var.values)} values {missing_in_class}: null
+            "with {nvals} {pl(nvals, 'value')} {missing_in_class}": "{plsi_sz(nvals)} {nvals} {plsi(nvals, 'razredom|razredoma|razredi')} {missing_in_class}"
             '<br/>Multi-target; ': '<br/>Večrazredni; '
-            '{len(table.domain.class_vars)} target variables ': null
-            '{missing_in_class}': null
-            <br/>Data has no target variable.: <br/>Podatki nimajo ciljne spremenljivke
-            <br/>{len(domain.metas)} meta attribute(s): null
+            "{ntargets} target {pl(ntargets, 'variable')}": "{ntargets} {plsi(ntargets, 'ciljna spremenljivka|ciljni spremenljivki|ciljne spremenljivke|ciljnih spremenljivk')}"
+            '{missing_in_class}': true
+            <br/>Data has no target variable.: <br/>Podatki nimajo ciljne spremenljivke.
+            <br/>{nmetas} {pl(nmetas, 'meta attribute')}: <br/>{nmetas} {plsi(nmetas, 'meta spremenljivka')}
             </p>: false
             Timestamp: false
             '<p>First entry: {table[0, ''Timestamp'']}<br/>': '<p>Prvi vnos: {table[0,
@@ -5418,9 +5414,9 @@ widgets/data/owfile.py:
             'Last entry: {table[-1, ''Timestamp'']}</p>': 'Zadnji vnos: {table[-1,
                 ''Timestamp'']}</p>'
         def `retrieveSpecificSettings`:
-            modified_variables: null
+            modified_variables: false
         def `apply_domain_edit`:
-            attributes: null
+            attributes:
             'Renamed: {'', ''.join(renamed)}': 'Preimenovano: {'', ''.join(renamed)}'
         def `send_report`:
             def `get_ext_name`:
@@ -11207,130 +11203,130 @@ widgets/utils/domaineditor.py:
                 ', ': null
                 ', ...': null
 widgets/utils/encodings.py:
-    utf-8: null
-    utf-16: null
-    utf-32: null
-    iso8859-1: null
-    shift_jis: null
-    iso2022_jp: null
-    gb18030: null
-    euc_kr: null
-    Unicode (UTF-8): null
-    Unicode (UTF-16): null
-    utf-16-le: null
-    Unicode (UTF-16LE): null
-    utf-16-be: null
-    Unicode (UTF-16BE): null
-    Unicode (UTF-32): null
-    utf-32-le: null
-    Unicode (UTF-32LE): null
-    utf-32-be: null
-    Unicode (UTF-32BE): null
-    utf-7: null
-    Unicode (UTF-7): null
-    ascii: null
-    English (US-ASCII): null
-    Western Europe (ISO Latin 1): null
-    iso8859-15: null
-    Western Europe (ISO-8859-15): null
-    cp1252: null
-    Western Europe (Windows-1252): null
-    mac_roman: null
-    Western Europe (Mac OS Roman): null
-    iso8859-2: null
-    Central and Eastern Europe (ISO Latin 2): null
-    cp1250: null
-    Central and Eastern Europe (Windows-1250): null
-    mac_latin2: null
-    Central and Eastern Europe (Mac Latin-2): null
-    iso8859-3: null
-    Esperanto, Maltese (ISO Latin 3): null
-    iso8859-4: null
-    Baltic Languages (ISO Latin 4): null
-    cp1257: null
-    Baltic Languages (Windows-1257): null
-    iso8859-13: null
-    Baltic Languages (ISO-8859-13): null
-    iso8859-16: null
-    South-Eastern Europe (ISO-8859-16): null
-    iso8859-5: null
-    Cyrillic (ISO-8859-5): null
-    cp1251: null
-    Cyrillic (Windows-1251): null
-    mac_cyrillic: null
-    Cyrillic (Mac OS Cyrillic): null
-    koi8-r: null
-    Cyrillic (KOI8-R): null
-    koi8-u: null
-    Cyrillic (KOI8-U): null
-    iso8859-14: null
-    Celtic Languages (ISO-8859-14): null
-    iso8859-10: null
-    Nordic Languages (ISO-8859-10): null
-    mac_iceland: null
-    Icelandic (Mac Iceland): null
-    iso8859-7: null
-    Greek (ISO-8859-7): null
-    cp1253: null
-    Greek (Windows-1253): null
-    mac_greek: null
-    Greek (Mac Greek): null
-    iso8859-8: null
-    Hebrew (ISO-8859-8): null
-    cp1255: null
-    Hebrew (Windows-1255): null
-    iso8859-6: null
-    Arabic (ISO-8859-6): null
-    cp1256: null
-    Arabic (Windows-1256): null
-    iso8859-9: null
-    Turkish (ISO-8859-9): null
-    cp1254: null
-    Turkish (Windows-1254): null
-    mac_turkish: null
-    Turkish (Mac Turkish): null
-    iso8859-11: null
-    Thai (ISO-8859-11): null
-    Japanese (ISO-2022-JP): null
-    iso2022_jp_1: null
-    Japanese (ISO-2022-JP-1): null
-    iso2022_jp_2: null
-    Japanese (ISO-2022-JP-2): null
-    iso2022_jp_2004: null
-    Japanese (ISO-2022-JP-2004): null
-    iso2022_jp_3: null
-    Japanese (ISO-2022-JP-3): null
-    Japanese (Shift JIS): null
-    shift_jis_2004: null
-    Japanese (Shift JIS 2004): null
-    euc_jp: null
-    Japanese (EUC-JP): null
-    iso2022_kr: null
-    Korean (ISO-2022-KR): null
-    Korean (EUC-KR): null
-    gb2312: null
-    Simplified Chinese (GB 2312): null
-    gbk: null
-    Chinese (GBK): null
-    Chinese (GB 18030): null
-    big5: null
-    Traditional Chinese (BIG5): null
-    big5hkscs: null
-    Traditional Chinese (BIG5-HKSC): null
-    cp1258: null
-    Vietnamese (Windows-1258): null
-    koi8-t: null
-    Tajik (KOI8-T): null
+    utf-8: false
+    utf-16: false
+    utf-32: false
+    iso8859-1: false
+    shift_jis: false
+    iso2022_jp: false
+    gb18030: false
+    euc_kr: false
+    Unicode (UTF-8): false
+    Unicode (UTF-16): false
+    utf-16-le: false
+    Unicode (UTF-16LE): false
+    utf-16-be: false
+    Unicode (UTF-16BE): false
+    Unicode (UTF-32): false
+    utf-32-le: false
+    Unicode (UTF-32LE): false
+    utf-32-be: false
+    Unicode (UTF-32BE): false
+    utf-7: false
+    Unicode (UTF-7): false
+    ascii: false
+    English (US-ASCII): false
+    Western Europe (ISO Latin 1): false
+    iso8859-15: false
+    Western Europe (ISO-8859-15): false
+    cp1252: false
+    Western Europe (Windows-1252): false
+    mac_roman: false
+    Western Europe (Mac OS Roman): false
+    iso8859-2: false
+    Central and Eastern Europe (ISO Latin 2): false
+    cp1250: false
+    Central and Eastern Europe (Windows-1250): false
+    mac_latin2: false
+    Central and Eastern Europe (Mac Latin-2): false
+    iso8859-3: false
+    Esperanto, Maltese (ISO Latin 3): false
+    iso8859-4: false
+    Baltic Languages (ISO Latin 4): false
+    cp1257: false
+    Baltic Languages (Windows-1257): false
+    iso8859-13: false
+    Baltic Languages (ISO-8859-13): false
+    iso8859-16: false
+    South-Eastern Europe (ISO-8859-16): false
+    iso8859-5: false
+    Cyrillic (ISO-8859-5): false
+    cp1251: false
+    Cyrillic (Windows-1251): false
+    mac_cyrillic: false
+    Cyrillic (Mac OS Cyrillic): false
+    koi8-r: false
+    Cyrillic (KOI8-R): false
+    koi8-u: false
+    Cyrillic (KOI8-U): false
+    iso8859-14: false
+    Celtic Languages (ISO-8859-14): false
+    iso8859-10: false
+    Nordic Languages (ISO-8859-10): false
+    mac_iceland: false
+    Icelandic (Mac Iceland): false
+    iso8859-7: false
+    Greek (ISO-8859-7): false
+    cp1253: false
+    Greek (Windows-1253): false
+    mac_greek: false
+    Greek (Mac Greek): false
+    iso8859-8: false
+    Hebrew (ISO-8859-8): false
+    cp1255: false
+    Hebrew (Windows-1255): false
+    iso8859-6: false
+    Arabic (ISO-8859-6): false
+    cp1256: false
+    Arabic (Windows-1256): false
+    iso8859-9: false
+    Turkish (ISO-8859-9): false
+    cp1254: false
+    Turkish (Windows-1254): false
+    mac_turkish: false
+    Turkish (Mac Turkish): false
+    iso8859-11: false
+    Thai (ISO-8859-11): false
+    Japanese (ISO-2022-JP): false
+    iso2022_jp_1: false
+    Japanese (ISO-2022-JP-1): false
+    iso2022_jp_2: false
+    Japanese (ISO-2022-JP-2): false
+    iso2022_jp_2004: false
+    Japanese (ISO-2022-JP-2004): false
+    iso2022_jp_3: false
+    Japanese (ISO-2022-JP-3): false
+    Japanese (Shift JIS): false
+    shift_jis_2004: false
+    Japanese (Shift JIS 2004): false
+    euc_jp: false
+    Japanese (EUC-JP): false
+    iso2022_kr: false
+    Korean (ISO-2022-KR): false
+    Korean (EUC-KR): false
+    gb2312: false
+    Simplified Chinese (GB 2312): false
+    gbk: false
+    Chinese (GBK): false
+    Chinese (GB 18030): false
+    big5: false
+    Traditional Chinese (BIG5): false
+    big5hkscs: false
+    Traditional Chinese (BIG5-HKSC): false
+    cp1258: false
+    Vietnamese (Windows-1258): false
+    koi8-t: false
+    Tajik (KOI8-T): false
     class `SelectEncodingsWidget`:
         def `__init__`:
-            -top-heading-text: null
-            Select all: null
-    '#selected-text-encodings': null
+            -top-heading-text: false
+            Select all: Izberi vse
+    '#selected-text-encodings': false
     def `encodings_model`:
-        '; ': null
+        '; ': false
     def `main`:
-        Select encodings visible in text encoding menus: null
-    __main__: null
+        Select encodings visible in text encoding menus: Izberi kodiranja, ki bodo na voljo v menuju
+    __main__: false
 widgets/utils/filedialogs.py:
     open_filename_dialog_save: null
     open_filename_dialog: null
@@ -11818,127 +11814,127 @@ widgets/utils/textimport.py:
         def `sizeHint`:
             X: null
     class `CSVOptionsWidget`:
-        Tab: null
-        \t: null
-        Comma: null
-        ',': null
-        Semicolon: null
-        ;: null
-        Space: null
-        ' ': null
+        Tab: Tabulator
+        \t: false
+        Comma: Vejica
+        ',': false
+        Semicolon: Podpičje
+        ;: false
+        Space: Presledek
+        ' ': false
         def `__init__`:
-            ',': null
-            '|': null
-            \": null
-            selectedEncoding: null
-            utf-8: null
-            encoding-combo-box: null
-            Select file text encoding: null
-            delimiter-combo-box: null
-            Select cell delimiter character.: null
-            Other: null
-            .: null
-            custom-delimiter-edit: null
-            quote-edit-combo-box: null
-            '''': null
-            Encoding: null
-            Cell delimiter: null
-            Quote character: null
+            ',': true
+            '|': true
+            \": true
+            selectedEncoding: false
+            utf-8: false
+            encoding-combo-box: false
+            Select file text encoding: Kodiranje datoteke
+            delimiter-combo-box: false
+            Select cell delimiter character.: Ločilo med celicami tabele
+            Other: Drugo
+            .: true
+            custom-delimiter-edit: false
+            quote-edit-combo-box: false
+            '''': true
+            Encoding: "Kodiranje: "
+            Cell delimiter: "Ločilo med celicami: "
+            Quote character: "Narekovaj (za označevanje celic): "
         def `setSelectedEncoding`:
-            separator: null
+            separator: false
         def `encoding`:
-            latin-1: null
+            latin-1: latin-2
         def `__show_encodings_widget`:
-            -encoding-selection-tool-window: null
-            Customize Encodings List: null
+            -encoding-selection-tool-window: false
+            Customize Encodings List: Izberi oblike kodiranja
         def `__set_visible_codecs`:
             ascii: null
-            Customize Encodings List...: null
+            Customize Encodings List...: Izberi oblike kodiranja...
     class `CSVImportWidget`:
         def `__init__`:
-            X: null
-            grouping-separator-combo-box: null
-            Thousands group separator: null
-            None: null
-            No separator: null
-            .: null
-            ',': null
-            Space: null
-            ' ': null
-            '''': null
-            (\.|,| |')?: null
-            decimal-separator-combo-box: null
-            Decimal separator: null
-            (\.|,): null
-            'Grouping:': null
-            'Decimal:': null
-            'Number separators:': null
-            column-type-edit-combo-box: null
-            Auto: null
-            'The type will be determined automatically based ': null
-            on column contents.: null
-            Numeric: null
-            Categorical: null
-            Text: null
-            Datetime: null
-            separator: null
-            Ignore: null
-            The column will not be loaded: null
-            Column type: null
-            -error-overlay: null
-            -error-text-label: null
+            X: true
+            grouping-separator-combo-box: false
+            Thousands group separator: Ločilo med tisočicami
+            None: Brez
+            No separator: Ni ločila
+            .: false
+            ',': false
+            Space: Presledek
+            ' ': false
+            '''': false
+            (\.|,| |')?: false
+            decimal-separator-combo-box: false
+            Decimal separator: Ločilo za decimalni del
+            (\.|,): false
+            'Grouping:': 'Skupine: '
+            'Decimal:': "Decimalni del: "
+            'Number separators:': 'Ločila med števkami: '
+            column-type-edit-combo-box: false
+            Auto: (prepoznaj)
+            'The type will be determined automatically based ': 'Tip bo prepoznan samodejno '
+            on column contents.: glede na vsebino
+            Numeric: Številka
+            Categorical: Kategorije
+            Text: Besedilo
+            Datetime: Datum/Ura
+            separator: false
+            Ignore: Izpusti
+            The column will not be loaded: Stolpca ni mogoče naložiti
+            Column type: Vrsta podatka
+            -error-overlay: false
+            -error-text-label: false
         def `numbersFormat`:
-            group: null
-            decimal: null
+            group: false
+            decimal: false
         def `__decimal_sep_activated`:
-            .: null
-            ',': null
+            .: false
+            ',': false
         def `__group_sep_activated`:
-            .: null
-            ',': null
+            .: false
+            ',': false
         def `__resetPreview`:
-            surrogateescape: null
+            surrogateescape: false
         def `__vheader_context_menu`:
-            Skip: null
-            Header: null
+            Skip: Izpusti
+            Header: Glava
         def `__run_type_columns_menu`:
-            separator: null
+            separator: false
         def `__setColumnType`:
-            group: null
-            decimal: null
+            group: false
+            decimal: false
     def `is_surrogate_escaped`:
-        \udc80: null
-        \udcff: null
+        \udc80: false
+        \udcff: false
     class `PreviewItemDelegate`:
         def `initStyleOption`:
-            '...': null
+            '...': false
     def `icon_for_column_type`:
-        N: null
-        red: null
-        C: null
-        green: null
-        S: null
-        black: null
-        T: null
-        deepskyblue: null
+        N: false
+        red: false
+        C: nufalsell
+        green: false
+        S: false
+        black: false
+        T: false
+        deepskyblue: false
     class `ColumnValidateItemDelegate`:
         def `validate`:
-            NA: null
-            Na: null
-            na: null
-            n/a: null
-            N/A: null
-            '?': null
-            .: null
+            NA: false
+            Na: false
+            na: false
+            n/a: false
+            N/A: false
+            '?': false
+            .: false
     def `number_parser`:
-        .: null
+        .: false
     def `format_exception_csv`:
-        'CSV parsing error: ': null
+        'CSV parsing error: ': 'Napaka pri branju: '
     ? "\\\n ,A,B,C,D\n1,a,1,1,\n2,b,2,2,\n3,c,3,3,\n4,d,4,4,,\\\n"
-    : null
+    : false
     def `main`:
-        rb: null
-    __main__: null
+        rb: false
+    __main__: false
 widgets/utils/webview.py:
     WebviewWidget: null
 widgets/utils/widgetpreview.py:
