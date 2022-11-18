@@ -5240,65 +5240,66 @@ widgets/data/owfeatureconstructor.py:
     iris: null
 widgets/data/owfeaturestatistics.py:
     def `format_time_diff`:
-        ~{years} years: null
-        ~{months} months: null
-        ~{weeks} weeks: null
-        ~{days} days: null
-        ~{hours} hours: null
-        ~{minutes} minutes: null
-        '{seconds} seconds': null
+        ~{years} years: ~{years} {plsi(years, "leto|leti|leta|let")}
+        ~{months} months: ~{months} {plsi(months, "mesec|meseca|meseci|mesecev")}
+        ~{weeks} weeks: ~{weeks} {plsi(weeks, "teden|tedna|tedni|tednov")}
+        ~{days} days: ~{days} {plsi(days, "dan|dneva|dnevi|dni")}
+        ~{hours} hours: ~{hours} {plsi(hours, "ura|uri|ure|ur")}
+        ~{minutes} minutes: ~{minutes} {plsi(minutes, "minuta")}
+        '{seconds} seconds': ~{seconds} {plsi(seconds, "sekunda")}
     class `FeatureStatisticsTableModel`:
         class `Columns`:
             def `name`:
-                Name: null
-                Distribution: null
-                Mean: null
-                Median: null
-                Dispersion: null
-                Min.: null
-                Max.: null
-                Missing: null
+                Name: Ime
+                Distribution: Porazdelitev
+                Mean: Srednja vrednost
+                Median: Mediana
+                Mode: Najpogostejša
+                Dispersion: Disperzija
+                Min.: Minimum
+                Max.: Maksimum
+                Missing: Manjkajoči
         def `__compute_statistics`:
             def `__mode`:
-                C: null
+                C: false
         def `_sortColumnData`:
-            Data should be at most 2-dimensional: null
+            Data should be at most 2-dimensional: false
         def `_argsortData`:
-            stable: null
-            'We do not deal with non numeric values in sorting by ': null
-            multiple values: null
-            Add an empty column of zeros at index -2 to accomodate NaNs: null
+            stable: false
+            'We do not deal with non numeric values in sorting by ': false
+            multiple values: false
+            Add an empty column of zeros at index -2 to accomodate NaNs: false
         def `data`:
             def `display`:
                 def `format_zeros`:
-                    '{0:.{num_decimals}f}': null
+                    '{0:.{num_decimals}f}': false
                 def `render_value`:
-                    ∞: null
-                '#ccc': null
-                '{self._dispersion[row]:.3g}': null
-                '{missing} ({perc} %)': null
+                    ∞: false
+                '#ccc': false
+                '{self._dispersion[row]:.3g}': false
+                '{missing} ({perc} %)': false
     class `OWFeatureStatistics`:
-        Feature Statistics: null
-        Show basic statistics for data features.: null
-        icons/FeatureStatistics.svg: null
+        Feature Statistics: Statistika spremenljivk
+        Show basic statistics for data features.: Pokaže osnovno statistiko spremenljivk
+        icons/FeatureStatistics.svg: false
         class `Inputs`:
-            Data: null
+            Data: Podatki
         class `Outputs`:
-            Reduced Data: null
-            Statistics: null
+            Reduced Data: Izbrani podatki
+            Statistics: Statistika
         def `__init__`:
-            None: null
-            color_var: null
-            'Color:': null
-            auto_commit: null
+            None: Enobarvno
+            color_var: false
+            'Color:': 'Barva:'
+            auto_commit: false
         def `commit`:
-            Feature: null
-            '{self.data.name} (Feature Statistics)': null
+            Feature: Spremenljivka
+            '{self.data.name} (Feature Statistics)': '{self.data.name} (Statistika)'
         def `migrate_context`:
-            selected_rows: null
-            selected_vars: null
-    __main__: null
-    iris: null
+            selected_rows: false
+            selected_vars: false
+    __main__: false
+    iris: false
 widgets/data/owfile.py:
     Automatically detect type: Samodejno zaznaj vrsto datoteke
     def `add_origin`:
