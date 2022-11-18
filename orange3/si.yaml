@@ -6814,48 +6814,48 @@ widgets/data/owrank.py:
     heart_disease.tab: false
     Learner: false
 widgets/data/owsave.py:
-    ~{os.sep}: null
+    ~{os.sep}: false
     class `OWSave`:
-        Save Data: null
-        Save data to an output file.: null
-        icons/Save.svg: null
-        Data: null
-        export: null
+        Save Data: Shrani podatke
+        Save data to an output file.: Shrani podatke v datoteko.
+        icons/Save.svg: false
+        Data: false
+        export: izvoz
         class `Inputs`:
-            Data: null
+            Data: Podatki
         class `Error`:
-            Use Pickle format for sparse data.: null
+            Use Pickle format for sparse data.: Za redke podatke uporabi obliko 'pickle'.
         def `__init__`:
-            add_type_annotations: null
-            Add type annotations to header: null
-            Some formats (Tab-delimited, Comma-separated) can include \n: null
-            additional information about variables types in header rows.: null
+            add_type_annotations: false
+            Add type annotations to header: V glavo dodaj oznake tipov stolpcev
+            Some formats (Tab-delimited, Comma-separated) can include \n: Nekateri podatki (ločeni z vejico ali s tabulatorji)\n
+            additional information about variables types in header rows.: omogočajo shranjevanje informacije o vrstah stolpcev.
         def `get_filters`:
-            write_file: null
-            EXTENSIONS: null
-            '{w.DESCRIPTION} (*{w.EXTENSIONS[0]})': null
-            Compressed {w.DESCRIPTION} (*{w.EXTENSIONS[0]}.gz): null
+            write_file: false
+            EXTENSIONS: false
+            '{w.DESCRIPTION} (*{w.EXTENSIONS[0]})': false
+            Compressed {w.DESCRIPTION} (*{w.EXTENSIONS[0]}.gz): Stisnjeni {w.DESCRIPTION} (*{w.EXTENSIONS[0]}.gz)
         def `send_report`:
-            'No': null
-            'Yes': null
-            File name: null
-            not set: null
-            Format: null
-            Type annotations: null
+            'No': Ne
+            'Yes': Da
+            File name: Ime datoteke
+            not set: ni nastavljeno
+            Format: Oblika
+            Type annotations: Oznake tipov
         def `migrate_settings`:
             def `migrate_to_version_2`:
-                compression: null
-                filter: null
-                filetype: null
-                compress: null
-                .gz: null
-            add_type_annotations: null
-            stored_name: null
-            .xlsx: null
+                compression: false
+                filter: false
+                filetype: false
+                compress: false
+                .gz: false
+            add_type_annotations: false
+            stored_name: false
+            .xlsx: false
         def `initial_start_dir`:
-            name: null
-    __main__: null
-    iris: null
+            name: false
+    __main__: false
+    iris: false
 widgets/data/owselectbydataindex.py:
     class `OWSelectByDataIndex`:
         Select by Data Index: null
@@ -12243,40 +12243,40 @@ widgets/utils/save/owsavebase.py:
     ~{os.sep}: null
     class `OWSaveBase`:
         class `Information`:
-            Empty input; nothing was saved.: null
+            Empty input; nothing was saved.: Ni podatkov.
         class `Error`:
-            File name is not set.: null
-            File format is unsupported.\n{}: null
-            '{}': null
+            File name is not set.: Ime datoteke ni določeno.
+            File format is unsupported.\n{}: Format datoteke ni podprt.\n{}
+            '{}': false
         def `__init__`:
-            auto_save: null
-            Autosave when receiving new data: null
-            Save as {self.stored_name}: null
-            Save: null
-            Save as ...: null
+            auto_save: false
+            Autosave when receiving new data: Samodejno shrani ob prejemu novih podatkov
+            Save as {self.stored_name}: Shrani kot {self.stored_name}
+            Save: Shrani
+            Save as ...: Shrani kot ...
         def `last_dir`:
-            basedir: null
-            ..: null
+            basedir: false
+            ..: false
         def `_abs_path_from_setting`:
-            basedir: null
+            basedir: false
         def `workflowEnvChanged`:
-            basedir: null
+            basedir: false
         def `save_file_as`:
-            Save as {self.stored_name}: null
+            Save as {self.stored_name}: Shrani kot {self.stored_name}
         def `_replace_extension`:
-            .: null
+            .: false
         def `_extension_from_filter`:
-            .*\(\*?(\..*)\)$: null
+            .*\(\*?(\..*)\)$: false
         def `migrate_settings`:
-            last_dir: null
-            stored_path: null
-            filename: null
-            stored_name: null
-        darwin: null
-        win32: null
+            last_dir: false
+            stored_path: false
+            filename: false
+            stored_name: false
+        darwin: false
+        win32: false
         def `get_save_filename`:
-            Save File: null
-            ;;: null
+            Save File: Shrani datoteko
+            ;;: false
 widgets/utils/tests/concurrent_example.py:
     def `run`:
         Calculating...: null
