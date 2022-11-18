@@ -4647,330 +4647,330 @@ widgets/data/owdiscretize.py:
     __main__: null
     heart_disease: null
 widgets/data/oweditdomain.py:
-    V: null
-    H: null
+    V: false
+    H: false
     class `_DataType`:
         def `name_type`:
-            Categorical: null
-            Real: null
-            Time: null
-            String: null
+            Categorical: false
+            Real: false
+            Time: false
+            String: false
     class `Categorical`:
-        Categorical: null
-        name: null
-        categories: null
-        annotations: null
-        linked: null
+        Categorical: false
+        name: false
+        categories: false
+        annotations: false
+        linked: false
     class `Real`:
-        Real: null
-        name: null
-        format: null
-        annotations: null
-        linked: null
+        Real: false
+        name: false
+        format: false
+        annotations: false
+        linked: false
     class `String`:
-        String: null
-        name: null
-        annotations: null
-        linked: null
+        String: false
+        name: false
+        annotations: false
+        linked: false
     class `Time`:
-        Time: null
-        name: null
-        annotations: null
-        linked: null
+        Time: false
+        name: false
+        annotations: false
+        linked: false
     class `Rename`:
-        Rename: null
-        name: null
+        Rename: false
+        name: false
     class `CategoriesMapping`:
-        CategoriesMapping: null
-        mapping: null
+        CategoriesMapping: false
+        mapping: false
     class `Annotate`:
-        Annotate: null
-        annotations: null
+        Annotate: false
+        annotations: false
     class `Unlink`:
-        Unlink: null
+        Unlink: false
     class `StrpTime`:
-        StrpTime: null
-        label: null
-        formats: null
-        have_date: null
-        have_time: null
+        StrpTime: false
+        label: false
+        formats: false
+        have_date: false
+        have_time: false
     class `CategoricalVector`:
-        CategoricalVector: null
-        vtype: null
-        data: null
+        CategoricalVector: false
+        vtype: false
+        data: false
     class `RealVector`:
-        RealVector: null
-        vtype: null
-        data: null
+        RealVector: false
+        vtype: false
+        data: false
     class `StringVector`:
-        StringVector: null
-        vtype: null
-        data: null
+        StringVector: false
+        vtype: false
+        data: false
     class `TimeVector`:
-        TimeVector: null
-        vtype: null
-        data: null
+        TimeVector: false
+        vtype: false
+        data: false
     class `AsString`:
-        AsString: null
+        AsString: false
     class `AsContinuous`:
-        AsContinuous: null
+        AsContinuous: false
         def `__call__`:
-            g: null
+            g: false
     class `AsCategorical`:
-        AsCategorical: null
+        AsCategorical: false
     class `AsTime`:
-        AsTime: null
+        AsTime: false
         def `__call__`:
-            M8[us]: null
+            M8[us]: false
             def `data`:
-                coerce: null
-                M8[us]: null
+                coerce: false
+                M8[us]: false
     def `formatter_for_dtype`:
-        __formatter: null
+        __formatter: false
     def `masked_unique`:
-        O: null
-        masked value if present must be in last position: null
+        O: false
+        masked value if present must be in last position: false
     def `categorical_from_vector`:
-        __formater: null
-        '?': null
+        __formater: false
+        '?': false
     def `categorize_unique`:
-        masked value if present must be last: null
+        masked value if present must be last: false
     class `DictItemsModel`:
         def `__init__`:
-            Key: null
-            Value: null
+            Key: Ime oznake
+            Value: Vrednost
     class `VariableEditor`:
         def `__init__`:
-            editor-form-layout: null
-            name-editor: null
-            'Name:': null
-            Unlink variable from its source variable: null
-            'Make Orange forget that the variable is derived from ': null
-            another.\n: null
-            'Use this for instance when you want to consider variables ': null
-            'with the same name but from different sources as the same ': null
-            variable.: null
-            annotation-pairs-edit: null
-            annotate-action-group: null
-            +: null
-            action-add-label: null
-            Add a new label.: null
-            \N{MINUS SIGN}: null
-            action-delete-label: null
-            Remove selected label.: null
-            Add: null
-            Remove: null
-            'Labels:': null
+            editor-form-layout: false
+            name-editor: false
+            'Name:': "Ime:"
+            Unlink variable from its source variable: "Prekini povezavo z izvorno spremenljivko"
+            'Make Orange forget that the variable is derived from ': 'S tem bo Orange "pozabil", da je spremenljivka\n'
+            another.\n: 'izračunana iz vrednosti neke druge spremenljivke.\n'
+            'Use this for instance when you want to consider variables ': 'To lahko uporabimo, da, na primer, dosežemo, da bo\n'
+            'with the same name but from different sources as the same ': 'dve enako poimenovani spremenljivki iz različnih virov\n'
+            variable.: obravnaval kot isto spremenljivko.
+            annotation-pairs-edit: false
+            annotate-action-group: false
+            +: true
+            action-add-label: false
+            Add a new label.: Dodaj novo oznako.
+            \N{MINUS SIGN}: true
+            action-delete-label: false
+            Remove selected label.: Odstrani izbrano oznako.
+            Add: Dodaj
+            Remove: Odstrani
+            'Labels:': 'Oznake:'
     class `GroupItemsDialog`:
-        other: null
+        other: ostalo
         def `__init__`:
-            Group selected values: null
-            Group values with less than: null
-            Group all except: null
-            selected_radio: null
-            occurrences: null
-            most frequent values: null
-            frequent_abs_spin: null
-            X: null
-            frequent_rel_spin: null
-            ' %': null
-            n_values_spin: null
-            'New value name: ': null
-            name_line_edit: null
-            dialog-button-box: null
+            Group selected values: Združi izbrane vrednosti
+            Group values with less than: Združi vrednosti z manj kot
+            Group all except: Združi vse vrednosti, razen
+            selected_radio: false
+            occurrences: pojavitvami
+            most frequent values: najpogostejših
+            frequent_abs_spin: false
+            X: false
+            frequent_rel_spin: false
+            ' %': true
+            n_values_spin: false
+            'New value name: ': 'Ime nove vrednosti: '
+            name_line_edit: false
+            dialog-button-box: false
         def `get_dialog_settings`:
-            frequent_abs_spin: null
-            frequent_rel_spin: null
-            n_values_spin: null
-            name_line_edit: null
-            selected_radio: null
+            frequent_abs_spin: false
+            frequent_rel_spin: false
+            n_values_spin: false
+            name_line_edit: false
+            selected_radio: false
     class `CountedListModel`:
         def `__counts`:
-            key value '{key}' is not hashable: null
+            key value '{key}' is not hashable: false
     class `CategoriesEditDelegate`:
         def `initStyleOption`:
-            (dropped): null
-            (added): null
-            '{sourcename} \N{RIGHTWARDS ARROW} {text}': null
-            (merged): null
-            ' ': null
+            (dropped): (odstranjeno)
+            (added): (dodano)
+            '{sourcename} \N{RIGHTWARDS ARROW} {text}': false
+            (merged): (združeno)
+            ' ': false
         def `createEditor`:
-            QStyleOptionViewItem: null
+            QStyleOptionViewItem: false
         def `updateEditorGeometry`:
-            QStyleOptionViewItem: null
+            QStyleOptionViewItem: false
     class `DiscreteVariableEditor`:
         def `__init__`:
-            action-group-categories: null
-            Move up: null
-            \N{UPWARDS ARROW}: null
-            Move the selected item up.: null
-            Move down: null
-            \N{DOWNWARDS ARROW}: null
-            Move the selected item down.: null
-            Add: null
-            +: null
-            action-add-item: null
-            Append a new item.: null
-            Remove item: null
-            \N{MINUS SIGN}: null
-            action-remove-item: null
-            Delete the selected item.: null
-            Rename selected items: null
-            '=': null
-            action-rename-selected-items: null
-            Rename selected items.: null
-            Merge: null
-            M: null
-            action-activate-merge-dialog: null
-            Merge infrequent items.: null
-            Remove: null
-            Merge selected items: null
-            Merge infrequent: null
-            'Values:': null
+            action-group-categories: false
+            Move up: Pomakni višje
+            \N{UPWARDS ARROW}: true
+            Move the selected item up.: Pomakni izbrano vrednost višje.
+            Move down: Premakni nižje
+            \N{DOWNWARDS ARROW}: true
+            Move the selected item down.: Premakni izbrano vrednost nižje.
+            Add: Dodaj
+            +: true
+            action-add-item: false
+            Append a new item.: Dodaj novo vrednost
+            Remove item: Odstrani vrednost
+            \N{MINUS SIGN}: true
+            action-remove-item: false
+            Delete the selected item.: Odstrani izbrano vrednost
+            Rename selected items: Preimenuj izbrane vrednosti
+            '=': true
+            action-rename-selected-items: false
+            Rename selected items.: Preimenuj izbrane vrednosti.
+            Merge: Združi
+            M: Z
+            action-activate-merge-dialog: false
+            Merge infrequent items.: Združi redkejše vrednosti
+            Remove: Odstrani
+            Merge selected items: Združi izbrane vrednosti
+            Merge infrequent: Združi redke
+            'Values:': 'Vrednosti:'
         def `set_data_categorical`:
-            'invalid mapping: {!r}': null
+            'invalid mapping: {!r}': false
         def `get_data`:
-            '{mapping}, {var}': null
+            '{mapping}, {var}': false
         def `_remove_category`:
-            invalid state '{}' for {}: null
+            invalid state '{}' for {}: false
         def `_merge_categories`:
-            Import Options: null
+            Import Options: Združevanje
     class `TimeVariableEditor`:
         def `__init__`:
-            Detect automatically: null
-            'Format:': null
+            Detect automatically: Zaznaj samodejno
+            'Format:': 'Oblika:'
     class `VariableEditDelegate`:
-        categorical: null
-        numeric: null
-        string: null
-        time: null
+        categorical: kategorično
+        numeric: številsko
+        string: besedilno
+        time: časovno
         def `initStyleOption`:
-            '{} \N{RIGHTWARDS ARROW} {}': null
-            ' (reinterpreted as ': null
-            '{self.ReinterpretNames[type(tr)]})': null
+            '{} \N{RIGHTWARDS ARROW} {}': false
+            ' (reinterpreted as ': ' (pretolmačena v '
+            '{self.ReinterpretNames[type(tr)]})': true
         def `helpEvent`:
-            Name `{name}` is duplicated: null
+            Name `{name}` is duplicated: "Ime '{ime}' je podvojeno."
     class `ReinterpretVariableEditor`:
         def `__init__`:
             def `decorate`:
-                type-combo: null
-                Categorical: null
-                Numeric: null
-                Text: null
-                Time: null
-                'Type:': null
+                type-combo: false
+                Categorical: Kategorična
+                Numeric: Številska
+                Text: Besedilna
+                Time: Časovna
+                'Type:': "Vrsta:"
         def `set_data`:
-            type-combo: null
+            type-combo: false
         def `__reinterpret_activated`:
-            type-combo: null
+            type-combo: false
     class `OWEditDomain`:
-        Edit Domain: null
-        Rename variables, edit categories and variable annotations.: null
-        icons/EditDomain.svg: null
-        rename: null
-        drop: null
-        reorder: null
-        order: null
+        Edit Domain: Uredi domeno
+        Rename variables, edit categories and variable annotations.: Preimenuj spremenljivke, uredi kategorije in oznake
+        icons/EditDomain.svg: false
+        rename: preimenuj
+        drop: odstrani
+        reorder: preuredi
+        order: uredi
         class `Inputs`:
-            Data: null
+            Data: Podatki
         class `Outputs`:
-            Data: null
+            Data: Podatki
         class `Error`:
-            A variable name is duplicated.: null
+            A variable name is duplicated.: Ime spremenljivke je podvojeno.
         def `__init__`:
-            Variables: null
-            Edit: null
-            output_table_name: null
-            'Output table name: ': null
-            Reset All: null
-            button-reset-all: null
-            Reset all variables to their input state.: null
-            Reset Selected: null
-            button-reset: null
-            Rest selected variable to its input state.: null
-            Apply: null
-            button-apply: null
-            Apply changes and commit data on output.: null
+            Variables: Spremenljivke
+            Edit: Uredi
+            output_table_name: false
+            'Output table name: ': 'Ime izhodne tabele:'
+            Reset All: Povrni vse
+            button-reset-all: false
+            Reset all variables to their input state.: Povrni vse vrednosti v začetno stanje.
+            Reset Selected: Povrni izbrane
+            button-reset: false
+            Rest selected variable to its input state.: Povrni izbrane spremenljivke v začetno stanje.
+            Apply: Potrdi
+            button-apply: false
+            Apply changes and commit data on output.: Potrdi spremembe in pošlji podatke na izhod.
         def `_restore_transform`:
-            'Failed to restore transform: {}, {!r}': null
+            'Failed to restore transform: {}, {!r}': false
         def `_set_modified`:
-            button-apply: null
+            button-apply: false
         def `send_report`:
-            <ul>: null
-            <li>{}</li>: null
-            </ul>: null
-            No changes: null
+            <ul>: false
+            <li>{}</li>: false
+            </ul>: false
+            No changes: Ni sprememb
         def `migrate_context`:
-            domain_change_hints: null
-            Orange.data.variable: null
-            DiscreteVariable: null
-            Categorical: null
-            TimeVariable: null
-            Time: null
-            ContinuousVariable: null
-            Real: null
-            f: null
-            StringVariable: null
-            String: null
-            _domain_change_store: null
+            domain_change_hints: false
+            Orange.data.variable: false
+            DiscreteVariable: false
+            Categorical: false
+            TimeVariable: false
+            Time: false
+            ContinuousVariable: false
+            Real: false
+            f: false
+            StringVariable: false
+            String: false
+            _domain_change_store: false
     def `enumerate_columns`:
-        x: null
-        y: null
-        m: null
+        x: false
+        y: false
+        m: false
     def `table_column_data`:
-        M8[us]: null
-        __formatter: null
-        '?': null
+        M8[us]: false
+        __formatter: false
+        '?': false
     def `report_transform`:
-        C: null
-        N: null
-        S: null
-        T: null
+        C: false
+        N: false
+        S: false
+        T: false
         def `type_char`:
-            '?': null
+            '?': false
         def `strike`:
-            <s>{}</s>: null
+            <s>{}</s>: false
         def `i`:
-            <i>{}</i>: null
+            <i>{}</i>: false
         def `text`:
-            <span>{}</span>: null
-        '{} → ({}) {}': null
-        '{} → {}': null
-        (unlinked from source): null
-        Values: null
-        '&nbsp;': null
-        (added): null
-        ' → ': null
-        Labels: null
-        <s>: null
-        ' : ': null
-        </s>: null
-        (new): null
-        '<div style=''font-weight: bold;''>{}</div>': null
-        <div>{}:</div>: null
-        <br/>\n: null
-        '<div style=''padding-left: 1em;''>': null
-        </div>: null
-        \n: null
+            <span>{}</span>: false
+        '{} → ({}) {}': false
+        '{} → {}': false
+        (unlinked from source): (odvezana od vira)
+        Values: Vrednosti
+        '&nbsp;': false
+        (added): (dodana)
+        ' → ': false
+        Labels: Oznake
+        <s>: true
+        ' : ': true
+        </s>: true
+        (new): (nova)
+        '<div style=''font-weight: bold;''>{}</div>': false
+        <div>{}:</div>: false
+        <br/>\n: false
+        '<div style=''padding-left: 1em;''>': false
+        </div>: false
+        \n: false
     def `abstract`:
-        f: null
+        f: false
     def `_parse_attributes`:
-        '{}={}': null
-    nan: null
+        '{}={}': false
+    nan: false
     def `as_float_or_nan`:
-        unsafe: null
+        unsafe: false
     def `datetime_to_epoch`:
-        '1970-01-01': null
-        1s: null
+        '1970-01-01': false
+        1s: false
     class `ReparseTimeTransform`:
         def `transform`:
-            coerce: null
+            coerce: false
     def `column_str_repr_discrete`:
-        '?': null
+        '?': false
     def `column_str_repr_string`:
-        '?': null
-    __main__: null
-    iris: null
+        '?': false
+    __main__: false
+    iris: false
 widgets/data/owfeatureconstructor.py:
     FeatureDescriptor: null
     name: null
