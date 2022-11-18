@@ -3577,45 +3577,54 @@ widgets/data/__init__.py:
     '#FFD39F': null
 widgets/data/owaggregatecolumns.py:
     class `OWAggregateColumns`:
-        Aggregate Columns: null
-        Compute a sum, max, min ... of selected columns.: null
-        Transform: null
-        icons/AggregateColumns.svg: null
-        aggregate: null
-        sum: null
-        product: null
-        max: null
-        min: null
-        mean: null
-        median: null
-        variance: null
+        Aggregate Columns: Agregiraj stolpce
+        Compute a sum, max, min ... of selected columns.: Izračunaj vsoto, minimum, maksimum ... izbranih stolpcev.
+        Transform: false
+        icons/AggregateColumns.svg: false
+        aggregate: agregacija
+        sum: vsota
+        product: zmnožek
+        max: maksimum
+        min: minimum
+        mean: povprečje
+        median: mediana
+        variance: varianca
         class `Inputs`:
-            Data: null
+            Data: Podatki
         class `Outputs`:
-            Data: null
-        Sum: null
-        agg: null
-        Product: null
-        Min: null
-        Max: null
-        Mean: null
-        Variance: null
-        Median: null
+            Data: Podatki
+        Sum: Vsota
+        agg: false
+        Product: Produkt
+        Min: false
+        Minimal value: Najmanjša vrednost
+        Max: Maksimum
+        Maximal value: Največja vrednost
+        Mean: false
+        Mean value: Povprečna vrednost
+        Variance: Varianca
+        Median: Mediana
         def `__init__`:
-            variables: null
-            operation: null
-            'Operator: ': null
-            var_name: null
-            'Variable name: ': null
+            Variable selection: Izbor spremenljivk
+            All: "Vse"
+            All, including meta attributes: Vse, vključno z meta atributi
+            Features from separate input signal: Stolpci, določeni z vhodnim signalom
+            Selected variables: Izbrane spremenljivke
+            variables: false
+            operation: false
+            Operation: Operacija
+            var_name: false
+            'Output variable name: ': "Ime izhodne spremenljivke: "
+        def `_and_others`:
+            ', ': true
+            "'{variables[0].name}'": true
+            " and {len(variables) - limit} more": ' in še {len(variables) - limit} {plsi(len(variables) - limit, "druga|drugi|druge|drugih")}'
+            ' and ''{variables[-1].name}''': ' in ''{variables[-1].name}'''
         def `send_report`:
-            ', ': null
-            '''{var.name}''': null
-            ' and {len(self.variables) - 30} others': null
-            ' and ''{self.variables[-1].name}''': null
-            'Output:': null
-            '''{self._new_var_name()}'' as {self.operation.lower()} of {var_list}': null
-    __main__: null
-    brown-selected: null
+            'Output:': "Izhod:"
+            '''{self._new_var_name()}'' as {self.operation.lower()} of {var_list}': '''{self._new_var_name()}'' kot {self.operation.lower()} stolpcev {var_list}'
+    __main__: false
+    brown-selected: false
 widgets/data/owcolor.py:
     class `AttrDesc`:
         def `to_dict`:
@@ -3712,70 +3721,70 @@ widgets/data/owcolor.py:
     heart_disease.tab: false
 widgets/data/owconcatenate.py:
     class `OWConcatenate`:
-        Concatenate: null
-        Concatenate (append) two or more datasets.: null
-        Transform: null
-        icons/Concatenate.svg: null
-        append: null
-        join: null
-        extend: null
+        Concatenate: Stakni tabele
+        Concatenate (append) two or more datasets.: Stakni več tabel eno pod drugo
+        Transform: false
+        icons/Concatenate.svg: false
+        append: stakni
+        join: združi
+        extend: razširi
         class `Inputs`:
-            Primary Data: null
-            Additional Data: null
+            Primary Data: Osnovna tabela
+            Additional Data: Dodatne tabele
         class `Outputs`:
-            Data: null
+            Data: Podatki
         class `Error`:
-            Inputs must be of the same type.: null
+            Inputs must be of the same type.: Podatki morajo biti enake vrste.
         class `Warning`:
-            Variables with duplicated names have been renamed.: null
-        Source ID: null
-        all variables that appear in input tables: null
-        only variables that appear in all tables: null
-        Class attribute: null
-        Attribute: null
-        Meta attribute: null
+            Variables with duplicated names have been renamed.: Spremenljivk s podvojenimi imeni so preimenovane.
+        Source ID: Vir
+        all variables that appear in input tables: spremenljivke iz vseh tabel
+        only variables that appear in all tables: spremenljivke, ki se pojavijo v vseh tabelah
+        Class attribute: Ciljna spremenljivka
+        Attribute: Spremenljivka
+        Meta attribute: Meta spremenljivka
         def `__init__`:
-            Variable Merging: null
-            merge_type: null
-            'When there is no primary table, ': null
-            'the output should contain:': null
-            'The resulting table will have a class only if there ': null
-            is no conflict between input classes.: null
-            ignore_compute_value: null
-            Treat variables with the same name as the same variable,\n: null
-            even if they are computed using different formulae.: null
-            Source Identification: null
-            append_source_column: null
-            Append data source IDs: null
-            'Feature name:': null
-            source_attr_name: null
-            'Place:': null
-            source_column_role: null
-            auto_commit: null
+            Variable Merging: Združevanje spremenljivk
+            merge_type: true
+            'When there is no primary table, ': 'Kadar ni podana osnovna tabela, '
+            'the output should contain:': 'bo izhodna tabela vsebovala:'
+            'The resulting table will have a class only if there ': 'Ciljna spremenljivka bo ohranjena le, če imajo '
+            is no conflict between input classes.: 'vse vhodne tabele isto ciljno spremenljivko.'
+            ignore_compute_value: false
+            Treat variables with the same name as the same variable,\n: Obravnavaj spremenljivke z enakimi imeni kot isto spremenljivko,\n
+            even if they are computed using different formulae.: četudi so izračunane z različnimi formulami oz. iz različnih izvornih spremenljivk.
+            Source Identification: Oznaka vira
+            append_source_column: false
+            Append data source IDs: Vsaki vrstici dodaj ime tabele, iz katere izhaja
+            'Feature name:': 'Ime spremenljivke:'
+            source_attr_name: false
+            'Place:': 'Vrsta:'
+            source_column_role: false
+            auto_commit: false
         def `commit`:
-            name: null
-            '{} ({})': null
-            class_vars: null
-            attributes: null
-            metas: null
+            name: false
+            '{} ({})': true
+            class_vars: false
+            attributes: false
+            metas: false
         def `send_report`:
-            Domain: null
-            from primary data: null
-            Source data ID: null
-            '{} (as {})': null
+            Domain: Domena
+            from primary data: iz osnovne tabele
+            Source data ID: Spremenljivka z imenom vira
+            '{} (as {})': '{} (kot {})'
         def `merge_domains`:
-            attributes: null
-            class_vars: null
-            metas: null
+            attributes: false
+            class_vars: false
+            metas: false
         def `_unique_vars`:
-            AttrDesc: null
-            template: null
-            original: null
-            values: null
-            number_of_decimals: null
-    __main__: null
-    iris: null
-    zoo: null
+            AttrDesc: false
+            template: false
+            original: false
+            values: false
+            number_of_decimals: false
+    __main__: false
+    iris: false
+    zoo: false
 widgets/data/owcontinuize.py:
     class `OWContinuize`:
         Continuize: null
@@ -4341,81 +4350,82 @@ widgets/data/owdatainfo.py:
     iris: null
 widgets/data/owdatasampler.py:
     class `OWDataSampler`:
-        Data Sampler: null
-        'Randomly draw a subset of data points ': null
-        from the input dataset.: null
-        icons/DataSampler.svg: null
-        Transform: null
-        random: null
+        Data Sampler: Vzorčenje
+        'Randomly draw a subset of data points ': "Naključni vzorec "
+        from the input dataset.: iz vhodne tabele.
+        icons/DataSampler.svg: false
+        Transform: false
+        random: naključno
         class `Inputs`:
-            Data: null
+            Data: Podatki
         class `Outputs`:
-            Data Sample: null
-            Remaining Data: null
+            Data Sample: Vzorec podatkov
+            Remaining Data: Preostali podatki
         class `Information`:
-            Compatibility mode\n: null
-            New versions of widget have swapped outputs for cross validation: null
+            Compatibility mode\n: Združljivostni način\n
+            New versions of widget have swapped outputs for cross validation: Nova različica gradnika ima zamenjane izhode pri prečnem preverjanju
         class `Warning`:
-            Stratification failed\n{}: null
-            Sample is bigger than input: null
+            Stratification failed\n{}: Stratifikacija ni uspela.\n{}
+            Sample is bigger than input: Zahtevani vzorec presega število primerov.
         class `Error`:
-            Number of subsets exceeds data size: null
-            Sample can't be larger than data: null
-            Data is too small to stratify: null
-            Dataset is empty: null
+            Number of subsets exceeds data size: Zahtevano število podmnožic presega število primerov.
+            Sample can't be larger than data: Vzorec ne more imeti več primerov, kot jih je na voljo v vhodni tabeli.
+            Data is too small to stratify: Podatkov ni dovolj za stratifikacijo.
+            Dataset is empty: Tabela podatkov je prazna.
         def `__init__`:
-            Sampling Type: null
-            sampling_type: null
-            'Fixed proportion of data:': null
-            sampleSizePercentage: null
-            '%d %%': null
-            Fixed sample size: null
-            sampleSizeNumber: null
-            'Instances: ': null
-            replacement: null
-            Sample with replacement: null
-            Cross validation: null
-            'Number of subsets:': null
-            number_of_folds: null
-            selectedFold: null
-            'Unused subset:': null
-            'Selected subset:': null
-            Bootstrap: null
-            'Time:': null
-            sampleSizeSqlTime: null
-            ' sec': null
-            Percentage: null
-            sampleSizeSqlPercentage: null
-            ' %': null
-            Options: null
-            use_seed: null
-            Replicable (deterministic) sampling: null
-            stratify: null
-            Stratify sample (when possible): null
-            sql_dl: null
-            Download data to local memory: null
-            Sample Data: null
+            Sampling Type: Vrsta vzorčenja
+            sampling_type: false
+            'Fixed proportion of data:': "Predpisani delež podatkov:"
+            sampleSizePercentage: false
+            '%d %%': true
+            Fixed sample size: "Predpisana velikost vzorca:"
+            sampleSizeNumber: false
+            'Instances: ': "Število primerov: "
+            replacement: false
+            Sample with replacement: "Vzorči s ponavljanjem: "
+            Cross validation: Prečno preverjanje
+            'Number of subsets:': 'Število podmnožic:'
+            number_of_folds: false
+            selectedFold: false
+            'Unused subset:': 'Neuporabljena podmnožica:'
+            'Selected subset:': 'Izbrana podmnožica:'
+            Bootstrap: Zankanje (bootstrap)
+            'Time:': 'Čas:'
+            sampleSizeSqlTime: false
+            ' sec': ' sek'
+            Percentage: Delež
+            sampleSizeSqlPercentage: false
+            ' %': false
+            Options: Možnosti
+            use_seed: false
+            Replicable (deterministic) sampling: Ponovljivo vzorčenje
+            stratify: false
+            Stratify sample (when possible): Stratificiraj (če je možno)
+            sql_dl: false
+            Download data to local memory: Preberi podatke v pomnilnik
+            Sample Data: Vzorči
         def `send_report`:
-            Random sample with {} % of data: null
-            Random data instance: null
-            Random sample with {} data instances: null
-            ', with replacement': null
-            '{self.number_of_folds}-fold cross-validation ': null
-            'without subset #{self.selectedFold}': null
-            Bootstrap: null
-            Undefined: null
-            ', stratified (if possible)': null
-            ', deterministic': null
-            Sampling type: null
-            Input: null
-            '{} instances': null
-            Sample: null
-            Remaining: null
+            "Random sample with {self.sampleSizePercentage} % of data": "Naključen vzorec {plsi_sz(self.sampleSizePercentage)} {self.sampleSizePercentage} % podatkov"
+            Random data instance: Naključen primer iz podatkov
+            "Random sample with {self.sampleSizeNumber} data instances": "Naključen vzorec {plsi_sz(self.sampleSizeNumber)} {self.sampleSizeNumber} {plsi(self.sampleSizeNumber, 'primerom|primeroma|primeri')}"
+            ', with replacement': ', s ponavljanjem'
+            '{self.number_of_folds}-fold cross-validation ': "{self.number_of_folds}-kratno prečno preverjanje "
+            'without subset #{self.selectedFold}': "brez podmnožice #{self.selectedFold}"
+            Bootstrap: Zankanje
+            ', stratified (if possible)': ", stratificirano (če je možno)"
+            ', deterministic': ", ponovljivo"
+            Sampling type: Vrsta vzorčenja
+            Input: Vhod
+            "{len(self.data)} {pl(len(self.data), 'instance')}": "{len(self.data)} {plsi(len(self.data), 'primer')}"
+            Sample: Vzorec
+            "{self.sampled_instances} {pl(self.sampled_instances, 'instance')}": "{self.sampled_instances} {plsi(self.sampled_instances, 'primer')}"
+            Remaining: Preostali
+            "{self.remaining_instances} {pl(self.remaining_instances, 'instance')}": "{self.remaining_instances} {plsi(self.remaining_instances, 'primer')}"
         def `migrate_settings`:
-            sampling_type: null
-            compatibility_mode: null
-    __main__: null
-    iris: null
+            sampling_type: false
+            compatibility_mode: false
+    __main__: false
+    iris: false
 widgets/data/owdatasets.py:
     def `format_exception`:
         \n: false
@@ -5442,70 +5452,70 @@ widgets/data/owfile.py:
             recent_urls: false
     __main__: false
 widgets/data/owgroupby.py:
-    Aggregation: null
-    function: null
-    types: null
+    Aggregation: false
+    function: false
+    types: false
     def `concatenate`:
-        ' ': null
-    Mean: null
-    mean: null
-    Median: null
-    median: null
-    Mode: null
-    Standard deviation: null
-    std: null
-    Variance: null
-    var: null
-    Sum: null
-    sum: null
-    Concatenate: null
-    Min. value: null
-    min: null
-    Max. value: null
-    max: null
-    Span: null
-    First value: null
-    first: null
-    Last value: null
-    last: null
-    Random value: null
-    Count defined: null
-    count: null
-    Count: null
-    size: null
-    Proportion defined: null
+        ' ': false
+    Mean: Povprečje
+    mean: false
+    Median: Mediana
+    median: false
+    Mode: Najpogostejša
+    Standard deviation: Standardna deviacija
+    std: false
+    Variance: Varianca
+    var: false
+    Sum: Vsota
+    sum: false
+    Concatenate: Stakni
+    Min. value: Najmanjša vrednost
+    min: false
+    Max. value: Največja vrednost
+    max: false
+    Span: Razpon
+    First value: Prva vrednost
+    first: false
+    Last value: Zadnja vrednost
+    last: false
+    Random value: Naključna
+    Count defined: Število znanih
+    count: false
+    Count: Velikost skupine
+    size: false
+    Proportion defined: Delež znanih
     def `_run`:
-        Aggregating: null
-    Attributes: null
-    Aggregations: null
+        Aggregating: Računam
+    Attributes: Spremenljivke
+    Aggregations: Funkcije
     class `VarTableModel`:
         def `__init__`:
-            OWGroupBy: null
+            OWGroupBy: false
         def `data`:
-            ' and {len(aggs) - 3} more': null
-            ', ': null
+            ' and {len(aggs) - 3} more': " in {len(aggs) - 3} {plsi(len(aggs) - 3, 'druga|drugi|druge|drugih')}"
+            ', ': false
     class `OWGroupBy`:
-        Group by: null
-        Transform: null
-        icons/GroupBy.svg: null
-        aggregate: null
-        group by: null
+        Group by: Združi po
+        Transform: false
+        icons/GroupBy.svg: false
+        aggregate: agregiraj
+        group by: skupine
         class `Inputs`:
-            Data: null
-            Input data table: null
+            Data: Podatki
+            Input data table: Tabela vhodnih podatkov
         class `Outputs`:
-            Data: null
-            Aggregated data: null
+            Data: Podatki
+            Aggregated data: Agregirani podatki
         class `Error`:
-            '{}': null
+            '{}': false
         def `__init_control_area`:
-            Group by: null
-            auto_commit: null
+            Group by: Združi po
+            auto_commit: false
         def `__init_main_area`:
-            ' ': null
-            Aggregations: null
-    __main__: null
-    iris: null
+            ' ': false
+            Aggregations: Funkcije
+    __main__: false
+    iris: false
 widgets/data/owimpute.py:
     class `DisplayFormatDelegate`:
         def `initStyleOption`:
@@ -5616,109 +5626,109 @@ widgets/data/owmelt.py:
     __main__: null
     zoo: null
 widgets/data/owmergedata.py:
-    Instance id: null
-    Row index: null
+    Instance id: Identiteta vrstice
+    Row index: Številka vrstice
     class `ConditionBox`:
-        RowItems: null
-        pre_label: null
-        left_combo: null
-        in_label: null
-        right_combo: null
-        remove_button: null
+        RowItems: false
+        pre_label: false
+        left_combo: false
+        in_label: false
+        right_combo: false
+        remove_button: false
         def `add_row`:
-            and: null
-            ×: null
+            and: in
+            ×: true
         def `add_plus_row`:
-            +: null
+            +: true
     class `DomainModelWithTooltips`:
         def `data`:
-            Match rows sequentially: null
-            'Re-match rows from tables obtained from the same ': null
-            source,\n: null
-            'e.g. data from the same file that was split within ': null
-            the workflow.: null
+            Match rows sequentially: Združi istoležne vrstice
+            'Re-match rows from tables obtained from the same ': Združi vrstice, dobljene iz istega vira,
+            source,\n: \n
+            'e.g. data from the same file that was split within ': na primer iste datoteke, ki je bila razdeljena v delotoku.
+            the workflow.: ''
     class `MergeDataContextHandler`:
         def `settings_from_widget`:
-            attr_pairs: null
+            attr_pairs: false
         def `settings_to_widget`:
-            attr_pairs: null
+            attr_pairs: false
         def `match`:
-            attr_pairs: null
+            attr_pairs: false
     class `OWMergeData`:
-        Merge Data: null
-        Merge datasets based on the values of selected features.: null
-        Transform: null
-        icons/MergeData.svg: null
-        join: null
+        Merge Data: Združi vrstice
+        Merge datasets based on the values of selected features.: Združi tabele glede na vrednosti izbranih spremenljivk.
+        Transform: false
+        icons/MergeData.svg: false
+        join: zlivanje
         class `Inputs`:
-            Data: null
-            Data A: null
-            Extra Data: null
-            Data B: null
+            Data: Podatki
+            Data A: false
+            Extra Data: Dodatni podatki
+            Data B: false
         class `Outputs`:
-            Data: null
-            Merged Data A+B: null
-            Merged Data B+A: null
-            Merged Data: null
-        Append columns from Extra data: null
-        Find matching pairs of rows: null
-        Concatenate tables: null
-        The first table may contain, for instance, city names,\n: null
-        and the second would be a list of cities and their coordinates.\n: null
-        Columns with coordinates would then be appended to the output.: null
-        'Input tables contain different features describing the same data ': null
-        instances.\n: null
-        Output contains matched instances. Rows without matches are removed.: null
-        'Output contains all instances. Data from merged instances is ': null
-        merged into single rows.: null
-        Confused about merging options?\nSee the tooltips!: null
-        merging_types: null
+            Data: Podatki
+            Merged Data A+B: false
+            Merged Data B+A: false
+            Merged Data: false
+        Append columns from Extra data: Dodaj podatke iz druge tabele
+        Find matching pairs of rows: Sestavi pare vrstic, ki se ujemajo
+        Concatenate tables: Zlij tabeli
+        The first table may contain, for instance, city names,\n: Prva tabela vključuje stolpec z imeni mest,\n
+        and the second would be a list of cities and their coordinates.\n: druga tabela pa so imena mest in njihove koordinate.\n
+        Columns with coordinates would then be appended to the output.: Koordinate iz druge tabele bodo dodane v pripadajoče vrstice prve.
+        'Input tables contain different features describing the same data ': Tabeli vsebujeta različne lastnosti istih primerov.\n
+        instances.\n: ""
+        Output contains matched instances. Rows without matches are removed.: Gradnik poišče pare, ki se ujemajo. Preostale zavrže.
+        'Output contains all instances. Data from merged instances is ': Izhodni podatki vsebujejo vse primere.\n
+        merged into single rows.: Ujemajoče se vrstice so združene.
+        Confused about merging options?\nSee the tooltips!: Zbegani? Ne razumete izbir?\nObiščite jih z miško in preberite razlage!
+        merging_types: false
         class `Warning`:
-            'Some variables have been renamed ': null
-            to avoid duplicates.\n{}: null
+            'Some variables have been renamed ': Zaradi podvojenih imen so nekatere spremenljivke preimenovane.\n
+            to avoid duplicates.\n{}: "{}"
         class `Error`:
-            Numeric and non-numeric columns ({} and {}) cannot be matched.: null
-            Row index cannot be matched with {}.: null
-            Instance cannot be matched with {}.: null
-            Some combinations of values on the left appear in multiple rows.\n: null
-            'For this type of merging, every possible combination of values ': null
-            on the left should appear at most once.: null
-            Some combinations of values on the right appear in multiple rows.: null
-            \n: null
-            'Every possible combination of values on the right should appear ': null
-            at most once.: null
+            Numeric and non-numeric columns ({} and {}) cannot be matched.: Številskih in kategoričnih stolpcev ({} in {}) ni mogoče primerjati.
+            Row index cannot be matched with {}.: Številke vrstice ni mogoče primerjati z {}.
+            Instance cannot be matched with {}.: Identitete vrstice ni mogoče primerjati z {}.
+            Some combinations of values on the left appear in multiple rows.\n: Nekatere kombinacije vrednosti na levi se pojavijo v več vrsticah.\n
+            'For this type of merging, every possible combination of values ': Za to vrsto združevanja morajo biti vse kombinacije unikatne.
+            on the left should appear at most once.: ""
+            Some combinations of values on the right appear in multiple rows.: Nekatere kombinacije vrednosti na desni se pojavijo v več vrsticah.
+            \n: true
+            'Every possible combination of values on the right should appear ': Vsaka kombinacija vrednosti se sme pojaviti največ enkrat.
+            at most once.: ""
         def `__init__`:
-            merging: null
-            Merging: null
-            matches: null
-            Row matching: null
+            merging: false
+            Merging: Združevanje
+            matches: se ujema z
+            Row matching: Kriteriji za ujemanje vrstic
         def `send_report`:
-            Merging: null
-            Match: null
-            ', ': null
-            '{self._get_col_name(left)} with {self._get_col_name(right)}': null
+            Merging: Združevanje
+            Match: Ujemanje
+            ', ': false
+            '{self._get_col_name(left)} with {self._get_col_name(right)}': '{self._get_col_name(left)} (levo) in {self._get_col_name(right)} (desno)'
         def `_get_col_name`:
-            '''{obj.name}''': null
+            '''{obj.name}''': false
         def `_join_table_by_indices`:
-            name: null
-            attributes: null
+            name: false
+            attributes: false
         def `_domain_rename_duplicates`:
-            ', ': null
+            ', ': false
         def `migrate_settings`:
             def `mig_value`:
-                Position (index): null
-                Source position (index): null
-            augment: null
-            merge: null
-            combine: null
-            merging: null
-            attr_pairs: null
-            attr_{oper}_data: null
-            attr_{oper}_extra: null
-            context_settings: null
-    __main__: null
-    tests/data-gender-region: null
-    tests/data-regions: null
+                Position (index): false
+                Source position (index): false
+            augment: false
+            merge: false
+            combine: false
+            merging: false
+            attr_pairs: false
+            attr_{oper}_data: false
+            attr_{oper}_extra: false
+            context_settings: false
+    __main__: false
+    tests/data-gender-region: false
+    tests/data-regions: false
 widgets/data/owneighbors.py:
     Euclidean: null
     Manhattan: null
@@ -6011,92 +6021,92 @@ widgets/data/owpaintdata.py:
 widgets/data/owpivot.py:
     class `AggregationFunctionsEnum`:
         def `__str__`:
-            _: null
-            ' ': null
+            _: false
+            ' ': false
     class `Pivot`:
         def `__init__`:
-            Row variable should be DiscreteVariable: null
-            ' or ContinuousVariable': null
-            Column variable should be DiscreteVariable: null
-            Total: null
-            total: null
+            Row variable should be DiscreteVariable: false
+            ' or ContinuousVariable': false
+            Column variable should be DiscreteVariable: false
+            Total: Skupno
+            total: false
         def `_create_group_tables`:
-            ({str(fun).lower()}): null
-            '{var.name} ({str(fun).lower()})': null
-            table: null
-            total_h: null
-            total_v: null
-            total: null
+            ({str(fun).lower()}): false
+            '{var.name} ({str(fun).lower()})': false
+            table: false
+            total_h: false
+            total_v: false
+            total: false
         def `_create_pivot_tables`:
-            table: null
-            total_h: null
-            total_v: null
-            total: null
+            table: false
+            total_h: false
+            total_v: false
+            total: false
         def `__get_pivot_tab_domain`:
             def `map_values`:
-                nan: null
-            have_date: null
-            have_time: null
-            '{v}': null
-            Total: null
-            Aggregate: null
+                nan: false
+            have_date: false
+            have_time: false
+            '{v}': false
+            Total: Skupno
+            Aggregate: Vrednost
         def `__get_pivot_tab_x`:
-            fill_value: null
-            dtype: null
+            fill_value: false
+            dtype: false
         def `count_defined`:
-            nan: null
+            nan: false
     class `PivotTableView`:
-        Total: null
+        Total: Skupno
         def `_draw_lines`:
-            t: null
+            t: false
         def `_resize`:
-            ' ': null
+            ' ': false
     class `OWPivot`:
-        Pivot Table: null
-        Reshape data table based on column values.: null
-        Transform: null
-        icons/Pivot.svg: null
-        pivot: null
-        group: null
-        aggregate: null
+        Pivot Table: Pivotna tabela
+        Reshape data table based on column values.: Preoblikuj podatke glede na vrednosti stolpcev.
+        Transform: false
+        icons/Pivot.svg: false
+        pivot: pivot
+        group: skupine
+        aggregate: agregacija
         class `Inputs`:
-            Data: null
+            Data: Podatki
         class `Outputs`:
-            Pivot Table: null
-            Filtered Data: null
-            Grouped Data: null
+            Pivot Table: Pivotna tabela
+            Filtered Data: Izbrani podatki
+            Grouped Data: Skupine podatkov
         class `Warning`:
-            Column feature should be selected.: null
-            Some aggregations ({}) cannot be computed.: null
-            Some variables have been renamed in some tables: null
-            to avoid duplicates.\n{}: null
-            Selected variable has too many values.: null
-            At least 1 primitive variable is required.: null
+            Column feature should be selected.: Izbrani je potrebno spremenljivko za stolpce.
+            Some aggregations ({}) cannot be computed.: Nekaterih vrednosti ({}) ni mogoče izračunati.
+            Some variables have been renamed in some tables: Spremenljivke s podvojenimi imeni so
+            to avoid duplicates.\n{}: preimenovane.\n{}
+            Selected variable has too many values.: Izbrana spremenljivka ima preveč različnih vrendosti.
+            At least 1 primitive variable is required.: Podatki morajo vsebovati vsaj eno nebesedilno spremenljivko.
         def `_add_control_area_controls`:
-            Rows: null
-            row_feature: null
-            Columns: null
-            col_feature: null
-            (Same as rows): null
-            Values: null
-            val_feature: null
-            (None): null
-            auto_commit: null
+            Rows: Vrstice
+            row_feature: false
+            Columns: Stolpci
+            col_feature: false
+            (Same as rows): (Isti kot vrstice)
+            Values: Vrednosti
+            val_feature: false
+            (None): (Brez)
+            auto_commit: false
         def `__add_aggregation_controls`:
-            Aggregations: null
+            Aggregations: Združevanje
         def `skipped_aggs`:
-            ', ': null
+            ', ': false
         def `init_attr_values`:
-            row_feature: null
-            col_feature: null
-            val_feature: null
+            row_feature: false
+            col_feature: false
+            val_feature: false
         def `send_report`:
-            Row feature: null
-            Column feature: null
-            Value feature: null
-            Group by: null
-    __main__: null
-    heart_disease: null
+            Row feature: Spremenljivka v vrsticah
+            Column feature: Spremenljivka v stolpcih
+            Value feature: Vrednost
+            Group by: Združi po
+    __main__: false
+    heart_disease: false
 widgets/data/owpreprocess.py:
     class `DiscretizeEditor`:
         n: null
@@ -6859,20 +6869,20 @@ widgets/data/owsave.py:
     iris: false
 widgets/data/owselectbydataindex.py:
     class `OWSelectByDataIndex`:
-        Select by Data Index: null
-        Match instances by index from data subset.: null
-        Transform: null
-        icons/SelectByDataIndex.svg: null
+        Select by Data Index: Izberi iste vrstice
+        Match instances by index from data subset.: Izberi primere, ki ustrezajo vrsticam iz podmnožice
+        Transform: false
+        icons/SelectByDataIndex.svg: false
         class `Inputs`:
-            Data: null
-            Data Subset: null
+            Data: Podatki
+            Data Subset: Podmnožica
         class `Outputs`:
-            Matching Data: null
-            Data: null
-            Unmatched Data: null
-            Annotated Data: null
+            Matching Data: Izbrani podatki
+            Data: false
+            Unmatched Data: Ostali podatki
+            Annotated Data: Označeni podatki
         class `Warning`:
-            Input tables do not share any instances.: null
+            Input tables do not share any instances.: Vhodni tabeli nimata skupnih vrstic.
         def `__init__`:
             ? '
 
@@ -6888,119 +6898,126 @@ widgets/data/owselectbydataindex.py:
                 that appear in Data Subset, based on row identity and not actual data.
 
                 '
-            : null
+            : "
+            Vrstice ohranijo identiteto tudi, če so nekatere ali vse spremenljivke\n
+            zamenjane z novimi, izračunanimi iz starih.\n
+            \n
+            Ta gradnik sprejme dve tabeli, \"Podatki\" in \"Podmnožica\", ki izhajata\n
+            iz istega vira. Gradnik izbere vse vrstice prve, ki se pojavijo tudi v drugi.\n
+            Pri tem se ozira na identiteto vrstic in ne na vrednosti spremenljivk.
+            "
         def `send_report`:
             def `data_info_text`:
-                No data.: null
-                '{}\n{} instances\n{} variables': null
-            \n: null
-            ', ': null
-            Data: null
-            Data Subset: null
-    __main__: null
-    iris.tab: null
+                No data.: "-"
+                "{data.name}, ": true
+                "{len(data)} {pl(len(data), 'instance')}, ": "{len(data)} {plsi(len(data), 'vrstica')}, "
+                "{nvars} {pl(nvars, 'variable')}": "{nvars} {plsi(nvars, 'spremenljivka')}"
+            Data: Podatki
+            Data Subset: Podmnožica
+    __main__: false
+    iris.tab: false
 widgets/data/owselectcolumns.py:
     class `VariablesListItemModel`:
-        application/x-Orange-VariableListModelData: null
+        application/x-Orange-VariableListModelData: false
         def `mimeData`:
-            _items: null
+            _items: false
         def `dropMimeData`:
-            _items: null
+            _items: false
     class `SelectAttributesDomainContextHandler`:
         def `encode_setting`:
-            domain_role_hints: null
+            domain_role_hints: false
         def `decode_setting`:
-            domain_role_hints: null
+            domain_role_hints: false
         def `match`:
-            domain_role_hints: null
+            domain_role_hints: false
             available: null
         def `filter_value`:
-            domain_role_hints: null
+            domain_role_hints: false
     class `OWSelectAttributes`:
-        Select Columns: null
-        'Select columns from the data table and assign them to ': null
-        data features, classes or meta variables.: null
-        Transform: null
-        icons/SelectColumns.svg: null
-        filter: null
-        attributes: null
-        target: null
-        variable: null
+        Select Columns: Izbor stolpcev
+        'Select columns from the data table and assign them to ': 'Izbor stolpcev in določitev njihovih vlog '
+        data features, classes or meta variables.: '(spremenljivka, ciljna spremenljivka, meta spremenljivka)'
+        Transform: false
+        icons/SelectColumns.svg: false
+        filter: false
+        attributes: false
+        target: false
+        variable: false
         class `Inputs`:
-            Data: null
-            Features: null
+            Data: Podatki
+            Features: Spremenljivke
         class `Outputs`:
-            Data: null
-            Features: null
+            Data: Podatki
+            Features: Spremenljivke
         class `Warning`:
-            Features and data domain do not match: null
-            Most widgets do not support multiple targets: null
+            Features and data domain do not match: Tabela ne vsebuje nobene od podanih vhodnih spremenljivk.
+            Most widgets do not support multiple targets: Večina gradnikov podpira le eno ciljno spremenljivko.
         def `__init__`:
-            Ignored: null
-            Features: null
-            use_input_features: null
-            Use input features: null
-            Always use input features: null
-            Target: null
-            Metas: null
-            '>': null
-            Reset: null
-            ignore_new_features: null
-            Ignore new variables by default: null
-            'When the widget receives data with additional columns ': null
-            'they are added to the available attributes column if ': null
-            <i>Ignore new variables by default</i> is checked.: null
-            auto_commit: null
+            Ignored: Odstranjeno
+            Features: Spremenljivke
+            use_input_features: false
+            Use input features: Uporabi vhodne spremenljivke
+            Always use input features: Vedno uporabi vhodne spremenljivke
+            Target: Cilj
+            Metas: Meta spremenljivke
+            '>': true
+            Reset: Povrni
+            ignore_new_features: false
+            Ignore new variables by default: Privzeto odstrani nove spremenljivke
+            'When the widget receives data with additional columns ': 'Če je ta možnost izbrana, bo gradnik v primeru,\n'
+            'they are added to the available attributes column if ': 'da prejme podatke z novimi stolpci, le-te\n'
+            <i>Ignore new variables by default</i> is checked.: 'privzeto dodal med odstranjene spremenljivke.'
+            auto_commit: false
         def `__use_features_changed`:
-            use_features_box: null
+            use_features_box: false
         def `set_data`:
-            attribute: null
-            class: null
-            meta: null
-            available: null
+            attribute: false
+            class: false
+            meta: false
+            available: false
         def `restore_hints`:
-            attribute: null
-            meta: null
-            class: null
-            available: null
+            attribute: false
+            meta: false
+            class: false
+            available: false
         def `update_domain_role_hints`:
-            available: null
-            attribute: null
-            class: null
-            meta: null
+            available: false
+            attribute: false
+            class: false
+            meta: false
         def `update_var_counts`:
-            '{name} ({nvars}/{nall})': null
-            '{name} ({nvars})': null
+            '{name} ({nvars}/{nall})': true
+            '{name} ({nvars})': true
         def `update_interface_state`:
-            '>': null
-            <: null
+            '>': true
+            <: true
         def `send_report`:
-            Input data: null
-            Output data: null
-            No changes.: null
-            '%i (%s)': null
+            Input data: Vhodni podatki
+            Output data: Izhodni podatki
+            No changes.: Ni sprememb.
+            '{len(diff)} ({", ".join(x.name for x in diff)})': true
             ', ': null
-            Removed: null
-    __main__: null
-    brown-selected: null
+            Removed: Odstranjene
+    __main__: false
+    brown-selected: false
 widgets/data/owselectrows.py:
     class `SelectRowsContextHandler`:
         def `encode_setting`:
-            conditions: null
-            x: null
+            conditions: false
+            x: false
         def `decode_setting`:
-            conditions: null
-            x: null
-            f: null
+            conditions: false
+            x: false
+            f: false
         def `match`:
-            conditions: null
+            conditions: false
         def `filter_value`:
-            conditions: null
+            conditions: false
     class `FilterDiscreteType`:
-        Equal: null
-        NotEqual: null
-        In: null
-        IsDefined: null
+        Equal: false
+        NotEqual: false
+        In: false
+        IsDefined: false
     def `_plural`:
         'is ': null
         'are ': null
@@ -7009,108 +7026,124 @@ widgets/data/owselectrows.py:
         begins: null
         ends: null
     class `OWSelectRows`:
-        Select Rows: null
-        Select rows from the data based on values of variables.: null
-        icons/SelectRows.svg: null
-        Transform: null
-        filter: null
+        Select Rows: Izberi vrstice
+        Select rows from the data based on values of variables.: Izberi vrstice glede na vrednosti spremenljivk.
+        icons/SelectRows.svg: false
+        Transform: false
+        filter: true
         class `Inputs`:
-            Data: null
+            Data: Podatki
         class `Outputs`:
-            Matching Data: null
-            Unmatched Data: null
-        equals: null
-        is not: null
-        is below: null
-        is at most: null
-        is greater than: null
-        is at least: null
-        is between: null
-        is outside: null
-        is defined: null
-        is: null
-        is one of: null
-        is before: null
-        is equal or before: null
-        is after: null
-        is equal or after: null
-        contains: null
-        begins with: null
-        ends with: null
-        All variables: null
-        are defined: null
-        All numeric variables: null
-        All string variables: null
+            Matching Data: Izbrani podatki
+            Unmatched Data: Neizbrani podatki
+        equals: je
+        equal: so
+        is not: ni
+        are not: niso
+        is below: je manjši kot
+        are below: so manjše kot
+        is at most: je največ
+        are at most: so največ
+        is greater than: je večji kot
+        are greater than: so večje kot
+        is at least: je vsaj
+        are at least: so vsaj
+        is between: je med
+        are between: so med
+        is outside: je izven
+        are outside: so izven
+        is defined: je znan
+        are defined: so znane
+        is: je
+        is one of: je eden izmed
+        is before: je pred
+        are before: so pred
+        is equal or before: je enak ali pred
+        are equal or before: so enake ali pred
+        is after: je za
+        are after: so za
+        is equal or after: je enak ali za
+        are equal or after: so enake ali za
+        contains: vsebuje
+        contain: vsebujejo
+        begins with: se začne z
+        begin with: se začnejo z
+        ends with: se konča z
+        end with: se končajo z
+        All variables: Vse spremenljivke
+        All numeric variables: Vse številke spremenljivke
+        All string variables: Vse besedilne spremenljivke
         class `Error`:
-            '{}': null
+            '{}': false
         def `__init__`:
-            Conditions: null
-            Add Condition: null
-            Add All Variables: null
-            Remove All: null
-            purge_attributes: null
-            Remove unused features: null
-            purge_classes: null
-            Remove unused classes: null
-            auto_commit: null
+            Conditions: Pogoji
+            Add Condition: Dodaj pogoj
+            Add All Variables: Dodaj vse spremenljivke
+            Remove All: Odstrani vse
+            purge_attributes: false
+            Remove unused features: Odstrani neuporabljene vrednosti
+            purge_classes: false
+            Remove unused classes: Odstrani prazne razrede
+            auto_commit: false
         def `add_row`:
-            ×: null
-            '* {font-size: 16pt; color: palette(button-text) }': null
-            '*:hover {color: palette(bright-text)}': null
+            ×: true
+            '* {font-size: 16pt; color: palette(button-text) }': true
+            '*:hover {color: palette(bright-text)}': true
         def `add_all`:
-            Remove existing filters: null
-            'This will replace the existing filters with ': null
-            filters for all variables.: null
+            Remove existing filters: Odstrani vse pogoje
+            'This will replace the existing filters with ': "Zamenjam obstoječe pogoje s "
+            filters for all variables.: pogoji za vse spremenljivke?
         def `_get_lineedit_contents`:
-            controls: null
+            controls: false
         def `_get_value_contents`:
-            controls: null
-            ', ': null
-            Type %s not supported.: null
+            controls: false
+            ', ': false
+            Type %s not supported.: false
         def `set_new_values`:
-            ' defined': null
-            ' one of': null
-            ' and ': null
+            'defined': znan
+            ' one of': ' eden izmed '
+            ' and ': ' in '
         def `_values_to_floats`:
-            Some values could not be parsed as floats: null
-            'in the current locale: {}': null
+            Some values could not be parsed as floats: Nekaterih vrednosti ni mogoče prebrati kot števila
+            'in the current locale: {values}': "pri trenutni nastavitvi sistema: {values}"
         def `commit`:
-            invalid operand: null
+            invalid operand: false
         def `send_report`:
-            No data.: null
-            Data instances: null
-            '{} {}': null
-            is one of: null
-            '{'', ''.join(valnames[:-1])} or {valnames[-1]}': null
-            '{attr} is {valstr}': null
-            '{attr} {name} {attr.values[value]}': null
-            '{attr} {name} {'' and ''.join(map(repr, values))}': null
-            '{attr} {name} {'' and ''.join(values)}': null
-            Instances: null
-            Condition: null
-            ' AND ': null
-            no conditions: null
-            Data: null
-            Matching data: null
-            Non-matching data: null
-            Output: null
-            '{} instances': null
-            None: null
+            No data.: Ni podatkov.
+            Data instances: Število primerov
+            '{} {}': false
+            is one of: je eden izmed
+            '{'', ''.join(valnames[:-1])} or {valnames[-1]}': '{'', ''.join(valnames[:-1])} ali {valnames[-1]}'
+            '{attr} is {valstr}': '{attr} je {valstr}'
+            '{attr} {name} {attr.values[value]}': false
+            '{attr} {name} {'' and ''.join(map(repr, values))}': '{attr} {name} {'' in ''.join(map(repr, values))}'
+            '{attr} {name} {'' and ''.join(values)}': '{attr} {name} {'' in ''.join(values)}'
+            Instances: Primerov
+            Condition: Pogoji
+            ' AND ': ' IN '
+            no conditions: ni pogojev
+            Data: Podatki
+            Matching data: Izbrani podatki
+            "{match_inst} {pl(match_inst, 'instance')}": "{match_inst} {plsi(match_inst, 'primer')}"
+            Non-matching data: Neizbrani podatki
+            "{nonmatch_inst} {pl(nonmatch_inst, 'instance')}": "{nonmatch_inst} {plsi(nonmatch_inst, 'primer')}"
+            Output: Izhod
+            None: Prazno
         def `migrate_context`:
-            conditions: null
+            conditions: false
     class `CheckBoxPopup`:
         def `__init__`:
-            ', ': null
+            ', ': false
     class `DateTimeWidget`:
         def `set_format`:
-            yyyy-MM-dd hh:mm:ss: null
-            '%Y-%m-%d %H:%M:%S': null
-            yyyy-MM-dd: null
-            '%Y-%m-%d': null
-            hh:mm:ss: null
-            '%H:%M:%S': null
-    __main__: null
-    heart_disease: null
+            yyyy-MM-dd hh:mm:ss: false
+            '%Y-%m-%d %H:%M:%S': false
+            yyyy-MM-dd: false
+            '%Y-%m-%d': false
+            hh:mm:ss: false
+            '%H:%M:%S': false
+    __main__: false
+    heart_disease: false
 widgets/data/owsql.py:
     def `is_postgres`:
         display_name: false
@@ -7287,18 +7320,18 @@ widgets/data/owtable.py:
     housing: false
 widgets/data/owtransform.py:
     class `OWTransform`:
-        Apply Domain: null
-        Applies template domain on data table.: null
-        Transform: null
-        icons/Transform.svg: null
-        transform: null
+        Apply Domain: Spremeni domeno
+        Applies template domain on data table.: Spremeni vhodne podatke glede na domeno iz vzorca.
+        Transform: false
+        icons/Transform.svg: false
+        transform: false
         class `Inputs`:
-            Data: null
-            Template Data: null
+            Data: Podatki
+            Template Data: Podatki z domeno
         class `Outputs`:
-            Transformed Data: null
+            Transformed Data: Spremenjeni podatki
         class `Error`:
-            An error occurred while transforming data.\n{}: null
+            An error occurred while transforming data.\n{}: Napake med spreminjanjem domene.\n{}
         def `__init__`:
             ? '
 
@@ -7314,73 +7347,77 @@ widgets/data/owtransform.py:
                 like, for instance, discretization, feature construction, PCA etc.
 
                 '
-            : null
+            : "Gradnik prejme tablo Podatki in na njej izvede enake transformacije,\n
+               kot so doletele tabelo Podatki z domeno.\n\n
+               To vključuje izbiranje podmnožic sprmenljivk kot tudi računanje\n
+               spremenljivk iz drugih sporemenljivk, na primer diskretizacija, PCA ipd.
+            "
         def `send_report`:
-            Data: null
-            Template data: null
-            Transformed data: null
-    __main__: null
-    iris: null
+            Data: Podatki
+            Template data: Podatki z domeno
+            Transformed data: Spremenjeni podatki
+    __main__: false
+    iris: false
 widgets/data/owtranspose.py:
     class `OWTranspose`:
-        Transpose: null
-        Transpose data table.: null
-        Transform: null
-        icons/Transpose.svg: null
+        Transpose: Transponiraj
+        Transpose data table.: Spremeni vrstice v stolpce in obratno
+        Transform: false
+        icons/Transpose.svg: false
         class `Inputs`:
-            Data: null
+            Data: Podatki
         class `Outputs`:
-            Data: null
-        Feature: null
+            Data: Podatki
+        Feature: Spremenljivka
         class `Warning`:
-            'Values are not unique.\nTo avoid multiple ': null
-            'features with the same name, values \nof ': null
-            '''{}'' have been augmented with indices.': null
-            Categorical features have been encoded as numbers.: null
+            'Values are not unique.\nTo avoid multiple ': 'Vrednosti niso unikatne.\n K vrednostim'
+            'features with the same name, values \nof ': '''{}'' so zato dodane številke.'
+            '''{}'' have been augmented with indices.': ''
+            Categorical features have been encoded as numbers.: Kategorične vrednosti so predstavljene z indeksi.
         class `Error`:
-            '{}': null
+            '{}': false
         def `__init__`:
-            feature_type: null
-            Feature names: null
-            Generic: null
-            feature_name: null
-            Type a prefix ...: null
-            Custom feature name: null
-            'From variable:': null
-            feature_names_column: null
-            remove_redundant_inst: null
-            Remove redundant instance: null
+            feature_type: false
+            Feature names: Imena spremenljivk
+            Generic: Generična imena
+            feature_name: false
+            Type a prefix ...: Določi predpono ...
+            Custom feature name: Določi predpono imen spremenljivk
+            'From variable:': 'Po vrednosti spremenljivke:'
+            feature_names_column: false
+            remove_redundant_inst: false
+            Remove redundant instance: Odstrani odvečni primer
         def `send_report`:
-            from variable: null
-            '  ''{}''': null
-            Feature names: null
-            Data: null
-    __main__: null
-    iris: null
+            from variable: po spremenljivki
+            '  ''{}''': false
+            Feature names: Imena spremenljivk
+            Data: Podatki
+    __main__: false
+    iris: false
 widgets/data/owunique.py:
     class `OWUnique`:
-        Unique: null
-        icons/Unique.svg: null
-        Filter instances unique by specified key attribute(s).: null
-        Transform: null
+        Unique: Enkratni
+        icons/Unique.svg: false
+        Filter instances unique by specified key attribute(s).: Filtriraj primere tako, da se ključne vrednosti ne ponavljajo
+        Transform: false
         class `Inputs`:
-            Data: null
+            Data: Podatki
         class `Outputs`:
-            Data: null
-        Last instance: null
-        First instance: null
-        Middle instance: null
-        Random instance: null
-        Discard non-unique instances: null
+            Data: Podatki
+        Last instance: Zadnji primer
+        First instance: Prvi primer
+        Middle instance: Srednji primer
+        Random instance: Naključni primer
+        Discard non-unique instances: Zavrzi skupine z več primeri
         def `__init__`:
-            selected_vars: null
-            Group by: null
-            tiebreaker: null
-            'Instance to select in each group:': null
-            autocommit: null
-            Commit: null
-    __main__: null
-    iris: null
+            selected_vars: false
+            Group by: Upoštevane spremenljivke
+            tiebreaker: false
+            'Instance to select in each group:': 'Primer, ki predstavlja posamično skupino:'
+            autocommit: false
+            Commit: Uveljavi
+    __main__: false
+    iris: false
 widgets/data/utils/histogram.py:
     class `ProportionalBarItem`:
         def `__init__`:
@@ -9522,7 +9559,7 @@ widgets/report/report.py:
         Numeric variable '{}': null
         Targets: null
     def `describe_data_brief`:
-        Data instances: null
+        Data instances: Število primerov
 widgets/report/tests/__init__.py:
     def `suite`:
         test*.py: null
