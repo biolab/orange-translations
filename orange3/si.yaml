@@ -6739,81 +6739,81 @@ widgets/data/owrandomize.py:
     __main__: null
     iris: null
 widgets/data/owrank.py:
-    score_meta: null
-    name: null
-    shortname: null
-    scorer: null
-    problem_type: null
-    is_default: null
-    Information Gain: null
-    Info. gain: null
-    Information Gain Ratio: null
-    Gain ratio: null
-    Gini Decrease: null
-    Gini: null
-    ANOVA: null
-    χ²: null
-    ReliefF: null
-    FCBF: null
-    Univariate Regression: null
-    Univar. reg.: null
-    RReliefF: null
+    score_meta: false
+    name: false
+    shortname: false
+    scorer: false
+    problem_type: false
+    is_default: false
+    Information Gain: Informacijski prispevek
+    Info. gain: Inf. prisp
+    Information Gain Ratio: Delež inform. prispevka
+    Gain ratio: Delež inf.
+    Gini Decrease: Znižanje Ginijevega indeksa
+    Gini: true
+    ANOVA: true
+    χ²: true
+    ReliefF: true
+    FCBF: true
+    Univariate Regression: Univariatna regresija
+    Univar. reg.: Univar. reg.
+    RReliefF: true
     def `get_method_scores`:
-        ignore: null
-        '%s doesn''t work on this data': null
-        '%s had to be computed separately for each ': null
-        variable: null
+        ignore: false
+        '%s doesn''t work on this data': false
+        '%s had to be computed separately for each ': false
+        variable: false
     def `get_scorer_scores`:
-        '%s doesn''t work on this data': null
-        _: null
+        '%s doesn''t work on this data': false
+        _: false
     class `OWRank`:
-        Rank: null
-        Rank and filter data features by their relevance.: null
-        icons/Rank.svg: null
+        Rank: Rangiranje
+        Rank and filter data features by their relevance.: Rangiraj in filtriraj spremenljivke glede na pomembnosti
+        icons/Rank.svg: false
         class `Inputs`:
-            Data: null
-            Scorer: null
+            Data: Podatki
+            Scorer: Kriterij
         class `Outputs`:
-            Reduced Data: null
-            Scores: null
-            Features: null
+            Reduced Data: Reducirani podatki
+            Scores: Ocene
+            Features: Spremenljivke
         class `Information`:
-            Data does not have a (single) target variable.: null
-            Missing values will be imputed as needed.: null
+            Data does not have a (single) target variable.: Podatki nimajo (ene) ciljne spremenljivke.
+            Missing values will be imputed as needed.: Manjkajoče vrednosti bodo nadomeščene.
         class `Error`:
-            Cannot handle target variable type {}: null
-            'Scorer {} inadequate: {}': null
-            Data does not have a single attribute.: null
+            Cannot handle target variable type {}: "Vrsta ciljne spremenljivke '{}' ni podprta."
+            'Scorer {} inadequate: {}': "Kriterij {} ni ustrezen: {}"
+            Data does not have a single attribute.: Podatki ne vsebujejo nobene spremenljivke.
         class `Warning`:
-            Variables with duplicated names have been renamed.: null
+            Variables with duplicated names have been renamed.: Spremenljivke s podvojenimi imeni so preimenovane.
         def `__init__`:
-            Scoring Methods: null
-            Select Attributes: null
-            None: null
-            All: null
-            Manual: null
-            'Best ranked:': null
-            nSelected: null
-            auto_apply: null
+            Scoring Methods: Kriteriji pomembnosti
+            Select Attributes: Izbor spremenljivk
+            None: Nobena
+            All: Vse
+            Manual: Ročno
+            'Best ranked:': "Najboljše ocenjene:"
+            nSelected: false
+            auto_apply: false
         def `handleNewSignals`:
-            Running: null
+            Running: V teku
         def `on_done`:
-            '#': null
+            '#': false
         def `send_report`:
-            Input: null
-            Ranks: null
-            '{:.3f}': null
-            Output: null
+            Input: Vhod
+            Ranks: Rangi
+            '{:.3f}': false
+            Output: Izhod
         def `create_scores_table`:
-            Feature: null
-            ', ': null
-            Feature Scores: null
+            Feature: Spremenljivka
+            ', ': true
+            Feature Scores: Ocene spremenljivk
         def `migrate_settings`:
-            headerState: null
-            sorting: null
-    __main__: null
-    heart_disease.tab: null
-    Learner: null
+            headerState: false
+            sorting: false
+    __main__: false
+    heart_disease.tab: false
+    Learner: false
 widgets/data/owsave.py:
     ~{os.sep}: null
     class `OWSave`:
