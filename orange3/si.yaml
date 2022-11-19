@@ -6389,80 +6389,80 @@ widgets/data/owpreprocess.py:
     brown-selected: false
 widgets/data/owpurgedomain.py:
     class `OWPurgeDomain`:
-        Purge Domain: null
-        'Remove redundant values and features from the dataset. ': null
-        Sort values.: null
-        icons/PurgeDomain.svg: null
-        Transform: null
-        remove: null
-        delete: null
-        unused: null
+        Purge Domain: Očisti domeno
+        'Remove redundant values and features from the dataset. ': Odstrani neuporabljene vrednosti in spremenljivke
+        Sort values.: Uredi vrednosti.
+        icons/PurgeDomain.svg: false
+        Transform: false
+        remove: odstrani
+        delete: uredi
+        unused: neuporabljene
         class `Inputs`:
-            Data: null
+            Data: Podatki
         class `Outputs`:
-            Data: null
-        sortValues: null
-        Sort categorical feature values: null
-        removeValues: null
-        Remove unused feature values: null
-        removeAttributes: null
-        Remove constant features: null
-        sortClasses: null
-        Sort categorical class values: null
-        removeClasses: null
-        Remove unused class variable values: null
-        removeClassAttribute: null
-        Remove constant class variables: null
-        removeMetaAttributeValues: null
-        Remove unused meta attribute values: null
-        removeMetaAttributes: null
-        Remove constant meta attributes: null
-        Sorted features: null
-        resortedAttrs: null
-        Reduced features: null
-        reducedAttrs: null
-        Removed features: null
-        removedAttrs: null
-        Sorted classes: null
-        resortedClasses: null
-        Reduced classes: null
-        reducedClasses: null
-        Removed classes: null
-        removedClasses: null
-        Reduced metas: null
-        reducedMetas: null
-        Removed metas: null
-        removedMetas: null
+            Data: Podatki
+        sortValues: false
+        Sort categorical feature values: Uredi kategorične vrednosti po abecedi
+        removeValues: false
+        Remove unused feature values: Odstrani neuporabljene vrednosti
+        removeAttributes: false
+        Remove constant features: Odstrani konstantne spremenljivke
+        sortClasses: false
+        Sort categorical class values: Uredi razrede po abecedi
+        removeClasses: false
+        Remove unused class variable values: Odstrani prazne razrede
+        removeClassAttribute: false
+        Remove constant class variables: Odstrani konstantne ciljne spremenljivke
+        removeMetaAttributeValues: false
+        Remove unused meta attribute values: Odstrani neuporabljene vrednosti meta spremenljivk
+        removeMetaAttributes: false
+        Remove constant meta attributes: Odstrani konstantne meta spremenljivke
+        Sorted features: Urejene značilke
+        resortedAttrs: false
+        Reduced features: Poenostavljene značilke
+        reducedAttrs: false
+        Removed features: Odstranjene značilke
+        removedAttrs: false
+        Sorted classes: Urejeni razredi
+        resortedClasses: false
+        Reduced classes: Poenostavljeni razredi
+        reducedClasses: false
+        Removed classes: Odstranjeni razredi
+        removedClasses: false
+        Reduced metas: Poenostavljene meta spremeljivke
+        reducedMetas: false
+        Removed metas: Odstranjene meta spremeljivke
+        removedMetas: false
         def `__init__`:
-            '-': null
-            Features: null
-            'Sorted: %(resortedAttrs)s, ': null
-            'reduced: %(reducedAttrs)s, removed: %(removedAttrs)s': null
-            Classes: null
-            'Sorted: %(resortedClasses)s,': null
-            'reduced: %(reducedClasses)s, removed: %(removedClasses)s': null
-            Meta attributes: null
-            'Reduced: %(reducedMetas)s, removed: %(removedMetas)s': null
-            autoSend: null
+            '-': true
+            Features: Značilke
+            'Sorted: %(resortedAttrs)s, ': 'Urejene: %(resortedAttrs)s, '
+            'reduced: %(reducedAttrs)s, removed: %(removedAttrs)s': 'poenostavljene: %(reducedAttrs)s, odstranjene: %(removedAttrs)s'
+            Classes: Razredi
+            'Sorted: %(resortedClasses)s,': 'Urejeni: %(resortedClasses)s,'
+            'reduced: %(reducedClasses)s, removed: %(removedClasses)s': 'poenostavljeni: %(reducedClasses)s, odstranjeni: %(removedClasses)s'
+            Meta attributes: Meta spremenljivke
+            'Reduced: %(reducedMetas)s, removed: %(removedMetas)s': 'poenostavljene: %(reducedMetas)s, odstranjene: %(removedMetas)s'
+            autoSend: false
         def `setData`:
-            '-': null
+            '-': true
         def `commit`:
-            removed: null
-            reduced: null
-            sorted: null
+            removed: false
+            reduced: false
+            sorted: false
         def `send_report`:
             def `list_opts`:
-                '; ': null
-                no changes: null
-            Settings: null
-            Features: null
-            Classes: null
-            Metas: null
-            Statistics: null
-    __main__: null
-    https://datasets.biolab.si/core/car.tab: null
-    buying: null
-    v-high: null
+                '; ': true
+                no changes: ni sprememb
+            Settings: Nastavitve
+            Features: Značilke
+            Classes: Razredi
+            Metas: Meta spremenljivke
+            Statistics: Statistika
+    __main__: false
+    https://datasets.biolab.si/core/car.tab: false
+    buying: false
+    v-high: false
 widgets/data/owpythonscript.py:
     OWPythonScript: null
     ? "import numpy as np\nfrom Orange.data import Table, Domain, ContinuousVariable,\
@@ -6704,46 +6704,46 @@ widgets/data/owpythonscript.py:
     __main__: null
 widgets/data/owrandomize.py:
     class `OWRandomize`:
-        Randomize: null
-        Randomize features, class and/or metas in data table.: null
-        Transform: null
-        icons/Random.svg: null
+        Randomize: Premešaj
+        Randomize features, class and/or metas in data table.: Premeša značilke, razrede in/ali meta spremenljivke
+        Transform: false
+        icons/Random.svg: false
         class `Inputs`:
-            Data: null
+            Data: Podatki
         class `Outputs`:
-            Data: null
+            Data: Podatki
         def `__init__`:
-            Shuffled columns: null
-            shuffle_class: null
-            Classes: null
-            shuffle_attrs: null
-            Features: null
-            shuffle_metas: null
-            Metas: null
-            Shuffled rows: null
-            None: null
-            scope_prop: null
-            All: null
-            random_seed: null
-            Replicable shuffling: null
+            Shuffled columns: Premešani stolpci
+            shuffle_class: false
+            Classes: Razredi
+            shuffle_attrs: false
+            Features: Značilke
+            shuffle_metas: false
+            Metas: Meta spremenljivke
+            Shuffled rows: Delež premešanih vrstic
+            None: Nič
+            scope_prop: false
+            All: Vse
+            random_seed: false
+            Replicable shuffling: Ponovljivo naključno mešanje
         def `_set_scope_label`:
-            '{}%': null
+            '{}%': false
         def `send_report`:
-            classes: null
-            features: null
-            metas: null
-            none: null
-            ' and ': null
-            ', ': null
-            Settings: null
-            Shuffled columns: null
-            Proportion of shuffled rows: null
-            '{}%': null
-            Replicable: null
-            'yes': null
-            'no': null
-    __main__: null
-    iris: null
+            classes: razredi
+            features: značilke
+            metas: meta spremenljivke
+            none: nič
+            ' and ': ' in '
+            ', ': true
+            Settings: Nastavitve
+            Shuffled columns: Premešani stolpci
+            Proportion of shuffled rows: Delež premešanih vrstic
+            '{}%': false
+            Replicable: Ponovljivo
+            'yes': da
+            'no': ne
+    __main__: false
+    iris: false
 widgets/data/owrank.py:
     score_meta: false
     name: false
