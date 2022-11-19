@@ -6067,24 +6067,24 @@ widgets/data/owpivot.py:
             Filtered Data: Izbrani podatki
             Grouped Data: Skupine podatkov
         class `Warning`:
-            Column feature should be selected.: Izbrani je potrebno spremenljivko za stolpce.
+            Column feature should be selected.: Izbrati je potrebno spremenljivko za stolpce.
             Some aggregations ({}) cannot be computed.: Nekaterih vrednosti ({}) ni mogoče izračunati.
             Some variables have been renamed in some tables: Spremenljivke s podvojenimi imeni so
             to avoid duplicates.\n{}: preimenovane.\n{}
-            Selected variable has too many values.: Izbrana spremenljivka ima preveč različnih vrendosti.
+            Selected variable has too many values.: Izbrana spremenljivka ima preveč različnih vrednosti.
             At least 1 primitive variable is required.: Podatki morajo vsebovati vsaj eno nebesedilno spremenljivko.
         def `_add_control_area_controls`:
             Rows: Vrstice
             row_feature: false
             Columns: Stolpci
             col_feature: false
-            (Same as rows): (Isti kot vrstice)
+            (Same as rows): (Enako vrsticam)
             Values: Vrednosti
             val_feature: false
             (None): (Brez)
             auto_commit: false
         def `__add_aggregation_controls`:
-            Aggregations: Združevanje
+            Aggregations: Izračunaj
         def `skipped_aggs`:
             ', ': false
         def `init_attr_values`:
@@ -6092,8 +6092,8 @@ widgets/data/owpivot.py:
             col_feature: false
             val_feature: false
         def `send_report`:
-            Row feature: Spremenljivka v vrsticah
-            Column feature: Spremenljivka v stolpcih
+            Row feature: Vrstice
+            Column feature: Stolpci
             Value feature: Vrednost
             Group by: Združi po
     __main__: false
