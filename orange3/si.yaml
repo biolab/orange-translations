@@ -4973,18 +4973,18 @@ widgets/data/oweditdomain.py:
     __main__: false
     iris: false
 widgets/data/owfeatureconstructor.py:
-    FeatureDescriptor: null
-    name: null
-    expression: null
-    ContinuousDescriptor: null
-    number_of_decimals: null
-    DateTimeDescriptor: null
-    DiscreteDescriptor: null
-    values: null
-    ordered: null
-    StringDescriptor: null
+    FeatureDescriptor: false
+    name: false
+    expression: false
+    ContinuousDescriptor: false
+    number_of_decimals: false
+    DateTimeDescriptor: false
+    DiscreteDescriptor: false
+    values: false
+    ordered: false
+    StringDescriptor: false
     def `selected_row`:
-        invalid 'selectionMode': null
+        invalid 'selectionMode': false
     class `FeatureEditor`:
         ? '
 
@@ -4996,249 +4996,251 @@ widgets/data/owfeatureconstructor.py:
 
 
             '
-        : null
-        _: null
-        str: null
-        float: null
-        int: null
-        len: null
-        abs: null
-        max: null
-        min: null
+        : "V izrazu lahko uporabite imena spremenljivk.\n
+           Vrednosti kategoričnih spremenljivk so nizi.\n
+        "
+        _: false
+        str: false
+        float: false
+        int: false
+        len: false
+        abs: false
+        max: false
+        min: false
         def `__init__`:
-            Name...: null
-            Expression...: null
-            Select Feature: null
-            Select Function: null
+            Name...: Ime...
+            Expression...: Izraz...
+            Select Feature: Izberi spremenljivko
+            Select Function: Izberi funkcijo
         def `setEditorData`:
-            Select Feature: null
+            Select Feature: Izberi spremenljivko
         def `on_funcs_changed`:
-            atan2: null
-            fmod: null
-            ldexp: null
-            log: null
-            pow: null
-            copysign: null
-            hypot: null
-            (,): null
-            e: null
-            pi: null
-            (): null
+            atan2: false
+            fmod: false
+            ldexp: false
+            log: false
+            pow: false
+            copysign: false
+            hypot: false
+            (,): false
+            e: false
+            pi: false
+            (): false
     class `ContinuousFeatureEditor`:
-        A numeric expression\n\n: null
+        A numeric expression\n\n: Številski izraz\n\n
     class `DateTimeFeatureEditor`:
-        'Result must be a string in ISO-8601 format ': null
-        (e.g. 2019-07-30T15:37:27 or a part thereof),\n: null
-        or a number of seconds since Jan 1, 1970.: null
+        'Result must be a string in ISO-8601 format ': 'Rezultat mora biti niz v formatu ISO-8601 '
+        (e.g. 2019-07-30T15:37:27 or a part thereof),\n: (npr. 2019-07-30T15:37:27 ali del tega),\n
+        or a number of seconds since Jan 1, 1970.: ali število sekund od 1. januarja 1970
     class `DiscreteFeatureEditor`:
-        Result must be a string, if values are not explicitly given\n: null
-        or a zero-based integer indices into a list of values given below.: null
+        Result must be a string, if values are not explicitly given\n: Če vrednosti niso eksplicitno podane spodaj, mora biti rezultat niz,
+        or a zero-based integer indices into a list of values given below.: sicer pa indeks elementa v spodnjem seznamu (začenši z 0).
         def `__init__`:
-            'If values are given, above expression must return zero-based ': null
-            integer indices into that list.: null
-            A, B ...: null
-            Values (optional): null
+            'If values are given, above expression must return zero-based ': 'Če so vrednosti podane, mora biti rezultat izraza '
+            integer indices into that list.: indeks elementa v te seznamu (začenši z 0).
+            A, B ...: true
+            Values (optional): Vrednosti (opcijsko)
         def `setEditorData`:
-            ', ': null
-            ',': null
-            \,: null
+            ', ': false
+            ',': false
+            \,: false
         def `editorData`:
-            (?<!\\),: null
-            \,: null
-            ',': null
+            (?<!\\),: false
+            \,: false
+            ',': false
     class `StringFeatureEditor`:
-        A string expression\n\n: null
-    d: null
-    c: null
-    t: null
-    s: null
+        A string expression\n\n: Izraz, katerega rezultat je niz\n\n
+    d: false
+    c: false
+    t: false
+    s: false
     class `FeatureItemDelegate`:
         def `displayText`:
-            ' := ': null
+            ' := ': false
     class `FeatureConstructorHandler`:
         def `is_valid_item`:
-            eval: null
-            __GLOBALS: null
+            eval: false
+            __GLOBALS: false
     class `OWFeatureConstructor`:
-        Feature Constructor: null
-        'Construct new features (data columns) from a set of ': null
-        existing features in the input dataset.: null
-        Transform: null
-        icons/FeatureConstructor.svg: null
-        function: null
-        lambda: null
+        Feature Constructor: Sestavi značilke
+        'Construct new features (data columns) from a set of ': Sestavi nove značilke, izračunane
+        existing features in the input dataset.: iz obstoječih.
+        Transform: false
+        icons/FeatureConstructor.svg: false
+        function: funkcija
+        lambda: formula
         class `Inputs`:
-            Data: null
+            Data: Podatki
         class `Outputs`:
-            Data: null
+            Data: Podatki
         class `Error`:
-            Categorical feature {} needs more values.: null
-            'Invalid expressions: {}.': null
-            '{}': null
+            Categorical feature {} needs more values.: Kategorična spremenljivka {} potrebuje več vrednosti.
+            'Invalid expressions: {}.': 'Nepravilen izraz: {}'
+            '{}': false
         class `Warning`:
-            'Recently added variable has been renamed, ': null
-            to avoid duplicates.\n: null
+            'Recently added variable has been renamed, ': 'Nove spremenljivke so preimenovane '
+            to avoid duplicates.\n: zaradi ponovljenih imen.
         def `__init__`:
-            Variable Definitions: null
-            New: null
-            Create a new variable: null
-            Numeric: null
-            X{}: null
-            Categorical: null
-            D{}: null
-            Text: null
-            S{}: null
-            Date/Time: null
-            T{}: null
-            Duplicate Selected Variable: null
-            Remove: null
-            Remove selected variable: null
-            Upgrade Expressions: null
-            Send: null
+            Variable Definitions: Definicije spremenljivk
+            New: Nova
+            Create a new variable: Sestavi novo spremenljivko
+            Numeric: Številska
+            X{}: true
+            Categorical: Kategorična
+            D{}: true
+            Text: Besedilna
+            S{}: true
+            Date/Time: Datum/Čas
+            T{}: true
+            Duplicate Selected Variable: Podvoji izbrano spremenljivko
+            Remove: Odstrani
+            Remove selected variable: Odstrani izbrano spremenljivko
+            Upgrade Expressions: Prenovi izraze
+            Send: Pošlji
         def `_validate_descriptors`:
             def `validate`:
-                eval: null
-            ', ': null
+                eval: false
+            ', ': false
         def `on_done`:
-            Result: null
+            Result: false
         def `send_report`:
-            categorical: null
-            ' with values ': null
-            ', ': null
-            '''{val}''': null
-            ; ordered: null
-            numeric: null
-            date/time: null
-            text: null
-            '{feature.expression} ({desc})': null
-            Constructed feature{s}: null
+            categorical: kategorična
+            ' with values ': z vrednostmi
+            ', ': false
+            '''{val}''': false
+            ; ordered: ; urejena
+            numeric: številska
+            date/time: datum/čas
+            text: besedilna
+            '{feature.expression} ({desc})': false
+            Constructed feature{s}: Sestavljene spremenljivke
         def `fix_expressions`:
-            Fix Expressions: null
-            'This widget''s behaviour has changed. Values of categorical ': null
-            'variables are now inserted as their textual representations ': null
-            '(strings); previously they appeared as integer numbers, with an ': null
-            attribute '.value' that contained the text.\n\n: null
-            'The widget currently runs in compatibility mode. After ': null
-            expressions are updated, manually check for their correctness.: null
-            Update: null
-            Cancel: null
+            Fix Expressions: Popravi izraze
+            'This widget''s behaviour has changed. Values of categorical ': true
+            'variables are now inserted as their textual representations ': true
+            '(strings); previously they appeared as integer numbers, with an ': true
+            attribute '.value' that contained the text.\n\n: true
+            'The widget currently runs in compatibility mode. After ': true
+            expressions are updated, manually check for their correctness.: true
+            Update: true
+            Cancel: true
             def `fixer`:
-                .value: null
-                '{': null
-                ', ': null
-                '''{val}'': {i}': null
-                '}}[{var.name}]': null
-            '|': null
-            '{var.name}': null
-            (^|\W)(: null
-            )(\.value)?(\W|$): null
+                .value: false
+                '{': false
+                ', ': false
+                '''{val}'': {i}': false
+                '}}[{var.name}]': false
+            '|': false
+            '{var.name}': false
+            (^|\W)(: false
+            )(\.value)?(\W|$): false
         def `migrate_context`:
-            eval: null
-            descriptors: null
-            expressions_with_values: null
+            eval: false
+            descriptors: false
+            expressions_with_values: false
     def `validate_exp`:
-        exp is not a 'ast.AST' instance: null
+        exp is not a 'ast.AST' instance: false
     def `sanitized_name`:
-        \W: null
-        _: null
+        \W: false
+        _: false
     def `bind_variable`:
-        nan: null
-        eval: null
-        NFKC: null
-    _: null
+        nan: false
+        eval: false
+        NFKC: false
+    _: false
     def `make_lambda`:
-        __builtins__: null
-        <lambda>: null
-        eval: null
-    Ellipsis: null
-    'False': null
-    None: null
-    'True': null
-    abs: null
-    all: null
-    any: null
-    acsii: null
-    bin: null
-    bool: null
-    bytearray: null
-    bytes: null
-    chr: null
-    complex: null
-    dict: null
-    divmod: null
-    enumerate: null
-    filter: null
-    float: null
-    format: null
-    frozenset: null
-    getattr: null
-    hasattr: null
-    hash: null
-    hex: null
-    id: null
-    int: null
-    iter: null
-    len: null
-    list: null
-    map: null
-    memoryview: null
-    next: null
-    object: null
-    oct: null
-    ord: null
-    pow: null
-    range: null
-    repr: null
-    reversed: null
-    round: null
-    set: null
-    slice: null
-    sorted: null
-    str: null
-    tuple: null
-    type: null
-    zip: null
-    normalvariate: null
-    gauss: null
-    expovariate: null
-    gammavariate: null
-    betavariate: null
-    lognormvariate: null
-    paretovariate: null
-    vonmisesvariate: null
-    weibullvariate: null
-    triangular: null
-    uniform: null
-    nanmean: null
-    nanmin: null
-    nanmax: null
-    nansum: null
-    nanstd: null
-    nanmedian: null
-    nancumsum: null
-    nancumprod: null
-    nanargmax: null
-    nanargmin: null
-    nanvar: null
-    mean: null
-    min: null
-    max: null
-    sum: null
-    std: null
-    median: null
-    cumsum: null
-    cumprod: null
-    argmax: null
-    argmin: null
-    var: null
+        __builtins__: false
+        <lambda>: false
+        eval: false
+    Ellipsis: false
+    'False': false
+    None: false
+    'True': false
+    abs: false
+    all: false
+    any: false
+    acsii: false
+    bin: false
+    bool: false
+    bytearray: false
+    bytes: false
+    chr: false
+    complex: false
+    dict: false
+    divmod: false
+    enumerate: false
+    filter: false
+    float: false
+    format: false
+    frozenset: false
+    getattr: false
+    hasattr: false
+    hash: false
+    hex: false
+    id: false
+    int: false
+    iter: false
+    len: false
+    list: false
+    map: false
+    memoryview: false
+    next: false
+    object: false
+    oct: false
+    ord: false
+    pow: false
+    range: false
+    repr: false
+    reversed: false
+    round: false
+    set: false
+    slice: false
+    sorted: false
+    str: false
+    tuple: false
+    type: false
+    zip: false
+    normalvariate: false
+    gauss: false
+    expovariate: false
+    gammavariate: false
+    betavariate: false
+    lognormvariate: false
+    paretovariate: false
+    vonmisesvariate: false
+    weibullvariate: false
+    triangular: false
+    uniform: false
+    nanmean: false
+    nanmin: false
+    nanmax: false
+    nansum: false
+    nanstd: false
+    nanmedian: false
+    nancumsum: false
+    nancumprod: false
+    nanargmax: false
+    nanargmin: false
+    nanvar: false
+    mean: false
+    min: false
+    max: false
+    sum: false
+    std: false
+    median: false
+    cumsum: false
+    cumprod: false
+    argmax: false
+    argmin: false
+    var: false
     class `FeatureFunc`:
-        DType: null
+        DType: false
         def `__init__`:
-            eval: null
+            eval: false
         def `__repr__`:
-            '{0.__name__}{1!r}': null
-    __main__: null
-    iris: null
+            '{0.__name__}{1!r}': false
+    __main__: false
+    iris: false
 widgets/data/owfeaturestatistics.py:
     def `format_time_diff`:
         ~{years} years: ~{years} {plsi(years, "leto|leti|leta|let")}
