@@ -7338,10 +7338,10 @@ widgets/data/owtransform.py:
                 like, for instance, discretization, feature construction, PCA etc.
 
                 '
-            : "Gradnik prejme tablo Podatki in na njej izvede enake transformacije,\n
-               kot so doletele tabelo Podatki z domeno.\n\n
-               To vključuje izbiranje podmnožic sprmenljivk kot tudi računanje\n
-               spremenljivk iz drugih sporemenljivk, na primer diskretizacija, PCA ipd.
+            : "Gradnik prejme tabelo 'Podatki' in na njej izvede enake transformacije,\n
+               kot so doletele tabelo 'Podatki z domeno'.\n\n
+               To vključuje izbiranje podmnožic spremenljivk kot tudi računanje\n
+               spremenljivk iz drugih spremenljivk, na primer diskretizacija, PCA ipd.
             "
         def `send_report`:
             Data: Podatki
