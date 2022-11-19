@@ -5562,60 +5562,60 @@ widgets/data/owimpute.py:
     __main__: false
     brown-selected: false
 widgets/data/owmelt.py:
-    item: null
-    value: null
-    row: null
+    item: stvar
+    value: vrednost
+    row: vrstica
     class `MeltContextHandler`:
         def `match`:
-            idvar: null
+            idvar: false
         def `encode_setting`:
-            idvar: null
+            idvar: false
         def `decode_setting`:
-            idvar: null
+            idvar: false
     class `OWMelt`:
-        Melt: null
-        Convert wide data to narrow data, a list of item-value pairs: null
-        Transform: null
-        icons/Melt.svg: null
-        shopping list: null
-        wide: null
-        narrow: null
+        Melt: Raztopi
+        Convert wide data to narrow data, a list of item-value pairs: Spremeni široke podatke v ozke, to je, seznam parov (stvar, vrednost)
+        Transform: false
+        icons/Melt.svg: false
+        shopping list: nakupovalni seznam
+        wide: širok
+        narrow: ozek
         class `Inputs`:
-            Data: null
+            Data: Podatki
         class `Outputs`:
-            Data: null
+            Data: Podatki
         class `Information`:
-            No columns with unique values\n: null
-            Only columns with unique valules are useful for row identifiers.: null
+            No columns with unique values\n: Ni stolpcev z neponovljenimi vrednostmi.
+            Only columns with unique valules are useful for row identifiers.: Kot identifikator vrstice so uporabni le stolpci, v katerih se vrednosti ne ponavljajo.
         def `__init__`:
-            Unique Row Identifier: null
-            Row number: null
-            idvar: null
-            A column with identifier, like customer's id: null
-            Filter: null
-            only_numeric: null
-            Ignore non-numeric features: null
-            exclude_zeros: null
-            Exclude zero values: null
-            Besides missing values, also omit items with zero values: null
-            Names for generated features: null
-            'Item:': null
-            item_var_name: null
-            'padding-left: 3px': null
-            'Value:': null
-            value_var_name: null
+            Unique Row Identifier: Identifikator vrstice
+            Row number: Številka vrstice
+            idvar: false
+            A column with identifier, like customer's id: Stolpec z identifikatorjem, npr. številka nakupa
+            Filter: true
+            only_numeric: false
+            Ignore non-numeric features: Uporabi le številske spremenljivke
+            exclude_zeros: false
+            Exclude zero values: Preskoči ničelne vrednosti
+            Besides missing values, also omit items with zero values: Poleg neznanih vrednosti preskoči tudi stvari z vrednostjo 0.
+            Names for generated features: Imena stolpcev v novih podatkih
+            'Item:': 'Stvar:'
+            item_var_name: false
+            'padding-left: 3px': false
+            'Value:': 'Vrednost:'
+            value_var_name: false
         def `send_report`:
-            Settings: null
-            Row identifier: null
-            Ignore non-numeric features: null
-            Exclude zero values: null
-            Output: null
+            Settings: Nastavitve
+            Row identifier: Identifikator vrstice
+            Ignore non-numeric features: Uporabi le številske vrednosti
+            Exclude zero values: Preskoči ničelne vrednosti
+            Output: Izhod
         def `_store_output_desc`:
-            Item column: null
-            Value column: null
-            Number of items: null
-    __main__: null
-    zoo: null
+            Item column: Stolpec s stvarjo
+            Value column: Stolpec z vrednostjo
+            Number of items: Število stvari
+    __main__: false
+    zoo: false
 widgets/data/owmergedata.py:
     Instance id: Identiteta vrstice
     Row index: Številka vrstice
