@@ -3897,78 +3897,77 @@ widgets/data/owcorrelations.py:
 widgets/data/owcreateclass.py:
     class `ValueFromDiscreteSubstring`:
         def `__setattr__`:
-            patterns: null
-            case_sensitive: null
-            match_beginning: null
-            variable: null
-            map_values: null
+            patterns: false
+            case_sensitive: false
+            match_beginning: false
+            variable: false
+            map_values: false
     class `OWCreateClass`:
-        Create Class: null
-        Create class attribute from a string attribute: null
-        icons/CreateClass.svg: null
-        Transform: null
+        Create Class: Ustvari razrede
+        Create class attribute from a string attribute: Ustvari razrede iz besedilne spremenljivke
+        icons/CreateClass.svg: false
+        Transform: false
         class `Inputs`:
-            Data: null
+            Data: Podatki
         class `Outputs`:
-            Data: null
-        class: null
+            Data: Podatki
+        class: razred
         class `Warning`:
-            Data contains only numeric variables.: null
+            Data contains only numeric variables.: Podatki vsebujejo samo številske vrednosti.
         class `Error`:
-            Class name duplicated.: null
-            Class name should not be empty.: null
+            Class name duplicated.: Spremenljivka s tem imenom že obstaja.
+            Class name should not be empty.: Ime razreda ne more biti prazno.
         def `__init__`:
-            class_name: null
-            New Class Name: null
-            Match by Substring: null
-            attribute: null
-            'From column:': null
-            Name: null
-            Substring: null
-            Count: null
-            +: null
-            Options: null
-            match_beginning: null
-            Match only at the beginning: null
-            case_sensitive: null
-            Case sensitive: null
-            Apply: null
+            class_name: false
+            New Class Name: Ime novega razreda
+            Match by Substring: Vzorci in razredi
+            attribute: false
+            'From column:': 'Iz stolpca:'
+            Name: Ime
+            Substring: Vzorec
+            Count: Primerov
+            +: true
+            Options: Možnosti
+            match_beginning: false
+            Match only at the beginning: Vzorec mora biti na začetku
+            case_sensitive: false
+            Case sensitive: Loči med velikimi in malimi črkami
+            Apply: Uveljavi
         def `adjust_n_rule_rows`:
             def `_add_line`:
-                ×: null
-                'color: gray': null
+                ×: true
+                'color: gray': false
         def `class_labels`:
-            ^C\\d+: null
-            C{}: null
+            ^C\\d+: true
+            C{}: true
         def `update_counts`:
             def `_set_labels`:
-                '{}': null
-                + {}: null
-                '{} of the {} matching instances are already ': null
-                covered above: null
-                All matching instances are already covered above: null
+                '{}': true
+                + {}: true
+                "{n_before} of the {n_total} matching ": "{n_before} od {n_total}"
+                instance are already covered above.: primerov je že pokritih s predhodnimi vzorci.
+                All matching instances are already covered above: Vse pojavitve so že pokrite s predhodnimi vzorci.
             def `_set_placeholders`:
-                (remaining instances): null
-                (unused): null
+                (remaining instances): (preostali primeri)
+                (unused): (neuporabljeno)
         def `send_report`:
             def `_cond_part`:
-                '<b>{}</b> ': null
-                if <b>{}</b> contains <b>{}</b>: null
-                otherwise: null
+                '<b>{class_name}</b> ': false
+                "if <b>{self.attribute.name}</b> contains <b>{patt}</b>": "če <b>{self.attribute.name}</b> vsebuje <b>{patt}</b>"
+                otherwise: sicer
             def `_count_part`:
-                'all {} matching instances are already covered ': null
-                above: null
-                '{} matching instances (+ {} that are already ': null
-                covered above: null
-                '{} matching instances': null
-            Input: null
-            Source attribute: null
-            <li>{}; {}</li>: null
-            Output: null
-            Class name: null
-            <ol>{}</ol>: null
-    __main__: null
-    zoo: null
+                "all {n_total} matching instances are already covered above": "vseh {n_total} {plsi(n_total, 'pojavitev je že pokrita|pojavitvi sta že pokriti|pojavitve so že pokrite|pojavitev je že pokritih')} zgoraj"
+                "{n_matched} {pl(n_matched, 'instance')}": "{n_matched} {plsi(n_matched, 'primer')}"
+                "{n_matched} matching {pl(n_matched, 'instance')}": "{n_matched} {plsi(n_matched, 'pojavitev|pojavitvi|pojavitve|pojavitev')}"
+                " (+{n_already} that {pl(n_already, 'is|are')} already covered above": " (+{n_already}, ki {plsi(n_already, 'je že pokrita|sta že pokriti|so že pokrite|je že pokritih')} zgoraj"
+            Input: Vhod
+            Source attribute: Izvorni stolpec
+            <li>{}; {}</li>: false
+            Output: Izhod
+            Class name: Ime razreda
+            <ol>{}</ol>: false
+    __main__: false
+    zoo: false
 widgets/data/owcreateinstance.py:
     class `DiscreteVariableEditor`:
         def `__init__`:
