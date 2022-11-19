@@ -2544,69 +2544,69 @@ preprocess/fss.py:
             -inf: null
             inf: null
 preprocess/impute.py:
-    ReplaceUnknowns: null
-    Average: null
-    DoNotImpute: null
-    DropInstances: null
-    Model: null
-    AsValue: null
-    Random: null
-    Default: null
-    FixedValueByType: null
+    ReplaceUnknowns: false
+    Average: false
+    DoNotImpute: false
+    DropInstances: false
+    Model: false
+    AsValue: false
+    Random: false
+    Default: false
+    FixedValueByType: false
     class `BaseImputeMethod`:
-        '{var.name} -> {self.short_name}': null
+        '{var.name} -> {self.short_name}': true
     class `DoNotImpute`:
-        Don't impute: null
-        leave: null
+        Don't impute: Ne nadomeščaj
+        leave: pusti
     class `DropInstances`:
-        Remove instances with unknown values: null
-        drop: null
+        Remove instances with unknown values: Odstrani primere z neznanimi vrednostmi
+        drop: odstrani
     class `Average`:
-        Average/Most frequent: null
-        average: null
-        Replace with average/mode of the column: null
+        Average/Most frequent: Povprečna/najpogostejša vrednost
+        average: povprečje
+        Replace with average/mode of the column: Zamenjaj s povprečno oziroma najpogostejšo vrednostjo
         def `__call__`:
-            Variable must be numeric or categorical.: null
+            Variable must be numeric or categorical.: Spremenljivka mora biti številska ali kategorična
     class `ImputeSql`:
         def `__call__`:
-            coalesce(%s, %s): null
+            coalesce(%s, %s): false
     class `Default`:
-        Fixed value: null
-        value: null
-        '{var} -> {self.default}': null
+        Fixed value: Določena vrednost
+        value: false
+        '{var} -> {self.default}': true
     class `FixedValueByType`:
-        Fixed value: null
-        Fixed Value: null
-        '{var.name}': null
+        Fixed value: Določena vrednost
+        Fixed Value: določena
+        '{var.name}': false
     class `Model`:
-        Model-based imputer: null
-        model: null
-        ' ({self.learner.name})': null
+        Model-based imputer: Nadomeščanje z modelom
+        model: model
+        ' ({self.learner.name})': true
         def `name`:
-            '{} ({})': null
-            name: null
+            '{} ({})': true
+            name: false
         def `__call__`:
-            '`{}` doesn''t support domain type': null
+            '`{}` doesn''t support domain type': '`{}` ne podpira te vrste ciljne spremenljivke'
     class `AsValue`:
-        As a distinct value: null
-        new value: null
+        As a distinct value: Kot posebna, nova vrednost
+        new value: nova vrednost
         def `__call__`:
-            '{var.name}': null
-            N/A: null
-            '{var.name}_def': null
-            undef: null
-            def: null
+            '{var.name}': true
+            N/A: NN
+            '{var.name}_def': '{var.name} znana'
+            undef: ne
+            def: da
     class `ReplaceUnknownsRandom`:
         def `__init__`:
-            'Only categorical and numeric ': null
-            variables are supported.: null
+            'Only categorical and numeric ': Podprte so samo kategorične
+            variables are supported.: in številske spremenljivke.
     class `Random`:
-        Random values: null
-        random: null
-        Replace with a random value: null
+        Random values: Naključno izbrana vrednost
+        random: naključna
+        Replace with a random value: Nadomesti z naključno vrednostjo
         def `__call__`:
-            '''{}'' has no values': null
-            '''{}'' has an unknown distribution': null
+            '''{}'' has no values': false
+            '''{}'' has an unknown distribution': false
 preprocess/normalize.py:
     Normalizer: null
 preprocess/preprocess.py:
@@ -5510,57 +5510,57 @@ widgets/data/owgroupby.py:
 widgets/data/owimpute.py:
     class `DisplayFormatDelegate`:
         def `initStyleOption`:
-            method: null
+            method: false
     class `AsDefault`:
-        Default (above): null
-        '{var.name}': null
-    RowMask: null
-    mask: null
+        Default (above): Privzeto (zgoraj)
+        '{var.name}': false
+    RowMask: false
+    mask: false
     def `var_key`:
-        '{}.{}': null
+        '{}.{}': false
     class `OWImpute`:
-        Impute: null
-        Impute missing values in the data table.: null
-        icons/Impute.svg: null
-        substitute: null
-        missing: null
-        Transform: null
+        Impute: Nadomesti neznane vrednosti
+        Impute missing values in the data table.: Nadomesti neznane vrednosti v podatkih
+        icons/Impute.svg: false
+        substitute: imputacija
+        missing: manjkajoče
+        Transform: false
         class `Inputs`:
-            Data: null
-            Learner: null
+            Data: Podatki
+            Learner: Model
         class `Outputs`:
-            Data: null
+            Data: Podatki
         class `Error`:
-            Imputation failed for '{}': null
-            Model based imputer does not work for sparse data: null
+            Imputation failed for '{}': Nadomeščanje za '{}' ni uspelo.
+            Model based imputer does not work for sparse data: Nadomeščanje z modelom ne deluje za redke podatke.
         class `Warning`:
-            Default method can not handle '{}': null
+            Default method can not handle '{}': Privzeta metoda ne deluje za '{}'
         def `__init__`:
-            Default Method: null
-            'Fixed values; numeric variables:': null
-            default_numeric_value: null
-            ', time:': null
-            default_time: null
-            Individual Attribute Settings: null
-            Restore All to Default: null
-            autocommit: null
+            Default Method: Privzeta metoda
+            'Fixed values; numeric variables:': 'Privzeta vrednost; številske spremenljivke:'
+            default_numeric_value: false
+            ', time:': ", časovne:"
+            default_time: false
+            Individual Attribute Settings: 'Nastavitve za posamične spremenljivke'
+            Restore All to Default: Nastavi vse na privzeto
+            autocommit: false
         def `__commit_finish`:
             def `get_variable`:
-                Error for %s: null
+                Error for %s: false
             def `create_data`:
-                Error: null
-                Unknown: null
+                Error: false
+                Unknown: false
         def `send_report`:
-            '{} ({})': null
-            Default method: null
-            Specific imputers: null
-            ', ': null
-            Method: null
+            '{} ({})': true
+            Default method: Privzeta metoda
+            Specific imputers: Posamične nastavitve
+            ', ': true
+            Method: Metoda
     def `__sample_data`:
-        c{i}: null
-        t{i}: null
-    __main__: null
-    brown-selected: null
+        c{i}: true
+        t{i}: true
+    __main__: false
+    brown-selected: false
 widgets/data/owmelt.py:
     item: null
     value: null
