@@ -6100,288 +6100,293 @@ widgets/data/owpivot.py:
     heart_disease: false
 widgets/data/owpreprocess.py:
     class `DiscretizeEditor`:
-        n: null
-        force: null
-        None: null
-        Equal width discretization: null
-        Equal frequency discretization: null
-        Remove numeric features: null
-        Entropy-MDL discretization: null
+        n: false
+        force: false
+        None: Brez diskretizacije
+        Equal width discretization: Enaka širina intervalov
+        Equal frequency discretization: Enaka pogostost vrednosti
+        Remove numeric features: Odstrani številske spremenljivke
+        Entropy-MDL discretization: Diskretizacija z MDL in entropijo
         def `__init__`:
-            Number of intervals (for equal width/frequency): null
+            Number of intervals (for equal width/frequency): Število intervalov (za enake širine ali pogostosti)
         def `setParameters`:
-            method: null
-            n: null
+            method: false
+            n: false
         def `parameters`:
-            method: null
-            n: null
+            method: false
+            n: false
         def `createinstance`:
-            method: null
+            method: false
         def `__repr__`:
-            ', Number of intervals: {}': null
-            '{}{}': null
+            ', Number of intervals: {}': ', število intervalov: {}'
+            '{}{}': false
     class `ContinuizeEditor`:
-        Most frequent is base: null
-        One feature per value: null
-        Remove non-binary features: null
-        Remove categorical features: null
-        Treat as ordinal: null
-        Divide by number of values: null
+        Most frequent is base: Najpogostejša vrednost kot osnova
+        One feature per value: Po ena spremenljivka na vrednost
+        Remove non-binary features: Odstrani nebinarne spremenljivke
+        Remove categorical features: Odstrani kategorične spremenljivke
+        Treat as ordinal: Obravnavaj kot kategorične spremenljivke kot ordinalne
+        Divide by number of values: Obravnavaj kot ordinalne, a deli s številom vrednosti
         def `setParameters`:
-            multinomial_treatment: null
+            multinomial_treatment: false
         def `parameters`:
-            multinomial_treatment: null
+            multinomial_treatment: false
         def `createinstance`:
-            multinomial_treatment: null
+            multinomial_treatment: false
     class `RemoveSparseEditor`:
-        missing: null
-        zeros: null
+        missing values: manjkajočimi vrednostmi
+        zeros: ničlami
         def `__init__`:
-            Remove features with too many: null
-            missing values: null
-            zeros: null
-            'Threshold:': null
-            Percentage: null
-            Fixed: null
+            Remove features with too many: Odstrani spremenljivke s preveč
+            'Threshold:': 'Prag:'
+            Percentage: Odstotek
+            Fixed: Število primerov
         def `parameters`:
-            fixedThresh: null
-            percThresh: null
-            useFixedThreshold: null
-            filter0: null
+            fixedThresh: false
+            percThresh: false
+            useFixedThreshold: false
+            filter0: false
         def `setParameters`:
-            percThresh: null
-            fixedThresh: null
-            useFixedThreshold: null
-            filter0: null
+            percThresh: false
+            fixedThresh: false
+            useFixedThreshold: false
+            filter0: false
         def `createinstance`:
-            filter0: null
-            useFixedThreshold: null
-            fixedThresh: null
-            percThresh: null
+            filter0: false
+            useFixedThreshold: false
+            fixedThresh: false
+            percThresh: false
+        def `__repr__`:
+            "remove features with too many {self.options[self.filter0]}, threshold: ": "odstrani spremenljivke s preveč {self.options[self.filter0]}, meja: "
+            "{self.fixedThresh} {pl(self.fixedThresh, 'instance')}" : "{self.fixedThresh} {plsi(self.fixedThresh, 'primer')}"
+            "{self.percThresh} %": true
     class `ImputeEditor`:
-        Don't impute.: null
-        Replace with constant: null
-        Average/Most frequent: null
-        Model based imputer: null
-        Replace with random value: null
-        Remove rows with missing values.: null
+        Don't impute.: Ne nadomeščaj
+        Replace with constant: Nadomesti z določeno vrednostjo
+        Average/Most frequent: Povprečna/najpogostejša vrednost
+        Model based imputer: Nadomeščanje z modelom
+        Replace with random value: Nadomesti z naključno vrednostjo
+        Remove rows with missing values.: Odstrani vrstice z manjkajočimi vrednostmi
         def `setParameters`:
-            method: null
+            method: false
         def `parameters`:
-            method: null
+            method: false
         def `createinstance`:
-            method: null
+            method: false
     class `UnivariateFeatureSelect`:
         def `__init__`:
-            Score: null
-            Number of features: null
-            'Fixed:': null
-            'Proportion:': null
-            '%': null
+            Score: Kriterij
+            Number of features: Število ohranjenih spremenljivk
+            'Fixed:': 'Določeno število:'
+            'Proportion:': 'Delež v odstotkih'
+            '%': true
         def `setItems`:
-            text: null
+            text: false
         def `setParameters`:
-            score: null
-            strategy: null
-            k: null
-            p: null
+            score: false
+            strategy: false
+            k: false
+            p: false
         def `parameters`:
-            score: null
-            strategy: null
-            p: null
-            k: null
+            score: false
+            strategy: false
+            p: false
+            k: false
     class `FeatureSelectEditor`:
-        Information Gain: null
-        Gain ratio: null
-        Gini index: null
-        ReliefF: null
-        Fast Correlation Based Filter: null
-        ANOVA: null
-        Chi2: null
-        RReliefF: null
-        Univariate Linear Regression: null
+        Information Gain: Informacijski prispevek
+        Gain ratio: Delež informacijskega prispevka
+        Gini index: Zmanjšanje Ginijevega indeksa
+        ReliefF: true
+        Fast Correlation Based Filter: Hitri korelacijski filter
+        ANOVA: true
+        Chi2: true
+        RReliefF: true
+        Univariate Linear Regression: Univariatna linearna regresija
         def `__init__`:
-            text: null
-            Information Gain: null
-            tooltip: null
-            Gain Ratio: null
-            Gini Index: null
-            ReliefF: null
-            Fast Correlation Based Filter: null
-            ANOVA: null
-            Chi2: null
-            RReliefF: null
-            Univariate Linear Regression: null
+            text: false
+            Information Gain: Informacijski prispevek
+            tooltip: false
+            Gain Ratio: Delež informacijskega prispevka
+            Gini Index: Zmanjšanje Ginijevega indeksa
+            ReliefF: true
+            Fast Correlation Based Filter: Hitri korelacijski filter
+            ANOVA: true
+            Chi2: true
+            RReliefF: true
+            Univariate Linear Regression: Univariatna linearna regresija
         def `createinstance`:
-            score: null
-            strategy: null
-            k: null
-            p: null
+            score: false
+            strategy: false
+            k: false
+            p: false
         def `__repr__`:
-            'Score: {}, Strategy (Fixed): {}': null
-            score: null
-            k: null
+            'Score: {}, Strategy (Fixed): {}': 'kriterij: {}, število (določeno): {}'
+            score: false
+            k: false
     class `RandomFeatureSelectEditor`:
         def `__init__`:
-            Number of features: null
-            Fixed: null
-            Percentage: null
-            '%': null
+            Number of features: Število spremenljivk
+            Fixed: Določeno število
+            Percentage: Odstotek
+            '%': true
         def `setParameters`:
-            strategy: null
-            k: null
-            p: null
+            strategy: false
+            k: false
+            p: false
         def `parameters`:
-            strategy: null
-            p: null
-            k: null
+            strategy: false
+            p: false
+            k: false
         def `createinstance`:
-            strategy: null
-            k: null
-            p: null
+            strategy: false
+            k: false
+            p: false
+        def `__repr__`:
+            select {self.__k} {pl(self.__k,'feature')}: izbor {self.__k} {plsi(self.__k,'primer')}
+            select {self.__p} % features: izbor {self.__p} % primerov
     class `Scale`:
-        Standardize to μ=0, σ²=1: null
-        Center to μ=0: null
-        Scale to σ²=1: null
-        Normalize to interval [-1, 1]: null
-        Normalize to interval [0, 1]: null
+        Standardize to μ=0, σ²=1: Standardiziraj (μ=0, σ²=1)
+        Center to μ=0: Centriraj (μ=0)
+        Scale to σ²=1: Skaliraj (σ²=1)
+        Normalize to interval [-1, 1]: Normaliziraj v interval [-1, 1]
+        Normalize to interval [0, 1]: Normaliziraj v interval [0, 1]
         def `setParameters`:
-            method: null
+            method: false
         def `parameters`:
-            method: null
+            method: false
         def `createinstance`:
-            method: null
+            method: false
     class `Randomize`:
         def `__init__`:
-            Classes: null
-            Features: null
-            Meta data: null
-            'Randomize:': null
-            'Replicable shuffling:': null
+            Classes: Razrede
+            Features: Spremenljivke
+            Meta data: Meta spremenljivke
+            'Randomize:': 'Premešaj:'
+            'Replicable shuffling:': 'Ponovljivo mešanje:'
         def `setParameters`:
-            rand_type: null
-            rand_seed: null
+            rand_type: false
+            rand_seed: false
         def `parameters`:
-            rand_type: null
-            rand_seed: null
+            rand_type: false
+            rand_seed: false
         def `createinstance`:
-            rand_type: null
-            rand_seed: null
+            rand_type: false
+            rand_seed: false
         def `__repr__`:
-            '{}, {}': null
-            Replicable: null
-            Not replicable: null
+            '{}, {}': true
+            Replicable: "ponovljivo"
+            Not replicable: "neponovljivo naključno"
     class `PCA`:
         def `__init__`:
-            'Components:': null
+            'Components:': 'Število komponent:'
         def `setParameters`:
-            n_components: null
+            n_components: false
         def `parameters`:
-            n_components: null
+            n_components: false
         def `createinstance`:
-            n_components: null
+            n_components: false
         def `__repr__`:
-            'Components: {}': null
+            'Components: {}': '{} komponent'
     class `CUR`:
         def `__init__`:
-            'Rank:': null
-            'Relative error:': null
+            'Rank:': 'Rang:'
+            'Relative error:': 'Relativna napaka:'
         def `setParameters`:
-            rank: null
-            max_error: null
+            rank: false
+            max_error: false
         def `parameters`:
-            rank: null
-            max_error: null
+            rank: false
+            max_error: false
         def `createinstance`:
-            rank: null
-            max_error: null
+            rank: false
+            max_error: false
         def `__repr__`:
-            'Rank: {}, Relative error: {}': null
+            'Rank: {}, Relative error: {}': 'rang: {}, relativna napaka: {}'
     def `icon_path`:
-        icons/: null
-    Discretize: null
-    orange.preprocess.discretize: null
-    Discretization: null
-    Discretize Continuous Variables: null
-    Discretize.svg: null
-    Continuize: null
-    orange.preprocess.continuize: null
-    Continuization: null
-    Continuize Discrete Variables: null
-    Continuize.svg: null
-    Impute: null
-    orange.preprocess.impute: null
-    Impute Missing Values: null
-    Impute.svg: null
-    Feature Selection: null
-    orange.preprocess.fss: null
-    Select Relevant Features: null
-    SelectColumns.svg: null
-    Random Feature Selection: null
-    orange.preprocess.randomfss: null
-    Select Random Features: null
-    SelectColumnsRandom.svg: null
-    Normalize: null
-    orange.preprocess.scale: null
-    Scale: null
-    Normalize Features: null
-    Normalize.svg: null
-    Randomize: null
-    orange.preprocess.randomize: null
-    Randomization: null
-    Random.svg: null
-    Remove Sparse: null
-    orange.preprocess.remove_sparse: null
-    Remove Sparse Features: null
-    PurgeDomain.svg: null
-    PCA: null
-    orange.preprocess.pca: null
-    Principal Component Analysis: null
-    PCA.svg: null
-    CUR: null
-    orange.preprocess.cur: null
-    CUR Matrix Decomposition: null
+        icons/: true
+    Discretize: Diskretizacija
+    orange.preprocess.discretize: false
+    Discretization: Diskretizacija
+    Discretize Continuous Variables: Diskretiziraj številske spremenljivke
+    Discretize.svg: false
+    Continuize: Kontinuizacija
+    orange.preprocess.continuize: false
+    Continuization: Kontinuizacija
+    Continuize Discrete Variables: Spremeni kategorične spremenljivke v številske
+    Continuize.svg: false
+    Impute: Nadomeščanje
+    orange.preprocess.impute: false
+    Impute Missing Values: Nadomesti manjkajoče vrednosti
+    Impute.svg: false
+    Feature Selection: Izbor spremenljivk
+    orange.preprocess.fss: false
+    Select Relevant Features: Izberi relevantne spremenljivke
+    SelectColumns.svg: false
+    Random Feature Selection: Naključen izbor spremenljivk
+    orange.preprocess.randomfss: false
+    Select Random Features: Izberi naključno množico spremenljivk
+    SelectColumnsRandom.svg: false
+    Normalize: Normalizacija
+    orange.preprocess.scale: false
+    Scale: Skaliraj
+    Normalize Features: Normalizacija spremenljivk
+    Normalize.svg: false
+    Randomize: Premešanje vrednosti
+    orange.preprocess.randomize: false
+    Randomization: Premešanje vrednosti
+    Random.svg: false
+    Remove Sparse: Odstranjevanje redkih podatkov
+    orange.preprocess.remove_sparse: false
+    Remove Sparse Features: Odstrani redke spremenljivke
+    PurgeDomain.svg: false
+    PCA: true
+    orange.preprocess.pca: false
+    Principal Component Analysis: Metoda osnovnih komponent
+    PCA.svg: false
+    CUR: CUR
+    orange.preprocess.cur: false
+    CUR Matrix Decomposition: Matrična dekompozicija CUR
     class `OWPreprocess`:
-        Preprocess: null
-        Construct a data preprocessing pipeline.: null
-        Transform: null
-        icons/Preprocess.svg: null
-        process: null
+        Preprocess: Predprocesiranje
+        Construct a data preprocessing pipeline.: Sestavi zaporedje predprocesorjev
+        Transform: false
+        icons/Preprocess.svg: false
+        process: false
         class `Inputs`:
-            Data: null
+            Data: Podatki
         class `Outputs`:
-            Preprocessor: null
-            Preprocessed Data: null
+            Preprocessor: Predprocesor
+            Preprocessed Data: Predprocesirani podatki
         def `__init__`:
             def `mimeData`:
-                application/x-qwidget-ref: null
-                utf-8: null
-            Preprocessors: null
-            Drag items from the list on the left: null
-            autocommit: null
+                application/x-qwidget-ref: false
+                utf-8: false
+            Preprocessors: Predprocesorji
+            Drag items from the list on the left: Povleci predprocesorje z leve
+            autocommit: false
         def `load`:
-            preprocessors: null
+            preprocessors: false
             def `dropMimeData`:
-                application/x-qwidget-ref: null
+                application/x-qwidget-ref: false
         def `save`:
-            name: null
-            preprocessors: null
+            name: false
+            preprocessors: false
         def `migrate_settings`:
-            storedsettings: null
-            preprocessors: null
-            orange.preprocess.scale: null
-            center: null
-            scale: null
-            Mean: null
-            NoScaling: null
-            NoCentering: null
-            Std: null
-            Span: null
-            method: null
+            storedsettings: false
+            preprocessors: false
+            orange.preprocess.scale: false
+            center: false
+            scale: false
+            Mean: false
+            NoScaling: false
+            NoCentering: false
+            Std: false
+            Span: false
+            method: false
         def `send_report`:
-            Settings: null
-    __main__: null
-    brown-selected: null
+            Settings: Nastavitve
+    __main__: false
+    brown-selected: false
 widgets/data/owpurgedomain.py:
     class `OWPurgeDomain`:
         Purge Domain: null
@@ -10383,7 +10388,7 @@ widgets/unsupervised/owmanifoldlearning.py:
             manifold_method_index: null
             Output: null
             n_components: null
-            'Components:': null
+            'Components:': 'število komponent:'
             '0': null
         def `commit`:
             def `_handle_disconnected_graph_warning`:
