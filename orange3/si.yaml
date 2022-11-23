@@ -12452,8 +12452,8 @@ widgets/visualize/owboxplot.py:
             median: false
             mean: false
         def `send_report`:
-            'Box plot for attribute ''{}'' ': "Škatla za brki za spremenljivko '{}' "
-            grouped by '{}': "urejeno po '{}'"
+            'Box plot for attribute ''{self.attribute.name}'' ': "Škatla za brki za spremenljivko '{self.attribute.name}' "
+            grouped by '{self.group_var.name}': "urejeno po '{self.group_var.name}'"
     __main__: false
     heart_disease.tab: false
 widgets/visualize/owdistributions.py:
