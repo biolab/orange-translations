@@ -4269,85 +4269,73 @@ widgets/data/owcsvimport.py:
     __main__: null
 widgets/data/owdatainfo.py:
     class `OWDataInfo`:
-        Data Info: null
-        orange.widgets.data.info: null
-        ? "Display basic information about the dataset, such\n    as the number and\
-            \ type of variables in the columns and the number of rows."
-        : null
-        icons/DataInfo.svg: null
-        Data: null
-        information: null
-        inspect: null
+        Data Info: Podatki o tabeli
+        orange.widgets.data.info: false
+        Display basic information about the data set: Pokaže osnovne podatke o tabeli.
+        icons/DataInfo.svg: false
+        Data: false
+        information: podatki
+        inspect: pregled
         class `Inputs`:
-            Data: null
+            Data: Podatki
         def `__init__`:
-            Data Set Name: null
-            Data Set Size: null
-            Features: null
-            Targets: null
-            Meta Attributes: null
-            Location: null
-            Data Attributes: null
-            ' ': null
-            _: null
-            '%%(%s)s': null
-            Categorical outcome with 123 values: null
-        def `_set_fields`:
-            def `n_or_none`:
-                '-': null
-            def `pack_table`:
-                <table>\n: null
-                \n: null
-                <tr><td align="right" width="90">{}:</td>\n: null
-                <td width="40">{}</td></tr>\n: null
-                '...': null
-                </table>\n: null
-            def `pack_counts`:
-                None: null
-                Categorical: null
-                Numeric: null
-                Text: null
-            features: null
-            meta attributes: null
-            targets: null
-            '<p>Sparse representation: {}</p>': null
-            ', ': null
-            Rows: null
-            ~{}: null
-            Columns: null
-            def `update_size`:
-                Rows: null
-                Columns: null
-            name: null
-            N/A: null
-            Numeric target variable: null
-            Categorical outcome with {} values: null
-            Multi-target data,\n{} categorical targets: null
-            Multi-target data,\n{} numeric targets: null
-            <p>Multi-target data</p>\n: null
-            None: null
-        def `_set_report`:
-            Name: null
-            ' ': null
-            '{}={}': null
-            password: null
-            Table '{}', using connection:\n{}: null
-            Rows: null
-            Data is stored in memory: null
-            def `join_if`:
-                ', ': null
-            Features: null
-            '{} categorical': null
-            '{} numeric': null
-            Target: null
-            categorical outcome '{}': null
-            numeric target '{}': null
-            '{number} categorical outcome{s}': null
-            '{number} numeric target{s}': null
-            Meta attributes: null
-            '{} text': null
-    __main__: null
-    iris: null
+            Data table properties: Lastnosti tabele
+            Additional attributes: Dodatni podatki
+        def `data`:
+            Name: Ime
+            Location: Lokacija
+            Size: Velikost
+            Features: Značilke
+            Targets: Ciljne spremenljivke
+            Metas: Meta atributi
+            def `set_exact_length`:
+                Size: Velikost
+        def `update_info`:
+            ? "<style>\n                       th { text-align: right; vertical-align:\
+                \ top; }\n                       th, td { padding-top: 4px; line-height:\
+                \ 125%}\n                    </style>"
+            : false
+            def `dict_as_table`:
+                <table>: false
+                '<tr><th>{label}: </th><td>': false
+                <br/>: false
+                </td></tr>: false
+                </table>: false
+            No data.: Ni podatkov.
+        def `send_report`:
+            Data table properties: Lastnosti tabele
+            Additional attributes: Dodatni podatki
+        def `_p_name`:
+            name: false
+            '-': true
+        def `_p_location`:
+            ' ': false
+            '{key}={value}': false
+            password: false
+            SQL Table using connection:<br/>{connection_string}: Tabels SQL s povezavo:<br/>{connection_string}
+        def `_p_size`:
+            '{n} {pl(n, ''row'')}': '{n} {plsi(n, ''vrstica'')}'
+            ~{n} {pl(n, 'row')}: ~{n} {plsi(n, 'vrstica')}
+            ', {ncols} {pl(ncols, ''column'')}': ', {ncols} {plsi(ncols, ''stolpec|stolpca|stolpci|stolpcev'')}'
+            features: značilke
+            meta attributes: meta atributi
+            targets: ciljne spremenljivke
+            ; sparse {', '.join(sparseness)}: ; redke matrike {', '.join(sparseness)}
+        def `_p_targets`:
+            numeric target variable: številska ciljna spremenljivka
+            'categorical outcome with ': kategorična ciljna spremenljivka {plsi_sz(nclasses)}
+            '{nclasses} {pl(nclasses, ''class|classes'')}': ' {z_besedo(nclasses, 6, ''m'')} {plsi(nclasses, ''razredom|razredoma|razredi'')}'
+            '{disc_class} categorical {pl(disc_class, ''target'')}': ' {z_besedo(disc_class, 1, ''f'')} {plsi(disc_class, ''|kategorični ciljni spremenljivki|kategorične ciljne spremenljivke|kategoričnih ciljnih spremenljivk'')}'
+            '{cont_class} numeric {pl(cont_class, ''target'')}': ' {z_besedo(cont_class, 1, ''f'')} {plsi(cont_class, ''|številski ciljni spremenljivki|številske ciljne spremenljivke|številskih ciljnih spremenljivk'')}'
+            multi-target data,<br/>: več ciljnih spremenljivk,<br/>
+        def `_pack_var_counts`:
+            categorical: kategorične
+            numeric: numerične
+            text: besedilna
+            ', ': false
+            '{count} {name}': '{name}: {count}'
+    __main__: false
+    heart_disease: false
 widgets/data/owdatasampler.py:
     class `OWDataSampler`:
         Data Sampler: Vzorčenje
