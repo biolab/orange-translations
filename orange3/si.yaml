@@ -7412,429 +7412,429 @@ widgets/data/owunique.py:
 widgets/data/utils/histogram.py:
     class `ProportionalBarItem`:
         def `__init__`:
-            If colors are provided, they must match the shape of distribution: null
+            If colors are provided, they must match the shape of distribution: false
         def `_draw_bars`:
-            '#ccc': null
+            '#ccc': false
     class `Histogram`:
         def `__init__`:
-            '#000': null
-            Border tuple must be of size 4.: null
+            '#000': false
+            Border tuple must be of size 4.: false
         def `_histogram`:
-            Cannot calculate histogram on empty array: null
+            Cannot calculate histogram on empty array: false
         def `_get_colors`:
-            '#ccc': null
-    __main__: null
-    iris: null
-    '#000': null
+            '#ccc': false
+    __main__: false
+    iris: false
+    '#000': false
 widgets/data/utils/preprocess.py:
     class `StandardItemModel`:
         def `moveRow`:
-            '`moveRow` did not succeed! Data model might be ': null
-            in an inconsistent state.: null
+            '`moveRow` did not succeed! Data model might be ': false
+            in an inconsistent state.: false
         def `moveRows`:
-            '`moveRows` did not succeed! Data model might be ': null
-            in an inconsistent state.: null
+            '`moveRows` did not succeed! Data model might be ': false
+            in an inconsistent state.: false
     class `Controller`:
-        application/x-qwidget-ref: null
+        application/x-qwidget-ref: false
     class `SequenceFlow`:
         class `Frame`:
             def `__init__`:
-                Remove: null
+                Remove: Odstrani
         def `dropEvent`:
-            application/x-internal-move: null
+            application/x-internal-move: false
         def `dragEnterEvent`:
-            application/x-internal-move: null
+            application/x-internal-move: false
         def `__startInternalDrag`:
-            application/x-internal-move: null
+            application/x-internal-move: false
 widgets/data/utils/pythoneditor/brackethighlighter.py:
     class `BracketHighlighter`:
-        '#0b0': null
-        '#a22': null
-        ({[: null
-        )}]: null
+        '#0b0': false
+        '#a22': false
+        ({[: false
+        )}]: false
         def `_iterateDocumentCharsForward`:
-            Time is over: null
+            Time is over: false
         def `_iterateDocumentCharsBackward`:
-            Time is over: null
+            Time is over: false
         def `_makeMatchSelection`:
-            darkMode: null
-            '#111111': null
+            darkMode: false
+            '#111111': false
 widgets/data/utils/pythoneditor/completer.py:
-    module: null
-    class: null
-    instance: null
-    function: null
-    param: null
-    path: null
-    keyword: null
-    property: null
-    statement: null
+    module: false
+    class: false
+    instance: false
+    function: false
+    param: false
+    path: false
+    keyword: false
+    property: false
+    statement: false
     class `CompletionWidget`:
         def `__init__`:
-            QListWidget::item:selected {: null
-            'background-color: lightgray;': null
-            '}': null
+            QListWidget::item:selected {: false
+            'background-color: lightgray;': false
+            '}': false
         def `show_list`:
-            point: null
+            point: false
         def `update_list`:
-            end: null
-            start: null
-            text: null
+            end: false
+            start: false
+            text: false
         def `_get_cached_icon`:
-            '%s is not a valid jedi type': null
-            ..: null
-            icons: null
-            pythonscript: null
-            .svg: null
+            '%s is not a valid jedi type': false
+            ..: false
+            icons: false
+            pythonscript: false
+            .svg: false
         def `set_item_display`:
-            text: null
-            type: null
+            text: false
+            type: false
         def `get_html_item_representation`:
-            <table width=": null
-            '" height="': null
-            '">': null
-            <tr>: null
-            '<td valign="middle" style="color: black;" style="margin-left:22px;">': null
-            ' ': null
-            '&nbsp;': null
-            </td>: null
-            '<td valign="middle" align="right" float="right" ': null
-            'style="color: black;">': null
-            </tr>: null
-            </table>: null
+            <table width=": false
+            '" height="': false
+            '">': false
+            <tr>: false
+            '<td valign="middle" style="color: black;" style="margin-left:22px;">': false
+            ' ': false
+            '&nbsp;': false
+            </td>: false
+            '<td valign="middle" align="right" float="right" ': false
+            'style="color: black;">': false
+            </tr>: false
+            </table>: false
         def `hide`:
-            tooltip_widget: null
+            tooltip_widget: false
         def `keyPressEvent`:
-            .: null
-            ':': null
+            .: false
+            ':': false
         def `is_up_to_date`:
-            text: null
+            text: false
         def `focusOutEvent`:
-            darwin: null
+            darwin: false
         def `trigger_completion_hint`:
-            point: null
-            textEdit: null
-            newText: null
-            insertText: null
-            $: null
-            python: null
-            (: null
-            documentation: null
+            point: false
+            textEdit: false
+            newText: false
+            insertText: false
+            $: false
+            python: false
+            (: false
+            documentation: false
     class `Completer`:
         def `_send_completion_request`:
-            complete: null
-        _CompletionRequest: null
-        id: null
-        code: null
-        pos: null
+            complete: false
+        _CompletionRequest: false
+        id: false
+        code: false
+        pos: false
         def `_handle_complete_reply`:
-            complete: null
-            parent_header: null
-            msg_id: null
-            content: null
-            metadata: null
-            _jupyter_types_experimental: null
-            Jupyter API has changed, completions are unavailable.: null
-            cursor_start: null
-            type: null
-            <unknown>: null
+            complete: false
+            parent_header: false
+            msg_id: false
+            content: false
+            metadata: false
+            _jupyter_types_experimental: false
+            Jupyter API has changed, completions are unavailable.: false
+            cursor_start: false
+            type: false
+            <unknown>: false
 widgets/data/utils/pythoneditor/editor.py:
     class `PythonEditor`:
-        e: null
-        w: null
-        n: null
-        \n: null
+        e: false
+        w: false
+        n: false
+        \n: false
         def `__init__`:
-            darkMode: null
-            '#111111': null
-            '#ffffff': null
-            '#444444': null
-            '#000000': null
-            '#ffee00': null
+            darkMode: false
+            '#111111': false
+            '#ffffff': false
+            '#444444': false
+            '#000000': false
+            '#ffee00': false
         def `_initActions`:
-            Toggle comment line: null
-            Ctrl+/: null
-            Scroll up: null
-            Ctrl+Up: null
-            go-up: null
-            Scroll down: null
-            Ctrl+Down: null
-            go-down: null
-            Select and scroll Up: null
-            Ctrl+Shift+Up: null
-            Select and scroll Down: null
-            Ctrl+Shift+Down: null
-            Increase indentation: null
-            Tab: null
-            format-indent-more: null
-            Decrease indentation: null
-            Shift+Tab: null
-            format-indent-less: null
-            Autoindent line: null
-            Ctrl+I: null
-            Indent with 1 space: null
-            Ctrl+Shift+Space: null
-            Unindent with 1 space: null
-            Ctrl+Shift+Backspace: null
-            Undo: null
-            edit-undo: null
-            Redo: null
-            edit-redo: null
-            Move line up: null
-            Alt+Up: null
-            Move line down: null
-            Alt+Down: null
-            Delete line: null
-            Alt+Del: null
-            edit-delete: null
-            Cut line: null
-            Alt+X: null
-            edit-cut: null
-            Copy line: null
-            Alt+C: null
-            edit-copy: null
-            Paste line: null
-            Alt+V: null
-            edit-paste: null
-            Duplicate line: null
-            Alt+D: null
+            Toggle comment line: false
+            Ctrl+/: false
+            Scroll up: false
+            Ctrl+Up: false
+            go-up: false
+            Scroll down: false
+            Ctrl+Down: false
+            go-down: false
+            Select and scroll Up: false
+            Ctrl+Shift+Up: false
+            Select and scroll Down: false
+            Ctrl+Shift+Down: false
+            Increase indentation: false
+            Tab: false
+            format-indent-more: false
+            Decrease indentation: false
+            Shift+Tab: false
+            format-indent-less: false
+            Autoindent line: false
+            Ctrl+I: false
+            Indent with 1 space: false
+            Ctrl+Shift+Space: false
+            Unindent with 1 space: false
+            Ctrl+Shift+Backspace: false
+            Undo: false
+            edit-undo: false
+            Redo: false
+            edit-redo: false
+            Move line up: false
+            Alt+Up: false
+            Move line down: false
+            Alt+Down: false
+            Delete line: false
+            Alt+Del: false
+            edit-delete: false
+            Cut line: false
+            Alt+X: false
+            edit-cut: false
+            Copy line: false
+            Alt+C: false
+            edit-copy: false
+            Paste line: false
+            Alt+V: false
+            edit-paste: false
+            Duplicate line: false
+            Alt+D: false
         def `_onToggleCommentLine`:
             def `isHashCommentSelected`:
-                '#': null
-            '# ': null
+                '#': false
+            '# ': false
         def `selectedText`:
-            \u2029: null
-            \n: null
+            \u2029: false
+            \n: false
         def `eol`:
-            \r: null
-            \n: null
-            \r\n: null
-            Invalid EOL value: null
+            \r: false
+            \n: false
+            \r\n: false
+            Invalid EOL value: false
         def `replaceText`:
-            Invalid start position %d: null
-            Invalid end position %d: null
+            Invalid start position %d: false
+            Invalid end position %d: false
         def `_setSolidEdgeGeometry`:
-            '9': null
+            '9': false
         def `keyPressEvent`:
             def `backspaceOverwrite`:
-                ' ': null
-            darwin: null
+                ' ': false
+            darwin: false
         def `_updateTabStopWidth`:
-            ' ': null
+            ' ': false
         def `lines`:
-            Invalid new value of "lines" attribute: null
-            \n: null
+            Invalid new value of "lines" attribute: false
+            \n: false
         def `textForSaving`:
-            \n: null
+            \n: false
         def `_get_token_at`:
-            tokens: null
-            syntax_stack: null
+            tokens: false
+            syntax_stack: false
         def `mapToAbsPosition`:
-            Invalid line index %d: null
-            Invalid column index %d: null
+            Invalid line index %d: false
+            Invalid column index %d: false
         def `mapToLineCol`:
-            Invalid absolute position %d: null
+            Invalid absolute position %d: false
         def `insert_completion`:
-            start: null
-            end: null
-            text: null
+            start: false
+            end: false
+            text: false
         def `keyReleaseEvent`:
-            _: null
-            .: null
-            'from ': null
-            'import ': null
+            _: false
+            .: false
+            'from ': false
+            'import ': false
         def `_chooseVisibleWhitespace`:
-            \t: null
-            ' ': null
+            \t: false
+            ' ': false
         def `_drawIndentMarkersAndEdge`:
             def `drawWhiteSpace`:
-                ' ': null
+                ' ': false
             def `effectiveEdgePos`:
-                \t: null
+                \t: false
         def `insertFromMimeData`:
-            ', ': null
-            '''': null
-            '''\"''\"''': null
+            ', ': false
+            '''': false
+            '''\"''\"''': false
         def `get_current_word_and_position`:
             def `is_special_character`:
-                ([^\d\W]\w*): null
-            ([^\d\W]\w*): null
+                ([^\d\W]\w*): false
+            ([^\d\W]\w*): false
     class `LineNumberArea`:
         def `__init__`:
-            line_numbers: null
+            line_numbers: false
         def `__calculateWidth`:
-            '9': null
+            '9': false
         def `__allocateBits`:
-            A margin cannot request negative number of bits: null
+            A margin cannot request negative number of bits: false
         def `setBlockValue`:
-            The margin ': null
-            ''' did not allocate any bits for the values': null
-            ''' must be a positive integer': null
-            ''' value exceeds the allocated bit range': null
+            The margin ': false
+            ''' did not allocate any bits for the values': false
+            ''' must be a positive integer': false
+            ''' value exceeds the allocated bit range': false
         def `getBlockValue`:
-            The margin ': null
-            ''' did not allocate any bits for the values': null
+            The margin ': false
+            ''' did not allocate any bits for the values': false
 widgets/data/utils/pythoneditor/indenter.py:
     class `Indenter`:
         def `text`:
-            \t: null
-            ' ': null
+            \t: false
+            ' ': false
         def `autoIndentBlock`:
-            \n: null
+            \n: false
         def `onChangeSelectedBlocksIndent`:
             def `indentBlock`:
-                ' ': null
+                ' ': false
             def `spacesCount`:
-                ' ': null
+                ' ': false
             def `unIndentBlock`:
-                \t: null
+                \t: false
         def `onShortcutIndentAfterCursor`:
             def `insertIndent`:
-                \t: null
-                ' ': null
+                \t: false
+                ' ': false
     class `IndentAlgBase`:
         def `computeIndent`:
-            \n: null
+            \n: false
         def `_makeIndentFromWidth`:
-            \t: null
-            ' ': null
+            \t: false
+            ' ': false
         def `_makeIndentAsColumn`:
-            \t: null
+            \t: false
         def `findBracketBackward`:
-            (: null
-            ): null
-            '[': null
-            ']': null
-            '{': null
-            '}': null
-            Invalid bracket "%s": null
-            Not found: null
+            (: false
+            ): false
+            '[': false
+            ']': false
+            '{': false
+            '}': false
+            Invalid bracket "%s": false
+            Not found: false
         def `findAnyBracketBackward`:
-            (): null
-            '[]': null
-            '{}': null
-            Not found: null
+            (): false
+            '[]': false
+            '{}': false
+            Not found: false
     class `IndentAlgPython`:
         def `_computeSmartIndent`:
-            )]}: null
-            ',': null
-            continue: null
-            break: null
-            pass: null
-            raise: null
-            return: null
-            'raise ': null
-            'return ': null
-            ':': null
-            '{[': null
+            )]}: false
+            ',': false
+            continue: false
+            break: false
+            pass: false
+            raise: false
+            return: false
+            'raise ': false
+            'return ': false
+            ':': false
+            '{[': false
 widgets/data/utils/pythoneditor/lines.py:
     class `Lines`:
         def `_checkAndConvertIndex`:
-            Invalid block index: null
+            Invalid block index: false
         def `__setitem__`:
-            Attempt to replace %d lines with %d lines: null
+            Attempt to replace %d lines with %d lines: false
         def `insert`:
-            Invalid block index: null
+            Invalid block index: false
 widgets/data/utils/pythoneditor/rectangularselection.py:
     class `RectangularSelection`:
-        text/rectangular-selection: null
+        text/rectangular-selection: false
         def `_visibleCharPositionGenerator`:
-            \t: null
+            \t: false
         def `_visibleToRealColumn`:
-            \t: null
+            \t: false
         def `cursors`:
-            Rectangular selection area is too big: null
+            Rectangular selection area is too big: false
         def `copy`:
-            \n: null
-            utf8: null
+            \n: false
+            utf8: false
         def `_indentUpTo`:
-            \t: null
-            ' ': null
+            \t: false
+            ' ': false
         def `paste`:
-            utf8: null
+            utf8: false
 widgets/data/utils/pythoneditor/vim.py:
-    a: null
-    z: null
-    Key_: null
-    _: null
+    a: false
+    z: false
+    Key_: false
+    _: false
     def `isChar`:
-        ' ': null
-    normal: null
-    insert: null
-    replace character: null
-    '#33cc33': null
-    '#ff9900': null
-    '#ff3300': null
+        ' ': false
+    normal: false
+    insert: false
+    replace character: false
+    '#33cc33': false
+    '#ff9900': false
+    '#ff3300': false
     class `Vim`:
         def `extraSelections`:
-            '#ffcc22': null
-            '#000000': null
+            '#ffcc22': false
+            '#000000': false
     class `Insert`:
-        '#ff9900': null
+        '#ff9900': false
         def `text`:
-            insert: null
+            insert: false
     class `ReplaceChar`:
-        '#ee7777': null
+        '#ee7777': false
         def `text`:
-            replace char: null
+            replace char: false
     class `Replace`:
-        '#ee7777': null
+        '#ee7777': false
         def `text`:
-            replace: null
+            replace: false
     class `BaseCommandMode`:
-        gg: null
+        gg: false
         def `_moveCursor`:
-            gg: null
-            'Not expected motion ': null
+            gg: false
+            'Not expected motion ': false
     class `BaseVisual`:
-        '#6699ff': null
+        '#6699ff': false
         def `_processChar`:
-            gg: null
-            \n: null
+            gg: false
+            \n: false
         def `cmdJoinLines`:
-            ' ': null
+            ' ': false
         def `cmdInternalPaste`:
-            \n: null
+            \n: false
     class `Visual`:
-        visual: null
+        visual: false
     class `VisualLines`:
-        visual lines: null
+        visual lines: false
     class `Normal`:
-        '#33cc33': null
-        normal: null
+        '#33cc33': false
+        normal: false
         def `_processChar`:
-            gg: null
+            gg: false
         def `cmdJoinLines`:
-            ' ': null
+            ' ': false
         def `cmdInternalPaste`:
-            \n: null
+            \n: false
         def `cmdCompositeDelete`:
-            gg: null
+            gg: false
 widgets/data/utils/pythoneditor/tests/base.py:
     class `SimpleWidget`:
-        Simple widget: null
+        Simple widget: false
 widgets/data/utils/pythoneditor/tests/run_all.py:
-    __main__: null
-    .: null
-    test_*: null
-    Suite created: null
-    Run done: null
-    OK: null
-    Failed: null
+    __main__: false
+    .: false
+    test_*: false
+    Suite created: false
+    Run done: false
+    OK: false
+    Failed: false
 widgets/data/utils/pythoneditor/tests/test_indenter/indenttest.py:
-    ..: null
-    tests: null
+    ..: false
+    tests: false
     class `IndentTest`:
         def `setUp`:
-            INDENT_WIDTH: null
+            INDENT_WIDTH: false
         def `setOrigin`:
-            \n: null
+            \n: false
         def `verifyExpected`:
-            \n: null
+            \n: false
         def `writeCursorPosition`:
-            (%d,%d): null
+            (%d,%d): false
         def `writeln`:
-            \n: null
+            \n: false
 widgets/evaluate/__init__.py:
     Evaluate: null
     Evaluate classification/regression performance.: null
