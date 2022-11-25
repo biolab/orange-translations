@@ -6469,244 +6469,244 @@ widgets/data/owpurgedomain.py:
     buying: false
     v-high: false
 widgets/data/owpythonscript.py:
-    OWPythonScript: null
+    OWPythonScript: false
     ? "import numpy as np\nfrom Orange.data import Table, Domain, ContinuousVariable,\
         \ DiscreteVariable\n\ndomain = Domain([ContinuousVariable(\"age\"),\n    \
         \             ContinuousVariable(\"height\"),\n                 DiscreteVariable(\"\
         gender\", values=(\"M\", \"F\"))])\narr = np.array([\n  [25, 186, 0],\n  [30,\
         \ 164, 1]])\nout_data = Table.from_numpy(domain, arr)\n"
-    : null
+    : false
     def `read_file_content`:
-        utf-8: null
-        strict: null
-    Light: null
-    '#000': null
-    '#f00': null
-    'bold #008000': null
-    '#212121': null
-    '#00f': null
-    '#05a': null
-    '#aa22ff': null
-    '#008000': null
-    '#ba2121': null
-    '#080': null
-    'bold #aa22ff': null
-    'italic #408080': null
-    Dark: null
-    '#fff': null
-    'bold #4caf50': null
-    '#e0e0e0': null
-    '#1e88e5': null
-    '#42a5f5': null
-    '#43a047': null
-    '#ff7070': null
-    '#66bb6a': null
+        utf-8: true
+        strict: true
+    Light: false
+    '#000': false
+    '#f00': false
+    'bold #008000': false
+    '#212121': false
+    '#00f': false
+    '#05a': false
+    '#aa22ff': false
+    '#008000': false
+    '#ba2121': false
+    '#080': false
+    'bold #aa22ff': false
+    'italic #408080': false
+    Dark: false
+    '#fff': false
+    'bold #4caf50': false
+    '#e0e0e0': false
+    '#1e88e5': false
+    '#42a5f5': false
+    '#43a047': false
+    '#ff7070': false
+    '#66bb6a': false
     def `make_pygments_style`:
-        PygmentsStyle: null
-        styles: null
+        PygmentsStyle: false
+        styles: false
     class `FakeSignatureMixin`:
         def `__init__`:
-            '4444': null
+            '4444': false
     class `FunctionSignature`:
         def `__init__`:
-            python_script: null
-            in_: null
-            '<b style="color: ': null
-            ' ': null
-            ;">def </b>: null
-            '<span style="color: ': null
-            ;">: null
-            </span>: null
-            ;">(</span>: null
-            ;">):</span>: null
+            python_script: false
+            in_: false
+            '<b style="color: ': false
+            ' ': false
+            ;">def </b>: false
+            '<span style="color: ': false
+            ;">: false
+            </span>: false
+            ;">(</span>: false
+            ;">):</span>: false
         def `update_signal_text`:
-            ', ': null
-            's, ': null
+            ', ': false
+            's, ': false
     class `ReturnStatement`:
         def `__init__`:
-            '<b style="color: ': null
-            ' ': null
-            ;">return </b>: null
-            out_: null
+            '<b style="color: ': false
+            ' ': false
+            ;">return </b>: false
+            out_: false
         def `make_signal_labels`:
-            <b></b>: null
-            ', ': null
-            '.QLabel { color: ': null
-            ' ': null
-            ; }: null
+            <b></b>: false
+            ', ': false
+            '.QLabel { color: ': false
+            ' ': false
+            ; }: false
         def `update_signal_text`:
-            <b></b>: null
-            <b>: null
-            </b>: null
+            <b></b>: false
+            <b>: false
+            </b>: false
     class `VimIndicator`:
         def `__init__`:
-            '#33cc33': null
-            normal: null
+            '#33cc33': false
+            normal: false
     class `PythonConsole`:
         def `interact`:
-            '>>> ': null
-            '... ': null
-            'Type "help", "copyright", "credits" or "license" ': null
-            for more information.: null
-            Python %s on %s\n%s\n(%s)\n: null
-            '%s\n': null
-            \n: null
-            \nKeyboardInterrupt\n: null
+            '>>> ': false
+            '... ': false
+            'Type "help", "copyright", "credits" or "license" ': false
+            for more information.: false
+            Python %s on %s\n%s\n(%s)\n: false
+            '%s\n': false
+            \n: false
+            \nKeyboardInterrupt\n: false
         def `push`:
-            sys.excepthook: null
-            sys.stdout: null
-            sys.stderr: null
+            sys.excepthook: false
+            sys.stdout: false
+            sys.stderr: false
         def `keyPressEvent`:
-            \n: null
+            \n: false
         def `pasteCode`:
-            \n: null
+            \n: false
     class `Script`:
         def `asdict`:
-            _ScriptData: null
+            _ScriptData: false
         def `fromdict`:
-            _ScriptData: null
-            Script: null
-            name: null
-            script: null
-            filename: null
+            _ScriptData: false
+            Script: false
+            name: false
+            script: false
+            filename: false
     class `ScriptItemDelegate`:
         def `displayText`:
-            '*': null
-    _ScriptData: null
-    name: null
-    script: null
-    filename: null
+            '*': false
+    _ScriptData: false
+    name: false
+    script: false
+    filename: false
     class `OWPythonScript`:
-        Python Script: null
-        Write a Python script and run it on input data or models.: null
-        Transform: null
-        icons/PythonScript.svg: null
-        program: null
-        function: null
+        Python Script: Skripta v Python
+        Write a Python script and run it on input data or models.: Poženi ročno napisan program v Pythonu
+        Transform: false
+        icons/PythonScript.svg: false
+        program: program
+        function: funkcija
         class `Inputs`:
-            Data: null
-            in_data: null
-            Learner: null
-            in_learner: null
-            Classifier: null
-            in_classifier: null
-            Object: null
-            in_object: null
+            Data: Podatki
+            in_data: false
+            Learner: Učenec
+            in_learner: false
+            Classifier: Model
+            in_classifier: false
+            Object: Objekt
+            in_object: false
         class `Outputs`:
-            Data: null
-            out_data: null
-            Learner: null
-            out_learner: null
-            Classifier: null
-            out_classifier: null
-            Object: null
-            out_object: null
-        data: null
-        learner: null
-        classifier: null
-        object: null
-        List[_ScriptData]: null
-        name: null
-        Table from numpy: null
-        script: null
-        filename: null
+            Data: Podatki
+            out_data: false
+            Learner: Učenec
+            out_learner: false
+            Classifier: Model
+            out_classifier: false
+            Object: Objekt
+            out_object: false
+        data: false
+        learner: false
+        classifier: false
+        object: false
+        List[_ScriptData]: false
+        name: false
+        Table from numpy: false
+        script: false
+        filename: false
         def `__init__`:
-            Menlo: null
-            darwin: null
-            Courier: null
-            win32: null
-            cygwin: null
-            DejaVu Sans Mono: null
-            Editor: null
-            darkMode: null
-            Dark: null
-            Light: null
-            '0000': null
-            Preferences: null
-            vimModeEnabled: null
-            Vim mode: null
-            Only for the coolest.: null
-            Library: null
-            +: null
-            Add a new script to the library: null
-            MINUS SIGN: null
-            Remove script from library: null
-            Update: null
-            Save changes in the editor to library: null
-            More: null
-            More actions: null
-            Import Script from File: null
-            Save Selected Script to File: null
-            Undo Changes to Selected Script: null
-            Run: null
-            Run script: null
-            '&Save': null
-            Save script to file: null
-            Console: null
+            Menlo: false
+            darwin: false
+            Courier: false
+            win32: false
+            cygwin: false
+            DejaVu Sans Mono: false
+            Editor: Urejevalnik
+            darkMode: false
+            Dark: false
+            Light: false
+            '0000': false
+            Preferences: Nastavitve
+            vimModeEnabled: false
+            Vim mode: Način Vim
+            Only for the coolest.: Samo, če si kul.
+            Library: Knjižnica
+            +: true
+            Add a new script to the library: Dodaj novo skripto v knjižnico
+            MINUS SIGN: true
+            Remove script from library: Odstrani skripto iz knjižnice
+            Update: Osveži
+            Save changes in the editor to library: Shrani spremembe iz urejevalnika v knjižnico
+            More: Več
+            More actions: Več možnosti
+            Import Script from File: Preberi skripto iz datoteke
+            Save Selected Script to File: Shrani izbrano skripto v datoteko
+            Undo Changes to Selected Script: Razveljavi spremembe izbrane skripte
+            Run: Poženi
+            Run script: Poženi skripto
+            '&Save': '&Shrani'
+            Save script to file: Shrani skripto v datoteko
+            Console: Konzola
         def `set_data`:
-            data: null
+            data: false
         def `insert_data`:
-            data: null
+            data: false
         def `remove_data`:
-            data: null
+            data: false
         def `set_learner`:
-            learner: null
+            learner: false
         def `insert_learner`:
-            learner: null
+            learner: false
         def `remove_learner`:
-            learner: null
+            learner: false
         def `set_classifier`:
-            classifier: null
+            classifier: false
         def `insert_classifier`:
-            classifier: null
+            classifier: false
         def `remove_classifier`:
-            classifier: null
+            classifier: false
         def `set_object`:
-            object: null
+            object: false
         def `insert_object`:
-            object: null
+            object: false
         def `remove_object`:
-            object: null
+            object: false
         def `onAddScript`:
-            New script: null
+            New script: Nova skripta
         def `onAddScriptFromFile`:
-            Open Python Script: null
-            ~/: null
-            Python files (*.py)\nAll files(*.*): null
+            Open Python Script: Odpri skripto v Pythonu
+            ~/: false
+            Python files (*.py)\nAll files(*.*): Programi v Pythonu (*.py)\nVse datoteke (*.*)
         def `saveScript`:
-            ~/: null
-            Save Python Script: null
-            Python files (*.py)\nAll files(*.*): null
-            .py: null
-            w: null
+            ~/: false
+            Save Python Script: Shrani skripto v Pythonu
+            Python files (*.py)\nAll files(*.*): Programi v Pythonu (*.py)\nVse datoteke (*.*)
+            .py: false
+            w: false
         def `initial_locals_state`:
-            in_: null
-            s: null
+            in_: false
+            s: false
         def `commit`:
-            _script: null
-            \nRunning script:\n: null
-            exec(_script): null
-            out_: null
-            '''{}'' has to be an instance of ''{}''.': null
+            _script: false
+            \nRunning script:\n: \nIzvajam skripto:\n
+            exec(_script): false
+            out_: false
+            '''{}'' has to be an instance of ''{}''.': '''{}'' mora biti ''{}''.'
         def `migrate_settings`:
-            libraryListSource: null
-            scriptLibrary: null
+            libraryListSource: false
+            scriptLibrary: false
     class `OWPythonScriptDropHandler`:
         def `canDropFile`:
-            text/x-python: null
+            text/x-python: false
         def `parametersFromFile`:
-            rt: null
-            _ScriptData: null
-            name: null
-            script: null
-            filename: null
-            scriptLibrary: null
+            rt: false
+            _ScriptData: false
+            name: false
+            script: false
+            filename: false
+            scriptLibrary: false
             def `is_same`:
-                _ScriptData: null
-                filename: null
-            __version__: null
-            scriptText: null
-    __main__: null
+                _ScriptData: false
+                filename: false
+            __version__: false
+            scriptText: false
+    __main__: false
 widgets/data/owrandomize.py:
     class `OWRandomize`:
         Randomize: Premešaj
