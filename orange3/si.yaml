@@ -3971,65 +3971,69 @@ widgets/data/owcreateclass.py:
 widgets/data/owcreateinstance.py:
     class `DiscreteVariableEditor`:
         def `__init__`:
-            '?': null
+            '?': (nedoločeno)
     class `ContinuousVariableEditor`:
         def `__init__`:
-            Min/Max cannot be NaN.: null
+            Min/Max cannot be NaN.: false
             class `DoubleSpinBox`:
                 def `textFromValue`:
-                    '?': null
+                    '?': false
     class `TimeVariableEditor`:
-        yyyy-MM-dd: null
-        hh:mm:ss: null
+        yyyy-MM-dd: true
+        hh:mm:ss: true
         def `__init__`:
-            '{TimeVariableEditor.DATE_FORMAT} ': null
-            '{TimeVariableEditor.TIME_FORMAT}': null
+            '{TimeVariableEditor.DATE_FORMAT} ': false
+            '{TimeVariableEditor.TIME_FORMAT}': false
     class `OWCreateInstance`:
-        Create Instance: null
-        Interactively create a data instance from sample dataset.: null
-        icons/CreateInstance.svg: null
-        Transform: null
-        simulator: null
+        Create Instance: Sestavi primer
+        Interactively create a data instance from sample dataset.: Ročno sestavi nov primer
+        icons/CreateInstance.svg: false
+        Transform: false
+        simulator: nov
         class `Inputs`:
-            Data: null
-            Reference: null
+            Data: Podatki
+            Reference: Referenca
         class `Outputs`:
-            Data: null
+            Data: Podatki
         class `Information`:
-            'Variables with only missing values were ': null
-            removed from the list.: null
-        median: null
-        mean: null
-        random: null
-        input: null
-        name: null
-        Variable: null
-        variable: null
-        Value: null
-        header: null
+            'Variables with only missing values were ': "Spremenljivke, ki imajo same manjkajoče vrednosti "
+            removed from the list.: niso na voljo.
+        Median: Mediana
+        Mean: Povprečje
+        Random: Naključno
+        Input: Vhodni primer
+        median: false
+        mean: false
+        random: false
+        input: false
+        name: false
+        Variable: Spremenljivka
+        variable: false
+        Value: Vrednost
+        header: false
         def `__init__`:
-            Filter...: null
-            buttonBox: null
-            append_to_data: null
-            Append this instance to input data: null
-            auto_commit: null
+            Filter...: true
+            buttonBox: false
+            append_to_data: false
+            Append this instance to input data: Dodaj primer k vhodnim podatkom
+            auto_commit: false
         def `_initialize_values`:
-            median: null
-            mean: null
-            random: null
-            input: null
+            median: false
+            mean: false
+            random: false
+            input: false
         def `_create_data_from_values`:
-            created: null
+            created: ustvarjeni
         def `_append_to_data`:
-            __source_widget: null
-            Source ID: null
+            __source_widget: false
+            Source ID: Vir
         def `send_report`:
-            Input: null
-            Output: null
-            '{var.name}:': null
-            Values: null
-    __main__: null
-    housing: null
+            Input: Vhod
+            Output: Izhod
+            '{var.name}:': false
+            Values: Vrednosti
+    __main__: false
+    housing: false
 widgets/data/owcsvimport.py:
     T: false
     K: false
