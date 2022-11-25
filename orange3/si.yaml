@@ -5721,43 +5721,43 @@ widgets/data/owmergedata.py:
     tests/data-gender-region: false
     tests/data-regions: false
 widgets/data/owneighbors.py:
-    Euclidean: null
-    Manhattan: null
-    Mahalanobis: null
-    Cosine: null
-    Jaccard: null
-    Spearman: null
-    Absolute Spearman: null
-    Pearson: null
-    Absolute Pearson: null
+    Euclidean: Evklidska
+    Manhattan: Manhattanska
+    Mahalanobis: Mahalanobisova
+    Cosine: Kosinusna
+    Jaccard: Jaccardova
+    Spearman: Spearmanova
+    Absolute Spearman: Absolutna Spearmanova
+    Pearson: Pearsonova
+    Absolute Pearson: Absolutna Pearsonova
     class `OWNeighbors`:
-        Neighbors: null
-        Compute nearest neighbors in data according to reference.: null
-        icons/Neighbors.svg: null
-        Unsupervised: null
-        orangecontrib.prototypes.widgets.owneighbours.OWNeighbours: null
+        Neighbors: Sosedi
+        Compute nearest neighbors in data according to reference.: Najbližji sosedi referenčnih primerov.
+        icons/Neighbors.svg: false
+        Unsupervised: false
+        orangecontrib.prototypes.widgets.owneighbours.OWNeighbours: false
         class `Inputs`:
-            Data: null
-            Reference: null
+            Data: Podatki
+            Reference: Referenčni podatki
         class `Outputs`:
-            Neighbors: null
+            Neighbors: Sosedi
         class `Info`:
-            Input data includes reference instance(s).\n: null
-            Reference instances are excluded from the output.: null
+            Input data includes reference instance(s).\n: Vhodni podatki vključujejo referenčne primere.\n
+            Reference instances are excluded from the output.: Referenčni primeri niso vključeni med izhodne.
         class `Warning`:
-            Every data instance is same as some reference: null
+            Every data instance is same as some reference: Vsi podatki se pojavijo tudi med referenčnimi.
         class `Error`:
-            Data and reference have different features: null
+            Data and reference have different features: Podatki in referenčni podatki so opisani z različnimi značilkami.
         def `__init__`:
-            distance_index: null
-            'Distance metric: ': null
-            n_neighbors: null
-            'Limit number of neighbors to:': null
-            limit_neighbors: null
+            distance_index: false
+            'Distance metric: ': "Vrsta razdalje: "
+            n_neighbors: false
+            'Limit number of neighbors to:': "Omeji število sosedov na:"
+            limit_neighbors: false
         def `_data_with_similarity`:
-            distance: null
-    __main__: null
-    iris.tab: null
+            distance: false
+    __main__: false
+    iris.tab: false
 widgets/data/owoutliers.py:
     def `run`:
         Initializing...: null
