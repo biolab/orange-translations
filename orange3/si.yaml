@@ -3856,44 +3856,44 @@ widgets/data/owcontinuize.py:
 widgets/data/owcorrelations.py:
     class `CorrelationType`:
         def `items`:
-            Pearson correlation: null
-            Spearman correlation: null
+            Pearson correlation: Pearsonova korelacija
+            Spearman correlation: Spearmanova korelacija
     class `CorrelationRank`:
         def `row_for_state`:
-            name: null
-            '{:+.3f}': null
+            name: false
+            '{:+.3f}': false
     class `OWCorrelations`:
-        Correlations: null
-        Compute all pairwise attribute correlations.: null
-        icons/Correlations.svg: null
-        Unsupervised: null
+        Correlations: Korelacije
+        Compute all pairwise attribute correlations.: Izračuna korelacije med vsemi pari spremenljivk.
+        icons/Correlations.svg: false
+        Unsupervised: false
         class `Inputs`:
-            Data: null
+            Data: Podatki
         class `Outputs`:
-            Data: null
-            Features: null
-            Correlations: null
+            Data: Podatki
+            Features: Spremenljivke
+            Correlations: Korelacije
         class `Information`:
-            Constant features have been removed.: null
+            Constant features have been removed.: Konstantne spremenljivke so odstranjene.
         class `Warning`:
-            At least two numeric features are needed.: null
-            At least two instances are needed.: null
+            At least two numeric features are needed.: Potrebni sta vsaj dve spremenljivki.
+            At least two instances are needed.: Potrebna sta vsaj dva primera.
         def `__init__`:
-            correlation_type: null
-            (All combinations): null
-            feature: null
+            correlation_type: false
+            (All combinations): (Vse kombinacije)
+            feature: false
         def `set_data`:
-            removed: null
+            removed: false
         def `commit`:
-            Correlation: null
-            FDR: null
-            Feature 1: null
-            Feature 2: null
-            Correlations: null
+            Correlation: Korelacije
+            FDR: FDR
+            Feature 1: Spremenljivka 1
+            Feature 2: Spremenljivka 2
+            Correlations: Korelacije
         def `migrate_context`:
-            selection: null
-    __main__: null
-    iris: null
+            selection: false
+    __main__: false
+    iris: false
 widgets/data/owcreateclass.py:
     class `ValueFromDiscreteSubstring`:
         def `__setattr__`:
