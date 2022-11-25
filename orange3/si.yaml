@@ -4094,7 +4094,7 @@ widgets/data/owcsvimport.py:
         def `fromPath`:
             ImportItem: false
             ${{{path.name}}}/{path.relpath}: true
-    text/csv: null
+    text/csv: false
     Text - comma separated: Besedilo - stolpci ločeni z vejicami
     '*.csv': false
     '*': false
@@ -4141,7 +4141,7 @@ widgets/data/owcsvimport.py:
             Recent files…: Nedavne datoteke…
             …: true
             Browse filesystem: Izberi datoteko
-            Import any file…: null
+            Import any file…: Uvozi poljubno datoteko…
             Import relative to workflow file…: Uvozi poljubno datoteko…
             Import a file within the workflow file directory: Uvozi datoteko v mapi s trenutnim delotokom
             basedir: false
@@ -4269,7 +4269,7 @@ widgets/data/owcsvimport.py:
         str: false
         M8[ns]: false
         'Column ''{}'' with dtype: {} skipped.': false
-    __main__: null
+    __main__: false
 widgets/data/owdatainfo.py:
     class `OWDataInfo`:
         Data Info: Podatki o tabeli
@@ -4464,8 +4464,8 @@ widgets/data/owdatasets.py:
             ' ': false
             ', ': true
         def `__set_index`:
-            Error while fetching updated index: null
-            X: null
+            Error while fetching updated index: false
+            X: true
             '888 bytes ': '888 bajtov '
             '9999.9 MB ': true
             '100000000': false
@@ -5417,7 +5417,7 @@ widgets/data/owfile.py:
         def `retrieveSpecificSettings`:
             modified_variables: false
         def `apply_domain_edit`:
-            attributes:
+            attributes: false
             'Renamed: {'', ''.join(renamed)}': 'Preimenovano: {'', ''.join(renamed)}'
         def `send_report`:
             def `get_ext_name`:
@@ -5964,11 +5964,11 @@ widgets/data/owpaintdata.py:
             MINUS SIGN: true
             Remove selected class label: Odstrani razred
             Tools: Orodja
-            brushRadius: null
+            brushRadius: false
             'Radius:': 'Polmer:'
-            density: null
+            density: false
             'Intensity:': 'Gostota:'
-            symbol_size: null
+            symbol_size: false
             'Symbol:': 'Velikost:'
             Reset to Input Data: Ponastavi na vhodne podatke
             autocommit: false
@@ -6921,7 +6921,7 @@ widgets/data/owselectcolumns.py:
             domain_role_hints: false
         def `match`:
             domain_role_hints: false
-            available: null
+            available: false
         def `filter_value`:
             domain_role_hints: false
     class `OWSelectAttributes`:
@@ -6987,7 +6987,7 @@ widgets/data/owselectcolumns.py:
             Output data: Izhodni podatki
             No changes.: Ni sprememb.
             '{len(diff)} ({", ".join(x.name for x in diff)})': true
-            ', ': null
+            ', ': true
             Removed: Odstranjene
     __main__: false
     brown-selected: false
@@ -7186,7 +7186,7 @@ widgets/data/owsql.py:
             Table: Tabela
             (None): (Brez)
         def `get_table`:
-            Table: null
+            Table: false
             (None): (Brez)
             Custom SQL: Prikrojen SQL
             Query: Poizvedba
