@@ -3561,9 +3561,9 @@ widgets/widget.py:
     Dynamic: null
     Explicit: null
 widgets/data/__init__.py:
-    Data: null
-    orange.widgets.data: null
-    Widgets for data manipulation.: null
+    Data: Podatki
+    orange.widgets.data: false
+    Widgets for data manipulation.: Gradniki za obdelavo podatkov
     ? '
 
         This category contains widgets for data manipulation. This includes
@@ -3572,9 +3572,12 @@ widgets/data/__init__.py:
 
 
         '
-    : null
-    icons/Category-Data.svg: null
-    '#FFD39F': null
+    : "
+    Gradniki za branje in shranjevanje podatkov, njihovo predprocesiranje,\n
+    izbiranje in podobno.
+    "
+    icons/Category-Data.svg: false
+    '#FFD39F': false
 widgets/data/owaggregatecolumns.py:
     class `OWAggregateColumns`:
         Aggregate Columns: Agregiraj stolpce
