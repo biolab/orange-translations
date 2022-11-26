@@ -12387,24 +12387,24 @@ widgets/visualize/owboxplot.py:
         def `__init__`:
             midpoint: false
     class `OWBoxPlot`:
-        Box Plot: "Škatla za brki"
+        Box Plot: "Škatla z brki"
         Visualize the distribution of feature values in a box plot.: "Prikaži porazdelitev vrednosti spremenljivke v škatli z brki."
         icons/BoxPlot.svg: false
-        whisker: "škatla z brki"
+        whisker: "box"
         class `Inputs`:
             Data: false
         class `Outputs`:
             Selected Data: false
         class `Warning`:
-            Data contains no categorical or numeric variables: "Podatki ne vsebujejo kategoričnih ali številskih spremenljivk"
+            Data contains no categorical or numeric variables: "Podatki ne vsebujejo kategoričnih ali številskih spremenljivk."
         median: false
         mean: false
         box_scene: false
         def `__init__`:
             Variable: "Spremenljivka"
             order_by_importance: false
-            Order by relevance to subgroups: "Uredi glede na ločitev po skupinah"
-            Order by 𝜒² or ANOVA over the subgroups: "Uredi glede na vrednost 𝜒² ali ANOVA po skupinah"
+            Order by relevance to subgroups: "Uredi glede na različnost po skupinah"
+            Order by 𝜒² or ANOVA over the subgroups: "Uredi glede na vrednost 𝜒² ali ANOVA med skupinami"
             None: "Brez"
             Subgroups: "Skupine"
             order_grouping_by_importance: false
@@ -12414,15 +12414,15 @@ widgets/visualize/owboxplot.py:
             show_annotations: false
             Annotate: "Oznake"
             compare: false
-            No comparison: "Brez oznak"
+            No comparison: "Brez primerjanja"
             Compare medians: "Primerjaj srednje vrednosti"
             Compare means: "Primerjaj povprečja"
             stretched: false
             Stretch bars: "Raztegni črte"
             show_labels: false
-            Show box labels: "Prikaži oznake črt"
+            Show box labels: "Pokaži oznake črt"
             sort_freqs: false
-            Sort by subgroup frequencies: "Uredi glede na pogostost skupin"
+            Sort by subgroup frequencies: "Uredi po pogostosti skupin"
         def `reset_attrs`:
             hidden: false
         def `reset_groups`:
@@ -12433,8 +12433,8 @@ widgets/visualize/owboxplot.py:
             '{}': false
         def `_compute_tests_cont`:
             'At least one group has just one instance, ': "Vsaj ena skupina ima zgolj en primer, "
-            cannot compute significance: "ne morem izračunati pomembnosti."
-            'Student''s t: {t:.3f} (p={p:.3f}, N={n})': "Študentov t-test: {t:.3f} (p={p:.3f}, N={n})"
+            cannot compute significance: "zato ne morem izračunati pomembnosti."
+            'Student''s t: {t:.3f} (p={p:.3f}, N={n})': "Studentov t-test: {t:.3f} (p={p:.3f}, N={n})"
             'ANOVA: {F:.3f} (p={p:.3f}, N={n})': true
         def `_compute_tests_disc`:
             'χ²: {chi:.2f} (p={p:.3f}, dof={dof})': true
