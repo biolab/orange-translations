@@ -2544,69 +2544,69 @@ preprocess/fss.py:
             -inf: null
             inf: null
 preprocess/impute.py:
-    ReplaceUnknowns: null
-    Average: null
-    DoNotImpute: null
-    DropInstances: null
-    Model: null
-    AsValue: null
-    Random: null
-    Default: null
-    FixedValueByType: null
+    ReplaceUnknowns: false
+    Average: false
+    DoNotImpute: false
+    DropInstances: false
+    Model: false
+    AsValue: false
+    Random: false
+    Default: false
+    FixedValueByType: false
     class `BaseImputeMethod`:
-        '{var.name} -> {self.short_name}': null
+        '{var.name} -> {self.short_name}': true
     class `DoNotImpute`:
-        Don't impute: null
-        leave: null
+        Don't impute: Ne nadomeščaj
+        leave: pusti
     class `DropInstances`:
-        Remove instances with unknown values: null
-        drop: null
+        Remove instances with unknown values: Odstrani primere z neznanimi vrednostmi
+        drop: odstrani
     class `Average`:
-        Average/Most frequent: null
-        average: null
-        Replace with average/mode of the column: null
+        Average/Most frequent: Povprečna/najpogostejša vrednost
+        average: povprečje
+        Replace with average/mode of the column: Zamenjaj s povprečno oziroma najpogostejšo vrednostjo
         def `__call__`:
-            Variable must be numeric or categorical.: null
+            Variable must be numeric or categorical.: Spremenljivka mora biti številska ali kategorična
     class `ImputeSql`:
         def `__call__`:
-            coalesce(%s, %s): null
+            coalesce(%s, %s): false
     class `Default`:
-        Fixed value: null
-        value: null
-        '{var} -> {self.default}': null
+        Fixed value: Določena vrednost
+        value: false
+        '{var} -> {self.default}': true
     class `FixedValueByType`:
-        Fixed value: null
-        Fixed Value: null
-        '{var.name}': null
+        Fixed value: Določena vrednost
+        Fixed Value: določena
+        '{var.name}': false
     class `Model`:
-        Model-based imputer: null
-        model: null
-        ' ({self.learner.name})': null
+        Model-based imputer: Nadomeščanje z modelom
+        model: model
+        ' ({self.learner.name})': true
         def `name`:
-            '{} ({})': null
-            name: null
+            '{} ({})': true
+            name: false
         def `__call__`:
-            '`{}` doesn''t support domain type': null
+            '`{}` doesn''t support domain type': '`{}` ne podpira te vrste ciljne spremenljivke'
     class `AsValue`:
-        As a distinct value: null
-        new value: null
+        As a distinct value: Kot posebna, nova vrednost
+        new value: nova vrednost
         def `__call__`:
-            '{var.name}': null
-            N/A: null
-            '{var.name}_def': null
-            undef: null
-            def: null
+            '{var.name}': true
+            N/A: NN
+            '{var.name}_def': '{var.name} znana'
+            undef: ne
+            def: da
     class `ReplaceUnknownsRandom`:
         def `__init__`:
-            'Only categorical and numeric ': null
-            variables are supported.: null
+            'Only categorical and numeric ': Podprte so samo kategorične
+            variables are supported.: in številske spremenljivke.
     class `Random`:
-        Random values: null
-        random: null
-        Replace with a random value: null
+        Random values: Naključno izbrana vrednost
+        random: naključna
+        Replace with a random value: Nadomesti z naključno vrednostjo
         def `__call__`:
-            '''{}'' has no values': null
-            '''{}'' has an unknown distribution': null
+            '''{}'' has no values': false
+            '''{}'' has an unknown distribution': false
 preprocess/normalize.py:
     Normalizer: null
 preprocess/preprocess.py:
@@ -3897,140 +3897,143 @@ widgets/data/owcorrelations.py:
 widgets/data/owcreateclass.py:
     class `ValueFromDiscreteSubstring`:
         def `__setattr__`:
-            patterns: null
-            case_sensitive: null
-            match_beginning: null
-            variable: null
-            map_values: null
+            patterns: false
+            case_sensitive: false
+            match_beginning: false
+            variable: false
+            map_values: false
     class `OWCreateClass`:
-        Create Class: null
-        Create class attribute from a string attribute: null
-        icons/CreateClass.svg: null
-        Transform: null
+        Create Class: Ustvari razrede
+        Create class attribute from a string attribute: Ustvari razrede iz besedilne spremenljivke
+        icons/CreateClass.svg: false
+        Transform: false
         class `Inputs`:
-            Data: null
+            Data: Podatki
         class `Outputs`:
-            Data: null
-        class: null
+            Data: Podatki
+        class: razred
         class `Warning`:
-            Data contains only numeric variables.: null
+            Data contains only numeric variables.: Podatki vsebujejo samo številske vrednosti.
         class `Error`:
-            Class name duplicated.: null
-            Class name should not be empty.: null
+            Class name duplicated.: Spremenljivka s tem imenom že obstaja.
+            Class name should not be empty.: Ime razreda ne more biti prazno.
         def `__init__`:
-            class_name: null
-            New Class Name: null
-            Match by Substring: null
-            attribute: null
-            'From column:': null
-            Name: null
-            Substring: null
-            Count: null
-            +: null
-            Options: null
-            match_beginning: null
-            Match only at the beginning: null
-            case_sensitive: null
-            Case sensitive: null
-            Apply: null
+            class_name: false
+            New Class Name: Ime novega razreda
+            Match by Substring: Vzorci in razredi
+            attribute: false
+            'From column:': 'Iz stolpca:'
+            Name: Ime
+            Substring: Vzorec
+            Count: Primerov
+            +: true
+            Options: Možnosti
+            match_beginning: false
+            Match only at the beginning: Vzorec mora biti na začetku
+            case_sensitive: false
+            Case sensitive: Loči med velikimi in malimi črkami
+            Apply: Uveljavi
         def `adjust_n_rule_rows`:
             def `_add_line`:
-                ×: null
-                'color: gray': null
+                ×: true
+                'color: gray': false
         def `class_labels`:
-            ^C\\d+: null
-            C{}: null
+            ^C\\d+: true
+            C{}: true
         def `update_counts`:
             def `_set_labels`:
-                '{}': null
-                + {}: null
-                '{} of the {} matching instances are already ': null
-                covered above: null
-                All matching instances are already covered above: null
+                '{}': true
+                + {}: true
+                "{n_before} of the {n_total} matching ": "{n_before} od {n_total}"
+                instance are already covered above.: primerov je že pokritih s predhodnimi vzorci.
+                All matching instances are already covered above: Vse pojavitve so že pokrite s predhodnimi vzorci.
             def `_set_placeholders`:
-                (remaining instances): null
-                (unused): null
+                (remaining instances): (preostali primeri)
+                (unused): (neuporabljeno)
         def `send_report`:
             def `_cond_part`:
-                '<b>{}</b> ': null
-                if <b>{}</b> contains <b>{}</b>: null
-                otherwise: null
+                '<b>{class_name}</b> ': false
+                "if <b>{self.attribute.name}</b> contains <b>{patt}</b>": "če <b>{self.attribute.name}</b> vsebuje <b>{patt}</b>"
+                otherwise: sicer
             def `_count_part`:
-                'all {} matching instances are already covered ': null
-                above: null
-                '{} matching instances (+ {} that are already ': null
-                covered above: null
-                '{} matching instances': null
-            Input: null
-            Source attribute: null
-            <li>{}; {}</li>: null
-            Output: null
-            Class name: null
-            <ol>{}</ol>: null
-    __main__: null
-    zoo: null
+                "all {n_total} matching instances are already covered above": "vseh {n_total} {plsi(n_total, 'pojavitev je že pokrita|pojavitvi sta že pokriti|pojavitve so že pokrite|pojavitev je že pokritih')} zgoraj"
+                "{n_matched} {pl(n_matched, 'instance')}": "{n_matched} {plsi(n_matched, 'primer')}"
+                "{n_matched} matching {pl(n_matched, 'instance')}": "{n_matched} {plsi(n_matched, 'pojavitev|pojavitvi|pojavitve|pojavitev')}"
+                " (+{n_already} that {pl(n_already, 'is|are')} already covered above": " (+{n_already}, ki {plsi(n_already, 'je že pokrita|sta že pokriti|so že pokrite|je že pokritih')} zgoraj"
+            Input: Vhod
+            Source attribute: Izvorni stolpec
+            <li>{}; {}</li>: false
+            Output: Izhod
+            Class name: Ime razreda
+            <ol>{}</ol>: false
+    __main__: false
+    zoo: false
 widgets/data/owcreateinstance.py:
     class `DiscreteVariableEditor`:
         def `__init__`:
-            '?': null
+            '?': (nedoločeno)
     class `ContinuousVariableEditor`:
         def `__init__`:
-            Min/Max cannot be NaN.: null
+            Min/Max cannot be NaN.: false
             class `DoubleSpinBox`:
                 def `textFromValue`:
-                    '?': null
+                    '?': false
     class `TimeVariableEditor`:
-        yyyy-MM-dd: null
-        hh:mm:ss: null
+        yyyy-MM-dd: true
+        hh:mm:ss: true
         def `__init__`:
-            '{TimeVariableEditor.DATE_FORMAT} ': null
-            '{TimeVariableEditor.TIME_FORMAT}': null
+            '{TimeVariableEditor.DATE_FORMAT} ': false
+            '{TimeVariableEditor.TIME_FORMAT}': false
     class `OWCreateInstance`:
-        Create Instance: null
-        Interactively create a data instance from sample dataset.: null
-        icons/CreateInstance.svg: null
-        Transform: null
-        simulator: null
+        Create Instance: Sestavi primer
+        Interactively create a data instance from sample dataset.: Ročno sestavi nov primer
+        icons/CreateInstance.svg: false
+        Transform: false
+        simulator: nov
         class `Inputs`:
-            Data: null
-            Reference: null
+            Data: Podatki
+            Reference: Referenca
         class `Outputs`:
-            Data: null
+            Data: Podatki
         class `Information`:
-            'Variables with only missing values were ': null
-            removed from the list.: null
-        median: null
-        mean: null
-        random: null
-        input: null
-        name: null
-        Variable: null
-        variable: null
-        Value: null
-        header: null
+            'Variables with only missing values were ': "Spremenljivke, ki imajo same manjkajoče vrednosti "
+            removed from the list.: niso na voljo.
+        Median: Mediana
+        Mean: Povprečje
+        Random: Naključno
+        Input: Vhodni primer
+        median: false
+        mean: false
+        random: false
+        input: false
+        name: false
+        Variable: Spremenljivka
+        variable: false
+        Value: Vrednost
+        header: false
         def `__init__`:
-            Filter...: null
-            buttonBox: null
-            append_to_data: null
-            Append this instance to input data: null
-            auto_commit: null
+            Filter...: true
+            buttonBox: false
+            append_to_data: false
+            Append this instance to input data: Dodaj primer k vhodnim podatkom
+            auto_commit: false
         def `_initialize_values`:
-            median: null
-            mean: null
-            random: null
-            input: null
+            median: false
+            mean: false
+            random: false
+            input: false
         def `_create_data_from_values`:
-            created: null
+            created: ustvarjeni
         def `_append_to_data`:
-            __source_widget: null
-            Source ID: null
+            __source_widget: false
+            Source ID: Vir
         def `send_report`:
-            Input: null
-            Output: null
-            '{var.name}:': null
-            Values: null
-    __main__: null
-    housing: null
+            Input: Vhod
+            Output: Izhod
+            '{var.name}:': false
+            Values: Vrednosti
+    __main__: false
+    housing: false
 widgets/data/owcsvimport.py:
     T: false
     K: false
@@ -4496,157 +4499,157 @@ widgets/data/owdatasets.py:
         \n: true
     __main__: false
 widgets/data/owdiscretize.py:
-    \s*,\s*: null
-    year: null
-    month: null
-    day: null
-    week: null
-    hour: null
-    minute: null
-    second: null
-    invalid width: null
-    too many intervals: null
+    \s*,\s*: true
+    year: leto|leti|leta|let
+    month: mesec|meseca|meseci|mesecev
+    day: dan|dneva|dnevi|dni
+    week: teden|tedna|tedni|tednov
+    hour: ura
+    minute: minuta
+    second: sekunda
+    invalid width: nepravilna širina
+    too many intervals: preveč intervalov
     def `_fixed_width_discretization`:
-        .: null
+        .: true
     def `_mdl_discretization`:
-        no discrete class: null
+        no discrete class: razred ni kategoričen
     def `_custom_discretization`:
-        invalid cuts: null
-    Use default setting: null
-    default: null
-    Treat the variable as defined in 'default setting': null
-    Keep numeric: null
-    keep: null
-    Keep the variable as is: null
-    Entropy vs. MDL: null
-    entropy: null
-    Split values until MDL exceeds the entropy (Fayyad-Irani)\n: null
-    (requires discrete class variable): null
-    'Equal frequency, intervals: ': null
-    equal freq, k={}: null
-    Create bins with same number of instances: null
-    freq_spin: null
-    'Equal width, intervals: ': null
-    equal width, k={}: null
-    Create bins of the same width: null
-    width_spin: null
-    Remove: null
-    remove: null
-    Remove variable: null
-    'Natural binning, desired bins: ': null
-    binning, desired={}: null
-    'Create bins with nice thresholds; ': null
-    try matching desired number of bins: null
-    binning_spin: null
-    'Fixed width: ': null
-    fixed width {}: null
-    Create bins with the given width (not for time variables): null
-    width_line: null
-    'Time interval: ': null
-    time interval, {} {}: null
-    Create bins with the give width (for time variables): null
-    width_time_line: null
-    width_time_unit: null
-    'Custom: ': null
-    'custom: {}': null
-    Use manually specified thresholds: null
-    threshold_line: null
+        invalid cuts: nepravilne meje
+    Use default setting: Uporabi privzeto nastavitev
+    default: privzeto
+    Treat the variable as defined in 'default setting': Obravnavaj spremenljivko po določeni privzeti metodi
+    Keep numeric: Ohrani številsko
+    keep: ohrani
+    Keep the variable as is: Pusti spremenljivko tako, kot je
+    Entropy vs. MDL: Entropija proti MDL
+    entropy: entropija
+    Split values until MDL exceeds the entropy (Fayyad-Irani)\n: Deli, dokler je zmanjšanje entropije večje od MDL (Fayyad-Irani)\n
+    (requires discrete class variable): (zahteva kategorično ciljno spremenljivko)
+    'Equal frequency, intervals: ': 'Enaka pogostost, št. intervalov: '
+    equal freq, k={}: pogostost, k={}
+    Create bins with same number of instances: Določi intervale z enakim številom primerov
+    freq_spin: false
+    'Equal width, intervals: ': 'Enaka širina, št. intervalov'
+    equal width, k={}: širina, k={}
+    Create bins of the same width: Sestavi intervale enake širine
+    width_spin: false
+    Remove: Odstrani
+    remove: odstrani
+    Remove variable: Odstrani spremenljivko
+    'Natural binning, desired bins: ': 'Naravni intervali, želeno število: '
+    binning, desired={}: naravni, število={}
+    'Create bins with nice thresholds; ': 'Sestavi intervale z lepimi mejami; '
+    try matching desired number of bins: 'število intervalov je čim bližje želenemu'
+    binning_spin: false
+    'Fixed width: ': 'Določena širina: '
+    fixed width {}: širina {}
+    Create bins with the given width (not for time variables): Sestavi intervale določene širine
+    width_line: false
+    'Time interval: ': 'Časovni interval: '
+    time interval, {} {}: čas, {} {}
+    Create bins with the give width (for time variables): Sestavi intervale z določeno širino (za časovne spremenljivke)
+    width_time_line: false
+    width_time_unit: false
+    'Custom: ': 'Ročno: '
+    'custom: {}': 'ročno: {}'
+    Use manually specified thresholds: Uporabi ročno določene meje
+    threshold_line: false
     def `format_desc`:
-        (s): null
-        s: null
+        "{time_units[unit]}(s)": "{plsi(1, time_units[unit])}"
+        "{pl(width, time_units[unit])}": "{plsi(width, time_units[unit])}"
     class `DiscDomainModel`:
         def `data`:
-            '<b>{var.name}: </b>': null
-            <p style="white-space:pre">{tip}: null
-            '{",&nbsp;&nbsp;".join(values)}</p>': null
-            <br/>: null
-            '- {value}<br/>': null
-            ' ({format_desc(hint)}){points}': null
+            '<b>{var.name}: </b>': false
+            <p style="white-space:pre">{tip}: false
+            '{",&nbsp;&nbsp;".join(values)}</p>': false
+            <br/>: false
+            '- {value}<br/>': false
+            ' ({format_desc(hint)}){points}': false
     class `DefaultDiscModel`:
         def `__init__`:
-            ★: null
+            ★: true
         def `data`:
-            'Default setting: ': null
-            Default setting for variables without specific setings: null
+            'Default setting: ': 'Privzeta nastavitev: '
+            Default setting for variables without specific setings: Privzeta metoda za spremenljivke brez specifičnih nastavitev
     class `IncreasingNumbersListValidator`:
         def `validate`:
-            +-., 0123456789: null
-            ' ': null
-            ', ': null
+            +-., 0123456789: false
+            ' ': false
+            ', ': true
         def `show_tip`:
-            ::show_tip_qlabel: null
-            tip-label: null
-            QTipLabel: null
-            hide-timer: null
-    DState: null
-    method: null
-    points: null
-    disc_var: null
-    Default: null
-    Leave: null
-    MDL: null
-    EqualFreq: null
-    k: null
-    EqualWidth: null
-    Custom: null
+            ::show_tip_qlabel: false
+            tip-label: false
+            QTipLabel: false
+            hide-timer: false
+    DState: false
+    method: false
+    points: false
+    disc_var: false
+    Default: false
+    Leave: false
+    MDL: false
+    EqualFreq: false
+    k: false
+    EqualWidth: false
+    Custom: false
     class `OWDiscretize`:
-        Discretize: null
-        Discretize numeric variables: null
-        Transform: null
-        icons/Discretize.svg: null
-        bin: null
-        categorical: null
-        nominal: null
-        ordinal: null
+        Discretize: Diskretizacija
+        Discretize numeric variables: Diskretizacija številskih spremenljivk
+        Transform: false
+        icons/Discretize.svg: false
+        bin: kategorije
+        categorical: intervali
+        nominal: številske
+        ordinal: ordinalne
         class `Inputs`:
-            Data: null
-            Input data table: null
+            Data: Podatki
+            Input data table: Vhodni podatki
         class `Outputs`:
-            Data: null
-            Table with categorical features: null
+            Data: Podatki
+            Table with categorical features: Tabela z diskretnimi spremenljivkami
         def `__init__`:
-            autosend: null
+            autosend: false
         def `_create_buttons`:
             def `manual_cut_editline`:
-                e.g. 0.0, 0.5, 1.0: null
+                e.g. 0.0, 0.5, 1.0: npr. 0.0, 0.5, 1.0
                 <p style="white-space:pre">: null
                 Enter cut points as a comma-separate list of \n: null
                 strictly increasing numbers e.g. 0.0, 0.5, 1.0).</p>: null
-            (s): null
-            CC: null
-            Copy the current cut points to manual mode: null
+            "{unit}(s)": "{plsi(1, unit)}"
+            CC: KP
+            Copy the current cut points to manual mode: Uporabi trenutne vrednosti kot ročno nastavitev
         def `_update_discretizations`:
-            values: null
+            values: false
         def `_discretize_var`:
-            ': <keep, time var>': null
-            ': <keep, not time>': null
-            ' <{dvar}>': null
-            ' <removed>': null
-            ': ': null
-            ', ': null
+            ': <keep, time var>': ": <ohrani, časovna>"
+            ': <keep, not time>': ": <ohrani, ni časovna>"
+            ' <{dvar}>': false
+            ' <removed>': ' <odstranjena>'
+            ': ': true
+            ', ': true
         def `_copy_to_manual`:
-            ', ': null
+            ', ': true
         def `send_report`:
-            ': ': null
-            '{name} ({format_desc(desc.hint)})': null
-            ', ': null
-            Variables: null
+            ': ': true
+            '{name} ({format_desc(desc.hint)})': false
+            ', ': true
+            Variables: Spremenljivke
         def `migrate_settings`:
-            default_method: null
-            default_method_name: null
-            default_k: null
-            default_cutpoints: null
-            context_settings: null
-            saved_var_states: null
-            Leave: null
-            Keep: null
-            Default: null
-            Custom: null
-            ', ': null
-            '{x:g}': null
-            var_hints: null
-    __main__: null
-    heart_disease: null
+            default_method: false
+            default_method_name: false
+            default_k: false
+            default_cutpoints: false
+            context_settings: false
+            saved_var_states: false
+            Leave: false
+            Keep: false
+            Default: false
+            Custom: false
+            ', ': false
+            '{x:g}': false
+            var_hints: false
+    __main__: false
+    heart_disease: false
 widgets/data/oweditdomain.py:
     V: false
     H: false
@@ -4973,18 +4976,18 @@ widgets/data/oweditdomain.py:
     __main__: false
     iris: false
 widgets/data/owfeatureconstructor.py:
-    FeatureDescriptor: null
-    name: null
-    expression: null
-    ContinuousDescriptor: null
-    number_of_decimals: null
-    DateTimeDescriptor: null
-    DiscreteDescriptor: null
-    values: null
-    ordered: null
-    StringDescriptor: null
+    FeatureDescriptor: false
+    name: false
+    expression: false
+    ContinuousDescriptor: false
+    number_of_decimals: false
+    DateTimeDescriptor: false
+    DiscreteDescriptor: false
+    values: false
+    ordered: false
+    StringDescriptor: false
     def `selected_row`:
-        invalid 'selectionMode': null
+        invalid 'selectionMode': false
     class `FeatureEditor`:
         ? '
 
@@ -4996,249 +4999,251 @@ widgets/data/owfeatureconstructor.py:
 
 
             '
-        : null
-        _: null
-        str: null
-        float: null
-        int: null
-        len: null
-        abs: null
-        max: null
-        min: null
+        : "V izrazu lahko uporabite imena spremenljivk.\n
+           Vrednosti kategoričnih spremenljivk so nizi.\n
+        "
+        _: false
+        str: false
+        float: false
+        int: false
+        len: false
+        abs: false
+        max: false
+        min: false
         def `__init__`:
-            Name...: null
-            Expression...: null
-            Select Feature: null
-            Select Function: null
+            Name...: Ime...
+            Expression...: Izraz...
+            Select Feature: Izberi spremenljivko
+            Select Function: Izberi funkcijo
         def `setEditorData`:
-            Select Feature: null
+            Select Feature: Izberi spremenljivko
         def `on_funcs_changed`:
-            atan2: null
-            fmod: null
-            ldexp: null
-            log: null
-            pow: null
-            copysign: null
-            hypot: null
-            (,): null
-            e: null
-            pi: null
-            (): null
+            atan2: false
+            fmod: false
+            ldexp: false
+            log: false
+            pow: false
+            copysign: false
+            hypot: false
+            (,): false
+            e: false
+            pi: false
+            (): false
     class `ContinuousFeatureEditor`:
-        A numeric expression\n\n: null
+        A numeric expression\n\n: Številski izraz\n\n
     class `DateTimeFeatureEditor`:
-        'Result must be a string in ISO-8601 format ': null
-        (e.g. 2019-07-30T15:37:27 or a part thereof),\n: null
-        or a number of seconds since Jan 1, 1970.: null
+        'Result must be a string in ISO-8601 format ': 'Rezultat mora biti niz v formatu ISO-8601 '
+        (e.g. 2019-07-30T15:37:27 or a part thereof),\n: (npr. 2019-07-30T15:37:27 ali del tega),\n
+        or a number of seconds since Jan 1, 1970.: ali število sekund od 1. januarja 1970
     class `DiscreteFeatureEditor`:
-        Result must be a string, if values are not explicitly given\n: null
-        or a zero-based integer indices into a list of values given below.: null
+        Result must be a string, if values are not explicitly given\n: Če vrednosti niso eksplicitno podane spodaj, mora biti rezultat niz,
+        or a zero-based integer indices into a list of values given below.: sicer pa indeks elementa v spodnjem seznamu (začenši z 0).
         def `__init__`:
-            'If values are given, above expression must return zero-based ': null
-            integer indices into that list.: null
-            A, B ...: null
-            Values (optional): null
+            'If values are given, above expression must return zero-based ': 'Če so vrednosti podane, mora biti rezultat izraza '
+            integer indices into that list.: indeks elementa v te seznamu (začenši z 0).
+            A, B ...: true
+            Values (optional): Vrednosti (opcijsko)
         def `setEditorData`:
-            ', ': null
-            ',': null
-            \,: null
+            ', ': false
+            ',': false
+            \,: false
         def `editorData`:
-            (?<!\\),: null
-            \,: null
-            ',': null
+            (?<!\\),: false
+            \,: false
+            ',': false
     class `StringFeatureEditor`:
-        A string expression\n\n: null
-    d: null
-    c: null
-    t: null
-    s: null
+        A string expression\n\n: Izraz, katerega rezultat je niz\n\n
+    d: false
+    c: false
+    t: false
+    s: false
     class `FeatureItemDelegate`:
         def `displayText`:
-            ' := ': null
+            ' := ': false
     class `FeatureConstructorHandler`:
         def `is_valid_item`:
-            eval: null
-            __GLOBALS: null
+            eval: false
+            __GLOBALS: false
     class `OWFeatureConstructor`:
-        Feature Constructor: null
-        'Construct new features (data columns) from a set of ': null
-        existing features in the input dataset.: null
-        Transform: null
-        icons/FeatureConstructor.svg: null
-        function: null
-        lambda: null
+        Feature Constructor: Sestavi značilke
+        'Construct new features (data columns) from a set of ': Sestavi nove značilke, izračunane
+        existing features in the input dataset.: iz obstoječih.
+        Transform: false
+        icons/FeatureConstructor.svg: false
+        function: funkcija
+        lambda: formula
         class `Inputs`:
-            Data: null
+            Data: Podatki
         class `Outputs`:
-            Data: null
+            Data: Podatki
         class `Error`:
-            Categorical feature {} needs more values.: null
-            'Invalid expressions: {}.': null
-            '{}': null
+            Categorical feature {} needs more values.: Kategorična spremenljivka {} potrebuje več vrednosti.
+            'Invalid expressions: {}.': 'Nepravilen izraz: {}'
+            '{}': false
         class `Warning`:
-            'Recently added variable has been renamed, ': null
-            to avoid duplicates.\n: null
+            'Recently added variable has been renamed, ': 'Nove spremenljivke so preimenovane '
+            to avoid duplicates.\n: zaradi ponovljenih imen.
         def `__init__`:
-            Variable Definitions: null
-            New: null
-            Create a new variable: null
-            Numeric: null
-            X{}: null
-            Categorical: null
-            D{}: null
-            Text: null
-            S{}: null
-            Date/Time: null
-            T{}: null
-            Duplicate Selected Variable: null
-            Remove: null
-            Remove selected variable: null
-            Upgrade Expressions: null
-            Send: null
+            Variable Definitions: Definicije spremenljivk
+            New: Nova
+            Create a new variable: Sestavi novo spremenljivko
+            Numeric: Številska
+            X{}: true
+            Categorical: Kategorična
+            D{}: true
+            Text: Besedilna
+            S{}: true
+            Date/Time: Datum/Čas
+            T{}: true
+            Duplicate Selected Variable: Podvoji izbrano spremenljivko
+            Remove: Odstrani
+            Remove selected variable: Odstrani izbrano spremenljivko
+            Upgrade Expressions: Prenovi izraze
+            Send: Pošlji
         def `_validate_descriptors`:
             def `validate`:
-                eval: null
-            ', ': null
+                eval: false
+            ', ': false
         def `on_done`:
-            Result: null
+            Result: false
         def `send_report`:
-            categorical: null
-            ' with values ': null
-            ', ': null
-            '''{val}''': null
-            ; ordered: null
-            numeric: null
-            date/time: null
-            text: null
-            '{feature.expression} ({desc})': null
-            Constructed feature{s}: null
+            categorical: kategorična
+            ' with values ': z vrednostmi
+            ', ': false
+            '''{val}''': false
+            ; ordered: ; urejena
+            numeric: številska
+            date/time: datum/čas
+            text: besedilna
+            '{feature.expression} ({desc})': false
+            Constructed feature{s}: Sestavljene spremenljivke
         def `fix_expressions`:
-            Fix Expressions: null
-            'This widget''s behaviour has changed. Values of categorical ': null
-            'variables are now inserted as their textual representations ': null
-            '(strings); previously they appeared as integer numbers, with an ': null
-            attribute '.value' that contained the text.\n\n: null
-            'The widget currently runs in compatibility mode. After ': null
-            expressions are updated, manually check for their correctness.: null
-            Update: null
-            Cancel: null
+            Fix Expressions: Popravi izraze
+            'This widget''s behaviour has changed. Values of categorical ': true
+            'variables are now inserted as their textual representations ': true
+            '(strings); previously they appeared as integer numbers, with an ': true
+            attribute '.value' that contained the text.\n\n: true
+            'The widget currently runs in compatibility mode. After ': true
+            expressions are updated, manually check for their correctness.: true
+            Update: true
+            Cancel: true
             def `fixer`:
-                .value: null
-                '{': null
-                ', ': null
-                '''{val}'': {i}': null
-                '}}[{var.name}]': null
-            '|': null
-            '{var.name}': null
-            (^|\W)(: null
-            )(\.value)?(\W|$): null
+                .value: false
+                '{': false
+                ', ': false
+                '''{val}'': {i}': false
+                '}}[{var.name}]': false
+            '|': false
+            '{var.name}': false
+            (^|\W)(: false
+            )(\.value)?(\W|$): false
         def `migrate_context`:
-            eval: null
-            descriptors: null
-            expressions_with_values: null
+            eval: false
+            descriptors: false
+            expressions_with_values: false
     def `validate_exp`:
-        exp is not a 'ast.AST' instance: null
+        exp is not a 'ast.AST' instance: false
     def `sanitized_name`:
-        \W: null
-        _: null
+        \W: false
+        _: false
     def `bind_variable`:
-        nan: null
-        eval: null
-        NFKC: null
-    _: null
+        nan: false
+        eval: false
+        NFKC: false
+    _: false
     def `make_lambda`:
-        __builtins__: null
-        <lambda>: null
-        eval: null
-    Ellipsis: null
-    'False': null
-    None: null
-    'True': null
-    abs: null
-    all: null
-    any: null
-    acsii: null
-    bin: null
-    bool: null
-    bytearray: null
-    bytes: null
-    chr: null
-    complex: null
-    dict: null
-    divmod: null
-    enumerate: null
-    filter: null
-    float: null
-    format: null
-    frozenset: null
-    getattr: null
-    hasattr: null
-    hash: null
-    hex: null
-    id: null
-    int: null
-    iter: null
-    len: null
-    list: null
-    map: null
-    memoryview: null
-    next: null
-    object: null
-    oct: null
-    ord: null
-    pow: null
-    range: null
-    repr: null
-    reversed: null
-    round: null
-    set: null
-    slice: null
-    sorted: null
-    str: null
-    tuple: null
-    type: null
-    zip: null
-    normalvariate: null
-    gauss: null
-    expovariate: null
-    gammavariate: null
-    betavariate: null
-    lognormvariate: null
-    paretovariate: null
-    vonmisesvariate: null
-    weibullvariate: null
-    triangular: null
-    uniform: null
-    nanmean: null
-    nanmin: null
-    nanmax: null
-    nansum: null
-    nanstd: null
-    nanmedian: null
-    nancumsum: null
-    nancumprod: null
-    nanargmax: null
-    nanargmin: null
-    nanvar: null
-    mean: null
-    min: null
-    max: null
-    sum: null
-    std: null
-    median: null
-    cumsum: null
-    cumprod: null
-    argmax: null
-    argmin: null
-    var: null
+        __builtins__: false
+        <lambda>: false
+        eval: false
+    Ellipsis: false
+    'False': false
+    None: false
+    'True': false
+    abs: false
+    all: false
+    any: false
+    acsii: false
+    bin: false
+    bool: false
+    bytearray: false
+    bytes: false
+    chr: false
+    complex: false
+    dict: false
+    divmod: false
+    enumerate: false
+    filter: false
+    float: false
+    format: false
+    frozenset: false
+    getattr: false
+    hasattr: false
+    hash: false
+    hex: false
+    id: false
+    int: false
+    iter: false
+    len: false
+    list: false
+    map: false
+    memoryview: false
+    next: false
+    object: false
+    oct: false
+    ord: false
+    pow: false
+    range: false
+    repr: false
+    reversed: false
+    round: false
+    set: false
+    slice: false
+    sorted: false
+    str: false
+    tuple: false
+    type: false
+    zip: false
+    normalvariate: false
+    gauss: false
+    expovariate: false
+    gammavariate: false
+    betavariate: false
+    lognormvariate: false
+    paretovariate: false
+    vonmisesvariate: false
+    weibullvariate: false
+    triangular: false
+    uniform: false
+    nanmean: false
+    nanmin: false
+    nanmax: false
+    nansum: false
+    nanstd: false
+    nanmedian: false
+    nancumsum: false
+    nancumprod: false
+    nanargmax: false
+    nanargmin: false
+    nanvar: false
+    mean: false
+    min: false
+    max: false
+    sum: false
+    std: false
+    median: false
+    cumsum: false
+    cumprod: false
+    argmax: false
+    argmin: false
+    var: false
     class `FeatureFunc`:
-        DType: null
+        DType: false
         def `__init__`:
-            eval: null
+            eval: false
         def `__repr__`:
-            '{0.__name__}{1!r}': null
-    __main__: null
-    iris: null
+            '{0.__name__}{1!r}': false
+    __main__: false
+    iris: false
 widgets/data/owfeaturestatistics.py:
     def `format_time_diff`:
         ~{years} years: ~{years} {plsi(years, "leto|leti|leta|let")}
@@ -5510,112 +5515,112 @@ widgets/data/owgroupby.py:
 widgets/data/owimpute.py:
     class `DisplayFormatDelegate`:
         def `initStyleOption`:
-            method: null
+            method: false
     class `AsDefault`:
-        Default (above): null
-        '{var.name}': null
-    RowMask: null
-    mask: null
+        Default (above): Privzeto (zgoraj)
+        '{var.name}': false
+    RowMask: false
+    mask: false
     def `var_key`:
-        '{}.{}': null
+        '{}.{}': false
     class `OWImpute`:
-        Impute: null
-        Impute missing values in the data table.: null
-        icons/Impute.svg: null
-        substitute: null
-        missing: null
-        Transform: null
+        Impute: Nadomesti neznane vrednosti
+        Impute missing values in the data table.: Nadomesti neznane vrednosti v podatkih
+        icons/Impute.svg: false
+        substitute: imputacija
+        missing: manjkajoče
+        Transform: false
         class `Inputs`:
-            Data: null
-            Learner: null
+            Data: Podatki
+            Learner: Model
         class `Outputs`:
-            Data: null
+            Data: Podatki
         class `Error`:
-            Imputation failed for '{}': null
-            Model based imputer does not work for sparse data: null
+            Imputation failed for '{}': Nadomeščanje za '{}' ni uspelo.
+            Model based imputer does not work for sparse data: Nadomeščanje z modelom ne deluje za redke podatke.
         class `Warning`:
-            Default method can not handle '{}': null
+            Default method can not handle '{}': Privzeta metoda ne deluje za '{}'
         def `__init__`:
-            Default Method: null
-            'Fixed values; numeric variables:': null
-            default_numeric_value: null
-            ', time:': null
-            default_time: null
-            Individual Attribute Settings: null
-            Restore All to Default: null
-            autocommit: null
+            Default Method: Privzeta metoda
+            'Fixed values; numeric variables:': 'Privzeta vrednost; številske spremenljivke:'
+            default_numeric_value: false
+            ', time:': ", časovne:"
+            default_time: false
+            Individual Attribute Settings: 'Nastavitve za posamične spremenljivke'
+            Restore All to Default: Nastavi vse na privzeto
+            autocommit: false
         def `__commit_finish`:
             def `get_variable`:
-                Error for %s: null
+                Error for %s: false
             def `create_data`:
-                Error: null
-                Unknown: null
+                Error: false
+                Unknown: false
         def `send_report`:
-            '{} ({})': null
-            Default method: null
-            Specific imputers: null
-            ', ': null
-            Method: null
+            '{} ({})': true
+            Default method: Privzeta metoda
+            Specific imputers: Posamične nastavitve
+            ', ': true
+            Method: Metoda
     def `__sample_data`:
-        c{i}: null
-        t{i}: null
-    __main__: null
-    brown-selected: null
+        c{i}: true
+        t{i}: true
+    __main__: false
+    brown-selected: false
 widgets/data/owmelt.py:
-    item: null
-    value: null
-    row: null
+    item: stvar
+    value: vrednost
+    row: vrstica
     class `MeltContextHandler`:
         def `match`:
-            idvar: null
+            idvar: false
         def `encode_setting`:
-            idvar: null
+            idvar: false
         def `decode_setting`:
-            idvar: null
+            idvar: false
     class `OWMelt`:
-        Melt: null
-        Convert wide data to narrow data, a list of item-value pairs: null
-        Transform: null
-        icons/Melt.svg: null
-        shopping list: null
-        wide: null
-        narrow: null
+        Melt: Raztopi
+        Convert wide data to narrow data, a list of item-value pairs: Spremeni široke podatke v ozke, to je, seznam parov (stvar, vrednost)
+        Transform: false
+        icons/Melt.svg: false
+        shopping list: nakupovalni seznam
+        wide: širok
+        narrow: ozek
         class `Inputs`:
-            Data: null
+            Data: Podatki
         class `Outputs`:
-            Data: null
+            Data: Podatki
         class `Information`:
-            No columns with unique values\n: null
-            Only columns with unique valules are useful for row identifiers.: null
+            No columns with unique values\n: Ni stolpcev z neponovljenimi vrednostmi.
+            Only columns with unique valules are useful for row identifiers.: Kot identifikator vrstice so uporabni le stolpci, v katerih se vrednosti ne ponavljajo.
         def `__init__`:
-            Unique Row Identifier: null
-            Row number: null
-            idvar: null
-            A column with identifier, like customer's id: null
-            Filter: null
-            only_numeric: null
-            Ignore non-numeric features: null
-            exclude_zeros: null
-            Exclude zero values: null
-            Besides missing values, also omit items with zero values: null
-            Names for generated features: null
-            'Item:': null
-            item_var_name: null
-            'padding-left: 3px': null
-            'Value:': null
-            value_var_name: null
+            Unique Row Identifier: Identifikator vrstice
+            Row number: Številka vrstice
+            idvar: false
+            A column with identifier, like customer's id: Stolpec z identifikatorjem, npr. številka nakupa
+            Filter: true
+            only_numeric: false
+            Ignore non-numeric features: Uporabi le številske spremenljivke
+            exclude_zeros: false
+            Exclude zero values: Preskoči ničelne vrednosti
+            Besides missing values, also omit items with zero values: Poleg neznanih vrednosti preskoči tudi stvari z vrednostjo 0.
+            Names for generated features: Imena stolpcev v novih podatkih
+            'Item:': 'Stvar:'
+            item_var_name: false
+            'padding-left: 3px': false
+            'Value:': 'Vrednost:'
+            value_var_name: false
         def `send_report`:
-            Settings: null
-            Row identifier: null
-            Ignore non-numeric features: null
-            Exclude zero values: null
-            Output: null
+            Settings: Nastavitve
+            Row identifier: Identifikator vrstice
+            Ignore non-numeric features: Uporabi le številske vrednosti
+            Exclude zero values: Preskoči ničelne vrednosti
+            Output: Izhod
         def `_store_output_desc`:
-            Item column: null
-            Value column: null
-            Number of items: null
-    __main__: null
-    zoo: null
+            Item column: Stolpec s stvarjo
+            Value column: Stolpec z vrednostjo
+            Number of items: Število stvari
+    __main__: false
+    zoo: false
 widgets/data/owmergedata.py:
     Instance id: Identiteta vrstice
     Row index: Številka vrstice
@@ -6067,24 +6072,24 @@ widgets/data/owpivot.py:
             Filtered Data: Izbrani podatki
             Grouped Data: Skupine podatkov
         class `Warning`:
-            Column feature should be selected.: Izbrani je potrebno spremenljivko za stolpce.
+            Column feature should be selected.: Izbrati je potrebno spremenljivko za stolpce.
             Some aggregations ({}) cannot be computed.: Nekaterih vrednosti ({}) ni mogoče izračunati.
             Some variables have been renamed in some tables: Spremenljivke s podvojenimi imeni so
             to avoid duplicates.\n{}: preimenovane.\n{}
-            Selected variable has too many values.: Izbrana spremenljivka ima preveč različnih vrendosti.
+            Selected variable has too many values.: Izbrana spremenljivka ima preveč različnih vrednosti.
             At least 1 primitive variable is required.: Podatki morajo vsebovati vsaj eno nebesedilno spremenljivko.
         def `_add_control_area_controls`:
             Rows: Vrstice
             row_feature: false
             Columns: Stolpci
             col_feature: false
-            (Same as rows): (Isti kot vrstice)
+            (Same as rows): (Enako vrsticam)
             Values: Vrednosti
             val_feature: false
             (None): (Brez)
             auto_commit: false
         def `__add_aggregation_controls`:
-            Aggregations: Združevanje
+            Aggregations: Izračunaj
         def `skipped_aggs`:
             ', ': false
         def `init_attr_values`:
@@ -6092,653 +6097,658 @@ widgets/data/owpivot.py:
             col_feature: false
             val_feature: false
         def `send_report`:
-            Row feature: Spremenljivka v vrsticah
-            Column feature: Spremenljivka v stolpcih
+            Row feature: Vrstice
+            Column feature: Stolpci
             Value feature: Vrednost
             Group by: Združi po
     __main__: false
     heart_disease: false
 widgets/data/owpreprocess.py:
     class `DiscretizeEditor`:
-        n: null
-        force: null
-        None: null
-        Equal width discretization: null
-        Equal frequency discretization: null
-        Remove numeric features: null
-        Entropy-MDL discretization: null
+        n: false
+        force: false
+        None: Brez diskretizacije
+        Equal width discretization: Enaka širina intervalov
+        Equal frequency discretization: Enaka pogostost vrednosti
+        Remove numeric features: Odstrani številske spremenljivke
+        Entropy-MDL discretization: Diskretizacija z MDL in entropijo
         def `__init__`:
-            Number of intervals (for equal width/frequency): null
+            Number of intervals (for equal width/frequency): Število intervalov (za enake širine ali pogostosti)
         def `setParameters`:
-            method: null
-            n: null
+            method: false
+            n: false
         def `parameters`:
-            method: null
-            n: null
+            method: false
+            n: false
         def `createinstance`:
-            method: null
+            method: false
         def `__repr__`:
-            ', Number of intervals: {}': null
-            '{}{}': null
+            ', Number of intervals: {}': ', število intervalov: {}'
+            '{}{}': false
     class `ContinuizeEditor`:
-        Most frequent is base: null
-        One feature per value: null
-        Remove non-binary features: null
-        Remove categorical features: null
-        Treat as ordinal: null
-        Divide by number of values: null
+        Most frequent is base: Najpogostejša vrednost kot osnova
+        One feature per value: Po ena spremenljivka na vrednost
+        Remove non-binary features: Odstrani nebinarne spremenljivke
+        Remove categorical features: Odstrani kategorične spremenljivke
+        Treat as ordinal: Obravnavaj kot kategorične spremenljivke kot ordinalne
+        Divide by number of values: Obravnavaj kot ordinalne, a deli s številom vrednosti
         def `setParameters`:
-            multinomial_treatment: null
+            multinomial_treatment: false
         def `parameters`:
-            multinomial_treatment: null
+            multinomial_treatment: false
         def `createinstance`:
-            multinomial_treatment: null
+            multinomial_treatment: false
     class `RemoveSparseEditor`:
-        missing: null
-        zeros: null
+        missing values: manjkajočimi vrednostmi
+        zeros: ničlami
         def `__init__`:
-            Remove features with too many: null
-            missing values: null
-            zeros: null
-            'Threshold:': null
-            Percentage: null
-            Fixed: null
+            Remove features with too many: Odstrani spremenljivke s preveč
+            'Threshold:': 'Prag:'
+            Percentage: Odstotek
+            Fixed: Število primerov
         def `parameters`:
-            fixedThresh: null
-            percThresh: null
-            useFixedThreshold: null
-            filter0: null
+            fixedThresh: false
+            percThresh: false
+            useFixedThreshold: false
+            filter0: false
         def `setParameters`:
-            percThresh: null
-            fixedThresh: null
-            useFixedThreshold: null
-            filter0: null
+            percThresh: false
+            fixedThresh: false
+            useFixedThreshold: false
+            filter0: false
         def `createinstance`:
-            filter0: null
-            useFixedThreshold: null
-            fixedThresh: null
-            percThresh: null
+            filter0: false
+            useFixedThreshold: false
+            fixedThresh: false
+            percThresh: false
+        def `__repr__`:
+            "remove features with too many {self.options[self.filter0]}, threshold: ": "odstrani spremenljivke s preveč {self.options[self.filter0]}, meja: "
+            "{self.fixedThresh} {pl(self.fixedThresh, 'instance')}" : "{self.fixedThresh} {plsi(self.fixedThresh, 'primer')}"
+            "{self.percThresh} %": true
     class `ImputeEditor`:
-        Don't impute.: null
-        Replace with constant: null
-        Average/Most frequent: null
-        Model based imputer: null
-        Replace with random value: null
-        Remove rows with missing values.: null
+        Don't impute.: Ne nadomeščaj
+        Replace with constant: Nadomesti z določeno vrednostjo
+        Average/Most frequent: Povprečna/najpogostejša vrednost
+        Model based imputer: Nadomeščanje z modelom
+        Replace with random value: Nadomesti z naključno vrednostjo
+        Remove rows with missing values.: Odstrani vrstice z manjkajočimi vrednostmi
         def `setParameters`:
-            method: null
+            method: false
         def `parameters`:
-            method: null
+            method: false
         def `createinstance`:
-            method: null
+            method: false
     class `UnivariateFeatureSelect`:
         def `__init__`:
-            Score: null
-            Number of features: null
-            'Fixed:': null
-            'Proportion:': null
-            '%': null
+            Score: Kriterij
+            Number of features: Število ohranjenih spremenljivk
+            'Fixed:': 'Določeno število:'
+            'Proportion:': 'Delež v odstotkih'
+            '%': true
         def `setItems`:
-            text: null
+            text: false
         def `setParameters`:
-            score: null
-            strategy: null
-            k: null
-            p: null
+            score: false
+            strategy: false
+            k: false
+            p: false
         def `parameters`:
-            score: null
-            strategy: null
-            p: null
-            k: null
+            score: false
+            strategy: false
+            p: false
+            k: false
     class `FeatureSelectEditor`:
-        Information Gain: null
-        Gain ratio: null
-        Gini index: null
-        ReliefF: null
-        Fast Correlation Based Filter: null
-        ANOVA: null
-        Chi2: null
-        RReliefF: null
-        Univariate Linear Regression: null
+        Information Gain: Informacijski prispevek
+        Gain ratio: Delež informacijskega prispevka
+        Gini index: Zmanjšanje Ginijevega indeksa
+        ReliefF: true
+        Fast Correlation Based Filter: Hitri korelacijski filter
+        ANOVA: true
+        Chi2: true
+        RReliefF: true
+        Univariate Linear Regression: Univariatna linearna regresija
         def `__init__`:
-            text: null
-            Information Gain: null
-            tooltip: null
-            Gain Ratio: null
-            Gini Index: null
-            ReliefF: null
-            Fast Correlation Based Filter: null
-            ANOVA: null
-            Chi2: null
-            RReliefF: null
-            Univariate Linear Regression: null
+            text: false
+            Information Gain: Informacijski prispevek
+            tooltip: false
+            Gain Ratio: Delež informacijskega prispevka
+            Gini Index: Zmanjšanje Ginijevega indeksa
+            ReliefF: true
+            Fast Correlation Based Filter: Hitri korelacijski filter
+            ANOVA: true
+            Chi2: true
+            RReliefF: true
+            Univariate Linear Regression: Univariatna linearna regresija
         def `createinstance`:
-            score: null
-            strategy: null
-            k: null
-            p: null
+            score: false
+            strategy: false
+            k: false
+            p: false
         def `__repr__`:
-            'Score: {}, Strategy (Fixed): {}': null
-            score: null
-            k: null
+            'Score: {}, Strategy (Fixed): {}': 'kriterij: {}, število (določeno): {}'
+            score: false
+            k: false
     class `RandomFeatureSelectEditor`:
         def `__init__`:
-            Number of features: null
-            Fixed: null
-            Percentage: null
-            '%': null
+            Number of features: Število spremenljivk
+            Fixed: Določeno število
+            Percentage: Odstotek
+            '%': true
         def `setParameters`:
-            strategy: null
-            k: null
-            p: null
+            strategy: false
+            k: false
+            p: false
         def `parameters`:
-            strategy: null
-            p: null
-            k: null
+            strategy: false
+            p: false
+            k: false
         def `createinstance`:
-            strategy: null
-            k: null
-            p: null
+            strategy: false
+            k: false
+            p: false
+        def `__repr__`:
+            select {self.__k} {pl(self.__k,'feature')}: izbor {self.__k} {plsi(self.__k,'primer')}
+            select {self.__p} % features: izbor {self.__p} % primerov
     class `Scale`:
-        Standardize to μ=0, σ²=1: null
-        Center to μ=0: null
-        Scale to σ²=1: null
-        Normalize to interval [-1, 1]: null
-        Normalize to interval [0, 1]: null
+        Standardize to μ=0, σ²=1: Standardiziraj (μ=0, σ²=1)
+        Center to μ=0: Centriraj (μ=0)
+        Scale to σ²=1: Skaliraj (σ²=1)
+        Normalize to interval [-1, 1]: Normaliziraj v interval [-1, 1]
+        Normalize to interval [0, 1]: Normaliziraj v interval [0, 1]
         def `setParameters`:
-            method: null
+            method: false
         def `parameters`:
-            method: null
+            method: false
         def `createinstance`:
-            method: null
+            method: false
     class `Randomize`:
         def `__init__`:
-            Classes: null
-            Features: null
-            Meta data: null
-            'Randomize:': null
-            'Replicable shuffling:': null
+            Classes: Razrede
+            Features: Spremenljivke
+            Meta data: Meta spremenljivke
+            'Randomize:': 'Premešaj:'
+            'Replicable shuffling:': 'Ponovljivo mešanje:'
         def `setParameters`:
-            rand_type: null
-            rand_seed: null
+            rand_type: false
+            rand_seed: false
         def `parameters`:
-            rand_type: null
-            rand_seed: null
+            rand_type: false
+            rand_seed: false
         def `createinstance`:
-            rand_type: null
-            rand_seed: null
+            rand_type: false
+            rand_seed: false
         def `__repr__`:
-            '{}, {}': null
-            Replicable: null
-            Not replicable: null
+            '{}, {}': true
+            Replicable: "ponovljivo"
+            Not replicable: "neponovljivo naključno"
     class `PCA`:
         def `__init__`:
-            'Components:': null
+            'Components:': 'Število komponent:'
         def `setParameters`:
-            n_components: null
+            n_components: false
         def `parameters`:
-            n_components: null
+            n_components: false
         def `createinstance`:
-            n_components: null
+            n_components: false
         def `__repr__`:
-            'Components: {}': null
+            'Components: {}': '{} komponent'
     class `CUR`:
         def `__init__`:
-            'Rank:': null
-            'Relative error:': null
+            'Rank:': 'Rang:'
+            'Relative error:': 'Relativna napaka:'
         def `setParameters`:
-            rank: null
-            max_error: null
+            rank: false
+            max_error: false
         def `parameters`:
-            rank: null
-            max_error: null
+            rank: false
+            max_error: false
         def `createinstance`:
-            rank: null
-            max_error: null
+            rank: false
+            max_error: false
         def `__repr__`:
-            'Rank: {}, Relative error: {}': null
+            'Rank: {}, Relative error: {}': 'rang: {}, relativna napaka: {}'
     def `icon_path`:
-        icons/: null
-    Discretize: null
-    orange.preprocess.discretize: null
-    Discretization: null
-    Discretize Continuous Variables: null
-    Discretize.svg: null
-    Continuize: null
-    orange.preprocess.continuize: null
-    Continuization: null
-    Continuize Discrete Variables: null
-    Continuize.svg: null
-    Impute: null
-    orange.preprocess.impute: null
-    Impute Missing Values: null
-    Impute.svg: null
-    Feature Selection: null
-    orange.preprocess.fss: null
-    Select Relevant Features: null
-    SelectColumns.svg: null
-    Random Feature Selection: null
-    orange.preprocess.randomfss: null
-    Select Random Features: null
-    SelectColumnsRandom.svg: null
-    Normalize: null
-    orange.preprocess.scale: null
-    Scale: null
-    Normalize Features: null
-    Normalize.svg: null
-    Randomize: null
-    orange.preprocess.randomize: null
-    Randomization: null
-    Random.svg: null
-    Remove Sparse: null
-    orange.preprocess.remove_sparse: null
-    Remove Sparse Features: null
-    PurgeDomain.svg: null
-    PCA: null
-    orange.preprocess.pca: null
-    Principal Component Analysis: null
-    PCA.svg: null
-    CUR: null
-    orange.preprocess.cur: null
-    CUR Matrix Decomposition: null
+        icons/: true
+    Discretize: Diskretizacija
+    orange.preprocess.discretize: false
+    Discretization: Diskretizacija
+    Discretize Continuous Variables: Diskretiziraj številske spremenljivke
+    Discretize.svg: false
+    Continuize: Kontinuizacija
+    orange.preprocess.continuize: false
+    Continuization: Kontinuizacija
+    Continuize Discrete Variables: Spremeni kategorične spremenljivke v številske
+    Continuize.svg: false
+    Impute: Nadomeščanje
+    orange.preprocess.impute: false
+    Impute Missing Values: Nadomesti manjkajoče vrednosti
+    Impute.svg: false
+    Feature Selection: Izbor spremenljivk
+    orange.preprocess.fss: false
+    Select Relevant Features: Izberi relevantne spremenljivke
+    SelectColumns.svg: false
+    Random Feature Selection: Naključen izbor spremenljivk
+    orange.preprocess.randomfss: false
+    Select Random Features: Izberi naključno množico spremenljivk
+    SelectColumnsRandom.svg: false
+    Normalize: Normalizacija
+    orange.preprocess.scale: false
+    Scale: Skaliraj
+    Normalize Features: Normalizacija spremenljivk
+    Normalize.svg: false
+    Randomize: Premešanje vrednosti
+    orange.preprocess.randomize: false
+    Randomization: Premešanje vrednosti
+    Random.svg: false
+    Remove Sparse: Odstranjevanje redkih podatkov
+    orange.preprocess.remove_sparse: false
+    Remove Sparse Features: Odstrani redke spremenljivke
+    PurgeDomain.svg: false
+    PCA: true
+    orange.preprocess.pca: false
+    Principal Component Analysis: Metoda osnovnih komponent
+    PCA.svg: false
+    CUR: CUR
+    orange.preprocess.cur: false
+    CUR Matrix Decomposition: Matrična dekompozicija CUR
     class `OWPreprocess`:
-        Preprocess: null
-        Construct a data preprocessing pipeline.: null
-        Transform: null
-        icons/Preprocess.svg: null
-        process: null
+        Preprocess: Predprocesiranje
+        Construct a data preprocessing pipeline.: Sestavi zaporedje predprocesorjev
+        Transform: false
+        icons/Preprocess.svg: false
+        process: false
         class `Inputs`:
-            Data: null
+            Data: Podatki
         class `Outputs`:
-            Preprocessor: null
-            Preprocessed Data: null
+            Preprocessor: Predprocesor
+            Preprocessed Data: Predprocesirani podatki
         def `__init__`:
             def `mimeData`:
-                application/x-qwidget-ref: null
-                utf-8: null
-            Preprocessors: null
-            Drag items from the list on the left: null
-            autocommit: null
+                application/x-qwidget-ref: false
+                utf-8: false
+            Preprocessors: Predprocesorji
+            Drag items from the list on the left: Povleci predprocesorje z leve
+            autocommit: false
         def `load`:
-            preprocessors: null
+            preprocessors: false
             def `dropMimeData`:
-                application/x-qwidget-ref: null
+                application/x-qwidget-ref: false
         def `save`:
-            name: null
-            preprocessors: null
+            name: false
+            preprocessors: false
         def `migrate_settings`:
-            storedsettings: null
-            preprocessors: null
-            orange.preprocess.scale: null
-            center: null
-            scale: null
-            Mean: null
-            NoScaling: null
-            NoCentering: null
-            Std: null
-            Span: null
-            method: null
+            storedsettings: false
+            preprocessors: false
+            orange.preprocess.scale: false
+            center: false
+            scale: false
+            Mean: false
+            NoScaling: false
+            NoCentering: false
+            Std: false
+            Span: false
+            method: false
         def `send_report`:
-            Settings: null
-    __main__: null
-    brown-selected: null
+            Settings: Nastavitve
+    __main__: false
+    brown-selected: false
 widgets/data/owpurgedomain.py:
     class `OWPurgeDomain`:
-        Purge Domain: null
-        'Remove redundant values and features from the dataset. ': null
-        Sort values.: null
-        icons/PurgeDomain.svg: null
-        Transform: null
-        remove: null
-        delete: null
-        unused: null
+        Purge Domain: Očisti domeno
+        'Remove redundant values and features from the dataset. ': Odstrani neuporabljene vrednosti in spremenljivke
+        Sort values.: Uredi vrednosti.
+        icons/PurgeDomain.svg: false
+        Transform: false
+        remove: odstrani
+        delete: uredi
+        unused: neuporabljene
         class `Inputs`:
-            Data: null
+            Data: Podatki
         class `Outputs`:
-            Data: null
-        sortValues: null
-        Sort categorical feature values: null
-        removeValues: null
-        Remove unused feature values: null
-        removeAttributes: null
-        Remove constant features: null
-        sortClasses: null
-        Sort categorical class values: null
-        removeClasses: null
-        Remove unused class variable values: null
-        removeClassAttribute: null
-        Remove constant class variables: null
-        removeMetaAttributeValues: null
-        Remove unused meta attribute values: null
-        removeMetaAttributes: null
-        Remove constant meta attributes: null
-        Sorted features: null
-        resortedAttrs: null
-        Reduced features: null
-        reducedAttrs: null
-        Removed features: null
-        removedAttrs: null
-        Sorted classes: null
-        resortedClasses: null
-        Reduced classes: null
-        reducedClasses: null
-        Removed classes: null
-        removedClasses: null
-        Reduced metas: null
-        reducedMetas: null
-        Removed metas: null
-        removedMetas: null
+            Data: Podatki
+        sortValues: false
+        Sort categorical feature values: Uredi kategorične vrednosti po abecedi
+        removeValues: false
+        Remove unused feature values: Odstrani neuporabljene vrednosti
+        removeAttributes: false
+        Remove constant features: Odstrani konstantne spremenljivke
+        sortClasses: false
+        Sort categorical class values: Uredi razrede po abecedi
+        removeClasses: false
+        Remove unused class variable values: Odstrani prazne razrede
+        removeClassAttribute: false
+        Remove constant class variables: Odstrani konstantne ciljne spremenljivke
+        removeMetaAttributeValues: false
+        Remove unused meta attribute values: Odstrani neuporabljene vrednosti meta spremenljivk
+        removeMetaAttributes: false
+        Remove constant meta attributes: Odstrani konstantne meta spremenljivke
+        Sorted features: Urejene značilke
+        resortedAttrs: false
+        Reduced features: Poenostavljene značilke
+        reducedAttrs: false
+        Removed features: Odstranjene značilke
+        removedAttrs: false
+        Sorted classes: Urejeni razredi
+        resortedClasses: false
+        Reduced classes: Poenostavljeni razredi
+        reducedClasses: false
+        Removed classes: Odstranjeni razredi
+        removedClasses: false
+        Reduced metas: Poenostavljene meta spremeljivke
+        reducedMetas: false
+        Removed metas: Odstranjene meta spremeljivke
+        removedMetas: false
         def `__init__`:
-            '-': null
-            Features: null
-            'Sorted: %(resortedAttrs)s, ': null
-            'reduced: %(reducedAttrs)s, removed: %(removedAttrs)s': null
-            Classes: null
-            'Sorted: %(resortedClasses)s,': null
-            'reduced: %(reducedClasses)s, removed: %(removedClasses)s': null
-            Meta attributes: null
-            'Reduced: %(reducedMetas)s, removed: %(removedMetas)s': null
-            autoSend: null
+            '-': true
+            Features: Značilke
+            'Sorted: %(resortedAttrs)s, ': 'Urejene: %(resortedAttrs)s, '
+            'reduced: %(reducedAttrs)s, removed: %(removedAttrs)s': 'poenostavljene: %(reducedAttrs)s, odstranjene: %(removedAttrs)s'
+            Classes: Razredi
+            'Sorted: %(resortedClasses)s,': 'Urejeni: %(resortedClasses)s,'
+            'reduced: %(reducedClasses)s, removed: %(removedClasses)s': 'poenostavljeni: %(reducedClasses)s, odstranjeni: %(removedClasses)s'
+            Meta attributes: Meta spremenljivke
+            'Reduced: %(reducedMetas)s, removed: %(removedMetas)s': 'poenostavljene: %(reducedMetas)s, odstranjene: %(removedMetas)s'
+            autoSend: false
         def `setData`:
-            '-': null
+            '-': true
         def `commit`:
-            removed: null
-            reduced: null
-            sorted: null
+            removed: false
+            reduced: false
+            sorted: false
         def `send_report`:
             def `list_opts`:
-                '; ': null
-                no changes: null
-            Settings: null
-            Features: null
-            Classes: null
-            Metas: null
-            Statistics: null
-    __main__: null
-    https://datasets.biolab.si/core/car.tab: null
-    buying: null
-    v-high: null
+                '; ': true
+                no changes: ni sprememb
+            Settings: Nastavitve
+            Features: Značilke
+            Classes: Razredi
+            Metas: Meta spremenljivke
+            Statistics: Statistika
+    __main__: false
+    https://datasets.biolab.si/core/car.tab: false
+    buying: false
+    v-high: false
 widgets/data/owpythonscript.py:
-    OWPythonScript: null
+    OWPythonScript: false
     ? "import numpy as np\nfrom Orange.data import Table, Domain, ContinuousVariable,\
         \ DiscreteVariable\n\ndomain = Domain([ContinuousVariable(\"age\"),\n    \
         \             ContinuousVariable(\"height\"),\n                 DiscreteVariable(\"\
         gender\", values=(\"M\", \"F\"))])\narr = np.array([\n  [25, 186, 0],\n  [30,\
         \ 164, 1]])\nout_data = Table.from_numpy(domain, arr)\n"
-    : null
+    : false
     def `read_file_content`:
-        utf-8: null
-        strict: null
-    Light: null
-    '#000': null
-    '#f00': null
-    'bold #008000': null
-    '#212121': null
-    '#00f': null
-    '#05a': null
-    '#aa22ff': null
-    '#008000': null
-    '#ba2121': null
-    '#080': null
-    'bold #aa22ff': null
-    'italic #408080': null
-    Dark: null
-    '#fff': null
-    'bold #4caf50': null
-    '#e0e0e0': null
-    '#1e88e5': null
-    '#42a5f5': null
-    '#43a047': null
-    '#ff7070': null
-    '#66bb6a': null
+        utf-8: true
+        strict: true
+    Light: false
+    '#000': false
+    '#f00': false
+    'bold #008000': false
+    '#212121': false
+    '#00f': false
+    '#05a': false
+    '#aa22ff': false
+    '#008000': false
+    '#ba2121': false
+    '#080': false
+    'bold #aa22ff': false
+    'italic #408080': false
+    Dark: false
+    '#fff': false
+    'bold #4caf50': false
+    '#e0e0e0': false
+    '#1e88e5': false
+    '#42a5f5': false
+    '#43a047': false
+    '#ff7070': false
+    '#66bb6a': false
     def `make_pygments_style`:
-        PygmentsStyle: null
-        styles: null
+        PygmentsStyle: false
+        styles: false
     class `FakeSignatureMixin`:
         def `__init__`:
-            '4444': null
+            '4444': false
     class `FunctionSignature`:
         def `__init__`:
-            python_script: null
-            in_: null
-            '<b style="color: ': null
-            ' ': null
-            ;">def </b>: null
-            '<span style="color: ': null
-            ;">: null
-            </span>: null
-            ;">(</span>: null
-            ;">):</span>: null
+            python_script: false
+            in_: false
+            '<b style="color: ': false
+            ' ': false
+            ;">def </b>: false
+            '<span style="color: ': false
+            ;">: false
+            </span>: false
+            ;">(</span>: false
+            ;">):</span>: false
         def `update_signal_text`:
-            ', ': null
-            's, ': null
+            ', ': false
+            's, ': false
     class `ReturnStatement`:
         def `__init__`:
-            '<b style="color: ': null
-            ' ': null
-            ;">return </b>: null
-            out_: null
+            '<b style="color: ': false
+            ' ': false
+            ;">return </b>: false
+            out_: false
         def `make_signal_labels`:
-            <b></b>: null
-            ', ': null
-            '.QLabel { color: ': null
-            ' ': null
-            ; }: null
+            <b></b>: false
+            ', ': false
+            '.QLabel { color: ': false
+            ' ': false
+            ; }: false
         def `update_signal_text`:
-            <b></b>: null
-            <b>: null
-            </b>: null
+            <b></b>: false
+            <b>: false
+            </b>: false
     class `VimIndicator`:
         def `__init__`:
-            '#33cc33': null
-            normal: null
+            '#33cc33': false
+            normal: false
     class `PythonConsole`:
         def `interact`:
-            '>>> ': null
-            '... ': null
-            'Type "help", "copyright", "credits" or "license" ': null
-            for more information.: null
-            Python %s on %s\n%s\n(%s)\n: null
-            '%s\n': null
-            \n: null
-            \nKeyboardInterrupt\n: null
+            '>>> ': false
+            '... ': false
+            'Type "help", "copyright", "credits" or "license" ': false
+            for more information.: false
+            Python %s on %s\n%s\n(%s)\n: false
+            '%s\n': false
+            \n: false
+            \nKeyboardInterrupt\n: false
         def `push`:
-            sys.excepthook: null
-            sys.stdout: null
-            sys.stderr: null
+            sys.excepthook: false
+            sys.stdout: false
+            sys.stderr: false
         def `keyPressEvent`:
-            \n: null
+            \n: false
         def `pasteCode`:
-            \n: null
+            \n: false
     class `Script`:
         def `asdict`:
-            _ScriptData: null
+            _ScriptData: false
         def `fromdict`:
-            _ScriptData: null
-            Script: null
-            name: null
-            script: null
-            filename: null
+            _ScriptData: false
+            Script: false
+            name: false
+            script: false
+            filename: false
     class `ScriptItemDelegate`:
         def `displayText`:
-            '*': null
-    _ScriptData: null
-    name: null
-    script: null
-    filename: null
+            '*': false
+    _ScriptData: false
+    name: false
+    script: false
+    filename: false
     class `OWPythonScript`:
-        Python Script: null
-        Write a Python script and run it on input data or models.: null
-        Transform: null
-        icons/PythonScript.svg: null
-        program: null
-        function: null
+        Python Script: Skripta v Python
+        Write a Python script and run it on input data or models.: Poženi ročno napisan program v Pythonu
+        Transform: false
+        icons/PythonScript.svg: false
+        program: program
+        function: funkcija
         class `Inputs`:
-            Data: null
-            in_data: null
-            Learner: null
-            in_learner: null
-            Classifier: null
-            in_classifier: null
-            Object: null
-            in_object: null
+            Data: Podatki
+            in_data: false
+            Learner: Učenec
+            in_learner: false
+            Classifier: Model
+            in_classifier: false
+            Object: Objekt
+            in_object: false
         class `Outputs`:
-            Data: null
-            out_data: null
-            Learner: null
-            out_learner: null
-            Classifier: null
-            out_classifier: null
-            Object: null
-            out_object: null
-        data: null
-        learner: null
-        classifier: null
-        object: null
-        List[_ScriptData]: null
-        name: null
-        Table from numpy: null
-        script: null
-        filename: null
+            Data: Podatki
+            out_data: false
+            Learner: Učenec
+            out_learner: false
+            Classifier: Model
+            out_classifier: false
+            Object: Objekt
+            out_object: false
+        data: false
+        learner: false
+        classifier: false
+        object: false
+        List[_ScriptData]: false
+        name: false
+        Table from numpy: false
+        script: false
+        filename: false
         def `__init__`:
-            Menlo: null
-            darwin: null
-            Courier: null
-            win32: null
-            cygwin: null
-            DejaVu Sans Mono: null
-            Editor: null
-            darkMode: null
-            Dark: null
-            Light: null
-            '0000': null
-            Preferences: null
-            vimModeEnabled: null
-            Vim mode: null
-            Only for the coolest.: null
-            Library: null
-            +: null
-            Add a new script to the library: null
-            MINUS SIGN: null
-            Remove script from library: null
-            Update: null
-            Save changes in the editor to library: null
-            More: null
-            More actions: null
-            Import Script from File: null
-            Save Selected Script to File: null
-            Undo Changes to Selected Script: null
-            Run: null
-            Run script: null
-            '&Save': null
-            Save script to file: null
-            Console: null
+            Menlo: false
+            darwin: false
+            Courier: false
+            win32: false
+            cygwin: false
+            DejaVu Sans Mono: false
+            Editor: Urejevalnik
+            darkMode: false
+            Dark: false
+            Light: false
+            '0000': false
+            Preferences: Nastavitve
+            vimModeEnabled: false
+            Vim mode: Način Vim
+            Only for the coolest.: Samo, če si kul.
+            Library: Knjižnica
+            +: true
+            Add a new script to the library: Dodaj novo skripto v knjižnico
+            MINUS SIGN: true
+            Remove script from library: Odstrani skripto iz knjižnice
+            Update: Osveži
+            Save changes in the editor to library: Shrani spremembe iz urejevalnika v knjižnico
+            More: Več
+            More actions: Več možnosti
+            Import Script from File: Preberi skripto iz datoteke
+            Save Selected Script to File: Shrani izbrano skripto v datoteko
+            Undo Changes to Selected Script: Razveljavi spremembe izbrane skripte
+            Run: Poženi
+            Run script: Poženi skripto
+            '&Save': '&Shrani'
+            Save script to file: Shrani skripto v datoteko
+            Console: Konzola
         def `set_data`:
-            data: null
+            data: false
         def `insert_data`:
-            data: null
+            data: false
         def `remove_data`:
-            data: null
+            data: false
         def `set_learner`:
-            learner: null
+            learner: false
         def `insert_learner`:
-            learner: null
+            learner: false
         def `remove_learner`:
-            learner: null
+            learner: false
         def `set_classifier`:
-            classifier: null
+            classifier: false
         def `insert_classifier`:
-            classifier: null
+            classifier: false
         def `remove_classifier`:
-            classifier: null
+            classifier: false
         def `set_object`:
-            object: null
+            object: false
         def `insert_object`:
-            object: null
+            object: false
         def `remove_object`:
-            object: null
+            object: false
         def `onAddScript`:
-            New script: null
+            New script: Nova skripta
         def `onAddScriptFromFile`:
-            Open Python Script: null
-            ~/: null
-            Python files (*.py)\nAll files(*.*): null
+            Open Python Script: Odpri skripto v Pythonu
+            ~/: false
+            Python files (*.py)\nAll files(*.*): Programi v Pythonu (*.py)\nVse datoteke (*.*)
         def `saveScript`:
-            ~/: null
-            Save Python Script: null
-            Python files (*.py)\nAll files(*.*): null
-            .py: null
-            w: null
+            ~/: false
+            Save Python Script: Shrani skripto v Pythonu
+            Python files (*.py)\nAll files(*.*): Programi v Pythonu (*.py)\nVse datoteke (*.*)
+            .py: false
+            w: false
         def `initial_locals_state`:
-            in_: null
-            s: null
+            in_: false
+            s: false
         def `commit`:
-            _script: null
-            \nRunning script:\n: null
-            exec(_script): null
-            out_: null
-            '''{}'' has to be an instance of ''{}''.': null
+            _script: false
+            \nRunning script:\n: \nIzvajam skripto:\n
+            exec(_script): false
+            out_: false
+            '''{}'' has to be an instance of ''{}''.': '''{}'' mora biti ''{}''.'
         def `migrate_settings`:
-            libraryListSource: null
-            scriptLibrary: null
+            libraryListSource: false
+            scriptLibrary: false
     class `OWPythonScriptDropHandler`:
         def `canDropFile`:
-            text/x-python: null
+            text/x-python: false
         def `parametersFromFile`:
-            rt: null
-            _ScriptData: null
-            name: null
-            script: null
-            filename: null
-            scriptLibrary: null
+            rt: false
+            _ScriptData: false
+            name: false
+            script: false
+            filename: false
+            scriptLibrary: false
             def `is_same`:
-                _ScriptData: null
-                filename: null
-            __version__: null
-            scriptText: null
-    __main__: null
+                _ScriptData: false
+                filename: false
+            __version__: false
+            scriptText: false
+    __main__: false
 widgets/data/owrandomize.py:
     class `OWRandomize`:
-        Randomize: null
-        Randomize features, class and/or metas in data table.: null
-        Transform: null
-        icons/Random.svg: null
+        Randomize: Premešaj
+        Randomize features, class and/or metas in data table.: Premeša značilke, razrede in/ali meta spremenljivke
+        Transform: false
+        icons/Random.svg: false
         class `Inputs`:
-            Data: null
+            Data: Podatki
         class `Outputs`:
-            Data: null
+            Data: Podatki
         def `__init__`:
-            Shuffled columns: null
-            shuffle_class: null
-            Classes: null
-            shuffle_attrs: null
-            Features: null
-            shuffle_metas: null
-            Metas: null
-            Shuffled rows: null
-            None: null
-            scope_prop: null
-            All: null
-            random_seed: null
-            Replicable shuffling: null
+            Shuffled columns: Premešani stolpci
+            shuffle_class: false
+            Classes: Razredi
+            shuffle_attrs: false
+            Features: Značilke
+            shuffle_metas: false
+            Metas: Meta spremenljivke
+            Shuffled rows: Delež premešanih vrstic
+            None: Nič
+            scope_prop: false
+            All: Vse
+            random_seed: false
+            Replicable shuffling: Ponovljivo naključno mešanje
         def `_set_scope_label`:
-            '{}%': null
+            '{}%': false
         def `send_report`:
-            classes: null
-            features: null
-            metas: null
-            none: null
-            ' and ': null
-            ', ': null
-            Settings: null
-            Shuffled columns: null
-            Proportion of shuffled rows: null
-            '{}%': null
-            Replicable: null
-            'yes': null
-            'no': null
-    __main__: null
-    iris: null
+            classes: razredi
+            features: značilke
+            metas: meta spremenljivke
+            none: nič
+            ' and ': ' in '
+            ', ': true
+            Settings: Nastavitve
+            Shuffled columns: Premešani stolpci
+            Proportion of shuffled rows: Delež premešanih vrstic
+            '{}%': false
+            Replicable: Ponovljivo
+            'yes': da
+            'no': ne
+    __main__: false
+    iris: false
 widgets/data/owrank.py:
     score_meta: false
     name: false
@@ -7338,10 +7348,10 @@ widgets/data/owtransform.py:
                 like, for instance, discretization, feature construction, PCA etc.
 
                 '
-            : "Gradnik prejme tablo Podatki in na njej izvede enake transformacije,\n
-               kot so doletele tabelo Podatki z domeno.\n\n
-               To vključuje izbiranje podmnožic sprmenljivk kot tudi računanje\n
-               spremenljivk iz drugih sporemenljivk, na primer diskretizacija, PCA ipd.
+            : "Gradnik prejme tabelo 'Podatki' in na njej izvede enake transformacije,\n
+               kot so doletele tabelo 'Podatki z domeno'.\n\n
+               To vključuje izbiranje podmnožic spremenljivk kot tudi računanje\n
+               spremenljivk iz drugih spremenljivk, na primer diskretizacija, PCA ipd.
             "
         def `send_report`:
             Data: Podatki
@@ -10383,7 +10393,7 @@ widgets/unsupervised/owmanifoldlearning.py:
             manifold_method_index: null
             Output: null
             n_components: null
-            'Components:': null
+            'Components:': 'število komponent:'
             '0': null
         def `commit`:
             def `_handle_disconnected_graph_warning`:
