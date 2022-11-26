@@ -13046,11 +13046,11 @@ widgets/visualize/owmosaic.py:
 widgets/visualize/ownomogram.py:
     class `SortBy`:
         def `items`:
-            No sorting: "Brez razvrščanja"
-            Name: "Ime"
+            Original order: "Originalni"
+            Alphabetically: "Abecedni"
             Absolute importance: "Absolutna pomembnost"
-            Positive influence: "Pozitiven vpliv"
-            Negative influence: "Negativen vpliv"
+            Positive influence: "Pozitivni vpliv"
+            Negative influence: "Negativni vpliv"
     class `DotItem`:
         'ul {margin-top: 1px; margin-bottom: 1px;}': false
         ? "<html><head><style type=\"text/css\">{}</style>\n    </head><body><b>{}</b><hr/>{}</body></html>\n\
@@ -13058,7 +13058,7 @@ widgets/visualize/ownomogram.py:
         : false
     class `ProbabilitiesDotItem`:
         def `get_tooltip_text`:
-            'Total: {} <br/>Probability: {:.0%}': 'Skupno: {} <br/>Verjetnost: {:.0%}'
+            'Total: {} <br/>Probability: {:.0%}': 'Vsota: {} <br/>Verjetnost: {:.0}&nbsp;%'
     class `DiscreteMovableDotItem`:
         def `get_tooltip_text`:
             'Points: {}': 'Točke: {}'
@@ -13075,43 +13075,45 @@ widgets/visualize/ownomogram.py:
             'Value: {}': 'Vrednost: {}'
     class `ProbabilitiesRulerItem`:
         def `__init__`:
-            Total: "Skupno"
+            Total: "Vsota"
             ' ': false
     class `OWNomogram`:
         Nomogram: true
-        ' Nomograms for Visualization of Naive Bayesian': "Nomogram za prikaz modelov"
-        ' and Logistic Regression Classifiers.': "naivni Bayes ter logistične regresije."
+        ' Nomograms for Visualization of Naive Bayesian': "Nomogram za prikaz "
+        ' and Logistic Regression Classifiers.': "naivnega Bayesovega modela in logistične regresije."
         icons/Nomogram.svg: false
         class `Inputs`:
-            Classifier: false
-            Data: false
+            Classifier: Model
+            Data: Podatki
         class `Outputs`:
-            Features: false
+            Features: Značilke
         scene: false
         class `Error`:
-            'Nomogram accepts only Naive Bayes and ': "Nomogram sprejema zgolj naivni Bayesov"
-            Logistic Regression classifiers.: "klasifikator ter logistično regresijo."
+            'Nomogram accepts only Naive Bayes and ': "Nomogram sprejema zgolj naivni Bayesov "
+            Logistic Regression classifiers.: "klasifikator in logistično regresijo."
         def `__init__`:
-            Target class: "Tarčni razred"
+            "Target class: ": "Ciljni razred: "
             target_class_index: false
             normalize_probabilities: false
-            Normalize probabilities: "Normaliziraj verjetnosti"
-            For multiclass data 1 vs. all probabilities do not: "Za večrazredne podatke '1 proti vsem' se verjetnosti"
-            ' sum to 1 and therefore could be normalized.': " ne seštejejo v 1 in s tem niso normalizirane."
+            Normalize probabilities: "Normiraj verjetnosti"
+            "margin-bottom: 12px": false
+            For multiclass data 1 vs. all probabilities do not: "Za večrazredne podatke 'eden proti vsem' se posamične napovedane verjetnosti"
+            ' sum to 1 and therefore could be normalized.': " ne seštejejo v 1."
             scale: false
+            'Order: ': "Vrstni red: "
+            "Scale: ": "Lestvica: "
             Point scale: "Točkovna lestvica"
-            Log odds ratios: "Razmerje logaritma verjetnosti"
-            Scale: "Lestvica"
-            Display features: "Prikazane spremenljivke"
+            Log odds ratios: "Razmerje logaritmov obetov"
+            Displayed features: "Prikazane spremenljivke"
             display_index: false
-            All: "Vse"
-            'Best ranked:': "Najvišje razvrščene:"
+            All features: Vse značilke
+            'Best ranked:': "Prvih:"
             n_attributes: false
             ' ': false
             sort_index: false
-            'Rank by:': "Razvrsti po:"
             cont_feature_dim_index: false
-            'Numeric features: ': "Številske spremenljivke: "
+            "Show: ": "Pokaži: "
+            'Numeric features:': "Številske spremenljivke:"
             1D projection: "1D projekcija"
             2D curve: "2D krivulja"
             class `GraphicsView`:
