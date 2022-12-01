@@ -2577,6 +2577,7 @@ preprocess/impute.py:
     class `FixedValueByType`:
         Fixed value: Določena vrednost
         Fixed Value: določena
+        # manjka "vrednost"
         '{var.name}': false
     class `Model`:
         Model-based imputer: Nadomeščanje z modelom
@@ -2589,13 +2590,17 @@ preprocess/impute.py:
             '`{}` doesn''t support domain type': '`{}` ne podpira te vrste ciljne spremenljivke'
     class `AsValue`:
         As a distinct value: Kot posebna, nova vrednost
+        # morda "značilna vrednost"
+        # v gradniku prikaže vejico kot narobe stično - pokaže jo stično levo in desno. Isti problem se kaže večkrat, na primer v gradniku "nadomesti neznane vrednosti"
         new value: nova vrednost
         def `__call__`:
             '{var.name}': true
             N/A: NN
             '{var.name}_def': '{var.name} znana'
             undef: ne
+            # nedefinirana ali nedoločena
             def: da
+            #definirana ali določena  - prevod je sicer drugačen od originala
     class `ReplaceUnknownsRandom`:
         def `__init__`:
             'Only categorical and numeric ': Podprte so samo kategorične
@@ -3877,6 +3882,7 @@ widgets/data/owcorrelations.py:
             Constant features have been removed.: Konstantne spremenljivke so odstranjene.
         class `Warning`:
             At least two numeric features are needed.: Potrebni sta vsaj dve spremenljivki.
+            # Zakaj ne "številski spremenljivki"?
             At least two instances are needed.: Potrebna sta vsaj dva primera.
         def `__init__`:
             correlation_type: false
@@ -3987,6 +3993,7 @@ widgets/data/owcreateinstance.py:
     class `OWCreateInstance`:
         Create Instance: Sestavi primer
         Interactively create a data instance from sample dataset.: Ročno sestavi nov primer
+        # Ročno sestavi nov primer iz vzorčnega nabora podatkov
         icons/CreateInstance.svg: false
         Transform: false
         simulator: nov
@@ -3998,6 +4005,7 @@ widgets/data/owcreateinstance.py:
         class `Information`:
             'Variables with only missing values were ': "Spremenljivke, ki imajo same manjkajoče vrednosti "
             removed from the list.: niso na voljo.
+            #Čisto rahlo dvoumen zapis, pa v angleščini je bolj razlagalen. Morda "spremenljivke z (izključno) manjkajočimi vrednostmi so bile odstranjene".
         Median: Mediana
         Mean: Povprečje
         Random: Naključno
@@ -5068,6 +5076,7 @@ widgets/data/owfeatureconstructor.py:
         Feature Constructor: Sestavi značilke
         'Construct new features (data columns) from a set of ': Sestavi nove značilke, izračunane
         existing features in the input dataset.: iz obstoječih.
+        #Med , med frazami ne najdem vrstice za META ATTRIBUTE. Ne najdem tudi vrstice za prevod. 
         Transform: false
         icons/FeatureConstructor.svg: false
         function: funkcija
@@ -5262,9 +5271,13 @@ widgets/data/owfeaturestatistics.py:
                 Median: Mediana
                 Mode: Najpogostejša
                 Dispersion: Disperzija
+                #Morda "razpršitev" - prevod disperzija se zdi nenavaden, ker za ostale izraze uporabljaš pristne slovenske inačice.
                 Min.: Minimum
+                # najnižja vrednost 
                 Max.: Maksimum
+                # najvišja vrednost
                 Missing: Manjkajoči
+                # Morda "manjkajoče"?
         def `__compute_statistics`:
             def `__mode`:
                 C: false
@@ -5292,6 +5305,7 @@ widgets/data/owfeaturestatistics.py:
             Data: Podatki
         class `Outputs`:
             Reduced Data: Izbrani podatki
+            # Kljub pregledu gradnika konteksta vseeno ne razumem povsem, a predlagam katerega od drugih izrazov, ki namigujejo na zmanjšanje, redukcijo in izbiro - "skrčeni", morda "okleščeni" podatki.
             Statistics: Statistika
         def `__init__`:
             None: Enobarvno
@@ -5597,6 +5611,7 @@ widgets/data/owmelt.py:
             Row number: Številka vrstice
             idvar: false
             A column with identifier, like customer's id: Stolpec z identifikatorjem, npr. številka nakupa
+            #kupčeva številka. 
             Filter: true
             only_numeric: false
             Ignore non-numeric features: Uporabi le številske spremenljivke
@@ -5617,6 +5632,8 @@ widgets/data/owmelt.py:
             Output: Izhod
         def `_store_output_desc`:
             Item column: Stolpec s stvarjo
+            # Število spremenljivk?
+            #O prevodu "item" smo klepetali, Ela je predlagala to spremenljivko, jaz pa "postavko" za vse primere
             Value column: Stolpec z vrednostjo
             Number of items: Število stvari
     __main__: false
@@ -5738,6 +5755,8 @@ widgets/data/owneighbors.py:
     class `OWNeighbors`:
         Neighbors: Sosedi
         Compute nearest neighbors in data according to reference.: Najbližji sosedi referenčnih primerov.
+        # Manjka opisni del izvedbe dejanja - če prav razumem.
+        # V si prevodu morda "Izvedba računa najbližjih sosedov referenčnih primerov" ali "Izračun najbližjih sosedov referenčnih primerov"
         icons/Neighbors.svg: false
         Unsupervised: false
         orangecontrib.prototypes.widgets.owneighbours.OWNeighbours: false
@@ -6024,7 +6043,7 @@ widgets/data/owpivot.py:
             Row variable should be DiscreteVariable: false
             ' or ContinuousVariable': false
             Column variable should be DiscreteVariable: false
-            Total: Skupno
+            Total: Skupnotyr 
             total: false
         def `_create_group_tables`:
             ({str(fun).lower()}): false
@@ -6109,6 +6128,7 @@ widgets/data/owpreprocess.py:
         force: false
         None: Brez diskretizacije
         Equal width discretization: Enaka širina intervalov
+        #a če tu piše "enaka širina intervalov", gre za tavtologiziranje?
         Equal frequency discretization: Enaka pogostost vrednosti
         Remove numeric features: Odstrani številske spremenljivke
         Entropy-MDL discretization: Diskretizacija z MDL in entropijo
@@ -6578,6 +6598,7 @@ widgets/data/owpythonscript.py:
     filename: false
     class `OWPythonScript`:
         Python Script: Skripta v Python
+        # a se reče "skripta v Python? Al Pythonu? Za Python?"
         Write a Python script and run it on input data or models.: Poženi ročno napisan program v Pythonu
         Transform: false
         icons/PythonScript.svg: false
@@ -6760,6 +6781,7 @@ widgets/data/owrank.py:
     Info. gain: Inf. prisp
     Information Gain Ratio: Delež inform. prispevka
     Gain ratio: Delež inf.
+    # tu je res kratko napisano, skoraj nerazumljivo - vsaj zame brez konteksta (ne najdem tega prevoda v gradniku) 
     Gini Decrease: Znižanje Ginijevega indeksa
     Gini: true
     ANOVA: true
@@ -7042,11 +7064,15 @@ widgets/data/owselectrows.py:
         is not: ni
         are not: niso
         is below: je manjši kot
+        # je manj kot
         are below: so manjše kot
+        # je pod vrednostjo
         is at most: je največ
         are at most: so največ
         is greater than: je večji kot
+        # he večje od
         are greater than: so večje kot
+        # so večje od
         is at least: je vsaj
         are at least: so vsaj
         is between: je med
@@ -7106,6 +7132,7 @@ widgets/data/owselectrows.py:
             ' and ': ' in '
         def `_values_to_floats`:
             Some values could not be parsed as floats: Nekaterih vrednosti ni mogoče prebrati kot števila
+            # glede na to, da je v angleščini "float", bi blo mogoče zavoljo natančnosti vredno izbrat slovenski ekvivalent - decimalno število, ker lahko to nosi informacijo, ki uporabniku olajša uporabo programa. 
             'in the current locale: {values}': "pri trenutni nastavitvi sistema: {values}"
         def `commit`:
             invalid operand: false
@@ -10055,8 +10082,10 @@ widgets/unsupervised/owdistancetransformation.py:
 widgets/unsupervised/owhierarchicalclustering.py:
     OWHierarchicalClustering: false
     Single: Minimalna
+    # najnižja
     Average: Povprečna
     Weighted: Utežena
+    # kak lep prevod. Obtežena je grše, ampak morda tudi pravilno? 
     Complete: Maksimalna
     Ward: Wardova
     class `SaveStateSettingsHandler`:
@@ -10091,6 +10120,7 @@ widgets/unsupervised/owhierarchicalclustering.py:
             None: Brez
             max_depth: false
             'Max depth:': Največja globina
+            # zaradi te največje globine se mi zdi vredno tudi druge maksimalne vrednosti prevajati kot najvišje vrednosti
             selection_method: false
             Selection: Izbor
             Manual: Ročno
@@ -10102,7 +10132,9 @@ widgets/unsupervised/owhierarchicalclustering.py:
             zoom_factor: false
             Zoom: Povečava
             Zoom in: Povečaj
+            #približaj?
             Zoom out: Pomanjšaj
+            #oddalji? 
             Reset zoom: Ponastavi zoom
             autocommit: false
             top: false
@@ -12426,6 +12458,7 @@ widgets/visualize/owboxplot.py:
         Visualize the distribution of feature values in a box plot.: "Prikaži porazdelitev vrednosti spremenljivke v škatli z brki."
         icons/BoxPlot.svg: false
         whisker: "box"
+        # kje lahko to vidim? Je to treba prevest ali je nekaj, kar obstaja drugje? Na primer v svetu Aleševe čarovnije? 
         class `Inputs`:
             Data: false
         class `Outputs`:
@@ -12439,6 +12472,7 @@ widgets/visualize/owboxplot.py:
             Variable: "Spremenljivka"
             order_by_importance: false
             Order by relevance to subgroups: "Uredi glede na različnost po skupinah"
+            # uredi glede na pripadnost skupni? Razvrsti po ustreznosti skupin??? 
             Order by 𝜒² or ANOVA over the subgroups: "Uredi glede na vrednost 𝜒² ali ANOVA med skupinami"
             None: "Brez"
             Subgroups: "Skupine"
@@ -12448,6 +12482,7 @@ widgets/visualize/owboxplot.py:
             Display: "Prikaz"
             show_annotations: false
             Annotate: "Oznake"
+            # zakaj ne "označi"?
             compare: false
             No comparison: "Brez primerjanja"
             Compare medians: "Primerjaj srednje vrednosti"
@@ -12487,7 +12522,7 @@ widgets/visualize/owboxplot.py:
             median: false
             mean: false
         def `send_report`:
-            'Box plot for attribute ''{self.attribute.name}'' ': "Škatla za brki za spremenljivko '{self.attribute.name}' "
+            'Box plot for attribute ''{self.attribute.name}'' ': "Škatla z brki za spremenljivko '{self.attribute.name}' "
             grouped by '{self.group_var.name}': "urejeno po '{self.group_var.name}'"
     __main__: false
     heart_disease.tab: false
@@ -12508,6 +12543,7 @@ widgets/visualize/owdistributions.py:
         Distributions: Porazdelitve
         Display value distributions of a data feature in a graph.: Pokaži porazdelitev
             vrednosti spremenljivke.
+            # v grafu je na y osi označba "frekvence" že prevedena, na x osi pa ostaja neprevedeno "age"
         icons/Distribution.svg: false
         histogram: true
         class `Inputs`:
@@ -13711,6 +13747,7 @@ widgets/visualize/owtreeviewer.py:
             Fixed: Enaka
             Relative to root: Relativna glede na koren
             Relative to parent: Relativna glede na očeta
+            # a je lahko relativna glede na starša? A je to vezano na kak drug koncept? 
             Target class: Ciljni razred
             Color by: Obarvaj po
         def `update_node_info`:
@@ -13762,6 +13799,7 @@ widgets/visualize/owtreeviewer2d.py:
             Fixed: Enaka
             Relative to root: Relativna glede na koren
             Relative to parent: Relativna glede na očeta
+            # Relativna na starša
             ? "QToolTip { padding: 3px;\n                                        \
                 \            border: 1px solid #C0C0C0;\n                        \
                 \              }"
