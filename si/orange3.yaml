@@ -3580,7 +3580,7 @@ widgets/data/__init__.py:
     '#FFD39F': false
 widgets/data/owaggregatecolumns.py:
     class `OWAggregateColumns`:
-        Aggregate Columns: Agregiraj stolpce
+        Aggregate Columns: Združi stolpce
         Compute a sum, max, min ... of selected columns.: Izračunaj vsoto, minimum, maksimum ... izbranih stolpcev.
         Transform: false
         icons/AggregateColumns.svg: false
@@ -3876,7 +3876,7 @@ widgets/data/owcorrelations.py:
         class `Information`:
             Constant features have been removed.: Konstantne spremenljivke so odstranjene.
         class `Warning`:
-            At least two numeric features are needed.: Potrebni sta vsaj dve spremenljivki.
+            At least two numeric features are needed.: Potrebni sta vsaj dve številski spremenljivki.
             At least two instances are needed.: Potrebna sta vsaj dva primera.
         def `__init__`:
             correlation_type: false
@@ -3996,7 +3996,7 @@ widgets/data/owcreateinstance.py:
         class `Outputs`:
             Data: Podatki
         class `Information`:
-            'Variables with only missing values were ': "Spremenljivke, ki imajo same manjkajoče vrednosti "
+            'Variables with only missing values were ': "Spremenljivke, ki nimajo nobene znane vrednosti "
             removed from the list.: niso na voljo.
         Median: Mediana
         Mean: Povprečje
@@ -5015,6 +5015,7 @@ widgets/data/owfeatureconstructor.py:
             Expression...: Izraz...
             Select Feature: Izberi spremenljivko
             Select Function: Izberi funkcijo
+            Meta attribute: Meta atribut
         def `setEditorData`:
             Select Feature: Izberi spremenljivko
         def `on_funcs_changed`:
@@ -5261,10 +5262,10 @@ widgets/data/owfeaturestatistics.py:
                 Mean: Srednja vrednost
                 Median: Mediana
                 Mode: Najpogostejša
-                Dispersion: Disperzija
+                Dispersion: Razpršitev
                 Min.: Minimum
                 Max.: Maksimum
-                Missing: Manjkajoči
+                Missing: Manjkajoče
         def `__compute_statistics`:
             def `__mode`:
                 C: false
@@ -5737,7 +5738,7 @@ widgets/data/owneighbors.py:
     Absolute Pearson: Absolutna Pearsonova
     class `OWNeighbors`:
         Neighbors: Sosedi
-        Compute nearest neighbors in data according to reference.: Najbližji sosedi referenčnih primerov.
+        Compute nearest neighbors in data according to reference.: Poišči najbližje sosede referenčnih primerov.
         icons/Neighbors.svg: false
         Unsupervised: false
         orangecontrib.prototypes.widgets.owneighbours.OWNeighbours: false
@@ -6577,7 +6578,7 @@ widgets/data/owpythonscript.py:
     script: false
     filename: false
     class `OWPythonScript`:
-        Python Script: Skripta v Python
+        Python Script: Skripta v Pythonu
         Write a Python script and run it on input data or models.: Poženi ročno napisan program v Pythonu
         Transform: false
         icons/PythonScript.svg: false
@@ -7041,11 +7042,11 @@ widgets/data/owselectrows.py:
         equal: so
         is not: ni
         are not: niso
-        is below: je manjši kot
+        is below: je manj kot
         are below: so manjše kot
         is at most: je največ
         are at most: so največ
-        is greater than: je večji kot
+        is greater than: je več kot
         are greater than: so večje kot
         is at least: je vsaj
         are at least: so vsaj
@@ -13710,7 +13711,7 @@ widgets/visualize/owtreeviewer.py:
             Edge widths: Širina vej
             Fixed: Enaka
             Relative to root: Relativna glede na koren
-            Relative to parent: Relativna glede na očeta
+            Relative to parent: Relativna glede na starša
             Target class: Ciljni razred
             Color by: Obarvaj po
         def `update_node_info`:
@@ -13761,7 +13762,7 @@ widgets/visualize/owtreeviewer2d.py:
             line_width_method: false
             Fixed: Enaka
             Relative to root: Relativna glede na koren
-            Relative to parent: Relativna glede na očeta
+            Relative to parent: Relativna glede na starša
             ? "QToolTip { padding: 3px;\n                                        \
                 \            border: 1px solid #C0C0C0;\n                        \
                 \              }"
