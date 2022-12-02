@@ -1,1 +1,1 @@
-auto-import: "from Orange.widgets.utils.localization.si import plsi, plsi_sz, z_besedo  # pylint: disable=wrong-import-order"
+auto-import: "from orangecanvas.localization.si import plsi, plsi_sz, z_besedo  # pylint: disable=wrong-import-order"
