@@ -412,7 +412,7 @@ canvas/mainwindow.py:
             Settings related to reporting: Nastavitve, povezane s poročanjem
             text: false
             reporting/machine-id: false
-            'Machine ID:': 'Identifikacije računalnika:'
+            'Machine ID:': 'ID računalnika:'
             Share: Pošiljaj
             Share anonymous usage statistics to improve Orange: Pošiljaj anonimizirano statistiko, koristno za izboljšave programa
             reporting/send-statistics: null
@@ -5987,15 +5987,15 @@ widgets/data/owpaintdata.py:
         def `add_new_class_label`:
             C: true
         def `remove_selected_class_label`:
-            Delete class label: false
+            Delete class label: Odstrani izbrani razred
         def `_on_editing_started`:
             macro: false
         def `execute`:
             Non normalized command: false
         def `_add_command`:
-            Name: false
-            Delete: false
-            Move: false
+            Name: Ime
+            Delete: Brisanje
+            Move: Premik
             unreachable: false
         def `_replot`:
             +: true
