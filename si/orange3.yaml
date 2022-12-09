@@ -207,270 +207,270 @@ version.py:
     6d954935bb7dea0aa400fcc37e9dfaa441f85000: null
     .dev: null
 canvas/__main__.py:
-    ORANGE_STATISTICS_API_URL: null
-    https://orange.biolab.si/usage-statistics: null
+    ORANGE_STATISTICS_API_URL: false
+    https://orange.biolab.si/usage-statistics: false
     def `ua_string`:
-        Continuum: null
-        conda: null
-        Orange{orange_version}:Python{py_version}:{platform}:{conda}: null
-        .: null
-        Anaconda: null
+        Continuum: false
+        conda: false
+        Orange{orange_version}:Python{py_version}:{platform}:{conda}: false
+        .: false
+        Anaconda: false
     def `make_sql_logger`:
-        sql_log: null
-        sql.log: null
+        sql_log: false
+        sql.log: false
     def `check_for_updates`:
-        startup/check-updates: null
-        startup/last-update-check-time: null
+        startup/check-updates: false
+        startup/last-update-check-time: false
         class `GetLatestVersion`:
             def `run`:
-                https://orange.biolab.si/version/: null
-                Accept: null
-                text/plain: null
-                Accept-Encoding: null
-                gzip, deflate: null
-                Connection: null
-                close: null
-                User-Agent: null
-                Failed to check for updates: null
+                https://orange.biolab.si/version/: false
+                Accept: false
+                text/plain: false
+                Accept-Encoding: false
+                gzip, deflate: false
+                Connection: false
+                close: false
+                User-Agent: false
+                Failed to check for updates: false
         def `compare_versions`:
-            startup/latest-skipped-version: null
-            Orange Update Available: null
-            'Current version: <b>{}</b><br>': null
-            'Latest version: <b>{}</b>': null
-            Download: null
-            Skip this Version: null
-            canvas/icons/update.png: null
+            startup/latest-skipped-version: false
+            Orange Update Available: Na voljo je nova različica
+            'Current version: <b>{}</b><br>': 'Trenutna različica: <b>{}</b><br>'
+            'Latest version: <b>{}</b>': 'Najnovejša različica: <b>{}</b><br>'
+            Download: Namesti
+            Skip this Version: Preskoči to različico
+            canvas/icons/update.png: false
             def `handle_click`:
-                startup/latest-skipped-version: null
-                https://orange.biolab.si/download/: null
+                startup/latest-skipped-version: false
+                https://orange.biolab.si/download/: false
     def `open_link`:
-        orange: null
-        enable-statistics: null
-        reporting/send-statistics: null
-        reporting/machine-id: null
-    '!Notification': null
+        orange: false
+        enable-statistics: false
+        reporting/send-statistics: false
+        reporting/machine-id: false
+    '!Notification': false
     def `pull_notifications`:
-        notifications/check-notifications: null
-        '-1': null
-        notifications/displayed: null
-        set(): null
+        notifications/check-notifications: false
+        '-1': false
+        notifications/displayed: false
+        set(): false
         class `GetNotifFeed`:
             def `run`:
-                https://orange.biolab.si/notification-feed: null
-                Accept: null
-                text/plain: null
-                Connection: null
-                close: null
-                User-Agent: null
-                Cache-Control: null
-                no-cache: null
-                Pragma: null
-                Failed to pull notification feed: null
+                https://orange.biolab.si/notification-feed: false
+                Accept: false
+                text/plain: false
+                Connection: false
+                close: false
+                User-Agent: false
+                Cache-Control: false
+                no-cache: false
+                Pragma: false
+                Failed to pull notification feed: false
         def `parse_yaml_notification`:
-            notifications/announcements: null
-            notifications/blog: null
-            notifications/new-features: null
-            announcement: null
-            blog: null
-            new-features: null
-            installed: null
-            local_config: null
-            canvas/icons/: null
-            .png: null
+            notifications/announcements: false
+            notifications/blog: false
+            notifications/new-features: false
+            announcement: false
+            blog: false
+            new-features: false
+            installed: false
+            local_config: false
+            canvas/icons/: false
+            .png: false
             def `remember_notification`:
-                notifications/displayed: null
+                notifications/displayed: false
     def `send_usage_statistics`:
         def `send_statistics`:
-            reporting/send-statistics: null
-            Not sending usage statistics (preferences setting).: null
-            Not sending usage statistics (disabled).: null
-            reporting/machine-id: null
-            Continuum: null
-            conda: null
-            Orange Version: null
-            Application Version: null
-            Anaconda: null
-            UUID: null
-            file: null
-            'Error communicating with server while attempting to send ': null
-            usage statistics. Status code %d: null
-            Usage statistics sent.: null
-            w: null
-            utf-8: null
-            Connection error while attempting to send usage statistics.: null
-            Failed to send usage statistics.: null
+            reporting/send-statistics: false
+            Not sending usage statistics (preferences setting).: false
+            Not sending usage statistics (disabled).: false
+            reporting/machine-id: false
+            Continuum: false
+            conda: false
+            Orange Version: false
+            Application Version: false
+            Anaconda: false
+            UUID: false
+            file: false
+            'Error communicating with server while attempting to send ': false
+            usage statistics. Status code %d: false
+            Usage statistics sent.: false
+            w: false
+            utf-8: false
+            Connection error while attempting to send usage statistics.: false
+            Failed to send usage statistics.: false
         class `SendUsageStatistics`:
             def `run`:
-                Failed to send usage statistics.: null
+                Failed to send usage statistics.: false
     class `OMain`:
-        Orange.canvas.config.Config: null
+        Orange.canvas.config.Config: false
         def `run`:
-            exitCleanup: null
+            exitCleanup: false
         def `argument_parser`:
-            --clear-widget-settings: null
-            store_true: null
-            Clear stored widget setting/defaults: null
-            --clear-all: null
-            Clear all settings and caches: null
+            --clear-widget-settings: false
+            store_true: false
+            Clear stored widget setting/defaults: false
+            --clear-all: false
+            Clear all settings and caches: false
         def `_rm_tree`:
-            rmtree '%s': null
+            rmtree '%s': false
         def `clear_widget_settings`:
-            Clearing widget settings: null
+            Clearing widget settings: false
         def `clear_caches`:
-            Clearing caches: null
-            Clearing data: null
+            Clearing caches: false
+            Clearing data: false
         def `clear_application_settings`:
-            Clearing application settings: null
-            clear '%s': null
+            Clearing application settings: false
+            clear '%s': false
         def `setup_application`:
-            DELETE_ON_START: null
-            startup/launch-count: null
-            reporting/send-statistics: null
+            DELETE_ON_START: false
+            startup/launch-count: false
+            reporting/send-statistics: false
             def `onPaletteChange`:
-                Setting pyqtgraph background to %s: null
-                background: null
-                Setting pyqtgraph foreground to %s: null
-                foreground: null
-                darkMode: null
+                Setting pyqtgraph background to %s: false
+                background: false
+                Setting pyqtgraph foreground to %s: false
+                foreground: false
+                darkMode: false
         def `show_splash_message`:
-            '#FFFFFF': null
-    __main__: null
+            '#FFFFFF': false
+    __main__: false
 canvas/config.py:
-    https://orange.biolab.si/addons/list: null
-    orange.widgets: null
-    startup/check-updates: null
-    Check for updates: null
-    startup/launch-count: null
-    reporting/machine-id: null
-    reporting/send-statistics: null
-    reporting/permission-requested: null
-    notifications/check-notifications: null
-    Check for notifications: null
-    notifications/announcements: null
-    Show notifications about Biolab announcements: null
-    notifications/blog: null
-    Show notifications about blog posts: null
-    notifications/new-features: null
-    Show notifications about new features: null
-    notifications/displayed: null
-    set(): null
-    Serialized set of notification IDs which have already been displayed: null
+    https://orange.biolab.si/addons/list: false
+    orange.widgets: false
+    startup/check-updates: false
+    Check for updates: false
+    startup/launch-count: false
+    reporting/machine-id: false
+    reporting/send-statistics: false
+    reporting/permission-requested: false
+    notifications/check-notifications: false
+    Check for notifications: false
+    notifications/announcements: false
+    Show notifications about Biolab announcements: false
+    notifications/blog: false
+    Show notifications about blog posts: false
+    notifications/new-features: false
+    Show notifications about new features: false
+    notifications/displayed: false
+    set(): false
+    Serialized set of notification IDs which have already been displayed: false
     class `Config`:
-        biolab.si: null
-        Orange: null
-        Biolab.Orange: null
+        biolab.si: false
+        Orange: false
+        Biolab.Orange: false
         def `init`:
-            widget_settings_dir: null
-            canvas_settings_dir: null
+            widget_settings_dir: false
+            canvas_settings_dir: false
         def `application_icon`:
-            icons/orange-256.png: null
+            icons/orange-256.png: false
         def `splash_screen`:
-            icons/orange-splash-screen-{splash_n:02}.png: null
-            .: null
-            Helvetica: null
-            '#000000': null
+            icons/orange-splash-screen-{splash_n:02}.png: false
+            .: false
+            Helvetica: false
+            '#000000': false
         def `widgets_entry_points`:
-            orange3: null
+            orange3: false
         def `core_packages`:
-            Orange3 >=3.20,<4.0a: null
+            Orange3 >=3.20,<4.0a: false
         def `examples_entry_points`:
-            000-Orange3: null
-            Orange.canvas.workflows: null
-            Orange3: null
-            orange.widgets.tutorials: null
-        Bug Report: null
-        https://github.com/biolab/orange3/issues: null
-        Quick Start: null
-        https://orange.biolab.si/getting-started/: null
-        Documentation: null
-        https://orange.biolab.si/widget-catalog/: null
-        Screencasts: null
-        https://www.youtube.com/watch: null
-        ?v=HXjnDIgGDuI&list=PLmNPvQr9Tf-ZSDLwOzxpvY-HrE0yv-8Fy&index=1: null
-        Feedback: null
-        https://orange.biolab.si/survey/long.html: null
+            000-Orange3: false
+            Orange.canvas.workflows: false
+            Orange3: false
+            orange.widgets.tutorials: false
+        Bug Report: false
+        https://github.com/biolab/orange3/issues: false
+        Quick Start: false
+        https://orange.biolab.si/getting-started/: false
+        Documentation: false
+        https://orange.biolab.si/widget-catalog/: false
+        Screencasts: false
+        https://www.youtube.com/watch: false
+        ?v=HXjnDIgGDuI&list=PLmNPvQr9Tf-ZSDLwOzxpvY-HrE0yv-8Fy&index=1: false
+        Feedback: false
+        https://orange.biolab.si/survey/long.html: false
     def `init`:
-        This is not the init you are looking for.: null
+        This is not the init you are looking for.: false
     def `data_dir`:
-        canvas: null
+        canvas: false
     def `cache_dir`:
-        canvas: null
+        canvas: false
     def `log_dir`:
-        darwin: null
-        ~/Library/Logs: null
-        log_dir: null
+        darwin: false
+        ~/Library/Logs: false
+        log_dir: false
     def `widget_settings_dir`:
-        '''{__name__}.widget_settings_dir'' is deprecated.': null
+        '''{__name__}.widget_settings_dir'' is deprecated.': false
 canvas/mainwindow.py:
     class `OUserSettingsDialog`:
         def `__init__`:
-            Automatically check for updates: null
-            Updates: null
-            checked: null
-            startup/check-updates: null
-            Reporting: null
-            Settings related to reporting: null
-            text: null
-            reporting/machine-id: null
-            'Machine ID:': null
-            Share: null
-            Share anonymous usage statistics to improve Orange: null
+            Automatically check for updates: Samodejno preverjaj, ali je na voljo novejša različica
+            Updates: Nove različice
+            checked: false
+            startup/check-updates: false
+            Reporting: Poročanje
+            Settings related to reporting: Nastavitve, povezane s poročanjem
+            text: false
+            reporting/machine-id: false
+            'Machine ID:': 'ID računalnika:'
+            Share: Pošiljaj
+            Share anonymous usage statistics to improve Orange: Pošiljaj anonimizirano statistiko, koristno za izboljšave programa
             reporting/send-statistics: null
-            Anonymous Statistics: null
-            '<a ': null
-            href=\"https://orange.biolab.si/statistics-more-info\">: null
-            More info...: null
-            </a>: null
-            Notifications: null
-            Settings related to notifications: null
-            Enable notifications: null
-            Pull and display a notification feed.: null
-            notifications/check-notifications: null
-            On startup: null
-            notifications-group: null
-            Announcements: null
-            Show notifications about Biolab announcements.\n: null
-            'This entails events and courses hosted by the developers of ': null
-            Orange.: null
-            Blog posts: null
-            Show notifications about blog posts.\n: null
-            We'll only send you the highlights.: null
-            New features: null
-            'Show notifications about new features in Orange when a new ': null
-            version is downloaded and installed,\n: null
-            should the new version entail notable updates.: null
-            notifications/announcements: null
-            notifications/blog: null
-            notifications/new-features: null
-            Show notifications about: null
+            Anonymous Statistics: Anonimizirana statistika
+            '<a ': false
+            href=\"https://orange.biolab.si/statistics-more-info\">: false
+            More info...: Več informacij...
+            </a>: false
+            Notifications: Obvestila
+            Settings related to notifications: Nastavitve, povezane z obvestili
+            Enable notifications: Vključi obvestila
+            Pull and display a notification feed.: Prejemaj in kaži obvestila
+            notifications/check-notifications: false
+            On startup: Ob zagonu
+            notifications-group: false
+            Announcements: Najave
+            Show notifications about Biolab announcements.\n: Pokaži obvestila o naših najavah.\n
+            'This entails events and courses hosted by the developers of ': 'To vključuje dogodke in tečaje, ki jih gostimo '
+            Orange.: razvijalci programa Orange.
+            Blog posts: Objave v blogu
+            Show notifications about blog posts.\n: Pokaži obvestila o objavah v blogu.\n
+            We'll only send you the highlights.: Pošiljali bomo le izbrane objave.
+            New features: Nove zmožnosti
+            'Show notifications about new features in Orange when a new ': 'Pokaži obvestila o novih zmožnostih programa '
+            version is downloaded and installed,\n: po namestitvi novejše različice.
+            should the new version entail notable updates.: ""
+            notifications/announcements: false
+            notifications/blog: false
+            notifications/new-features: false
+            Show notifications about: Pokaži obvestila o
     class `MainWindow`:
         def `__init__`:
-            orange.canvas.drophandler: null
+            orange.canvas.drophandler: false
         def `open_canvas_settings`:
-            Preferences: null
+            Preferences: Nastavitve
 canvas/report.py:
-    '''{__name__}'' is deprecated and will be removed in the future.\n': null
-    'The contents of this package were moved to ''Orange.widgets.report''. ': null
-    Please update the imports accordingly.: null
+    '''{__name__}'' is deprecated and will be removed in the future.\n': false
+    'The contents of this package were moved to ''Orange.widgets.report''. ': false
+    Please update the imports accordingly.: false
 canvas/run.py:
     def `main`:
-        'Run an orange workflow without showing a GUI and exit ': null
-        when it completes.\n\n: null
-        'WARNING: This is experimental as Orange is not designed to run ': null
-        non-interactive.: null
-        --log-level: null
-        -l: null
-        LEVEL: null
-        log_level: null
-        --config: null
-        Orange.canvas.config.Config: null
-        file: null
-        basedir: null
-        rb: null
-    __main__: null
+        'Run an orange workflow without showing a GUI and exit ': false
+        when it completes.\n\n: false
+        'WARNING: This is experimental as Orange is not designed to run ': false
+        non-interactive.: false
+        --log-level: false
+        -l: false
+        LEVEL: false
+        log_level: false
+        --config: false
+        Orange.canvas.config.Config: false
+        file: false
+        basedir: false
+        rb: false
+    __main__: false
 canvas/utils/environ.py:
-    '''{__name__}'' is deprecated and will be removed on the future. ': null
-    Use 'Orange.misc.environ' instead: null
+    '''{__name__}'' is deprecated and will be removed on the future. ': false
+    Use 'Orange.misc.environ' instead: false
 classification/base_classification.py:
     LearnerClassification: null
     ModelClassification: null
@@ -5987,15 +5987,15 @@ widgets/data/owpaintdata.py:
         def `add_new_class_label`:
             C: true
         def `remove_selected_class_label`:
-            Delete class label: false
+            Delete class label: Odstrani izbrani razred
         def `_on_editing_started`:
             macro: false
         def `execute`:
             Non normalized command: false
         def `_add_command`:
-            Name: false
-            Delete: false
-            Move: false
+            Name: Ime
+            Delete: Brisanje
+            Move: Premik
             unreachable: false
         def `_replot`:
             +: true
