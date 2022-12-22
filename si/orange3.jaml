@@ -13458,83 +13458,83 @@ widgets/visualize/owheatmap.py:
     brown-selected.tab: false
 widgets/visualize/owlinearprojection.py:
     class `LinearProjectionVizRank`:
-        Score Plots: null
+        Score Plots: Oceni projekcije
         def `__init__`:
-            n_attrs: null
-            'Number of variables: ': null
+            n_attrs: false
+            'Number of variables: ': 'Število spremenljivk: '
         def `row_for_state`:
-            ', ': null
+            ', ': false
         def `_n_attrs_changed`:
-            Start: null
-            Continue: null
+            Start: Začni
+            Continue: Nadaljuj
     class `OWLinProjGraph`:
         def `update_anchors`:
-            <b>{label}</b>: null
-            ...: null
-    Placement: null
+            <b>{label}</b>: false
+            ...: true
+    Placement: false
     class `OWLinearProjection`:
-        Linear Projection: null
-        'A multi-axis projection of data onto ': null
-        a two-dimensional plane.: null
-        icons/LinearProjection.svg: null
-        Circular Placement: null
-        Linear Discriminant Analysis: null
-        Principal Component Analysis: null
+        Linear Projection: Linearna projekcija
+        'A multi-axis projection of data onto ': 'Projekcija večdimenzionalnih podatkov '
+        a two-dimensional plane.: v dve dimenziji.
+        icons/LinearProjection.svg: false
+        Circular Placement: Krožna postavitev
+        Linear Discriminant Analysis: Linearna diskriminantna analiza
+        Principal Component Analysis: Analiza osnovnih komponent
         class `Error`:
-            Plotting requires numeric features: null
+            Plotting requires numeric features: Podatki ne vsebujejo številskih spremenljivk.
         def `_add_controls`:
-            Features: null
-            'Hide radius:': null
-            hide_radius: null
+            Features: Spremenljivke
+            'Hide radius:': Skriti krog
+            hide_radius: false
         def `_add_controls_variables`:
-            Suggest Features: null
+            Suggest Features: Predlagaj spremenljivke
         def `_add_controls_placement`:
-            placement: null
+            placement: false
         def `_add_buttons`:
-            auto_commit: null
+            auto_commit: false
         def `_init_vizrank`:
-            There is no data.: null
-            Color variable has to be selected: null
-            'Suggest Features does not work for Linear ': null
-            'Discriminant Analysis Projection when ': null
-            continuous color variable is selected.: null
-            Not enough available continuous variables: null
-            Not enough valid data instances: null
+            There is no data.: Ni podatkov.
+            Color variable has to be selected: Potrebno je izbrati spremenljivko za barvo.
+            'Suggest Features does not work for Linear ': "Predlaganje spremenljivk ne deluje "
+            'Discriminant Analysis Projection when ': "za diskriminantno analizo pri barvanju "
+            continuous color variable is selected.: s številsko spremenljivko.
+            Not enough available continuous variables: Ni dovolj številskih spremenljivk.
+            Not enough valid data instances: Ni dovolj podatkov.
         def `init_projection`:
-            eigen: null
+            eigen: false
         def `_get_send_report_caption`:
-            Projection: null
-            Color: null
-            Label: null
-            Shape: null
-            Size: null
-            Jittering: null
-            {} %: null
+            Projection: Projekcija
+            Color: Barva
+            Label: Oznake
+            Shape: Oblika
+            Size: Velikost
+            Jittering: Tresenje
+            {} %: false
         def `migrate_settings`:
-            point_width: null
-            point_size: null
-            jitter_size: null
-            jitter_value: null
-            alpha_value: null
-            class_density: null
-            graph: null
-            radius: null
-            hide_radius: null
-            selection_indices: null
-            selection: null
-            placement: null
+            point_width: false
+            point_size: false
+            jitter_size: false
+            jitter_value: false
+            alpha_value: false
+            class_density: false
+            graph: false
+            radius: false
+            hide_radius: false
+            selection_indices: false
+            selection: false
+            placement: false
         def `migrate_context`:
-            color_index: null
-            attr_color: null
-            shape_index: null
-            attr_shape: null
-            size_index: null
-            attr_size: null
-            graph: null
-            attr_label: null
-            selected_vars: null
-    __main__: null
-    iris: null
+            color_index: false
+            attr_color: false
+            shape_index: false
+            attr_shape: false
+            size_index: false
+            attr_size: false
+            graph: false
+            attr_label: false
+            selected_vars: false
+    __main__: false
+    iris: false
 widgets/visualize/owlineplot.py:
     class `ParameterSetter`:
         Mean: null
