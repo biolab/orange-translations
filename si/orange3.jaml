@@ -12613,150 +12613,150 @@ widgets/utils/plot/owpalette.py:
     create_palette: null
     OWPalette: null
 widgets/utils/plot/owplotgui.py:
-    variables_selection: null
-    OrientedWidget: null
-    OWToolbar: null
-    StateButtonContainer: null
-    OWAction: null
-    OWButton: null
-    OWPlotGUI: null
+    variables_selection: false
+    OrientedWidget: false
+    OWToolbar: false
+    StateButtonContainer: false
+    OWAction: false
+    OWButton: false
+    OWPlotGUI: false
     class `VariableSelectionModel`:
         def `mimeData`:
-            'see properties: item_index': null
-            item_index: null
+            'see properties: item_index': false
+            item_index: false
         def `dropMimeData`:
-            item_index: null
+            item_index: false
     class `VariablesDelegate`:
         def `paint`:
-            ' Add ': null
-            ' Remove ': null
+            ' Add ': ' Dodaj '
+            ' Remove ': ' Odstrani '
     class `OWAction`:
         def `__init__`:
-            ../../icons: null
-            .png: null
+            ../../icons: false
+            .png: false
     class `OWPlotGUI`:
         def `__init__`:
-            (Same color): null
-            (Same shape): null
-            (Same size): null
-            (No labels): null
-        Zoom: null
-        state: null
-        Dlg_zoom: null
-        Reset zoom: null
-        Dlg_zoom_reset: null
-        Pan: null
-        Dlg_pan_hand: null
-        Select: null
-        Dlg_arrow: null
-        Add to selection: null
-        selection_behavior: null
-        Dlg_select_add: null
-        Remove from selection: null
-        Dlg_select_remove: null
-        Toggle selection: null
-        Dlg_select_toggle: null
-        Replace selection: null
-        Send selection: null
-        send_selection: null
-        Dlg_send: null
-        Clear selection: null
-        clear_selection: null
-        Dlg_clear: null
-        ShufflePoints: null
-        shuffle_points: null
-        Dlg_sort: null
-        Animate plot: null
-        animate_plot: null
-        update_animations: null
-        Animate points: null
-        animate_points: null
-        Antialias plot: null
-        antialias_plot: null
-        update_antialiasing: null
-        Antialias points: null
-        antialias_points: null
-        Antialias lines: null
-        antialias_lines: null
-        Disable effects for large datasets: null
-        auto_adjust_performance: null
-        update_performance: null
+            (Same color): (Enaka barva)
+            (Same shape): (Enaka oblika)
+            (Same size): (Enaka velikost)
+            (No labels): (Brez oznak)
+        Zoom: Povečava
+        state: false
+        Dlg_zoom: false
+        Reset zoom: Ponastavi povečavo
+        Dlg_zoom_reset: false
+        Pan: Pomik
+        Dlg_pan_hand: false
+        Select: Izberi
+        Dlg_arrow: false
+        Add to selection: Dodaj k izboru
+        selection_behavior: false
+        Dlg_select_add: false
+        Remove from selection: Odstrani iz izbora
+        Dlg_select_remove: false
+        Toggle selection: Preklopi izbor
+        Dlg_select_toggle: false
+        Replace selection: Zamenjaj izbor
+        Send selection: Pošlji izbor
+        send_selection: false
+        Dlg_send: false
+        Clear selection: Počisti izbor
+        clear_selection: false
+        Dlg_clear: false
+        ShufflePoints: Premešaj točke
+        shuffle_points: false
+        Dlg_sort: false
+        Animate plot: Animiraj sliko
+        animate_plot: false
+        update_animations: false
+        Animate points: Animiraj točke
+        animate_points: false
+        Antialias plot: Zmehčaj sliko
+        antialias_plot: false
+        update_antialiasing: false
+        Antialias points: Zmehčaj točke
+        antialias_points: false
+        Antialias lines: Zmehčaj črte
+        antialias_lines: false
+        Disable effects for large datasets: Izključi grafične učinke za velike podatke
+        auto_adjust_performance: false
+        update_performance: false
         def `antialiasing_check_box`:
-            use_antialiasing: null
-            Use antialiasing: null
-            update_antialiasing: null
+            use_antialiasing: false
+            Use antialiasing: Uporabi mehčanje
+            update_antialiasing: false
         def `jitter_size_slider`:
-            'Jittering: ': null
-            jitter_size: null
-            jitter_sizes: null
+            'Jittering: ': 'Tresenje: '
+            jitter_size: false
+            jitter_sizes: false
         def `jitter_numeric_check_box`:
-            jitter_continuous: null
-            Jitter numeric values: null
-            update_jittering: null
+            jitter_continuous: false
+            Jitter numeric values: Pretresi številske vrednosti
+            update_jittering: false
         def `show_legend_check_box`:
-            show_legend: null
-            Show legend: null
-            update_legend_visibility: null
+            show_legend: false
+            Show legend: Pokaži legendo
+            update_legend_visibility: false
         def `tooltip_shows_all_check_box`:
-            tooltip_shows_all: null
-            Show all data on mouse hover: null
+            tooltip_shows_all: false
+            Show all data on mouse hover: Ob prehodu z miško pokaži vse podatke
         def `class_density_check_box`:
-            class_density: null
-            Show color regions: null
+            class_density: false
+            Show color regions: Pokaži barvna področja
         def `regression_line_check_box`:
-            show_reg_line: null
-            Show regression line: null
+            show_reg_line: false
+            Show regression line: Pokaži regresijsko premico
         def `label_only_selected_check_box`:
-            label_only_selected: null
-            Label only selection and subset: null
+            label_only_selected: false
+            Label only selection and subset: Označi samo izbor in podmnožico
         def `filled_symbols_check_box`:
-            show_filled_symbols: null
-            Show filled symbols: null
-            update_filled_symbols: null
+            show_filled_symbols: false
+            Show filled symbols: Pokaži polne simbole
+            update_filled_symbols: false
         def `grid_lines_check_box`:
-            show_grid: null
-            Show gridlines: null
-            update_grid_visibility: null
+            show_grid: false
+            Show gridlines: Pokaži mrežo
+            update_grid_visibility: false
         def `animations_check_box`:
-            use_animations: null
-            Use animations: null
-            update_animations: null
+            use_animations: false
+            Use animations: Animiraj
+            update_animations: false
         def `point_size_slider`:
-            'Symbol size: ': null
-            point_width: null
-            sizes_changed: null
+            'Symbol size: ': 'Velikost točk: '
+            point_width: false
+            sizes_changed: false
         def `alpha_value_slider`:
-            'Opacity: ': null
-            alpha_value: null
-            colors_changed: null
+            'Opacity: ': 'Neprosojnost: '
+            alpha_value: false
+            colors_changed: false
         def `color_value_combo`:
-            'Color: ': null
-            attr_color: null
-            colors_changed: null
+            'Color: ': 'Barva: '
+            attr_color: false
+            colors_changed: false
         def `shape_value_combo`:
-            'Shape: ': null
-            attr_shape: null
-            shapes_changed: null
+            'Shape: ': 'Oblika: '
+            attr_shape: false
+            shapes_changed: false
         def `size_value_combo`:
-            'Size: ': null
-            attr_size: null
-            sizes_changed: null
+            'Size: ': 'Velikost: '
+            attr_size: false
+            sizes_changed: false
         def `label_value_combo`:
-            'Label: ': null
-            attr_label: null
-            labels_changed: null
+            'Label: ': 'Oznaka: '
+            attr_label: false
+            labels_changed: false
         def `point_properties_box`:
-            Attributes: null
+            Attributes: Izgled
         def `zoom_select_toolbar`:
-            Zoom / Select: null
+            Zoom / Select: Povečava / Izbor
         def `theme_combo_box`:
-            theme_name: null
-            Theme: null
-            Default: null
-            Light: null
-            Dark: null
+            theme_name: false
+            Theme: Tema
+            Default: Privzeta
+            Light: Svetla
+            Dark: Temna
         def `box_zoom_select`:
-            Zoom/Select: null
+            Zoom/Select: Povečava/Izbor
 widgets/utils/plot/owplotgui_obsolete.py:
     class `AddVariablesDialog`:
         def `__init__`:
