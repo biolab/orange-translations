@@ -13276,57 +13276,57 @@ widgets/visualize/owdistributions.py:
     heart_disease.tab: false
 widgets/visualize/owfreeviz.py:
     def `run_freeviz`:
-        Calculating...: null
+        Calculating...: Računam...
     class `InitType`:
         def `items`:
-            Circular: null
-            Random: null
+            Circular: Krožna
+            Random: Naključna
     class `OWFreeViz`:
-        FreeViz: null
-        Displays FreeViz projection: null
-        icons/Freeviz.svg: null
-        viz: null
+        FreeViz: Prostoskop
+        Displays FreeViz projection: Pokaže projekcijo s Prostoskopom
+        icons/Freeviz.svg: false
+        viz: freeviz
         class `Error`:
-            Data must have a target variable.: null
-            Data must have a single target variable.: null
-            Target variable must have at least two unique values.: null
-            Number of features exceeds the number of instances.: null
-            Data is too large.: null
-            All data columns are constant.: null
-            At least two features are required.: null
+            Data must have a target variable.: Podatki morajo imeti ciljno spremenljivko.
+            Data must have a single target variable.: Podatki morajo imeti eno ciljno spremenljivko.
+            Target variable must have at least two unique values.: Ciljna spremenljivka mora imeti vsaj dve različni vrednosti.
+            Number of features exceeds the number of instances.: Število spremenljivk presega število primerov.
+            Data is too large.: Podatkov je preveč.
+            All data columns are constant.: Vsi stolpci so konstantni.
+            At least two features are required.: Potrebni sta vsaj dve spremenljivki.
         class `Warning`:
-            Categorical features with more than: null
-            ' two values are not shown.': null
+            Categorical features with more than: Kategorične spremenljivke z več kot dvema
+            ' two values are not shown.': " vrednostima niso prikazane."
         def `_add_controls`:
-            'Hide radius:': null
-            hide_radius: null
+            'Hide radius:': 'Skriti krog:'
+            hide_radius: false
         def `__add_controls_start_box`:
-            Optimize: null
-            initialization: null
-            'Initialization:': null
-            Start: null
+            Optimize: Izris
+            initialization: false
+            'Initialization:': Začetna pozicija:
+            Start: Začni
         def `_toggle_run`:
-            Resume: null
+            Resume: Nadaljuj
         def `_run`:
-            Stop: null
+            Stop: Stoj
         def `on_done`:
-            Start: null
+            Start: Začni
         def `on_exception`:
-            Start: null
+            Start: Začni
         def `enable_controls`:
-            Start: null
+            Start: Začni
         def `migrate_settings`:
-            radius: null
-            graph: null
-            hide_radius: null
+            radius: false
+            graph: false
+            hide_radius: false
         def `migrate_context`:
-            attr_color: null
-            graph: null
-            attr_size: null
-            attr_shape: null
-            attr_label: null
-    __main__: null
-    zoo: null
+            attr_color: false
+            graph: false
+            attr_size: false
+            attr_shape: false
+            attr_label: false
+    __main__: false
+    zoo: false
 widgets/visualize/owheatmap.py:
     def `split_domain`:
         N/A: null
@@ -14844,72 +14844,69 @@ widgets/visualize/utils/scene.py:
 widgets/visualize/utils/widget.py:
     class `OWProjectionWidgetBase`:
         class `Information`:
-            Points with undefined '{}' are shown in smaller size: null
-            Points with undefined '{}' are shown as crossed circles: null
+            Points with undefined '{}' are shown in smaller size: Točke z neznano vrednostjo '{}' so manjše.
+            Points with undefined '{}' are shown as crossed circles: Točke z neznano vrednostjo '{}' so prečrtane.
         def `init_attr_values`:
-            attr_color: null
-            attr_shape: null
-            attr_size: null
-            attr_label: null
+            attr_color: false
+            attr_shape: false
+            attr_size: false
+            attr_label: false
         def `get_column`:
-            Other: null
+            Other: Drugo
         def `_point_tooltip`:
             def `show_part`:
-                {} = {}: null
-                ... and {} others: null
-                '<b>{}</b>:<br/>': null
-                <br/>: null
-            Class: null
-            Classes: null
-            Meta: null
-            Metas: null
-            Feature: null
-            Features: null
-            <br/>: null
+                {} = {}: false
+                ... and {over} {pl(over, 'other')}: ... in še {over}
+                '<b>{name}</b>:<br/>': false
+                <br/>: false
+            {pl(len(dom.class_vars), 'Class|Classes')}: {plsi(len(dom.class_vars), 'Razred|Razreda|Razredi')}
+            {pl(len(dom.metas), 'Meta')}: Meta {plsi(len(dom.metas), 'spremenljivka|spremenljivki|spremenljivki')}
+            {pl(len(dom.attributes), 'Feature')}: {plsi(len(dom.attributes), 'Atribut|Atributa|Atributi')}
+            <br/>: false
         def `get_tooltip`:
-            <hr/>: null
-            {} instances<hr/>{}<hr/>...: null
+            <hr/>: false
+            {len(point_ids)} instances<hr/>{text}<hr/>...: {len(point_ids)} {plsi(len(point_ids), "primer")}<hr/>{text}<hr/>...
     class `OWDataProjectionWidget`:
         class `Inputs`:
-            Data: null
-            Data Subset: null
+            Data: Podatki
+            Data Subset: Podmnožica podatkov
         class `Outputs`:
-            Selected Data: null
+            Selected Data: Izbrani podatki
         class `Warning`:
-            Too many labels to show (zoom in or label only selected): null
-            'Subset data contains some instances that do not appear in ': null
-            input data: null
-            No subset data instances appear in input data: null
-            Increase opacity if subset is difficult to see: null
-        graph.plot_widget.plotItem: null
-        proj-x: null
-        proj-y: null
+            Too many labels to show (zoom in or label only selected): Preveč oznak (povečaj ali izberi 'Označi samo izbor in podmnožico')
+            'Subset data contains some instances that do not appear in ': "Podmnožica podatkov vsebuje nekatere primer, ki niso med "
+            input data: vhodnimi podatki
+            No subset data instances appear in input data: Vhodni podatki ne vsebujejo nobenega podatke iz podane podmnožice.
+            Increase opacity if subset is difficult to see: Če je podmnožico težko videti, zmanjšaj prosojnost.
+        graph.plot_widget.plotItem: false
+        proj-x: false
+        proj-y: false
         def `_add_buttons`:
-            auto_commit: null
+            auto_commit: false
         def `_get_selected_data`:
-            Group: null
+            Group: Skupina
         def `_get_send_report_caption`:
-            Color: null
-            Label: null
-            Shape: null
-            Size: null
-            Jittering: null
-            {} %: null
+            Color: Barva
+            Label: Oznaka
+            Shape: Oblika
+            Size: Velikost
+            Jittering: Pretresanje
+            {} %: false
     class `OWAnchorProjectionWidget`:
         class `Outputs`:
-            Components: null
+            Components: Komponente
         class `Error`:
-            Sparse data is not supported: null
-            No projection due to no valid data: null
-            At least two data instances are required: null
-            An error occurred while projecting data.\n{}: null
+            Sparse data is not supported: Redki podatki niso podprti
+            No projection due to no valid data: Ni veljavnih podatkov, ni projekcije.
+            At least two data instances are required: Potrebna sta vsaj dva primera.
+            An error occurred while projecting data.\n{}: Napaka med projeciranjem podatkov.\n{}
         def `send_components`:
-            component: null
-            components: null
-    __main__: null
+            component: false
+            components: false
+    __main__: false
     class `OWProjectionWidgetWithName`:
-        projection: null
-    iris: null
+        projection: false
+    iris: false
 widgets/visualize/utils/tree/rules.py:
     class `DiscreteRule`:
         def `merge_with`:
