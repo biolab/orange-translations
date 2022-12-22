@@ -14506,86 +14506,86 @@ widgets/visualize/owvenndiagram.py:
     __main__: null
 widgets/visualize/owviolinplot.py:
     class `ParameterSetter`:
-        Bottom axis: null
-        Vertical tick text: null
+        Bottom axis: Spodnja os
+        Vertical tick text: Navpično besedilo
         def `axis_items`:
-            item: null
+            item: false
         def `bottom_axis`:
-            bottom: null
+            bottom: false
     class `ViolinItem`:
-        RugPlot: null
-        support, density: null
+        RugPlot: false
+        support, density: false
     class `ViolinPlot`:
         def `__init__`:
-            bottom: null
-            left: null
+            bottom: false
+            left: false
         def `order_items`:
-            bottom: null
-            left: null
+            bottom: false
+            left: false
         def `_set_axes`:
-            left: null
-            bottom: null
+            left: false
+            bottom: false
         def `_clear_axes`:
-            left: null
-            bottom: null
+            left: false
+            bottom: false
     class `OWViolinPlot`:
-        Violin Plot: null
-        Visualize the distribution of feature: null
-        ' values in a violin plot.': null
-        icons/ViolinPlot.svg: null
-        kernel: null
-        density: null
+        Violin Plot: Violine
+        Visualize the distribution of feature: Porazdelitev vrednosti v
+        ' values in a violin plot.': ' vizualizaciji z violinami.'
+        icons/ViolinPlot.svg: false
+        kernel: gostota
+        density: porazdelitev
         class `Inputs`:
-            Data: null
+            Data: Podatki
         class `Outputs`:
-            Selected Data: null
+            Selected Data: Izbrani podatki
         class `Error`:
-            Plotting requires a numeric feature.: null
-            Plotting requires at least two instances.: null
-        gaussian: null
-        epanechnikov: null
-        linear: null
-        Normal: null
-        Epanechnikov: null
-        Linear: null
-        Area: null
-        Count: null
-        Width: null
-        graph.plotItem: null
+            Plotting requires a numeric feature.: Risati je mogoče le numerične spremenljivke.
+            Plotting requires at least two instances.: Risanje zahteva vsaj dva primera.
+        gaussian: false
+        epanechnikov: false
+        linear: false
+        Normal: Normalno
+        Epanechnikov: Epanechikovo
+        Linear: Linearno
+        Area: Površina
+        Count: Število primerov
+        Width: Širina
+        graph.plotItem: false
         def `_add_controls`:
-            None: null
-            Variable: null
-            order_by_importance: null
-            Order by relevance to subgroups: null
-            Order by 𝜒² or ANOVA over the subgroups: null
-            Subgroups: null
-            order_grouping_by_importance: null
-            Order by relevance to variable: null
-            Order by 𝜒² or ANOVA over the variable values: null
-            Display: null
-            show_box_plot: null
-            Box plot: null
-            show_strip_plot: null
-            Strip plot: null
-            show_rug_plot: null
-            Rug plot: null
-            order_violins: null
-            Order subgroups: null
-            show_grid: null
-            Show grid: null
-            orientation_index: null
-            Horizontal: null
-            Vertical: null
-            'Orientation: ': null
-            Density Estimation: null
-            kernel_index: null
-            'Kernel:': null
-            scale_index: null
-            'Scale:': null
+            None: (Brez skupin)
+            Variable: Spremenljivka
+            order_by_importance: false
+            Order by relevance to subgroups: Uredi glede na različnost po skupinah
+            Order by 𝜒² or ANOVA over the subgroups: Uredi glede na vrednost 𝜒² ali ANOVA med skupinami
+            Subgroups: Skupine
+            order_grouping_by_importance: false
+            Order by relevance to variable: Uredi glede na pomembnost spremenljivke
+            Order by 𝜒² or ANOVA over the variable values: Uredi glede na vrednost 𝜒² ali ANOVA med vrednostmi spremenljivke
+            Display: Prikaz
+            show_box_plot: false
+            Box plot: Škatla z brki
+            show_strip_plot: false
+            Strip plot: Proge
+            show_rug_plot: false
+            Rug plot: Preproga
+            order_violins: false
+            Order subgroups: Uredi skupine
+            show_grid: false
+            Show grid: Pokaži mrežo
+            orientation_index: false
+            Horizontal: Vodoravna
+            Vertical: Navpična
+            'Orientation: ': "Smer: "
+            Density Estimation: Ocenjevanje gostote
+            kernel_index: false
+            'Kernel:': Jedro:
+            scale_index: false
+            'Scale:': 'Velikost:'
         def `init_list_view`:
-            hidden: null
-    __main__: null
-    heart_disease: null
+            hidden: false
+    __main__: false
+    heart_disease: false
 widgets/visualize/pythagorastreeviewer.py:
     Square: null
     center: null
