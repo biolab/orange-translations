@@ -13619,86 +13619,86 @@ widgets/visualize/owlineplot.py:
     brown-selected: false
 widgets/visualize/owmosaic.py:
     class `MosaicVizRank`:
-        Mosaic Ranking: null
+        Mosaic Ranking: Ocenjevanje mozaikov
         def `__init__`:
-            max_attrs: null
-            'Number of variables:': null
-            one: null
-            two: null
-            three: null
-            four: null
-            at most two: null
-            at most three: null
-            at most four: null
+            max_attrs: false
+            'Number of variables:': Število spremenljivk:
+            one: ena
+            two: dve
+            three: tri
+            four: štiri
+            at most two: največ dve
+            at most three: največ tri
+            at most four: največ štiri
         def `max_attr_changed`:
-            Start: null
-            Continue: null
+            Start: Začni
+            Continue: Nadaljuj
         def `check_preconditions`:
-            no_attributes: null
-            No variables to rank.: null
+            no_attributes: false
+            No variables to rank.: Ni spremenljivk za rangiranje.
         def `compute_attr_order`:
-            name: null
+            name: false
         def `compute_score`:
-            -: null
+            -: false
         def `row_for_state`:
-            ', ': null
+            ', ': false
     class `OWMosaicDisplay`:
-        Mosaic Display: null
-        Display data in a mosaic plot.: null
-        icons/MosaicDisplay.svg: null
+        Mosaic Display: Mozaik
+        Display data in a mosaic plot.: Pokaži mozaik za podatke.
+        icons/MosaicDisplay.svg: false
         class `Inputs`:
-            Data: null
-            Data Subset: null
+            Data: Podatki
+            Data Subset: Podmnožica podatkov
         class `Outputs`:
-            Selected Data: null
-        canvas: null
+            Selected Data: Izbrani podatki
+        canvas: false
         class `Warning`:
-            Data subset is incompatible with Data: null
-            No valid data: null
-            Selection of numeric features on SQL is not supported: null
+            Data subset is incompatible with Data: Podmnožica podatkov ni združljiva z vhodnimi podatki.
+            No valid data: Ni uporabnih podatkov.
+            Selection of numeric features on SQL is not supported: Izbor številskih podatkov iz SQL ni podprt.
         def `__init__`:
-            (None): null
-            variable{}: null
-            Find Informative Mosaics: null
-            Interior Coloring: null
-            (Pearson residuals): null
-            variable_color: null
-            use_boxes: null
-            Compare with total: null
+            (None): (Prazno)
+            variable{}: false
+            Find Informative Mosaics: Poišči informativne mozaike
+            Interior Coloring: Barva notranjosti
+            (Pearson residuals): (Pearsonovi residuali)
+            variable_color: false
+            use_boxes: false
+            Compare with total: Primerjaj s celoto
         def `update_graph`:
             def `get_counts`:
-                -: null
+                -: true
             def `draw_data`:
-                -: null
-                '{}&nbsp;&nbsp;&nbsp;&nbsp;{}: <b>{}</b><br/>': null
+                -: true
+                '{}&nbsp;&nbsp;&nbsp;&nbsp;{}: <b>{}</b><br/>': false
             def `add_rect`:
-                <hr/>: null
-                'Expected instances: %.1f<br>': null
-                'Actual instances: %d<br>': null
-                'Standardized (Pearson) residual: %.1f': null
-                -: null
-                <br/>: null
-                '<b>%s</b>: %d / %.1f%% (Expected %.1f / %.1f%%)': null
-                '{}<hr>Instances: {}<br><br>{}': null
+                <hr/>: false
+                'Expected instances: %.1f<br>': 'Pričakovanih primerov: %.1f<br>'
+                'Actual instances: %d<br>': 'Dejanskih primerov: %d<br>'
+                'Standardized (Pearson) residual: %.1f': 'Standardiziran (Pearsonov) residual: %.1f'
+                -: true
+                <br/>: false
+                '<b>%s</b>: %d / %.1f%% (Expected %.1f / %.1f%%)': '<b>%s</b>: %d / %.1f%% (Pričakovano %.1f / %.1f%%)'
+                '{}<hr>Instances: {}<br><br>{}': '{}<hr>Primerov: {}<br><br>{}'
             def `create_legend`:
-                <-8: null
-                '-8:-4': null
-                '-4:-2': null
-                '-2:2': null
-                '2:4': null
-                '4:8': null
-                >8: null
-                'Residuals:': null
-            Feature {} has no values: null
+                <-8: false
+                '-8:-4': false
+                '-4:-2': false
+                '-2:2': false
+                '2:4': false
+                '4:8': false
+                >8: false
+                'Residuals:': 'Residuali:'
+            Feature {} has no values: Spremenljivka {} nima vrednosti
         def `migrate_context`:
-            (None): null
+            (None): false)
     def `get_conditional_distribution`:
-        COUNT(*): null
-        ?: null
-        None: null
-        -: null
-    __main__: null
-    zoo: null
+        COUNT(*): false
+        ?: false
+        None: false
+        -: false
+    __main__: false
+    zoo: false
 widgets/visualize/ownomogram.py:
     class `SortBy`:
         def `items`:
