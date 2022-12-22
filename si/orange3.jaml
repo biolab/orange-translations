@@ -12975,74 +12975,74 @@ widgets/visualize/__init__.py:
     icons/Category-Visualize.svg: null
 widgets/visualize/owbarplot.py:
     class `ParameterSetter`:
-        Gridlines: null
-        Show: null
-        Bottom axis: null
-        Group axis: null
-        Vertical ticks: null
+        Gridlines: Mreža
+        Show: Pokaži
+        Bottom axis: Spodnja os
+        Group axis: Os skupin
+        Vertical ticks: Navpične oznake
         def `update_setters`:
             def `update_bottom_axis`:
-                bottom: null
+                bottom: false
         def `axis_items`:
-            item: null
+            item: false
     class `BarPlotGraph`:
         def `__init__`:
-            bottom: null
-            left: null
+            bottom: false
+            left: false
         def `update_axes`:
-            left: null
-            bottom: null
+            left: false
+            bottom: false
         def `reset_view`:
-            height: null
+            height: false
         def `select_by_rectangle`:
-            x: null
-            height: null
+            x: false
+            height: false
         def `__get_index_at`:
-            height: null
+            height: false
         def `__select_bars`:
-            height: null
+            height: false
     class `OWBarPlot`:
-        Bar Plot: null
-        Visualizes comparisons among categorical variables.: null
-        icons/BarPlot.svg: null
-        chart: null
+        Bar Plot: Palice
+        Visualizes comparisons among categorical variables.: Vizualna primerjava kategoričnih spremenljivk.
+        icons/BarPlot.svg: false
+        chart: false
         class `Inputs`:
-            Data: null
-            Data Subset: null
+            Data: Podatki
+            Data Subset: Podmnožica podatkov
         class `Outputs`:
-            Selected Data: null
-        graph.plotItem: null
+            Selected Data: Izbrani podatki
+        graph.plotItem: false
         class `Error`:
-            Plotting requires a numeric feature.: null
+            Plotting requires a numeric feature.: Podatki ne vsebujejo številskih spremenljivk.
         class `Information`:
-            Data has too many instances. Only first {}: null
-            ' are shown.': null
-        Enumeration: null
+            Data has too many instances. Only first {}: Podatki vsebujejo preveč primerov. Kažem samo prvih {}.
+            ' are shown.': ""
+        Enumeration: Zaporedne številke
         def `_add_controls`:
-            selected_var: null
-            'Values:': null
-            None: null
-            group_var: null
-            'Group by:': null
-            annot_var: null
-            'Annotations:': null
-            (Same color): null
-            color_var: null
-            'Color:': null
-            auto_commit: null
+            selected_var: false
+            'Values:': Vrednosti:
+            None: (Brez)
+            group_var: false
+            'Group by:': Skupine:
+            annot_var: false
+            'Annotations:': Oznake:
+            (Same color): (Enaka barva)
+            color_var: false
+            'Color:': Barva:
+            auto_commit: false
         def `grouped_indices`:
-            mergesort: null
+            mergesort: false
         def `init_attr_values`:
-            selected_var: null
-            group_var: null
-            annot_var: null
-            color_var: null
+            selected_var: false
+            group_var: false
+            annot_var: false
+            color_var: false
         def `get_tooltip`:
-            <br/>: null
-            {} = {}: null
-            <b>{}</b><br/><br/>{}: null
-    __main__: null
-    iris: null
+            <br/>: false
+            {} = {}: false
+            <b>{}</b><br/><br/>{}: false
+    __main__: false
+    iris: false
 widgets/visualize/owboxplot.py:
     ContDataRange: false
     low: false
@@ -14540,7 +14540,7 @@ widgets/visualize/owviolinplot.py:
         class `Outputs`:
             Selected Data: Izbrani podatki
         class `Error`:
-            Plotting requires a numeric feature.: Risati je mogoče le numerične spremenljivke.
+            Plotting requires a numeric feature.: Risati je mogoče le številske spremenljivke.
             Plotting requires at least two instances.: Risanje zahteva vsaj dva primera.
         gaussian: false
         epanechnikov: false
