@@ -13329,133 +13329,133 @@ widgets/visualize/owfreeviz.py:
     zoo: false
 widgets/visualize/owheatmap.py:
     def `split_domain`:
-        N/A: null
-    None: null
-    No clustering: null
-    Clustering: null
-    Apply hierarchical clustering: null
-    Clustering (opt. ordering): null
-    'Apply hierarchical clustering with optimal leaf ': null
-    ordering.: null
-    Top: null
-    Bottom: null
-    Top and Bottom: null
+        N/A: NN
+    None: Brez
+    No clustering: Brez gručenja
+    Clustering: Gručenje
+    Apply hierarchical clustering: Uporabi hierarhično gručenje
+    Clustering (opt. ordering): Gručenje z urejanjem
+    'Apply hierarchical clustering with optimal leaf ': Uporabi hierarhično gručenje z urejanjem listov.
+    ordering.: ""
+    Top: Zgoraj
+    Bottom: Spodaj
+    Top and Bottom: Zgoraj in spodaj
     class `OWHeatMap`:
-        Heat Map: null
-        Plot a data matrix heatmap.: null
-        icons/Heatmap.svg: null
+        Heat Map: Topla greda
+        Plot a data matrix heatmap.: Pokaži podatke v topli gredi.
+        icons/Heatmap.svg: false
         class `Inputs`:
-            Data: null
+            Data: Podatki
         class `Outputs`:
-            Selected Data: null
-        scene: null
+            Selected Data: Izbrani podatki
+        scene: false
         class `Information`:
-            Data has been sampled: null
-            {} categorical feature{} ignored: null
-            {}: null
-            Showing this data may require a lot of memory: null
+            Data has been sampled: Podatki so vzorčeni.
+            Categorical features are ignored.: Kategoričnih spremenljivk ne kažem.
+            {}: false
+            Showing this data may require a lot of memory: Prikaz teh podatkov lahko zahteva veliko pomnilnika.
         class `Error`:
-            No numeric features: null
-            Not enough features for column clustering: null
-            Not enough instances for clustering: null
-            Not enough instances for k-means merging: null
-            Not enough memory to show this data: null
+            No numeric features: Ni številskih spremenljivk.
+            Not enough features for column clustering: Ni dovolj spremenljivk za gručenje stolpcev.
+            Not enough instances for clustering: Ni dovolj podatkov za gručenje vrstic.
+            Not enough instances for k-means merging: Ni dovolj podatkov za združevanje.
+            Not enough memory to show this data: Ni dovolj pomnilnika za prikaz podatkov.
         class `Warning`:
-            Empty clusters were removed: null
-        'For data with a meaningful mid-point, ': null
-        choose one of diverging palettes.: null
-        diverging_palette: null
+            Empty clusters were removed: Prazne gruče so odstranjene.
+        'For data with a meaningful mid-point, ': "Za podatke, ki imajo nevtralno, sredinsko vrednost "
+        choose one of diverging palettes.: "izberite divergentno barvno paleto."
+        diverging_palette: false
         def `__init__`:
-            Color: null
-            Merge: null
+            Color: Barva
+            Merge: Združevanje
             merge_kmeans: null
-            Merge by k-means: null
-            merge_kmeans_k: null
-            'Clusters:': null
-            Clustering: null
-            row_clustering: null
-            col_clustering: null
-            'Rows:': null
-            'Columns:': null
-            Split By: null
-            (None): null
-            Split the heatmap vertically by a categorical column: null
-            split_by_var: null
-            Split the heatmap horizontally by column annotation: null
-            split_columns_var: null
-            Annotation && Legends: null
-            legend: null
-            Show legend: null
-            averages: null
-            Stripes with averages: null
-            Row Annotations: null
-            annotation_var: null
-            annotation_color_var: null
-            Text: null
-            Column annotations: null
-            column_annotation_color_var: null
-            column_label_pos: null
-            Position: null
-            keep_aspect: null
-            Keep aspect ratio: null
-            Resize: null
-            auto_commit: null
-            Increase Font: null
-            ctrl+>: null
-            Decrease Font: null
-            ctrl+<: null
-            setShortcutVisibleInContextMenu: null
+            Merge by k-means: Združi v skupine (k-means)
+            merge_kmeans_k: false
+            'Clusters:': Skupin:
+            Clustering: Gručenje
+            row_clustering: false
+            col_clustering: false
+            'Rows:': Vrstice:
+            'Columns:': Stolpci:
+            Split By: Razdelitev
+            (None): (Brez)
+            Split the heatmap vertically by a categorical column: Navpična delitev glede na kategorično spremenljivko
+            split_by_var: false
+            Split the heatmap horizontally by column annotation: Vodoravna delitev glede na oznake stolpcev
+            split_columns_var: false
+            Annotation && Legends: Oznake in legenda
+            legend: false
+            Show legend: Pokaži legendo
+            averages: false
+            Stripes with averages: Trak s poprečji
+            Row Annotations: Oznake vrstic
+            annotation_var: false
+            annotation_color_var: false
+            Text: Besedilo
+            Column annotations: Oznake stolpcev
+            column_annotation_color_var: false
+            column_label_pos: false
+            Position: Položaj
+            keep_aspect: false
+            Keep aspect ratio: Ohrani razmerje
+            Resize: Povečava
+            auto_commit: false
+            Increase Font: Povečaj pisavo
+            ctrl+>: true
+            Decrease Font: Zmanjšaj pisavo
+            ctrl+<: true
+            setShortcutVisibleInContextMenu: false
         def `set_dataset`:
-            hidden: null
-            s: null
+            hidden: false
+            s: false
         def `_make_parts`:
-            N/A: null
+            N/A: NN
         def `cluster_rows`:
-            Parts: null
+            Parts: false
         def `cluster_columns`:
-            Parts: null
+            Parts: false
         def `construct_heatmaps`:
-            Parts: null
+            Parts: false
         def `construct_heatmaps_scene`:
-            Parts: null
-            _T: null
+            Parts: false
+            _T: false
         def `__update_clustering_enable_state`:
-            Parts: null
-            'Row cluster ordering was disabled due to the ': null
-            estimated runtime cost: null
-            'Row clustering was was disabled due to the ': null
-            'Column cluster ordering was disabled due to ': null
-            'Column clustering was disabled due to the ': null
+            Parts: false
+            'Row cluster ordering was disabled due to the ': Urejanje gruč vrstic
+            estimated runtime cost: " je ustavljeno, ker bi zahtevalo preveč časa."
+            'Row clustering was was disabled due to the ': Gručenje vrstic
+            'Column cluster ordering was disabled due to ': Urejanje gruč stolpcev
+            'Column clustering was disabled due to the ': Gručenje stolpcev
         def `update_annotations`:
-            ', ': null
-            ' ({} more)': null
+            ', ': false
+            ' ({} more)': ' (in še {})'
         def `_on_view_context_menu`:
-            Keep aspect ratio: null
+            Keep aspect ratio: false
         def `send_report`:
-            'Columns:': null
-            Clustering: null
-            No sorting: null
-            'Rows:': null
-            'Split:': null
-            Row annotation: null
+            'Columns:': Stolpci
+            Clustering: Gručenje
+            No sorting: Brez urejanja
+            'Rows:': Vrstice
+            'Split:': Delitev
+            Row annotation: Oznake vrstic
         def `migrate_settings`:
-            row_clustering: null
-            col_clustering: null
-            row_clustering_method: null
-            col_clustering_method: null
+            row_clustering: false
+            col_clustering: false
+            row_clustering_method: false
+            col_clustering_method: false
     def `join_elided`:
-        ...: null
+        ...: true
     def `colorize`:
-        N/A: null
+        N/A: NN
     def `aggregate`:
-        ', ': null
-        ' ({} more)': null
+        ', ': false
+        ' ({} more)': ' (in še {})'
     def `agg_join_str`:
-        ' ({} more)': null
-        ', ': null
-    _T: null
-    __main__: null
-    brown-selected.tab: null
+        ' ({} more)': ' (in še {})'
+        ', ': false
+    _T: false
+    __main__: false
+    brown-selected.tab: false
 widgets/visualize/owlinearprojection.py:
     class `LinearProjectionVizRank`:
         Score Plots: null
