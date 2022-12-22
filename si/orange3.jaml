@@ -13537,86 +13537,86 @@ widgets/visualize/owlinearprojection.py:
     iris: false
 widgets/visualize/owlineplot.py:
     class `ParameterSetter`:
-        Mean: null
-        Lines: null
-        Lines (missing value): null
-        Selected lines: null
-        Selected lines (missing value): null
-        Range: null
-        Selected range: null
+        Mean: Srednja vrednost
+        Lines: Črte
+        Lines (missing value): Črte (manjkajoče vrednosti)
+        Selected lines: Izbrane črte
+        Selected lines (missing value): Izbrane črte (manjkajoče vrednosti)
+        Range: Razpon
+        Selected range: Razpon izbora
         def `update_setters`:
             Dash line: null
         def `axis_items`:
-            item: null
+            item: false
     class `LinePlotGraph`:
         def `__init__`:
-            bottom: null
-            left: null
+            bottom: false
+            left: false
         def `update_legend`:
-            s: null
+            s: false
         def `reset`:
-            bottom: null
+            bottom: false
     class `ProfileGroup`:
         def `update_profiles_color`:
-            pen: null
+            pen: false
         def `update_sel_profiles_color`:
-            pen: null
+            pen: false
     class `OWLinePlot`:
         Line Plot: null
-        Visualization of data profiles (e.g., time series).: null
-        icons/LinePlot.svg: null
+        Visualization of data profiles (e.g., time series).: Vizualizacija profilov podatkov, na primer časovnih vrst
+        icons/LinePlot.svg: false
         class `Inputs`:
-            Data: null
-            Data Subset: null
+            Data: Podatki
+            Data Subset: Podmnožica podatkov
         class `Outputs`:
-            Selected Data: null
-        graph.plotItem: null
+            Selected Data: Izbrani podatki
+        graph.plotItem: false
         class `Error`:
-            Need at least one numeric feature.: null
+            Need at least one numeric feature.: Potrebna je vsaj ena številska spremenljivka.
         class `Warning`:
-            No display option is selected.: null
+            No display option is selected.: Izberite vsaj en element za prikaz.
         class `Information`:
-            Data has too many features. Only first {}: null
-            ' are shown.': null
+            Data has too many features. Only first {}: Podatki imajo preveč spremenljivk. Prikazanih je prvih {}.
+            ' are shown.': ""
         def `_add_controls`:
-            Display: null
-            show_profiles: null
-            Lines: null
-            Plot lines: null
-            show_range: null
-            Range: null
-            Plot range between 10th and 90th percentile: null
-            show_mean: null
-            Mean: null
-            Plot mean curve: null
-            show_error: null
-            Error bars: null
-            Show standard deviation: null
-            None: null
-            group_var: null
-            Group by: null
-            auto_commit: null
+            Display: Prikaz
+            show_profiles: false
+            Lines: Črte
+            Plot lines: Pokaži črte.
+            show_range: false
+            Range: Razpon
+            Plot range between 10th and 90th percentile: Pokaži razpon med 10. in 90. percentilom.
+            show_mean: false
+            Mean: Srednja vrednost
+            Plot mean curve: Črta s poprečno vrednostjo.
+            show_error: false
+            Error bars: Standardna deviacija
+            Show standard deviation: Pokaži standardno deviacijo.
+            None: (Brez skupin)
+            group_var: false
+            Group by: Skupine
+            auto_commit: false
         def `__show_profiles_changed`:
-            profiles: null
+            profiles: false
         def `__show_range_changed`:
-            range: null
+            range: false
         def `__show_mean_changed`:
-            mean: null
+            mean: false
         def `__show_error_changed`:
-            error: null
+            error: false
         def `setup_plot`:
-            bottom: null
+            bottom: false
         def `__get_visibility_flags`:
-            show_profiles: null
-            show_range: null
-            show_mean: null
-            show_error: null
+            show_profiles: false
+            show_range: false
+            show_mean: false
+            show_error: false
         def `_update_visibility`:
-            set_visible_{}: null
+            set_visible_{}: false
         def `send_report`:
-            Group by: null
-    __main__: null
-    brown-selected: null
+            Group by: Skupine glede na
+    __main__: false
+    brown-selected: false
 widgets/visualize/owmosaic.py:
     class `MosaicVizRank`:
         Mosaic Ranking: null
