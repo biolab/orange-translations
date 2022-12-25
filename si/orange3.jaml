@@ -13790,56 +13790,56 @@ widgets/visualize/ownomogram.py:
     heart_disease: false
 widgets/visualize/owpythagorastree.py:
     class `OWPythagorasTree`:
-        Pythagorean Tree: null
-        Pythagorean Tree visualization for tree like-structures.: null
-        icons/PythagoreanTree.svg: null
-        fractal: null
+        Pythagorean Tree: Pitagorovo drevo
+        Pythagorean Tree visualization for tree like-structures.: Prikaz drevesne strukture s Pitagorovim drevesom
+        icons/PythagoreanTree.svg: false
+        fractal: false
         class `Inputs`:
-            Tree: null
+            Tree: Drevo
         class `Outputs`:
-            Selected Data: null
-        scene: null
-        corner: null
-        offset: null
+            Selected Data: Izbrani podatki
+        scene: false
+        corner: false
+        offset: false
         def `__init__`:
-            Normal: null
-            Square root: null
-            Logarithmic: null
-            Tree Info: null
-            Display Settings: null
-            depth_limit: null
-            Depth: null
-            target_class_index: null
-            Target class: null
-            size_calc_idx: null
-            Size: null
-            size_log_scale: null
-            Log scale factor: null
-            Plot Properties: null
-            tooltips_enabled: null
-            Enable tooltips: null
-            show_legend: null
-            Show legend: null
-            Redraw: null
+            Normal: Sorazmerna
+            Square root: Kvadratni koren
+            Logarithmic: Logaritmična
+            Tree Info: Podatki o drevesu
+            Display Settings: Nastavitve prikaza
+            depth_limit: false
+            Depth: Globina
+            target_class_index: false
+            Target class: Ciljni razred:
+            size_calc_idx: false
+            Size: Velikost:
+            size_log_scale: false
+            Log scale factor: Logaritmični faktor
+            Plot Properties: Lastnosti prikaza
+            tooltips_enabled: false
+            Enable tooltips: Kaži namige pod miško
+            show_legend: false
+            Show legend: Pokaži legendo
+            Redraw: Ponovno izriši
         def `set_tree`:
-            meta_target_class_index: null
-            meta_size_calc_idx: null
-            meta_depth_limit: null
+            meta_target_class_index: false
+            meta_size_calc_idx: false
+            meta_depth_limit: false
         def `_update_info_box`:
-            'Nodes: {}\\nDepth: {}': null
+            'Nodes: {}\\nDepth: {}': Število vozlišč: {}, globina: {}
         def `_update_log_scale_slider`:
-            Logarithmic: null
+            Logarithmic: Logaritmična
         def `_clear_info_box`:
-            No tree on input: null
+            No tree on input: Na vhodu ni drevesa.
         def `_update_target_class_combo`:
-            Target class: null
-            None: null
-            Node color: null
+            Target class: Ciljni razred:
+            None: (Vsi razredi)
+            Node color: Barva:
         def `_classification_update_legend_colors`:
-            other: null
-            '#ffffff': null
-    __main__: null
-    iris: null
+            other: false
+            '#ffffff': false
+    __main__: false
+    iris: false
 widgets/visualize/owpythagoreanforest.py:
     class `PythagoreanForestModel`:
         def `data`:
@@ -14587,48 +14587,48 @@ widgets/visualize/owviolinplot.py:
     __main__: false
     heart_disease: false
 widgets/visualize/pythagorastreeviewer.py:
-    Square: null
-    center: null
-    length: null
-    angle: null
-    Point: null
-    x: null
-    y: null
+    Square: false
+    center: false
+    length: false
+    angle: false
+    Point: false
+    x: false
+    y: false
     class `PythagorasTreeViewer`:
         def `__init__`:
-            interactive: null
-            target_class_index: null
-            weight_adjustment: null
+            interactive: false
+            target_class_index: false
+            weight_adjustment: false
     class `SquareGraphicsItem`:
         def `__init__`:
-            brush: null
-            '#297A1F': null
-            zvalue: null
+            brush: false
+            '#297A1F': false
+            zvalue: false
     class `TreeNode`:
         def `_rules_str`:
-            <br>: null
-            <br><b>%s</b>: null
+            <br>: false
+            <br><b>%s</b>: false
     class `DiscreteTreeNode`:
         def `tooltip`:
-            <br>: null
-            <p>: null
-            '{}/{} samples ({:2.3f}%)': null
-            <hr>: null
-            'Split by ': null
-            <br><br>: null
-            </p>: null
+            <br>: false
+            <p>: false
+            '{}/{} samples ({:2.3f}%)':'{}/{} primerov ({:2.3f}%)'
+            <hr>: false
+            'Split by ': Delitev glede na
+            <br><br>: false
+            </p>: false
     class `ContinuousTreeNode`:
-        None: null
-        Mean: null
-        Standard deviation: null
+        None: (Enaka barva)
+        Mean: Povprečje
+        Standard deviation: Standardni odklon
         def `tooltip`:
-            '<p>Mean: {:2.3f}': null
-            '<br>Standard deviation: {:2.3f}': null
-            <br>{} samples: null
-            <hr>: null
-            'Split by ': null
-            <br><br>: null
-            </p>: null
+            '<p>Mean: {:2.3f}': '<p>Povprečje: {:2.3f}'
+            '<br>Standard deviation: {:2.3f}': '<br>Standardni odklon: {:2.3f}'
+            <br>{} samples: <br>{} primerov
+            <hr>: false
+            'Split by ': Delitev glede na
+            <br><br>: false
+            </p>: false
 widgets/visualize/utils/__init__.py:
     class `VizRankDialog`:
         class `Information`:
