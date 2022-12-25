@@ -13936,62 +13936,60 @@ widgets/visualize/owradviz.py:
     brown-selected: false
 widgets/visualize/owruleviewer.py:
     class `OWRuleViewer`:
-        CN2 Rule Viewer: null
-        Review rules induced from data.: null
-        icons/CN2RuleViewer.svg: null
+        CN2 Rule Viewer: Pregledovalnik pravil CN2
+        Review rules induced from data.: Pregled pravil, sestavljenih iz podatkov
+        icons/CN2RuleViewer.svg: false
         class `Inputs`:
-            Data: null
-            Classifier: null
+            Data: Podatki
+            Classifier: Klasifikator
         class `Outputs`:
-            Selected Data: null
+            Selected Data: Pokriti primeri
         def `__init__`:
-            IF conditions: null
-            THEN class: null
-            Distribution: null
-            Probabilities [%]: null
-            Quality: null
-            Length: null
-            compact_view: null
-            Compact view: null
-            Restore original order: null
+            IF conditions: Pogoj
+            THEN class: Napoved
+            Distribution: Porazdelitev
+            Probabilities [%]: Verjetnosti [%]
+            Quality: Kvaliteta
+            Length: Dolžina
+            compact_view: false
+            Compact view: Stisnjen pregled
+            Restore original order: Začetni vrstni red
         def `set_classifier`:
-            rule_list: null
+            rule_list: false
         def `copy_to_clipboard`:
-            \n: null
+            \n: false
         def `send_report`:
-            Data domain: null
-            Rule induction algorithm: null
-            Induced rules: null
+            Induced rules: Pravila
     class `CustomRuleViewerTableModel`:
-        ==: null
-        =: null
-        !=: null
-        ≠: null
-        <=: null
-        ≤: null
-        >=: null
-        ≥: null
+        ==: false
+        =: false
+        !=: false
+        ≠: false
+        <=: false
+        ≤: false
+        >=: false
+        ≥: false
         def `data`:
             def `_display_role`:
-                ' AND ': null
-                ' AND\\n': null
-                TRUE: null
-                →: null
-                =: null
-                .1f: null
-                ' : ': null
-                '{:.{}{}}': null
-                f: null
-                e: null
+                ' AND ': ' IN '
+                ' AND\\n': ' IN \\n'
+                TRUE: Sicer
+                →: false
+                =: false
+                .1f: false
+                ' : ': false
+                '{:.{}{}}': false
+                f: false
+                e: false
             def `_tooltip_role`:
-                ' AND ': null
-                ' AND\\n': null
-                \n: null
-                ': ': null
-                '{:.1f}': null
-                %: null
-    __main__: null
-    iris: null
+                ' AND ': ' IN '
+                ' AND\\n': ' IN\\n'
+                \n: false
+                ': ': false
+                '{:.1f}': false
+                %: false
+    __main__: false
+    iris: false
 widgets/visualize/owscatterplot.py:
     class `ScatterPlotVizRank`:
         Score Plots: null
