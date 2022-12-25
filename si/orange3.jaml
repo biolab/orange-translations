@@ -13890,52 +13890,50 @@ widgets/visualize/owpythagoreanforest.py:
     iris: false
 widgets/visualize/owradviz.py:
     class `RadvizVizRank`:
-        Score Plots: null
+        Score Plots: Ocenjevanje kombinacij
         def `__init__`:
-            n_attrs: null
-            'Maximum number of variables: ': null
+            n_attrs: false
+            'Maximum number of variables: ': "Največje število spremenljivk: "
         def `_evaluate_projection`:
-            ignore: null
+            ignore: false
         def `_n_attrs_changed`:
-            Start: null
-            Continue: null
+            Start: Začni
+            Continue: Nadaljuj
         def `progressBarSet`:
-            ' Evaluated {} permutations': null
+            ' Evaluated {} permutations': ": Ocenjenih {} kombinacij"
         def `row_for_state`:
-            '[{:0.6f}] ': null
-            ', ': null
+            '[{:0.6f}] ': false
+            ', ': false
     class `OWRadvizGraph`:
         def `update_anchors`:
-            <b>{label}</b>: null
-            ' ': null
-            \n: null
-            ...: null
+            <b>{label}</b>: false
+            ' ': false
+            \n: false
+            ...: false
     class `OWRadviz`:
-        Radviz: null
-        Display Radviz projection: null
-        icons/Radviz.svg: null
-        viz: null
+        Radviz: Radviz
+        Display Radviz projection: Projekcija z Radvizom
+        icons/Radviz.svg: false
+        viz: false
         class `Warning`:
-            No projection for selected features: null
-            Categorical variables with more than: null
-            ' two values are not shown.': null
-            Maximum number of selected variables reached.: null
+            Categorical variables with more than two values are not shown.: Kategorične spremenljivke z več kot dvema vrednostima niso prikazane.
+            Maximum number of selected variables reached.: Doseženo je največje možno število izbranih spremenljivk.
         def `_add_controls`:
-            Features: null
-            Suggest features: null
+            Features: Spremenljivke
+            Suggest features: Predlagaj spremenljivke
         def `_add_buttons`:
-            auto_commit: null
+            auto_commit: false
         def `_send_components_metas`:
-            angle: null
+            angle: false
         def `migrate_context`:
-            attr_color: null
-            graph: null
-            attr_size: null
-            attr_shape: null
-            attr_label: null
-            selected_vars: null
-    __main__: null
-    brown-selected: null
+            attr_color: false
+            graph: false
+            attr_size: false
+            attr_shape: false
+            attr_label: false
+            selected_vars: false
+    __main__: false
+    brown-selected: false
 widgets/visualize/owruleviewer.py:
     class `OWRuleViewer`:
         CN2 Rule Viewer: null
