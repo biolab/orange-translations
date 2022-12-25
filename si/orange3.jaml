@@ -13843,51 +13843,51 @@ widgets/visualize/owpythagorastree.py:
 widgets/visualize/owpythagoreanforest.py:
     class `PythagoreanForestModel`:
         def `data`:
-            tree: null
-            scene: null
+            tree: false
+            scene: false
         def `update_tree_views`:
-            tree: null
+            tree: false
     class `PythagorasTreeDelegate`:
         def `paint`:
-            '#ebebeb': null
+            '#ebebeb': false
     class `OWPythagoreanForest`:
-        Pythagorean Forest: null
-        Pythagorean forest for visualising random forests.: null
-        icons/PythagoreanForest.svg: null
-        fractal: null
+        Pythagorean Forest: Pitagorov gozd
+        Pythagorean forest for visualising random forests.: Prikaz naključnega gozda s Pitagorovimi drevesi
+        icons/PythagoreanForest.svg: false
+        fractal: false
         class `Inputs`:
-            Random Forest: null
-            Random forest: null
+            Random Forest: Naključni gozd
+            Random forest: Naključni gozd
         class `Outputs`:
-            Tree: null
-        scene: null
-        Normal: null
-        Square root: null
-        Logarithmic: null
+            Tree: drevo
+        scene: false
+        Normal: Sorazmerna
+        Square root: Kvadratni koren
+        Logarithmic: Logaritmična
         def `migrate_settings`:
-            selected_tree_index: null
-            zoom: null
+            selected_tree_index: false
+            zoom: false
         def `__init__`:
-            Forest: null
-            Display: null
-            depth_limit: null
-            Depth: null
-            target_class_index: null
-            Target class: null
-            size_calc_idx: null
-            Size: null
-            zoom: null
-            Zoom: null
+            Forest: Gozd
+            Display: Prikaz
+            depth_limit: false
+            Depth: Globina:
+            target_class_index: false
+            Target class: Ciljni razred:
+            size_calc_idx: false
+            Size: Velikost:
+            zoom: false
+            Zoom: Povečava
         def `_update_info_box`:
-            'Trees: {}': null
+            'Trees: {}': Drevesa: {}
         def `_update_target_class_combo`:
-            Target class: null
-            None: null
-            Node color: null
+            Target class: Ciljni razred:
+            None: (Vsi razredi)
+            Node color: Barva:
         def `_clear_info_box`:
-            No forest on input.: null
-    __main__: null
-    iris: null
+            No forest on input.: Na vhodu ni gozda.
+    __main__: false
+    iris: false
 widgets/visualize/owradviz.py:
     class `RadvizVizRank`:
         Score Plots: null
