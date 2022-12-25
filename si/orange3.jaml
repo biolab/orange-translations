@@ -14140,58 +14140,61 @@ widgets/visualize/owscatterplotgraph.py:
 widgets/visualize/owsieve.py:
     class `ChiSqStats`:
         def `__init__`:
-            ignore: null
+            ignore: false
     class `SieveRank`:
-        Sieve Rank: null
+        Sieve Rank: Rangiranje
     class `OWSieveDiagram`:
-        Sieve Diagram: null
-        'Visualize the observed and expected frequencies ': null
-        for a combination of values.: null
-        icons/SieveDiagram.svg: null
+        Sieve Diagram: Sievov diagram
+        'Visualize the observed and expected frequencies ': "Prikaz pričakovanih in opaženih pogostosti "
+        for a combination of values.: za kombinacije spremenljivk.
+        icons/SieveDiagram.svg: falase
         class `Inputs`:
-            Data: null
-            Features: null
+            Data: Podatki
+            Features: Spremenljivki
         class `Outputs`:
-            Selected Data: null
-        canvas: null
+            Selected Data: Izbrani podatki
+        canvas: false
         def `__init__`:
-            attr_x: null
-            \u2717: null
-            attr_y: null
-            Score Combinations: null
+            attr_x: false
+            \u2717: true
+            attr_y: false
+            Score Combinations: Oceni kombinacije
         def `migrate_context`:
-            attrX: null
-            attr_x: null
-            attrY: null
-            attr_y: null
+            attrX: false
+            attr_x: false
+            attrY: false
+            attr_y: false
         def `resolve_shown_attributes`:
-            Features from the input signal are not present in the data: null
+            Features from the input signal are not present in the data: Spremenljivk na vhodnem signalu ni v vhodni tabeli.
         def `update_graph`:
             def `text`:
-                max_width: null
+                max_width: false
             def `fmt`:
-                '{:.2f}': null
+                '{:.2f}': false
             def `make_tooltip`:
                 def `_oper`:
-                    ' = ': null
-                    ' ': null
-                    <≥: null
-                    ' in ': null
-                '<b>{attr}{eq}{val_name}</b>: {obs}/{n} ({p:.0f} %)': null
+                    ' = ': false
+                    ' ': false
+                    <≥: false
+                    ' in ': ' znotraj '
+                '<b>{attr}{eq}{val_name}</b>: {obs}/{n} ({p:.0f} %)': false
                 |
                     <b>combination of values: </b><br/>
                                        &nbsp;&nbsp;&nbsp;expected {exp} ({p_exp:.0f} %)<br/>
                                        &nbsp;&nbsp;&nbsp;observed {obs} ({p_obs:.0f} %)
-                : null
-                {xt}<br/>{yt}<hr/>{ct}: null
-            Features {} and {} have no values: null
-            Feature {} has no values: null
-            'χ²={:.2f}, p={:.3f}': null
-            'N = ': null
+                : |
+                    <b>kombinacija vrednosti: </b><br/>
+                       &nbsp;&nbsp;&nbsp;pričakovanih {exp} ({p_exp:.0f} %)<br/>
+                       &nbsp;&nbsp;&nbsp;opaženih {obs} ({p_obs:.0f} %)
+                {xt}<br/>{yt}<hr/>{ct}: false
+            Features {} and {} have no values: Spremenljivki {} in {} nimata znanih vrednosti.
+            Feature {} has no values: Spremenljivka {} nima znanih vrednosti.
+            'χ²={:.2f}, p={:.3f}': true
+            'N = ': true
         def `get_widget_name_extension`:
-            {} vs {}: null
-    __main__: null
-    zoo: null
+            {} vs {}: {} in {}
+    __main__: false
+    zoo: false
 widgets/visualize/owsilhouetteplot.py:
     class `NoGroupVariable`:
         Input does not have any suitable labels: null
