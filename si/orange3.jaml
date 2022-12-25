@@ -13992,151 +13992,151 @@ widgets/visualize/owruleviewer.py:
     iris: false
 widgets/visualize/owscatterplot.py:
     class `ScatterPlotVizRank`:
-        Score Plots: null
+        Score Plots: Oceni prikaze
         def `check_preconditions`:
-            color_required: null
-            Color variable is not selected: null
+            color_required: false
+            Color variable is not selected: Barva ni izbrana
     class `ParameterSetter`:
         def `axis_items`:
-            item: null
+            item: false
         def `reg_line_label_items`:
-            label: null
+            label: false
     class `OWScatterPlotGraph`:
         def `_regression_line`:
-            'r = {rvalue:.2f}': null
+            'r = {rvalue:.2f}': true
         def `_add_line`:
-            label: null
+            label: false
         def `update_reg_line_label_colors`:
-            label: null
+            label: false
         def `update_regression_line`:
-            '#505050': null
+            '#505050': false
     class `OWScatterPlot`:
-        Scatter Plot: null
-        'Interactive scatter plot visualization with ': null
-        intelligent data visualization enhancements.: null
-        icons/ScatterPlot.svg: null
+        Scatter Plot: Razsevni diagram
+        'Interactive scatter plot visualization with ': Interaktivni prikaz podatkov z razsevnim diagramom
+        intelligent data visualization enhancements.: ""
+        icons/ScatterPlot.svg: false
         class `Inputs`:
-            Features: null
+            Features: Spremenljivki
         class `Outputs`:
-            Features: null
+            Features: Spremenljivki
         class `Warning`:
-            "Plot cannot be displayed because '{}' or '{}' ": null
-            is missing for all data points.: null
+            "Plot cannot be displayed because '{}' or '{}' ": "Diagrama ni mogoče pokazati, ker '{}' ali '{}' "
+            is missing for all data points.: nima nobene znane vrednosti.
         class `Information`:
-            Large SQL table; showing a sample.: null
-            Points with missing '{}' or '{}' are not displayed: null
+            Large SQL table; showing a sample.: Velika tabela SQL; kažem vzorec.
+            Points with missing '{}' or '{}' are not displayed: Točke z manjkajočo vrednostjo '{}' ali '{}' niso prikazane.
         def `_add_controls`:
-            graph.orthonormal_regression: null
-            Treat variables as independent: null
-            If checked, fit line to group (minimize distance from points);\n: null
-            otherwise fit y as a function of x (minimize vertical distances): null
+            graph.orthonormal_regression: false
+            Treat variables as independent: Obravnavaj spremenljivki kot neodvisni
+            If checked, fit line to group (minimize distance from points);\n: Če je opcija izbrana, je črta postavljena čim bližje točkam;
+            otherwise fit y as a function of x (minimize vertical distances): sicer pa minimizira samo razdaljo v smeri y.
         def `_add_controls_axis`:
-            Axes: null
-            attr_x: null
-            'Axis x:': null
-            attr_y: null
-            'Axis y:': null
-            Find Informative Projections: null
+            Axes: Osi
+            attr_x: false
+            'Axis x:': Os x:
+            attr_y: false
+            'Axis y:': Os y:
+            Find Informative Projections: Poišči informativne projekcije
         def `_add_controls_sampling`:
-            auto_sample: null
-            Sample: null
-            Sampling: null
+            auto_sample: false
+            Sample: Vzorec
+            Sampling: Vzorčenje
         def `_vizrank_color_change`:
-            No data on input: null
-            Data is sparse: null
-            Not enough features for ranking: null
-            Color variable is not selected: null
-            Color variable has no values: null
+            No data on input: Ni podatkov na vhodu.
+            Data is sparse: Podatki so redki.
+            Not enough features for ranking: Ni dovolj spremenljivk za rangiranje,
+            Color variable is not selected: Barva ni določena,
+            Color variable has no values: Spremenljivka z barvo nima znanih vrednosti.
         def `_point_tooltip`:
-            <br/>: null
-            {} = {}: null
-            <b>{}</b><br/><br/>{}: null
+            <br/>: false
+            {} = {}: false
+            <b>{}</b><br/><br/>{}: false
         def `set_subset_data`:
-            Data subset does not support large Sql tables: null
+            Data subset does not support large Sql tables: V velikih tabelah iz SQL ni možno izbirati primerov.
         def `get_axes`:
-            bottom: null
-            left: null
+            bottom: false
+            left: false
         def `get_widget_name_extension`:
-            {} vs {}: null
+            {} vs {}: {} in {}
         def `_get_send_report_caption`:
-            Color: null
-            Label: null
-            Shape: null
-            Size: null
-            Jittering: null
+            Color: Barva
+            Label: Oznake
+            Shape: Oblika
+            Size: Velikost
+            Jittering: Tresenje
         def `migrate_settings`:
-            selection: null
-            selection_group: null
-            auto_send_selection: null
-            auto_commit: null
-            graph: null
-            jitter_continuous: null
+            selection: false
+            selection_group: false
+            auto_send_selection: false
+            auto_commit: false
+            graph: false
+            jitter_continuous: false
         def `migrate_context`:
-            attr_color: null
-            graph: null
-            attr_size: null
-            attr_shape: null
-            attr_label: null
-            attr_x: null
-            attr_y: null
-    __main__: null
-    iris: null
+            attr_color: false
+            graph: false
+            attr_size: false
+            attr_shape: false
+            attr_label: false
+            attr_x: false
+            attr_y: false
+    __main__: false
+    iris: false
 widgets/visualize/owscatterplotgraph.py:
     class `LegendItem`:
         def `addItem`:
-            left: null
+            left: false
     class `ScatterPlotItem`:
         def `setCoordinates`:
-            pen: null
-            brush: null
-            size: null
-            symbol: null
-            data: null
+            pen: false
+            brush: false
+            size: false
+            symbol: false
+            data: false
     def `_define_symbols`:
-        ?: null
-        +: null
-        t: null
-        x: null
+        ?: false
+        +: false
+        t: false
+        x: false
     class `AxisItem`:
         def `tickStrings`:
-            %Y: null
-            %Y %b: null
-            %Y %b %d: null
-            %Hh: null
-            %d %Hh: null
-            '%H:%M': null
-            '%H:%M:%S': null
-            %S.%f: null
+            %Y: true
+            %Y %b: true
+            %Y %b %d: true
+            %Hh: true
+            %d %Hh: true
+            '%H:%M': true
+            '%H:%M:%S': true
+            %S.%f: true
     class `ScatterBaseParameterSetter`:
-        Categorical legend: null
-        Numerical legend: null
+        Categorical legend: Kategorična legenda
+        Numerical legend: Številska legenda
     class `OWScatterPlotBase`:
-        o x t + d star ?: null
+        o x t + d star ?: false
         def `__init__`:
-            left: null
-            bottom: null
+            left: false
+            bottom: false
         def `_create_drag_tooltip`:
-            '{}: Append to group': null
-            Cmd: null
-            darwin: null
-            Ctrl: null
-            'Shift: Add group': null
-            'Alt: Remove': null
-            <center>: null
-            ', ': null
-            </center>: null
-            <b>{}</b>: null
+            '{}: Append to group': {}: Dodaj k skupini
+            Cmd: true
+            darwin: false
+            Ctrl: true
+            'Shift: Add group': Shift: Dodaj skupino
+            'Alt: Remove': Alt: Odstrani
+            <center>: false
+            ', ': false
+            </center>: false
+            <b>{}</b>: false
         def `get_sizes`:
-            ignore: null
+            ignore: false
         def `update_sizes`:
-            impute_sizes: null
-            size: null
+            impute_sizes: false
+            size: false
         def `update_density`:
-            pen: null
+            pen: false
         def `get_shapes`:
-            impute_shapes: null
+            impute_shapes: false
         def `_update_color_legend`:
-            o: null
+            o: false
 widgets/visualize/owsieve.py:
     class `ChiSqStats`:
         def `__init__`:
