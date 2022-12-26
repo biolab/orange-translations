@@ -14404,105 +14404,107 @@ widgets/visualize/owtreeviewer2d.py:
         def `node_tooltip`:
             tree node: vozlišče drevesa
 widgets/visualize/owvenndiagram.py:
-    _InputData: null
-    key: null
-    name: null
-    table: null
-    _ItemSet: null
-    title: null
-    items: null
-    Instance identity: null
-    Instance equality: null
+    _InputData: false
+    key: false
+    name: false
+    table: false
+    _ItemSet: false
+    title: false
+    items: false
+    Instance identity: Identiteta vrstic
+    Instance equality: Enakost vrstic
     class `OWVennDiagram`:
-        Venn Diagram: null
-        'A graphical visualization of the overlap of data instances ': null
-        from a collection of input datasets.: null
-        icons/VennDiagram.svg: null
+        Venn Diagram: Vennov diagram
+        'A graphical visualization of the overlap of data instances ': "Grafični prikaz skupnih podatkov v "
+        from a collection of input datasets.: različnih tabelah.
+        icons/VennDiagram.svg: false
         class `Inputs`:
-            Data: null
+            Data: Podatki
         class `Outputs`:
-            Selected Data: null
+            Selected Data: Izbrani podatki
         class `Error`:
-            Data sets do not contain the same instances.: null
-            Venn diagram accepts at most five datasets.: null
+            Data sets do not contain the same instances.: Vhodni podatki ne vsebujejo istih primeov.
+            Venn diagram accepts at most five datasets.: Vennov diagram lahko sprejme največ pet tabel.
         class `Warning`:
-            'Some variables have been renamed ': null
-            to avoid duplicates.\n{}: null
-        scene: null
-        attributes: null
-        metas: null
-        class_vars: null
-        X: null
-        Y: null
-        x: null
-        y: null
+            'Some variables have been renamed ': "Nekatere spremenljivke so preimenovane v izogib "
+            to avoid duplicates.\n{}: ponavljanju imen.\n{}
+        scene: false
+        attributes: false
+        metas: false
+        class_vars: false
+        X: false
+        Y: false
+        x: false
+        y: false
         def `__init__`:
-            rowwise: null
-            Columns (features): null
-            Rows (instances), matched by: null
-            selected_feature: null
-            'Instances are identical if originally coming from the ': null
-            same row of the same table.\n: null
-            'Instances can be check for equality only if described by ': null
-            the same variables.: null
-            output_duplicates: null
-            Output duplicates: null
-            autocommit: null
+            rowwise: false
+            Columns (features): Stolpci (spremenljivke)
+            Rows (instances), matched by: Vrstice (primeri), ujemanje glede na
+            selected_feature: false
+            'Instances are identical if originally coming from the ': Vrstici sta "enaki", če izvirata iz iste vrstice neke tabele.
+            same row of the same table.\n: ""
+            'Instances can be check for equality only if described by ': Enakost vrstic je možno primerjati le, če sta opisani z istimi spremenljivkami.
+            the same variables.: ""
+            output_duplicates: false
+            Output duplicates: Ponovljeni primeri na izhodu.
+            autocommit: false
         def `_createDiagram`:
-            '{} <i>(all: {})</i>': null
-            {}: null
-            {0}: null
-            <h4>|{}| = {}</h4>: null
-            <span>: null
-            ', ': null
-            </br>({len(area_items) - 32} items not shown): null
-            </span>: null
+            '{} <i>(all: {})</i>': '{} <i>(vsi: {})</i>'
+            {}: false
+            {0}: false
+            <h4>|{}| = {}</h4>: false
+            <span>: false
+            ', ': false
+            </br>({len(area_items) - 32} items not shown): ' </br>in še {z_besedo(len(area_items) - 32, 1, "f")} {plsi(len(area_items) - 32, "druga spremenljivka|drugi spremenljivki|druge spremenljivke|drugih spremenljivk")}'
+            </span>: false
         def `merge_data`:
-            ', ': null
-            attributes: null
-            metas: null
-            class_vars: null
+            ', ': false
+            attributes: false
+            metas: false
+            class_vars: false
         def `extract_columnwise`:
-            {var_name.name} ({idx}): null
-            attributes: null
+            {var_name.name} ({idx}): false
+            attributes: false
+            # Tole je najbrž ime stolpca, ki pove, ali je vrstica izbrana?!
+            # Ne vem, kje se to določi
             Selected: null
-            ', ': null
+            ', ': false
         def `create_from_columns`:
-            attributes: null
+            attributes: false
         def `extract_rowwise`:
-            {} ({}): null
-            ', ': null
+            {} ({}): false
+            ', ': false
         def `get_indices`:
-            metas: null
+            metas: false
         def `extract_rowwise_duplicates`:
-            name: null
-            attributes: null
-            metas: null
-            class_vars: null
+            name: false
+            attributes: false
+            metas: false
+            class_vars: false
         def `migrate_settings`:
-            selected_feature: null
+            selected_feature: false
     def `disjoint_set_label`:
-        INTERSECTION: null
-        c: null
+        INTERSECTION: false
+        c: false
         def `label_for_index`:
-            A: null
-        <sup>: null
-        </sup>: null
+            A: false
+        <sup>: false
+        </sup>: false
     class `VennDiagram`:
-        <center><h4>{0}</h4>{1}</center>: null
+        <center><h4>{0}</h4>{1}</center>: false
         def `_on_editingStarted`:
-            <br/>: null
+            <br/>: false
     def `append_column`:
-        X: null
-        Y: null
-        M: null
+        X: false
+        Y: false
+        M: false
     def `main`:
-        brown-selected: null
-        test_rows: null
-        M: null
-        Test: null
-        A: null
-    __main__: null
+        brown-selected: false
+        test_rows: false
+        M: false
+        Test: false
+        A: false
+    __main__: false
 widgets/visualize/owviolinplot.py:
     class `ParameterSetter`:
         Bottom axis: Spodnja os
