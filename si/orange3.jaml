@@ -14633,215 +14633,215 @@ widgets/visualize/pythagorastreeviewer.py:
 widgets/visualize/utils/__init__.py:
     class `VizRankDialog`:
         class `Information`:
-            There is nothing to rank.: null
+            There is nothing to rank.: Ni česa rangirati.
         def `__init__`:
-            Filter ...: null
-            Start: null
+            Filter ...: false
+            Start: Začni
         def `initialize`:
-            Start: null
+            Start: Začni
         def `on_done`:
-            Finished: null
+            Finished: Končano
         def `toggle`:
-            Pause: null
-            Continue: null
+            Pause: Počakaj
+            Continue: Nadaljuj
     def `run_vizrank`:
-        Getting combinations...: null
-        Getting scores...: null
+        Getting combinations...: Sestavljam kombinacije...
+        Getting scores...: Ocenjujem...
     class `VizRankDialogAttrPair`:
         def `__init__`:
-            xy_changed_manually: null
+            xy_changed_manually: false
         def `row_for_state`:
-            name: null
-            ', ': null
+            name: false
+            ', ': false
     class `CanvasText`:
         def `elide`:
-            ...: null
+            ...: true
     class `ViewWithPress`:
         def `__init__`:
-            handler: null
+            handler: false
 widgets/visualize/utils/component.py:
     class `AnchorParameterSetter`:
-        Anchor: null
+        Anchor: Sidro
 widgets/visualize/utils/customizableplot.py:
     def `available_font_families`:
-        .: null
+        .: false
     class `Updater`:
-        Font family: null
-        Font size: null
-        Italic: null
-        Width: null
-        Opacity: null
-        Style: null
-        Antialias: null
-        Solid line: null
-        Dash line: null
-        Dot line: null
-        Dash dot line: null
-        Dash dot dot line: null
+        Font family: Pisava
+        Font size: Velikost pisave
+        Italic: Poševno
+        Width: Širina
+        Opacity: Neprosojnost
+        Style: Slog
+        Antialias: Mehčanje
+        Solid line: Polna črta
+        Dash line: Prekinjena črta
+        Dot line: Pikčasta črta
+        Dash dot line: Črta - pika
+        Dash dot dot line: Črta - pika - pika
         def `update_axes_titles_font`:
-            normal: null
-            italic: null
-            font-size: null
-            {font.pointSize()}pt: null
-            font-family: null
-            {font.family()}: null
-            font-style: null
-            {fstyle}: null
+            normal: false
+            italic: false
+            font-size: false
+            {font.pointSize()}pt: false
+            font-family: false
+            {font.family()}: false
+            font-style: false
+            {fstyle}: false
         def `update_axes_ticks_font`:
-            tickFont: null
+            tickFont: false
         def `update_legend_font`:
-            size: null
+            size: false
         def `update_lines`:
-            pen: null
+            pen: false
         def `update_inf_lines`:
-            label: null
+            label: false
     class `CommonParameterSetter`:
-        Fonts: null
-        Annotations: null
-        Figure: null
-        Font family: null
-        Axis title: null
-        Axis ticks: null
-        Legend: null
-        Label: null
-        Line label: null
-        x-axis title: null
-        y-axis title: null
-        Title: null
-        Lines: null
+        Fonts: Pisave
+        Annotations: Oznake
+        Figure: Slika
+        Font family: Oblika pisave
+        Axis title: Ime osi
+        Axis ticks: Črte na osi
+        Legend: Legenda
+        Label: Oznake
+        Line label: Oznaka črte
+        x-axis title: false
+        y-axis title: false
+        Title: Naslov
+        Lines: Črte
         def `__init__`:
-            bottom: null
-            left: null
+            bottom: false
+            left: false
 widgets/visualize/utils/heatmap.py:
     class `ColorMap`:
         def `replace`:
-            ColorMap: null
+            ColorMap: false
     class `CategoricalColorMap`:
         def `replace`:
-            CategoricalColorMap: null
-            colortable: null
-            names: null
+            CategoricalColorMap: false
+            colortable: false
+            names: false
     class `GradientColorMap`:
         def `adjust_levels`:
-            low > high ({low} > {high}): null
+            low > high ({low} > {high}): false
         def `apply`:
-            ignore: null
-            unsafe: null
+            ignore: false
+            unsafe: false
         def `replace`:
-            GradientColorMap: null
-            colortable: null
-            thresholds: null
-            center: null
-            span: null
+            GradientColorMap: false
+            colortable: false
+            thresholds: false
+            center: false
+            span: false
     def `normalized_indices`:
-        RowItem: null
-        ColumnItem: null
+        RowItem: false
+        ColumnItem: false
     class `HeatmapGridWidget`:
         class `Parts`:
-            RowItem: null
-            ColumnItem: null
+            RowItem: false
+            ColumnItem: false
         def `setHeatmaps`:
-            Parts: null
-            row-labels-right: null
-            column-labels-top: null
-            column-labels-bottom: null
-            annotation-legend-container: null
-            row-annotation-legend-container: null
-            col-annotation-legend-container: null
+            Parts: false
+            row-labels-right: false
+            column-labels-top: false
+            column-labels-bottom: false
+            annotation-legend-container: false
+            row-annotation-legend-container: false
+            col-annotation-legend-container: false
         def `heatmapAtPos`:
-            GraphicsHeatmapWidget: null
+            GraphicsHeatmapWidget: false
     class `GraphicsHeatmapWidget`:
         def `heatmapCellToolTip`:
-            '{}, {}: {:g}': null
+            '{}, {}: {:g}': false
     class `_GradientLegendAxisItem`:
         def `boundingRect`:
-            top: null
-            bottom: null
-            tickFont: null
-            0.0000000: null
+            top: false
+            bottom: false
+            tickFont: false
+            0.0000000: false
     class `GradientLegendWidget`:
         def `__init__`:
-            sizePolicy: null
-            top: null
+            sizePolicy: false
+            top: false
         def `__update`:
-            '{:.6g}': null
+            '{:.6g}': false
     class `CategoricalColorLegend`:
         def `__init__`:
-            sizePolicy: null
+            sizePolicy: false
         def `_setup`:
-            X: null
+            X: false
         def `_updateFont`:
-            X: null
+            X: false
 widgets/visualize/utils/lac.py:
     def `create_sql_contingency`:
-        %s IS NOT NULL: null
-        COUNT(%s): null
-        float: null
+        %s IS NOT NULL: false
+        COUNT(%s): false
+        float: false
     def `lac`:
-        Initializing: null
-        Done: null
+        Initializing: false
+        Done: false
     def `get_bin_centers`:
-        []()<>=≥: null
-        -: null
+        []()<>=≥: false
+        -: false
 widgets/visualize/utils/owlegend.py:
     class `Anchorable`:
-        topLeft: null
-        topRight: null
-        bottomLeft: null
-        bottomRight: null
+        topLeft: false
+        topRight: false
+        bottomLeft: false
+        bottomRight: false
         def `__init__`:
-            bottomRight: null
+            bottomRight: false
     class `ContinuousLegendItem`:
         def `_format_values`:
-            '{:.3f}': null
+            '{:.3f}': false
     class `OWDiscreteLegend`:
         def `set_domain`:
-            '[OWDiscreteLegend] The class var provided ': null
-            was not discrete.: null
+            '[OWDiscreteLegend] The class var provided ': false
+            was not discrete.: false
     class `OWContinuousLegend`:
         def `__init__`:
-            range: null
+            range: false
         def `set_domain`:
-            '[OWContinuousLegend] The class var provided ': null
-            was not continuous.: null
+            '[OWContinuousLegend] The class var provided ': false
+            was not continuous.: false
 widgets/visualize/utils/plotutils.py:
     class `TextItem`:
-        setAnchor: null
+        setAnchor: false
     class `InteractiveViewBox`:
         def `mouseDragEvent`:
-            mouseMode: null
+            mouseMode: false
     class `PaletteItemSample`:
         def `__init__`:
-            '{{:.{}f}}': null
-            {} - {}: null
+            '{{:.{}f}}': false
+            {} - {}: false
     class `StyledAxisItem`:
         def `__clear_labelStyle_color`:
-            color: null
+            color: false
     class `AxisItem`:
         def `__init__`:
-            rotateTicks: null
+            rotateTicks: false
         def `setRotateTicks`:
-            rotateTicks: null
+            rotateTicks: false
         def `drawPicture`:
-            bottom: null
-            top: null
-            rotateTicks: null
-            tickFont: null
-            tickTextOffset: null
+            bottom: false
+            top: false
+            rotateTicks: false
+            tickFont: false
+            tickTextOffset: false
     class `PlotWidget`:
         def `__init__`:
-            axisItems: null
-            left: null
-            bottom: null
+            axisItems: false
+            left: false
+            bottom: false
     class `PlotItem`:
         def `__init__`:
-            axisItems: null
-            left: null
-            bottom: null
+            axisItems: false
+            left: false
+            bottom: false
 widgets/visualize/utils/scene.py:
     class `UpdateItemsOnSelectGraphicsScene`:
         def `__handle_selection`:
-            selection_changed: null
+            selection_changed: false
 widgets/visualize/utils/widget.py:
     class `OWProjectionWidgetBase`:
         class `Information`:
@@ -14911,53 +14911,53 @@ widgets/visualize/utils/widget.py:
 widgets/visualize/utils/tree/rules.py:
     class `DiscreteRule`:
         def `merge_with`:
-            Merged two discrete rules `%s` and `%s`: null
+            Merged two discrete rules `%s` and `%s`: false
         def `description`:
-            {} {}: null
-            =: null
-            ≠: null
+            {} {}: false
+            =: false
+            ≠: false
         def `__str__`:
-            {} {} {}: null
-            =: null
-            ≠: null
+            {} {} {}: false
+            =: false
+            ≠: false
         def `__repr__`:
-            DiscreteRule(attr_name='%s', equals=%s, value=%s): null
+            DiscreteRule(attr_name='%s', equals=%s, value=%s): false
     class `ContinuousRule`:
         def `merge_with`:
-            'Continuous rules can currently only be ': null
-            merged with other continuous rules: null
+            'Continuous rules can currently only be ': false
+            merged with other continuous rules: false
         def `description`:
-            %s %.3f: null
-            >: null
-            ≤: null
+            %s %.3f: false
+            >: false
+            ≤: false
         def `__str__`:
-            %s %s %.3f: null
-            >: null
-            ≤: null
+            %s %s %.3f: false
+            >: false
+            ≤: false
         def `__repr__`:
-            "ContinuousRule(attr_name='%s', greater=%s, value=%s, ": null
-            inclusive=%s): null
+            "ContinuousRule(attr_name='%s', greater=%s, value=%s, ": false
+            inclusive=%s): false
     class `IntervalRule`:
         def `__init__`:
-            'The left rule must be an instance of the `ContinuousRule` ': null
-            class.: null
-            'The right rule must be an instance of the `ContinuousRule` ': null
+            'The left rule must be an instance of the `ContinuousRule` ': false
+            class.: false
+            'The right rule must be an instance of the `ContinuousRule` ': false
         def `description`:
-            ∈ %s%.3f, %.3f%s: null
-            [: null
-            (: null
-            ]: null
-            ): null
+            ∈ %s%.3f, %.3f%s: false
+            [: false
+            (: false
+            ]: false
+            ): false
         def `__str__`:
-            %s ∈ %s%.3f, %.3f%s: null
-            [: null
-            (: null
-            ]: null
-            ): null
+            %s ∈ %s%.3f, %.3f%s: false
+            [: false
+            (: false
+            ]: false
+            ): false
         def `__repr__`:
-            IntervalRule(attr_name='%s', left_rule=%s, right_rule=%s): null
+            IntervalRule(attr_name='%s', left_rule=%s, right_rule=%s): false
 widgets/visualize/utils/tree/skltreeadapter.py:
     class `SklTreeAdapter`:
         def `rules`:
-            values: null
-            _: null
+            values: false
+            _: false
