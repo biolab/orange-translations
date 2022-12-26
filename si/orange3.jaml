@@ -14197,90 +14197,90 @@ widgets/visualize/owsieve.py:
     zoo: false
 widgets/visualize/owsilhouetteplot.py:
     class `NoGroupVariable`:
-        Input does not have any suitable labels: null
+        Input does not have any suitable labels: Vhodni podatki nimajo primerne spremenljivke za oznake
     class `OWSilhouettePlot`:
-        Silhouette Plot: null
-        'Visually assess cluster quality and ': null
-        the degree of cluster membership.: null
-        icons/SilhouettePlot.svg: null
+        Silhouette Plot: Silhuete
+        'Visually assess cluster quality and ': Pokaže kvaliteto gručenja oz. skupin in pripadnost skupinam.
+        the degree of cluster membership.: ""
+        icons/SilhouettePlot.svg: false
         class `Inputs`:
-            Data: null
+            Data: Podatki
         class `Outputs`:
-            Selected Data: null
-        orangecontrib.prototypes.widgets.owsilhouetteplot.OWSilhouettePlot: null
-        Orange.widgets.unsupervised.owsilhouetteplot.OWSilhouettePlot: null
-        Euclidean: null
-        Manhattan: null
-        Cosine: null
-        scene: null
+            Selected Data: Izbrani podatki
+        orangecontrib.prototypes.widgets.owsilhouetteplot.OWSilhouettePlot: false
+        Orange.widgets.unsupervised.owsilhouetteplot.OWSilhouettePlot: false
+        Euclidean: Evklidska
+        Manhattan: Manhattanska
+        Cosine: Kosinusna
+        scene: false
         class `Error`:
-            Need at least two non-empty clusters: null
-            All clusters are singletons: null
-            Not enough memory: null
-            "Distances could not be computed: '{}'": null
-            {}: null
-            Distance matrix is not symmetric.: null
+            Need at least two non-empty clusters: Potrebni sta vsaj dve neprazni skupini
+            All clusters are singletons: Vse skupine imajo le en sam element.
+            Not enough memory: Premalo pomnilnika.
+            "Distances could not be computed: '{}'": Razdalj ni mogoče izračunati: '{}'
+            {}: false
+            Distance matrix is not symmetric.: Matrika razdalj ni simetrična.
         class `Warning`:
-            {} instance{s} omitted (missing cluster assignment): null
-            {} instance{s} omitted (undefined distances): null
-            Ignoring categorical features: null
+            {} instance{s} omitted (missing cluster assignment): {} primer(ov) je izpuščenih (skupina ni znana)
+            {} instance{s} omitted (undefined distances): {} primer(ov) je izpuščenih (nedefinirana razdalja)
+            Ignoring categorical features: Ignoriram kategorične spremenljivke
         def `__init__`:
-            Distance: null
-            distance_idx: null
-            Grouping: null
-            (None): null
-            cluster_var: null
-            group_by_cluster: null
-            Show in groups: null
-            Bars: null
-            'Bar width:': null
-            bar_size: null
-            'Annotations:': null
-            annotation_var: null
-            (increase the width to show): null
-            auto_commit: null
+            Distance: Razdalja
+            distance_idx: false
+            Grouping: Skupine
+            (None): (Brez)
+            cluster_var: false
+            group_by_cluster: false
+            Show in groups: Pokaži v skupinah
+            Bars: Črte
+            'Bar width:': Širina črt
+            bar_size: false
+            'Annotations:': Oznake:
+            annotation_var: false
+            (increase the width to show): (povečajte širino, da bodo vidne)
+            auto_commit: false
         def `_set_distances`:
-            Distance matrix is not symmetric.: null
-            Input matrix does not have associated data: null
+            Distance matrix is not symmetric.: Matrika razdalj ni simetrična.
+            Input matrix does not have associated data: Matrika razdalj ne vsebuje podatkov.
         def `_ensure_matrix`:
-            invalid state: null
+            invalid state: false
         def `_update`:
-            precomputed: null
-            s: null
+            precomputed: false
+            s: false
         def `commit`:
-            strictly increasing: null
-            Silhouette ({}): null
+            strictly increasing: false
+            Silhouette ({}): Silhueta ({})
         def `send_report`:
-            'Silhouette plot ': null
-            '({self.Distances[self.distance_idx][0]} distance), ': null
-            clustered by '{self.cluster_var.name}': null
-            , annotated with '{self.annotation_var.name}': null
+            'Silhouette plot ': 'Silhueta '
+            '({self.Distances[self.distance_idx][0]} distance), ': '({self.Distances[self.distance_idx][0]} razdalja), '
+            clustered by '{self.cluster_var.name}': skupine glede na '{self.cluster_var.name}'
+            , annotated with '{self.annotation_var.name}': , označene z '{self.annotation_var.name}'
         def `migrate_context`:
-            cluster_var_idx: null
-            cluster_var: null
-            annotation_var_idx: null
-            annotation_var: null
+            cluster_var_idx: false
+            cluster_var: false
+            annotation_var_idx: false
+            annotation_var: false
     def `show_tool_tip`:
-        QTipLabel: null
-        <span>{etext}</span>: null
+        QTipLabel: false
+        <span>{etext}</span>: false
     class `SilhouettePlot`:
         def `setScores`:
-            scores and labels must be 1 dimensional: null
-            scores and labels must have the same shape: null
-            rownames must have the same size as scores: null
-            All indices in `labels` must be in `range(len(values))`: null
+            scores and labels must be 1 dimensional: false
+            scores and labels must have the same shape: false
+            rownames must have the same size as scores: false
+            All indices in `labels` must be in `range(len(values))`: false
         def `__setup`:
-            top: null
-            ' ({np.mean(group.scores):.3f})': null
-            bottom: null
+            top: false
+            ' ({np.mean(group.scores):.3f})': false
+            bottom: false
     class `Line`:
         def `__init__`:
-            sizePolicy: null
+            sizePolicy: false
     class `BarPlotItem`:
         def `__init__`:
-            '#3FCFCF': null
-    __main__: null
-    brown-selected: null
+            '#3FCFCF': false
+    __main__: false
+    brown-selected: false
 widgets/visualize/owtreeviewer.py:
     class `TreeNode`:
         def `rect`:
