@@ -121,7 +121,7 @@ tree.py:
             {} < {} ≤ {}: null
             '{}: {}': null
         def `print_tree`:
-            '{:>20} {}{} {}\\n': null
+            '{:>20} {}{} {}\n': null
             '    ': null
 util.py:
     default: null
@@ -413,7 +413,7 @@ canvas/mainwindow.py:
             reporting/send-statistics: null
             Anonymous Statistics: Anonimizirana statistika
             '<a ': false
-            'href=\\"https://orange.biolab.si/statistics-more-info\\">': false
+            href="https://orange.biolab.si/statistics-more-info">: false
             More info...: Več informacij...
             </a>: false
             Notifications: Obvestila
@@ -444,7 +444,7 @@ canvas/mainwindow.py:
         def `open_canvas_settings`:
             Preferences: Nastavitve
 canvas/report.py:
-    "'{__name__}' is deprecated and will be removed in the future.\\n": false
+    "'{__name__}' is deprecated and will be removed in the future.\n": false
     "The contents of this package were moved to 'Orange.widgets.report'. ": false
     Please update the imports accordingly.: false
 canvas/run.py:
@@ -713,7 +713,7 @@ classification/svm.py:
             auto: null
     __main__: null
     iris: null
-    'learner: {}\\nCA: {}\\n': null
+    'learner: {}\nCA: {}\n': null
 classification/tree.py:
     SklTreeLearner: null
     TreeLearner: null
@@ -942,7 +942,7 @@ data/io.py:
     class `CSVReader`:
         .csv: null
         Comma-separated values: null
-        ',;:\\t$ ': null
+        ',;:\t$ ': null
         def `read`:
             us-ascii: null
             utf-8: null
@@ -1017,10 +1017,10 @@ data/io.py:
         def `read`:
             content-disposition: null
         def `_trim_googlesheet`:
-            '(?:https?://)?(?:www\\.)?': null
+            (?:https?://)?(?:www\.)?: null
             docs\.google\.com/spreadsheets/d/: null
             (?P<workbook_id>[-\w_]+): null
-            '(?:/.*?gid=(?P<sheet_id>\\d+).*|.*)?': null
+            (?:/.*?gid=(?P<sheet_id>\d+).*|.*)?: null
             workbook_id: null
             sheet_id: null
             'https://docs.google.com/spreadsheets/d/{}/export?format=tsv': null
@@ -1034,9 +1034,9 @@ data/io.py:
             dropbox.com: null
             dl=1: null
         def `_suggest_filename`:
-            '[\\\\:/]': null
+            [\\:/]: null
             _: null
-            'filename\\*?=(?:\\"|.{0,10}?\'[^\']*\')([^\\"]+)': null
+            'filename\*?=(?:\"|.{0,10}?''[^'']*&+'')([^\"]+)': null
 data/io_base.py:
     FileFormatBase: null
     Flags: null
@@ -1358,11 +1358,11 @@ data/table.py:
             Ordinary attributes can only have primitive values: null
         def `__str__`:
             [: null
-            ',\\n ': null
+            ',\n ': null
             ]: null
         def `__repr__`:
             [: null
-            ',\\n ': null
+            ',\n ': null
             ,\n ...: null
             \n]: null
         def `concatenate`:
@@ -1579,9 +1579,9 @@ data/variable.py:
         %Y-%m: null
         %Y-%j: null
         ^(: null
-        '\\d{1,4}-\\d{2}-\\d{2}([ T]\\d{2}:\\d{2}(:\\d{2}(\\.\\d+)?([+-]\\d{4})?)?)?|': null
+        \d{1,4}-\d{2}-\d{2}([ T]\d{2}:\d{2}(:\d{2}(\.\d+)?([+-]\d{4})?)?)?|: null
         \d{1,4}\d{2}\d{2}(T?\d{2}\d{2}\d{2}([+-]\d{4})?)?|: null
-        '\\d{2}:\\d{2}(:\\d{2}(\\.\\d+)?)?|': null
+        \d{2}:\d{2}(:\d{2}(\.\d+)?)?|: null
         \d{2}\d{2}\d{2}\.\d+|: null
         \d{1,4}(-?\d{2,3})?: null
         )$: null
@@ -1643,9 +1643,9 @@ data/variable.py:
         def `timezone`:
             different timezones: null
         def `_tzre_sub`:
-            '([+-])(\\d\\d):(\\d\\d)$': null
-            '+00:00': null
-            '-00:00': null
+            ([+-])(\d\d):(\d\d)$: null
+            +00:00: null
+            -00:00: null
             \1\2\3: null
         def `repr_val`:
             ?: null
@@ -3125,7 +3125,7 @@ regression/svm.py:
             auto: null
     __main__: null
     housing: null
-    'learner: {}\\nRMSE: {}\\n': null
+    'learner: {}\nRMSE: {}\n': null
 regression/tree.py:
     SklTreeRegressionLearner: null
     TreeLearner: null
@@ -4172,8 +4172,8 @@ widgets/data/owaggregatecolumns.py:
         class `Outputs`:
             Data: Podatki
         class `Warning`:
-            'Some input features are categorical:\\n{}': null
-            'Some input features are missing:\\n{}': null
+            'Some input features are categorical:\n{}': null
+            'Some input features are missing:\n{}': null
         Sum: Vsota
         Product: Produkt
         Min: false
@@ -4285,13 +4285,13 @@ widgets/data/owcolor.py:
             def `_report_variables`:
                 def `was`:
                     '{n} (was: {o})': {n} (prej: {o})
-                '    \\n': false
+                '    \n': false
                 <td>{square(*color)} {was(value, old_value)}</td>: false
                 <td colspan="{max_values}">: false
                 {pal.friendly_name}</td>: false
-                '<tr style="height: 2em">\\n': false
+                '<tr style="height: 2em">\n': false
                 '  <th style="text-align: right">{names}</th>': false
-                '  {value_cols}\\n': false
+                '  {value_cols}\n': false
                 </tr>\n: false
             Features: Spremenljivke
             {pl(len(dom.class_vars), "Outcome")}: {plsi(len(dom.class_vars), "Ciljna spremenljivka|Ciljni spremenljivki|Ciljne spremenljivke")}
@@ -5613,7 +5613,7 @@ widgets/data/owfeatureconstructor.py:
         A numeric expression\n\n: Številski izraz\n\n
     class `DateTimeFeatureEditor`:
         'Result must be a string in ISO-8601 format ': 'Rezultat mora biti niz v formatu ISO-8601 '
-        '(e.g. 2019-07-30T15:37:27 or a part thereof),\\n': (npr. 2019-07-30T15:37:27 ali del tega),\n
+        (e.g. 2019-07-30T15:37:27 or a part thereof),\n: (npr. 2019-07-30T15:37:27 ali del tega),\n
         or a number of seconds since Jan 1, 1970.: ali število sekund od 1. januarja 1970
     class `DiscreteFeatureEditor`:
         Result must be a string, if values are not explicitly given\n: Če vrednosti niso eksplicitno podane spodaj, mora biti rezultat niz,
@@ -5919,7 +5919,7 @@ widgets/data/owfile.py:
         class `Warning`:
             The file is too large to load automatically.: Datoteka je prevelika za samodejno branje.
             ' Press Reload to load.': " Pritisni 'Ponovno naloži' za branje."
-            'Read warning:\\n{}': Opozorilo ob branju:\n{}
+            Read warning:\n{}: Opozorilo ob branju:\n{}
             Categorical variables with >100 values may decrease performance.: Kategorične spremenljivke z veliko vrednostmi lahko upočasnijo delovanje.
             'Some variables have been renamed ': Spremenljivke s podvojenimi imeni so preimenovane.
             to avoid duplicates.\n{}: \n{}
@@ -5928,7 +5928,7 @@ widgets/data/owfile.py:
             File not found.: Datoteka ni najdena.
             Missing reader.: Bralnik za ta tip ne obstaja.
             Error listing available sheets.: Napaka ob ustvarjanju seznama listov.
-            'Read error:\\n{}': Napaka ob branju:\n{}
+            Read error:\n{}: Napaka ob branju:\n{}
         'Use CSV File Import widget for advanced options ': 'Uporabi Bralnik CSV za napredne možnosti '
         for comma-separated files: za datoteke ločene z vejico
         use-csv-file-import: falxe
@@ -7274,7 +7274,7 @@ widgets/data/owpythonscript.py:
             s: false
         def `commit`:
             _script: false
-            '\\nRunning script:\\n': \nIzvajam skripto:\n
+            \nRunning script:\n: \nIzvajam skripto:\n
             exec(_script): false
             out_: false
             "'{}' has to be an instance of '{}'.": '{}' mora biti '{}'.
@@ -7927,8 +7927,8 @@ widgets/data/owtranspose.py:
             Data: Podatki
         Feature: Spremenljivka
         class `Warning`:
-            'Values are not unique.\\nTo avoid multiple ': Vrednosti niso unikatne.\n K vrednostim
-            'features with the same name, values \\nof ': '{}' so zato dodane številke.
+            'Values are not unique.\nTo avoid multiple ': Vrednosti niso unikatne.\n K vrednostim
+            'features with the same name, values \nof ': '{}' so zato dodane številke.
             "'{}' have been augmented with indices.": ""
             Categorical features have been encoded as numbers.: Kategorične vrednosti so predstavljene z indeksi.
         class `Error`:
@@ -8220,7 +8220,7 @@ widgets/data/utils/pythoneditor/editor.py:
         def `insertFromMimeData`:
             ', ': false
             "'": false
-            '\'\\"\'\\"\'': false
+            '''\"''\"''': false
         def `get_current_word_and_position`:
             def `is_special_character`:
                 ([^\d\W]\w*): false
@@ -8597,7 +8597,7 @@ widgets/evaluate/owconfusionmatrix.py:
             '{:2.1f}': null
             NA: null
             trbl: null
-            'actual: {}\\npredicted: {}': null
+            'actual: {}\npredicted: {}': null
             t: null
             l: null
         def `send_report`:
@@ -8675,8 +8675,8 @@ widgets/evaluate/owliftcurve.py:
             k: null
         def `_plot_curve`:
             def `tip`:
-                '{xlabel}: {round(x, 3)}\\n': null
-                '{ylabel}: {round(y, 3)}\\n': null
+                '{xlabel}: {round(x, 3)}\n': null
+                '{ylabel}: {round(y, 3)}\n': null
                 'Threshold: {round(data, 3)}': null
             def `_plot`:
                 hoverable: null
@@ -8941,7 +8941,7 @@ widgets/evaluate/owrocanalysis.py:
             bottom: null
             left: null
         def `_on_mouse_moved`:
-            'Thresholds:\\n': null
+            Thresholds:\n: null
             \n: null
             '({:s}) {:.3f}': null
         def `_on_target_prior_changed`:
@@ -9069,17 +9069,17 @@ widgets/evaluate/owtestandscore.py:
         def `update_stats_model`:
             '{:.3f}': null
             {} (error): null
-            '{name} failed with error:\\n': null
+            {name} failed with error:\n: null
             '{exc.__class__.__name__}: {exc!s}': null
             \n: null
         def `_scores_by_folds`:
             weighted: null
         def `_fill_table`:
             '{p0:.3f}<br/><small>{rope:.3f}</small>': null
-            'p({row_name} > {col_name}) = {p0:.3f}\\n': null
+            p({row_name} > {col_name}) = {p0:.3f}\n: null
             'p({row_name} = {col_name}) = {rope:.3f}': null
             '{p1:.3f}<br/><small>{rope:.3f}</small>': null
-            'p({col_name} > {row_name}) = {p1:.3f}\\n': null
+            p({col_name} > {row_name}) = {p1:.3f}\n: null
             'p({col_name} = {row_name}) = {rope:.3f}': null
             '{p0:.3f}': null
             'p({row_name} > {col_name}) = {p0:.3f}': null
@@ -9675,7 +9675,7 @@ widgets/model/owneuralnetwork.py:
         100,: null
         class `Warning`:
             'ANN without hidden layers is equivalent to logistic ': null
-            'regression with worse fitting.\\nWe recommend using ': null
+            'regression with worse fitting.\nWe recommend using ': null
             logistic regression.: null
         def `add_main_layout`:
             'Neurons in hidden layers:': null
@@ -10368,7 +10368,7 @@ widgets/unsupervised/owcorrespondence.py:
             left: null
         def `_update_info`:
             \n\n: null
-            'Axis 1: {:.2f}\\n': null
+            'Axis 1: {:.2f}\n': null
             'Axis 2: {:.2f}': null
         def `send_report`:
             Data instances: null
@@ -10459,7 +10459,7 @@ widgets/unsupervised/owdistancefile.py:
         def `open_file`:
             .: null
             (none): null
-            ' \\n': null
+            ' \n': null
         def `send_report`:
             No data was loaded.: null
             File name: null
@@ -10589,7 +10589,7 @@ widgets/unsupervised/owdistances.py:
             No binary features: Ni binarnih spremenljivk
             {} requires dense data.: {} zahteva goste podatke.
             Not enough memory: Ni dovolj pomnilnika
-            'Problem in calculation:\\n{}': Težava pri izračunu:\n{}
+            Problem in calculation:\n{}: Težava pri izračunu:\n{}
             Mahalanobis handles up to 1000 {}.: Mahalanobisova razdalja zmore do 1000 {}.
         class `Warning`:
             Ignoring categorical features: Kategoričnih spremenljivk ne upoštevam
@@ -10776,7 +10776,7 @@ widgets/unsupervised/owkmeans.py:
             Annotated Data: null
             Centroids: null
         class `Error`:
-            'Clustering failed\\nError: {}': null
+            'Clustering failed\nError: {}': null
             Too few ({}) unique data instances for {} clusters: null
             Data is missing features.: null
         class `Warning`:
@@ -12308,7 +12308,7 @@ widgets/utils/pathutils.py:
 widgets/utils/progressbar.py:
     ProgressBarMixin: null
     def `_warn_deprecated_arg`:
-        "'processEvents' argument is deprecated.\\n": null
+        "'processEvents' argument is deprecated.\n": null
         'It does nothing and will be removed in the future (passing it ': null
         will raise a TypeError).: null
 widgets/utils/saveplot.py:
@@ -12380,9 +12380,9 @@ widgets/utils/state_summary.py:
         '{len(data):n} instance{_plural(len(data))}, ': null
         {n_features} variable{_plural(n_features)}: null
         '{name}: ': null
-        '\\nFeatures: {features} {features_missing}': null
-        '\\nTarget: {targets}': null
-        '\\nMetas: {metas}': null
+        '\nFeatures: {features} {features_missing}': null
+        '\nTarget: {targets}': null
+        '\nMetas: {metas}': null
         '<b><u>{escape(name)}</u></b>: {basic}': null
         {basic}: null
         'Features: {features} {features_missing}': null
@@ -13106,7 +13106,7 @@ widgets/visualize/owboxplot.py:
         def `_compute_tests_disc`:
             'χ²: {chi:.2f} (p={p:.3f}, dof={dof})': true
         def `mean_label`:
-            ' \\u00b1 ': true
+            ' \u00b1 ': true
             %.*f: true
             ': ': true
         def `draw_axis`:
@@ -13826,7 +13826,7 @@ widgets/visualize/owpythagorastree.py:
             meta_size_calc_idx: false
             meta_depth_limit: false
         def `_update_info_box`:
-            'Nodes: {}\\nDepth: {}': Število vozlišč: {}, globina: {}
+            'Nodes: {}\nDepth: {}': Število vozlišč: {}, globina: {}
         def `_update_log_scale_slider`:
             Logarithmic: Logaritmična
         def `_clear_info_box`:
@@ -13972,7 +13972,7 @@ widgets/visualize/owruleviewer.py:
         def `data`:
             def `_display_role`:
                 ' AND ': ' IN '
-                ' AND\\n': ' IN \\n'
+                ' AND\n': ' IN \n'
                 TRUE: Sicer
                 →: false
                 =: false
@@ -13983,7 +13983,7 @@ widgets/visualize/owruleviewer.py:
                 e: false
             def `_tooltip_role`:
                 ' AND ': ' IN '
-                ' AND\\n': ' IN\\n'
+                ' AND\n': ' IN\n'
                 \n: false
                 ': ': false
                 '{:.1f}': false
@@ -14613,7 +14613,7 @@ widgets/visualize/pythagorastreeviewer.py:
         def `tooltip`:
             <br>: false
             <p>: false
-            '{}/{} samples ({:2.3f}%)':'{}/{} primerov ({:2.3f}%)'
+            '{}/{} samples ({:2.3f}%)': '{}/{} primerov ({:2.3f}%)'
             <hr>: false
             'Split by ': Delitev glede na
             <br><br>: false
