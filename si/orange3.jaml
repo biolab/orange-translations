@@ -8549,75 +8549,75 @@ widgets/evaluate/owcalibrationplot.py:
 widgets/evaluate/owconfusionmatrix.py:
     class `BorderedItemDelegate`:
         def `paint`:
-            t: null
-            r: null
-            b: null
-            l: null
+            t: false
+            r: false
+            b: false
+            l: false
     class `OWConfusionMatrix`:
-        Confusion Matrix: null
-        'Display a confusion matrix constructed from ': null
-        the results of classifier evaluations.: null
-        icons/ConfusionMatrix.svg: null
+        Confusion Matrix: Matrika zmot
+        'Display a confusion matrix constructed from ': "Pokaži matriko zmot glede na "
+        the results of classifier evaluations.: rezultate vrednotenja.
+        icons/ConfusionMatrix.svg: false
         class `Inputs`:
-            Evaluation Results: null
+            Evaluation Results: Rezultati vrednotenja
         class `Outputs`:
-            Selected Data: null
-        Number of instances: null
-        Proportion of predicted: null
-        Proportion of actual: null
-        Sum of probabilities: null
-        Number of correctly and incorrectly classified instances: null
-        'Number of instances, distributed across columns ': null
-        according to predicted probabilities: null
-        'Clicking on cells or in headers outputs the corresponding ': null
-        data instances: null
-        click_cell: null
+            Selected Data: Izbrani podatki
+        Number of instances: Število primerov
+        Proportion of predicted: Delež od napovedanih
+        Proportion of actual: Delež od dejanskih
+        Sum of probabilities: Vsota verjetnosti
+        Number of correctly and incorrectly classified instances: Število pravilno oz. napačno uvrščenih primerov
+        'Number of instances, distributed across columns ': "Podobno kot število primerov, le da je vsak primer\n"razmazan" po stolpcih "
+        according to predicted probabilities: glede na napovedane verjetnosti.
+        'Clicking on cells or in headers outputs the corresponding ': "Izberite eno ali več celic (ali kliknite glavo tabele) in pripadajoči "
+        data instances: primeri bodo na izhodu.
+        click_cell: false
         class `Error`:
-            Confusion Matrix cannot show regression results.: null
-            Evaluation Results input contains invalid values: null
-            Empty result on input. Nothing to display.: null
+            Confusion Matrix cannot show regression results.: Matrika zmot obravnava klasifikacijo, ne regresije.
+            Evaluation Results input contains invalid values: Rezulati vrednotenja vsebujejo neveljavne vrednosti.
+            Empty result on input. Nothing to display.: Ni podatkov za prikaz.
         def `__init__`:
-            selected_learner: null
-            learners: null
-            Learners: null
-            Output: null
-            append_predictions: null
-            Predictions: null
-            append_probabilities: null
-            Probabilities: null
-            autocommit: null
-            selected_quantity: null
-            'Show: ': null
-            Select Correct: null
-            Select Misclassified: null
-            Clear Selection: null
+            selected_learner: false
+            learners: false
+            Learners: Modeli
+            Output: Izhod
+            append_predictions: false
+            Predictions: Napovedi
+            append_probabilities: false
+            Probabilities: Verjetnosti
+            autocommit: false
+            selected_quantity: false
+            'Show: ': "Pokaži: "
+            Select Correct: Izberi pravilne
+            Select Misclassified: Izberi napačne
+            Clear Selection: Počisti izbor
         def `_init_table`:
-            Predicted: null
-            Actual: null
-            br: null
-            ' ': null
+            Predicted: Napovedana vrednost
+            Actual: Dejanska vrednost
+            br: false
+            ' ': false
         def `set_results`:
-            N-ARY SUMMATION: null
-            learner_names: null
-            Learner #{i + 1}: null
+            N-ARY SUMMATION: false
+            learner_names: false
+            Learner #{i + 1}: Model #{i + 1}
         def `_prepare_data`:
-            {}({}): null
-            p({value}): null
+            {}({}): false
+            p({value}): true
         def `_update`:
-            {}: null
-            '{:2.1f} %': null
-            '{:2.1f}': null
-            NA: null
-            trbl: null
-            'actual: {}\npredicted: {}': null
-            t: null
-            l: null
+            {}: false
+            '{:2.1f} %': false
+            '{:2.1f}': false
+            NA: NN
+            trbl: false
+            'actual: {}\npredicted: {}': dejanski: {}\nnapovedani: {}
+            t: false
+            l: false
         def `send_report`:
-            Confusion matrix for {} (showing {}): null
+            Confusion matrix for {} (showing {}): Matrika zmot za {} (prikazano {})
         def `migrate_settings`:
-            selected_learner: null
-    __main__: null
-    iris: null
+            selected_learner: false
+    __main__: false
+    iris: false
 widgets/evaluate/owliftcurve.py:
     CurveData: null
     contacted: null
