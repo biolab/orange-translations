@@ -8393,113 +8393,118 @@ widgets/evaluate/__init__.py:
     '#C3F3F3': null
     icons/Category-Evaluate.svg: null
 widgets/evaluate/owcalibrationplot.py:
-    metric_definition: null
-    name: null
-    functions: null
-    short_names: null
-    explanation: null
-    Calibration curve: null
-    Classification accuracy: null
-    F1: null
-    Sensitivity and specificity: null
-    sens: null
-    spec: null
-    '<p><b>Sensitivity</b> (falling) is the proportion of correctly ': null
-    detected positive instances (TP&nbsp;/&nbsp;P).</p>: null
-    '<p><b>Specificity</b> (rising) is the proportion of detected ': null
-    negative instances (TN&nbsp;/&nbsp;N).</p>: null
-    Precision and recall: null
-    prec: null
-    recall: null
-    '<p><b>Precision</b> (rising) is the fraction of retrieved instances ': null
-    that are relevant, TP&nbsp;/&nbsp;(TP&nbsp;+&nbsp;FP).</p>: null
-    '<p><b>Recall</b> (falling) is the proportion of discovered relevant ': null
-    instances, TP&nbsp;/&nbsp;P.</p>: null
-    Pos and neg predictive value: null
-    PPV: null
-    TPV: null
-    '<p><b>Positive predictive value</b> (rising) is the proportion of ': null
-    correct positives, TP&nbsp;/&nbsp;(TP&nbsp;+&nbsp;FP).</p>: null
-    '<p><b>Negative predictive value</b> is the proportion of correct ': null
-    negatives, TN&nbsp;/&nbsp;(TN&nbsp;+&nbsp;FN).</p>: null
-    True and false positive rate: null
-    TPR: null
-    FPR: null
-    '<p><b>True and false positive rate</b> are proportions of detected ': null
-    and omitted positive instances</p>: null
+    metric_definition: false
+    name: false
+    functions: false
+    short_names: false
+    explanation: false
+    Calibration curve: Kalibracijska krivulja
+    Classification accuracy: Klasifikacijska točnost
+    F1: true
+    Sensitivity and specificity: Senzitivnost in specifičnost
+    sens: senz
+    spec: spec
+    '<p><b>Sensitivity</b> (falling) is the proportion of correctly ': "<p><b>Senzitivnost</b> (padajoča) je delež pravilno "
+    detected positive instances (TP&nbsp;/&nbsp;P).</p>: zaznanih pozitivnih primerov, TP&nbsp;/&nbsp;P.</p>
+    '<p><b>Specificity</b> (rising) is the proportion of detected ': ""<p><b>Specifičnost</b> (naraščajoča) je delež pravilno "
+    negative instances (TN&nbsp;/&nbsp;N).</p>: zaznanih negativnih primerov, TN&nbsp;/&nbsp;N.</p>
+    Precision and recall: Preciznost in priklic
+    prec: spec
+    recall: priklic
+    '<p><b>Precision</b> (rising) is the fraction of retrieved instances ': "<p><b>Preciznost</b> (naraščajoča) je delež zaznanih relevantnih primerov, "
+    that are relevant, TP&nbsp;/&nbsp;(TP&nbsp;+&nbsp;FP).</p>: TP&nbsp;/&nbsp;(TP&nbsp;+&nbsp;FP).</p>
+    '<p><b>Recall</b> (falling) is the proportion of discovered relevant ': "<p><b>Priklic</b> (padajoč) je delež odkritih relevantnih primerov, "
+    instances, TP&nbsp;/&nbsp;P.</p>:  TP&nbsp;/&nbsp;P.</p>
+    Pos and neg predictive value: Poz in neg nap. vrednost
+    PPV: true
+    TPV: true
+    '<p><b>Positive predictive value</b> (rising) is the proportion of ': "<p><b>Pozitivna napovedna vrednost</b> (naraščajoča) je delež "
+    correct positives, TP&nbsp;/&nbsp;(TP&nbsp;+&nbsp;FP).</p>: dejansko pozitivnih, TP&nbsp;/&nbsp;(TP&nbsp;+&nbsp;FP).</p>
+    '<p><b>Negative predictive value</b> is the proportion of correct ': "<p><b>Negativna napovedna vrednost</b> (naraščajoča) je delež "
+    negatives, TN&nbsp;/&nbsp;(TN&nbsp;+&nbsp;FN).</p>: dejanstko negativnih, , TN&nbsp;/&nbsp;(TN&nbsp;+&nbsp;FN).</p>
+    True and false positive rate: Delež zaznanih poz in neg
+    TPR: true
+    FPR: true
+    '<p><b>True and false positive rate</b> are proportions of detected ': ""<p><b>Delež zaznanih pozitivnih in negativnih primerov</b> izmed vseh "
+    and omitted positive instances</p>: pozitivnih oz. negativnih primerov.
     class `ParameterSetter`:
         def `axis_items`:
-            item: null
+            item: false
     class `OWCalibrationPlot`:
-        Calibration Plot: null
-        Calibration plot based on evaluation of classifiers.: null
-        icons/CalibrationPlot.svg: null
+        Calibration Plot: Kalibracijska krivulja
+        Calibration plot based on evaluation of classifiers.: Kalibracijska krivulja na osnovi rezultatov vrednotenja modelov.
+        icons/CalibrationPlot.svg: false
         class `Inputs`:
-            Evaluation Results: null
+            Evaluation Results: Rezultati vrednotenja
         class `Outputs`:
-            Calibrated Model: null
+            Calibrated Model: Kalibrirani model
         class `Error`:
-            'Calibration plot requires a categorical ': null
-            target variable.: null
-            Empty result on input. Nothing to display.: null
-            Remove test data instances with unknown classes.: null
-            All data instances belong to target class.: null
-            No data instances belong to target class.: null
+            'Calibration plot requires a categorical ': Kalibracijska krivulja zahteva kategorično ciljno spremenljivko.
+            target variable.: """
+            Empty result on input. Nothing to display.: Ni rezultatov za prikaz.
+            Remove test data instances with unknown classes.: Odstrani testne primere z neznanim razredom.
+            All data instances belong to target class.: Vsi testni primeri pripadajo ciljnemu razredu.
+            No data instances belong to target class.: Noben testni primer na pripada ciljnemu razredu.
         class `Warning`:
-            Test folds where all data belongs to (non)-target are not shown.: null
-            Instance for which the model couldn't compute probabilities are: null
-            skipped.: null
-            No valid data for model(s) {}: null
+            Test folds where all data belongs to (non)-target are not shown.: Testne množice v kateri vsi podatki pripadajo (ne)-ciljnemu razredu so izpuščeni.
+            Instance for which the model couldn't compute probabilities are: Primeri za katere model ne more izračunati verjetnosti so izpuščeni.
+            skipped.: ""
+            No valid data for model(s) {}: Ni veljavnih podatkov za model(e) {}
         class `Information`:
-            "Can't output a model: {}": null
+            "Can't output a model: {}": Na izhodu ni modela: {}
         plot: null
         def `__init__`:
-            Settings: null
-            target_index: null
-            'Target:': null
-            display_rug: null
-            Show rug: null
-            fold_curves: null
-            Curves for individual folds: null
-            selected_classifiers: null
-            classifier_names: null
-            Classifier: null
-            Metrics: null
-            score: null
-            output_calibration: null
-            Sigmoid calibration: null
-            Isotonic calibration: null
-            Output model calibration: null
-            Info: null
-            auto_commit: null
-            bottom: null
-            left: null
+            Settings: Nastavitve
+            target_index: false
+            Target:: Cilj:
+            display_rug: false
+            Show rug: Pokaži preprogo
+            fold_curves: false
+            Curves for individual folds: Krivulje za podmnožice
+            selected_classifiers: false
+            classifier_names: false
+            Classifier: Modeli
+            Metrics: Metrika
+            score: false
+            output_calibration: false
+            Sigmoid calibration: Sigmoidna kalibracija
+            Isotonic calibration: Izotonična kalibracija
+            Output model calibration: Kalibracija izhodnega modela
+            Info: Rezultati
+            auto_commit: false
+            bottom: false
+            left: false
         def `_set_explanation`:
-            bottom: null
-            Predicted probability: null
-            Threshold probability to classify as positive: null
-            left: null
+            bottom: false
+            Predicted probability: Napovedana verjetnost
+            Threshold probability to classify as positive: Prag za klasifikacijo v pozitivni razred
+            left: false
         def `_initialize`:
-            learner_names: null
-            '#{}': null
+            learner_names: false
+            '#{}': false
         def `_rug`:
-            pen: null
-            pairs: null
+            pen: false
+            pairs: false
         def `_prob_curve`:
-            +: null
+            +: false
         def `_setup_plot`:
-            ', ': null
-            k: null
+            ', ': false
+            k: false
         def `get_info_text`:
             def `elided`:
-                ...: null
+                ...: false
             |
                 <table>
                                             <tr>
                                                 <th align='right'>Threshold: p=</th>
                                                 <td colspan='4'>{self.threshold:.2f}<br/></td>
                                             </tr>
-            : null
+            :  |
+                <table>
+                                            <tr>
+                                                <th align='right'>Prag:</th>
+                                                <td colspan='4'>{self.threshold:.2f}<br/></td>
+                                            </tr>
             |
                 <table>
                                             <tr>
@@ -8508,32 +8513,39 @@ widgets/evaluate/owcalibrationplot.py:
                                                 </td>
                                                 <tr/>
                                             </tr>
-            : null
+            : |
+                <table>
+                                            <tr>
+                                                <th align='right'>Prag:</th>
+                                                <td colspan='4'>p = {self.threshold:.2f}<br/>
+                                                </td>
+                                                <tr/>
+                                            </tr>
             |
                 <tr>
                                                 <th></th>
                                                 {"<td></td>".join(f"<td align='right'>{n}</td>"
                                                   for n in short_names)}
                                             </tr>
-            : null
-            "<tr><th align='right'>{elided(name)}:</th>": null
-            <td>/</td>: null
-            '<td>{curve[ind]:.3f}</td>': null
-            </tr>: null
-            <table>: null
+            : false
+            "<tr><th align='right'>{elided(name)}:</th>": false
+            <td>/</td>: false
+            '<td>{curve[ind]:.3f}</td>': false
+            </tr>: false
+            <table>: false
         def `commit`:
-            each training data sample produces a different model: null
-            'test results do not contain stored models - try testing ': null
-            on separate data or on training data: null
-            select a single model - the widget can output only one: null
-            cannot calibrate non-binary classes: null
-            \n - {problem}: null
+            each training data sample produces a different model: vsaka podmnožica učnih podatkov sestavi drug model
+            'test results do not contain stored models - try testing ': "rezultati vrednotenja ne vsebujejo modelov - poskusite testirati "
+            on separate data or on training data: na ločenih podatkih ali na učni množici.
+            select a single model - the widget can output only one: izberite posamični model
+            cannot calibrate non-binary classes: ne morem kalibrirati ne-binarnih modelov
+            \n - {problem}: true
         def `send_report`:
-            Target class: null
-            Output model calibration: null
-            Sigmoid calibration: null
-            Isotonic calibration: null
-    __main__: null
+            Target class: Ciljni razred
+            Output model calibration: Kalibracija izhodnega modela
+            Sigmoid calibration: Sigmoidna kalibracija
+            Isotonic calibration: Izotonična kalibracija
+    __main__: false
 widgets/evaluate/owconfusionmatrix.py:
     class `BorderedItemDelegate`:
         def `paint`:
