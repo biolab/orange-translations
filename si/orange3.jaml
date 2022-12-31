@@ -8619,120 +8619,120 @@ widgets/evaluate/owconfusionmatrix.py:
     __main__: false
     iris: false
 widgets/evaluate/owliftcurve.py:
-    CurveData: null
-    contacted: null
-    respondents: null
-    thresholds: null
+    CurveData: false
+    contacted: false
+    respondents: false
+    thresholds: false
     class `ParameterSetter`:
-        Line: null
-        Default Line: null
-        Solid line: null
-        Dash line: null
+        Line: Črta
+        Default Line: Privzeta črta
+        Solid line: Polna črta
+        Dash line: Prekinjena črta
         def `axis_items`:
-            item: null
+            item: false
     class `OWLiftCurve`:
-        Performance Curve: null
-        'Construct and display a performance curve ': null
-        from the evaluation of classifiers.: null
-        icons/LiftCurve.svg: null
-        lift: null
-        cumulative gain: null
-        precision: null
-        recall: null
-        curve: null
+        Performance Curve: Krivulja zmogljivosti
+        'Construct and display a performance curve ': "Sestavi in pokaže krivuljo zmogljivosti "
+        from the evaluation of classifiers.: iz rezultatov vrednotenja.
+        icons/LiftCurve.svg: false
+        lift: dvig
+        cumulative gain: kumulativni dobiček
+        precision: preciznost
+        recall: priklic
+        curve: krivulja
         class `Inputs`:
-            Evaluation Results: null
+            Evaluation Results: Rezultati vrednotenja
         class `Outputs`:
-            Calibrated Model: null
+            Calibrated Model: Kalibriran model
         class `Warning`:
-            Some curves are undefined; check models and data: null
+            Some curves are undefined; check models and data: Nekatere krivulje niso definirane; preverite modele in podatke.
         class `Error`:
-            No defined curves; check models and data: null
+            No defined curves; check models and data: Ni veljavnih krivulj; preverite modele in podatke.
         class `Information`:
-            "Can't output a model: {}": null
-        plot: null
-        P Rate: null
-        Recall: null
-        Lift: null
-        TP Rate: null
-        Precision: null
+            "Can't output a model: {}": Ni izhodnega modela: {}
+        plot: false
+        P Rate: Delež pozitivnih
+        Recall: Priklic
+        Lift: Dvig
+        TP Rate: Delež resničnih pozitivnih
+        Precision: Preciznost
         def `__init__`:
-            Curve: null
-            target_index: null
-            'Target: ': null
-            curve_type: null
-            Lift Curve: null
-            Cumulative Gains: null
-            Precision Recall: null
-            selected_classifiers: null
-            classifier_names: null
-            Models: null
-            Settings: null
-            show_threshold: null
-            Show thresholds: null
-            show_points: null
-            Show points: null
-            Area under the curve: null
-            /: null
-            auto_commit: null
-            bottom: null
-            left: null
+            Curve: Krivulja
+            target_index: false
+            'Target: ': "Cilj: "
+            curve_type: false
+            Lift Curve: Krivulja dviga
+            Cumulative Gains: Kumulativni dobiček
+            Precision Recall: Preciznost - Priklic
+            selected_classifiers: false
+            classifier_names: false
+            Models: Modeli
+            Settings: Nastavitve
+            show_threshold: false
+            Show thresholds: Pokaži prag
+            show_points: false
+            Show points: Pokaži točke
+            Area under the curve: Površina pod krivuljo
+            /: false
+            auto_commit: false
+            bottom: false
+            left: false
         def `_initialize`:
-            learner_names: null
-            '#{i}': null
+            learner_names: false
+            '#{i}': false
         def `_set_axes_labels`:
-            bottom: null
-            left: null
+            bottom: false
+            left: false
         def `_setup_plot`:
-            k: null
+            k: false
         def `_plot_curve`:
             def `tip`:
-                '{xlabel}: {round(x, 3)}\n': null
-                '{ylabel}: {round(y, 3)}\n': null
-                'Threshold: {round(data, 3)}': null
+                '{xlabel}: {round(x, 3)}\n': false
+                '{ylabel}: {round(y, 3)}\n': false
+                'Threshold: {round(data, 3)}': 'Prag: {round(data, 3)}'
             def `_plot`:
-                hoverable: null
-                tip: null
-            symbol: null
-            o: null
-            symbolSize: null
-            symbolPen: null
-            symbolBrush: null
-            data: null
-            stepMode: null
-            right: null
+                hoverable: false
+                tip: false
+            symbol: false
+            o: false
+            symbolSize: false
+            symbolPen: false
+            symbolBrush: false
+            data: false
+            stepMode: false
+            right: false
         def `_update_info`:
-            /: null
-            <table>: null
-            {round(area, 3)}: null
-            <tr align=left>: null
-            "<td style='color:{self.colors[clf_idx].name()}'>■</td>": null
-            '<td>{self.classifier_names[clf_idx]}:  </td>': null
-            <td align=right>{area}</td>: null
-            </tr>: null
+            /: false
+            <table>: false
+            {round(area, 3)}: false
+            <tr align=left>: false
+            "<td style='color:{self.colors[clf_idx].name()}'>■</td>": false
+            '<td>{self.classifier_names[clf_idx]}:  </td>': false
+            <td align=right>{area}</td>: false
+            </tr>: false
         def `_set_tooltip`:
-            '<div style="color: #333; font-size: 12px;"': null
-            ' <span>Probability threshold(s):</span>': null
-            data: null
-            <div>: null
-            '<span style="font-weight: 700; ': null
-            'color: {item.opts["pen"].color().name()}"> — </span>': null
-            <span>{round(threshold, 3)}</span>: null
-            </div>: null
+            '<div style="color: #333; font-size: 12px;"': false
+            ' <span>Probability threshold(s):</span>': ' <span>{plsi(len(self.plot.curve_items), "prag|praga|pragi")} verjetnosti:</span>'
+            data: false
+            <div>: false
+            '<span style="font-weight: 700; ': false
+            'color: {item.opts["pen"].color().name()}"> — </span>': false
+            <span>{round(threshold, 3)}</span>: false
+            </div>: false
         def `commit`:
-            each training data sample produces a different model: null
-            'test results do not contain stored models - try testing ': null
-            on separate data or on training data: null
-            select a single model - the widget can output only one: null
-            cannot calibrate non-binary classes: null
-            \n - {problem}: null
-            data: null
+            each training data sample produces a different model: vsaka podmnožica učnih podatkov sestavi drug model
+            'test results do not contain stored models - try testing ': "rezultati vrednotenja ne vsebujejo modelov - poskusite testirati "
+            on separate data or on training data: na ločenih podatkih ali na učni množici.
+            select a single model - the widget can output only one: izberite posamični model
+            cannot calibrate non-binary classes: ne morem kalibrirati ne-binarnih modelov
+            \n - {problem}: true
+            data: false
         def `send_report`:
-            Target class: null
+            Target class: Ciljni razred
     def `cumulative_gains`:
-        array dimensions don't match: null
-        mergesort: null
-    __main__: null
+        array dimensions don't match: false
+        mergesort: false
+    __main__: false
 widgets/evaluate/owpredictions.py:
     PredictorSlot: null
     predictor: null
