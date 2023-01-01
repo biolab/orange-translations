@@ -8896,88 +8896,88 @@ widgets/evaluate/owrocanalysis.py:
     PlotCurves: null
     merge: null
     class `OWROCAnalysis`:
-        ROC Analysis: null
-        'Display the Receiver Operating Characteristics curve ': null
-        based on the evaluation of classifiers.: null
-        icons/ROCAnalysis.svg: null
+        ROC Analysis: Analiza ROC
+        'Display the Receiver Operating Characteristics curve ': "Pokaže krivuljo ROC za "
+        based on the evaluation of classifiers.: rezultate vrednotenja.
+        icons/ROCAnalysis.svg: false
         class `Inputs`:
-            Evaluation Results: null
-        plot: null
+            Evaluation Results: Rezultati vrednotenja
+        plot: false
         def `__init__`:
-            Plot: null
-            target_index: null
-            Target: null
-            Classifiers: null
-            selected_classifiers: null
-            classifier_names: null
-            Curves: null
-            roc_averaging: null
-            Merge Predictions from Folds: null
-            Mean TP Rate: null
-            Mean TP and FP at Threshold: null
-            Show Individual Curves: null
-            display_convex_curve: null
-            Show convex ROC curves: null
-            display_convex_hull: null
-            Show ROC convex hull: null
-            Analysis: null
-            display_def_threshold: null
-            Default threshold (0.5) point: null
-            display_perf_line: null
-            Show performance line: null
-            fp_cost: null
-            'FP Cost:': null
-            fn_cost: null
-            'FN Cost:': null
-            target_prior: null
-            ' %': null
-            Auto: null
-            'Prior probability:': null
-            bottom: null
-            FP Rate (1-Specificity): null
-            left: null
-            TP Rate (Sensitivity): null
+            Plot: Krivulja
+            target_index: false
+            Target: Ciljni razred
+            Classifiers: Modeli
+            selected_classifiers: false
+            classifier_names: false
+            Curves: Krivulje
+            roc_averaging: false
+            Merge Predictions from Folds: Združi napovedi na podmnožicah
+            Mean TP Rate: Povprečni delež resničnih poz.
+            Mean TP and FP at Threshold: Povprečni res. poz. in laž. neg. na pragu
+            Show Individual Curves: Pokaži posamične krivulje
+            display_convex_curve: false
+            Show convex ROC curves: Pokaži konveksne krivulje
+            display_convex_hull: false
+            Show ROC convex hull: Pokaži konveksno ovojnico
+            Analysis: Analiza
+            display_def_threshold: false
+            Default threshold (0.5) point: Privzeti prag (0.5)
+            display_perf_line: false
+            Show performance line: Pokaži črto delovanja
+            fp_cost: false
+            'FP Cost:': Cena lažnega neg.
+            fn_cost: false
+            'FN Cost:': Cena lažnega poz.
+            target_prior: false
+            ' %': true
+            Auto: false
+            Prior probability:: Apriorna verjetnost:
+            bottom: false
+            FP Rate (1-Specificity): Delež lažnih pozitivnih (1 - specifičnost)
+            left: false
+            TP Rate (Sensitivity): Delež resničnih pozitivnih (senzitivnost)
         def `_initialize`:
-            learner_names: null
-            '#{}': null
+            learner_names: false
+            '#{}': true
         def `_set_target_prior`:
-            'color: gray;': null
+            'color: gray;': false
         def `_setup_plot`:
             def `merge_averaging`:
-                '{:.3f}': null
-            Some ROC curves are undefined: null
-            All ROC curves are undefined: null
+                '{:.3f}': false
+            Some ROC curves are undefined: Nekatere krivulje ROC niso definirane.
+            All ROC curves are undefined: Nobene krivulja ROC ni definirana.
         def `_update_axes_ticks`:
             def `enumticks`:
-                '{x:.2f}': null
-            bottom: null
-            left: null
+                '{x:.2f}': false
+            bottom: false
+            left: false
         def `_on_mouse_moved`:
-            Thresholds:\n: null
-            \n: null
-            '({:s}) {:.3f}': null
+            Thresholds:\n: Pragi:\n
+            \n: false
+            '({:s}) {:.3f}': false
         def `_on_target_prior_changed`:
-            'color: black;': null
+            'color: black;': false
         def `send_report`:
-            Target class: null
-            Costs: null
-            FP = {}, FN = {}: null
-            Target probability: null
-            {} %: null
+            Target class: Ciljni razred
+            Costs: Cene
+            FP = {}, FN = {}: Lažni pozitivni = {}, lažni negativni = {}
+            Target probability: Ciljna verjetnost
+            {} %: false
     def `interp`:
-        xp and fp must have the same shape: null
-        right: null
+        xp and fp must have the same shape: false
+        right: false
     def `roc_curve_vertical_average`:
-        No curves: null
+        No curves: false
     def `roc_curve_threshold_average`:
-        No curves: null
-        left: null
-    RocPoint: null
-    threshold: null
+        No curves: false
+        left: false
+    RocPoint: false
+    threshold: false
     def `_create_results`:
-        heart_disease: null
-        1100111001001000: null
-    __main__: null
+        heart_disease: false
+        1100111001001000: false
+    __main__: false
 widgets/evaluate/owtestandscore.py:
     class `InputLearner`:
         Try[Orange.evaluation.Results]: null
