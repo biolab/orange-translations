@@ -8404,6 +8404,7 @@ widgets/evaluate/owcalibrationplot.py:
     Sensitivity and specificity: Senzitivnost in specifičnost
     sens: senz
     spec: spec
+    # Tule puščam TP, TN in tako naprej. Moremo to kako prevesti?
     '<p><b>Sensitivity</b> (falling) is the proportion of correctly ': "<p><b>Senzitivnost</b> (padajoča) je delež pravilno "
     detected positive instances (TP&nbsp;/&nbsp;P).</p>: zaznanih pozitivnih primerov, TP&nbsp;/&nbsp;P.</p>
     '<p><b>Specificity</b> (rising) is the proportion of detected ': ""<p><b>Specifičnost</b> (naraščajoča) je delež pravilno "
@@ -8440,14 +8441,14 @@ widgets/evaluate/owcalibrationplot.py:
             Calibrated Model: Kalibrirani model
         class `Error`:
             'Calibration plot requires a categorical ': Kalibracijska krivulja zahteva kategorično ciljno spremenljivko.
-            target variable.: """
+            target variable.: ""
             Empty result on input. Nothing to display.: Ni rezultatov za prikaz.
             Remove test data instances with unknown classes.: Odstrani testne primere z neznanim razredom.
             All data instances belong to target class.: Vsi testni primeri pripadajo ciljnemu razredu.
-            No data instances belong to target class.: Noben testni primer na pripada ciljnemu razredu.
+            No data instances belong to target class.: Noben testni primer ne pripada ciljnemu razredu.
         class `Warning`:
-            Test folds where all data belongs to (non)-target are not shown.: Testne množice v kateri vsi podatki pripadajo (ne)-ciljnemu razredu so izpuščeni.
-            Instance for which the model couldn't compute probabilities are: Primeri za katere model ne more izračunati verjetnosti so izpuščeni.
+            Test folds where all data belongs to (non)-target are not shown.: Testne množice, v katerih vsi podatki pripadajo (ne)-ciljnemu razredu, so izpuščene.
+            Instance for which the model couldn't compute probabilities are: Primeri, za katere model ne more izračunati verjetnosti, so izpuščeni.
             skipped.: ""
             No valid data for model(s) {}: Ni veljavnih podatkov za model(e) {}
         class `Information`:
@@ -8574,7 +8575,7 @@ widgets/evaluate/owconfusionmatrix.py:
         click_cell: false
         class `Error`:
             Confusion Matrix cannot show regression results.: Matrika zmot obravnava klasifikacijo, ne regresije.
-            Evaluation Results input contains invalid values: Rezulati vrednotenja vsebujejo neveljavne vrednosti.
+            Evaluation Results input contains invalid values: Rezultati vrednotenja vsebujejo neveljavne vrednosti.
             Empty result on input. Nothing to display.: Ni podatkov za prikaz.
         def `__init__`:
             selected_learner: false
@@ -8980,161 +8981,161 @@ widgets/evaluate/owrocanalysis.py:
     __main__: false
 widgets/evaluate/owtestandscore.py:
     class `InputLearner`:
-        Try[Orange.evaluation.Results]: null
-        Try[float]: null
+        Try[Orange.evaluation.Results]: false
+        Try[float]: false
     class `Try`:
         class `Success`:
-            __value: null
+            __value: false
             def `__repr__`:
-                {}({!r}): null
+                {}({!r}): false
         class `Fail`:
-            __exception: null
+            __exception: false
             def `__repr__`:
-                {}({!r}): null
+                {}({!r}): false
     class `State`:
-        Waiting: null
-        Running: null
-        Done: null
-        Cancelled: null
+        Waiting: false
+        Running: false
+        Done: false
+        Cancelled: false
     class `OWTestAndScore`:
-        Test and Score: null
-        Cross-validation accuracy estimation.: null
-        icons/TestLearners1.svg: null
-        Cross Validation: null
-        CV: null
-        Orange.widgets.evaluate.owtestlearners.OWTestLearners: null
+        Test and Score: Testiraj in meri
+        Cross-validation accuracy estimation.: Ocenjevanje modeliranja s prečnim preverjanjem
+        icons/TestLearners1.svg: false
+        Cross Validation: Prečno preverjanje
+        CV: CV
+        Orange.widgets.evaluate.owtestlearners.OWTestLearners: false
         class `Inputs`:
-            Data: null
-            Test Data: null
-            Learner: null
-            Preprocessor: null
+            Data: Podatki
+            Test Data: Testni podatki
+            Learner: Algoritmi učenja
+            Preprocessor: Predprocesorji
         class `Outputs`:
-            Predictions: null
-            Evaluation Results: null
-        Click on the table header to select shown columns: null
-        click_header: null
-        (None, show average over classes): null
+            Predictions: Napovedi
+            Evaluation Results: Rezultati vrednotenja
+        Click on the table header to select shown columns: Kliknite glavo tabele za izbor mer
+        click_header: false
+        (None, show average over classes): (Brez, pokaži poprečje prek razredov)
         class `Error`:
-            Test dataset is empty.: null
-            Test data input requires a target variable.: null
-            Number of folds exceeds the data size: null
-            'Test and train datasets ': null
-            have different target variables.: null
-            Not enough memory.: null
-            Test data may be incompatible with train data.: null
-            {}: null
+            Test dataset is empty.: Tabela testnih podatkov je prazna
+            Test data input requires a target variable.: Testni podatki morajo imeti ciljno spremenljivko.
+            Number of folds exceeds the data size: Števil podmnožic presega število primerov.
+            'Test and train datasets ': "Učni in testni podatki "
+            have different target variables.: nimajo iste ciljne spremenljivke.
+            Not enough memory.: Ni dovolj pomnilnika.
+            Test data may be incompatible with train data.: Testni podatki niso združljivi z učnimi.
+            {}: false
         class `Warning`:
-            Instances with unknown target values were removed from{}data.: null
-            Missing separate test data input.: null
-            Some scores could not be computed.: null
-            'Test data is present but unused. ': null
-            Select 'Test on test data' to use it.: null
-            "Can't run stratified {}-fold cross validation; ": null
-            the least common class has only {} instances.: null
+            Instances with unknown target values were removed from{}data.: Primeri z manjkajočo ciljni spremenljivko so odstranjenih iz{}podatkov.
+            Missing separate test data input.: Na vhodu ni testnih primerov.
+            Some scores could not be computed.: Nekaterih mer ni bilo mogoče izračunati.
+            'Test data is present but unused. ': "Testni primeri so podani, a neuporabljeni. "
+            Select 'Test on test data' to use it.: "Izberite "Testiraj na učnih primerih"."
+            "Can't run stratified {}-fold cross validation; ": "Ne morem uporabiti {}-kratnega stratificiranega prečnega preverjanja; "
+            the least common class has only {} instances.: najmanjši razred ima samo {} primerov.
         class `Information`:
-            Train data has been sampled: null
-            Test data has been sampled: null
-            Test data has been transformed to match the train data.: null
-            Stratification is ignored for regression: null
-            Stratification is ignored when there are: null
-            ' multiple target variables.': null
+            Train data has been sampled: Učni primeri so bili vzorčeni.
+            Test data has been sampled: Testni primeri so bili vzorčeni.
+            Test data has been transformed to match the train data.: Testni podatki so transformirani, da ustrezajo učnim.
+            Stratification is ignored for regression: Testiranje regresije ne uporablja stratifikacije.
+            Stratification is ignored when there are: Stratifikacija ne deluje z več ciljnimi spremenljivkami.
+            ' multiple target variables.': ""
         def `__init__`:
-            resampling: null
-            Cross validation: null
-            n_folds: null
-            'Number of folds: ': null
-            cv_stratified: null
-            Stratified: null
-            Cross validation by feature: null
-            fold_feature: null
-            Random sampling: null
-            n_repeats: null
-            'Repeat train/test: ': null
-            sample_size: null
-            'Training set size: ': null
-            {} %: null
-            shuffle_stratified: null
-            Leave one out: null
-            Test on train data: null
-            Test on test data: null
-            class_selection: null
-            Evaluation results for target: null
-            comparison_criterion: null
-            'Compare models by:': null
-            use_rope: null
-            'Negligible diff.: ': null
-            rope: null
-            '<small>Table shows probabilities that the score for the model in ': null
-            'the row is higher than that of the model in the column. ': null
-            'Small numbers show the probability that the difference is ': null
-            negligible.</small>: null
+            resampling: false
+            Cross validation: Prečno preverjanje
+            n_folds: false
+            'Number of folds: ': Število podmnožic
+            cv_stratified: false
+            Stratified: Stratificirano
+            Cross validation by feature: Prečno po spremenljivki
+            fold_feature: false
+            Random sampling: Naključno vzorčenje
+            n_repeats: false
+            'Repeat train/test: ': Število ponovitev:
+            sample_size: false
+            'Training set size: ': "Delež učne množice: "
+            {} %: false
+            shuffle_stratified: false
+            Leave one out: Izpusti enega
+            Test on train data: false
+            Test on test data: Testiraj na učnih primerih
+            class_selection: false
+            Evaluation results for target: Rezultati vrednotenja za cilj
+            comparison_criterion: false
+            'Compare models by:': "Primerjaj modele glede na:"
+            use_rope: false
+            'Negligible diff.: ': Zanemarljiva razlika
+            rope: false
+            '<small>Table shows probabilities that the score for the model in ': ""<small>Tabela kaže verjetnost, da je model v "
+            'the row is higher than that of the model in the column. ': "vrstici dejansko boljši od modela v stolpcu. "
+            'Small numbers show the probability that the difference is ': "Majhne številke pomenijo zanemarljivo verjetnost."
+            negligible.</small>: "</small>"
         def `set_train_data`:
-            Train dataset is empty.: null
-            Train data input requires a target variable.: null
-            Target variable has no values.: null
-            Target variable has only one value.: null
-            Data has no features to learn from.: null
+            Train dataset is empty.: Tabela učnih primerov je prazna.
+            Train data input requires a target variable.: Učni primeri morajo imeti ciljno spremenljivko.
+            Target variable has no values.: Cijna spremenljivka nima vrednosti.
+            Target variable has only one value.: Ciljna spremenljivka ima samo eno vrednost.
+            Data has no features to learn from.: Podatki nimajo spremenljivk za učenje.
         def `_which_missing_data`:
-            ' ': null
-            ' train ': null
-            ' test ': null
+            ' ': false
+            ' train ': " učnih "
+            ' test ': " testnih "
         def `update_stats_model`:
-            '{:.3f}': null
-            {} (error): null
-            {name} failed with error:\n: null
-            '{exc.__class__.__name__}: {exc!s}': null
-            \n: null
+            '{:.3f}': false
+            {} (error): {} (napaka)
+            {name} failed with error:\n: {name} je javil napako\:n
+            '{exc.__class__.__name__}: {exc!s}': false
+            \n: false
         def `_scores_by_folds`:
-            weighted: null
+            weighted: false
         def `_fill_table`:
-            '{p0:.3f}<br/><small>{rope:.3f}</small>': null
-            p({row_name} > {col_name}) = {p0:.3f}\n: null
-            'p({row_name} = {col_name}) = {rope:.3f}': null
-            '{p1:.3f}<br/><small>{rope:.3f}</small>': null
-            p({col_name} > {row_name}) = {p1:.3f}\n: null
-            'p({col_name} = {row_name}) = {rope:.3f}': null
-            '{p0:.3f}': null
-            'p({row_name} > {col_name}) = {p0:.3f}': null
-            '{p1:.3f}': null
-            'p({col_name} > {row_name}) = {p1:.3f}': null
+            '{p0:.3f}<br/><small>{rope:.3f}</small>': false
+            p({row_name} > {col_name}) = {p0:.3f}\n: false
+            'p({row_name} = {col_name}) = {rope:.3f}': false
+            '{p1:.3f}<br/><small>{rope:.3f}</small>': false
+            p({col_name} > {row_name}) = {p1:.3f}\n: false
+            'p({col_name} = {row_name}) = {rope:.3f}': false
+            '{p0:.3f}': false
+            'p({row_name} > {col_name}) = {p0:.3f}': false
+            '{p1:.3f}': false
+            'p({col_name} > {row_name}) = {p1:.3f}': false
         def `_set_cells_na`:
-            NA: null
-            comparison cannot be computed: null
+            NA: false
+            comparison cannot be computed: false
         def `send_report`:
-            'Stratified ': null
-            Sampling type: null
-            {}{}-fold Cross validation: null
-            Leave one out: null
-            '{}Shuffle split, {} random samples with {}% data ': null
-            No sampling, test on training data: null
-            No sampling, test on testing data: null
-            Target class: null
-            (): null
-            Settings: null
-            Scores: null
+            'Stratified ': "Stratificirano "
+            Sampling type: "Vrsta vzorčenja"
+            {}{}-fold Cross validation: {}{}-kratno prečno preverjanje.
+            Leave one out: Izpusti enega
+            '{}Shuffle split, {} random samples with {}% data ': "{}vzorčenje, {} naključnih vzorcev z {}% podatkov "
+            No sampling, test on training data: Ni vzorčenja, testiranje na učnih podatkih.
+            No sampling, test on testing data: Ni vzorčenja, testiranje na testnih podatkih.
+            Target class: Ciljni razred
+            (): false
+            Settings: Nastavitve
+            Scores: Rezultati
         def `migrate_settings`:
-            resampling: null
-            context_settings: null
-            classes: null
+            resampling: false
+            context_settings: false
+            classes: false
         def `__update`:
-            self.resampling %s: null
+            self.resampling %s: false
         def `__submit`:
-            Running: null
+            Running: V teku
         def `__task_complete`:
-            Future[Results]: null
-            'testing error (in __task_complete):': null
-            \n: null
+            Future[Results]: false
+            'testing error (in __task_complete):': false
+            \n: false
     def `results_add_by_model`:
         def `is_empty`:
-            models: null
-            row_indices: null
-        probabilities: null
+            models: false
+            row_indices: false
+        probabilities: false
     def `results_one_vs_rest`:
-        I({}=={}): null
-        False: null
-        True: null
-    __main__: null
-    iris: null
+        I({}=={}): false
+        False: false
+        True: false
+    __main__: false
+    iris: false
 widgets/evaluate/utils.py:
     def `check_results_adequacy`:
         invalid_results: false
@@ -9182,8 +9183,8 @@ widgets/evaluate/utils.py:
 widgets/evaluate/tests/base.py:
     class `EvaluateTest`:
         def `test_many_evaluation_results`:
-            iris: null
-            Evaluation Results: null
+            iris: false
+            Evaluation Results: Rezultati vrednotenja
 widgets/model/__init__.py:
     Model: null
     Prediction.: null
