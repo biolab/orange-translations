@@ -9267,16 +9267,16 @@ widgets/model/owcalibratedlearner.py:
     heart_disease: false
 widgets/model/owconstant.py:
     class `OWConstant`:
-        Constant: null
-        'Predict the most frequent class or mean value ': null
-        from the training set.: null
-        icons/Constant.svg: null
-        Orange.widgets.classify.owmajority.OWMajority: null
-        Orange.widgets.regression.owmean.OWMean: null
-        majority: null
-        mean: null
-    __main__: null
-    iris: null
+        Constant: Konstanta
+        'Predict the most frequent class or mean value ': "Vedno napove isti, večinski razred oz. povprečno vrednost "
+        from the training set.: učnih primerov.
+        icons/Constant.svg: false
+        Orange.widgets.classify.owmajority.OWMajority: false
+        Orange.widgets.regression.owmean.OWMean: false
+        majority: false
+        mean: false
+    __main__: false
+    iris: false
 widgets/model/owcurvefit.py:
     isclose: null
     inf: null
