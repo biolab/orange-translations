@@ -8734,136 +8734,136 @@ widgets/evaluate/owliftcurve.py:
         mergesort: false
     __main__: false
 widgets/evaluate/owpredictions.py:
-    PredictorSlot: null
-    predictor: null
-    name: null
-    results: null
-    (None): null
-    Difference: null
-    Absolute difference: null
-    Relative: null
-    Absolute relative: null
-    Don't show columns with errors: null
-    Show difference between predicted and actual value: null
-    Show absolute difference between predicted and actual value: null
-    Show relative difference between predicted and actual value: null
-    Show absolute value of relative difference between predicted and actual value: null
+    PredictorSlot: false
+    predictor: false
+    name: false
+    results: false
+    (None): (Ne kaži)
+    Difference: razlika
+    Absolute difference: absolutna razlika
+    Relative: relativna napaka
+    Absolute relative: absolutna relativna napaka
+    Don't show columns with errors: Ne kaži stolpcev z napakami
+    Show difference between predicted and actual value: Pokaži razliko med napovedano in resnično vrednostjo
+    Show absolute difference between predicted and actual value: Pokaži absolutno razliko med napovedano in resnično vrednostjo
+    Show relative difference between predicted and actual value: Pokaži relativno napako
+    Show absolute value of relative difference between predicted and actual value: Pokaži absolutno vrednost relativne napake
     class `OWPredictions`:
-        Predictions: null
-        icons/Predictions.svg: null
-        Display predictions of models for an input dataset.: null
+        Predictions: Napovedi
+        icons/Predictions.svg: false
+        Display predictions of models for an input dataset.: Pokaži napovedi modela na tabeli podatkov
         class `Inputs`:
-            Data: null
-            Predictors: null
+            Data: Podatki
+            Predictors: Modeli
         class `Outputs`:
-            Predictions: null
-            Evaluation Results: null
+            Predictions: Napovedi
+            Evaluation Results: Rezultati vrednotenja
         class `Warning`:
-            Empty dataset: null
-            Some model(s) predict a different target (see more ...)\n{}: null
-            'Instances with missing targets ': null
-            are ignored while scoring.: null
+            Empty dataset: Prazna tabela
+            Some model(s) predict a different target (see more ...)\n{}: Nekateri modeli napovedujejo drugo spremenljivko (več...)\n{}
+            'Instances with missing targets ': "Primeri z manjkajočimi ciljnimi vrednostmi niso "
+            are ignored while scoring.: upoštevani pri vrednotenju.
         class `Error`:
-            Some predictor(s) failed (see more ...)\n{}: null
-            Some scorer(s) failed (see more ...)\n{}: null
-        (None): null
-        Classes in data: null
-        Classes known to the model: null
-        Classes in data and model: null
-        Don't show probabilities: null
-        Show probabilities for classes in the data: null
-        Show probabilities for classes known to the model,\n: null
-        including those that don't appear in this data: null
-        Show probabilities for classes in data that are also\n: null
-        known to the model: null
-        (Average over classes): null
+            Some predictor(s) failed (see more ...)\n{}: V nekaterih modelih je prišlo do napake (več...)\n{}
+            Some scorer(s) failed (see more ...)\n{}: Nekatere cenilke niso izračunani (več...)\n{}
+        (None): (Ne kaži)
+        Classes in data: razrede iz tabele
+        Classes known to the model: razrede modelov
+        Classes in data and model: razrede iz tabele in modelov
+        Don't show probabilities: Ne kaži verjetnosti
+        Show probabilities for classes in the data: Pokaži verjetnosti razredov v tabeli
+        Show probabilities for classes known to the model,\n: Pokaži verjetnosti razredov, ki jih napovedujejo modeli,\m
+        including those that don't appear in this data: vključno s temi, ki jih v podatkih ni.
+        Show probabilities for classes in data that are also\n: Pokaži verjetnosti razredov, ki se pojavijo v podatkih\n
+        known to the model: in so znani tudi modelom.
+        (Average over classes): (Povprečje prek razredov)
         def `__init__`:
-            Show probabilities for: null
-            shown_probs: null
-            show_probability_errors: null
-            Show classification errors: null
-            Show 1 - probability assigned to the correct class: null
-            'Shown regression error: ': null
-            show_reg_errors: null
-            See tooltips for individual options: null
-            Restore Original Order: null
-            Show rows in the original order: null
-            show_scores: null
-            Show perfomance scores: null
-            'Target class:': null
-            target_class: null
+            Show probabilities for: Pokaži verjetnosti za
+            shown_probs: false
+            show_probability_errors: false
+            Show classification errors: Pokaži klasifikacijske napake
+            Show probability assigned to the correct class: Napovedana verjetnost dejanskega razreda
+            'Shown regression error: ': Prikazana napaka:
+            show_reg_errors: false
+            See tooltips for individual options: Poglej namige ob posameznih možnostih
+            Restore Original Order: Začetni vrstni red
+            Show rows in the original order: Pokaži vrstice v izvirnem vrstnem redu
+            show_scores: false
+            Show perfomance scores: Pokaži rezultate vrednotenja
+            Target class:: Ciljni razred:
+            target_class: false
         def `_call_predictors`:
-            '{predictor.name}: {err}': null
+            '{predictor.name}: {err}': false
         def `_update_scores`:
-            N/A: null
-            NA: null
-            '{score:.3f}': null
+            N/A: NN
+            NA: NN
+            '{score:.3f}': false
         def `_update_score_table_visibility`:
-            \n: null
+            \n: false
         def `_set_errors`:
-            \n: null
-            '- {p.predictor.name}: {p.results}': null
-            - {pred.name} predicts '{pred.domain.class_var.name}': null
+            \n: false
+            '- {p.predictor.name}: {p.results}': false
+            - {pred.name} predicts '{pred.domain.class_var.name}': false
         def `_get_details`:
-            'Data:<br>': null
-            <hr>: null
-            'Model: {number} model{s}': null
-            ' ({n_predictors - n_valid} failed)': null
-            <ul>: null
-            <li>{name}</li>: null
-            </ul>: null
-            'Model:<br>No model on input.': null
+            'Data:<br>': 'Podatki:<br>'
+            <hr>: false
+            'Model: {number} model{s}': 'Modeli: {number} {plsi(numerv, "model")}'
+            ' ({n_predictors - n_valid} failed)': ' ({n_predictors - n_valid} z napako)'
+            <ul>: false
+            <li>{name}</li>: false
+            </ul>: false
+            'Model:<br>No model on input.': 'Model:<br>Ni vhodnih modelov.'
         def `_update_prediction_delegate`:
-            ignore: null
-            .*All-NaN.*: null
+            ignore: false
+            .*All-NaN.*: false
         def `_add_classification_out_columns`:
-            {name} ({value}): null
+            {name} ({value}): false
         def `send_report`:
-            \n: null
-            <br>: null
-            '<br>Showing probabilities for ': null
-            all classes known to the model: null
-            all classes that appear in the data: null
-            'all classes that appear in the data ': null
-            and are known to the model: null
-            "'{self.class_var.values[class_idx]}'": null
-            Info: null
-            Data & Predictions: null
-            Scores: null
-            Target class: null
+            \n: false
+            <br>: false
+            '<br>Showing probabilities for ': '<br/>Verjetnosti za '
+            all classes known to the model: razrede, ki jih napovedujejo modeli
+            all classes that appear in the data: razrede, ki se pojavijo v podatkih
+            'all classes that appear in the data ': "razrede, ki jih napovedujejo modeli "
+            and are known to the model: in se pojavljajo v podatkih
+            "'{self.class_var.values[class_idx]}'": false
+            Info: true
+            Data & Predictions: Podatki in napovedi
+            Scores: Rezultati
+            Target class: Ciljni razred
     class `ClassificationItemDelegate`:
         def `__init__`:
-            ' : ': null
-            '{{dist[{i}]:.2f}}': null
-            -: null
-            {probs} → {{value!s}}: null
-            {value!s}: null
-            p({', '.join(tooltip_probabilities)}): null
+            ' : ': false
+            '{{dist[{i}]:.2f}}': false
+            -: true
+            {probs} → {{value!s}}: true
+            {value!s}: false
+            p({', '.join(tooltip_probabilities)}): true
     class `ErrorDelegate`:
         def `sizeHint`:
-            X: null
+            X: false
     class `ClassificationErrorDelegate`:
         def `displayText`:
-            ?: null
-            '{value:.3f}': null
+            ?: true
+            '{value:.3f}': false
     class `RegressionItemDelegate`:
         def `__init__`:
-            "{{value:{(target_format or '%.2f')[1:]}}}": null
+            "{{value:{(target_format or '%.2f')[1:]}}}": false
     class `RegressionErrorDelegate`:
         def `displayText`:
-            ?: null
-            -∞: null
-            ∞: null
+            ?: true
+            -∞: true
+            ∞: true
     class `PredictionsModel`:
         def `headerData`:
-            error: null
+            error: false
         def `errorColumn`:
-            ignore: null
+            ignore: false
     def `tool_tip`:
-        '{value:!s} {dist:!s}': null
-    __main__: null
-    iris.tab: null
-    To err is human: null
+        '{value:!s} {dist:!s}': false
+    __main__: false
+    iris.tab: false
+    To err is human: false
 widgets/evaluate/owrocanalysis.py:
     ROCPoints: null
     fpr: null
@@ -9137,19 +9137,19 @@ widgets/evaluate/owtestandscore.py:
     iris: null
 widgets/evaluate/utils.py:
     def `check_results_adequacy`:
-        invalid_results: null
-        Results do not include information on test data.: null
-        Categorical target variable is required.: null
-        Empty result on input. Nothing to display.: null
-        Results contain invalid values.: null
+        invalid_results: false
+        Results do not include information on test data.: Rezultati vrednotenja ne vsebujejo testnih podatkov.
+        Categorical target variable is required.: Potrebna je kategorična spremenljivka.
+        Empty result on input. Nothing to display.: Prazni rezultati vrednotenja.
+        Results contain invalid values.: Rezultati vrednotenja vsebujejo neveljavne vrednosti
     def `results_for_preview`:
-        heart_disease: null
-        l2: null
-        l1: null
-        LR l2: null
-        LR l1: null
-        SVM: null
-        Nu SVM: null
+        heart_disease: false
+        l2: false
+        l1: false
+        LR l2: false
+        LR l1: false
+        SVM: false
+        Nu SVM: false
     AUC: null
     CA: null
     F1: null
@@ -9160,25 +9160,25 @@ widgets/evaluate/utils.py:
     MAE: null
     R2: null
     def `learner_name`:
-        name: null
+        name: false
     def `usable_scorers`:
-        abstract: null
+        abstract: false
     def `scorer_caller`:
         def `thunked`:
-            ignore: null
+            ignore: false
             ((F-score|Precision)) is ill-defined.*: null
             weighted: null
     class `ScoreTable`:
         class `ItemDelegate`:
             def `displayText`:
-                '{value:.3f}': null
+                '{value:.3f}': false
         def `__init__`:
             C-Index: null
             Method: null
         def `update_header`:
-            Model: null
-            Train time [s]: null
-            Test time [s]: null
+            Model: true
+            Train time [s]: Čas učenja [s]
+            Test time [s]: Čas testiranja [s]
 widgets/evaluate/tests/base.py:
     class `EvaluateTest`:
         def `test_many_evaluation_results`:
