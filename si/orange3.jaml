@@ -12224,61 +12224,61 @@ widgets/utils/owlearnerwidget.py:
     class `OWBaseLearnerMeta`:
         def `__new__`:
             def `abstract_widget`:
-                name: null
+                name: false
             def `copy_outputs`:
-                Outputs: null
-            LEARNER: null
-            "'{}' must declare attribute LEARNER": null
+                Outputs: false
+            LEARNER: false
+            "'{}' must declare attribute LEARNER": false
     class `OWBaseLearner`:
         class `Error`:
-            {}: null
-            Fitting failed.\n{}: null
-            Sparse data is not supported.: null
-            Out of memory.: null
+            {}: false
+            Fitting failed.\n{}: Učenje ni uspelo.\n{}
+            Sparse data is not supported.: Redki podatki niso podprti.
+            Out of memory.: Premalo pomnilnika.
         class `Warning`:
-            Press Apply to submit changes.: null
+            Press Apply to submit changes.: Pritisnite Uveljavi za uveljavitev sprememb
         class `Information`:
-            Ignoring default preprocessing.\n: null
-            'Default preprocessing, such as scaling, one-hot encoding and ': null
-            'treatment of missing data, has been replaced with user-specified ': null
-            'preprocessors. Problems may occur if these are inadequate ': null
-            for the given data.: null
+            Ignoring default preprocessing.\n: Ignoriram privzete predprocesorje.\n
+            'Default preprocessing, such as scaling, one-hot encoding and ': "Privzeto predprocesiranje, kot je skaliranje, kodiranje z indikatorji in "
+            'treatment of missing data, has been replaced with user-specified ': "vstavljanje manjkajočih vrednosti, je zamenjano s predprocesorji, ki jih je "
+            'preprocessors. Problems may occur if these are inadequate ': "določil uporabnik. Če ti niso ustrezni za te podatke, bo modeliranje neuspešno."
+            for the given data.: ""
         class `Inputs`:
-            Data: null
-            Preprocessor: null
+            Data: Podatki
+            Preprocessor: Predprocesor
         class `Outputs`:
-            Learner: null
-            Model: null
-            Classifier: null
-            Predictor: null
+            Learner: Učni algoritem
+            Model: Model
+            Classifier: Klasifikator
+            Predictor: Prediktor
         def `__init__`:
-            unconditional_apply: null
+            unconditional_apply: false
         def `set_data`:
-            Data contains multiple target variables.\n: null
-            Select a single one with the Select Columns widget.: null
-            Data has no target variable.\n: null
-            Select one with the Select Columns widget.: null
+            Data contains multiple target variables.\n: Podatki vsebujejo več ciljnih spremenljivk.\n
+            Select a single one with the Select Columns widget.: Izberite eno od njih z gradnikom Izberi stolpce.
+            Data has no target variable.\n: Podatki nimajo ciljne spremenljivke.\n
+            Select one with the Select Columns widget.: Izberete jo lahko z gradnikom Izberi stolpce.
         def `handleNewSignals`:
-            use_default_preprocessors: null
-            preprocessors: null
+            use_default_preprocessors: false
+            preprocessors: false
         def `check_data`:
-            Dataset is empty.: null
-            Data contains a single target value.: null
-            Data has no features to learn from.: null
+            Dataset is empty.: Tabela primerov je prazna
+            Data contains a single target value.: Podatki vsebujejo eno samo ciljno vrednost.
+            Data has no features to learn from.: Poatki nimajo spremenljivk za učenje.
         def `send_report`:
-            Name: null
-            Model parameters: null
-            Data: null
+            Name: Ime
+            Model parameters: Parametri modela
+            Data: Podatki
         def `setup_layout`:
-            Classification: null
-            Regression: null
+            Classification: Klasifikacija
+            Regression: Regresija
         def `add_learner_name_widget`:
-            learner_name: null
-            Name: null
-            The name will identify this model in other widgets: null
+            learner_name: false
+            Name: Ime
+            The name will identify this model in other widgets: Ime, pod katerim je algoritem viden v sledečih gradnikih
         def `get_widget_description`:
-            outputs: null
-            inputs: null
+            outputs: false
+            inputs: false
 widgets/utils/pathutils.py:
     class `PathItem`:
         def `from_dict`:
