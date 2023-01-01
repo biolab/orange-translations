@@ -9235,36 +9235,36 @@ widgets/model/owadaboost.py:
     iris: false
 widgets/model/owcalibratedlearner.py:
     class `OWCalibratedLearner`:
-        Calibrated Learner: null
-        'Wraps another learner with probability calibration and ': null
-        decision threshold optimization: null
-        icons/CalibratedLearner.svg: null
-        calibration: null
-        threshold: null
-        Sigmoid calibration: null
-        Isotonic calibration: null
-        No calibration: null
-        Sigmoid: null
-        Isotonic: null
-        Optimize classification accuracy: null
-        Optimize F1 score: null
-        No threshold optimization: null
-        CA: null
-        F1: null
+        Calibrated Learner: Kalibriran model
+        'Wraps another learner with probability calibration and ': "Ovije drug učni algoritem z modelom za kalibracijo verjetnosti "
+        decision threshold optimization: in optimiranje klasifikacijskega praga
+        icons/CalibratedLearner.svg: false
+        calibration: kalibracija
+        threshold: prag
+        Sigmoid calibration: Sigmoidna kalibracija
+        Isotonic calibration: Izotonična kalibracija
+        No calibration: Brez kalibracije
+        Sigmoid: Sigmoidna
+        Isotonic: Izotonična
+        Optimize classification accuracy: Optimiraj napovedno točnost
+        Optimize F1 score: Optimiraj F1
+        No threshold optimization: Brez optimizacije praga
+        CA: točnost
+        F1: F1
         class `Inputs`:
-            Base Learner: null
+            Base Learner: Učni algoritem
         def `add_main_layout`:
-            calibration: null
-            Probability calibration: null
-            threshold: null
-            Decision threshold optimization: null
+            calibration: false
+            Probability calibration: Kalibracija verjetnosti
+            threshold: false
+            Decision threshold optimization: Optimiranje napovednega praga
         def `_set_default_name`:
-            ' + ': null
+            ' + ': false
         def `get_learner_parameters`:
-            Calibrate probabilities: null
-            Threshold optimization: null
-    __main__: null
-    heart_disease: null
+            Calibrate probabilities: Kalibracija verjetnosti
+            Threshold optimization: Optimiranje praga
+    __main__: false
+    heart_disease: false
 widgets/model/owconstant.py:
     class `OWConstant`:
         Constant: null
