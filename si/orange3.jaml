@@ -9533,53 +9533,53 @@ widgets/model/owknn.py:
     iris: false
 widgets/model/owlinearregression.py:
     class `OWLinearRegression`:
-        Linear Regression: null
-        'A linear regression algorithm with optional L1 (LASSO), ': null
-        L2 (ridge) or L1L2 (elastic net) regularization.: null
-        icons/LinearRegression.svg: null
-        Orange.widgets.regression.owlinearregression.OWLinearRegression: null
-        ridge: null
-        lasso: null
-        elastic net: null
+        Linear Regression: Linearna regresija
+        'A linear regression algorithm with optional L1 (LASSO), ': "Linearna regresija z "
+        L2 (ridge) or L1L2 (elastic net) regularization.: različnimi vrstami regularizacije.
+        icons/LinearRegression.svg: false
+        Orange.widgets.regression.owlinearregression.OWLinearRegression: false
+        ridge: true
+        lasso: true
+        elastic net: true
         class `Outputs`:
-            Coefficients: null
-        No regularization: null
-        Ridge regression (L2): null
-        Lasso regression (L1): null
-        Elastic net regression: null
+            Coefficients: Koeficienti
+        No regularization: Brez regularizacije
+        Ridge regression (L2): Ridge (L2)
+        Lasso regression (L1): Lasso (L2)
+        Elastic net regression: Elastična mreža
         def `add_main_layout`:
-            Parameters: null
-            fit_intercept: null
-            Fit intercept (unchecking it fixes it to zero): null
-            Regularization: null
-            reg_type: null
-            'Regularization strength:': null
-            alpha_index: null
-            'Elastic net mixing:': null
-            L1: null
-            l2_ratio: null
-            L2: null
+            Parameters: Parametri
+            fit_intercept: false
+            Fit intercept (unchecking it fixes it to zero): Uporabi prosti člen (sicer bo enak 0)
+            Regularization: Regularizacija
+            reg_type: false
+            'Regularization strength:': "Moč regularizacije:"
+            alpha_index: false
+            'Elastic net mixing:': "Mešanica elastične mreže"
+            L1: true
+            l2_ratio: false
+            L2: true
         def `_set_alpha_label`:
-            'Alpha: {}': null
+            'Alpha: {}': α = {}
         def `_set_l2_ratio_label`:
-            '{:.{}f} : {:.{}f}': null
+            '{:.{}f} : {:.{}f}': false
         def `update_model`:
-            coef: null
-            name: null
-            intercept: null
-            coefficients: null
+            coef: false
+            name: false
+            intercept: false
+            coefficients: false
         def `get_learner_parameters`:
-            No Regularization: null
-            Ridge Regression (L2) with α={}: null
-            Lasso Regression (L1) with α={}: null
-            Elastic Net Regression with α={}: null
-            ' and L1:L2 ratio of {}:{}': null
-            Regularization: null
-            Fit intercept: null
-            No: null
-            Yes: null
-    __main__: null
-    housing: null
+            No Regularization: Brez regularizacije
+            Ridge Regression (L2) with α={}: Ridge (L2) z α={}
+            Lasso Regression (L1) with α={}: Lasso (L1) z α={}
+            Elastic Net Regression with α={}: Elastična mreža z α={}
+            ' and L1:L2 ratio of {}:{}': " in L1:L2 v razmerju {}:{}"
+            Regularization: Regularizacija
+            Fit intercept: Prosti člen
+            No: Ne
+            Yes: Da
+    __main__: false
+    housing: false
 widgets/model/owloadmodel.py:
     class `OWLoadModel`:
         Load Model: null
