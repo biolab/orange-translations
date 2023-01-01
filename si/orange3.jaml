@@ -9610,49 +9610,49 @@ widgets/model/owloadmodel.py:
     __main__: false
 widgets/model/owlogisticregression.py:
     class `OWLogisticRegression`:
-        Logistic Regression: null
-        'The logistic regression classification algorithm with ': null
-        LASSO (L1) or ridge (L2) regularization.: null
-        icons/LogisticRegression.svg: null
-        Orange.widgets.classify.owlogisticregression.OWLogisticRegression: null
+        Logistic Regression: Logistična regresija
+        'The logistic regression classification algorithm with ': "Logistična regresija z regularizacijo."
+        LASSO (L1) or ridge (L2) regularization.: ""
+        icons/LogisticRegression.svg: false
+        Orange.widgets.classify.owlogisticregression.OWLogisticRegression: false
         class `Outputs`:
-            Coefficients: null
-        Lasso (L1): null
-        Ridge (L2): null
-        None: null
-        l1: null
-        l2: null
-        none: null
+            Coefficients: Koeficienti
+        Lasso (L1): true
+        Ridge (L2): true
+        None: Brez
+        l1: false
+        l2: false
+        none: false
         class `Warning`:
-            Weighting by class may decrease performance.: null
+            Weighting by class may decrease performance.: Uteževanje glede na razred lahko upočasni učenje.
         def `add_main_layout`:
-            penalty_type: null
-            'Regularization type: ': null
-            'Strength:': null
-            Weak: null
-            'margin-top:6px': null
-            C_index: null
-            Strong: null
-            class_weight: null
-            Balance class distribution: null
-            Weigh classes inversely proportional to their frequencies.: null
+            penalty_type: false
+            'Regularization type: ': "Vrsta regularizacije: "
+            'Strength:': Moč:
+            Weak: Šibka
+            'margin-top:6px': false
+            C_index: false
+            Strong: Močna
+            class_weight: false
+            Balance class distribution: Uravnoteži razrede
+            Weigh classes inversely proportional to their frequencies.: Uteži razrede obratno sorazmerno njihovi pogostosti
         def `set_c`:
-            none: null
-            C={}: null
-            'C={:.3f}': null
-            N/A: null
+            none: false
+            C={}: true
+            'C={:.3f}': true
+            N/A: NN
         def `create_learner`:
-            balanced: null
-            none: null
+            balanced: false
+            none: false
         def `get_learner_parameters`:
-            Regularization: null
-            {}, C={}, class weights={}: null
+            Regularization: Regularizacija
+            {}, C={}, class weights={}: {}, C={}, uteži razredov={}
     def `create_coef_table`:
-        name: null
-        intercept: null
-        coefficients: null
-    __main__: null
-    zoo: null
+        name: false
+        intercept: false
+        coefficients: false
+    __main__: false
+    zoo: false
 widgets/model/ownaivebayes.py:
     class `OWNaiveBayes`:
         Naive Bayes: null
@@ -9665,68 +9665,68 @@ widgets/model/ownaivebayes.py:
 widgets/model/owneuralnetwork.py:
     class `Task`:
         def `setFuture`:
-            future is already set: null
+            future is already set: false
     class `OWNNLearner`:
-        Neural Network: null
-        'A multi-layer perceptron (MLP) algorithm with ': null
-        backpropagation.: null
-        icons/NN.svg: null
-        mlp: null
-        identity: null
-        logistic: null
-        tanh: null
-        relu: null
-        Identity: null
-        Logistic: null
-        ReLu: null
-        lbfgs: null
-        sgd: null
-        adam: null
-        L-BFGS-B: null
-        SGD: null
-        Adam: null
-        100,: null
+        Neural Network: Nevronska mreža
+        'A multi-layer perceptron (MLP) algorithm with ': Večnivojski perceptron z vzvratnim širjenjem.
+        backpropagation.: " (backpropagation)"
+        icons/NN.svg: false
+        mlp: false
+        identity: false
+        logistic: false
+        tanh: false
+        relu: false
+        Identity: Identiteta
+        Logistic: Logistična
+        ReLu: ReLu
+        lbfgs: false
+        sgd: false
+        adam: false
+        L-BFGS-B: true
+        SGD: true
+        Adam: true
+        100,: false
         class `Warning`:
-            'ANN without hidden layers is equivalent to logistic ': null
-            'regression with worse fitting.\nWe recommend using ': null
-            logistic regression.: null
+            'ANN without hidden layers is equivalent to logistic ': "Nevronska mreža brez skritih nivojev je enaka logistični "
+            'regression with worse fitting.\nWe recommend using ': "regresiji s slabšim algoritmom prileganja.\nPriporočamo uporabo "
+            logistic regression.: logistične regresije.
         def `add_main_layout`:
-            'Neurons in hidden layers:': null
-            hidden_layers_input: null
-            'A list of integers defining neurons. Length of list ': null
-            defines the number of layers. E.g. 4, 2, 2, 3.: null
-            e.g. 10,: null
-            'Activation:': null
-            activation_index: null
-            'Solver:': null
-            solver_index: null
-            alpha_index: null
-            'Maximal number of iterations:': null
-            max_iterations: null
-            'Max iterations:': null
-            replicable: null
-            Replicable training: null
+            'Neurons in hidden layers:': Nevroni v skritih nivojih
+            hidden_layers_input: false
+            'A list of integers defining neurons. Length of list ': "Seznam števil, ki določijo število nevronov. Dolžina seznama "
+            defines the number of layers. E.g. 4, 2, 2, 3.: "določi število nivojev. Npr. 4, 2, 2, 3"
+            e.g. 10,: npr. 10,
+            'Activation:': "Aktivacija:"
+            activation_index: false
+            'Solver:': "Algoritem reševanja:"
+            solver_index: false
+            alpha_index: false
+            'Maximal number of iterations:': "Omejitev števila ponovitev:"
+            max_iterations: false
+            'Max iterations:': "Omejitev ponovitev:"
+            replicable: false
+            Replicable training: Ponovljivo učenje
         def `set_alpha`:
-            'Regularization, α={}:': null
+            'Regularization, α={}:': 'Regularizacija, α={}:'
         def `setup_layout`:
-            Cancel: null
+            Cancel: Prekini
         def `get_learner_parameters`:
-            Hidden layers: null
-            ', ': null
-            Activation: null
-            Solver: null
-            Alpha: null
-            Max iterations: null
-            Replicable training: null
+            Hidden layers: Skriti nivoji
+            ', ': false
+            Activation: Aktivacija
+            Solver: Algoritem reševanja:
+            Alpha: Alfa
+            Max iterations: Omejitev števila ponovitev
+            Replicable training: Ponovljivo učenje
         def `get_hidden_layers`:
-            \d+: null
+            \d+: false
         def `__update`:
-            max_iter: null
+            max_iter: false
         def `migrate_settings`:
-            alpha: null
-            alpha_index: null
-    __main__: null
-    iris: null
+            alpha: false
+            alpha_index: false
+    __main__: false
+    iris: false
 widgets/model/owrandomforest.py:
     class `OWRandomForest`:
         Random Forest: null
