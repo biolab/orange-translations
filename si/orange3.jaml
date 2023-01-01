@@ -9655,13 +9655,13 @@ widgets/model/owlogisticregression.py:
     zoo: false
 widgets/model/ownaivebayes.py:
     class `OWNaiveBayes`:
-        Naive Bayes: null
-        'A fast and simple probabilistic classifier based on ': null
-        Bayes' theorem with the assumption of feature independence.: null
-        icons/NaiveBayes.svg: null
-        Orange.widgets.classify.ownaivebayes.OWNaiveBayes: null
-    __main__: null
-    iris: null
+        Naive Bayes: Naivni Bayes
+        'A fast and simple probabilistic classifier based on ': "Preprost model, ki temelji na Bayesovi formuli "
+        Bayes' theorem with the assumption of feature independence.: in predpostavlja pogojno neodvisnost spremenljivk.
+        icons/NaiveBayes.svg: false
+        Orange.widgets.classify.ownaivebayes.OWNaiveBayes: false
+    __main__: false
+    iris: false
 widgets/model/owneuralnetwork.py:
     class `Task`:
         def `setFuture`:
