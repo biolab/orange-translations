@@ -9729,54 +9729,54 @@ widgets/model/owneuralnetwork.py:
     iris: false
 widgets/model/owrandomforest.py:
     class `OWRandomForest`:
-        Random Forest: null
-        Predict using an ensemble of decision trees.: null
-        icons/RandomForest.svg: null
-        Orange.widgets.classify.owrandomforest.OWRandomForest: null
-        Orange.widgets.regression.owrandomforestregression.OWRandomForestRegression: null
+        Random Forest: Naključni gozd
+        Predict using an ensemble of decision trees.: Skupinsko napovedovanje z drevesi.
+        icons/RandomForest.svg: false
+        Orange.widgets.classify.owrandomforest.OWRandomForest: false
+        Orange.widgets.regression.owrandomforestregression.OWRandomForestRegression: false
         class `Error`:
-            Insufficient number of attributes ({}): null
+            Insufficient number of attributes ({}): Nezadostno število spremenljivk ({})
         class `Warning`:
-            Weighting by class may decrease performance.: null
+            Weighting by class may decrease performance.: Uteževanje razredov lahko upočasni izvajanje.
         def `add_main_layout`:
-            Basic Properties: null
-            n_estimators: null
-            'Number of trees: ': null
-            max_features: null
-            'Number of attributes considered at each split: ': null
-            use_max_features: null
-            use_random_state: null
-            Replicable training: null
-            class_weight: null
-            Balance class distribution: null
-            Weigh classes inversely proportional to their frequencies.: null
-            Growth Control: null
-            max_depth: null
-            'Limit depth of individual trees: ': null
-            use_max_depth: null
-            min_samples_split: null
-            'Do not split subsets smaller than: ': null
-            use_min_samples_split: null
+            Basic Properties: Osnovne lastnosti
+            n_estimators: false
+            'Number of trees: ': "Število dreves: "
+            max_features: false
+            'Number of attributes considered at each split: ': "Število obravnavanih spremenljivk ob vsaki delitvi: "
+            use_max_features: false
+            use_random_state: false
+            Replicable training: Ponovljivo učenje
+            class_weight: false
+            Balance class distribution: Uravnoteži razrede
+            Weigh classes inversely proportional to their frequencies.: Uteži razrede obratno sorazmerno njihovi pogostosti.
+            Growth Control: Nadzor rasti
+            max_depth: false
+            'Limit depth of individual trees: ': "Omejitev globine posamičnih dreves: "
+            use_max_depth: false
+            min_samples_split: false
+            'Do not split subsets smaller than: ': "Ne deli množic z manj primeri kot: "
+            use_min_samples_split: false
         def `create_learner`:
-            n_estimators: null
-            max_features: null
-            random_state: null
-            max_depth: null
-            min_samples_split: null
-            class_weight: null
-            balanced: null
+            n_estimators: false
+            max_features: false
+            random_state: false
+            max_depth: false
+            min_samples_split: false
+            class_weight: false
+            balanced: false
         def `get_learner_parameters`:
-            Number of trees: null
-            Maximal number of considered features: null
-            unlimited: null
-            Replicable training: null
-            No: null
-            Yes: null
-            Maximal tree depth: null
-            Stop splitting nodes with maximum instances: null
-            Class weights: null
-    __main__: null
-    iris: null
+            Number of trees: Število dreves
+            Maximal number of considered features: Število obravnavanih spremenljivk
+            unlimited: neomejeno
+            Replicable training: Ponovljivo učenje
+            No: Ne
+            Yes: Da
+            Maximal tree depth: Največja globina dreves
+            Stop splitting nodes with maximum instances: Ne deli množic z manj primeri kot
+            Class weights: Uteževanje razredov
+    __main__: false
+    iris: false
 widgets/model/owrules.py:
     class `CustomRuleClassifier`:
         def `__init__`:
