@@ -9582,32 +9582,32 @@ widgets/model/owlinearregression.py:
     housing: false
 widgets/model/owloadmodel.py:
     class `OWLoadModel`:
-        Load Model: null
-        Load a model from an input file.: null
-        Orange.widgets.classify.owloadclassifier.OWLoadClassifier: null
-        icons/LoadModel.svg: null
-        file: null
-        open: null
-        model: null
+        Load Model: Naloži model
+        Load a model from an input file.: Preberi model iz datoteke.
+        Orange.widgets.classify.owloadclassifier.OWLoadClassifier: false
+        icons/LoadModel.svg: false
+        file: datoteka
+        open: odpri
+        model: model
         class `Outputs`:
-            Model: null
+            Model: true
         class `Error`:
-            An error occured while reading '{}': null
-        ;;: null
+            An error occured while reading '{}': Napaka pri branju '{}'
+        ;;: false
         def `__init__`:
-            File: null
-            ...: null
-            Reload: null
+            File: Datoteka
+            ...: true
+            Reload: Ponovno naloži
         def `browse_file`:
-            Open Model File: null
+            Open Model File: Odpri datoteko z modelom
         def `open_file`:
-            rb: null
+            rb: false
     class `OWLoadModelDropHandler`:
         def `canDropFile`:
-            .pkcls: null
+            .pkcls: false
         def `parametersFromFile`:
-            recent_paths: null
-    __main__: null
+            recent_paths: false
+    __main__: false
 widgets/model/owlogisticregression.py:
     class `OWLogisticRegression`:
         Logistic Regression: null
