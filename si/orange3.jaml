@@ -9278,119 +9278,119 @@ widgets/model/owconstant.py:
     __main__: false
     iris: false
 widgets/model/owcurvefit.py:
-    isclose: null
-    inf: null
-    nan: null
-    arccos: null
-    arccosh: null
-    arcsin: null
-    arcsinh: null
-    arctan: null
-    arctan2: null
-    arctanh: null
-    ceil: null
-    copysign: null
-    cos: null
-    cosh: null
-    degrees: null
-    e: null
-    exp: null
-    expm1: null
-    fabs: null
-    floor: null
-    fmod: null
-    gcd: null
-    hypot: null
-    isfinite: null
-    isinf: null
-    isnan: null
-    ldexp: null
-    log: null
-    log10: null
-    log1p: null
-    log2: null
-    pi: null
-    power: null
-    radians: null
-    remainder: null
-    sin: null
-    sinh: null
-    sqrt: null
-    tan: null
-    tanh: null
-    trunc: null
-    round: null
-    abs: null
-    any: null
-    all: null
+    isclose: false
+    inf: false
+    nan: false
+    arccos: false
+    arccosh: false
+    arcsin: false
+    arcsinh: false
+    arctan: false
+    arctan2: false
+    arctanh: false
+    ceil: false
+    copysign: false
+    cos: false
+    cosh: false
+    degrees: false
+    e: false
+    exp: false
+    expm1: false
+    fabs: false
+    floor: false
+    fmod: false
+    gcd: false
+    hypot: false
+    isfinite: false
+    isinf: false
+    isnan: false
+    ldexp: false
+    log: false
+    log10: false
+    log1p: false
+    log2: false
+    pi: false
+    power: false
+    radians: false
+    remainder: false
+    sin: false
+    sinh: false
+    sqrt: false
+    tan: false
+    tanh: false
+    trunc: false
+    round: false
+    abs: false
+    any: false
+    all: false
     class `Parameter`:
         def `__repr__`:
-            'Parameter(name={self.name}, initial={self.initial}, ': null
-            'use_lower={self.use_lower}, lower={self.lower}, ': null
-            use_upper={self.use_upper}, upper={self.upper}): null
+            'Parameter(name={self.name}, initial={self.initial}, ': false
+            'use_lower={self.use_lower}, lower={self.lower}, ': false
+            use_upper={self.use_upper}, upper={self.upper}): false
     class `ParametersWidget`:
         def `_setup_gui`:
-            Name: null
-            Initial value: null
-            Lower bound: null
-            Upper bound: null
-            +: null
+            Name: Ime
+            Initial value: Začetna vrednost
+            Lower bound: Spodnja meja
+            Upper bound: Zgornja meja
+            +: false
         def `_add_row`:
-            p{row_id + 1}: null
-            ×: null
-            minimum: null
-            maximum: null
+            p{row_id + 1}: true
+            ×: true
+            minimum: false
+            maximum: false
     class `OWCurveFit`:
-        Curve Fit: null
-        Fit a function to data.: null
-        icons/CurveFit.svg: null
-        function: null
+        Curve Fit: Prileganje krivulje
+        Fit a function to data.: Prilagodi krivuljo podatkom
+        icons/CurveFit.svg: false
+        function: false
         class `Outputs`:
-            Coefficients: null
+            Coefficients: Koeficienti
         class `Warning`:
-            Duplicated parameter name.: null
-            "Unused parameter '{}' in ": null
-            "'Parameters' declaration.": null
-            Provide data on the input.: null
+            Duplicated parameter name.: Podvojeno ime parametra
+            "Unused parameter '{}' in ": "Neuporabljen parameter '{}'"
+            "'Parameters' declaration.": ""
+            Provide data on the input.: Priskrbite vhodne podatke.
         class `Error`:
-            Invalid expression.: null
-            Missing a fitting parameter.\n: null
-            Use 'Feature Constructor' widget instead.: null
-            Unknown parameter '{}'.\n: null
-            Declare the parameter in 'Parameters' box: null
-            'Some parameters and features have the same ': null
-            name '{}'.: null
-        Select Feature: null
-        Select Parameter: null
-        Select Function: null
+            Invalid expression.: Nepravilen izraz.
+            Missing a fitting parameter.\n: Manjkajoč parameter.
+            Use 'Feature Constructor' widget instead.: Uporabite gradnik Sestavi značilke.
+            Unknown parameter '{}'.\n: Neznan parameter '{}'.\n
+            Declare the parameter in 'Parameters' box: Deklarirajte ga v škatli "Parametri"
+            'Some parameters and features have the same ': "Nekateri parametri in spremenljivke imajo "
+            name '{}'.: enaka imena '{}'.
+        Select Feature: Izberite spremenljivko
+        Select Parameter: Izberite parameter
+        Select Function: Izberite funkcijo
         def `add_main_layout`:
-            Parameters: null
-            Expression: null
-            expression: null
-            Expression...: null
-            _feature: null
-            _parameter: null
-            _function: null
+            Parameters: Parametri
+            Expression: Izrazi
+            expression: false
+            Expression...: Izraz...
+            _feature: false
+            _parameter: false
+            _function: false
         def `__on_function_added`:
-            arctan2: null
-            copysign: null
-            fmod: null
-            gcd: null
-            hypot: null
-            isclose: null
-            ldexp: null
-            power: null
-            remainder: null
-            (,): null
-            (): null
+            arctan2: false
+            copysign: false
+            fmod: false
+            gcd: false
+            hypot: false
+            isclose: false
+            ldexp: false
+            power: false
+            remainder: false
+            (,): false
+            (): false
         def `get_learner_parameters`:
-            Expression: null
+            Expression: Izraz
         def `check_data`:
-            Data has no continuous features.: null
+            Data has no continuous features.: Podatki nimajo numeričnih spremenljivk
         def `__validate_expression`:
-            eval: null
-    __main__: null
-    housing: null
+            eval: false
+    __main__: false
+    housing: false
 widgets/model/owgradientboosting.py:
     class `LearnerItemModel`:
         Extreme Gradient Boosting (xgboost): null
