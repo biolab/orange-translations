@@ -9502,35 +9502,35 @@ widgets/model/owgradientboosting.py:
     iris: null
 widgets/model/owknn.py:
     class `OWKNNLearner`:
-        kNN: null
-        Predict according to the nearest training instances.: null
-        icons/KNN.svg: null
-        Orange.widgets.classify.owknn.OWKNNLearner: null
-        Orange.widgets.regression.owknnregression.OWKNNRegression: null
-        k nearest: null
-        knearest: null
-        neighbor: null
-        neighbour: null
-        uniform: null
-        distance: null
-        euclidean: null
-        manhattan: null
-        chebyshev: null
-        mahalanobis: null
+        kNN: k sosedov
+        Predict according to the nearest training instances.: Napoveduje glede na najbližje sosede iz učnih primerov.
+        icons/KNN.svg: false
+        Orange.widgets.classify.owknn.OWKNNLearner: false
+        Orange.widgets.regression.owknnregression.OWKNNRegression: false
+        k nearest: k sosedov
+        knearest: najbližji
+        neighbor: sosedi
+        neighbour: ""
+        uniform: enake
+        distance: po razdalji
+        euclidean: Evklidska
+        manhattan: Manhattanska
+        chebyshev: Čebiševa
+        mahalanobis: Mahalanobisova
         def `add_main_layout`:
-            Neighbors: null
-            n_neighbors: null
-            'Number of neighbors:': null
-            metric_index: null
-            'Metric:': null
-            weight_index: null
-            'Weight:': null
+            Neighbors: Sosedi
+            n_neighbors: false
+            'Number of neighbors:': Število sosedov
+            metric_index: false
+            'Metric:': "Metrika:"
+            weight_index: false
+            'Weight:': "Uteži:"
         def `get_learner_parameters`:
-            Number of neighbours: null
-            Metric: null
-            Weight: null
-    __main__: null
-    iris: null
+            Number of neighbours: Število sosedov
+            Metric: Metrika
+            Weight: Uteži
+    __main__: false
+    iris: false
 widgets/model/owlinearregression.py:
     class `OWLinearRegression`:
         Linear Regression: null
