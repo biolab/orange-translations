@@ -9780,92 +9780,92 @@ widgets/model/owrandomforest.py:
 widgets/model/owrules.py:
     class `CustomRuleClassifier`:
         def `__init__`:
-            Rule ordering: null
-            Covering algorithm: null
+            Rule ordering: Urejenost pravil
+            Covering algorithm: Način prekrivanja
         def `predict`:
-            ordered: null
-            exclusive: null
-            unordered: null
-            weighted: null
+            ordered: urejena
+            exclusive: eno pravilo
+            unordered: neurejena
+            weighted: utežena
     class `CustomRuleLearner`:
-        Custom rule inducer: null
+        Custom rule inducer: false
         def `__init__`:
-            Rule ordering: null
-            Covering algorithm: null
-            exclusive: null
-            weighted: null
-            Gamma: null
-            Beam width: null
-            Evaluation measure: null
-            entropy: null
-            laplace: null
-            wracc: null
-            Minimum rule coverage: null
-            Maximum rule length: null
-            Default alpha: null
-            Parent alpha: null
+            Rule ordering: Urejenost pravil
+            Covering algorithm: Način prekrivanja
+            exclusive: eno pravilo
+            weighted: utežena
+            Gamma: Gama
+            Beam width: Širina snopa
+            Evaluation measure: Ocena kvalitete pravila
+            entropy: entropija
+            laplace: Laplacova natančnost
+            wracc: WRACC
+            Minimum rule coverage: Najmanjše število pokritih primerov
+            Maximum rule length: Največja dolžina pravila
+            Default alpha: Zahtevana statistična značilnost
+            Parent alpha: Značilnost prednika
         def `fit_storage`:
-            ordered: null
-            weighted: null
-            unordered: null
+            ordered: urejena
+            weighted: utežena
+            unordered: neurejena
     class `OWRuleLearner`:
-        CN2 Rule Induction: null
-        Induce rules from data using CN2 algorithm.: null
-        icons/CN2RuleInduction.svg: null
-        Orange.widgets.classify.owrules.OWRuleLearner: null
-        ordered: null
-        unordered: null
-        exclusive: null
-        weighted: null
-        entropy: null
-        laplace: null
-        wracc: null
-        CN2 rule inducer: null
+        CN2 Rule Induction: Odločitvena pravila
+        Induce rules from data using CN2 algorithm.: Sestavi odločitvena pravila z algoritmom CN2
+        icons/CN2RuleInduction.svg: false
+        Orange.widgets.classify.owrules.OWRuleLearner: false
+        ordered: urejena
+        unordered: neurejena
+        exclusive: eno pravilo
+        weighted: utežena
+        entropy: entropija
+        laplace: Laplacova natančnost
+        wracc: WRACC
+        CN2 rule inducer: Odločitvena pravila
         def `add_main_layout`:
-            Rule ordering: null
-            rule_ordering: null
-            Ordered: null
-            Unordered: null
-            Covering algorithm: null
-            covering_algorithm: null
-            Exclusive: null
-            Weighted: null
-            gamma: null
-            'γ:': null
-            weighted: null
-            Rule search: null
-            evaluation_measure: null
-            'Evaluation measure:': null
-            Entropy: null
-            Laplace accuracy: null
-            WRAcc: null
-            beam_width: null
-            'Beam width:': null
-            Rule filtering: null
-            min_covered_examples: null
-            'Minimum rule coverage:': null
-            max_rule_length: null
-            'Maximum rule length:': null
-            default_alpha: null
-            'Statistical significance (default α):': null
-            checked_default_alpha: null
-            parent_alpha: null
-            'Relative significance (parent α):': null
-            checked_parent_alpha: null
+            Rule ordering: Urejenost pravil
+            rule_ordering: false
+            Ordered: Urejena
+            Unordered: Neurejena
+            Covering algorithm: Način prekrivanja
+            covering_algorithm: false
+            Exclusive: Z enim pravilom
+            Weighted: Uteženo
+            gamma: false
+            'γ:': true
+            weighted: false
+            Rule search: Iskanje pravil
+            evaluation_measure: false
+            'Evaluation measure:': Mera kvalitete:
+            Entropy: Entropija
+            Laplace accuracy: Laplacova natančnost
+            WRAcc: WRACC
+            beam_width: false
+            'Beam width:': Širina snopa:
+            Rule filtering: Presejanje pravil
+            min_covered_examples: false
+            'Minimum rule coverage:': Najmanjše število pokritih primerov:
+            max_rule_length: false
+            'Maximum rule length:': Najdaljša dolžina pravila:
+            default_alpha: false
+            'Statistical significance (default α):': Statistična značilnost (privzeti α):
+            checked_default_alpha: false
+            parent_alpha: false
+            'Relative significance (parent α):': Relativna značilnost (predniko α):
+            checked_parent_alpha: false
         def `settings_changed`:
-            weighted: null
+            weighted: false
         def `get_learner_parameters`:
-            Rule ordering: null
-            Covering algorithm: null
-            Gamma: null
-            Evaluation measure: null
-            Beam width: null
-            Minimum rule coverage: null
-            Maximum rule length: null
-            Default alpha: null
-            Parent alpha: null
-    __main__: null
-    iris: null
+            Rule ordering: Urejenost pravil
+            Covering algorithm: Način prekrivanja
+            Gamma: Gama
+            Evaluation measure: Ocena kvalitete pravila
+            Beam width: Širina snopa
+            Minimum rule coverage: Najmanjše število pokritih primerov
+            Maximum rule length: Največja dolžina pravila
+            Default alpha: Zahtevana statistična značilnost
+            Parent alpha: Značilnost prednika
+    __main__: false
+    iris: false
 widgets/model/owsavemodel.py:
     class `OWSaveModel`:
         Save Model: null
