@@ -11196,34 +11196,34 @@ widgets/unsupervised/owpca.py:
     housing: false
 widgets/unsupervised/owsavedistances.py:
     class `OWSaveDistances`:
-        Save Distance Matrix: null
-        Save distance matrix to an output file.: null
-        icons/SaveDistances.svg: null
-        distance matrix: null
-        save: null
-        Excel File (*.xlsx): null
-        Distance File (*.dst): null
+        Save Distance Matrix: Shrani matriko razdalj
+        Save distance matrix to an output file.: Shrani matriko razdalj v datoteko
+        icons/SaveDistances.svg: false
+        distance matrix: false
+        save: false
+        Excel File (*.xlsx): Excelova datoteka (*.xlsx)
+        Distance File (*.dst): Datoteka razdalj (*.dst)
         class `Warning`:
-            Associated data was not saved.: null
-            Data associated with {} was not saved.: null
+            Associated data was not saved.: Pripeta tabela podatkov ni shranjena.
+            Data associated with {} was not saved.: Podatki o {} niso shranjeni.
         class `Inputs`:
-            Distances: null
+            Distances: Razdalje
         def `do_save`:
-            columns: null
-            rows: null
+            columns: stolpcih
+            rows: vrsticah
         def `send_report`:
-            'Input:': null
-            none: null
-            File name: null
-            not set: null
+            'Input:': Vhod:
+            none: false
+            File name: Ime datoteke
+            not set: ni nastavljeno
         def `_description`:
-            ' and ': null
-            row: null
-            column: null
-            ; {labels} labels: null
-            {len(dist)}-dimensional matrix{labels}: null
-    __main__: null
-    iris: null
+            ' and ': " in "
+            row: vrstic
+            column: stolpcev
+            ; {labels} labels: ; oznake {labels}
+            {len(dist)}-dimensional matrix{labels}: {len(dist)}-dimenzionalna matrika{labels}
+    __main__: false
+    iris: false
 widgets/unsupervised/owsom.py:
     class `OWSOM`:
         Self-Organizing Map: null
