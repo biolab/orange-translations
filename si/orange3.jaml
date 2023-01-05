@@ -11226,66 +11226,63 @@ widgets/unsupervised/owsavedistances.py:
     iris: false
 widgets/unsupervised/owsom.py:
     class `OWSOM`:
-        Self-Organizing Map: null
-        Computation of self-organizing map.: null
-        icons/SOM.svg: null
-        SOM: null
+        Self-Organizing Map: SOM
+        Computation of self-organizing map.: Samodejni zemljevid
+        icons/SOM.svg: false
+        SOM: true
         class `Inputs`:
-            Data: null
+            Data: Podatki
         class `Outputs`:
-            Selected Data: null
-        view: null
-        OptControls: null
-        shape: null
-        auto_dim: null
-        spin_x: null
-        spin_y: null
-        initialization: null
-        start: null
+            Selected Data: Izbrani podatki
+        view: false
+        OptControls: false
+        shape: false
+        auto_dim: false
+        spin_x: false
+        spin_y: false
+        initialization: false
+        start: false
         class `Warning`:
-            SOM ignores categorical variables.: null
-            Some data instances have undefined value of '{}'.: null
-            "'{}' has no defined values.": null
-            {} data instance{} with undefined value(s) {} not shown.: null
-            Data contains a single numeric column.: null
+            SOM ignores categorical variables.: SOM ne upošteva kategoričnih spremenljivk.
+            Some data instances have undefined value of '{}'.: Nekatere vrstice imajo neznane vrednosti '{}'.
+            "'{}' has no defined values.": "'{}' ima neznane vrednosti."
+            Data contains a single numeric column.: Podatki imajo le eno številsko spremenljivko.
         class `Error`:
-            Data contains no numeric columns.: null
-            All rows contain at least one undefined value.: null
+            Data contains no numeric columns.: Podatki nimajo številskih spremenljivk.
+            All rows contain at least one undefined value.: Vsaka vrstica ima vsaj eno neznano vrednost.
         def `__init__`:
-            SOM: null
-            Hexagonal grid: null
-            Square grid: null
-            auto_dimension: null
-            Set dimensions automatically: null
-            ×: null
-            initialization: null
-            Initialize with PCA: null
-            Random initialization: null
-            Replicable random: null
-            Restart: null
-            Color: null
-            attr_color: null
-            (Same color): null
-            pie_charts: null
-            Show pie charts: null
-            size_by_instances: null
-            Size by number of instances: null
+            SOM: SOM
+            Hexagonal grid: Šestkotna mreža
+            Square grid: Pravokotna mreža
+            auto_dimension: false
+            Set dimensions automatically: Samodejno nastavi velikost mreže
+            ×: false
+            initialization: false
+            Initialize with PCA: Uporabi PCA
+            Random initialization: Naključni razpored
+            Replicable random: Ponovljivo naključje
+            Restart: Ponovno poženi
+            Color: Barva
+            attr_color: false
+            (Same color): (Enobarvno)
+            pie_charts: false
+            Show pie charts: Pokaži tortne diagrame
+            size_by_instances: false
+            Size by number of instances: Velikost odraža število primerov
         def `set_data`:
             def `set_warnings`:
-                is: null
-                s: null
-                are: null
+                {missing} data {pl(missing, "instance")} with undefined value(s) {pl(missing, "is|are")} not shown.: {missing} {plsi(missing, "primer")} z manjkajočimi vrednostmi {plsi(missing, "ni prikazan|nista prikazana|niso prikazani|ni prikazanih")}.
         def `enable_controls`:
-            Start: null
-            Stop: null
+            Start: Začni
+            Stop: Stoj
         def `_draw_same_color`:
-            {n} instances: null
+            {n} instances: {n} {plsi(n, "primer")}
         def `_get_color_column`:
-            ignore: null
+            ignore: false
         def `_tooltip`:
-            (N/A): null
-            \N{NON-BREAKING HYPHEN}: null
-            '<table style="white-space: nowrap">': null
+            (N/A): (NN)
+            \N{NON-BREAKING HYPHEN}: false
+            '<table style="white-space: nowrap">': false
             | 4
                             <tr>
                                 <td>
@@ -11297,18 +11294,18 @@ widgets/unsupervised/owsom.py:
                                 </td>
                             </tr>
                             
-            : null
-            </table>: null
+            : false
+            </table>: false
         def `update_output`:
-            Group: null
+            Group: Skupina
         def `_bin_names`:
-            < {labels[0]}: null
-            {x} - {y}: null
-            ≥ {labels[-1]}: null
+            < {labels[0]}: true
+            {x} - {y}: true
+            ≥ {labels[-1]}: true
         def `send_report`:
-            Self-organizing map colored by '{self.attr_color.name}': null
-    __main__: null
-    iris: null
+            Self-organizing map colored by '{self.attr_color.name}': Samodejni zemljevid, pobarvan glede na '{self.attr_color.name}'
+    __main__: false
+    iris: false
 widgets/unsupervised/owtsne.py:
     def `prepare_tsne_obj`:
         approx: null
