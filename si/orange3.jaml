@@ -11133,67 +11133,67 @@ widgets/unsupervised/owmds.py:
     __main__: false
     iris: false
 widgets/unsupervised/owpca.py:
-    component variance: null
-    cumulative variance: null
+    component variance: varianca kompomente
+    cumulative variance: skupna varianca
     class `OWPCA`:
-        PCA: null
-        Principal component analysis with a scree-diagram.: null
-        icons/PCA.svg: null
-        principal component analysis: null
-        linear transformation: null
+        PCA: PCA
+        Principal component analysis with a scree-diagram.: Analiza osnovnih komponent
+        icons/PCA.svg: false
+        principal component analysis: osnovne komponente
+        linear transformation: linearna transformacija
         class `Inputs`:
-            Data: null
+            Data: Podatki
         class `Outputs`:
-            Transformed Data: null
-            Transformed data: null
-            Data: null
-            Components: null
-            PCA: null
-        plot.plotItem: null
+            Transformed Data: Transformirani podatki
+            Transformed data: Transformirani podatki
+            Data: Podatki
+            Components: Komponente
+            PCA: PCA
+        plot.plotItem: false
         class `Warning`:
-            'All components of the PCA are trivial (explain 0 variance). ': null
-            Input data is constant (or near constant).: null
+            'All components of the PCA are trivial (explain 0 variance). ': Vse komponente so trivialne
+            Input data is constant (or near constant).: Vhodni podatki so konstantni (ali skoraj konstantni)
         class `Error`:
-            At least 1 feature is required: null
-            At least 1 data instance is required: null
+            At least 1 feature is required: Potreben je vsaj en faktor.
+            At least 1 data instance is required: Tabela s podatki je prazna.
         def `__init__`:
-            Components Selection: null
-            ncomponents: null
-            All: null
-            variance_covered: null
-            %: null
-            'Components:': null
-            'Explained variance:': null
-            Options: null
-            normalize: null
-            Normalize variables: null
-            maxp: null
-            Show only first: null
-            auto_commit: null
-            Principal Components: null
-            Proportion of variance: null
+            Components Selection: Izbor komponent
+            ncomponents: false
+            All: Vse
+            variance_covered: false
+            %: true
+            'Components:': Komponente:
+            'Explained variance:': Razložena varianca:
+            Options: Opcije
+            normalize: false
+            Normalize variables: Normiraj spremenljivke
+            maxp: false
+            Show only first: Pokaži le prvih
+            auto_commit: false
+            Principal Components: Osnovne komponente
+            Proportion of variance: Delež variance
         def `set_data`:
-            Data has been sampled: null
+            Data has been sampled: Podatki so bili vzorčeni
         def `_update_axis`:
-            bottom: null
+            bottom: false
         def `commit`:
-            variance: null
-            components: null
-            PC{}: null
+            variance: false
+            components: false
+            PC{}: Komp{}
         def `send_report`:
-            Normalize data: null
-            Selected components: null
-            Explained variance: null
-            '{:.3f} %': null
+            Normalize data: Normiranje podatkov
+            Selected components: Število komponent
+            Explained variance: Razložena varianca
+            '{:.3f} %': false
         def `migrate_settings`:
-            variance_covered: null
-            ncomponents: null
-            decomposition_idx: null
-            batch_size: null
-            address: null
-            auto_update: null
-    __main__: null
-    housing: null
+            variance_covered: false
+            ncomponents: false
+            decomposition_idx: false
+            batch_size: false
+            address: false
+            auto_update: false
+    __main__: false
+    housing: false
 widgets/unsupervised/owsavedistances.py:
     class `OWSaveDistances`:
         Save Distance Matrix: null
