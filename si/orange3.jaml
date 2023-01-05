@@ -10339,237 +10339,237 @@ widgets/unsupervised/__init__.py:
     icons/Category-Unsupervised.svg: null
 widgets/unsupervised/owcorrespondence.py:
     class `OWCorrespondenceAnalysis`:
-        Correspondence Analysis: null
-        Correspondence analysis for categorical multivariate data.: null
-        icons/CorrespondenceAnalysis.svg: null
+        Correspondence Analysis: Korespondenčna analiza
+        Correspondence analysis for categorical multivariate data.: Korespondenčna analiza kategoričnih multivariatnih podatkov
+        icons/CorrespondenceAnalysis.svg: false
         class `Inputs`:
-            Data: null
+            Data: Podatki
         class `Outputs`:
-            Coordinates: null
-        plot.plotItem: null
+            Coordinates: Koordinate
+        plot.plotItem: false
         class `Error`:
-            Empty dataset: null
-            No categorical data: null
+            Empty dataset: Prazna tabela podatkov
+            No categorical data: Ni kategoričnih podatkov
         def `__init__`:
-            Variables: null
-            Axes: null
-            component_x: null
-            'X:': null
-            component_y: null
-            'Y:': null
-            Contribution to Inertia: null
-            \n: null
-            auto_commit: null
+            Variables: Spremenljivke
+            Axes: Osi
+            component_x: false
+            'X:': true
+            component_y: false
+            'Y:': true
+            Contribution to Inertia: Prispevek k vztrajnosti
+            \n: true
+            auto_commit: false
         def `set_data`:
-            ignore: null
-            combo box 'component_[xy]' .*: null
+            ignore: false
+            combo box 'component_[xy]' .*: false
         def `commit`:
-            Component {i + 1}: null
-            Variable: null
-            Value: null
+            Component {i + 1}: Komponenta {i + 1}
+            Variable: Spremenljivka
+            Value: Vrednost
         def `_update_CA`:
-            ignore: null
-            combo box 'component_[xy]' .*: null
+            ignore: false
+            combo box 'component_[xy]' .*: false
         def `update_XY`:
-            {}: null
+            {}: false
         def `_setup_plot`:
             def `get_minmax`:
-                inf: null
-                -inf: null
-            bottom: null
-            'Component {} ({:.1f}%)': null
-            left: null
+                inf: false
+                -inf: false
+            bottom: false
+            'Component {} ({:.1f}%)': 'Komponenta {} ({:.1f}%)'
+            left: false
         def `_update_info`:
-            \n\n: null
-            'Axis 1: {:.2f}\n': null
-            'Axis 2: {:.2f}': null
+            \n\n: false
+            'Axis 1: {:.2f}\n': 'Os 1: {:.2f}\n'
+            'Axis 2: {:.2f}': 'Os 2: {:.2f}'
         def `send_report`:
-            Data instances: null
-            Selected variable: null
-            Selected variables: null
-            {} and {}: null
-            ', ': null
+            Data instances: Vhodni primeri
+            Selected variable: Izbrana spremenljivka
+            Selected variables: Izbrane spremenljivke
+            {} and {}: {} in {}
+            ', ': false
     def `correspondence`:
-        ignore: null
-    CA: null
-    U: null
-    D: null
-    V: null
-    row_factors: null
-    col_factors: null
-    row_sums: null
-    column_sums: null
-    __main__: null
-    titanic: null
+        ignore: false
+    CA: false
+    U: false
+    D: false
+    V: false
+    row_factors: false
+    col_factors: false
+    row_sums: false
+    column_sums: false
+    __main__: false
+    titanic: false
 widgets/unsupervised/owdbscan.py:
     class `OWDBSCAN`:
-        DBSCAN: null
-        Density-based spatial clustering.: null
-        icons/DBSCAN.svg: null
+        DBSCAN: true
+        Density-based spatial clustering.: Gručenje na podlagi prostorske gostote
+        icons/DBSCAN.svg: false
         class `Inputs`:
-            Data: null
+            Data: Podatki
         class `Error`:
-            'Not enough unique data instances. ': null
-            At least two are required.: null
-        Euclidean: null
-        euclidean: null
-        Manhattan: null
-        cityblock: null
-        Cosine: null
-        cosine: null
+            'Not enough unique data instances. ': "Ni dovolj primerov. "
+            At least two are required.: Potrebna sta vsaj dva.
+        Euclidean: Evklidska
+        euclidean: false
+        Manhattan: Manhattanska
+        cityblock: false
+        Cosine: Kosinusna
+        cosine: false
         def `__init__`:
-            Parameters: null
-            min_samples: null
-            Core point neighbors: null
-            eps: null
-            Neighborhood distance: null
-            Distance Metric: null
-            metric_idx: null
-            normalize: null
-            Normalize features: null
-            auto_commit: null
-            Data items sorted by score: null
-            Distance to the k-th nearest neighbour: null
+            Parameters: Parametri
+            min_samples: false
+            Core point neighbors: Število sosedov
+            eps: false
+            Neighborhood distance: Velikost soseščine
+            Distance Metric: Mera razdalje
+            metric_idx: false
+            normalize: false
+            Normalize features: Normiraj spremenljivke
+            auto_commit: false
+            Data items sorted by score: Primeri iz podatkov, urejeni po oceni
+            Distance to the k-th nearest neighbour: Razdalja do k-tega najbližjega soseda
         def `_plot_graph`:
-            red: null
+            red: false
         def `send_data`:
-            Cluster: null
-            C%d: null
-            DBSCAN Core: null
-            0: null
-            1: null
-    __main__: null
-    iris.tab: null
+            Cluster: Gruča
+            C%d: G%d
+            DBSCAN Core: Jedro DBSCAN-a
+            0: false
+            1: false
+    __main__: false
+    iris.tab: false
 widgets/unsupervised/owdistancefile.py:
     class `OWDistanceFile`:
-        Distance File: null
-        orange.widgets.unsupervised.distancefile: null
-        Read distances from a file.: null
-        icons/DistanceFile.svg: null
-        load: null
-        read: null
-        open: null
+        Distance File: Branje razdalj
+        orange.widgets.unsupervised.distancefile: false
+        Read distances from a file.: Prebere matriko razdalj iz datoteke
+        icons/DistanceFile.svg: false
+        load: true
+        read: razdalje
+        open: file
         class `Outputs`:
-            Distances: null
+            Distances: Razdalje
         class `Error`:
-            'Data was not loaded:{}': null
+            'Data was not loaded:{}': 'Branje ni uspelo:{}'
         def `__init__`:
-            Distance File: null
+            Distance File: Datoteka z razdaljami
             ...: null
-            Reload: null
-            Options: null
-            auto_symmetric: null
-            Treat triangular matrices as symmetric: null
-            'If matrix is triangular, this will copy the data to the ': null
-            other triangle: null
-            Browse documentation datasets: null
+            Reload: Naloži ponovno
+            Options: Opcije
+            auto_symmetric: false
+            Treat triangular matrices as symmetric: Obravnavaj trikotne matrike kot simetrične
+            'If matrix is triangular, this will copy the data to the ': "Če je matrika trikotna, bo to preslikalo podatke "
+            other triangle: še v nasprotni trikotnik.
+            Browse documentation datasets: Prebrskaj podatke iz dokumentacije
         def `browse_file`:
-            File: null
-            Cannot find the directory with documentation datasets: null
-            ~/: null
-            Open Distance File: null
-            Excel File (*.xlsx);;Distance File (*.dst): null
+            File: Datoteka
+            Cannot find the directory with documentation datasets: Ne najdem imenika z datotekami iz dokumentacije
+            ~/: false
+            Open Distance File: Odpri datoteko razdalj
+            Excel File (*.xlsx);;Distance File (*.dst): Excelova datoteka (*.xlsx); Razdalje (*.dst)
         def `open_file`:
-            .: null
-            (none): null
-            ' \n': null
+            .: false
+            (none): (prazno)
+            ' \n': false
         def `send_report`:
-            No data was loaded.: null
-            File name: null
+            No data was loaded.: Podatki niso naloženi.
+            File name: Ime datoteke
     class `OWDistanceFileDropHandler`:
         def `parametersFromFile`:
-            recent_paths: null
+            recent_paths: false
         def `canDropFile`:
-            .dst: null
-            .xlsx: null
-    __main__: null
+            .dst: false
+            .xlsx: false
+    __main__: false
 widgets/unsupervised/owdistancemap.py:
     class `DistanceMapItem`:
         def `hoverMoveEvent`:
-            '{}, {}: {:.3f}': null
+            '{}, {}: {:.3f}': false
     class `OWDistanceMap`:
-        Distance Map: null
-        Visualize a distance matrix.: null
-        icons/DistanceMap.svg: null
+        Distance Map: Slika razdalj
+        Visualize a distance matrix.: Prikaže matriko razdalj s toplo gredo
+        icons/DistanceMap.svg: false
         class `Inputs`:
-            Distances: null
+            Distances: Razdalje
         class `Outputs`:
-            Selected Data: null
-            Features: null
+            Selected Data: Izbrani podatki
+            Features: Spremenljivke
         class `Error`:
-            Empty distance matrix: null
-            Distance matrix is not symmetric.: null
-        grid_widget: null
+            Empty distance matrix: Prazna matrika razdalj
+            Distance matrix is not symmetric.: Matrika razdalj ni simetrična.
+        grid_widget: false
         def `__init__`:
-            sorting: null
-            Element Sorting: null
-            None: null
-            Clustering: null
-            Clustering with ordered leaves: null
-            Colors: null
-            annotation_idx: null
-            Annotations: null
-            Enumeration: null
-            autocommit: null
+            sorting: false
+            Element Sorting: Urejanje
+            None: (Brez)
+            Clustering: Gručenje
+            Clustering with ordered leaves: Gručenje z urejenimi listi
+            Colors: Barve
+            annotation_idx: false
+            Annotations: Oznake
+            Enumeration: Oštevilčenje
+            autocommit: false
         def `set_distances`:
-            'Cluster ordering was disabled due to the input ': null
-            matrix being to big: null
-            'Clustering was disabled due to the input ': null
+            'Cluster ordering was disabled due to the input ': Urejeno gručenje
+            matrix being to big: " je izključeno, ker je podatkov preveč."
+            'Clustering was disabled due to the input ': Gručenje
         def `set_items`:
-            None: null
-            Enumeration: null
-            Attribute names: null
-            Name: null
+            None: (Brez)
+            Enumeration: Oštevilčenje
+            Attribute names: Imena spremenljivk
+            Name: Imena
         def `_update_labels`:
-            Attribute names: null
+            Attribute names: Imena spremenljivk
         def `send_report`:
-            Sorting: null
-            Annotations: null
-    __main__: null
-    iris: null
+            Sorting: Urejenost
+            Annotations: Oznake
+    __main__: false
+    iris: false
 widgets/unsupervised/owdistancematrix.py:
     class `OWDistanceMatrix`:
-        Distance Matrix: null
-        View distance matrix.: null
-        icons/DistanceMatrix.svg: null
+        Distance Matrix: Matrika razdalj
+        View distance matrix.: Pokaže matriko razdalj.
+        icons/DistanceMatrix.svg: false
         class `Inputs`:
-            Distances: null
+            Distances: Razdalje
         class `Outputs`:
-            Distances: null
-            Selected Data: null
-            Table: null
+            Distances: Razdalje
+            Selected Data: Izbrani podatki
+            Table: Tabela
         def `__init__`:
-            annotation_idx: null
-            'Labels: ': null
-            None: null
-            Enumeration: null
-            auto_commit: null
+            annotation_idx: false
+            'Labels: ': "Oznake :"
+            None: Brez
+            Enumeration: Oštevilčenje
+            auto_commit: false
         def `set_distances`:
-            None: null
-            Enumerate: null
-            Labels: null
-            Attribute names: null
-            Name: null
+            None: Brez
+            Enumerate: Oštevilčenje
+            Labels: Oznake
+            Attribute names: Imena spremenljivk
+            Name: Imena
         def `_choose_label`:
-            Enumerate: null
+            Enumerate: Oštevilčenje
         def `_update_labels`:
-            Attribute names: null
-            Labels: null
+            Attribute names: Imena spremenljivk
+            Labels: Oznake
         def `_set_selection`:
-            wrong data for symmetric selection: null
-            wrong data for asymmetric selection: null
+            wrong data for symmetric selection: false
+            wrong data for asymmetric selection: false
         def `send_report`:
             def `cell`:
-                ' style="background-color: {brush.color().name()}"': null
-                '{label:.{ndec}f}': null
-                <td {style}>{label}</td>\n: null
-            '<table style="border-collapse:collapse">': null
-            <tr>: null
-            <td></td>: null
-            </tr>: null
-            </table>: null
-    __main__: null
-    zoo: null
+                ' style="background-color: {brush.color().name()}"': false
+                '{label:.{ndec}f}': false
+                <td {style}>{label}</td>\n: false
+            '<table style="border-collapse:collapse">': false
+            <tr>: false
+            <td></td>: false
+            </tr>: false
+            </table>: false
+    __main__: false
+    zoo: falaseg
 widgets/unsupervised/owdistances.py:
     Euclidean: evklidska
     Manhattan: manhattanska
@@ -10638,37 +10638,37 @@ widgets/unsupervised/owdistances.py:
     iris: false
 widgets/unsupervised/owdistancetransformation.py:
     class `OWDistanceTransformation`:
-        Distance Transformation: null
-        Transform distances according to selected criteria.: null
-        icons/DistancesTransformation.svg: null
+        Distance Transformation: Transformacija razdalj
+        Transform distances according to selected criteria.: Transformira razdalje v matriki
+        icons/DistancesTransformation.svg: false
         class `Inputs`:
-            Distances: null
+            Distances: Razdalje
         class `Outputs`:
-            Distances: null
-        No normalization: null
-        To interval [0, 1]: null
-        To interval [-1, 1]: null
-        'Sigmoid function: 1/(1+exp(-X))': null
-        No inversion: null
-        -X: null
-        1 - X: null
-        max(X) - X: null
-        1/X: null
+            Distances: Razdalje
+        No normalization: Brez normiranja
+        To interval [0, 1]: V interval [0, 1]
+        To interval [-1, 1]: V interval [-1, 1]
+        'Sigmoid function: 1/(1+exp(-X))': 'Sigmoidna funkcija: 1/(1+exp(-X))'
+        No inversion: Brez obračanja
+        -X: true
+        1 - X: true
+        max(X) - X: true
+        1/X: true
         def `__init__`:
-            normalization_method: null
-            Normalization: null
-            inversion_method: null
-            Inversion: null
-            autocommit: null
+            normalization_method: false
+            Normalization: Normiranje
+            inversion_method: false
+            Inversion: Obračanje
+            autocommit: false
         def `send_report`:
-            inversion ({}): null
-            normalization ({}): null
-            Model parameters: null
-            Transformation: null
-            ', ': null
-            None: null
-    __main__: null
-    iris: null
+            inversion ({}): obračanje ({})
+            normalization ({}): normiranje ({})
+            Model parameters: Parametri modela
+            Transformation: Transformacija
+            ', ': false
+            None: Brez
+    __main__: false
+    iris: false
 widgets/unsupervised/owhierarchicalclustering.py:
     OWHierarchicalClustering: false
     Single: Minimalna
@@ -10774,152 +10774,152 @@ widgets/unsupervised/owhierarchicalclustering.py:
 widgets/unsupervised/owkmeans.py:
     class `ClusterTableModel`:
         def `data`:
-            '{:.3f}': null
-            NA: null
+            '{:.3f}': false
+            NA: NN
     class `OWKMeans`:
-        k-Means: null
-        'k-Means clustering algorithm with silhouette-based ': null
-        quality estimation.: null
-        icons/KMeans.svg: null
-        kmeans: null
-        clustering: null
+        k-Means: K gruč
+        'k-Means clustering algorithm with silhouette-based ': Gručenje v k gruč in izbor s silhueto
+        quality estimation.: false
+        icons/KMeans.svg: false
+        kmeans: true
+        clustering: gručenje
         class `Inputs`:
-            Data: null
+            Data: Podatki
         class `Outputs`:
-            Annotated Data: null
-            Centroids: null
+            Annotated Data: Označeni podatki
+            Centroids: Centroidi
         class `Error`:
-            'Clustering failed\nError: {}': null
-            Too few ({}) unique data instances for {} clusters: null
-            Data is missing features.: null
+            'Clustering failed\nError: {}': Gručenje ni uspelo.\nNapaka: {}
+            Too few ({}) unique data instances for {} clusters: Premalo ({}) neponovljenih primerov za {} gruč.
+            Data is missing features.: Podatki nimajo spremenljivk.
         class `Warning`:
-            Silhouette scores are not computed for >{} samples: null
-            Too few ({}) unique data instances for {} clusters: null
-            Sparse data cannot be normalized: null
-        Initialize with KMeans++: null
-        k-means++: null
-        Random initialization: null
-        random: null
+            Silhouette scores are not computed for >{} samples: Silhuet za več kot {} primerov ne računam.
+            Too few ({}) unique data instances for {} clusters: Premalo ({}) neponovljenih primerov za {} gruč.
+            Sparse data cannot be normalized: Redkih podatkov ni možno normirati.
+        Initialize with KMeans++: Začni s KMeans++
+        k-means++: false
+        Random initialization: Začni naključno
+        random: false
         def `migrate_settings`:
-            auto_apply: null
-            auto_commit: null
+            auto_apply: false
+            auto_commit: false
         def `__init__`:
-            optimize_k: null
-            Number of Clusters: null
-            'Fixed:': null
-            k: null
-            From: null
-            k_from: null
-            to: null
-            k_to: null
-            Preprocessing: null
-            normalize: null
-            Normalize columns: null
-            Initialization: null
-            smart_init: null
-            'Re-runs: ': null
-            n_init: null
-            'Maximum iterations: ': null
-            max_iterations: null
-            Silhouette Scores: null
-            auto_commit: null
+            optimize_k: false
+            Number of Clusters: Število gruč
+            'Fixed:': 'Določeno:'
+            k: false
+            From: Od
+            k_from: false
+            to: do
+            k_to: false
+            Preprocessing: Predprocesiranje
+            normalize: false
+            Normalize columns: Normiraj stolpce
+            Initialization: Postopek
+            smart_init: false
+            'Re-runs: ': Število ponovitev
+            n_init: false
+            'Maximum iterations: ': "Največje število korakov: "
+            max_iterations: false
+            Silhouette Scores: Silhuete
+            auto_commit: false
         def `send_data`:
-            Cluster: null
-            C%d: null
-            Silhouette: null
-            centroids: null
-            {self.data.name} centroids: null
+            Cluster: Gruča
+            C%d: G%d
+            Silhouette: Silhuete
+            centroids: centroidi
+            {self.data.name} centroids: centroidi {self.data.name}
         def `send_report`:
-            Number of clusters: null
-            Optimization: null
-            {}, {} re-runs limited to {} steps: null
-            Data: null
-            Silhouette scores for different numbers of clusters: null
-    __main__: null
-    heart_disease: null
+            Number of clusters: Število gruč
+            Optimization: Optimizacija
+            {}, {} re-runs limited to {} steps: {}, {} ponovitev, omejenih na {} korakov
+            Data: Podatki
+            Silhouette scores for different numbers of clusters: Silhuete za različno število gruč
+    __main__: false
+    heart_disease: false
 widgets/unsupervised/owlouvainclustering.py:
-    Euclidean: null
-    l2: null
-    Manhattan: null
-    l1: null
-    Cosine: null
-    cosine: null
+    Euclidean: Evklidska
+    l2: false
+    Manhattan: Manhattanska
+    l1: false
+    Cosine: Kosinusna
+    cosine: false
     class `OWLouvainClustering`:
-        Louvain Clustering: null
-        Detects communities in a network of nearest neighbors.: null
-        icons/LouvainClustering.svg: null
+        Louvain Clustering: Louvainsko gručenje
+        Detects communities in a network of nearest neighbors.: Poišče zgostitve v mreži najbližjih sosedov
+        icons/LouvainClustering.svg: false
         class `Inputs`:
-            Data: null
+            Data: Podatki
         class `Outputs`:
-            Network: null
+            Network: Mreža
         class `Information`:
-            Press commit to recompute clusters and send new data: null
+            Press commit to recompute clusters and send new data: Pritisnite Uveljavi za izračun novih gruč in pošiljanje podatkov
         class `Error`:
-            No features in data: null
+            No features in data: Podatki ne vsebujejo spremenljivk
         def `__init__`:
-            Info: null
-            No data on input.: null
-            Preprocessing: null
-            normalize: null
-            Normalize data: null
-            apply_pca: null
-            Apply PCA preprocessing: null
-            pca_components: null
-            'PCA Components: ': null
-            Graph parameters: null
-            metric_idx: null
-            Distance metric: null
-            k_neighbors: null
-            k neighbors: null
-            resolution: null
-            Resolution: null
-            %.1f: null
-            'The resolution parameter affects the number of clusters to find. ': null
-            'Smaller values tend to produce more clusters and larger values ': null
-            retrieve less clusters.: null
-            auto_commit: null
+            Info: Info
+            No data on input.: Ni podatkov na vhodu
+            Preprocessing: Predprocesiranje
+            normalize: false
+            Normalize data: Normiraj podatke
+            apply_pca: false
+            Apply PCA preprocessing: Predprocesiraj s PCA
+            pca_components: false
+            'PCA Components: ': Število komponent
+            Graph parameters: Parametri mreže
+            metric_idx: false
+            Distance metric: Mera razdalje
+            k_neighbors: false
+            k neighbors: Število sosedov
+            resolution: false
+            Resolution: Ločljivost
+            %.1f: false
+            'The resolution parameter affects the number of clusters to find. ': Ločljivost vpliva na število najdenih gruč.
+            'Smaller values tend to produce more clusters and larger values ': Manjša ločljivost običajno vodi v več gruč, večja ločljivost pa v manj.
+            retrieve less clusters.: ""
+            auto_commit: false
         def `commit`:
-            Running...: null
+            Running...: Tečem...
         def `__set_partial_results`:
-            pca_projection: null
-            graph: null
-            partition: null
+            pca_projection: false
+            graph: false
+            partition: false
         def `__set_results`:
-            %d clusters found.: null
+            {num_clusters} clusters found.: {plsi(num_clusters, "Najdena|Najdeni|Najdene|Najdenih")} {z_besedo(num_clusters, 1, "f")} {plsi(num_clusters, "gruča")}.
         def `_send_data`:
-            Cluster: null
-            C%d: null
+            Cluster: Gruča
+            C%d: G%d
         def `set_data`:
-            Clustering not yet run.: null
+            Clustering not yet run.: Gručenje še ni steklo.
         def `clear`:
-            No data on input.: null
+            No data on input.: Ni podatkov na vhodu.
         def `send_report`:
-            , {number} component{s}: null
-            Normalize data: null
-            PCA preprocessing: null
-            Metric: null
-            k neighbors: null
-            Resolution: null
+            , {self.pca_components} {pl(self.pca_components, 'component')}: , {self.pca_components} {plsi(self.pca_components, 'komponenta')}
+            Normalize data: Normiranje podatkov
+            PCA preprocessing: Predprocesiranje s PCA
+            Metric: Mera razdalje
+            k neighbors: Število sosedov
+            Resolution: Ločljivost
         def `migrate_settings`:
-            context_settings: null
-            apply_pca: null
-            k_neighbors: null
-            metric_idx: null
-            normalize: null
-            pca_components: null
-            resolution: null
+            context_settings: false
+            apply_pca: false
+            k_neighbors: false
+            metric_idx: false
+            normalize: false
+            pca_components: false
+            resolution: false
     def `run_on_data`:
-        Computing PCA...: null
-        pca_projection: null
-        Building graph...: null
-        graph: null
-        Detecting communities...: null
-        partition: null
+        Computing PCA...: Računam PCA...
+        pca_projection: false
+        Building graph...: Sestavljam mrežo...
+        graph: false
+        Detecting communities...: Iščem zgostitve...
+        partition: false
     def `run_on_graph`:
-        Detecting communities...: null
-        partition: null
-    __main__: null
-    iris: null
+        Detecting communities...: Iščem zgostitve...
+        partition: false
+    __main__: false
+    iris: false
 widgets/unsupervised/owmanifoldlearning.py:
     class `ManifoldParametersEditor`:
         def `_create_spin_parameter`:
@@ -11043,249 +11043,246 @@ widgets/unsupervised/owmanifoldlearning.py:
     brown-selected: null
 widgets/unsupervised/owmds.py:
     def `stress`:
-        euclidean: null
+        euclidean: false
     def `run_mds`:
-        Running...: null
-        precomputed: null
-        eps: null
+        Running...: Tečem...
+        precomputed: false
+        eps: false
     class `OWMDSGraph`:
         def `update_pairs`:
-            pairs: null
+            pairs: false
     class `OWMDS`:
-        MDS: null
-        'Two-dimensional data projection by multidimensional ': null
-        scaling constructed from a distance matrix.: null
-        icons/MDS.svg: null
-        multidimensional scaling: null
-        multi dimensional scaling: null
+        MDS: Večrazsežnostno lestvičenje
+        'Two-dimensional data projection by multidimensional ': "Dvodimenzionalna projekcija večdimenzionalnih podatkov, "
+        scaling constructed from a distance matrix.: "ki poskuša ohraniti razdalje med primeri."
+        icons/MDS.svg: false
+        multidimensional scaling: true
+        multi dimensional scaling: mds
         class `Inputs`:
-            Distances: null
-        Every iteration: null
-        Every 5 steps: null
-        Every 10 steps: null
-        Every 25 steps: null
-        Every 50 steps: null
-        None: null
-        mds-x: null
-        mds-y: null
+            Distances: Razdalja
+        Every iteration: po vsakem koraku
+        Every 5 steps: vsakih pet korakov
+        Every 10 steps: vsakih deset korako
+        Every 25 steps: vsakih 25 korakov
+        Every 50 steps: vsakih 50 korakov
+        None: nikoli
+        mds-x: false
+        mds-y: false
         class `Error`:
-            Input data needs at least 2 rows: null
-            Distance matrix is not symmetric: null
-            Input matrix must be at least 2x2: null
-            Data has no attributes: null
-            Data and distances dimensions do not match.: null
-            Out of memory: null
-            Error during optimization\n{}: null
+            Input data needs at least 2 rows: Podatki morajo imeti vsaj dva primera.
+            Distance matrix is not symmetric: Matrika razdalj ni simetrična.
+            Input matrix must be at least 2x2: Matrika razdalj mora biti velika vsaj 2x2
+            Data has no attributes: Podatki nimajo spremenljivk
+            Data and distances dimensions do not match.: Podatki in matrika razdalj so različno veliki
+            Out of memory: Premalo pomnilnika
+            Error during optimization\n{}: Napaka med računanjem\n{}
         def `__init__`:
-            Stress: null
+            Stress: Napetost
         def `_add_controls`:
-            'Show similar pairs:': null
-            connected_pairs: null
+            'Show similar pairs:': Pokaži podobne pare:
+            connected_pairs: false
         def `_add_controls_optimization`:
-            Optimize: null
-            PCA: null
-            Randomize: null
-            Jitter: null
-            refresh_rate: null
-            'Refresh: ': null
-            Start: null
+            Optimize: Izračun
+            PCA: PCA
+            Randomize: Razmeči
+            Jitter: Potresi
+            refresh_rate: false
+            'Refresh: ': "Osveževanje: "
+            Start: Začni
         def `_initialize`:
-            labels: null
+            labels: false
         def `init_attr_values`:
-            labels: null
+            labels: false
         def `_toggle_run`:
-            Resume: null
+            Resume: Nadaljuj
         def `_run`:
-            Stop: null
-            PCA: null
-            random: null
+            Stop: Stoj
+            PCA: Pca
+            random: false
         def `on_done`:
-            Start: null
+            Start: Začni
         def `on_exception`:
-            Start: null
+            Start: Začni
         def `do_initialization`:
-            Start: null
+            Start: Začni
         def `get_size_data`:
-            Stress: null
+            Stress: Napetost
         def `migrate_settings`:
-            label_only_selected: null
-            symbol_opacity: null
-            alpha_value: null
-            symbol_size: null
-            point_width: null
-            jitter: null
-            jitter_size: null
-            graph: null
-            auto_commit: null
-            autocommit: null
-            connected_pairs: null
+            label_only_selected: false
+            symbol_opacity: false
+            alpha_value: false
+            symbol_size: false
+            point_width: false
+            jitter: false
+            jitter_size: false
+            graph: false
+            auto_commit: false
+            autocommit: false
+            connected_pairs: false
         def `migrate_context`:
-            color_value: null
-            attr_color: null
-            shape_value: null
-            attr_shape: null
-            size_value: null
-            attr_size: null
-            label_value: null
-            attr_label: null
-            Stress: null
-            graph: null
-    __main__: null
-    iris: null
+            color_value: false
+            attr_color: false
+            shape_value: false
+            attr_shape: false
+            size_value: false
+            attr_size: false
+            label_value: false
+            attr_label: false
+            Stress: false
+            graph: false
+    __main__: false
+    iris: false
 widgets/unsupervised/owpca.py:
-    component variance: null
-    cumulative variance: null
+    component variance: varianca kompomente
+    cumulative variance: skupna varianca
     class `OWPCA`:
-        PCA: null
-        Principal component analysis with a scree-diagram.: null
-        icons/PCA.svg: null
-        principal component analysis: null
-        linear transformation: null
+        PCA: PCA
+        Principal component analysis with a scree-diagram.: Analiza osnovnih komponent
+        icons/PCA.svg: false
+        principal component analysis: osnovne komponente
+        linear transformation: linearna transformacija
         class `Inputs`:
-            Data: null
+            Data: Podatki
         class `Outputs`:
-            Transformed Data: null
-            Transformed data: null
-            Data: null
-            Components: null
-            PCA: null
-        plot.plotItem: null
+            Transformed Data: Transformirani podatki
+            Transformed data: Transformirani podatki
+            Data: Podatki
+            Components: Komponente
+            PCA: PCA
+        plot.plotItem: false
         class `Warning`:
-            'All components of the PCA are trivial (explain 0 variance). ': null
-            Input data is constant (or near constant).: null
+            'All components of the PCA are trivial (explain 0 variance). ': Vse komponente so trivialne
+            Input data is constant (or near constant).: Vhodni podatki so konstantni (ali skoraj konstantni)
         class `Error`:
-            At least 1 feature is required: null
-            At least 1 data instance is required: null
+            At least 1 feature is required: Potreben je vsaj en faktor.
+            At least 1 data instance is required: Tabela s podatki je prazna.
         def `__init__`:
-            Components Selection: null
-            ncomponents: null
-            All: null
-            variance_covered: null
-            %: null
-            'Components:': null
-            'Explained variance:': null
-            Options: null
-            normalize: null
-            Normalize variables: null
-            maxp: null
-            Show only first: null
-            auto_commit: null
-            Principal Components: null
-            Proportion of variance: null
+            Components Selection: Izbor komponent
+            ncomponents: false
+            All: Vse
+            variance_covered: false
+            %: true
+            'Components:': Komponente:
+            'Explained variance:': Razložena varianca:
+            Options: Opcije
+            normalize: false
+            Normalize variables: Normiraj spremenljivke
+            maxp: false
+            Show only first: Pokaži le prvih
+            auto_commit: false
+            Principal Components: Osnovne komponente
+            Proportion of variance: Delež variance
         def `set_data`:
-            Data has been sampled: null
+            Data has been sampled: Podatki so bili vzorčeni
         def `_update_axis`:
-            bottom: null
+            bottom: false
         def `commit`:
-            variance: null
-            components: null
-            PC{}: null
+            variance: false
+            components: false
+            PC{}: Komp{}
         def `send_report`:
-            Normalize data: null
-            Selected components: null
-            Explained variance: null
-            '{:.3f} %': null
+            Normalize data: Normiranje podatkov
+            Selected components: Število komponent
+            Explained variance: Razložena varianca
+            '{:.3f} %': false
         def `migrate_settings`:
-            variance_covered: null
-            ncomponents: null
-            decomposition_idx: null
-            batch_size: null
-            address: null
-            auto_update: null
-    __main__: null
-    housing: null
+            variance_covered: false
+            ncomponents: false
+            decomposition_idx: false
+            batch_size: false
+            address: false
+            auto_update: false
+    __main__: false
+    housing: false
 widgets/unsupervised/owsavedistances.py:
     class `OWSaveDistances`:
-        Save Distance Matrix: null
-        Save distance matrix to an output file.: null
-        icons/SaveDistances.svg: null
-        distance matrix: null
-        save: null
-        Excel File (*.xlsx): null
-        Distance File (*.dst): null
+        Save Distance Matrix: Shrani matriko razdalj
+        Save distance matrix to an output file.: Shrani matriko razdalj v datoteko
+        icons/SaveDistances.svg: false
+        distance matrix: false
+        save: false
+        Excel File (*.xlsx): Excelova datoteka (*.xlsx)
+        Distance File (*.dst): Datoteka razdalj (*.dst)
         class `Warning`:
-            Associated data was not saved.: null
-            Data associated with {} was not saved.: null
+            Associated data was not saved.: Pripeta tabela podatkov ni shranjena.
+            Data associated with {} was not saved.: Podatki o {} niso shranjeni.
         class `Inputs`:
-            Distances: null
+            Distances: Razdalje
         def `do_save`:
-            columns: null
-            rows: null
+            columns: stolpcih
+            rows: vrsticah
         def `send_report`:
-            'Input:': null
-            none: null
-            File name: null
-            not set: null
+            'Input:': Vhod:
+            none: false
+            File name: Ime datoteke
+            not set: ni nastavljeno
         def `_description`:
-            ' and ': null
-            row: null
-            column: null
-            ; {labels} labels: null
-            {len(dist)}-dimensional matrix{labels}: null
-    __main__: null
-    iris: null
+            ' and ': " in "
+            row: vrstic
+            column: stolpcev
+            ; {labels} labels: ; oznake {labels}
+            {len(dist)}-dimensional matrix{labels}: {len(dist)}-dimenzionalna matrika{labels}
+    __main__: false
+    iris: false
 widgets/unsupervised/owsom.py:
     class `OWSOM`:
-        Self-Organizing Map: null
-        Computation of self-organizing map.: null
-        icons/SOM.svg: null
-        SOM: null
+        Self-Organizing Map: SOM
+        Computation of self-organizing map.: Samodejni zemljevid
+        icons/SOM.svg: false
+        SOM: true
         class `Inputs`:
-            Data: null
+            Data: Podatki
         class `Outputs`:
-            Selected Data: null
-        view: null
-        OptControls: null
-        shape: null
-        auto_dim: null
-        spin_x: null
-        spin_y: null
-        initialization: null
-        start: null
+            Selected Data: Izbrani podatki
+        view: false
+        OptControls: false
+        shape: false
+        auto_dim: false
+        spin_x: false
+        spin_y: false
+        initialization: false
+        start: false
         class `Warning`:
-            SOM ignores categorical variables.: null
-            Some data instances have undefined value of '{}'.: null
-            "'{}' has no defined values.": null
-            {} data instance{} with undefined value(s) {} not shown.: null
-            Data contains a single numeric column.: null
+            SOM ignores categorical variables.: SOM ne upošteva kategoričnih spremenljivk.
+            Some data instances have undefined value of '{}'.: Nekatere vrstice imajo neznane vrednosti '{}'.
+            "'{}' has no defined values.": "'{}' ima neznane vrednosti."
+            Data contains a single numeric column.: Podatki imajo le eno številsko spremenljivko.
         class `Error`:
-            Data contains no numeric columns.: null
-            All rows contain at least one undefined value.: null
+            Data contains no numeric columns.: Podatki nimajo številskih spremenljivk.
+            All rows contain at least one undefined value.: Vsaka vrstica ima vsaj eno neznano vrednost.
         def `__init__`:
-            SOM: null
-            Hexagonal grid: null
-            Square grid: null
-            auto_dimension: null
-            Set dimensions automatically: null
-            ×: null
-            initialization: null
-            Initialize with PCA: null
-            Random initialization: null
-            Replicable random: null
-            Restart: null
-            Color: null
-            attr_color: null
-            (Same color): null
-            pie_charts: null
-            Show pie charts: null
-            size_by_instances: null
-            Size by number of instances: null
+            SOM: SOM
+            Hexagonal grid: Šestkotna mreža
+            Square grid: Pravokotna mreža
+            auto_dimension: false
+            Set dimensions automatically: Samodejno nastavi velikost mreže
+            ×: false
+            initialization: false
+            Initialize with PCA: Uporabi PCA
+            Random initialization: Naključni razpored
+            Replicable random: Ponovljivo naključje
+            Restart: Ponovno poženi
+            Color: Barva
+            attr_color: false
+            (Same color): (Enobarvno)
+            pie_charts: false
+            Show pie charts: Pokaži tortne diagrame
+            size_by_instances: false
+            Size by number of instances: Velikost odraža število primerov
         def `set_data`:
             def `set_warnings`:
-                is: null
-                s: null
-                are: null
+                {missing} data {pl(missing, "instance")} with undefined value(s) {pl(missing, "is|are")} not shown.: {missing} {plsi(missing, "primer")} z manjkajočimi vrednostmi {plsi(missing, "ni prikazan|nista prikazana|niso prikazani|ni prikazanih")}.
         def `enable_controls`:
-            Start: null
-            Stop: null
+            Start: Začni
+            Stop: Stoj
         def `_draw_same_color`:
-            {n} instances: null
+            {n} instances: {n} {plsi(n, "primer")}
         def `_get_color_column`:
-            ignore: null
+            ignore: false
         def `_tooltip`:
-            (N/A): null
-            \N{NON-BREAKING HYPHEN}: null
-            '<table style="white-space: nowrap">': null
+            (N/A): (NN)
+            \N{NON-BREAKING HYPHEN}: false
+            '<table style="white-space: nowrap">': false
             | 4
                             <tr>
                                 <td>
@@ -11297,113 +11294,113 @@ widgets/unsupervised/owsom.py:
                                 </td>
                             </tr>
                             
-            : null
-            </table>: null
+            : false
+            </table>: false
         def `update_output`:
-            Group: null
+            Group: Skupina
         def `_bin_names`:
-            < {labels[0]}: null
-            {x} - {y}: null
-            ≥ {labels[-1]}: null
+            < {labels[0]}: true
+            {x} - {y}: true
+            ≥ {labels[-1]}: true
         def `send_report`:
-            Self-organizing map colored by '{self.attr_color.name}': null
-    __main__: null
-    iris: null
+            Self-organizing map colored by '{self.attr_color.name}': Samodejni zemljevid, pobarvan glede na '{self.attr_color.name}'
+    __main__: false
+    iris: false
 widgets/unsupervised/owtsne.py:
     def `prepare_tsne_obj`:
-        approx: null
-        fft: null
-        exact: null
-        bh: null
+        approx: false
+        fft: false
+        exact: false
+        bh: false
     class `TSNERunner`:
         def `compute_pca`:
-            Computing PCA...: null
-            pca_projection: null
+            Computing PCA...: Računam PCA...
+            pca_projection: false
         def `compute_initialization`:
-            Preparing initialization...: null
-            initialization: null
+            Preparing initialization...: Pripravljam začetno stanje...
+            initialization: false
         def `compute_affinities`:
-            Finding nearest neighbors...: null
-            affinities: null
+            Finding nearest neighbors...: Iščem najbližje sosede...
+            affinities: false
         def `compute_tsne`:
-            Running optimization...: null
-            tsne_embedding: null
+            Running optimization...: Optimizacija teče...
+            tsne_embedding: false
             def `run_optimization`:
-                tsne_embedding: null
+                tsne_embedding: false
         def `run`:
-            pca: null
-            init: null
-            aff: null
-            tsne: null
+            pca: false
+            init: false
+            aff: false
+            tsne: false
     class `invalidated`:
         def `__str__`:
-            %s(%s): null
-            ', ': null
-            =: null
-            pca_projection: null
-            affinities: null
-            tsne_embedding: null
+            %s(%s): false
+            ', ': false
+            =: false
+            pca_projection: false
+            affinities: false
+            tsne_embedding: false
     class `OWtSNE`:
-        t-SNE: null
-        Two-dimensional data projection with t-SNE.: null
-        icons/TSNE.svg: null
-        tsne: null
-        t-SNE-x: null
-        t-SNE-y: null
+        t-SNE: false
+        Two-dimensional data projection with t-SNE.: Dvodimenzionalna projekcija podatkov s t-SNE
+        icons/TSNE.svg: false
+        tsne: false
+        t-SNE-x: false
+        t-SNE-y: false
         class `Information`:
-            'The parameter settings have been changed. Press ': null
-            \"Start\" to rerun with the new settings.: null
+            'The parameter settings have been changed. Press ': "Parametri so spremenjeni. Pritisnite "
+            \"Start\" to rerun with the new settings.: "Začni" za ponovni izračun.
         class `Error`:
-            Input data needs at least 2 rows: null
-            Input data needs at least 2 attributes: null
-            Input data is constant: null
-            No projection due to no valid data: null
+            Input data needs at least 2 rows: Podatki morajo vsebovati vsaj dva primera.
+            Input data needs at least 2 attributes: Podatki morajo vsebovati vsaj dve spremenljivki.
+            Input data is constant: Podatki so konstantni.
+            No projection due to no valid data: Ni veljavnih podatkov - ni projekcije.
         def `_add_controls_start_box`:
-            Optimize: null
-            perplexity: null
-            'Perplexity:': null
-            multiscale: null
-            Preserve global structure: null
-            exaggeration: null
-            'Exaggeration:': null
-            pca_components: null
-            'PCA components:': null
-            normalize: null
-            Normalize data: null
-            Start: null
+            Optimize: Optimizacija
+            perplexity: false
+            'Perplexity:': Zmedenost (perplexity):
+            multiscale: false
+            Preserve global structure: Ohrani globalni razpored:
+            exaggeration: false
+            'Exaggeration:': Pretiravanje (exaggeration):
+            pca_components: false
+            'PCA components:': Število komponent PCA:
+            normalize: false
+            Normalize data: Normiraj podatke
+            Start: Začni
         def `_stop_running_task`:
-            Start: null
+            Start: Začni
         def `check_data`:
-            ignore: null
-            Degrees of freedom .*: null
+            ignore: false
+            Degrees of freedom .*: false
         def `_toggle_run`:
-            Resume: null
+            Resume: Nadaljuj
         def `enable_controls`:
-            Data normalization is not supported on sparse matrices.: null
+            Data normalization is not supported on sparse matrices.: Normalizacija redkih podatkov ni podprta.
         def `run`:
-            Stop: null
+            Stop: Prekini
         def `on_partial_result`:
-            pca_projection: null
-            initialization: null
-            affinities: null
-            tsne_embedding: null
-            Unrecognized partial result called with `%s`: null
+            pca_projection: false
+            initialization: false
+            affinities: false
+            tsne_embedding: false
+            Unrecognized partial result called with `%s`: false
         def `on_done`:
-            Start: null
+            Start: Začni
         def `clear`:
-            Start: null
+            Start: Začni
         def `migrate_settings`:
-            selection_indices: null
-            selection: null
-            max_iter: null
+            selection_indices: false
+            selection: false
+            max_iter: false
         def `migrate_context`:
-            attr_color: null
-            graph: null
-            attr_size: null
-            attr_shape: null
-            attr_label: null
-    __main__: null
-    iris: null
+            attr_color: false
+            graph: false
+            attr_size: false
+            attr_shape: false
+            attr_label: false
+    __main__: false
+    iris: false
 widgets/utils/PDFExporter.py:
     PDFExporter: null
 widgets/utils/SVGExporter.py:
