@@ -10006,19 +10006,19 @@ widgets/model/owsgd.py:
     iris: null
 widgets/model/owstack.py:
     class `OWStackedLearner`:
-        Stacking: null
-        Stack multiple models.: null
-        icons/Stacking.svg: null
-        Stack: null
+        Stacking: Sklad modelov
+        Stack multiple models.: Sestavi več modelov v model.
+        icons/Stacking.svg: false
+        Stack: Sklad
         class `Inputs`:
-            Learners: null
-            Aggregate: null
+            Learners: Modeli
+            Aggregate: Združevalnik
         def `get_learner_parameters`:
-            Base learners: null
-            Aggregator: null
-            default: null
-    __main__: null
-    iris: null
+            Base learners: Osnovni modeli
+            Aggregator: Združevalnik
+            default: privzeti
+    __main__: false
+    iris: false
 widgets/model/owsvm.py:
     class `OWSVM`:
         SVM: null
