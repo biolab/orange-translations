@@ -10486,47 +10486,47 @@ widgets/unsupervised/owdistancefile.py:
 widgets/unsupervised/owdistancemap.py:
     class `DistanceMapItem`:
         def `hoverMoveEvent`:
-            '{}, {}: {:.3f}': null
+            '{}, {}: {:.3f}': false
     class `OWDistanceMap`:
-        Distance Map: null
-        Visualize a distance matrix.: null
-        icons/DistanceMap.svg: null
+        Distance Map: Slika razdalj
+        Visualize a distance matrix.: Prikaže matriko razdalj s toplo gredo
+        icons/DistanceMap.svg: false
         class `Inputs`:
-            Distances: null
+            Distances: Razdalje
         class `Outputs`:
-            Selected Data: null
-            Features: null
+            Selected Data: Izbrani podatki
+            Features: Spremenljivke
         class `Error`:
-            Empty distance matrix: null
-            Distance matrix is not symmetric.: null
-        grid_widget: null
+            Empty distance matrix: Prazna matrika razdalj
+            Distance matrix is not symmetric.: Matrika razdalj ni simetrična.
+        grid_widget: false
         def `__init__`:
-            sorting: null
-            Element Sorting: null
-            None: null
-            Clustering: null
-            Clustering with ordered leaves: null
-            Colors: null
-            annotation_idx: null
-            Annotations: null
-            Enumeration: null
-            autocommit: null
+            sorting: false
+            Element Sorting: Urejanje
+            None: (Brez)
+            Clustering: Gručenje
+            Clustering with ordered leaves: Gručenje z urejenimi listi
+            Colors: Barve
+            annotation_idx: false
+            Annotations: Oznake
+            Enumeration: Oštevilčenje
+            autocommit: false
         def `set_distances`:
-            'Cluster ordering was disabled due to the input ': null
-            matrix being to big: null
-            'Clustering was disabled due to the input ': null
+            'Cluster ordering was disabled due to the input ': Urejeno gručenje
+            matrix being to big: " je izključeno, ker je podatkov preveč."
+            'Clustering was disabled due to the input ': Gručenje
         def `set_items`:
-            None: null
-            Enumeration: null
-            Attribute names: null
-            Name: null
+            None: (Brez)
+            Enumeration: Oštevilčenje
+            Attribute names: Imena spremenljivk
+            Name: Imena
         def `_update_labels`:
-            Attribute names: null
+            Attribute names: Imena spremenljivk
         def `send_report`:
-            Sorting: null
-            Annotations: null
-    __main__: null
-    iris: null
+            Sorting: Urejenost
+            Annotations: Oznake
+    __main__: false
+    iris: false
 widgets/unsupervised/owdistancematrix.py:
     class `OWDistanceMatrix`:
         Distance Matrix: null
