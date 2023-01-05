@@ -10529,47 +10529,47 @@ widgets/unsupervised/owdistancemap.py:
     iris: false
 widgets/unsupervised/owdistancematrix.py:
     class `OWDistanceMatrix`:
-        Distance Matrix: null
-        View distance matrix.: null
-        icons/DistanceMatrix.svg: null
+        Distance Matrix: Matrika razdalj
+        View distance matrix.: Pokaže matriko razdalj.
+        icons/DistanceMatrix.svg: false
         class `Inputs`:
-            Distances: null
+            Distances: Razdalje
         class `Outputs`:
-            Distances: null
-            Selected Data: null
-            Table: null
+            Distances: Razdalje
+            Selected Data: Izbrani podatki
+            Table: Tabela
         def `__init__`:
-            annotation_idx: null
-            'Labels: ': null
-            None: null
-            Enumeration: null
-            auto_commit: null
+            annotation_idx: false
+            'Labels: ': "Oznake :"
+            None: Brez
+            Enumeration: Oštevilčenje
+            auto_commit: false
         def `set_distances`:
-            None: null
-            Enumerate: null
-            Labels: null
-            Attribute names: null
-            Name: null
+            None: Brez
+            Enumerate: Oštevilčenje
+            Labels: Oznake
+            Attribute names: Imena spremenljivk
+            Name: Imena
         def `_choose_label`:
-            Enumerate: null
+            Enumerate: Oštevilčenje
         def `_update_labels`:
-            Attribute names: null
-            Labels: null
+            Attribute names: Imena spremenljivk
+            Labels: Oznake
         def `_set_selection`:
-            wrong data for symmetric selection: null
-            wrong data for asymmetric selection: null
+            wrong data for symmetric selection: false
+            wrong data for asymmetric selection: false
         def `send_report`:
             def `cell`:
-                ' style="background-color: {brush.color().name()}"': null
-                '{label:.{ndec}f}': null
-                <td {style}>{label}</td>\n: null
-            '<table style="border-collapse:collapse">': null
-            <tr>: null
-            <td></td>: null
-            </tr>: null
-            </table>: null
-    __main__: null
-    zoo: null
+                ' style="background-color: {brush.color().name()}"': false
+                '{label:.{ndec}f}': false
+                <td {style}>{label}</td>\n: false
+            '<table style="border-collapse:collapse">': false
+            <tr>: false
+            <td></td>: false
+            </tr>: false
+            </table>: false
+    __main__: false
+    zoo: falaseg
 widgets/unsupervised/owdistances.py:
     Euclidean: evklidska
     Manhattan: manhattanska
