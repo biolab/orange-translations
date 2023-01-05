@@ -10838,88 +10838,88 @@ widgets/unsupervised/owkmeans.py:
     __main__: false
     heart_disease: false
 widgets/unsupervised/owlouvainclustering.py:
-    Euclidean: null
-    l2: null
-    Manhattan: null
-    l1: null
-    Cosine: null
-    cosine: null
+    Euclidean: Evklidska
+    l2: false
+    Manhattan: Manhattanska
+    l1: false
+    Cosine: Kosinusna
+    cosine: false
     class `OWLouvainClustering`:
-        Louvain Clustering: null
-        Detects communities in a network of nearest neighbors.: null
-        icons/LouvainClustering.svg: null
+        Louvain Clustering: Louvainsko gručenje
+        Detects communities in a network of nearest neighbors.: Poišče zgostitve v mreži najbližjih sosedov
+        icons/LouvainClustering.svg: false
         class `Inputs`:
-            Data: null
+            Data: Podatki
         class `Outputs`:
-            Network: null
+            Network: Mreža
         class `Information`:
-            Press commit to recompute clusters and send new data: null
+            Press commit to recompute clusters and send new data: Pritisnite Uveljavi za izračun novih gruč in pošiljanje podatkov
         class `Error`:
-            No features in data: null
+            No features in data: Podatki ne vsebujejo spremenljivk
         def `__init__`:
-            Info: null
-            No data on input.: null
-            Preprocessing: null
-            normalize: null
-            Normalize data: null
-            apply_pca: null
-            Apply PCA preprocessing: null
-            pca_components: null
-            'PCA Components: ': null
-            Graph parameters: null
-            metric_idx: null
-            Distance metric: null
-            k_neighbors: null
-            k neighbors: null
-            resolution: null
-            Resolution: null
-            %.1f: null
-            'The resolution parameter affects the number of clusters to find. ': null
-            'Smaller values tend to produce more clusters and larger values ': null
-            retrieve less clusters.: null
-            auto_commit: null
+            Info: Info
+            No data on input.: Ni podatkov na vhodu
+            Preprocessing: Predprocesiranje
+            normalize: false
+            Normalize data: Normiraj podatke
+            apply_pca: false
+            Apply PCA preprocessing: Predprocesiraj s PCA
+            pca_components: false
+            'PCA Components: ': Število komponent
+            Graph parameters: Parametri mreže
+            metric_idx: false
+            Distance metric: Mera razdalje
+            k_neighbors: false
+            k neighbors: Število sosedov
+            resolution: false
+            Resolution: Ločljivost
+            %.1f: false
+            'The resolution parameter affects the number of clusters to find. ': Ločljivost vpliva na število najdenih gruč.
+            'Smaller values tend to produce more clusters and larger values ': Manjša ločljivost običajno vodi v več gruč, večja ločljivost pa v manj.
+            retrieve less clusters.: ""
+            auto_commit: false
         def `commit`:
-            Running...: null
+            Running...: Tečem...
         def `__set_partial_results`:
-            pca_projection: null
-            graph: null
-            partition: null
+            pca_projection: false
+            graph: false
+            partition: false
         def `__set_results`:
-            %d clusters found.: null
+            {num_clusters} clusters found.: {plsi(num_clusters, "Najdena|Najdeni|Najdene|Najdenih")} {z_besedo(num_clusters, 1, "f")} {plsi(num_clusters, "gruča")}.
         def `_send_data`:
-            Cluster: null
-            C%d: null
+            Cluster: Gruča
+            C%d: G%d
         def `set_data`:
-            Clustering not yet run.: null
+            Clustering not yet run.: Gručenje še ni steklo.
         def `clear`:
-            No data on input.: null
+            No data on input.: Ni podatkov na vhodu.
         def `send_report`:
-            , {number} component{s}: null
-            Normalize data: null
-            PCA preprocessing: null
-            Metric: null
-            k neighbors: null
-            Resolution: null
+            , {self.pca_components} {pl(self.pca_components, 'component')}: , {self.pca_components} {plsi(self.pca_components, 'komponenta')}
+            Normalize data: Normiranje podatkov
+            PCA preprocessing: Predprocesiranje s PCA
+            Metric: Mera razdalje
+            k neighbors: Število sosedov
+            Resolution: Ločljivost
         def `migrate_settings`:
-            context_settings: null
-            apply_pca: null
-            k_neighbors: null
-            metric_idx: null
-            normalize: null
-            pca_components: null
-            resolution: null
+            context_settings: false
+            apply_pca: false
+            k_neighbors: false
+            metric_idx: false
+            normalize: false
+            pca_components: false
+            resolution: false
     def `run_on_data`:
-        Computing PCA...: null
-        pca_projection: null
-        Building graph...: null
-        graph: null
-        Detecting communities...: null
-        partition: null
+        Computing PCA...: Računam PCA...
+        pca_projection: false
+        Building graph...: Sestavljam mrežo...
+        graph: false
+        Detecting communities...: Iščem zgostitve...
+        partition: false
     def `run_on_graph`:
-        Detecting communities...: null
-        partition: null
-    __main__: null
-    iris: null
+        Detecting communities...: Iščem zgostitve...
+        partition: false
+    __main__: false
+    iris: false
 widgets/unsupervised/owmanifoldlearning.py:
     class `ManifoldParametersEditor`:
         def `_create_spin_parameter`:
