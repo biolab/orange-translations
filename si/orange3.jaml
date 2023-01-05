@@ -11308,99 +11308,99 @@ widgets/unsupervised/owsom.py:
     iris: false
 widgets/unsupervised/owtsne.py:
     def `prepare_tsne_obj`:
-        approx: null
-        fft: null
-        exact: null
-        bh: null
+        approx: false
+        fft: false
+        exact: false
+        bh: false
     class `TSNERunner`:
         def `compute_pca`:
-            Computing PCA...: null
-            pca_projection: null
+            Computing PCA...: Računam PCA...
+            pca_projection: false
         def `compute_initialization`:
-            Preparing initialization...: null
-            initialization: null
+            Preparing initialization...: Pripravljam začetno stanje...
+            initialization: false
         def `compute_affinities`:
-            Finding nearest neighbors...: null
-            affinities: null
+            Finding nearest neighbors...: Iščem najbližje sosede...
+            affinities: false
         def `compute_tsne`:
-            Running optimization...: null
-            tsne_embedding: null
+            Running optimization...: Optimizacija teče...
+            tsne_embedding: false
             def `run_optimization`:
-                tsne_embedding: null
+                tsne_embedding: false
         def `run`:
-            pca: null
-            init: null
-            aff: null
-            tsne: null
+            pca: false
+            init: false
+            aff: false
+            tsne: false
     class `invalidated`:
         def `__str__`:
-            %s(%s): null
-            ', ': null
-            =: null
-            pca_projection: null
-            affinities: null
-            tsne_embedding: null
+            %s(%s): false
+            ', ': false
+            =: false
+            pca_projection: false
+            affinities: false
+            tsne_embedding: false
     class `OWtSNE`:
-        t-SNE: null
-        Two-dimensional data projection with t-SNE.: null
-        icons/TSNE.svg: null
-        tsne: null
-        t-SNE-x: null
-        t-SNE-y: null
+        t-SNE: false
+        Two-dimensional data projection with t-SNE.: Dvodimenzionalna projekcija podatkov s t-SNE
+        icons/TSNE.svg: false
+        tsne: false
+        t-SNE-x: false
+        t-SNE-y: false
         class `Information`:
-            'The parameter settings have been changed. Press ': null
-            \"Start\" to rerun with the new settings.: null
+            'The parameter settings have been changed. Press ': "Parametri so spremenjeni. Pritisnite "
+            \"Start\" to rerun with the new settings.: "Začni" za ponovni izračun.
         class `Error`:
-            Input data needs at least 2 rows: null
-            Input data needs at least 2 attributes: null
-            Input data is constant: null
-            No projection due to no valid data: null
+            Input data needs at least 2 rows: Podatki morajo vsebovati vsaj dva primera.
+            Input data needs at least 2 attributes: Podatki morajo vsebovati vsaj dve spremenljivki.
+            Input data is constant: Podatki so konstantni.
+            No projection due to no valid data: Ni veljavnih podatkov - ni projekcije.
         def `_add_controls_start_box`:
-            Optimize: null
-            perplexity: null
-            'Perplexity:': null
-            multiscale: null
-            Preserve global structure: null
-            exaggeration: null
-            'Exaggeration:': null
-            pca_components: null
-            'PCA components:': null
-            normalize: null
-            Normalize data: null
-            Start: null
+            Optimize: Optimizacija
+            perplexity: false
+            'Perplexity:': Zmedenost (perplexity):
+            multiscale: false
+            Preserve global structure: Ohrani globalni razpored:
+            exaggeration: false
+            'Exaggeration:': Pretiravanje (exaggeration):
+            pca_components: false
+            'PCA components:': Število komponent PCA:
+            normalize: false
+            Normalize data: Normiraj podatke
+            Start: Začni
         def `_stop_running_task`:
-            Start: null
+            Start: Začni
         def `check_data`:
-            ignore: null
-            Degrees of freedom .*: null
+            ignore: false
+            Degrees of freedom .*: false
         def `_toggle_run`:
-            Resume: null
+            Resume: Nadaljuj
         def `enable_controls`:
-            Data normalization is not supported on sparse matrices.: null
+            Data normalization is not supported on sparse matrices.: Normalizacija redkih podatkov ni podprta.
         def `run`:
-            Stop: null
+            Stop: Prekini
         def `on_partial_result`:
-            pca_projection: null
-            initialization: null
-            affinities: null
-            tsne_embedding: null
-            Unrecognized partial result called with `%s`: null
+            pca_projection: false
+            initialization: false
+            affinities: false
+            tsne_embedding: false
+            Unrecognized partial result called with `%s`: false
         def `on_done`:
-            Start: null
+            Start: Začni
         def `clear`:
-            Start: null
+            Start: Začni
         def `migrate_settings`:
-            selection_indices: null
-            selection: null
-            max_iter: null
+            selection_indices: false
+            selection: false
+            max_iter: false
         def `migrate_context`:
-            attr_color: null
-            graph: null
-            attr_size: null
-            attr_shape: null
-            attr_label: null
-    __main__: null
-    iris: null
+            attr_color: false
+            graph: false
+            attr_size: false
+            attr_shape: false
+            attr_label: false
+    __main__: false
+    iris: false
 widgets/utils/PDFExporter.py:
     PDFExporter: null
 widgets/utils/SVGExporter.py:
