@@ -11043,95 +11043,95 @@ widgets/unsupervised/owmanifoldlearning.py:
     brown-selected: null
 widgets/unsupervised/owmds.py:
     def `stress`:
-        euclidean: null
+        euclidean: false
     def `run_mds`:
-        Running...: null
-        precomputed: null
-        eps: null
+        Running...: Tečem...
+        precomputed: false
+        eps: false
     class `OWMDSGraph`:
         def `update_pairs`:
-            pairs: null
+            pairs: false
     class `OWMDS`:
-        MDS: null
-        'Two-dimensional data projection by multidimensional ': null
-        scaling constructed from a distance matrix.: null
-        icons/MDS.svg: null
-        multidimensional scaling: null
-        multi dimensional scaling: null
+        MDS: Večrazsežnostno lestvičenje
+        'Two-dimensional data projection by multidimensional ': "Dvodimenzionalna projekcija večdimenzionalnih podatkov, "
+        scaling constructed from a distance matrix.: "ki poskuša ohraniti razdalje med primeri."
+        icons/MDS.svg: false
+        multidimensional scaling: true
+        multi dimensional scaling: mds
         class `Inputs`:
-            Distances: null
-        Every iteration: null
-        Every 5 steps: null
-        Every 10 steps: null
-        Every 25 steps: null
-        Every 50 steps: null
-        None: null
-        mds-x: null
-        mds-y: null
+            Distances: Razdalja
+        Every iteration: po vsakem koraku
+        Every 5 steps: vsakih pet korakov
+        Every 10 steps: vsakih deset korako
+        Every 25 steps: vsakih 25 korakov
+        Every 50 steps: vsakih 50 korakov
+        None: nikoli
+        mds-x: false
+        mds-y: false
         class `Error`:
-            Input data needs at least 2 rows: null
-            Distance matrix is not symmetric: null
-            Input matrix must be at least 2x2: null
-            Data has no attributes: null
-            Data and distances dimensions do not match.: null
-            Out of memory: null
-            Error during optimization\n{}: null
+            Input data needs at least 2 rows: Podatki morajo imeti vsaj dva primera.
+            Distance matrix is not symmetric: Matrika razdalj ni simetrična.
+            Input matrix must be at least 2x2: Matrika razdalj mora biti velika vsaj 2x2
+            Data has no attributes: Podatki nimajo spremenljivk
+            Data and distances dimensions do not match.: Podatki in matrika razdalj so različno veliki
+            Out of memory: Premalo pomnilnika
+            Error during optimization\n{}: Napaka med računanjem\n{}
         def `__init__`:
-            Stress: null
+            Stress: Napetost
         def `_add_controls`:
-            'Show similar pairs:': null
-            connected_pairs: null
+            'Show similar pairs:': Pokaži podobne pare:
+            connected_pairs: false
         def `_add_controls_optimization`:
-            Optimize: null
-            PCA: null
-            Randomize: null
-            Jitter: null
-            refresh_rate: null
-            'Refresh: ': null
-            Start: null
+            Optimize: Izračun
+            PCA: PCA
+            Randomize: Razmeči
+            Jitter: Potresi
+            refresh_rate: false
+            'Refresh: ': "Osveževanje: "
+            Start: Začni
         def `_initialize`:
-            labels: null
+            labels: false
         def `init_attr_values`:
-            labels: null
+            labels: false
         def `_toggle_run`:
-            Resume: null
+            Resume: Nadaljuj
         def `_run`:
-            Stop: null
-            PCA: null
-            random: null
+            Stop: Stoj
+            PCA: Pca
+            random: false
         def `on_done`:
-            Start: null
+            Start: Začni
         def `on_exception`:
-            Start: null
+            Start: Začni
         def `do_initialization`:
-            Start: null
+            Start: Začni
         def `get_size_data`:
-            Stress: null
+            Stress: Napetost
         def `migrate_settings`:
-            label_only_selected: null
-            symbol_opacity: null
-            alpha_value: null
-            symbol_size: null
-            point_width: null
-            jitter: null
-            jitter_size: null
-            graph: null
-            auto_commit: null
-            autocommit: null
-            connected_pairs: null
+            label_only_selected: false
+            symbol_opacity: false
+            alpha_value: false
+            symbol_size: false
+            point_width: false
+            jitter: false
+            jitter_size: false
+            graph: false
+            auto_commit: false
+            autocommit: false
+            connected_pairs: false
         def `migrate_context`:
-            color_value: null
-            attr_color: null
-            shape_value: null
-            attr_shape: null
-            size_value: null
-            attr_size: null
-            label_value: null
-            attr_label: null
-            Stress: null
-            graph: null
-    __main__: null
-    iris: null
+            color_value: false
+            attr_color: false
+            shape_value: false
+            attr_shape: false
+            size_value: false
+            attr_size: false
+            label_value: false
+            attr_label: false
+            Stress: false
+            graph: false
+    __main__: false
+    iris: false
 widgets/unsupervised/owpca.py:
     component variance: null
     cumulative variance: null
