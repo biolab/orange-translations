@@ -10442,47 +10442,47 @@ widgets/unsupervised/owdbscan.py:
     iris.tab: false
 widgets/unsupervised/owdistancefile.py:
     class `OWDistanceFile`:
-        Distance File: null
-        orange.widgets.unsupervised.distancefile: null
-        Read distances from a file.: null
-        icons/DistanceFile.svg: null
-        load: null
-        read: null
-        open: null
+        Distance File: Branje razdalj
+        orange.widgets.unsupervised.distancefile: false
+        Read distances from a file.: Prebere matriko razdalj iz datoteke
+        icons/DistanceFile.svg: false
+        load: true
+        read: razdalje
+        open: file
         class `Outputs`:
-            Distances: null
+            Distances: Razdalje
         class `Error`:
-            'Data was not loaded:{}': null
+            'Data was not loaded:{}': 'Branje ni uspelo:{}'
         def `__init__`:
-            Distance File: null
+            Distance File: Datoteka z razdaljami
             ...: null
-            Reload: null
-            Options: null
-            auto_symmetric: null
-            Treat triangular matrices as symmetric: null
-            'If matrix is triangular, this will copy the data to the ': null
-            other triangle: null
-            Browse documentation datasets: null
+            Reload: Naloži ponovno
+            Options: Opcije
+            auto_symmetric: false
+            Treat triangular matrices as symmetric: Obravnavaj trikotne matrike kot simetrične
+            'If matrix is triangular, this will copy the data to the ': "Če je matrika trikotna, bo to preslikalo podatke "
+            other triangle: še v nasprotni trikotnik.
+            Browse documentation datasets: Prebrskaj podatke iz dokumentacije
         def `browse_file`:
-            File: null
-            Cannot find the directory with documentation datasets: null
-            ~/: null
-            Open Distance File: null
-            Excel File (*.xlsx);;Distance File (*.dst): null
+            File: Datoteka
+            Cannot find the directory with documentation datasets: Ne najdem imenika z datotekami iz dokumentacije
+            ~/: false
+            Open Distance File: Odpri datoteko razdalj
+            Excel File (*.xlsx);;Distance File (*.dst): Excelova datoteka (*.xlsx); Razdalje (*.dst)
         def `open_file`:
-            .: null
-            (none): null
-            ' \n': null
+            .: false
+            (none): (prazno)
+            ' \n': false
         def `send_report`:
-            No data was loaded.: null
-            File name: null
+            No data was loaded.: Podatki niso naloženi.
+            File name: Ime datoteke
     class `OWDistanceFileDropHandler`:
         def `parametersFromFile`:
-            recent_paths: null
+            recent_paths: false
         def `canDropFile`:
-            .dst: null
-            .xlsx: null
-    __main__: null
+            .dst: false
+            .xlsx: false
+    __main__: false
 widgets/unsupervised/owdistancemap.py:
     class `DistanceMapItem`:
         def `hoverMoveEvent`:
