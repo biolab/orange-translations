@@ -10774,69 +10774,69 @@ widgets/unsupervised/owhierarchicalclustering.py:
 widgets/unsupervised/owkmeans.py:
     class `ClusterTableModel`:
         def `data`:
-            '{:.3f}': null
-            NA: null
+            '{:.3f}': false
+            NA: NN
     class `OWKMeans`:
-        k-Means: null
-        'k-Means clustering algorithm with silhouette-based ': null
-        quality estimation.: null
-        icons/KMeans.svg: null
-        kmeans: null
-        clustering: null
+        k-Means: K gruč
+        'k-Means clustering algorithm with silhouette-based ': Gručenje v k gruč in izbor s silhueto
+        quality estimation.: false
+        icons/KMeans.svg: false
+        kmeans: true
+        clustering: gručenje
         class `Inputs`:
-            Data: null
+            Data: Podatki
         class `Outputs`:
-            Annotated Data: null
-            Centroids: null
+            Annotated Data: Označeni podatki
+            Centroids: Centroidi
         class `Error`:
-            'Clustering failed\nError: {}': null
-            Too few ({}) unique data instances for {} clusters: null
-            Data is missing features.: null
+            'Clustering failed\nError: {}': Gručenje ni uspelo.\nNapaka: {}
+            Too few ({}) unique data instances for {} clusters: Premalo ({}) neponovljenih primerov za {} gruč.
+            Data is missing features.: Podatki nimajo spremenljivk.
         class `Warning`:
-            Silhouette scores are not computed for >{} samples: null
-            Too few ({}) unique data instances for {} clusters: null
-            Sparse data cannot be normalized: null
-        Initialize with KMeans++: null
-        k-means++: null
-        Random initialization: null
-        random: null
+            Silhouette scores are not computed for >{} samples: Silhuet za več kot {} primerov ne računam.
+            Too few ({}) unique data instances for {} clusters: Premalo ({}) neponovljenih primerov za {} gruč.
+            Sparse data cannot be normalized: Redkih podatkov ni možno normirati.
+        Initialize with KMeans++: Začni s KMeans++
+        k-means++: false
+        Random initialization: Začni naključno
+        random: false
         def `migrate_settings`:
-            auto_apply: null
-            auto_commit: null
+            auto_apply: false
+            auto_commit: false
         def `__init__`:
-            optimize_k: null
-            Number of Clusters: null
-            'Fixed:': null
-            k: null
-            From: null
-            k_from: null
-            to: null
-            k_to: null
-            Preprocessing: null
-            normalize: null
-            Normalize columns: null
-            Initialization: null
-            smart_init: null
-            'Re-runs: ': null
-            n_init: null
-            'Maximum iterations: ': null
-            max_iterations: null
-            Silhouette Scores: null
-            auto_commit: null
+            optimize_k: false
+            Number of Clusters: Število gruč
+            'Fixed:': 'Določeno:'
+            k: false
+            From: Od
+            k_from: false
+            to: do
+            k_to: false
+            Preprocessing: Predprocesiranje
+            normalize: false
+            Normalize columns: Normiraj stolpce
+            Initialization: Postopek
+            smart_init: false
+            'Re-runs: ': Število ponovitev
+            n_init: false
+            'Maximum iterations: ': "Največje število korakov: "
+            max_iterations: false
+            Silhouette Scores: Silhuete
+            auto_commit: false
         def `send_data`:
-            Cluster: null
-            C%d: null
-            Silhouette: null
-            centroids: null
-            {self.data.name} centroids: null
+            Cluster: Gruča
+            C%d: G%d
+            Silhouette: Silhuete
+            centroids: centroidi
+            {self.data.name} centroids: centroidi {self.data.name}
         def `send_report`:
-            Number of clusters: null
-            Optimization: null
-            {}, {} re-runs limited to {} steps: null
-            Data: null
-            Silhouette scores for different numbers of clusters: null
-    __main__: null
-    heart_disease: null
+            Number of clusters: Število gruč
+            Optimization: Optimizacija
+            {}, {} re-runs limited to {} steps: {}, {} ponovitev, omejenih na {} korakov
+            Data: Podatki
+            Silhouette scores for different numbers of clusters: Silhuete za različno število gruč
+    __main__: false
+    heart_disease: false
 widgets/unsupervised/owlouvainclustering.py:
     Euclidean: null
     l2: null
