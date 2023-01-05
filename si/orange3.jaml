@@ -9868,16 +9868,16 @@ widgets/model/owrules.py:
     iris: false
 widgets/model/owsavemodel.py:
     class `OWSaveModel`:
-        Save Model: null
-        Save a trained model to an output file.: null
-        icons/SaveModel.svg: null
-        Orange.widgets.classify.owsaveclassifier.OWSaveClassifier: null
+        Save Model: Shrani model
+        Save a trained model to an output file.: Shrani model v datoteko.
+        icons/SaveModel.svg: false
+        Orange.widgets.classify.owsaveclassifier.OWSaveClassifier: false
         class `Inputs`:
-            Model: null
-        Pickled model (*.pkcls): null
+            Model: true
+        Pickled model (*.pkcls): Pickle z modelom (*.pickle)
         def `do_save`:
-            wb: null
-    __main__: null
+            wb: false
+    __main__: false
 widgets/model/owsgd.py:
     class `OWSGD`:
         Stochastic Gradient Descent: null
