@@ -9192,205 +9192,205 @@ widgets/model/__init__.py:
     icons/Category-Model.svg: null
 widgets/model/owadaboost.py:
     class `OWAdaBoost`:
-        AdaBoost: null
-        'An ensemble meta-algorithm that combines weak learners ': null
-        "and adapts to the 'hardness' of each training sample. ": null
-        icons/AdaBoost.svg: null
-        Orange.widgets.classify.owadaboost.OWAdaBoostClassification: null
-        Orange.widgets.regression.owadaboostregression.OWAdaBoostRegression: null
-        boost: null
+        AdaBoost: true
+        'An ensemble meta-algorithm that combines weak learners ': "Skupinski algoritem učenja, ki združuje šibke algoritme "
+        "and adapts to the 'hardness' of each training sample. ": in prilagaja "težavnosti" učnih primerov.
+        icons/AdaBoost.svg: false
+        Orange.widgets.classify.owadaboost.OWAdaBoostClassification: false
+        Orange.widgets.regression.owadaboostregression.OWAdaBoostRegression: false
+        boost: false
         class `Inputs`:
-            Learner: null
-        SAMME: null
-        SAMME.R: null
-        Linear: null
-        Square: null
-        Exponential: null
+            Learner: Učni algoritem
+        SAMME: true
+        SAMME.R: true
+        Linear: Linearna
+        Square: Kvadratna
+        Exponential: Eksponentna
         class `Error`:
-            The base learner does not support weights.: null
+            The base learner does not support weights.: Učni algoritem ne podpira uteži.
         def `add_main_layout`:
-            Parameters: null
-            'Base estimator: ': null
-            n_estimators: null
-            'Number of estimators:': null
-            learning_rate: null
-            'Learning rate:': null
-            random_seed: null
-            'Fixed seed for random generator:': null
-            use_random_seed: null
-            Boosting method: null
-            algorithm_index: null
-            'Classification algorithm:': null
-            loss_index: null
-            'Regression loss function:': null
+            Parameters: Parametri
+            'Base estimator: ': "Osnovni model: "
+            n_estimators: false
+            'Number of estimators:': Število modelov:
+            learning_rate: false
+            'Learning rate:': Hitrost učenja:
+            random_seed: false
+            'Fixed seed for random generator:': Seme generatorja naključnih števil:
+            use_random_seed: false
+            Boosting method: Metoda pospeševanja (boosting)
+            algorithm_index: false
+            'Classification algorithm:': "Algoritem (za klasifikacijo):"
+            loss_index: false
+            'Regression loss function:': "Funkcija izgube (za regresijo):"
         def `set_base_learner`:
-            'Base estimator: INVALID': null
-            'Base estimator: %s': null
+            'Base estimator: INVALID': "Osnovni model: neveljaven"
+            'Base estimator: %s': "Osnovni model: %s"
         def `get_learner_parameters`:
-            Base estimator: null
-            Number of estimators: null
-            Algorithm (classification): null
-            Loss (regression): null
-    __main__: null
-    iris: null
+            Base estimator: Osnovni model
+            Number of estimators: Število modelov
+            Algorithm (classification): Algoritem (za klasifikacijo)
+            Loss (regression): Izguba (za regresijo)
+    __main__: false
+    iris: false
 widgets/model/owcalibratedlearner.py:
     class `OWCalibratedLearner`:
-        Calibrated Learner: null
-        'Wraps another learner with probability calibration and ': null
-        decision threshold optimization: null
-        icons/CalibratedLearner.svg: null
-        calibration: null
-        threshold: null
-        Sigmoid calibration: null
-        Isotonic calibration: null
-        No calibration: null
-        Sigmoid: null
-        Isotonic: null
-        Optimize classification accuracy: null
-        Optimize F1 score: null
-        No threshold optimization: null
-        CA: null
-        F1: null
+        Calibrated Learner: Kalibriran model
+        'Wraps another learner with probability calibration and ': "Ovije drug učni algoritem z modelom za kalibracijo verjetnosti "
+        decision threshold optimization: in optimiranje klasifikacijskega praga
+        icons/CalibratedLearner.svg: false
+        calibration: kalibracija
+        threshold: prag
+        Sigmoid calibration: Sigmoidna kalibracija
+        Isotonic calibration: Izotonična kalibracija
+        No calibration: Brez kalibracije
+        Sigmoid: Sigmoidna
+        Isotonic: Izotonična
+        Optimize classification accuracy: Optimiraj napovedno točnost
+        Optimize F1 score: Optimiraj F1
+        No threshold optimization: Brez optimizacije praga
+        CA: točnost
+        F1: F1
         class `Inputs`:
-            Base Learner: null
+            Base Learner: Učni algoritem
         def `add_main_layout`:
-            calibration: null
-            Probability calibration: null
-            threshold: null
-            Decision threshold optimization: null
+            calibration: false
+            Probability calibration: Kalibracija verjetnosti
+            threshold: false
+            Decision threshold optimization: Optimiranje napovednega praga
         def `_set_default_name`:
-            ' + ': null
+            ' + ': false
         def `get_learner_parameters`:
-            Calibrate probabilities: null
-            Threshold optimization: null
-    __main__: null
-    heart_disease: null
+            Calibrate probabilities: Kalibracija verjetnosti
+            Threshold optimization: Optimiranje praga
+    __main__: false
+    heart_disease: false
 widgets/model/owconstant.py:
     class `OWConstant`:
-        Constant: null
-        'Predict the most frequent class or mean value ': null
-        from the training set.: null
-        icons/Constant.svg: null
-        Orange.widgets.classify.owmajority.OWMajority: null
-        Orange.widgets.regression.owmean.OWMean: null
-        majority: null
-        mean: null
-    __main__: null
-    iris: null
+        Constant: Konstanta
+        'Predict the most frequent class or mean value ': "Vedno napove isti, večinski razred oz. povprečno vrednost "
+        from the training set.: učnih primerov.
+        icons/Constant.svg: false
+        Orange.widgets.classify.owmajority.OWMajority: false
+        Orange.widgets.regression.owmean.OWMean: false
+        majority: false
+        mean: false
+    __main__: false
+    iris: false
 widgets/model/owcurvefit.py:
-    isclose: null
-    inf: null
-    nan: null
-    arccos: null
-    arccosh: null
-    arcsin: null
-    arcsinh: null
-    arctan: null
-    arctan2: null
-    arctanh: null
-    ceil: null
-    copysign: null
-    cos: null
-    cosh: null
-    degrees: null
-    e: null
-    exp: null
-    expm1: null
-    fabs: null
-    floor: null
-    fmod: null
-    gcd: null
-    hypot: null
-    isfinite: null
-    isinf: null
-    isnan: null
-    ldexp: null
-    log: null
-    log10: null
-    log1p: null
-    log2: null
-    pi: null
-    power: null
-    radians: null
-    remainder: null
-    sin: null
-    sinh: null
-    sqrt: null
-    tan: null
-    tanh: null
-    trunc: null
-    round: null
-    abs: null
-    any: null
-    all: null
+    isclose: false
+    inf: false
+    nan: false
+    arccos: false
+    arccosh: false
+    arcsin: false
+    arcsinh: false
+    arctan: false
+    arctan2: false
+    arctanh: false
+    ceil: false
+    copysign: false
+    cos: false
+    cosh: false
+    degrees: false
+    e: false
+    exp: false
+    expm1: false
+    fabs: false
+    floor: false
+    fmod: false
+    gcd: false
+    hypot: false
+    isfinite: false
+    isinf: false
+    isnan: false
+    ldexp: false
+    log: false
+    log10: false
+    log1p: false
+    log2: false
+    pi: false
+    power: false
+    radians: false
+    remainder: false
+    sin: false
+    sinh: false
+    sqrt: false
+    tan: false
+    tanh: false
+    trunc: false
+    round: false
+    abs: false
+    any: false
+    all: false
     class `Parameter`:
         def `__repr__`:
-            'Parameter(name={self.name}, initial={self.initial}, ': null
-            'use_lower={self.use_lower}, lower={self.lower}, ': null
-            use_upper={self.use_upper}, upper={self.upper}): null
+            'Parameter(name={self.name}, initial={self.initial}, ': false
+            'use_lower={self.use_lower}, lower={self.lower}, ': false
+            use_upper={self.use_upper}, upper={self.upper}): false
     class `ParametersWidget`:
         def `_setup_gui`:
-            Name: null
-            Initial value: null
-            Lower bound: null
-            Upper bound: null
-            +: null
+            Name: Ime
+            Initial value: Začetna vrednost
+            Lower bound: Spodnja meja
+            Upper bound: Zgornja meja
+            +: false
         def `_add_row`:
-            p{row_id + 1}: null
-            ×: null
-            minimum: null
-            maximum: null
+            p{row_id + 1}: true
+            ×: true
+            minimum: false
+            maximum: false
     class `OWCurveFit`:
-        Curve Fit: null
-        Fit a function to data.: null
-        icons/CurveFit.svg: null
-        function: null
+        Curve Fit: Prileganje krivulje
+        Fit a function to data.: Prilagodi krivuljo podatkom
+        icons/CurveFit.svg: false
+        function: false
         class `Outputs`:
-            Coefficients: null
+            Coefficients: Koeficienti
         class `Warning`:
-            Duplicated parameter name.: null
-            "Unused parameter '{}' in ": null
-            "'Parameters' declaration.": null
-            Provide data on the input.: null
+            Duplicated parameter name.: Podvojeno ime parametra
+            "Unused parameter '{}' in ": "Neuporabljen parameter '{}'"
+            "'Parameters' declaration.": ""
+            Provide data on the input.: Priskrbite vhodne podatke.
         class `Error`:
-            Invalid expression.: null
-            Missing a fitting parameter.\n: null
-            Use 'Feature Constructor' widget instead.: null
-            Unknown parameter '{}'.\n: null
-            Declare the parameter in 'Parameters' box: null
-            'Some parameters and features have the same ': null
-            name '{}'.: null
-        Select Feature: null
-        Select Parameter: null
-        Select Function: null
+            Invalid expression.: Nepravilen izraz.
+            Missing a fitting parameter.\n: Manjkajoč parameter.
+            Use 'Feature Constructor' widget instead.: Uporabite gradnik Sestavi značilke.
+            Unknown parameter '{}'.\n: Neznan parameter '{}'.\n
+            Declare the parameter in 'Parameters' box: Deklarirajte ga v škatli "Parametri"
+            'Some parameters and features have the same ': "Nekateri parametri in spremenljivke imajo "
+            name '{}'.: enaka imena '{}'.
+        Select Feature: Izberite spremenljivko
+        Select Parameter: Izberite parameter
+        Select Function: Izberite funkcijo
         def `add_main_layout`:
-            Parameters: null
-            Expression: null
-            expression: null
-            Expression...: null
-            _feature: null
-            _parameter: null
-            _function: null
+            Parameters: Parametri
+            Expression: Izrazi
+            expression: false
+            Expression...: Izraz...
+            _feature: false
+            _parameter: false
+            _function: false
         def `__on_function_added`:
-            arctan2: null
-            copysign: null
-            fmod: null
-            gcd: null
-            hypot: null
-            isclose: null
-            ldexp: null
-            power: null
-            remainder: null
-            (,): null
-            (): null
+            arctan2: false
+            copysign: false
+            fmod: false
+            gcd: false
+            hypot: false
+            isclose: false
+            ldexp: false
+            power: false
+            remainder: false
+            (,): false
+            (): false
         def `get_learner_parameters`:
-            Expression: null
+            Expression: Izraz
         def `check_data`:
-            Data has no continuous features.: null
+            Data has no continuous features.: Podatki nimajo numeričnih spremenljivk
         def `__validate_expression`:
-            eval: null
-    __main__: null
-    housing: null
+            eval: false
+    __main__: false
+    housing: false
 widgets/model/owgradientboosting.py:
     class `LearnerItemModel`:
         Extreme Gradient Boosting (xgboost): null
@@ -9502,382 +9502,382 @@ widgets/model/owgradientboosting.py:
     iris: null
 widgets/model/owknn.py:
     class `OWKNNLearner`:
-        kNN: null
-        Predict according to the nearest training instances.: null
-        icons/KNN.svg: null
-        Orange.widgets.classify.owknn.OWKNNLearner: null
-        Orange.widgets.regression.owknnregression.OWKNNRegression: null
-        k nearest: null
-        knearest: null
-        neighbor: null
-        neighbour: null
-        uniform: null
-        distance: null
-        euclidean: null
-        manhattan: null
-        chebyshev: null
-        mahalanobis: null
+        kNN: k sosedov
+        Predict according to the nearest training instances.: Napoveduje glede na najbližje sosede iz učnih primerov.
+        icons/KNN.svg: false
+        Orange.widgets.classify.owknn.OWKNNLearner: false
+        Orange.widgets.regression.owknnregression.OWKNNRegression: false
+        k nearest: k sosedov
+        knearest: najbližji
+        neighbor: sosedi
+        neighbour: ""
+        uniform: enake
+        distance: po razdalji
+        euclidean: Evklidska
+        manhattan: Manhattanska
+        chebyshev: Čebiševa
+        mahalanobis: Mahalanobisova
         def `add_main_layout`:
-            Neighbors: null
-            n_neighbors: null
-            'Number of neighbors:': null
-            metric_index: null
-            'Metric:': null
-            weight_index: null
-            'Weight:': null
+            Neighbors: Sosedi
+            n_neighbors: false
+            'Number of neighbors:': Število sosedov
+            metric_index: false
+            'Metric:': "Metrika:"
+            weight_index: false
+            'Weight:': "Uteži:"
         def `get_learner_parameters`:
-            Number of neighbours: null
-            Metric: null
-            Weight: null
-    __main__: null
-    iris: null
+            Number of neighbours: Število sosedov
+            Metric: Metrika
+            Weight: Uteži
+    __main__: false
+    iris: false
 widgets/model/owlinearregression.py:
     class `OWLinearRegression`:
-        Linear Regression: null
-        'A linear regression algorithm with optional L1 (LASSO), ': null
-        L2 (ridge) or L1L2 (elastic net) regularization.: null
-        icons/LinearRegression.svg: null
-        Orange.widgets.regression.owlinearregression.OWLinearRegression: null
-        ridge: null
-        lasso: null
-        elastic net: null
+        Linear Regression: Linearna regresija
+        'A linear regression algorithm with optional L1 (LASSO), ': "Linearna regresija z "
+        L2 (ridge) or L1L2 (elastic net) regularization.: različnimi vrstami regularizacije.
+        icons/LinearRegression.svg: false
+        Orange.widgets.regression.owlinearregression.OWLinearRegression: false
+        ridge: true
+        lasso: true
+        elastic net: true
         class `Outputs`:
-            Coefficients: null
-        No regularization: null
-        Ridge regression (L2): null
-        Lasso regression (L1): null
-        Elastic net regression: null
+            Coefficients: Koeficienti
+        No regularization: Brez regularizacije
+        Ridge regression (L2): Ridge (L2)
+        Lasso regression (L1): Lasso (L2)
+        Elastic net regression: Elastična mreža
         def `add_main_layout`:
-            Parameters: null
-            fit_intercept: null
-            Fit intercept (unchecking it fixes it to zero): null
-            Regularization: null
-            reg_type: null
-            'Regularization strength:': null
-            alpha_index: null
-            'Elastic net mixing:': null
-            L1: null
-            l2_ratio: null
-            L2: null
+            Parameters: Parametri
+            fit_intercept: false
+            Fit intercept (unchecking it fixes it to zero): Uporabi prosti člen (sicer bo enak 0)
+            Regularization: Regularizacija
+            reg_type: false
+            'Regularization strength:': "Moč regularizacije:"
+            alpha_index: false
+            'Elastic net mixing:': "Mešanica elastične mreže"
+            L1: true
+            l2_ratio: false
+            L2: true
         def `_set_alpha_label`:
-            'Alpha: {}': null
+            'Alpha: {}': α = {}
         def `_set_l2_ratio_label`:
-            '{:.{}f} : {:.{}f}': null
+            '{:.{}f} : {:.{}f}': false
         def `update_model`:
-            coef: null
-            name: null
-            intercept: null
-            coefficients: null
+            coef: false
+            name: false
+            intercept: false
+            coefficients: false
         def `get_learner_parameters`:
-            No Regularization: null
-            Ridge Regression (L2) with α={}: null
-            Lasso Regression (L1) with α={}: null
-            Elastic Net Regression with α={}: null
-            ' and L1:L2 ratio of {}:{}': null
-            Regularization: null
-            Fit intercept: null
-            No: null
-            Yes: null
-    __main__: null
-    housing: null
+            No Regularization: Brez regularizacije
+            Ridge Regression (L2) with α={}: Ridge (L2) z α={}
+            Lasso Regression (L1) with α={}: Lasso (L1) z α={}
+            Elastic Net Regression with α={}: Elastična mreža z α={}
+            ' and L1:L2 ratio of {}:{}': " in L1:L2 v razmerju {}:{}"
+            Regularization: Regularizacija
+            Fit intercept: Prosti člen
+            No: Ne
+            Yes: Da
+    __main__: false
+    housing: false
 widgets/model/owloadmodel.py:
     class `OWLoadModel`:
-        Load Model: null
-        Load a model from an input file.: null
-        Orange.widgets.classify.owloadclassifier.OWLoadClassifier: null
-        icons/LoadModel.svg: null
-        file: null
-        open: null
-        model: null
+        Load Model: Naloži model
+        Load a model from an input file.: Preberi model iz datoteke.
+        Orange.widgets.classify.owloadclassifier.OWLoadClassifier: false
+        icons/LoadModel.svg: false
+        file: datoteka
+        open: odpri
+        model: model
         class `Outputs`:
-            Model: null
+            Model: true
         class `Error`:
-            An error occured while reading '{}': null
-        ;;: null
+            An error occured while reading '{}': Napaka pri branju '{}'
+        ;;: false
         def `__init__`:
-            File: null
-            ...: null
-            Reload: null
+            File: Datoteka
+            ...: true
+            Reload: Ponovno naloži
         def `browse_file`:
-            Open Model File: null
+            Open Model File: Odpri datoteko z modelom
         def `open_file`:
-            rb: null
+            rb: false
     class `OWLoadModelDropHandler`:
         def `canDropFile`:
-            .pkcls: null
+            .pkcls: false
         def `parametersFromFile`:
-            recent_paths: null
-    __main__: null
+            recent_paths: false
+    __main__: false
 widgets/model/owlogisticregression.py:
     class `OWLogisticRegression`:
-        Logistic Regression: null
-        'The logistic regression classification algorithm with ': null
-        LASSO (L1) or ridge (L2) regularization.: null
-        icons/LogisticRegression.svg: null
-        Orange.widgets.classify.owlogisticregression.OWLogisticRegression: null
+        Logistic Regression: Logistična regresija
+        'The logistic regression classification algorithm with ': "Logistična regresija z regularizacijo."
+        LASSO (L1) or ridge (L2) regularization.: ""
+        icons/LogisticRegression.svg: false
+        Orange.widgets.classify.owlogisticregression.OWLogisticRegression: false
         class `Outputs`:
-            Coefficients: null
-        Lasso (L1): null
-        Ridge (L2): null
-        None: null
-        l1: null
-        l2: null
-        none: null
+            Coefficients: Koeficienti
+        Lasso (L1): true
+        Ridge (L2): true
+        None: Brez
+        l1: false
+        l2: false
+        none: false
         class `Warning`:
-            Weighting by class may decrease performance.: null
+            Weighting by class may decrease performance.: Uteževanje glede na razred lahko upočasni učenje.
         def `add_main_layout`:
-            penalty_type: null
-            'Regularization type: ': null
-            'Strength:': null
-            Weak: null
-            'margin-top:6px': null
-            C_index: null
-            Strong: null
-            class_weight: null
-            Balance class distribution: null
-            Weigh classes inversely proportional to their frequencies.: null
+            penalty_type: false
+            'Regularization type: ': "Vrsta regularizacije: "
+            'Strength:': Moč:
+            Weak: Šibka
+            'margin-top:6px': false
+            C_index: false
+            Strong: Močna
+            class_weight: false
+            Balance class distribution: Uravnoteži razrede
+            Weigh classes inversely proportional to their frequencies.: Uteži razrede obratno sorazmerno njihovi pogostosti
         def `set_c`:
-            none: null
-            C={}: null
-            'C={:.3f}': null
-            N/A: null
+            none: false
+            C={}: true
+            'C={:.3f}': true
+            N/A: NN
         def `create_learner`:
-            balanced: null
-            none: null
+            balanced: false
+            none: false
         def `get_learner_parameters`:
-            Regularization: null
-            {}, C={}, class weights={}: null
+            Regularization: Regularizacija
+            {}, C={}, class weights={}: {}, C={}, uteži razredov={}
     def `create_coef_table`:
-        name: null
-        intercept: null
-        coefficients: null
-    __main__: null
-    zoo: null
+        name: false
+        intercept: false
+        coefficients: false
+    __main__: false
+    zoo: false
 widgets/model/ownaivebayes.py:
     class `OWNaiveBayes`:
-        Naive Bayes: null
-        'A fast and simple probabilistic classifier based on ': null
-        Bayes' theorem with the assumption of feature independence.: null
-        icons/NaiveBayes.svg: null
-        Orange.widgets.classify.ownaivebayes.OWNaiveBayes: null
-    __main__: null
-    iris: null
+        Naive Bayes: Naivni Bayes
+        'A fast and simple probabilistic classifier based on ': "Preprost model, ki temelji na Bayesovi formuli "
+        Bayes' theorem with the assumption of feature independence.: in predpostavlja pogojno neodvisnost spremenljivk.
+        icons/NaiveBayes.svg: false
+        Orange.widgets.classify.ownaivebayes.OWNaiveBayes: false
+    __main__: false
+    iris: false
 widgets/model/owneuralnetwork.py:
     class `Task`:
         def `setFuture`:
-            future is already set: null
+            future is already set: false
     class `OWNNLearner`:
-        Neural Network: null
-        'A multi-layer perceptron (MLP) algorithm with ': null
-        backpropagation.: null
-        icons/NN.svg: null
-        mlp: null
-        identity: null
-        logistic: null
-        tanh: null
-        relu: null
-        Identity: null
-        Logistic: null
-        ReLu: null
-        lbfgs: null
-        sgd: null
-        adam: null
-        L-BFGS-B: null
-        SGD: null
-        Adam: null
-        100,: null
+        Neural Network: Nevronska mreža
+        'A multi-layer perceptron (MLP) algorithm with ': Večnivojski perceptron z vzvratnim širjenjem.
+        backpropagation.: " (backpropagation)"
+        icons/NN.svg: false
+        mlp: false
+        identity: false
+        logistic: false
+        tanh: false
+        relu: false
+        Identity: Identiteta
+        Logistic: Logistična
+        ReLu: ReLu
+        lbfgs: false
+        sgd: false
+        adam: false
+        L-BFGS-B: true
+        SGD: true
+        Adam: true
+        100,: false
         class `Warning`:
-            'ANN without hidden layers is equivalent to logistic ': null
-            'regression with worse fitting.\nWe recommend using ': null
-            logistic regression.: null
+            'ANN without hidden layers is equivalent to logistic ': "Nevronska mreža brez skritih nivojev je enaka logistični "
+            'regression with worse fitting.\nWe recommend using ': "regresiji s slabšim algoritmom prileganja.\nPriporočamo uporabo "
+            logistic regression.: logistične regresije.
         def `add_main_layout`:
-            'Neurons in hidden layers:': null
-            hidden_layers_input: null
-            'A list of integers defining neurons. Length of list ': null
-            defines the number of layers. E.g. 4, 2, 2, 3.: null
-            e.g. 10,: null
-            'Activation:': null
-            activation_index: null
-            'Solver:': null
-            solver_index: null
-            alpha_index: null
-            'Maximal number of iterations:': null
-            max_iterations: null
-            'Max iterations:': null
-            replicable: null
-            Replicable training: null
+            'Neurons in hidden layers:': Nevroni v skritih nivojih
+            hidden_layers_input: false
+            'A list of integers defining neurons. Length of list ': "Seznam števil, ki določijo število nevronov. Dolžina seznama "
+            defines the number of layers. E.g. 4, 2, 2, 3.: "določi število nivojev. Npr. 4, 2, 2, 3"
+            e.g. 10,: npr. 10,
+            'Activation:': "Aktivacija:"
+            activation_index: false
+            'Solver:': "Algoritem reševanja:"
+            solver_index: false
+            alpha_index: false
+            'Maximal number of iterations:': "Omejitev števila ponovitev:"
+            max_iterations: false
+            'Max iterations:': "Omejitev ponovitev:"
+            replicable: false
+            Replicable training: Ponovljivo učenje
         def `set_alpha`:
-            'Regularization, α={}:': null
+            'Regularization, α={}:': 'Regularizacija, α={}:'
         def `setup_layout`:
-            Cancel: null
+            Cancel: Prekini
         def `get_learner_parameters`:
-            Hidden layers: null
-            ', ': null
-            Activation: null
-            Solver: null
-            Alpha: null
-            Max iterations: null
-            Replicable training: null
+            Hidden layers: Skriti nivoji
+            ', ': false
+            Activation: Aktivacija
+            Solver: Algoritem reševanja:
+            Alpha: Alfa
+            Max iterations: Omejitev števila ponovitev
+            Replicable training: Ponovljivo učenje
         def `get_hidden_layers`:
-            \d+: null
+            \d+: false
         def `__update`:
-            max_iter: null
+            max_iter: false
         def `migrate_settings`:
-            alpha: null
-            alpha_index: null
-    __main__: null
-    iris: null
+            alpha: false
+            alpha_index: false
+    __main__: false
+    iris: false
 widgets/model/owrandomforest.py:
     class `OWRandomForest`:
-        Random Forest: null
-        Predict using an ensemble of decision trees.: null
-        icons/RandomForest.svg: null
-        Orange.widgets.classify.owrandomforest.OWRandomForest: null
-        Orange.widgets.regression.owrandomforestregression.OWRandomForestRegression: null
+        Random Forest: Naključni gozd
+        Predict using an ensemble of decision trees.: Skupinsko napovedovanje z drevesi.
+        icons/RandomForest.svg: false
+        Orange.widgets.classify.owrandomforest.OWRandomForest: false
+        Orange.widgets.regression.owrandomforestregression.OWRandomForestRegression: false
         class `Error`:
-            Insufficient number of attributes ({}): null
+            Insufficient number of attributes ({}): Nezadostno število spremenljivk ({})
         class `Warning`:
-            Weighting by class may decrease performance.: null
+            Weighting by class may decrease performance.: Uteževanje razredov lahko upočasni izvajanje.
         def `add_main_layout`:
-            Basic Properties: null
-            n_estimators: null
-            'Number of trees: ': null
-            max_features: null
-            'Number of attributes considered at each split: ': null
-            use_max_features: null
-            use_random_state: null
-            Replicable training: null
-            class_weight: null
-            Balance class distribution: null
-            Weigh classes inversely proportional to their frequencies.: null
-            Growth Control: null
-            max_depth: null
-            'Limit depth of individual trees: ': null
-            use_max_depth: null
-            min_samples_split: null
-            'Do not split subsets smaller than: ': null
-            use_min_samples_split: null
+            Basic Properties: Osnovne lastnosti
+            n_estimators: false
+            'Number of trees: ': "Število dreves: "
+            max_features: false
+            'Number of attributes considered at each split: ': "Število obravnavanih spremenljivk ob vsaki delitvi: "
+            use_max_features: false
+            use_random_state: false
+            Replicable training: Ponovljivo učenje
+            class_weight: false
+            Balance class distribution: Uravnoteži razrede
+            Weigh classes inversely proportional to their frequencies.: Uteži razrede obratno sorazmerno njihovi pogostosti.
+            Growth Control: Nadzor rasti
+            max_depth: false
+            'Limit depth of individual trees: ': "Omejitev globine posamičnih dreves: "
+            use_max_depth: false
+            min_samples_split: false
+            'Do not split subsets smaller than: ': "Ne deli množic z manj primeri kot: "
+            use_min_samples_split: false
         def `create_learner`:
-            n_estimators: null
-            max_features: null
-            random_state: null
-            max_depth: null
-            min_samples_split: null
-            class_weight: null
-            balanced: null
+            n_estimators: false
+            max_features: false
+            random_state: false
+            max_depth: false
+            min_samples_split: false
+            class_weight: false
+            balanced: false
         def `get_learner_parameters`:
-            Number of trees: null
-            Maximal number of considered features: null
-            unlimited: null
-            Replicable training: null
-            No: null
-            Yes: null
-            Maximal tree depth: null
-            Stop splitting nodes with maximum instances: null
-            Class weights: null
-    __main__: null
-    iris: null
+            Number of trees: Število dreves
+            Maximal number of considered features: Število obravnavanih spremenljivk
+            unlimited: neomejeno
+            Replicable training: Ponovljivo učenje
+            No: Ne
+            Yes: Da
+            Maximal tree depth: Največja globina dreves
+            Stop splitting nodes with maximum instances: Ne deli množic z manj primeri kot
+            Class weights: Uteževanje razredov
+    __main__: false
+    iris: false
 widgets/model/owrules.py:
     class `CustomRuleClassifier`:
         def `__init__`:
-            Rule ordering: null
-            Covering algorithm: null
+            Rule ordering: Urejenost pravil
+            Covering algorithm: Način prekrivanja
         def `predict`:
-            ordered: null
-            exclusive: null
-            unordered: null
-            weighted: null
+            ordered: urejena
+            exclusive: eno pravilo
+            unordered: neurejena
+            weighted: utežena
     class `CustomRuleLearner`:
-        Custom rule inducer: null
+        Custom rule inducer: false
         def `__init__`:
-            Rule ordering: null
-            Covering algorithm: null
-            exclusive: null
-            weighted: null
-            Gamma: null
-            Beam width: null
-            Evaluation measure: null
-            entropy: null
-            laplace: null
-            wracc: null
-            Minimum rule coverage: null
-            Maximum rule length: null
-            Default alpha: null
-            Parent alpha: null
+            Rule ordering: Urejenost pravil
+            Covering algorithm: Način prekrivanja
+            exclusive: eno pravilo
+            weighted: utežena
+            Gamma: Gama
+            Beam width: Širina snopa
+            Evaluation measure: Ocena kvalitete pravila
+            entropy: entropija
+            laplace: Laplacova natančnost
+            wracc: WRACC
+            Minimum rule coverage: Najmanjše število pokritih primerov
+            Maximum rule length: Največja dolžina pravila
+            Default alpha: Zahtevana statistična značilnost
+            Parent alpha: Značilnost prednika
         def `fit_storage`:
-            ordered: null
-            weighted: null
-            unordered: null
+            ordered: urejena
+            weighted: utežena
+            unordered: neurejena
     class `OWRuleLearner`:
-        CN2 Rule Induction: null
-        Induce rules from data using CN2 algorithm.: null
-        icons/CN2RuleInduction.svg: null
-        Orange.widgets.classify.owrules.OWRuleLearner: null
-        ordered: null
-        unordered: null
-        exclusive: null
-        weighted: null
-        entropy: null
-        laplace: null
-        wracc: null
-        CN2 rule inducer: null
+        CN2 Rule Induction: Odločitvena pravila
+        Induce rules from data using CN2 algorithm.: Sestavi odločitvena pravila z algoritmom CN2
+        icons/CN2RuleInduction.svg: false
+        Orange.widgets.classify.owrules.OWRuleLearner: false
+        ordered: urejena
+        unordered: neurejena
+        exclusive: eno pravilo
+        weighted: utežena
+        entropy: entropija
+        laplace: Laplacova natančnost
+        wracc: WRACC
+        CN2 rule inducer: Odločitvena pravila
         def `add_main_layout`:
-            Rule ordering: null
-            rule_ordering: null
-            Ordered: null
-            Unordered: null
-            Covering algorithm: null
-            covering_algorithm: null
-            Exclusive: null
-            Weighted: null
-            gamma: null
-            'γ:': null
-            weighted: null
-            Rule search: null
-            evaluation_measure: null
-            'Evaluation measure:': null
-            Entropy: null
-            Laplace accuracy: null
-            WRAcc: null
-            beam_width: null
-            'Beam width:': null
-            Rule filtering: null
-            min_covered_examples: null
-            'Minimum rule coverage:': null
-            max_rule_length: null
-            'Maximum rule length:': null
-            default_alpha: null
-            'Statistical significance (default α):': null
-            checked_default_alpha: null
-            parent_alpha: null
-            'Relative significance (parent α):': null
-            checked_parent_alpha: null
+            Rule ordering: Urejenost pravil
+            rule_ordering: false
+            Ordered: Urejena
+            Unordered: Neurejena
+            Covering algorithm: Način prekrivanja
+            covering_algorithm: false
+            Exclusive: Z enim pravilom
+            Weighted: Uteženo
+            gamma: false
+            'γ:': true
+            weighted: false
+            Rule search: Iskanje pravil
+            evaluation_measure: false
+            'Evaluation measure:': Mera kvalitete:
+            Entropy: Entropija
+            Laplace accuracy: Laplacova natančnost
+            WRAcc: WRACC
+            beam_width: false
+            'Beam width:': Širina snopa:
+            Rule filtering: Presejanje pravil
+            min_covered_examples: false
+            'Minimum rule coverage:': Najmanjše število pokritih primerov:
+            max_rule_length: false
+            'Maximum rule length:': Najdaljša dolžina pravila:
+            default_alpha: false
+            'Statistical significance (default α):': Statistična značilnost (privzeti α):
+            checked_default_alpha: false
+            parent_alpha: false
+            'Relative significance (parent α):': Relativna značilnost (predniko α):
+            checked_parent_alpha: false
         def `settings_changed`:
-            weighted: null
+            weighted: false
         def `get_learner_parameters`:
-            Rule ordering: null
-            Covering algorithm: null
-            Gamma: null
-            Evaluation measure: null
-            Beam width: null
-            Minimum rule coverage: null
-            Maximum rule length: null
-            Default alpha: null
-            Parent alpha: null
-    __main__: null
-    iris: null
+            Rule ordering: Urejenost pravil
+            Covering algorithm: Način prekrivanja
+            Gamma: Gama
+            Evaluation measure: Ocena kvalitete pravila
+            Beam width: Širina snopa
+            Minimum rule coverage: Najmanjše število pokritih primerov
+            Maximum rule length: Največja dolžina pravila
+            Default alpha: Zahtevana statistična značilnost
+            Parent alpha: Značilnost prednika
+    __main__: false
+    iris: false
 widgets/model/owsavemodel.py:
     class `OWSaveModel`:
-        Save Model: null
-        Save a trained model to an output file.: null
-        icons/SaveModel.svg: null
-        Orange.widgets.classify.owsaveclassifier.OWSaveClassifier: null
+        Save Model: Shrani model
+        Save a trained model to an output file.: Shrani model v datoteko.
+        icons/SaveModel.svg: false
+        Orange.widgets.classify.owsaveclassifier.OWSaveClassifier: false
         class `Inputs`:
-            Model: null
-        Pickled model (*.pkcls): null
+            Model: true
+        Pickled model (*.pkcls): Pickle z modelom (*.pickle)
         def `do_save`:
-            wb: null
-    __main__: null
+            wb: false
+    __main__: false
 widgets/model/owsgd.py:
     class `OWSGD`:
         Stochastic Gradient Descent: null
@@ -10006,101 +10006,101 @@ widgets/model/owsgd.py:
     iris: null
 widgets/model/owstack.py:
     class `OWStackedLearner`:
-        Stacking: null
-        Stack multiple models.: null
-        icons/Stacking.svg: null
-        Stack: null
+        Stacking: Sklad modelov
+        Stack multiple models.: Sestavi več modelov v model.
+        icons/Stacking.svg: false
+        Stack: Sklad
         class `Inputs`:
-            Learners: null
-            Aggregate: null
+            Learners: Modeli
+            Aggregate: Združevalnik
         def `get_learner_parameters`:
-            Base learners: null
-            Aggregator: null
-            default: null
-    __main__: null
-    iris: null
+            Base learners: Osnovni modeli
+            Aggregator: Združevalnik
+            default: privzeti
+    __main__: false
+    iris: false
 widgets/model/owsvm.py:
     class `OWSVM`:
-        SVM: null
-        'Support Vector Machines map inputs to higher-dimensional ': null
-        feature spaces.: null
-        icons/SVM.svg: null
-        Orange.widgets.classify.owsvmclassification.OWSVMClassification: null
-        Orange.widgets.regression.owsvmregression.OWSVMRegression: null
-        support vector machines: null
+        SVM: true
+        'Support Vector Machines map inputs to higher-dimensional ': Metoda podpornih vektorjev
+        feature spaces.: ""
+        icons/SVM.svg: false
+        Orange.widgets.classify.owsvmclassification.OWSVMClassification: false
+        Orange.widgets.regression.owsvmregression.OWSVMRegression: false
+        support vector machines: podporni vektorji
         class `Outputs`:
-            Support Vectors: null
-            Support vectors: null
+            Support Vectors: Podporni vektorji
+            Support vectors: Podporni vektorji
         class `Warning`:
-            Input data is sparse, default preprocessing is to scale it.: null
-        auto: null
-        Linear: null
-        x⋅y: null
-        Polynomial: null
-        (g x⋅y + c)<sup>d</sup>: null
-        RBF: null
-        exp(-g|x-y|²): null
-        Sigmoid: null
-        tanh(g x⋅y + c): null
+            Input data is sparse, default preprocessing is to scale it.: Podatki so redki; privzeti predprocesor jih skalira.
+        auto: avto
+        Linear: Linearno
+        x⋅y: true
+        Polynomial: Polinomsko
+        (g x⋅y + c)<sup>d</sup>: true
+        RBF: true
+        exp(-g|x-y|²): true
+        Sigmoid: Sigmoidno
+        tanh(g x⋅y + c): true
         def `_add_type_box`:
-            svm_type: null
-            SVM Type: null
-            SVM: null
-            C: null
-            epsilon: null
-            'Cost (C):': null
-            'Regression loss epsilon (ε):': null
-            ν-SVM: null
-            nu_C: null
-            nu: null
-            'Regression cost (C):': null
-            'Complexity bound (ν):': null
+            svm_type: false
+            SVM Type: Vrsta SVM
+            SVM: true
+            C: false
+            epsilon: false
+            'Cost (C):': Cena (C):
+            'Regression loss epsilon (ε):': Koeficient izgube pri regresiji (ε):
+            ν-SVM: true
+            nu_C: false
+            nu: false
+            'Regression cost (C):': Cena (pri regresiji) (C):
+            'Complexity bound (ν):': Meja kompleksnosti (ν):
         def `_add_kernel_box`:
-            Kernel: null
-            kernel_type: null
-            'Kernel: %(kernel_eq)s': null
-            gamma: null
-            ' g: ': null
-            coef0: null
-            ' c: ': null
-            degree: null
-            ' d: ': null
+            Kernel: Jedro
+            kernel_type: false
+            'Kernel: %(kernel_eq)s': "Jedro: %(kernel_eq)s"
+            gamma: false
+            ' g: ': true
+            coef0: false
+            ' c: ': true
+            degree: false
+            ' d: ': true
         def `_add_optimization_box`:
-            Optimization Parameters: null
-            tol: null
-            'Numerical tolerance: ': null
-            max_iter: null
-            'Iteration limit: ': null
-            limit_iter: null
+            Optimization Parameters: Parametri optimizacije
+            tol: false
+            'Numerical tolerance: ': "Numerična toleranca: "
+            max_iter: false
+            'Iteration limit: ': "Največje število ponovitev: "
+            limit_iter: false
         def `create_learner`:
-            linear: null
-            poly: null
-            rbf: null
-            sigmoid: null
-            kernel: null
-            degree: null
-            gamma: null
-            coef0: null
-            probability: null
-            tol: null
-            max_iter: null
-            preprocessors: null
+            linear: false
+            poly: false
+            rbf: false
+            sigmoid: false
+            kernel: false
+            degree: false
+            gamma: false
+            coef0: false
+            probability: false
+            tol: false
+            max_iter: false
+            preprocessors: false
         def `get_learner_parameters`:
-            SVM type: null
-            SVM, C={}, ε={}: null
-            ν-SVM, ν={}, C={}: null
-            Numerical tolerance: null
-            '{:.6}': null
-            Iteration limt: null
-            unlimited: null
+            SVM type: Vrsta SVM
+            SVM, C={}, ε={}: true
+            ν-SVM, ν={}, C={}: true
+            Numerical tolerance: Numerična toleranca
+            '{:.6}': false
+            Iteration limt: Število ponovitev:
+            unlimited: neomejeno
         def `_report_kernel_parameters`:
-            Kernel: null
-            Linear: null
-            'Polynomial, ({g:.4} x⋅y + {c:.4})<sup>{d}</sup>': null
-            'RBF, exp(-{:.4}|x-y|²)': null
-            'Sigmoid, tanh({g:.4} x⋅y + {c:.4})': null
-    __main__: null
-    iris: null
+            Kernel: Jedro
+            Linear: Linearno
+            'Polynomial, ({g:.4} x⋅y + {c:.4})<sup>{d}</sup>': Polinomsko, ({g:.4} x⋅y + {c:.4})<sup>{d}</sup>
+            'RBF, exp(-{:.4}|x-y|²)': true
+            'Sigmoid, tanh({g:.4} x⋅y + {c:.4})': Sigmoidno, tanh({g:.4} x⋅y + {c:.4})
+    __main__: false
+    iris: false
 widgets/model/owtree.py:
     class `OWTreeLearner`:
         Tree: Drevo
@@ -12224,61 +12224,61 @@ widgets/utils/owlearnerwidget.py:
     class `OWBaseLearnerMeta`:
         def `__new__`:
             def `abstract_widget`:
-                name: null
+                name: false
             def `copy_outputs`:
-                Outputs: null
-            LEARNER: null
-            "'{}' must declare attribute LEARNER": null
+                Outputs: false
+            LEARNER: false
+            "'{}' must declare attribute LEARNER": false
     class `OWBaseLearner`:
         class `Error`:
-            {}: null
-            Fitting failed.\n{}: null
-            Sparse data is not supported.: null
-            Out of memory.: null
+            {}: false
+            Fitting failed.\n{}: Učenje ni uspelo.\n{}
+            Sparse data is not supported.: Redki podatki niso podprti.
+            Out of memory.: Premalo pomnilnika.
         class `Warning`:
-            Press Apply to submit changes.: null
+            Press Apply to submit changes.: Pritisnite Uveljavi za uveljavitev sprememb
         class `Information`:
-            Ignoring default preprocessing.\n: null
-            'Default preprocessing, such as scaling, one-hot encoding and ': null
-            'treatment of missing data, has been replaced with user-specified ': null
-            'preprocessors. Problems may occur if these are inadequate ': null
-            for the given data.: null
+            Ignoring default preprocessing.\n: Ignoriram privzete predprocesorje.\n
+            'Default preprocessing, such as scaling, one-hot encoding and ': "Privzeto predprocesiranje, kot je skaliranje, kodiranje z indikatorji in "
+            'treatment of missing data, has been replaced with user-specified ': "vstavljanje manjkajočih vrednosti, je zamenjano s predprocesorji, ki jih je "
+            'preprocessors. Problems may occur if these are inadequate ': "določil uporabnik. Če ti niso ustrezni za te podatke, bo modeliranje neuspešno."
+            for the given data.: ""
         class `Inputs`:
-            Data: null
-            Preprocessor: null
+            Data: Podatki
+            Preprocessor: Predprocesor
         class `Outputs`:
-            Learner: null
-            Model: null
-            Classifier: null
-            Predictor: null
+            Learner: Učni algoritem
+            Model: Model
+            Classifier: Klasifikator
+            Predictor: Prediktor
         def `__init__`:
-            unconditional_apply: null
+            unconditional_apply: false
         def `set_data`:
-            Data contains multiple target variables.\n: null
-            Select a single one with the Select Columns widget.: null
-            Data has no target variable.\n: null
-            Select one with the Select Columns widget.: null
+            Data contains multiple target variables.\n: Podatki vsebujejo več ciljnih spremenljivk.\n
+            Select a single one with the Select Columns widget.: Izberite eno od njih z gradnikom Izberi stolpce.
+            Data has no target variable.\n: Podatki nimajo ciljne spremenljivke.\n
+            Select one with the Select Columns widget.: Izberete jo lahko z gradnikom Izberi stolpce.
         def `handleNewSignals`:
-            use_default_preprocessors: null
-            preprocessors: null
+            use_default_preprocessors: false
+            preprocessors: false
         def `check_data`:
-            Dataset is empty.: null
-            Data contains a single target value.: null
-            Data has no features to learn from.: null
+            Dataset is empty.: Tabela primerov je prazna
+            Data contains a single target value.: Podatki vsebujejo eno samo ciljno vrednost.
+            Data has no features to learn from.: Poatki nimajo spremenljivk za učenje.
         def `send_report`:
-            Name: null
-            Model parameters: null
-            Data: null
+            Name: Ime
+            Model parameters: Parametri modela
+            Data: Podatki
         def `setup_layout`:
-            Classification: null
-            Regression: null
+            Classification: Klasifikacija
+            Regression: Regresija
         def `add_learner_name_widget`:
-            learner_name: null
-            Name: null
-            The name will identify this model in other widgets: null
+            learner_name: false
+            Name: Ime
+            The name will identify this model in other widgets: Ime, pod katerim je algoritem viden v sledečih gradnikih
         def `get_widget_description`:
-            outputs: null
-            inputs: null
+            outputs: false
+            inputs: false
 widgets/utils/pathutils.py:
     class `PathItem`:
         def `from_dict`:
