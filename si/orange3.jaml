@@ -10021,86 +10021,86 @@ widgets/model/owstack.py:
     iris: false
 widgets/model/owsvm.py:
     class `OWSVM`:
-        SVM: null
-        'Support Vector Machines map inputs to higher-dimensional ': null
-        feature spaces.: null
-        icons/SVM.svg: null
-        Orange.widgets.classify.owsvmclassification.OWSVMClassification: null
-        Orange.widgets.regression.owsvmregression.OWSVMRegression: null
-        support vector machines: null
+        SVM: true
+        'Support Vector Machines map inputs to higher-dimensional ': Metoda podpornih vektorjev
+        feature spaces.: ""
+        icons/SVM.svg: false
+        Orange.widgets.classify.owsvmclassification.OWSVMClassification: false
+        Orange.widgets.regression.owsvmregression.OWSVMRegression: false
+        support vector machines: podporni vektorji
         class `Outputs`:
-            Support Vectors: null
-            Support vectors: null
+            Support Vectors: Podporni vektorji
+            Support vectors: Podporni vektorji
         class `Warning`:
-            Input data is sparse, default preprocessing is to scale it.: null
-        auto: null
-        Linear: null
-        x⋅y: null
-        Polynomial: null
-        (g x⋅y + c)<sup>d</sup>: null
-        RBF: null
-        exp(-g|x-y|²): null
-        Sigmoid: null
-        tanh(g x⋅y + c): null
+            Input data is sparse, default preprocessing is to scale it.: Podatki so redki; privzeti predprocesor jih skalira.
+        auto: avto
+        Linear: Linearno
+        x⋅y: true
+        Polynomial: Polinomsko
+        (g x⋅y + c)<sup>d</sup>: true
+        RBF: true
+        exp(-g|x-y|²): true
+        Sigmoid: Sigmoidno
+        tanh(g x⋅y + c): true
         def `_add_type_box`:
-            svm_type: null
-            SVM Type: null
-            SVM: null
-            C: null
-            epsilon: null
-            'Cost (C):': null
-            'Regression loss epsilon (ε):': null
-            ν-SVM: null
-            nu_C: null
-            nu: null
-            'Regression cost (C):': null
-            'Complexity bound (ν):': null
+            svm_type: false
+            SVM Type: Vrsta SVM
+            SVM: true
+            C: false
+            epsilon: false
+            'Cost (C):': Cena (C):
+            'Regression loss epsilon (ε):': Koeficient izgube pri regresiji (ε):
+            ν-SVM: true
+            nu_C: false
+            nu: false
+            'Regression cost (C):': Cena (pri regresiji) (C):
+            'Complexity bound (ν):': Meja kompleksnosti (ν):
         def `_add_kernel_box`:
-            Kernel: null
-            kernel_type: null
-            'Kernel: %(kernel_eq)s': null
-            gamma: null
-            ' g: ': null
-            coef0: null
-            ' c: ': null
-            degree: null
-            ' d: ': null
+            Kernel: Jedro
+            kernel_type: false
+            'Kernel: %(kernel_eq)s': "Jedro: %(kernel_eq)s"
+            gamma: false
+            ' g: ': true
+            coef0: false
+            ' c: ': true
+            degree: false
+            ' d: ': true
         def `_add_optimization_box`:
-            Optimization Parameters: null
-            tol: null
-            'Numerical tolerance: ': null
-            max_iter: null
-            'Iteration limit: ': null
-            limit_iter: null
+            Optimization Parameters: Parametri optimizacije
+            tol: false
+            'Numerical tolerance: ': "Numerična toleranca: "
+            max_iter: false
+            'Iteration limit: ': "Največje število ponovitev: "
+            limit_iter: false
         def `create_learner`:
-            linear: null
-            poly: null
-            rbf: null
-            sigmoid: null
-            kernel: null
-            degree: null
-            gamma: null
-            coef0: null
-            probability: null
-            tol: null
-            max_iter: null
-            preprocessors: null
+            linear: false
+            poly: false
+            rbf: false
+            sigmoid: false
+            kernel: false
+            degree: false
+            gamma: false
+            coef0: false
+            probability: false
+            tol: false
+            max_iter: false
+            preprocessors: false
         def `get_learner_parameters`:
-            SVM type: null
-            SVM, C={}, ε={}: null
-            ν-SVM, ν={}, C={}: null
-            Numerical tolerance: null
-            '{:.6}': null
-            Iteration limt: null
-            unlimited: null
+            SVM type: Vrsta SVM
+            SVM, C={}, ε={}: true
+            ν-SVM, ν={}, C={}: true
+            Numerical tolerance: Numerična toleranca
+            '{:.6}': false
+            Iteration limt: Število ponovitev:
+            unlimited: neomejeno
         def `_report_kernel_parameters`:
-            Kernel: null
-            Linear: null
-            'Polynomial, ({g:.4} x⋅y + {c:.4})<sup>{d}</sup>': null
-            'RBF, exp(-{:.4}|x-y|²)': null
-            'Sigmoid, tanh({g:.4} x⋅y + {c:.4})': null
-    __main__: null
-    iris: null
+            Kernel: Jedro
+            Linear: Linearno
+            'Polynomial, ({g:.4} x⋅y + {c:.4})<sup>{d}</sup>': Polinomsko, ({g:.4} x⋅y + {c:.4})<sup>{d}</sup>
+            'RBF, exp(-{:.4}|x-y|²)': true
+            'Sigmoid, tanh({g:.4} x⋅y + {c:.4})': Sigmoidno, tanh({g:.4} x⋅y + {c:.4})
+    __main__: false
+    iris: false
 widgets/model/owtree.py:
     class `OWTreeLearner`:
         Tree: Drevo
