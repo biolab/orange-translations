@@ -10403,43 +10403,43 @@ widgets/unsupervised/owcorrespondence.py:
     titanic: false
 widgets/unsupervised/owdbscan.py:
     class `OWDBSCAN`:
-        DBSCAN: null
-        Density-based spatial clustering.: null
-        icons/DBSCAN.svg: null
+        DBSCAN: true
+        Density-based spatial clustering.: Gručenje na podlagi prostorske gostote
+        icons/DBSCAN.svg: false
         class `Inputs`:
-            Data: null
+            Data: Podatki
         class `Error`:
-            'Not enough unique data instances. ': null
-            At least two are required.: null
-        Euclidean: null
-        euclidean: null
-        Manhattan: null
-        cityblock: null
-        Cosine: null
-        cosine: null
+            'Not enough unique data instances. ': "Ni dovolj primerov. "
+            At least two are required.: Potrebna sta vsaj dva.
+        Euclidean: Evklidska
+        euclidean: false
+        Manhattan: Manhattanska
+        cityblock: false
+        Cosine: Kosinusna
+        cosine: false
         def `__init__`:
-            Parameters: null
-            min_samples: null
-            Core point neighbors: null
-            eps: null
-            Neighborhood distance: null
-            Distance Metric: null
-            metric_idx: null
-            normalize: null
-            Normalize features: null
-            auto_commit: null
-            Data items sorted by score: null
-            Distance to the k-th nearest neighbour: null
+            Parameters: Parametri
+            min_samples: false
+            Core point neighbors: Število sosedov
+            eps: false
+            Neighborhood distance: Velikost soseščine
+            Distance Metric: Mera razdalje
+            metric_idx: false
+            normalize: false
+            Normalize features: Normiraj spremenljivke
+            auto_commit: false
+            Data items sorted by score: Primeri iz podatkov, urejeni po oceni
+            Distance to the k-th nearest neighbour: Razdalja do k-tega najbližjega soseda
         def `_plot_graph`:
-            red: null
+            red: false
         def `send_data`:
-            Cluster: null
-            C%d: null
-            DBSCAN Core: null
-            0: null
-            1: null
-    __main__: null
-    iris.tab: null
+            Cluster: Gruča
+            C%d: G%d
+            DBSCAN Core: Jedro DBSCAN-a
+            0: false
+            1: false
+    __main__: false
+    iris.tab: false
 widgets/unsupervised/owdistancefile.py:
     class `OWDistanceFile`:
         Distance File: null
