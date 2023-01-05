@@ -10339,68 +10339,68 @@ widgets/unsupervised/__init__.py:
     icons/Category-Unsupervised.svg: null
 widgets/unsupervised/owcorrespondence.py:
     class `OWCorrespondenceAnalysis`:
-        Correspondence Analysis: null
-        Correspondence analysis for categorical multivariate data.: null
-        icons/CorrespondenceAnalysis.svg: null
+        Correspondence Analysis: Korespondenčna analiza
+        Correspondence analysis for categorical multivariate data.: Korespondenčna analiza kategoričnih multivariatnih podatkov
+        icons/CorrespondenceAnalysis.svg: false
         class `Inputs`:
-            Data: null
+            Data: Podatki
         class `Outputs`:
-            Coordinates: null
-        plot.plotItem: null
+            Coordinates: Koordinate
+        plot.plotItem: false
         class `Error`:
-            Empty dataset: null
-            No categorical data: null
+            Empty dataset: Prazna tabela podatkov
+            No categorical data: Ni kategoričnih podatkov
         def `__init__`:
-            Variables: null
-            Axes: null
-            component_x: null
-            'X:': null
-            component_y: null
-            'Y:': null
-            Contribution to Inertia: null
-            \n: null
-            auto_commit: null
+            Variables: Spremenljivke
+            Axes: Osi
+            component_x: false
+            'X:': true
+            component_y: false
+            'Y:': true
+            Contribution to Inertia: Prispevek k vztrajnosti
+            \n: true
+            auto_commit: false
         def `set_data`:
-            ignore: null
-            combo box 'component_[xy]' .*: null
+            ignore: false
+            combo box 'component_[xy]' .*: false
         def `commit`:
-            Component {i + 1}: null
-            Variable: null
-            Value: null
+            Component {i + 1}: Komponenta {i + 1}
+            Variable: Spremenljivka
+            Value: Vrednost
         def `_update_CA`:
-            ignore: null
-            combo box 'component_[xy]' .*: null
+            ignore: false
+            combo box 'component_[xy]' .*: false
         def `update_XY`:
-            {}: null
+            {}: false
         def `_setup_plot`:
             def `get_minmax`:
-                inf: null
-                -inf: null
-            bottom: null
-            'Component {} ({:.1f}%)': null
-            left: null
+                inf: false
+                -inf: false
+            bottom: false
+            'Component {} ({:.1f}%)': 'Komponenta {} ({:.1f}%)'
+            left: false
         def `_update_info`:
-            \n\n: null
-            'Axis 1: {:.2f}\n': null
-            'Axis 2: {:.2f}': null
+            \n\n: false
+            'Axis 1: {:.2f}\n': 'Os 1: {:.2f}\n'
+            'Axis 2: {:.2f}': 'Os 2: {:.2f}'
         def `send_report`:
-            Data instances: null
-            Selected variable: null
-            Selected variables: null
-            {} and {}: null
-            ', ': null
+            Data instances: Vhodni primeri
+            Selected variable: Izbrana spremenljivka
+            Selected variables: Izbrane spremenljivke
+            {} and {}: {} in {}
+            ', ': false
     def `correspondence`:
-        ignore: null
-    CA: null
-    U: null
-    D: null
-    V: null
-    row_factors: null
-    col_factors: null
-    row_sums: null
-    column_sums: null
-    __main__: null
-    titanic: null
+        ignore: false
+    CA: false
+    U: false
+    D: false
+    V: false
+    row_factors: false
+    col_factors: false
+    row_sums: false
+    column_sums: false
+    __main__: false
+    titanic: false
 widgets/unsupervised/owdbscan.py:
     class `OWDBSCAN`:
         DBSCAN: null
