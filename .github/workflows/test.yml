@@ -22,7 +22,15 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         python -m pip install trubar
-        git clone https://github.com/biolab/orange3.git orange3-orig
+        git clone https://github.com/biolab/orange3.git
+        git clone https://github.com/biolab/orange-widget-base.git
+        git clone https://github.com/biolab/orange-canvas-core.git
+        git clone https://github.com/biolab/orange3-geo.git
+        git clone https://github.com/biolab/orange3-prototypes.git
     - name: Translate
       run: |
-        trubar --conf si/trubar-config.yaml translate -s orange3-orig/Orange -d orange3-trans/Orange si/orange3.jaml
+        trubar --conf si/trubar-config.yaml translate -s orange-canvas-core/orangecanvas -d trans/orange-canvas-core/orangecanvas --static si/orange-canvas-static si/orange-canvas-core.yaml
+        trubar --conf si/trubar-config.yaml translate -s orange-widget-base/orangewidget -d trans/orange-widget-base/orangewidget si/orange-widget-base.yaml
+        trubar --conf si/trubar-config.yaml translate -s orange3/Orange -d trans/orange3/Orange si/orange3.jaml
+        trubar --conf si/trubar-config.yaml translate -s orange3-geo/orangecontrib/geo -d trans/orange3-geo/orangecontrib/geo si/orange3-geo.jaml
+        # trubar --conf si/trubar-config.yaml translate -s orange3-prototypes/orangecontrib/prototypes -d trans/orange3-prototypes/orangecontrib/prototypes si/orange3-prototypes.jaml
