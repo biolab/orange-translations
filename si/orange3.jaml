@@ -105,7 +105,7 @@ base.py:
 tree.py:
     class `MappedDiscreteNode`:
         def `branches_from_mapping`:
-            '{:>0{}b}': false
+            {:>0{}b}: false
         def `_set_child_descriptions`:
             (unreachable): (nedosegljivo)
             {} or {}: {} ali {}
@@ -121,7 +121,7 @@ tree.py:
             {} < {} ≤ {}: false
             '{}: {}': false
         def `print_tree`:
-            '{:>20} {}{} {}\n': false
+            {:>20} {}{} {}\n: false
             '    ': false
 util.py:
     default: false
@@ -203,11 +203,11 @@ version.py:
     .dev: false
 canvas/__main__.py:
     ORANGE_STATISTICS_API_URL: false
-    'https://orange.biolab.si/usage-statistics': false
+    https://orange.biolab.si/usage-statistics: false
     def `ua_string`:
         Continuum: false
         conda: false
-        'Orange{orange_version}:Python{py_version}:{platform}:{conda}': false
+        Orange{orange_version}:Python{py_version}:{platform}:{conda}: false
         .: false
         Anaconda: false
     def `make_sql_logger`:
@@ -218,7 +218,7 @@ canvas/__main__.py:
         startup/last-update-check-time: false
         class `GetLatestVersion`:
             def `run`:
-                'https://orange.biolab.si/version/': false
+                https://orange.biolab.si/version/: false
                 Accept: false
                 text/plain: false
                 Accept-Encoding: false
@@ -237,7 +237,7 @@ canvas/__main__.py:
             canvas/icons/update.png: false
             def `handle_click`:
                 startup/latest-skipped-version: false
-                'https://orange.biolab.si/download/': false
+                https://orange.biolab.si/download/: false
     def `open_link`:
         orange: false
         enable-statistics: false
@@ -251,7 +251,7 @@ canvas/__main__.py:
         set(): false
         class `GetNotifFeed`:
             def `run`:
-                'https://orange.biolab.si/notification-feed': false
+                https://orange.biolab.si/notification-feed: false
                 Accept: false
                 text/plain: false
                 Connection: false
@@ -331,7 +331,7 @@ canvas/__main__.py:
             '#FFFFFF': false
     __main__: false
 canvas/config.py:
-    'https://orange.biolab.si/addons/list': false
+    https://orange.biolab.si/addons/list: false
     orange.widgets: false
     startup/check-updates: false
     Check for updates: false
@@ -360,7 +360,7 @@ canvas/config.py:
         def `application_icon`:
             icons/orange-256.png: false
         def `splash_screen`:
-            'icons/orange-splash-screen-{splash_n:02}.png': false
+            icons/orange-splash-screen-{splash_n:02}.png: false
             .: false
             Helvetica: false
             '#000000': false
@@ -374,16 +374,16 @@ canvas/config.py:
             Orange3: false
             orange.widgets.tutorials: false
         Bug Report: false
-        'https://github.com/biolab/orange3/issues': false
+        https://github.com/biolab/orange3/issues: false
         Quick Start: false
-        'https://orange.biolab.si/getting-started/': false
+        https://orange.biolab.si/getting-started/: false
         Documentation: false
-        'https://orange.biolab.si/widget-catalog/': false
+        https://orange.biolab.si/widget-catalog/: false
         Screencasts: false
-        'https://www.youtube.com/watch': false
+        https://www.youtube.com/watch: false
         ?v=HXjnDIgGDuI&list=PLmNPvQr9Tf-ZSDLwOzxpvY-HrE0yv-8Fy&index=1: false
         Feedback: false
-        'https://orange.biolab.si/survey/long.html': false
+        https://orange.biolab.si/survey/long.html: false
     def `init`:
         This is not the init you are looking for.: false
     def `data_dir`:
@@ -407,13 +407,13 @@ canvas/mainwindow.py:
             Settings related to reporting: Nastavitve, povezane s poročanjem
             text: false
             reporting/machine-id: false
-            'Machine ID:': ID računalnika:
+            Machine ID:: ID računalnika:
             Share: Pošiljaj
             Share anonymous usage statistics to improve Orange: Pošiljaj anonimizirano statistiko, koristno za izboljšave programa
             reporting/send-statistics: false
             Anonymous Statistics: Anonimizirana statistika
             '<a ': false
-            href="https://orange.biolab.si/statistics-more-info">: false
+            href=\"https://orange.biolab.si/statistics-more-info\">: null
             More info...: Več informacij...
             </a>: false
             Notifications: Obvestila
@@ -483,7 +483,7 @@ classification/calibration.py:
     class `ThresholdClassifier`:
         def `__init__`:
             ThresholdClassifier requires a binary class: ThresholdClassifier pričakuje dvojiški razred.
-            '{base_model.name}, thresh={threshold:.2f}': false
+            {base_model.name}, thresh={threshold:.2f}: false
         def `__call__`:
             ignore: false
     class `ThresholdLearner`:
@@ -504,7 +504,7 @@ classification/gb.py:
     GBClassifier: false
     class `GBClassifier`:
         def `__init__`:
-            deviance: false
+            log_loss: false
             friedman_mse: false
             deprecated: false
 classification/knn.py:
@@ -587,7 +587,7 @@ classification/random_forest.py:
     class `RandomForestLearner`:
         def `__init__`:
             gini: false
-            auto: false
+            sqrt: false
 classification/rules.py:
     CN2Learner: false
     CN2UnorderedLearner: false
@@ -610,8 +610,8 @@ classification/rules.py:
         >=: false
     class `Rule`:
         def `__str__`:
-            ' AND ': " IN "
-            TRUE: "SICER"
+            ' AND ': ' IN '
+            TRUE: SICER
             =: false
             _: false
             'IF {} THEN {} ': 'ČE {} POTEM {} '
@@ -659,7 +659,7 @@ classification/simple_tree.py:
             sqrt: false
             log2: false
             'skip_prob not valid: {}': false
-        def `predict_storage`:
+        def `predict`:
             Invalid prediction type: false
         def `__del__`:
             node: false
@@ -667,13 +667,13 @@ classification/simple_tree.py:
             node: false
         def `dumps_tree`:
             {: false
-            '{:.5f}': false
-            '{:.2f}': false
-            '{:.5f} {:.5f}': false
+            {:.5f}: false
+            {:.2f}: false
+            {:.5f} {:.5f}: false
             }: false
             ' ': false
         def `to_string`:
-            (false node): false
+            (null node): false
             '({self.domain.class_var.format_str}: %s)': false
             ' --> ': false
             '%s ': false
@@ -689,7 +689,7 @@ classification/softmax_regression.py:
     class `SoftmaxRegressionLearner`:
         softmax: false
         def `fit`:
-            'Softmax regression does not support ': "Softmax regresija ne podpira "
+            'Softmax regression does not support ': 'Softmax regresija ne podpira '
             multi-label classification: več ciljnih spremenljivk.
             unknown values: neznanih vrednosti.
     __main__: false
@@ -725,7 +725,7 @@ classification/tree.py:
             sufficient_majority: false
             max_depth: false
         def `fit_storage`:
-            'Exhaustive binarization does not handle ': "Binarizacija ne zmore kategoričnih spremenljivk "
+            'Exhaustive binarization does not handle ': 'Binarizacija ne zmore kategoričnih spremenljivk '
             attributes with more than {} values: z več kot {} različnimi vrednostmi.
     class `SklTreeLearner`:
         tree: false
@@ -737,11 +737,11 @@ classification/xgb.py:
     XGBRFClassifier: false
     class `XGBClassifier`:
         def `__init__`:
-            'binary:logistic': false
+            binary:logistic: false
             gain: false
     class `XGBRFClassifier`:
         def `__init__`:
-            'binary:logistic': false
+            binary:logistic: false
             gain: false
 clustering/clustering.py:
     class `ClusteringModel`:
@@ -848,9 +848,13 @@ data/domain.py:
             All variables in the domain should have: false
             ' unique names.': false
             variables must be primitive: false
+        def `__getstate__`:
+            _variables: false
+            _indices: false
+            _hash: false
         def `from_numpy`:
             def `get_name`:
-                '{} {:0{}}': false
+                {} {:0{}}: false
             X must be a 2-dimensional array: false
             Feature: false
             Y has invalid shape: false
@@ -979,7 +983,7 @@ data/io.py:
     class `_BaseExcelReader`:
         def `read`:
             -: false
-            "Couldn't load spreadsheet from ": "Ne morem prebrati preglednice iz "
+            "Couldn't load spreadsheet from ": 'Ne morem prebrati preglednice iz '
     class `ExcelReader`:
         .xlsx: false
         Microsoft Excel spreadsheet: Excelova preglednica
@@ -987,7 +991,7 @@ data/io.py:
         '#DIV/0!': false
         '#REF!': false
         '#NUM!': false
-        '#false!': false
+        '#NULL!': false
         '#NAME?': false
         def `workbook`:
             ignore: false
@@ -1007,9 +1011,9 @@ data/io.py:
             tree: false
     class `UrlReader`:
         def `__init__`:
-            'http://': false
+            http://: false
             def `quote_byte`:
-                '%{:02X}': false
+                %{:02X}: false
             utf-8: false
         def `urlopen`:
             User-Agent: false
@@ -1023,7 +1027,7 @@ data/io.py:
             (?:/.*?gid=(?P<sheet_id>\d+).*|.*)?: false
             workbook_id: false
             sheet_id: false
-            'https://docs.google.com/spreadsheets/d/{}/export?format=tsv': false
+            https://docs.google.com/spreadsheets/d/{}/export?format=tsv: false
             &gid=: false
         def `_trim_googledrive`:
             drive.google.com: false
@@ -1036,7 +1040,7 @@ data/io.py:
         def `_suggest_filename`:
             [\\:/]: false
             _: false
-            'filename\*?=(?:\"|.{0,10}?''[^'']*&+'')([^\"]+)': false
+            filename\*?=(?:\"|.{0,10}?'[^']*')([^\"]+): null
 data/io_base.py:
     FileFormatBase: false
     Flags: false
@@ -1092,7 +1096,7 @@ data/io_base.py:
             .metadata: false
             rb: false
             utf-8: false
-            ':': false
+            :: false
     class `_FileWriter`:
         def `write_table_metadata`:
             def `write_file`:
@@ -1272,8 +1276,14 @@ data/table.py:
             X: false
             metas: false
             Y: false
+        def `init_partial_results`:
+            F: false
     class `_FromTableConversion`:
         def `__init__`:
+            X: false
+            Y: false
+            metas: false
+        def `convert`:
             X: false
             Y: false
             metas: false
@@ -1316,8 +1326,8 @@ data/table.py:
                 Table.{method}: false
             Table() must not be called directly: false
             'Table(name: str) expects just one argument': false
-            'https://': false
-            'http://': false
+            https://: false
+            http://: false
             'Table(table: Table) expects just one argument': false
             from_domain: false
             from_table: false
@@ -1326,9 +1336,7 @@ data/table.py:
             'deprecated and will be removed. ': false
             Call Table.from_numpy(None, X, Y, metas) instead.: false
         def `from_table`:
-            F: false
             name: false
-            ids: false
             attributes: false
         def `from_table_rows`:
             name: false
@@ -1423,7 +1431,7 @@ data/table.py:
             Feature: false
             Transposing...: false
             old_domain: false
-            '{feature_name} {i:0{places}}': false
+            {feature_name} {i:0{places}}: false
         def `groupby`:
             OrangeTableGroupBy: false
     def `_check_arrays`:
@@ -1433,6 +1441,8 @@ data/table.py:
         Array contains infinity.: false
     def `_check_inf`:
         AllFloat: false
+    def `_optimize_indices`:
+        boolean indices did not match dimension: false
 data/util.py:
     (^{})( \((\d{{1,}})\))?$: false
     def `one_hot`:
@@ -1513,7 +1523,7 @@ data/variable.py:
         def `repr_val`:
             ?: false
             %g: false
-            '{val:.{self._number_of_decimals + 2}f}': false
+            {val:.{self._number_of_decimals + 2}f}: false
         def `copy`:
             number_of_decimals: false
     class `DiscreteVariable`:
@@ -1555,21 +1565,21 @@ data/variable.py:
     class `TimeVariable`:
         time: false
         t: false
-        '%Y-%m-%d %H:%M:%S%z': false
-        '%Y-%m-%d %H:%M:%S': false
-        '%Y-%m-%d %H:%M': false
-        '%Y-%m-%dT%H:%M:%S%z': false
-        '%Y-%m-%dT%H:%M:%S': false
+        %Y-%m-%d %H:%M:%S%z: false
+        %Y-%m-%d %H:%M:%S: false
+        %Y-%m-%d %H:%M: false
+        %Y-%m-%dT%H:%M:%S%z: false
+        %Y-%m-%dT%H:%M:%S: false
         %Y-%m-%d: false
-        '%Y-%m-%d %H:%M:%S.%f': false
-        '%Y-%m-%dT%H:%M:%S.%f': false
-        '%Y-%m-%d %H:%M:%S.%f%z': false
-        '%Y-%m-%dT%H:%M:%S.%f%z': false
+        %Y-%m-%d %H:%M:%S.%f: false
+        %Y-%m-%dT%H:%M:%S.%f: false
+        %Y-%m-%d %H:%M:%S.%f%z: false
+        %Y-%m-%dT%H:%M:%S.%f%z: false
         %Y%m%dT%H%M%S%z: false
         %Y%m%d%H%M%S%z: false
-        '%H:%M:%S.%f': false
-        '%H:%M:%S': false
-        '%H:%M': false
+        %H:%M:%S.%f: false
+        %H:%M:%S: false
+        %H:%M: false
         %Y%m%dT%H%M%S: false
         %Y%m%d%H%M%S: false
         %Y%m%d: false
@@ -1597,33 +1607,33 @@ data/variable.py:
         11/25/21: false
         %m/%d/%y: false
         20211125: false
-        '2021-11-25 00:00:00': false
-        '25.11.2021 00:00:00': false
-        '%d.%m.%Y %H:%M': false
-        '%d. %m. %Y %H:%M': false
-        '%d.%m.%Y %H:%M:%S': false
-        '%d. %m. %Y %H:%M:%S': false
-        '%d.%m.%Y %H:%M:%S.%f': false
-        '%d. %m. %Y %H:%M:%S.%f': false
-        '25.11.21 00:00:00': false
-        '%d.%m.%y %H:%M': false
-        '%d. %m. %y %H:%M': false
-        '%d.%m.%y %H:%M:%S': false
-        '%d. %m. %y %H:%M:%S': false
-        '%d.%m.%y %H:%M:%S.%f': false
-        '%d. %m. %y %H:%M:%S.%f': false
-        '11/25/2021 00:00:00': false
-        '%m/%d/%Y %H:%M': false
-        '%m/%d/%Y %H:%M:%S': false
-        '%m/%d/%Y %H:%M:%S.%f': false
-        '11/25/21 00:00:00': false
-        '%m/%d/%y %H:%M': false
-        '%m/%d/%y %H:%M:%S': false
-        '%m/%d/%y %H:%M:%S.%f': false
+        2021-11-25 00:00:00: false
+        25.11.2021 00:00:00: false
+        %d.%m.%Y %H:%M: false
+        %d. %m. %Y %H:%M: false
+        %d.%m.%Y %H:%M:%S: false
+        %d. %m. %Y %H:%M:%S: false
+        %d.%m.%Y %H:%M:%S.%f: false
+        %d. %m. %Y %H:%M:%S.%f: false
+        25.11.21 00:00:00: false
+        %d.%m.%y %H:%M: false
+        %d. %m. %y %H:%M: false
+        %d.%m.%y %H:%M:%S: false
+        %d. %m. %y %H:%M:%S: false
+        %d.%m.%y %H:%M:%S.%f: false
+        %d. %m. %y %H:%M:%S.%f: false
+        11/25/2021 00:00:00: false
+        %m/%d/%Y %H:%M: false
+        %m/%d/%Y %H:%M:%S: false
+        %m/%d/%Y %H:%M:%S.%f: false
+        11/25/21 00:00:00: false
+        %m/%d/%y %H:%M: false
+        %m/%d/%y %H:%M:%S: false
+        %m/%d/%y %H:%M:%S.%f: false
         20211125000000: false
         %Y%m%d%H%M: false
         %Y%m%d%H%M%S.%f: false
-        '00:00:00': false
+        00:00:00: false
         000000: false
         %H%M: false
         %H%M%S: false
@@ -1717,7 +1727,7 @@ data/sql/filter.py:
 data/sql/table.py:
     sql_log: false
     'Logging started: {}': false
-    '%Y-%m-%d %H:%M:%S': false
+    %Y-%m-%d %H:%M:%S: false
     class `SqlTable`:
         def `__init__`:
             No backend could connect to server: false
@@ -1808,13 +1818,12 @@ data/sql/backend/mssql.py:
             host: false
             Incorrect format of connection details: false
         def `list_tables_query`:
-            | 4
-                        SELECT [TABLE_SCHEMA], [TABLE_NAME]
-                          FROM information_schema.tables
-                         WHERE TABLE_TYPE in ('VIEW' ,'BASE TABLE')
-                      ORDER BY [TABLE_NAME]
-                        
-            : false
+            "
+        SELECT [TABLE_SCHEMA], [TABLE_NAME]
+          FROM information_schema.tables
+         WHERE TABLE_TYPE in ('VIEW' ,'BASE TABLE')
+      ORDER BY [TABLE_NAME]
+        ": false
         def `quote_identifier`:
             [{}]: false
         def `create_sql_query`:
@@ -1835,7 +1844,7 @@ data/sql/backend/mssql.py:
             ROWS ONLY: false
             ' ': false
         def `create_variable`:
-            "DATEDIFF(s, '1970-01-01 00:00:00', {})": false
+            DATEDIFF(s, '1970-01-01 00:00:00', {}): false
         StatementEstRows="(\d+)": false
         def `count_approx`:
             SET SHOWPLAN_XML ON: false
@@ -1876,23 +1885,21 @@ data/sql/backend/postgres.py:
         def `list_tables_query`:
             AND n.nspname = '{}': false
             AND pg_catalog.pg_table_is_visible(c.oid): false
-            |
-                SELECT n.nspname as "Schema",
-                                          c.relname AS "Name"
-                                       FROM pg_catalog.pg_class c
-                                  LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
-                                      WHERE c.relkind IN ('r','v','m','S','f','')
-                                        AND n.nspname <> 'pg_catalog'
-                                        AND n.nspname <> 'information_schema'
-                                        AND n.nspname !~ '^pg_toast'
-                                        {}
-                                        AND NOT c.relname LIKE '\\_\\_%'
-                                   ORDER BY 1;
-            : false
+            "SELECT n.nspname as ""Schema"",
+                          c.relname AS ""Name""
+                       FROM pg_catalog.pg_class c
+                  LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+                      WHERE c.relkind IN ('r','v','m','S','f','')
+                        AND n.nspname <> 'pg_catalog'
+                        AND n.nspname <> 'information_schema'
+                        AND n.nspname !~ '^pg_toast'
+                        {}
+                        AND NOT c.relname LIKE '\\_\\_%'
+                   ORDER BY 1;": false
         def `create_variable`:
             extract(epoch from {}): false
-            '({})::double precision': false
-            '({})::text': false
+            ({})::double precision: false
+            ({})::text: false
         def `_guess_variable`:
             false: false
             true: false
@@ -1903,7 +1910,7 @@ data/sql/backend/postgres.py:
             connection_pool: false
 datasets/list_update.py:
     iris_url: false
-    'https://raw.githubusercontent.com/biolab/orange3/master/Orange/datasets/iris.tab': false
+    https://raw.githubusercontent.com/biolab/orange3/master/Orange/datasets/iris.tab: false
     def `data_info`:
         name: false
         location: false
@@ -1960,7 +1967,7 @@ distance/distance.py:
     class `Manhattan`:
         manhattan: false
         def `fit_cols`:
-            'some columns have zero absolute distance from median, ': "nekateri stolpci so konstantni "
+            'some columns have zero absolute distance from median, ': 'nekateri stolpci so konstantni '
             or no values: ali pa nimajo nobene znane vrednosti
     class `Cosine`:
         cosine: false
@@ -2043,43 +2050,67 @@ evaluation/scoring.py:
     MAE: false
     R2: false
     LogLoss: false
+    MatthewsCorrCoefficient: false
     class `ScoreMetaType`:
         def `__new__`:
             registry: false
             abstract: false
             name: false
+            long_name: false
     class `CA`:
+        CA: Točnost
         Classification accuracy: Klasifikacijska točnost
     class `TargetScore`:
         def `compute_score`:
             binary: false
             'Multiclass data: specify target class or select ': false
             averaging ('weighted', 'macro', 'micro'): false
+    class `Precision`:
+        Prec: Natančnost
+        Precision: Natančnost
+    class `Recall`:
+        Recall: Priklic
+    class `F1`:
+        F1: F1
     class `AUC`:
+        AUC: AUC
         Area under ROC curve: Površina pod krivuljo ROC
         def `calculate_weights`:
             Class variable has less than two values: Ciljna spremenljivka ima manj kot dve vrednosti
         def `compute_score`:
             Class variable has less than two values: Ciljna spremenljivka ima manj kot dve vrednosti
+    class `LogLoss`:
+        LogLoss: Log Izguba
+        Logistic loss: Logistična izguba
     class `Specificity`:
+        Spec: true
+        Specificity: Specifičnost
         def `compute_score`:
             binary: false
             weighted: false
-            'Binary averaging needs two classes in data: ': "Binarno uteževanje zahteva dva razreda: "
-            'specify target class or use ': "določite ciljni razred ali pa uporabite "
+            'Binary averaging needs two classes in data: ': 'Binarno uteževanje zahteva dva razreda: '
+            'specify target class or use ': 'določite ciljni razred ali pa uporabite '
             weighted averaging.: uteženo povprečenje.
-            'Wrong parameters: For averaging select one of the ': null
-            "following values: ('weighted', 'binary')": null
+            'Wrong parameters: For averaging select one of the ': false
+            "following values: ('weighted', 'binary')": false
+    class `MatthewsCorrCoefficient`:
+        MCC: true
+        Matthews correlation coefficient: Matthewov koeficient korelacije
     class `MSE`:
+        MSE: true
         Mean square error: Povprečne kvadratna napaka
     class `RMSE`:
+        RMSE: true
         Root mean square error: Koren povprečne kvadratne napake
     class `MAE`:
+        MAE: true
         Mean absolute error: Povprečna absolutna napaka
     class `R2`:
+        R2: true
         # Je to OK?
         Coefficient of determination: Koeficient determiniranosti
     class `CVRMSE`:
+        CVRMSE: true
         Coefficient of variation of the RMSE: Koeficient variacije RMSE
         def `compute_score`:
             Mean value is too small: Povprečna vrednost je premajhna
@@ -2159,7 +2190,7 @@ misc/_distmatrix_xlsx.py:
     def `_get_labels`:
         ?: false
     def `_matrix_from_cells`:
-        'invalid data in cell ': "neveljaven podatek v celici "
+        'invalid data in cell ': 'neveljaven podatek v celici '
         {openpyxl.utils.get_column_letter(x + col_offset + 1)}: false
         {y + row_offset + 1}: false
     def `write_matrix`:
@@ -2325,12 +2356,11 @@ misc/wrapper_meta.py:
         def `__new__`:
             __wraps__: false
             __wrapped__: false
-            |
-                A wrapper for `${sklname}`. The following is its documentation:
-                
-                ${skldoc}
-                            
-            : false
+            '
+A wrapper for `${sklname}`. The following is its documentation:
+
+${skldoc}
+            ': false
             {}.{}: false
             Attributes\n---------: false
             Examples\n--------: false
@@ -2345,19 +2375,19 @@ misc/tests/example_embedder.py:
             big: false
 misc/utils/embedder_utils.py:
     class `EmbedderCache`:
-        '{:s}_embeddings.pickle': false
+        {:s}_embeddings.pickle: false
         def `save_pickle`:
             wb: false
         def `load_pickle`:
             rb: false
     def `get_proxies`:
         def `add_scheme`:
-            '://': false
-            'http://{url}': false
+            ://: false
+            http://{url}: false
         http_proxy: false
         https_proxy: false
-        'http://': false
-        'https://': false
+        http://: false
+        https://: false
 modelling/ada_boost.py:
     SklAdaBoostLearner: false
     class `SklAdaBoostLearner`:
@@ -2481,12 +2511,12 @@ preprocess/discretize.py:
             {formatter(low)} - {formatter(high)}: false
         def `create_discretized_var`:
             def `fmt`:
-                '{val:.{ndigits}f}': false
+                {val:.{ndigits}f}: false
             single_value: false
     class `BinSql`:
         def `__call__`:
             'width_bucket({self.var.to_sql()}, ': false
-            'ARRAY{str(self.points)}::double precision[])': false
+            ARRAY{str(self.points)}::double precision[]): false
     class `SingleValueSql`:
         def `__call__`:
             "'%s'": false
@@ -2502,8 +2532,8 @@ preprocess/discretize.py:
             %Y: false
             %y %b: false
             %y %b %d: false
-            '%y %b %d %H:%M': false
-            '%H:%M:%S': false
+            %y %b %d %H:%M: false
+            %H:%M:%S: false
     def `_simplified_time_intervals`:
         ' ': false
         < {join(labels[0])}: false
@@ -2517,15 +2547,15 @@ preprocess/discretize.py:
     class `BinDefinition`:
         def `__new__`:
             %g: false
-            '{width:g}': false
+            {width:g}: false
     def `decimal_binnings`:
         %g: false
     def `_time_binnings`:
-        '%H:%M:%S': false
+        %H:%M:%S: false
         second: sekunda
-        '%b %d %H:%M': false
+        %b %d %H:%M: false
         minute: minuta
-        '%y %b %d %H:%M': false
+        %y %b %d %H:%M: false
         hour: ura
         %y %b %d: false
         day: dan
@@ -2539,12 +2569,12 @@ preprocess/discretize.py:
     def `_simplified_labels`:
         42: false
         ' ': false
-        ':': true
+        :: true
         {to_remove} {labels[0]}: false
     def `_unique_time_bins`:
         %y %b %d: false
         ' %H:%M': false
-        ':%S': false
+        :%S: false
     def `_min_max_unique`:
         no valid (non-nan) data: false
     sec: sek
@@ -2972,7 +3002,7 @@ projection/radviz.py:
         RadViz: false
         def `__call__`:
             Can not handle categorical variables: Ne morem obravnavati kategoričnih spremenljivk
-            ' with more than two values': " z več kot dvema vrednostima."
+            ' with more than two values': ' z več kot dvema vrednostima.'
         def `transform`:
             ignore: false
 regression/base_regression.py:
@@ -3075,7 +3105,7 @@ regression/linear_bfgs.py:
             unknown values: false
     __main__: false
     housing: false
-    '{:5.2f} {}': false
+    {:5.2f} {}: false
     test data: false
     majority: false
 regression/mean.py:
@@ -3102,7 +3132,6 @@ regression/random_forest.py:
     class `RandomForestRegressionLearner`:
         def `__init__`:
             squared_error: false
-            auto: false
 regression/simple_random_forest.py:
     SimpleRandomForestLearner: false
     class `SimpleRandomForestLearner`:
@@ -3137,7 +3166,7 @@ regression/tree.py:
             min_samples_split: false
             max_depth: false
         def `fit_storage`:
-            'Exhaustive binarization does not handle ': "Izčrpna binarizacija ne zmore kategoričnih spremenljivk "
+            'Exhaustive binarization does not handle ': 'Izčrpna binarizacija ne zmore kategoričnih spremenljivk '
             attributes with more than {} values: z več kot {} vrednostmi.
     class `SklTreeRegressionLearner`:
         regression tree: false
@@ -3149,11 +3178,11 @@ regression/xgb.py:
     XGBRFRegressor: false
     class `XGBRegressor`:
         def `__init__`:
-            'reg:squarederror': false
+            reg:squarederror: false
             gain: false
     class `XGBRFRegressor`:
         def `__init__`:
-            'reg:squarederror': false
+            reg:squarederror: false
             gain: false
 statistics/basic_stats.py:
     def `_get_variable`:
@@ -3313,7 +3342,7 @@ tests/sql/base.py:
         table: false
     class `TestParseUri`:
         def `test_parses_connection_uri`:
-            'sql://user:password@host:7678/database/table': false
+            sql://user:password@host:7678/database/table: false
             sql: false
             host: false
             user: false
@@ -3321,7 +3350,7 @@ tests/sql/base.py:
             database: false
             table: false
         def `test_parse_minimal_connection_uri`:
-            'sql://host/database/table': false
+            sql://host/database/table: false
             sql: false
             host: false
             database: false
@@ -3348,7 +3377,7 @@ tests/sql/base.py:
             ', ': false
             {} {}: false
             ({}): false
-            false: false
+            NULL: false
             "'{}'": false
             INSERT INTO {} VALUES {}: false
         def `drop_sql_table`:
@@ -3366,7 +3395,7 @@ tests/sql/base.py:
             ', ': false
             {} {}: false
             ({}): false
-            false: false
+            NULL: false
             "'{}'": false
             INSERT INTO {} VALUES {}: false
         def `drop_sql_table`:
@@ -3512,7 +3541,7 @@ tests/sql/test_filter.py:
             Lorem ipsum dolor sit amet, consectetur adipiscing: false
             elit. Vestibulum vel dolor nulla. Etiam elit lectus, mollis nec: false
             mattis sed, pellentesque in turpis. Vivamus non nisi dolor. Etiam: false
-            lacinia dictum purus, in ullamcorper ante vulputate sed. nullam: false
+            lacinia dictum purus, in ullamcorper ante vulputate sed. Nullam: false
             congue blandit elementum. Donec blandit laoreet posuere. Proin: false
             quis augue eget tortor posuere mollis. Fusce vestibulum bibendum: false
             neque at convallis. Donec iaculis risus volutpat malesuada: false
@@ -3750,17 +3779,15 @@ tests/sql/test_sql_table.py:
             iris: false
         def `test_joins`:
             postgres: false
-            |
-                SELECT a."sepal length",
-                                          b. "petal length",
-                                          CASE WHEN b."petal length" < 3 THEN '<'
-                                               ELSE '>'
-                                           END AS "qualitative petal length"
-                                     FROM iris a
-                               INNER JOIN iris b ON a."sepal width" = b."sepal width"
-                                    WHERE a."petal width" < 1
-                                 ORDER BY a."sepal length", b. "petal length" ASC
-            : false
+            "SELECT a.""sepal length"",
+                          b. ""petal length"",
+                          CASE WHEN b.""petal length"" < 3 THEN '<'
+                               ELSE '>'
+                           END AS ""qualitative petal length""
+                     FROM iris a
+               INNER JOIN iris b ON a.""sepal width"" = b.""sepal width""
+                    WHERE a.""petal width"" < 1
+                 ORDER BY a.""sepal length"", b. ""petal length"" ASC": false
             qualitative petal length: false
             <: false
             >: false
@@ -3768,22 +3795,21 @@ tests/sql/test_sql_table.py:
             '"%s"': false
         def `test_universal_table`:
             postgres: false
-            | 4
-                            SELECT
-                                v1.col2 as v1,
-                                v2.col2 as v2,
-                                v3.col2 as v3,
-                                v4.col2 as v4,
-                                v5.col2 as v5
-                              FROM %(table_name)s v1
-                        INNER JOIN %(table_name)s v2 ON v2.col0 = v1.col0 AND v2.col1 = 2
-                        INNER JOIN %(table_name)s v3 ON v3.col0 = v2.col0 AND v3.col1 = 3
-                        INNER JOIN %(table_name)s v4 ON v4.col0 = v1.col0 AND v4.col1 = 4
-                        INNER JOIN %(table_name)s v5 ON v5.col0 = v1.col0 AND v5.col1 = 5
-                             WHERE v1.col1 = 1
-                          ORDER BY v1.col0
-                        
-            : false
+            '
+            SELECT
+                v1.col2 as v1,
+                v2.col2 as v2,
+                v3.col2 as v3,
+                v4.col2 as v4,
+                v5.col2 as v5
+              FROM %(table_name)s v1
+        INNER JOIN %(table_name)s v2 ON v2.col0 = v1.col0 AND v2.col1 = 2
+        INNER JOIN %(table_name)s v3 ON v3.col0 = v2.col0 AND v3.col1 = 3
+        INNER JOIN %(table_name)s v4 ON v4.col0 = v1.col0 AND v4.col1 = 4
+        INNER JOIN %(table_name)s v5 ON v5.col0 = v1.col0 AND v5.col1 = 5
+             WHERE v1.col1 = 1
+          ORDER BY v1.col0
+        ': false
             '"%s"': false
         iris: false
         Iris-setosa: false
@@ -3870,35 +3896,35 @@ tests/sql/test_sql_table.py:
             date: false
         def `test_time_time`:
             postgres: false
-            '17:39:51': false
-            '11:51:48.46': false
-            '05:20:21.492149': false
-            '21:47:06': false
-            '04:47:35.8': false
+            17:39:51: false
+            11:51:48.46: false
+            05:20:21.492149: false
+            21:47:06: false
+            04:47:35.8: false
             time: false
         def `test_time_timetz`:
             postgres: false
-            '17:39:51+0200': false
-            '11:51:48.46+01': false
-            '05:20:21.4921': false
-            '21:47:06-0600': false
-            '04:47:35.8+0330': false
+            17:39:51+0200: false
+            11:51:48.46+01: false
+            05:20:21.4921: false
+            21:47:06-0600: false
+            04:47:35.8+0330: false
             timetz: false
         def `test_time_timestamp`:
             postgres: false
-            '2014-07-15 17:39:51.348149': false
-            '2008-10-05 11:51:48.468149': false
-            '2008-11-03 05:20:21.492149': false
-            '2015-01-02 21:47:06.228149': false
-            '2016-04-16 04:47:35.892149': false
+            2014-07-15 17:39:51.348149: false
+            2008-10-05 11:51:48.468149: false
+            2008-11-03 05:20:21.492149: false
+            2015-01-02 21:47:06.228149: false
+            2016-04-16 04:47:35.892149: false
             timestamp: false
         def `test_time_timestamptz`:
             postgres: false
-            '2014-07-15 17:39:51.348149+0200': false
-            '2008-10-05 11:51:48.468149+02': false
-            '2008-11-03 05:20:21.492149+01': false
-            '2015-01-02 21:47:06.228149+0100': false
-            '2016-04-16 04:47:35.892149+0330': false
+            2014-07-15 17:39:51.348149+0200: false
+            2008-10-05 11:51:48.468149+02: false
+            2008-11-03 05:20:21.492149+01: false
+            2015-01-02 21:47:06.228149+0100: false
+            2016-04-16 04:47:35.892149+0330: false
             timestamptz: false
         def `test_double_precision`:
             postgres: false
@@ -3978,7 +4004,7 @@ widgets/__init__.py:
     {DEVELOP_ROOT}/doc/visual-programming/build/htmlhelp/index.html: false
     data: false
     share/help/en/orange3/htmlhelp/index.html: false
-    'https://docs.biolab.si/orange/3/visual-programming/': false
+    https://docs.biolab.si/orange/3/visual-programming/: false
 widgets/credentials.py:
     Orange3 - {}: false
     class `CredentialManager`:
@@ -4147,12 +4173,14 @@ widgets/data/__init__.py:
     Data: Podatki
     orange.widgets.data: false
     Widgets for data manipulation.: Gradniki za obdelavo podatkov
-    |
-        This category contains widgets for data manipulation. This includes
-        loading, importing, saving, preprocessing, selection, etc.
-    : |
-        Kategorija vsebuje gradnike za delo s podatki, na primer branje,
-        shranjevanje spreminjanje, izbiranje in podobno.
+    '
+This category contains widgets for data manipulation. This includes
+loading, importing, saving, preprocessing, selection, etc.
+
+': '
+Kategorija vsebuje gradnike za delo s podatki, na primer branje,
+shranjevanje spreminjanje, izbiranje in podobno.
+'
     icons/Category-Data.svg: false
     '#FFD39F': false
 widgets/data/owaggregatecolumns.py:
@@ -4175,8 +4203,8 @@ widgets/data/owaggregatecolumns.py:
         class `Outputs`:
             Data: Podatki
         class `Warning`:
-            'Some input features are categorical:\n{}': Nekatere vhodne spremenljivke so kategorične:\{}
-            'Some input features are missing:\n{}': Nekatere vhodne spremenljivke manjkajo:\n{}
+            Some input features are categorical:\n{}: Nekatere vhodne spremenljivke so kategorične:\{}
+            Some input features are missing:\n{}: Nekatere vhodne spremenljivke manjkajo:\n{}
         Sum: Vsota
         Product: Produkt
         Min: false
@@ -4199,8 +4227,8 @@ widgets/data/owaggregatecolumns.py:
             var_name: false
             'Output variable name: ': 'Ime izhodne spremenljivke: '
         def `send_report`:
-            'Output:': Izhod:
-            "'{self._new_var_name()}' as {self.operation.lower()} of {var_list}": '{self._new_var_name()}' kot {self.operation.lower()} stolpcev {var_list}
+            Output:: Izhod:
+            "'{self._new_var_name()}' as {self.operation.lower()} of {var_list}": "'{self._new_var_name()}' kot {self.operation.lower()} stolpcev {var_list}"
         def `_and_others`:
             "'{variables[0].name}'": true
             ', ': true
@@ -4274,7 +4302,7 @@ widgets/data/owcolor.py:
             'Definition for variable {names[0]}, which does not ': Nastavitve za spremenljivko {names[0]}, ki je ni v podatkih,
             appear in the data, was ignored.\n: niso uporabljene.\n
             'Definitions for variables ': Nastavitve za {plsi(len(names), "|spremenljivki|spremenljivke")}
-            '{", ".join(names[:-1])} and {names[-1]}': {", ".join(names[:-1])} in {names[-1]}
+            {", ".join(names[:-1])} and {names[-1]}: {", ".join(names[:-1])} in {names[-1]}
             'Definitions for {", ".join(names[:4])} ': 'Nastavitve za {", ".join(names[:4])} '
             and {len(names) - 4} other variables: in še {z_besedo(len(names) - 4, 4, "f")} {plsi(len(names) - 4, "|drugi spremenljivki|druge spremenljivke|drugih spremenljivk")}
             , which do not appear in the data, were ignored.\n: , ki jih ni v podatkih, niso uporabljene.\n
@@ -4331,7 +4359,7 @@ widgets/data/owconcatenate.py:
             Variable Merging: Združevanje spremenljivk
             merge_type: true
             'When there is no primary table, ': 'Kadar ni podana osnovna tabela, '
-            'the output should contain:': bo izhodna tabela vsebovala:
+            the output should contain:: bo izhodna tabela vsebovala:
             'The resulting table will have a class only if there ': 'Ciljna spremenljivka bo ohranjena le, če imajo '
             is no conflict between input classes.: vse vhodne tabele isto ciljno spremenljivko.
             ignore_compute_value: false
@@ -4340,9 +4368,9 @@ widgets/data/owconcatenate.py:
             Source Identification: Oznaka vira
             append_source_column: false
             Append data source IDs: Vsaki vrstici dodaj ime tabele, iz katere izhaja
-            'Feature name:': Ime spremenljivke:
+            Feature name:: Ime spremenljivke:
             source_attr_name: false
-            'Place:': Vrsta:
+            Place:: Vrsta:
             source_column_role: false
             auto_commit: false
         def `commit`:
@@ -4442,7 +4470,7 @@ widgets/data/owcorrelations.py:
     class `CorrelationRank`:
         def `row_for_state`:
             name: false
-            '{:+.3f}': false
+            {:+.3f}: false
     class `OWCorrelations`:
         Correlations: Korelacije
         Compute all pairwise attribute correlations.: Izračuna korelacije med vsemi pari spremenljivk.
@@ -4503,7 +4531,7 @@ widgets/data/owcreateclass.py:
             New Class Name: Ime novega razreda
             Match by Substring: Vzorci in razredi
             attribute: false
-            'From column:': Iz stolpca:
+            From column:: Iz stolpca:
             Name: Ime
             Substring: Vzorec
             Count: Primerov
@@ -4565,7 +4593,7 @@ widgets/data/owcreateinstance.py:
                     ?: false
     class `TimeVariableEditor`:
         yyyy-MM-dd: true
-        'hh:mm:ss': true
+        hh:mm:ss: true
         def `__init__`:
             '{TimeVariableEditor.DATE_FORMAT} ': false
             {TimeVariableEditor.TIME_FORMAT}: false
@@ -4615,7 +4643,7 @@ widgets/data/owcreateinstance.py:
         def `send_report`:
             Input: Vhod
             Output: Izhod
-            '{var.name}:': false
+            {var.name}:: false
             Values: Vrednosti
     __main__: false
     housing: false
@@ -4723,7 +4751,7 @@ widgets/data/owcsvimport.py:
         directory: false
         filter: false
         def `__init__`:
-            'File:': Datoteka:
+            File:: Datoteka:
             recent-combo: falsed
             Recent files.: Nedavne datoteke.
             Recent files…: Nedavne datoteke…
@@ -4750,7 +4778,7 @@ widgets/data/owcsvimport.py:
                 directory: false
                 filter: false
         def `_might_be_binary_mb`:
-            The '{basename}' may be a binary file.\n: '{basename}' je najbrž binarna datoteka.\n
+            The '{basename}' may be a binary file.\n: "'{basename}' je najbrž binarna datoteka.\n"
             Are you sure you want to continue?: Vseeno nadaljujem?
         def `_path_must_be_relative_mb`:
             Invalid path: Napačna mapa
@@ -4786,7 +4814,7 @@ widgets/data/owcsvimport.py:
             '<div><i>{basename}</i> was not loaded due to a text encoding ': Datoteke <div><i>{basename}</i> ne morem prebrati, ker je shranjena v neznanem
             'error. The file might be saved in an unknown or invalid ': kodiranju ali pa je binarna.
             encoding, or it might be a binary file.</div>: </div>
-            '<div><i>{basename}</i> was not loaded due to an error:': Datoteke <div><i>{basename}</i> ne morem prebrati:
+            <div><i>{basename}</i> was not loaded due to an error:: Datoteke <div><i>{basename}</i> ne morem prebrati:
             "<p style='white-space: pre;'>{err}</p>": true
         def `_update_status_messages`:
             "{n_instances} {pl(n_instances, 'row')}, ": "{n_instances} {plsi(n_instances, 'vrstica')}, "
@@ -4883,12 +4911,10 @@ widgets/data/owdatainfo.py:
             def `set_exact_length`:
                 Size: Velikost
         def `update_info`:
-            |
-                <style>
-                                       th { text-align: right; vertical-align: top; }
-                                       th, td { padding-top: 4px; line-height: 125%}
-                                    </style>
-            : false
+            '<style>
+                       th { text-align: right; vertical-align: top; }
+                       th, td { padding-top: 4px; line-height: 125%}
+                    </style>': false
             def `dict_as_table`:
                 <table>: false
                 '<tr><th>{label}: </th><td>': false
@@ -4906,7 +4932,7 @@ widgets/data/owdatainfo.py:
             ' ': false
             {key}={value}: false
             password: false
-            'SQL Table using connection:<br/>{connection_string}': Tabels SQL s povezavo:<br/>{connection_string}
+            SQL Table using connection:<br/>{connection_string}: Tabels SQL s povezavo:<br/>{connection_string}
         def `_p_size`:
             {n} {pl(n, 'row')}: {n} {plsi(n, 'vrstica')}
             ~{n} {pl(n, 'row')}: ~{n} {plsi(n, 'vrstica')}
@@ -4957,7 +4983,7 @@ widgets/data/owdatasampler.py:
         def `__init__`:
             Sampling Type: Vrsta vzorčenja
             sampling_type: false
-            'Fixed proportion of data:': Predpisani delež podatkov:
+            Fixed proportion of data:: Predpisani delež podatkov:
             sampleSizePercentage: false
             %d %%: true
             Fixed sample size: Predpisana velikost vzorca:
@@ -4966,13 +4992,13 @@ widgets/data/owdatasampler.py:
             replacement: false
             Sample with replacement: 'Vzorči s ponavljanjem: '
             Cross validation: Prečno preverjanje
-            'Number of subsets:': Število podmnožic:
+            Number of subsets:: Število podmnožic:
             number_of_folds: false
             selectedFold: false
-            'Unused subset:': Neuporabljena podmnožica:
-            'Selected subset:': Izbrana podmnožica:
+            Unused subset:: Neuporabljena podmnožica:
+            Selected subset:: Izbrana podmnožica:
             Bootstrap: Zankanje (bootstrap)
-            'Time:': Čas:
+            Time:: Čas:
             sampleSizeSqlTime: false
             ' sec': ' sek'
             Percentage: Delež
@@ -5018,7 +5044,7 @@ widgets/data/owdatasets.py:
         orangecontrib.prototypes.widgets.owdatasets.OWDataSets: false
         online: true
         data sets: true
-        'https://datasets.biolab.si/': false
+        https://datasets.biolab.si/: false
         datasets: false
         islocal: false
         label: false
@@ -5066,7 +5092,7 @@ widgets/data/owdatasets.py:
         def `commit`:
             Fetching...: Pobiram...
         def `__commit_complete`:
-            'Error:': Napaka:
+            Error:: Napaka:
     def `variable_icon`:
         categorical: false
         x: false
@@ -5148,7 +5174,7 @@ widgets/data/owdiscretize.py:
     class `DiscDomainModel`:
         def `data`:
             '<b>{var.name}: </b>': false
-            '<p style="white-space:pre">{tip}': false
+            <p style="white-space:pre">{tip}: false
             {",&nbsp;&nbsp;".join(values)}</p>: false
             <br/>: false
             - {value}<br/>: false
@@ -5165,7 +5191,7 @@ widgets/data/owdiscretize.py:
             ' ': false
             ', ': true
         def `show_tip`:
-            '::show_tip_qlabel': false
+            ::show_tip_qlabel: false
             tip-label: false
             QTipLabel: false
             hide-timer: false
@@ -5200,9 +5226,9 @@ widgets/data/owdiscretize.py:
         def `_create_buttons`:
             def `manual_cut_editline`:
                 e.g. 0.0, 0.5, 1.0: npr. 0.0, 0.5, 1.0
-                '<p style="white-space:pre">': null
-                Enter cut points as a comma-separate list of \n: null
-                strictly increasing numbers e.g. 0.0, 0.5, 1.0).</p>: null
+                <p style="white-space:pre">: false
+                Enter cut points as a comma-separate list of \n: Navedite prage kot seznam števil, ločenih z vejico \n
+                strictly increasing numbers e.g. 0.0, 0.5, 1.0).</p>: v naraščajočem vrstnem redu, npr. 0.0, 0.5, 1.0.</p>
             {unit}(s): {plsi(1, unit)}
             CC: KP
             Copy the current cut points to manual mode: Uporabi trenutne vrednosti kot ročno nastavitev
@@ -5234,7 +5260,7 @@ widgets/data/owdiscretize.py:
             Default: false
             Custom: false
             ', ': false
-            '{x:g}': false
+            {x:g}: false
             var_hints: false
     __main__: false
     heart_disease: false
@@ -5335,7 +5361,7 @@ widgets/data/oweditdomain.py:
         def `__init__`:
             editor-form-layout: false
             name-editor: false
-            'Name:': Ime:
+            Name:: Ime:
             Unlink variable from its source variable: Prekini povezavo z izvorno spremenljivko
             'Make Orange forget that the variable is derived from ': S tem bo Orange "pozabil", da je spremenljivka\n
             another.\n: izračunana iz vrednosti neke druge spremenljivke.\n
@@ -5352,7 +5378,7 @@ widgets/data/oweditdomain.py:
             Remove selected label.: Odstrani izbrano oznako.
             Add: Dodaj
             Remove: Odstrani
-            'Labels:': Oznake:
+            Labels:: Oznake:
     class `GroupItemsDialog`:
         other: ostalo
         def `__init__`:
@@ -5418,7 +5444,7 @@ widgets/data/oweditdomain.py:
             Remove: Odstrani
             Merge selected items: Združi izbrane vrednosti
             Merge infrequent: Združi redke
-            'Values:': Vrednosti:
+            Values:: Vrednosti:
         def `set_data_categorical`:
             'invalid mapping: {!r}': false
         def `get_data`:
@@ -5430,7 +5456,7 @@ widgets/data/oweditdomain.py:
     class `TimeVariableEditor`:
         def `__init__`:
             Detect automatically: Zaznaj samodejno
-            'Format:': Oblika:
+            Format:: Oblika:
     class `VariableEditDelegate`:
         categorical: kategorično
         numeric: številsko
@@ -5450,7 +5476,7 @@ widgets/data/oweditdomain.py:
                 Numeric: Številska
                 Text: Besedilna
                 Time: Časovna
-                'Type:': Vrsta:
+                Type:: Vrsta:
         def `set_data`:
             type-combo: false
         def `__reinterpret_activated`:
@@ -5539,7 +5565,7 @@ widgets/data/oweditdomain.py:
         </s>: true
         (new): (nova)
         "<div style='font-weight: bold;'>{}</div>": false
-        '<div>{}:</div>': false
+        <div>{}:</div>: false
         <br/>\n: false
         "<div style='padding-left: 1em;'>": false
         </div>: false
@@ -5579,11 +5605,12 @@ widgets/data/owfeatureconstructor.py:
     def `selected_row`:
         invalid 'selectionMode': false
     class `FeatureEditor`:
-        |
-            Use variable names as values in expression.
-            Categorical features are passed as strings
-            (note the change in behaviour from Orange 3.30).
-        : null
+        '
+Use variable names as values in expression.
+Categorical features are passed as strings
+(note the change in behaviour from Orange 3.30).
+
+': false
         _: false
         str: false
         float: false
@@ -5769,7 +5796,9 @@ widgets/data/owfeatureconstructor.py:
     len: false
     list: false
     map: false
+    max: false
     memoryview: false
+    min: false
     next: false
     object: false
     oct: false
@@ -5783,6 +5812,7 @@ widgets/data/owfeatureconstructor.py:
     slice: false
     sorted: false
     str: false
+    sum: false
     tuple: false
     type: false
     zip: false
@@ -5809,9 +5839,6 @@ widgets/data/owfeatureconstructor.py:
     nanargmin: false
     nanvar: false
     mean: false
-    min: false
-    max: false
-    sum: false
     std: false
     median: false
     cumsum: false
@@ -5866,11 +5893,11 @@ widgets/data/owfeaturestatistics.py:
         def `data`:
             def `display`:
                 def `format_zeros`:
-                    '{0:.{num_decimals}f}': false
+                    {0:.{num_decimals}f}: false
                 def `render_value`:
                     ∞: false
                 '#ccc': false
-                '{self._dispersion[row]:.3g}': false
+                {self._dispersion[row]:.3g}: false
                 {missing} ({perc} %): false
     class `OWFeatureStatistics`:
         Feature Statistics: Statistika spremenljivk
@@ -5884,7 +5911,7 @@ widgets/data/owfeaturestatistics.py:
         def `__init__`:
             None: Enobarvno
             color_var: false
-            'Color:': Barva:
+            Color:: Barva:
             auto_commit: false
         def `migrate_context`:
             selected_rows: false
@@ -5921,7 +5948,7 @@ widgets/data/owfile.py:
             No file selected.: Datoteka ni izbrana.
         class `Warning`:
             The file is too large to load automatically.: Datoteka je prevelika za samodejno branje.
-            ' Press Reload to load.': " Pritisni 'Ponovno naloži' za branje."
+            ' Press Reload to load.': " Pritisnite 'Ponovno naloži' za branje."
             Read warning:\n{}: Opozorilo ob branju:\n{}
             Categorical variables with >100 values may decrease performance.: Kategorične spremenljivke z veliko vrednostmi lahko upočasnijo delovanje.
             'Some variables have been renamed ': Spremenljivke s podvojenimi imeni so preimenovane.
@@ -5948,11 +5975,11 @@ widgets/data/owfile.py:
                     0: false
             Source: Vir
             source: false
-            'File:': Datoteka:
+            File:: Datoteka:
             ...: true
             Reload: Ponovno naloži
             Sheet: List
-            'URL:': true
+            URL:: true
             File Type: Vrsta datoteke
             Info: true
             No data loaded.: Podatki niso naloženi.
@@ -5961,7 +5988,7 @@ widgets/data/owfile.py:
             Apply: Uveljavi
             Browse documentation datasets: Odpri podatke iz dokumentacije
         def `_url_set`:
-            'http://': false
+            http://: false
         def `browse_file`:
             File: Datoteka
             Cannot find the directory with documentation datasets: Ne najdem mape s podatki iz dokumentacije
@@ -5972,7 +5999,7 @@ widgets/data/owfile.py:
             Can not find reader "{qname}": Bralnik "{qname}" ne obstaja.
         def `_describe`:
             def `missing_prop`:
-                '({prop * 100:.1f}% missing values)': ({prop * 100:.1f}% manjkajočih vrednosti)
+                ({prop * 100:.1f}% missing values): ({prop * 100:.1f}% manjkajočih vrednosti)
                 (no missing values): (ni manjkajočih vrednosti)
             attributes: false
             Name: Ime
@@ -6035,16 +6062,18 @@ widgets/data/owgroupby.py:
     mean: false
     Median: Mediana
     median: false
+    Q1: true
+    Q3: true
+    Min. value: Najmanjša vrednost
+    min: false
+    Max. value: Največja vrednost
+    max: false
     Mode: Najpogostejša
     Standard deviation: Standardna deviacija
     Variance: Varianca
     Sum: Vsota
     sum: false
     Concatenate: Stakni
-    Min. value: Najmanjša vrednost
-    min: false
-    Max. value: Največja vrednost
-    max: false
     Span: Razpon
     First value: Prva vrednost
     first: false
@@ -6121,9 +6150,9 @@ widgets/data/owimpute.py:
             Default method can not handle '{}': Privzeta metoda ne deluje za '{}'
         def `__init__`:
             Default Method: Privzeta metoda
-            'Fixed values; numeric variables:': Privzeta vrednost; številske spremenljivke:
+            Fixed values; numeric variables:: Privzeta vrednost; številske spremenljivke:
             default_numeric_value: false
-            ', time:': , časovne:
+            , time:: , časovne:
             default_time: false
             Individual Attribute Settings: Nastavitve za posamične spremenljivke
             Restore All to Default: Nastavi vse na privzeto
@@ -6183,10 +6212,10 @@ widgets/data/owmelt.py:
             Exclude zero values: Preskoči ničelne vrednosti
             Besides missing values, also omit items with zero values: Poleg neznanih vrednosti preskoči tudi stvari z vrednostjo 0.
             Names for generated features: Imena stolpcev v novih podatkih
-            'Item:': Stvar:
+            Item:: Stvar:
             item_var_name: false
             'padding-left: 3px': false
-            'Value:': Vrednost:
+            Value:: Vrednost:
             value_var_name: false
         def `send_report`:
             Settings: Nastavitve
@@ -6336,7 +6365,7 @@ widgets/data/owneighbors.py:
             distance_index: false
             'Distance metric: ': 'Vrsta razdalje: '
             n_neighbors: false
-            'Limit number of neighbors to:': Omeji število sosedov na:
+            Limit number of neighbors to:: Omeji število sosedov na:
             limit_neighbors: false
         def `_data_with_similarity`:
             distance: false
@@ -6349,21 +6378,21 @@ widgets/data/owoutliers.py:
         def `__init__`:
             'An upper bound on the fraction of training errors and a ': null
             lower bound of the fraction of support vectors: null
-            'Nu:': null
+            Nu:: null
             nu: null
             %d %%: null
             gamma: null
-            'Kernel coefficient:': null
+            Kernel coefficient:: null
         def `get_parameters`:
             nu: null
             gamma: null
     class `CovarianceEditor`:
         def `__init__`:
-            'Contamination:': null
+            Contamination:: null
             cont: null
             %d %%: null
             empirical_covariance: null
-            'Support fraction:': null
+            Support fraction:: null
             support_fraction: null
         def `get_parameters`:
             contamination: null
@@ -6376,13 +6405,13 @@ widgets/data/owoutliers.py:
         hamming: null
         minkowski: null
         def `__init__`:
-            'Contamination:': null
+            Contamination:: null
             cont: null
             %d %%: null
             n_neighbors: null
-            'Neighbors:': null
+            Neighbors:: null
             metric_index: null
-            'Metric:': null
+            Metric:: null
         def `get_parameters`:
             n_neighbors: null
             contamination: null
@@ -6391,7 +6420,7 @@ widgets/data/owoutliers.py:
             metric: null
     class `IsolationForestEditor`:
         def `__init__`:
-            'Contamination:': null
+            Contamination:: null
             cont: null
             %d %%: null
             replicable: null
@@ -6549,11 +6578,11 @@ widgets/data/owpaintdata.py:
             Remove selected class label: Odstrani razred
             Tools: Orodja
             brushRadius: false
-            'Radius:': Polmer:
+            Radius:: Polmer:
             density: false
-            'Intensity:': Gostota:
+            Intensity:: Gostota:
             symbol_size: false
-            'Symbol:': Velikost:
+            Symbol:: Velikost:
             Reset to Input Data: Ponastavi na vhodne podatke
             autocommit: false
             bottom: false
@@ -6730,7 +6759,7 @@ widgets/data/owpreprocess.py:
         zeros: ničlami
         def `__init__`:
             Remove features with too many: Odstrani spremenljivke s preveč
-            'Threshold:': Prag:
+            Threshold:: Prag:
             Percentage: Odstotek
             Fixed: Število primerov
         def `parameters`:
@@ -6769,8 +6798,8 @@ widgets/data/owpreprocess.py:
         def `__init__`:
             Score: Kriterij
             Number of features: Število ohranjenih spremenljivk
-            'Fixed:': Določeno število:
-            'Proportion:': Delež v odstotkih
+            Fixed:: Določeno število:
+            Proportion:: Delež v odstotkih
             %: true
         def `setItems`:
             text: false
@@ -6853,8 +6882,8 @@ widgets/data/owpreprocess.py:
             Classes: Razrede
             Features: Spremenljivke
             Meta data: Meta spremenljivke
-            'Randomize:': Premešaj:
-            'Replicable shuffling:': Ponovljivo mešanje:
+            Randomize:: Premešaj:
+            Replicable shuffling:: Ponovljivo mešanje:
         def `setParameters`:
             rand_type: false
             rand_seed: false
@@ -6870,7 +6899,7 @@ widgets/data/owpreprocess.py:
             Not replicable: neponovljivo naključno
     class `PCA`:
         def `__init__`:
-            'Components:': Število komponent:
+            Components:: Število komponent:
         def `setParameters`:
             n_components: false
         def `parameters`:
@@ -6881,8 +6910,8 @@ widgets/data/owpreprocess.py:
             'Components: {}': {} komponent
     class `CUR`:
         def `__init__`:
-            'Rank:': Rang:
-            'Relative error:': Relativna napaka:
+            Rank:: Rang:
+            Relative error:: Relativna napaka:
         def `setParameters`:
             rank: false
             max_error: false
@@ -7052,23 +7081,22 @@ widgets/data/owpurgedomain.py:
             Metas: Meta spremenljivke
             Statistics: Statistika
     __main__: false
-    'https://datasets.biolab.si/core/car.tab': false
+    https://datasets.biolab.si/core/car.tab: false
     buying: false
     v-high: false
 widgets/data/owpythonscript.py:
     OWPythonScript: false
-    |
-        import numpy as np
-        from Orange.data import Table, Domain, ContinuousVariable, DiscreteVariable
-        
-        domain = Domain([ContinuousVariable("age"),
-                         ContinuousVariable("height"),
-                         DiscreteVariable("gender", values=("M", "F"))])
-        arr = np.array([
-          [25, 186, 0],
-          [30, 164, 1]])
-        out_data = Table.from_numpy(domain, arr)
-    : false
+    'import numpy as np
+from Orange.data import Table, Domain, ContinuousVariable, DiscreteVariable
+
+domain = Domain([ContinuousVariable("age"),
+                 ContinuousVariable("height"),
+                 DiscreteVariable("gender", values=("M", "F"))])
+arr = np.array([
+  [25, 186, 0],
+  [30, 164, 1]])
+out_data = Table.from_numpy(domain, arr)
+': false
     def `read_file_content`:
         utf-8: true
         strict: true
@@ -7111,7 +7139,7 @@ widgets/data/owpythonscript.py:
             ;">: false
             </span>: false
             ;">(</span>: false
-            ';">):</span>': false
+            ;">):</span>: false
         def `update_signal_text`:
             ', ': false
             's, ': false
@@ -7280,7 +7308,7 @@ widgets/data/owpythonscript.py:
             \nRunning script:\n: \nIzvajam skripto:\n
             exec(_script): false
             out_: false
-            "'{}' has to be an instance of '{}'.": '{}' mora biti '{}'.
+            "'{}' has to be an instance of '{}'.": "'{}' mora biti '{}'."
         def `migrate_settings`:
             libraryListSource: false
             scriptLibrary: false
@@ -7396,7 +7424,7 @@ widgets/data/owrank.py:
             None: Nobena
             All: Vse
             Manual: Ročno
-            'Best ranked:': Najboljše ocenjene:
+            Best ranked:: Najboljše ocenjene:
             nSelected: false
             auto_apply: false
         def `handleNewSignals`:
@@ -7406,7 +7434,7 @@ widgets/data/owrank.py:
         def `send_report`:
             Input: Vhod
             Ranks: Rangi
-            '{:.3f}': false
+            {:.3f}: false
             Output: Izhod
         def `create_scores_table`:
             Feature: Spremenljivka
@@ -7478,21 +7506,22 @@ widgets/data/owselectbydataindex.py:
         class `Warning`:
             Input tables do not share any instances.: Vhodni tabeli nimata skupnih vrstic.
         def `__init__`:
-            |
-                Data rows keep their identity even when some or all original variables
-                are replaced by variables computed from the original ones.
-                
-                This widget gets two data tables ("Data" and "Data Subset") that
-                can be traced back to the same source. It selects all rows from Data
-                that appear in Data Subset, based on row identity and not actual data.
-            : |
-                Vrstice v podatkih ohranijo svojo identiteto tudi, kadar so nekatere ali
-                celo vse izvirne spremenljivke zamenjane z drugimi, izračunanimi iz njih.
-            
-                Ta gradnik sprejme dve tabeli ("Podatki" in "Podmnožica"), ki izhajate
-                iz istega vira. Izbere tiste vrstice iz Podatki, ki se pojavijo tudi v
-                Podmnožica, pri čemer se ne ozira na vrednosti spremenljivk temveč na
-                identiteto vrstic.
+            '
+Data rows keep their identity even when some or all original variables
+are replaced by variables computed from the original ones.
+
+This widget gets two data tables ("Data" and "Data Subset") that
+can be traced back to the same source. It selects all rows from Data
+that appear in Data Subset, based on row identity and not actual data.
+': '
+Vrstice v podatkih ohranijo svojo identiteto tudi, kadar so nekatere ali
+celo vse izvirne spremenljivke zamenjane z drugimi, izračunanimi iz njih.
+
+Ta gradnik sprejme dve tabeli ("Podatki" in "Podmnožica"), ki izhajate
+iz istega vira. Izbere tiste vrstice iz Podatki, ki se pojavijo tudi v
+Podmnožica, pri čemer se ne ozira na vrednosti spremenljivk temveč na
+identiteto vrstic.
+'
         def `send_report`:
             def `data_info_text`:
                 No data.: -
@@ -7692,7 +7721,7 @@ widgets/data/owselectrows.py:
             Data instances: Število primerov
             {} {}: false
             is one of: je eden izmed
-            "{', '.join(valnames[:-1])} or {valnames[-1]}": {', '.join(valnames[:-1])} ali {valnames[-1]}
+            {', '.join(valnames[:-1])} or {valnames[-1]}: {', '.join(valnames[:-1])} ali {valnames[-1]}
             {attr} is {valstr}: {attr} je {valstr}
             {attr} {name} {attr.values[value]}: false
             {attr} {name} {' and '.join(map(repr, values))}: {attr} {name} {' in '.join(map(repr, values))}
@@ -7715,12 +7744,12 @@ widgets/data/owselectrows.py:
             ', ': false
     class `DateTimeWidget`:
         def `set_format`:
-            'yyyy-MM-dd hh:mm:ss': false
-            '%Y-%m-%d %H:%M:%S': false
+            yyyy-MM-dd hh:mm:ss: false
+            %Y-%m-%d %H:%M:%S: false
             yyyy-MM-dd: false
             %Y-%m-%d: false
-            'hh:mm:ss': false
-            '%H:%M:%S': false
+            hh:mm:ss: false
+            %H:%M:%S: false
     __main__: false
     heart_disease: false
 widgets/data/owsql.py:
@@ -7912,17 +7941,23 @@ widgets/data/owtransform.py:
         class `Error`:
             An error occurred while transforming data.\n{}: Napake med spreminjanjem domene.\n{}
         def `__init__`:
-            |
-                The widget takes Data, to which it re-applies transformations
-                that were applied to Template Data.
-                
-                These include selecting a subset of variables as well as
-                computing variables from other variables appearing in the data,
-                like, for instance, discretization, feature construction, PCA etc.
-            : null
+            '
+The widget takes Data, to which it re-applies transformations
+that were applied to Template Data.
+
+These include selecting a subset of variables as well as
+computing variables from other variables appearing in the data,
+like, for instance, discretization, feature construction, PCA etc.
+': '
+Gradnik prejme Podatke in na njih ponovno izvede spremembe, ki
+so bile izvedena na vzorcu.
+
+Spremembe vključujejo izbor spremenljivk ter sestavljanje novih
+spremenljivk iz obstoječih, kot na primer diskretizacijo, PCA in podobno.
+'
         def `send_report`:
             Data: Podatki
-            Template data: Podatki z domeno
+            Template data: Vzorec
             Transformed data: Spremenjeni podatki
     __main__: false
     iris: false
@@ -7939,7 +7974,7 @@ widgets/data/owtranspose.py:
         Feature: Spremenljivka
         class `Warning`:
             'Values are not unique.\nTo avoid multiple ': Vrednosti niso unikatne.\n K vrednostim
-            'features with the same name, values \nof ': '{}' so zato dodane številke.
+            'features with the same name, values \nof ': "'{}' so zato dodane številke."
             "'{}' have been augmented with indices.": ""
             Categorical features have been encoded as numbers.: Kategorične vrednosti so predstavljene z indeksi.
         class `Error`:
@@ -7951,7 +7986,7 @@ widgets/data/owtranspose.py:
             feature_name: false
             Type a prefix ...: Določi predpono ...
             Custom feature name: Določi predpono imen spremenljivk
-            'From variable:': Po vrednosti spremenljivke:
+            From variable:: Po vrednosti spremenljivke:
             feature_names_column: false
             remove_redundant_inst: false
             Remove redundant instance: Odstrani odvečni primer
@@ -7981,7 +8016,7 @@ widgets/data/owunique.py:
             selected_vars: false
             Group by: Upoštevane spremenljivke
             tiebreaker: false
-            'Instance to select in each group:': Primer, ki predstavlja posamično skupino:
+            Instance to select in each group:: Primer, ki predstavlja posamično skupino:
             autocommit: false
             Commit: Uveljavi
     __main__: false
@@ -8048,7 +8083,7 @@ widgets/data/utils/pythoneditor/completer.py:
     statement: false
     class `CompletionWidget`:
         def `__init__`:
-            'QListWidget::item:selected {': false
+            QListWidget::item:selected {: false
             'background-color: lightgray;': false
             }: false
         def `show_list`:
@@ -8083,7 +8118,7 @@ widgets/data/utils/pythoneditor/completer.py:
             tooltip_widget: false
         def `keyPressEvent`:
             .: false
-            ':': false
+            :: false
         def `is_up_to_date`:
             text: false
         def `focusOutEvent`:
@@ -8231,7 +8266,7 @@ widgets/data/utils/pythoneditor/editor.py:
         def `insertFromMimeData`:
             ', ': false
             "'": false
-            '''\"''\"''': false
+            "'\""'\""'": false
         def `get_current_word_and_position`:
             def `is_special_character`:
                 ([^\d\W]\w*): false
@@ -8302,7 +8337,7 @@ widgets/data/utils/pythoneditor/indenter.py:
             return: false
             'raise ': false
             'return ': false
-            ':': false
+            :: false
             {[: false
 widgets/data/utils/pythoneditor/lines.py:
     class `Lines`:
@@ -8416,28 +8451,28 @@ widgets/evaluate/owcalibrationplot.py:
     sens: senz
     spec: spec
     # Tule puščam TP, TN in tako naprej. Moremo to kako prevesti?
-    '<p><b>Sensitivity</b> (falling) is the proportion of correctly ': "<p><b>Senzitivnost</b> (padajoča) je delež pravilno "
+    '<p><b>Sensitivity</b> (falling) is the proportion of correctly ': '<p><b>Senzitivnost</b> (padajoča) je delež pravilno '
     detected positive instances (TP&nbsp;/&nbsp;P).</p>: zaznanih pozitivnih primerov, TP&nbsp;/&nbsp;P.</p>
-    '<p><b>Specificity</b> (rising) is the proportion of detected ': ""<p><b>Specifičnost</b> (naraščajoča) je delež pravilno "
+    '<p><b>Specificity</b> (rising) is the proportion of detected ': '"<p><b>Specifičnost</b> (naraščajoča) je delež pravilno '
     negative instances (TN&nbsp;/&nbsp;N).</p>: zaznanih negativnih primerov, TN&nbsp;/&nbsp;N.</p>
     Precision and recall: Preciznost in priklic
     prec: spec
     recall: priklic
-    '<p><b>Precision</b> (rising) is the fraction of retrieved instances ': "<p><b>Preciznost</b> (naraščajoča) je delež zaznanih relevantnih primerov, "
+    '<p><b>Precision</b> (rising) is the fraction of retrieved instances ': '<p><b>Preciznost</b> (naraščajoča) je delež zaznanih relevantnih primerov, '
     that are relevant, TP&nbsp;/&nbsp;(TP&nbsp;+&nbsp;FP).</p>: TP&nbsp;/&nbsp;(TP&nbsp;+&nbsp;FP).</p>
-    '<p><b>Recall</b> (falling) is the proportion of discovered relevant ': "<p><b>Priklic</b> (padajoč) je delež odkritih relevantnih primerov, "
-    instances, TP&nbsp;/&nbsp;P.</p>:  TP&nbsp;/&nbsp;P.</p>
+    '<p><b>Recall</b> (falling) is the proportion of discovered relevant ': '<p><b>Priklic</b> (padajoč) je delež odkritih relevantnih primerov, '
+    instances, TP&nbsp;/&nbsp;P.</p>: TP&nbsp;/&nbsp;P.</p>
     Pos and neg predictive value: Poz in neg nap. vrednost
     PPV: true
     TPV: true
-    '<p><b>Positive predictive value</b> (rising) is the proportion of ': "<p><b>Pozitivna napovedna vrednost</b> (naraščajoča) je delež "
+    '<p><b>Positive predictive value</b> (rising) is the proportion of ': '<p><b>Pozitivna napovedna vrednost</b> (naraščajoča) je delež '
     correct positives, TP&nbsp;/&nbsp;(TP&nbsp;+&nbsp;FP).</p>: dejansko pozitivnih, TP&nbsp;/&nbsp;(TP&nbsp;+&nbsp;FP).</p>
-    '<p><b>Negative predictive value</b> is the proportion of correct ': "<p><b>Negativna napovedna vrednost</b> (naraščajoča) je delež "
+    '<p><b>Negative predictive value</b> is the proportion of correct ': '<p><b>Negativna napovedna vrednost</b> (naraščajoča) je delež '
     negatives, TN&nbsp;/&nbsp;(TN&nbsp;+&nbsp;FN).</p>: dejanstko negativnih, , TN&nbsp;/&nbsp;(TN&nbsp;+&nbsp;FN).</p>
     True and false positive rate: Delež zaznanih poz in neg
     TPR: true
     FPR: true
-    '<p><b>True and false positive rate</b> are proportions of detected ': ""<p><b>Delež zaznanih pozitivnih in negativnih primerov</b> izmed vseh "
+    '<p><b>True and false positive rate</b> are proportions of detected ': '"<p><b>Delež zaznanih pozitivnih in negativnih primerov</b> izmed vseh '
     and omitted positive instances</p>: pozitivnih oz. negativnih primerov.
     class `ParameterSetter`:
         def `axis_items`:
@@ -8505,49 +8540,41 @@ widgets/evaluate/owcalibrationplot.py:
         def `get_info_text`:
             def `elided`:
                 ...: false
-            |
-                <table>
-                                            <tr>
-                                                <th align='right'>Threshold: p=</th>
-                                                <td colspan='4'>{self.threshold:.2f}<br/></td>
-                                            </tr>
-            :  |
-                <table>
-                                            <tr>
-                                                <th align='right'>Prag:</th>
-                                                <td colspan='4'>{self.threshold:.2f}<br/></td>
-                                            </tr>
-            |
-                <table>
-                                            <tr>
-                                                <th align='right'>Threshold:</th>
-                                                <td colspan='4'>p = {self.threshold:.2f}<br/>
-                                                </td>
-                                                <tr/>
-                                            </tr>
-            : |
-                <table>
-                                            <tr>
-                                                <th align='right'>Prag:</th>
-                                                <td colspan='4'>p = {self.threshold:.2f}<br/>
-                                                </td>
-                                                <tr/>
-                                            </tr>
-            |
-                <tr>
-                                                <th></th>
-                                                {"<td></td>".join(f"<td align='right'>{n}</td>"
-                                                  for n in short_names)}
-                                            </tr>
-            : false
-            "<tr><th align='right'>{elided(name)}:</th>": false
+            "<table>
+                            <tr>
+                                <th align='right'>Threshold: p=</th>
+                                <td colspan='4'>{self.threshold:.2f}<br/></td>
+                            </tr>": "<table>
+                            <tr>
+                                <th align='right'>Prag:</th>
+                                <td colspan='4'>{self.threshold:.2f}<br/></td>
+                            </tr>"
+            "<table>
+                            <tr>
+                                <th align='right'>Threshold:</th>
+                                <td colspan='4'>p = {self.threshold:.2f}<br/>
+                                </td>
+                                <tr/>
+                            </tr>": "<table>
+                            <tr>
+                                <th align='right'>Prag:</th>
+                                <td colspan='4'>p = {self.threshold:.2f}<br/>
+                                </td>
+                                <tr/>
+                            </tr>"
+            "<tr>
+                                <th></th>
+                                {""<td></td>"".join(f""<td align='right'>{n}</td>""
+                                  for n in short_names)}
+                            </tr>": false
+            <tr><th align='right'>{elided(name)}:</th>: false
             <td>/</td>: false
-            '<td>{curve[ind]:.3f}</td>': false
+            <td>{curve[ind]:.3f}</td>: false
             </tr>: false
             <table>: false
         def `commit`:
             each training data sample produces a different model: vsaka podmnožica učnih podatkov sestavi drug model
-            'test results do not contain stored models - try testing ': "rezultati vrednotenja ne vsebujejo modelov - poskusite testirati "
+            'test results do not contain stored models - try testing ': 'rezultati vrednotenja ne vsebujejo modelov - poskusite testirati '
             on separate data or on training data: na ločenih podatkih ali na učni množici.
             select a single model - the widget can output only one: izberite posamični model
             cannot calibrate non-binary classes: ne morem kalibrirati ne-binarnih modelov
@@ -8567,7 +8594,7 @@ widgets/evaluate/owconfusionmatrix.py:
             l: false
     class `OWConfusionMatrix`:
         Confusion Matrix: Matrika zmot
-        'Display a confusion matrix constructed from ': "Pokaži matriko zmot glede na "
+        'Display a confusion matrix constructed from ': 'Pokaži matriko zmot glede na '
         the results of classifier evaluations.: rezultate vrednotenja.
         icons/ConfusionMatrix.svg: false
         class `Inputs`:
@@ -8579,9 +8606,9 @@ widgets/evaluate/owconfusionmatrix.py:
         Proportion of actual: Delež od dejanskih
         Sum of probabilities: Vsota verjetnosti
         Number of correctly and incorrectly classified instances: Število pravilno oz. napačno uvrščenih primerov
-        'Number of instances, distributed across columns ': "Podobno kot število primerov, le da je vsak primer\n"razmazan" po stolpcih "
+        'Number of instances, distributed across columns ': 'Podobno kot število primerov, le da je vsak primer\n"razmazan" po stolpcih '
         according to predicted probabilities: glede na napovedane verjetnosti.
-        'Clicking on cells or in headers outputs the corresponding ': "Izberite eno ali več celic (ali kliknite glavo tabele) in pripadajoči "
+        'Clicking on cells or in headers outputs the corresponding ': 'Izberite eno ali več celic (ali kliknite glavo tabele) in pripadajoči '
         data instances: primeri bodo na izhodu.
         click_cell: false
         class `Error`:
@@ -8599,7 +8626,7 @@ widgets/evaluate/owconfusionmatrix.py:
             Probabilities: Verjetnosti
             autocommit: false
             selected_quantity: false
-            'Show: ': "Pokaži: "
+            'Show: ': 'Pokaži: '
             Select Correct: Izberi pravilne
             Select Misclassified: Izberi napačne
             Clear Selection: Počisti izbor
@@ -8617,8 +8644,8 @@ widgets/evaluate/owconfusionmatrix.py:
             p({value}): true
         def `_update`:
             {}: false
-            '{:2.1f} %': false
-            '{:2.1f}': false
+            {:2.1f} %: false
+            {:2.1f}: false
             NA: NN
             trbl: false
             'actual: {}\npredicted: {}': dejanski: {}\nnapovedani: {}
@@ -8644,7 +8671,7 @@ widgets/evaluate/owliftcurve.py:
             item: false
     class `OWLiftCurve`:
         Performance Curve: Krivulja zmogljivosti
-        'Construct and display a performance curve ': "Sestavi in pokaže krivuljo zmogljivosti "
+        'Construct and display a performance curve ': 'Sestavi in pokaže krivuljo zmogljivosti '
         from the evaluation of classifiers.: iz rezultatov vrednotenja.
         icons/LiftCurve.svg: false
         lift: dvig
@@ -8671,7 +8698,7 @@ widgets/evaluate/owliftcurve.py:
         def `__init__`:
             Curve: Krivulja
             target_index: false
-            'Target: ': "Cilj: "
+            'Target: ': 'Cilj: '
             curve_type: false
             Lift Curve: Krivulja dviga
             Cumulative Gains: Kumulativni dobiček
@@ -8701,7 +8728,7 @@ widgets/evaluate/owliftcurve.py:
             def `tip`:
                 '{xlabel}: {round(x, 3)}\n': false
                 '{ylabel}: {round(y, 3)}\n': false
-                'Threshold: {round(data, 3)}': 'Prag: {round(data, 3)}'
+                'Threshold: {round(data, 3)}': Prag: {round(data, 3)}
             def `_plot`:
                 hoverable: false
                 tip: false
@@ -8718,7 +8745,7 @@ widgets/evaluate/owliftcurve.py:
             <table>: false
             {round(area, 3)}: false
             <tr align=left>: false
-            "<td style='color:{self.colors[clf_idx].name()}'>■</td>": false
+            <td style='color:{self.colors[clf_idx].name()}'>■</td>: false
             '<td>{self.classifier_names[clf_idx]}:  </td>': false
             <td align=right>{area}</td>: false
             </tr>: false
@@ -8733,7 +8760,7 @@ widgets/evaluate/owliftcurve.py:
             </div>: false
         def `commit`:
             each training data sample produces a different model: vsaka podmnožica učnih podatkov sestavi drug model
-            'test results do not contain stored models - try testing ': "rezultati vrednotenja ne vsebujejo modelov - poskusite testirati "
+            'test results do not contain stored models - try testing ': 'rezultati vrednotenja ne vsebujejo modelov - poskusite testirati '
             on separate data or on training data: na ločenih podatkih ali na učni množici.
             select a single model - the widget can output only one: izberite posamični model
             cannot calibrate non-binary classes: ne morem kalibrirati ne-binarnih modelov
@@ -8773,7 +8800,7 @@ widgets/evaluate/owpredictions.py:
         class `Warning`:
             Empty dataset: Prazna tabela
             Some model(s) predict a different target (see more ...)\n{}: Nekateri modeli napovedujejo drugo spremenljivko (več...)\n{}
-            'Instances with missing targets ': "Primeri z manjkajočimi ciljnimi vrednostmi niso "
+            'Instances with missing targets ': 'Primeri z manjkajočimi ciljnimi vrednostmi niso '
             are ignored while scoring.: upoštevani pri vrednotenju.
         class `Error`:
             Some predictor(s) failed (see more ...)\n{}: V nekaterih modelih je prišlo do napake (več...)\n{}
@@ -8794,7 +8821,7 @@ widgets/evaluate/owpredictions.py:
             shown_probs: false
             show_probability_errors: false
             Show classification errors: Pokaži klasifikacijske napake
-            Show probability assigned to the correct class: Napovedana verjetnost dejanskega razreda
+            Show 1 - probability assigned to the correct class: Pokaže 1 - verjetnost, napovedano pravilnemu razredu
             'Shown regression error: ': Prikazana napaka:
             show_reg_errors: false
             See tooltips for individual options: Poglej namige ob posameznih možnostih
@@ -8809,7 +8836,7 @@ widgets/evaluate/owpredictions.py:
         def `_update_scores`:
             N/A: NN
             NA: NN
-            '{score:.3f}': false
+            {score:.3f}: false
         def `_update_score_table_visibility`:
             \n: false
         def `_set_errors`:
@@ -8817,14 +8844,14 @@ widgets/evaluate/owpredictions.py:
             '- {p.predictor.name}: {p.results}': false
             - {pred.name} predicts '{pred.domain.class_var.name}': false
         def `_get_details`:
-            'Data:<br>': 'Podatki:<br>'
+            Data:<br>: Podatki:<br>
             <hr>: false
-            'Model: {number} model{s}': 'Modeli: {number} {plsi(numerv, "model")}'
+            'Model: {number} model{s}': Modeli: {number} {plsi(numerv, "model")}
             ' ({n_predictors - n_valid} failed)': ' ({n_predictors - n_valid} z napako)'
             <ul>: false
             <li>{name}</li>: false
             </ul>: false
-            'Model:<br>No model on input.': 'Model:<br>Ni vhodnih modelov.'
+            Model:<br>No model on input.: Model:<br>Ni vhodnih modelov.
         def `_update_prediction_delegate`:
             ignore: false
             .*All-NaN.*: false
@@ -8836,17 +8863,19 @@ widgets/evaluate/owpredictions.py:
             '<br>Showing probabilities for ': '<br/>Verjetnosti za '
             all classes known to the model: razrede, ki jih napovedujejo modeli
             all classes that appear in the data: razrede, ki se pojavijo v podatkih
-            'all classes that appear in the data ': "razrede, ki jih napovedujejo modeli "
+            'all classes that appear in the data ': 'razrede, ki jih napovedujejo modeli '
             and are known to the model: in se pojavljajo v podatkih
             "'{self.class_var.values[class_idx]}'": false
             Info: true
             Data & Predictions: Podatki in napovedi
             Scores: Rezultati
             Target class: Ciljni razred
+        def `migrate_settings`:
+            score_table: false
     class `ClassificationItemDelegate`:
         def `__init__`:
             ' : ': false
-            '{{dist[{i}]:.2f}}': false
+            {{dist[{i}]:.2f}}: false
             -: true
             {probs} → {{value!s}}: true
             {value!s}: false
@@ -8857,10 +8886,10 @@ widgets/evaluate/owpredictions.py:
     class `ClassificationErrorDelegate`:
         def `displayText`:
             ?: true
-            '{value:.3f}': false
+            {value:.3f}: false
     class `RegressionItemDelegate`:
         def `__init__`:
-            "{{value:{(target_format or '%.2f')[1:]}}}": false
+            {{value:{(target_format or '%.2f')[1:]}}}: false
     class `RegressionErrorDelegate`:
         def `displayText`:
             ?: true
@@ -8872,7 +8901,7 @@ widgets/evaluate/owpredictions.py:
         def `errorColumn`:
             ignore: false
     def `tool_tip`:
-        '{value:!s} {dist:!s}': false
+        {value:!s} {dist:!s}: false
     __main__: false
     iris.tab: false
     To err is human: false
@@ -8909,7 +8938,7 @@ widgets/evaluate/owrocanalysis.py:
     merge: false
     class `OWROCAnalysis`:
         ROC Analysis: Analiza ROC
-        'Display the Receiver Operating Characteristics curve ': "Pokaže krivuljo ROC za "
+        'Display the Receiver Operating Characteristics curve ': 'Pokaže krivuljo ROC za '
         based on the evaluation of classifiers.: rezultate vrednotenja.
         icons/ROCAnalysis.svg: false
         class `Inputs`:
@@ -8938,9 +8967,9 @@ widgets/evaluate/owrocanalysis.py:
             display_perf_line: false
             Show performance line: Pokaži črto delovanja
             fp_cost: false
-            'FP Cost:': Cena lažnega neg.
+            FP Cost:: Cena lažnega neg.
             fn_cost: false
-            'FN Cost:': Cena lažnega poz.
+            FN Cost:: Cena lažnega poz.
             target_prior: false
             ' %': true
             Auto: false
@@ -8956,18 +8985,18 @@ widgets/evaluate/owrocanalysis.py:
             'color: gray;': false
         def `_setup_plot`:
             def `merge_averaging`:
-                '{:.3f}': false
+                {:.3f}: false
             Some ROC curves are undefined: Nekatere krivulje ROC niso definirane.
             All ROC curves are undefined: Nobene krivulja ROC ni definirana.
         def `_update_axes_ticks`:
             def `enumticks`:
-                '{x:.2f}': false
+                {x:.2f}: false
             bottom: false
             left: false
         def `_on_mouse_moved`:
             Thresholds:\n: Pragi:\n
             \n: false
-            '({:s}) {:.3f}': false
+            ({:s}) {:.3f}: false
         def `_on_target_prior_changed`:
             'color: black;': false
         def `send_report`:
@@ -9023,14 +9052,12 @@ widgets/evaluate/owtestandscore.py:
         class `Outputs`:
             Predictions: Napovedi
             Evaluation Results: Rezultati vrednotenja
-        Click on the table header to select shown columns: Kliknite glavo tabele za izbor mer
-        click_header: false
         (None, show average over classes): (Brez, pokaži poprečje prek razredov)
         class `Error`:
             Test dataset is empty.: Tabela testnih podatkov je prazna
             Test data input requires a target variable.: Testni podatki morajo imeti ciljno spremenljivko.
             Number of folds exceeds the data size: Števil podmnožic presega število primerov.
-            'Test and train datasets ': "Učni in testni podatki "
+            'Test and train datasets ': 'Učni in testni podatki '
             have different target variables.: nimajo iste ciljne spremenljivke.
             Not enough memory.: Ni dovolj pomnilnika.
             Test data may be incompatible with train data.: Testni podatki niso združljivi z učnimi.
@@ -9039,9 +9066,9 @@ widgets/evaluate/owtestandscore.py:
             Instances with unknown target values were removed from{}data.: Primeri z manjkajočo ciljni spremenljivko so odstranjenih iz{}podatkov.
             Missing separate test data input.: Na vhodu ni testnih primerov.
             Some scores could not be computed.: Nekaterih mer ni bilo mogoče izračunati.
-            'Test data is present but unused. ': "Testni primeri so podani, a neuporabljeni. "
-            Select 'Test on test data' to use it.: "Izberite "Testiraj na učnih primerih"."
-            "Can't run stratified {}-fold cross validation; ": "Ne morem uporabiti {}-kratnega stratificiranega prečnega preverjanja; "
+            'Test data is present but unused. ': 'Testni primeri so podani, a neuporabljeni. '
+            Select 'Test on test data' to use it.: Izberite "Testiraj na učnih primerih".
+            "Can't run stratified {}-fold cross validation; ": 'Ne morem uporabiti {}-kratnega stratificiranega prečnega preverjanja; '
             the least common class has only {} instances.: najmanjši razred ima samo {} primerov.
         class `Information`:
             Train data has been sampled: Učni primeri so bili vzorčeni.
@@ -9063,7 +9090,7 @@ widgets/evaluate/owtestandscore.py:
             n_repeats: false
             'Repeat train/test: ': Število ponovitev:
             sample_size: false
-            'Training set size: ': "Delež učne množice: "
+            'Training set size: ': 'Delež učne množice: '
             {} %: false
             shuffle_stratified: false
             Leave one out: Izpusti enega
@@ -9072,14 +9099,14 @@ widgets/evaluate/owtestandscore.py:
             class_selection: false
             Evaluation results for target: Rezultati vrednotenja za cilj
             comparison_criterion: false
-            'Compare models by:': "Primerjaj modele glede na:"
+            Compare models by:: Primerjaj modele glede na:
             use_rope: false
             'Negligible diff.: ': Zanemarljiva razlika
             rope: false
-            '<small>Table shows probabilities that the score for the model in ': ""<small>Tabela kaže verjetnost, da je model v "
-            'the row is higher than that of the model in the column. ': "vrstici dejansko boljši od modela v stolpcu. "
-            'Small numbers show the probability that the difference is ': "Majhne številke pomenijo zanemarljivo verjetnost."
-            negligible.</small>: "</small>"
+            '<small>Table shows probabilities that the score for the model in ': '"<small>Tabela kaže verjetnost, da je model v '
+            'the row is higher than that of the model in the column. ': 'vrstici dejansko boljši od modela v stolpcu. '
+            'Small numbers show the probability that the difference is ': Majhne številke pomenijo zanemarljivo verjetnost.
+            negligible.</small>: </small>
         def `set_train_data`:
             Train dataset is empty.: Tabela učnih primerov je prazna.
             Train data input requires a target variable.: Učni primeri morajo imeti ciljno spremenljivko.
@@ -9088,10 +9115,10 @@ widgets/evaluate/owtestandscore.py:
             Data has no features to learn from.: Podatki nimajo spremenljivk za učenje.
         def `_which_missing_data`:
             ' ': false
-            ' train ': " učnih "
-            ' test ': " testnih "
+            ' train ': ' učnih '
+            ' test ': ' testnih '
         def `update_stats_model`:
-            '{:.3f}': false
+            {:.3f}: false
             {} (error): {} (napaka)
             {name} failed with error:\n: {name} je javil napako\:n
             '{exc.__class__.__name__}: {exc!s}': false
@@ -9099,25 +9126,25 @@ widgets/evaluate/owtestandscore.py:
         def `_scores_by_folds`:
             weighted: false
         def `_fill_table`:
-            '{p0:.3f}<br/><small>{rope:.3f}</small>': false
+            {p0:.3f}<br/><small>{rope:.3f}</small>: false
             p({row_name} > {col_name}) = {p0:.3f}\n: false
-            'p({row_name} = {col_name}) = {rope:.3f}': false
-            '{p1:.3f}<br/><small>{rope:.3f}</small>': false
+            p({row_name} = {col_name}) = {rope:.3f}: false
+            {p1:.3f}<br/><small>{rope:.3f}</small>: false
             p({col_name} > {row_name}) = {p1:.3f}\n: false
-            'p({col_name} = {row_name}) = {rope:.3f}': false
-            '{p0:.3f}': false
-            'p({row_name} > {col_name}) = {p0:.3f}': false
-            '{p1:.3f}': false
-            'p({col_name} > {row_name}) = {p1:.3f}': false
+            p({col_name} = {row_name}) = {rope:.3f}: false
+            {p0:.3f}: false
+            p({row_name} > {col_name}) = {p0:.3f}: false
+            {p1:.3f}: false
+            p({col_name} > {row_name}) = {p1:.3f}: false
         def `_set_cells_na`:
             NA: false
             comparison cannot be computed: false
         def `send_report`:
-            'Stratified ': "Stratificirano "
-            Sampling type: "Vrsta vzorčenja"
+            'Stratified ': 'Stratificirano '
+            Sampling type: Vrsta vzorčenja
             {}{}-fold Cross validation: {}{}-kratno prečno preverjanje.
             Leave one out: Izpusti enega
-            '{}Shuffle split, {} random samples with {}% data ': "{}vzorčenje, {} naključnih vzorcev z {}% podatkov "
+            '{}Shuffle split, {} random samples with {}% data ': '{}vzorčenje, {} naključnih vzorcev z {}% podatkov '
             No sampling, test on training data: Ni vzorčenja, testiranje na učnih podatkih.
             No sampling, test on testing data: Ni vzorčenja, testiranje na testnih podatkih.
             Target class: Ciljni razred
@@ -9128,13 +9155,14 @@ widgets/evaluate/owtestandscore.py:
             resampling: false
             context_settings: false
             classes: false
+            score_table: false
         def `__update`:
             self.resampling %s: false
         def `__submit`:
             Running: V teku
         def `__task_complete`:
             Future[Results]: false
-            'testing error (in __task_complete):': false
+            testing error (in __task_complete):: false
             \n: false
     def `results_add_by_model`:
         def `is_empty`:
@@ -9162,36 +9190,39 @@ widgets/evaluate/utils.py:
         LR l1: false
         SVM: false
         Nu SVM: false
-    # Prevajanje tega zahteva, da se ime razreda neha uporabljati kot ime stolpca!
-    AUC: null
-    CA: null
-    F1: null
-    Precision: null
-    Recall: null
-    MSE: null
-    RMSE: null
-    MAE: null
-    R2: null
     def `learner_name`:
         name: false
     def `usable_scorers`:
         abstract: false
+        priority: false
     def `scorer_caller`:
         def `thunked`:
             ignore: false
             ((F-score|Precision)) is ill-defined.*: null
             weighted: null
+    Model_: null
+    Train_: null
+    Test_: null
+    class `SelectableColumnsHeader`:
+        def `__init__`:
+            'border: none; background-color: {col.name(QColor.NameFormat.HexRgb)}': false
     class `ScoreTable`:
         class `ItemDelegate`:
             def `displayText`:
-                '{value:.3f}': false
-        def `__init__`:
-            C-Index: null
-            Method: null
+                {value:.3f}: false
         def `update_header`:
             Model: true
+            Model_: false
+            Train: Učenje
             Train time [s]: Čas učenja [s]
+            Train_: false
+            Test: Test
             Test time [s]: Čas testiranja [s]
+            Test_: false
+            ' ({score.name})': false
+        def `migrate_to_show_scores_hints`:
+            show_score_hints: false
+            shown_scores: false
 widgets/evaluate/tests/base.py:
     class `EvaluateTest`:
         def `test_many_evaluation_results`:
@@ -9205,7 +9236,7 @@ widgets/model/__init__.py:
 widgets/model/owadaboost.py:
     class `OWAdaBoost`:
         AdaBoost: true
-        'An ensemble meta-algorithm that combines weak learners ': "Skupinski algoritem učenja, ki združuje šibke algoritme "
+        'An ensemble meta-algorithm that combines weak learners ': 'Skupinski algoritem učenja, ki združuje šibke algoritme '
         "and adapts to the 'hardness' of each training sample. ": in prilagaja "težavnosti" učnih primerov.
         icons/AdaBoost.svg: false
         Orange.widgets.classify.owadaboost.OWAdaBoostClassification: false
@@ -9222,22 +9253,22 @@ widgets/model/owadaboost.py:
             The base learner does not support weights.: Učni algoritem ne podpira uteži.
         def `add_main_layout`:
             Parameters: Parametri
-            'Base estimator: ': "Osnovni model: "
+            'Base estimator: ': 'Osnovni model: '
             n_estimators: false
-            'Number of estimators:': Število modelov:
+            Number of estimators:: Število modelov:
             learning_rate: false
-            'Learning rate:': Hitrost učenja:
+            Learning rate:: Hitrost učenja:
             random_seed: false
-            'Fixed seed for random generator:': Seme generatorja naključnih števil:
+            Fixed seed for random generator:: Seme generatorja naključnih števil:
             use_random_seed: false
             Boosting method: Metoda pospeševanja (boosting)
             algorithm_index: false
-            'Classification algorithm:': "Algoritem (za klasifikacijo):"
+            Classification algorithm:: Algoritem (za klasifikacijo):
             loss_index: false
-            'Regression loss function:': "Funkcija izgube (za regresijo):"
+            Regression loss function:: Funkcija izgube (za regresijo):
         def `set_base_learner`:
-            'Base estimator: INVALID': "Osnovni model: neveljaven"
-            'Base estimator: %s': "Osnovni model: %s"
+            'Base estimator: INVALID': Osnovni model: neveljaven
+            'Base estimator: %s': Osnovni model: %s
         def `get_learner_parameters`:
             Base estimator: Osnovni model
             Number of estimators: Število modelov
@@ -9248,7 +9279,7 @@ widgets/model/owadaboost.py:
 widgets/model/owcalibratedlearner.py:
     class `OWCalibratedLearner`:
         Calibrated Learner: Kalibriran model
-        'Wraps another learner with probability calibration and ': "Ovije drug učni algoritem z modelom za kalibracijo verjetnosti "
+        'Wraps another learner with probability calibration and ': 'Ovije drug učni algoritem z modelom za kalibracijo verjetnosti '
         decision threshold optimization: in optimiranje klasifikacijskega praga
         icons/CalibratedLearner.svg: false
         calibration: kalibracija
@@ -9280,7 +9311,7 @@ widgets/model/owcalibratedlearner.py:
 widgets/model/owconstant.py:
     class `OWConstant`:
         Constant: Konstanta
-        'Predict the most frequent class or mean value ': "Vedno napove isti, večinski razred oz. povprečno vrednost "
+        'Predict the most frequent class or mean value ': 'Vedno napove isti, večinski razred oz. povprečno vrednost '
         from the training set.: učnih primerov.
         icons/Constant.svg: false
         Orange.widgets.classify.owmajority.OWMajority: false
@@ -9361,7 +9392,7 @@ widgets/model/owcurvefit.py:
             Coefficients: Koeficienti
         class `Warning`:
             Duplicated parameter name.: Podvojeno ime parametra
-            "Unused parameter '{}' in ": "Neuporabljen parameter '{}'"
+            "Unused parameter '{}' in ": Neuporabljen parameter '{}'
             "'Parameters' declaration.": ""
             Provide data on the input.: Priskrbite vhodne podatke.
         class `Error`:
@@ -9370,7 +9401,7 @@ widgets/model/owcurvefit.py:
             Use 'Feature Constructor' widget instead.: Uporabite gradnik Sestavi značilke.
             Unknown parameter '{}'.\n: Neznan parameter '{}'.\n
             Declare the parameter in 'Parameters' box: Deklarirajte ga v škatli "Parametri"
-            'Some parameters and features have the same ': "Nekateri parametri in spremenljivke imajo "
+            'Some parameters and features have the same ': 'Nekateri parametri in spremenljivke imajo '
             name '{}'.: enaka imena '{}'.
         Select Feature: Izberite spremenljivko
         Select Parameter: Izberite parameter
@@ -9420,7 +9451,7 @@ widgets/model/owgradientboosting.py:
             controlWidth: null
             Basic Properties: null
             n_estimators: null
-            'Number of trees:': null
+            Number of trees:: null
             learning_rate: null
             'Learning rate: ': null
             random_state: null
@@ -9444,7 +9475,7 @@ widgets/model/owgradientboosting.py:
             Maximum tree depth: null
     class `RegEditor`:
         def `_add_main_layout`:
-            'Regularization:': null
+            Regularization:: null
             lambda_index: null
         def `_set_lambda_label`:
             'Lambda: {}': null
@@ -9532,11 +9563,11 @@ widgets/model/owknn.py:
         def `add_main_layout`:
             Neighbors: Sosedi
             n_neighbors: false
-            'Number of neighbors:': Število sosedov
+            Number of neighbors:: Število sosedov
             metric_index: false
-            'Metric:': "Metrika:"
+            Metric:: Metrika:
             weight_index: false
-            'Weight:': "Uteži:"
+            Weight:: Uteži:
         def `get_learner_parameters`:
             Number of neighbours: Število sosedov
             Metric: Metrika
@@ -9546,7 +9577,7 @@ widgets/model/owknn.py:
 widgets/model/owlinearregression.py:
     class `OWLinearRegression`:
         Linear Regression: Linearna regresija
-        'A linear regression algorithm with optional L1 (LASSO), ': "Linearna regresija z "
+        'A linear regression algorithm with optional L1 (LASSO), ': 'Linearna regresija z '
         L2 (ridge) or L1L2 (elastic net) regularization.: različnimi vrstami regularizacije.
         icons/LinearRegression.svg: false
         Orange.widgets.regression.owlinearregression.OWLinearRegression: false
@@ -9565,9 +9596,9 @@ widgets/model/owlinearregression.py:
             Fit intercept (unchecking it fixes it to zero): Uporabi prosti člen (sicer bo enak 0)
             Regularization: Regularizacija
             reg_type: false
-            'Regularization strength:': "Moč regularizacije:"
+            Regularization strength:: Moč regularizacije:
             alpha_index: false
-            'Elastic net mixing:': "Mešanica elastične mreže"
+            Elastic net mixing:: Mešanica elastične mreže
             L1: true
             l2_ratio: false
             L2: true
@@ -9585,7 +9616,7 @@ widgets/model/owlinearregression.py:
             Ridge Regression (L2) with α={}: Ridge (L2) z α={}
             Lasso Regression (L1) with α={}: Lasso (L1) z α={}
             Elastic Net Regression with α={}: Elastična mreža z α={}
-            ' and L1:L2 ratio of {}:{}': " in L1:L2 v razmerju {}:{}"
+            ' and L1:L2 ratio of {}:{}': ' in L1:L2 v razmerju {}:{}'
             Regularization: Regularizacija
             Fit intercept: Prosti člen
             No: Ne
@@ -9623,7 +9654,7 @@ widgets/model/owloadmodel.py:
 widgets/model/owlogisticregression.py:
     class `OWLogisticRegression`:
         Logistic Regression: Logistična regresija
-        'The logistic regression classification algorithm with ': "Logistična regresija z regularizacijo."
+        'The logistic regression classification algorithm with ': Logistična regresija z regularizacijo.
         LASSO (L1) or ridge (L2) regularization.: ""
         icons/LogisticRegression.svg: false
         Orange.widgets.classify.owlogisticregression.OWLogisticRegression: false
@@ -9639,10 +9670,10 @@ widgets/model/owlogisticregression.py:
             Weighting by class may decrease performance.: Uteževanje glede na razred lahko upočasni učenje.
         def `add_main_layout`:
             penalty_type: false
-            'Regularization type: ': "Vrsta regularizacije: "
-            'Strength:': Moč:
+            'Regularization type: ': 'Vrsta regularizacije: '
+            Strength:: Moč:
             Weak: Šibka
-            'margin-top:6px': false
+            margin-top:6px: false
             C_index: false
             Strong: Močna
             class_weight: false
@@ -9651,7 +9682,7 @@ widgets/model/owlogisticregression.py:
         def `set_c`:
             none: false
             C={}: true
-            'C={:.3f}': true
+            C={:.3f}: true
             N/A: NN
         def `create_learner`:
             balanced: false
@@ -9668,7 +9699,7 @@ widgets/model/owlogisticregression.py:
 widgets/model/ownaivebayes.py:
     class `OWNaiveBayes`:
         Naive Bayes: Naivni Bayes
-        'A fast and simple probabilistic classifier based on ': "Preprost model, ki temelji na Bayesovi formuli "
+        'A fast and simple probabilistic classifier based on ': 'Preprost model, ki temelji na Bayesovi formuli '
         Bayes' theorem with the assumption of feature independence.: in predpostavlja pogojno neodvisnost spremenljivk.
         icons/NaiveBayes.svg: false
         Orange.widgets.classify.ownaivebayes.OWNaiveBayes: false
@@ -9681,7 +9712,7 @@ widgets/model/owneuralnetwork.py:
     class `OWNNLearner`:
         Neural Network: Nevronska mreža
         'A multi-layer perceptron (MLP) algorithm with ': Večnivojski perceptron z vzvratnim širjenjem.
-        backpropagation.: " (backpropagation)"
+        backpropagation.: ' (backpropagation)'
         icons/NN.svg: false
         mlp: false
         identity: false
@@ -9699,27 +9730,27 @@ widgets/model/owneuralnetwork.py:
         Adam: true
         100,: false
         class `Warning`:
-            'ANN without hidden layers is equivalent to logistic ': "Nevronska mreža brez skritih nivojev je enaka logistični "
-            'regression with worse fitting.\nWe recommend using ': "regresiji s slabšim algoritmom prileganja.\nPriporočamo uporabo "
+            'ANN without hidden layers is equivalent to logistic ': 'Nevronska mreža brez skritih nivojev je enaka logistični '
+            'regression with worse fitting.\nWe recommend using ': 'regresiji s slabšim algoritmom prileganja.\nPriporočamo uporabo '
             logistic regression.: logistične regresije.
         def `add_main_layout`:
-            'Neurons in hidden layers:': Nevroni v skritih nivojih
+            Neurons in hidden layers:: Nevroni v skritih nivojih
             hidden_layers_input: false
-            'A list of integers defining neurons. Length of list ': "Seznam števil, ki določijo število nevronov. Dolžina seznama "
-            defines the number of layers. E.g. 4, 2, 2, 3.: "določi število nivojev. Npr. 4, 2, 2, 3"
+            'A list of integers defining neurons. Length of list ': 'Seznam števil, ki določijo število nevronov. Dolžina seznama '
+            defines the number of layers. E.g. 4, 2, 2, 3.: določi število nivojev. Npr. 4, 2, 2, 3
             e.g. 10,: npr. 10,
-            'Activation:': "Aktivacija:"
+            Activation:: Aktivacija:
             activation_index: false
-            'Solver:': "Algoritem reševanja:"
+            Solver:: Algoritem reševanja:
             solver_index: false
             alpha_index: false
-            'Maximal number of iterations:': "Omejitev števila ponovitev:"
+            Maximal number of iterations:: Omejitev števila ponovitev:
             max_iterations: false
-            'Max iterations:': "Omejitev ponovitev:"
+            Max iterations:: Omejitev ponovitev:
             replicable: false
             Replicable training: Ponovljivo učenje
         def `set_alpha`:
-            'Regularization, α={}:': 'Regularizacija, α={}:'
+            Regularization, α={}:: Regularizacija, α={}:
         def `setup_layout`:
             Cancel: Prekini
         def `get_learner_parameters`:
@@ -9753,9 +9784,9 @@ widgets/model/owrandomforest.py:
         def `add_main_layout`:
             Basic Properties: Osnovne lastnosti
             n_estimators: false
-            'Number of trees: ': "Število dreves: "
+            'Number of trees: ': 'Število dreves: '
             max_features: false
-            'Number of attributes considered at each split: ': "Število obravnavanih spremenljivk ob vsaki delitvi: "
+            'Number of attributes considered at each split: ': 'Število obravnavanih spremenljivk ob vsaki delitvi: '
             use_max_features: false
             use_random_state: false
             Replicable training: Ponovljivo učenje
@@ -9764,10 +9795,10 @@ widgets/model/owrandomforest.py:
             Weigh classes inversely proportional to their frequencies.: Uteži razrede obratno sorazmerno njihovi pogostosti.
             Growth Control: Nadzor rasti
             max_depth: false
-            'Limit depth of individual trees: ': "Omejitev globine posamičnih dreves: "
+            'Limit depth of individual trees: ': 'Omejitev globine posamičnih dreves: '
             use_max_depth: false
             min_samples_split: false
-            'Do not split subsets smaller than: ': "Ne deli množic z manj primeri kot: "
+            'Do not split subsets smaller than: ': 'Ne deli množic z manj primeri kot: '
             use_min_samples_split: false
         def `create_learner`:
             n_estimators: false
@@ -9843,26 +9874,26 @@ widgets/model/owrules.py:
             Exclusive: Z enim pravilom
             Weighted: Uteženo
             gamma: false
-            'γ:': true
+            γ:: true
             weighted: false
             Rule search: Iskanje pravil
             evaluation_measure: false
-            'Evaluation measure:': Mera kvalitete:
+            Evaluation measure:: Mera kvalitete:
             Entropy: Entropija
             Laplace accuracy: Laplacova natančnost
             WRAcc: WRACC
             beam_width: false
-            'Beam width:': Širina snopa:
+            Beam width:: Širina snopa:
             Rule filtering: Presejanje pravil
             min_covered_examples: false
-            'Minimum rule coverage:': Najmanjše število pokritih primerov:
+            Minimum rule coverage:: Najmanjše število pokritih primerov:
             max_rule_length: false
-            'Maximum rule length:': Najdaljša dolžina pravila:
+            Maximum rule length:: Najdaljša dolžina pravila:
             default_alpha: false
-            'Statistical significance (default α):': Statistična značilnost (privzeti α):
+            Statistical significance (default α):: Statistična značilnost (privzeti α):
             checked_default_alpha: false
             parent_alpha: false
-            'Relative significance (parent α):': Relativna značilnost (predniko α):
+            Relative significance (parent α):: Relativna značilnost (predniko α):
             checked_parent_alpha: false
         def `settings_changed`:
             weighted: false
@@ -10060,17 +10091,17 @@ widgets/model/owsvm.py:
             SVM: true
             C: false
             epsilon: false
-            'Cost (C):': Cena (C):
-            'Regression loss epsilon (ε):': Koeficient izgube pri regresiji (ε):
+            Cost (C):: Cena (C):
+            Regression loss epsilon (ε):: Koeficient izgube pri regresiji (ε):
             ν-SVM: true
             nu_C: false
             nu: false
-            'Regression cost (C):': Cena (pri regresiji) (C):
-            'Complexity bound (ν):': Meja kompleksnosti (ν):
+            Regression cost (C):: Cena (pri regresiji) (C):
+            Complexity bound (ν):: Meja kompleksnosti (ν):
         def `_add_kernel_box`:
             Kernel: Jedro
             kernel_type: false
-            'Kernel: %(kernel_eq)s': "Jedro: %(kernel_eq)s"
+            'Kernel: %(kernel_eq)s': Jedro: %(kernel_eq)s
             gamma: false
             ' g: ': true
             coef0: false
@@ -10080,9 +10111,9 @@ widgets/model/owsvm.py:
         def `_add_optimization_box`:
             Optimization Parameters: Parametri optimizacije
             tol: false
-            'Numerical tolerance: ': "Numerična toleranca: "
+            'Numerical tolerance: ': 'Numerična toleranca: '
             max_iter: false
-            'Iteration limit: ': "Največje število ponovitev: "
+            'Iteration limit: ': 'Največje število ponovitev: '
             limit_iter: false
         def `create_learner`:
             linear: false
@@ -10102,15 +10133,15 @@ widgets/model/owsvm.py:
             SVM, C={}, ε={}: true
             ν-SVM, ν={}, C={}: true
             Numerical tolerance: Numerična toleranca
-            '{:.6}': false
+            {:.6}: false
             Iteration limt: Število ponovitev:
             unlimited: neomejeno
         def `_report_kernel_parameters`:
             Kernel: Jedro
             Linear: Linearno
-            'Polynomial, ({g:.4} x⋅y + {c:.4})<sup>{d}</sup>': Polinomsko, ({g:.4} x⋅y + {c:.4})<sup>{d}</sup>
-            'RBF, exp(-{:.4}|x-y|²)': true
-            'Sigmoid, tanh({g:.4} x⋅y + {c:.4})': Sigmoidno, tanh({g:.4} x⋅y + {c:.4})
+            Polynomial, ({g:.4} x⋅y + {c:.4})<sup>{d}</sup>: Polinomsko, ({g:.4} x⋅y + {c:.4})<sup>{d}</sup>
+            RBF, exp(-{:.4}|x-y|²): true
+            Sigmoid, tanh({g:.4} x⋅y + {c:.4}): Sigmoidno, tanh({g:.4} x⋅y + {c:.4})
     __main__: false
     iris: false
 widgets/model/owtree.py:
@@ -10167,13 +10198,13 @@ widgets/report/report.py:
     describe_domain_brief: false
     def `describe_domain`:
         def `clip_attrs`:
-            " (total: {total})": " (skupno: {total})"
+            ' (total: {nitems} {desc})': ' (skupno: {nitems} {desc})'
         Features: Spremenljivke
         features: {plsi(len(domain.attributes), "spremenljivka")}
         Meta attributes: Meta atributi
         meta attributes: meta {plsi(len(domain.metas), "spremenljivka")}
         Target: Ciljna spremenljivka
-        targets variables: {plsi(len(domain.metas), "ciljna spremenljivka|ciljni spremenljivki|ciljne spremenljivke|ciljnih spremenljivk")}
+        target variables: ciljne spremenljivke
     def `describe_data`:
         Data instances: Število primerov
     def `describe_domain_brief`:
@@ -10343,11 +10374,11 @@ widgets/tests/base.py:
         __init_subclass__: false
 widgets/tests/utils.py:
     def `possible_duplicate_table`:
-        iris: null
+        iris: false
 widgets/unsupervised/__init__.py:
     Unsupervised: Nenadzorovano učenje
     Unsupervised learning.: Nenadzorovano učenje
-    '#CAE1EF': null
+    '#CAE1EF': true
     icons/Category-Unsupervised.svg: false
 widgets/unsupervised/owcorrespondence.py:
     class `OWCorrespondenceAnalysis`:
@@ -10366,9 +10397,9 @@ widgets/unsupervised/owcorrespondence.py:
             Variables: Spremenljivke
             Axes: Osi
             component_x: false
-            'X:': true
+            X:: true
             component_y: false
-            'Y:': true
+            Y:: true
             Contribution to Inertia: Prispevek k vztrajnosti
             \n: true
             auto_commit: false
@@ -10389,12 +10420,12 @@ widgets/unsupervised/owcorrespondence.py:
                 inf: false
                 -inf: false
             bottom: false
-            'Component {} ({:.1f}%)': 'Komponenta {} ({:.1f}%)'
+            Component {} ({:.1f}%): Komponenta {} ({:.1f}%)
             left: false
         def `_update_info`:
             \n\n: false
-            'Axis 1: {:.2f}\n': 'Os 1: {:.2f}\n'
-            'Axis 2: {:.2f}': 'Os 2: {:.2f}'
+            'Axis 1: {:.2f}\n': Os 1: {:.2f}\n
+            'Axis 2: {:.2f}': Os 2: {:.2f}
         def `send_report`:
             Data instances: Vhodni primeri
             Selected variable: Izbrana spremenljivka
@@ -10421,7 +10452,7 @@ widgets/unsupervised/owdbscan.py:
         class `Inputs`:
             Data: Podatki
         class `Error`:
-            'Not enough unique data instances. ': "Ni dovolj primerov. "
+            'Not enough unique data instances. ': 'Ni dovolj primerov. '
             At least two are required.: Potrebna sta vsaj dva.
         Euclidean: Evklidska
         euclidean: false
@@ -10464,7 +10495,9 @@ widgets/unsupervised/owdistancefile.py:
         class `Outputs`:
             Distances: Razdalje
         class `Error`:
-            'Data was not loaded:{}': 'Branje ni uspelo:{}'
+            Data was not loaded:{}: Branje ni uspelo:{}
+            'Matrix is not square. ': 'Matrika ni pravokotna. '
+            Reformat the file and use the File widget to read it.: Preoblikujte datoteko in jo preberite z gradnikom Datoteka.
         def `__init__`:
             Distance File: Datoteka z razdaljami
             ...: true
@@ -10472,7 +10505,7 @@ widgets/unsupervised/owdistancefile.py:
             Options: Opcije
             auto_symmetric: false
             Treat triangular matrices as symmetric: Obravnavaj trikotne matrike kot simetrične
-            'If matrix is triangular, this will copy the data to the ': "Če je matrika trikotna, bo to preslikalo podatke "
+            'If matrix is triangular, this will copy the data to the ': 'Če je matrika trikotna, bo to preslikalo podatke '
             other triangle: še v nasprotni trikotnik.
             Browse documentation datasets: Prebrskaj podatke iz dokumentacije
         def `browse_file`:
@@ -10525,7 +10558,7 @@ widgets/unsupervised/owdistancemap.py:
             autocommit: false
         def `set_distances`:
             'Cluster ordering was disabled due to the input ': Urejeno gručenje
-            matrix being to big: " je izključeno, ker je podatkov preveč."
+            matrix being to big: ' je izključeno, ker je podatkov preveč.'
             'Clustering was disabled due to the input ': Gručenje
         def `set_items`:
             None: (Brez)
@@ -10552,7 +10585,7 @@ widgets/unsupervised/owdistancematrix.py:
             Table: Tabela
         def `__init__`:
             annotation_idx: false
-            'Labels: ': "Oznake :"
+            'Labels: ': 'Oznake: '
             None: Brez
             Enumeration: Oštevilčenje
             auto_commit: false
@@ -10573,9 +10606,9 @@ widgets/unsupervised/owdistancematrix.py:
         def `send_report`:
             def `cell`:
                 ' style="background-color: {brush.color().name()}"': false
-                '{label:.{ndec}f}': false
+                {label:.{ndec}f}: false
                 <td {style}>{label}</td>\n: false
-            '<table style="border-collapse:collapse">': false
+            <table style="border-collapse:collapse">: false
             <tr>: false
             <td></td>: false
             </tr>: false
@@ -10660,7 +10693,7 @@ widgets/unsupervised/owdistancetransformation.py:
         No normalization: Brez normiranja
         To interval [0, 1]: V interval [0, 1]
         To interval [-1, 1]: V interval [-1, 1]
-        'Sigmoid function: 1/(1+exp(-X))': 'Sigmoidna funkcija: 1/(1+exp(-X))'
+        'Sigmoid function: 1/(1+exp(-X))': Sigmoidna funkcija: 1/(1+exp(-X))
         No inversion: Brez obračanja
         -X: true
         1 - X: true
@@ -10729,18 +10762,18 @@ widgets/unsupervised/owhierarchicalclustering.py:
             label_only_subset: false
             Show labels only for subset: Pokaži oznake samo za podmnožico
             color_by: false
-            'Color by:': Barva:
+            Color by:: Barva:
             pruning: false
             Pruning: Rezanje
             max_depth: false
-            'Max depth:': Največja globina
+            Max depth:: Največja globina
             selection_method: false
             Selection: Izbor
             Manual: Ročno
-            'Height ratio:': Razmerje višine:
+            Height ratio:: Razmerje višine:
             cut_ratio: false
             %: true
-            'Top N:': Prvih N:
+            Top N:: Prvih N:
             top_n: false
             zoom_factor: false
             Zoom: Povečava
@@ -10770,7 +10803,7 @@ widgets/unsupervised/owhierarchicalclustering.py:
             selection_state: false
         def `send_report`:
             manual: ročno
-            'at {:.1f} of height': pri {:.1f} višine
+            at {:.1f} of height: pri {:.1f} višine
             top {self.top_n} clusters: vrhnjih {self.top_n} gruč
             Linkage: Razdalja med gručami
             Annotation: Oznake
@@ -10786,7 +10819,7 @@ widgets/unsupervised/owhierarchicalclustering.py:
 widgets/unsupervised/owkmeans.py:
     class `ClusterTableModel`:
         def `data`:
-            '{:.3f}': false
+            {:.3f}: false
             NA: NN
     class `OWKMeans`:
         k-Means: K gruč
@@ -10818,7 +10851,7 @@ widgets/unsupervised/owkmeans.py:
         def `__init__`:
             optimize_k: false
             Number of Clusters: Število gruč
-            'Fixed:': 'Določeno:'
+            Fixed:: Določeno:
             k: false
             From: Od
             k_from: false
@@ -10831,7 +10864,7 @@ widgets/unsupervised/owkmeans.py:
             smart_init: false
             'Re-runs: ': Število ponovitev
             n_init: false
-            'Maximum iterations: ': "Največje število korakov: "
+            'Maximum iterations: ': 'Največje število korakov: '
             max_iterations: false
             Silhouette Scores: Silhuete
             auto_commit: false
@@ -10897,7 +10930,7 @@ widgets/unsupervised/owlouvainclustering.py:
             graph: false
             partition: false
         def `__set_results`:
-            {num_clusters} clusters found.: {plsi(num_clusters, "Najdena|Najdeni|Najdene|Najdenih")} {z_besedo(num_clusters, 1, "f")} {plsi(num_clusters, "gruča")}.
+            {num_clusters} {pl(num_clusters, 'cluster')} found.: {plsi(num_clusters, "Najdena|Najdeni|Najdene|Najdenih")} {z_besedo(num_clusters, 1, "f")} {plsi(num_clusters, "gruča")}.
         def `_send_data`:
             Cluster: Gruča
             C%d: G%d
@@ -10906,7 +10939,7 @@ widgets/unsupervised/owlouvainclustering.py:
         def `clear`:
             No data on input.: Ni podatkov na vhodu.
         def `send_report`:
-            , {self.pca_components} {pl(self.pca_components, 'component')}: , {self.pca_components} {plsi(self.pca_components, 'komponenta')}
+            , {self.pca_components} {pl(self.pca_components, 'component')}: , {number} {plsi(number, "komponent")}
             Normalize data: Normiranje podatkov
             PCA preprocessing: Predprocesiranje s PCA
             Metric: Mera razdalje
@@ -10959,17 +10992,17 @@ widgets/unsupervised/owmanifoldlearning.py:
         Random: null
         def `__init__`:
             metric: null
-            'Metric:': null
+            Metric:: null
             perplexity: null
-            'Perplexity:': null
+            Perplexity:: null
             early_exaggeration: null
-            'Early exaggeration:': null
+            Early exaggeration:: null
             learning_rate: null
-            'Learning rate:': null
+            Learning rate:: null
             n_iter: null
-            'Max iterations:': null
+            Max iterations:: null
             initialization: null
-            'Initialization:': null
+            Initialization:: null
     class `MDSParametersEditor`:
         PCA: null
         PCA (Torgerson): null
@@ -10977,15 +11010,15 @@ widgets/unsupervised/owmanifoldlearning.py:
         Random: null
         def `__init__`:
             max_iter: null
-            'Max iterations:': null
+            Max iterations:: null
             init_type: null
-            'Initialization:': null
+            Initialization:: null
         def `get_parameters`:
             n_init: null
     class `IsomapParametersEditor`:
         def `__init__`:
             n_neighbors: null
-            'Neighbors:': null
+            Neighbors:: null
     class `LocallyLinearEmbeddingParametersEditor`:
         standard: null
         Standard: null
@@ -10997,11 +11030,11 @@ widgets/unsupervised/owmanifoldlearning.py:
         Local: null
         def `__init__`:
             method: null
-            'Method:': null
+            Method:: null
             n_neighbors: null
-            'Neighbors:': null
+            Neighbors:: null
             max_iter: null
-            'Max iterations:': null
+            Max iterations:: null
     class `SpectralEmbeddingParametersEditor`:
         nearest_neighbors: null
         Nearest neighbors: null
@@ -11009,7 +11042,7 @@ widgets/unsupervised/owmanifoldlearning.py:
         RBF kernel: null
         def `__init__`:
             affinity: null
-            'Affinity:': null
+            Affinity:: null
     class `OWManifoldLearning`:
         Manifold Learning: null
         Nonlinear dimensionality reduction.: null
@@ -11037,7 +11070,7 @@ widgets/unsupervised/owmanifoldlearning.py:
             manifold_method_index: null
             Output: null
             n_components: null
-            'Components:': število komponent:
+            Components:: število komponent:
             0: null
         def `commit`:
             def `_handle_disconnected_graph_warning`:
@@ -11054,8 +11087,6 @@ widgets/unsupervised/owmanifoldlearning.py:
     __main__: null
     brown-selected: null
 widgets/unsupervised/owmds.py:
-    def `stress`:
-        euclidean: false
     def `run_mds`:
         Running...: Tečem...
         precomputed: false
@@ -11063,10 +11094,11 @@ widgets/unsupervised/owmds.py:
     class `OWMDSGraph`:
         def `update_pairs`:
             pairs: false
+            on: null
     class `OWMDS`:
         MDS: Večrazsežnostno lestvičenje
-        'Two-dimensional data projection by multidimensional ': "Dvodimenzionalna projekcija večdimenzionalnih podatkov, "
-        scaling constructed from a distance matrix.: "ki poskuša ohraniti razdalje med primeri."
+        'Two-dimensional data projection by multidimensional ': 'Dvodimenzionalna projekcija večdimenzionalnih podatkov, '
+        scaling constructed from a distance matrix.: ki poskuša ohraniti razdalje med primeri.
         icons/MDS.svg: false
         multidimensional scaling: true
         multi dimensional scaling: mds
@@ -11091,16 +11123,16 @@ widgets/unsupervised/owmds.py:
         def `__init__`:
             Stress: Napetost
         def `_add_controls`:
-            'Show similar pairs:': Pokaži podobne pare:
+            Show similar pairs:: Pokaži podobne pare:
             connected_pairs: false
         def `_add_controls_optimization`:
             Optimize: Izračun
             PCA: PCA
             Randomize: Razmeči
             Jitter: Potresi
-            refresh_rate: false
-            'Refresh: ': "Osveževanje: "
             Start: Začni
+            Refresh:: Izris:
+            refresh_rate: false
         def `_initialize`:
             labels: false
         def `init_attr_values`:
@@ -11119,6 +11151,8 @@ widgets/unsupervised/owmds.py:
             Start: Začni
         def `get_size_data`:
             Stress: Napetost
+        def `stress`:
+            euclidean: evklidski
         def `migrate_settings`:
             label_only_selected: false
             symbol_opacity: false
@@ -11142,6 +11176,25 @@ widgets/unsupervised/owmds.py:
             attr_label: false
             Stress: false
             graph: false
+    '<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1"
+	 id="svg3025" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1347.7 1178.5"
+	 style="enable-background:new 0 0 1347.7 1178.5;" xml:space="preserve">
+<sodipodi:namedview  bordercolor="#666666" borderopacity="1" gridtolerance="10" guidetolerance="10" id="namedview3031" inkscape:current-layer="svg3025" inkscape:cx="896" inkscape:cy="896" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-height="480" inkscape:window-maximized="0" inkscape:window-width="640" inkscape:window-x="0" inkscape:window-y="25" inkscape:zoom="0.13169643" objecttolerance="10" pagecolor="#ffffff" showgrid="false">
+	</sodipodi:namedview>
+<g id="g3027" transform="matrix(1,0,0,-1,37.966102,1320.6441)">
+	<path inkscape:connector-curvature="0" d="M1003,628.1c-1-4.2-4.5-7.6-7.6-11.1L581,202.5c-7.4-7.4-13.6-9.9-18.7-7.6
+		c-5.1,2.3-7.6,8.6-7.6,18.7v414.5c-1.9-3.9-4.5-7.6-7.6-11.1L132.6,202.5c-7.4-7.4-13.6-9.9-18.7-7.6c-5.1,2.3-7.6,8.6-7.6,18.7
+		v859.3c0,10.1,2.5,16.3,7.6,18.7c5.1,2.3,11.3-0.2,18.7-7.6l414.5-414.5c3.1-3.1,5.6-6.8,7.6-11.1v414.5c0,10.1,2.5,16.3,7.6,18.7
+		c5.1,2.3,11.3-0.2,18.7-7.6l414.5-414.5c3.1-3.1,6.4-6.5,7.6-11.1C1004.9,651.1,1004.8,635.4,1003,628.1z"/>
+	<path inkscape:connector-curvature="0" d="M1038,650v404.2c0,10.1,3.7,18.9,11.1,26.3c7.4,7.4,16.2,11.1,26.3,11.1h74.7
+		c10.1,0,18.9-3.7,26.3-11.1c7.4-7.4,11.1-16.2,11.1-26.3v-822c0-10.1-3.7-18.9-11.1-26.3c-7.4-7.4-16.2-11.1-26.3-11.1h-74.7
+		c-10.1,0-18.9,3.7-26.3,11.1c-7.4,7.4-11.1,16.2-11.1,26.3V650"/>
+	<path d="M918.9,404.1"/>
+</g>
+</svg>
+': false
     __main__: false
     iris: false
 widgets/unsupervised/owpca.py:
@@ -11174,8 +11227,8 @@ widgets/unsupervised/owpca.py:
             All: Vse
             variance_covered: false
             %: true
-            'Components:': Komponente:
-            'Explained variance:': Razložena varianca:
+            Components:: Komponente:
+            Explained variance:: Razložena varianca:
             Options: Opcije
             normalize: false
             Normalize variables: Normiraj spremenljivke
@@ -11196,7 +11249,7 @@ widgets/unsupervised/owpca.py:
             Normalize data: Normiranje podatkov
             Selected components: Število komponent
             Explained variance: Razložena varianca
-            '{:.3f} %': false
+            {:.3f} %: false
         def `migrate_settings`:
             variance_covered: false
             ncomponents: false
@@ -11224,12 +11277,12 @@ widgets/unsupervised/owsavedistances.py:
             columns: stolpcih
             rows: vrsticah
         def `send_report`:
-            'Input:': Vhod:
+            Input:: Vhod:
             none: false
             File name: Ime datoteke
             not set: ni nastavljeno
         def `_description`:
-            ' and ': " in "
+            ' and ': ' in '
             row: vrstic
             column: stolpcev
             ; {labels} labels: ; oznake {labels}
@@ -11258,10 +11311,11 @@ widgets/unsupervised/owsom.py:
             SOM ignores categorical variables.: SOM ne upošteva kategoričnih spremenljivk.
             Some data instances have undefined value of '{}'.: Nekatere vrstice imajo neznane vrednosti '{}'.
             "'{}' has no defined values.": "'{}' ima neznane vrednosti."
+            {}: false
             Data contains a single numeric column.: Podatki imajo le eno številsko spremenljivko.
         class `Error`:
             Data contains no numeric columns.: Podatki nimajo številskih spremenljivk.
-            All rows contain at least one undefined value.: Vsaka vrstica ima vsaj eno neznano vrednost.
+            SOM needs at least two data rows without missing values.: SOM potrebuje vsaj dva primera brez neznanih vrednosti.
         def `__init__`:
             SOM: SOM
             Hexagonal grid: Šestkotna mreža
@@ -11283,7 +11337,7 @@ widgets/unsupervised/owsom.py:
             Size by number of instances: Velikost odraža število primerov
         def `set_data`:
             def `set_warnings`:
-                {missing} data {pl(missing, "instance")} with undefined value(s) {pl(missing, "is|are")} not shown.: {missing} {plsi(missing, "primer")} z manjkajočimi vrednostmi {plsi(missing, "ni prikazan|nista prikazana|niso prikazani|ni prikazanih")}.
+                {missing} data {pl(missing, "instance")} with undefined value(s) {pl(missing, "is|are")} not shown.: {missing} {plsi(missing, "primer")} z neznanimi vrednostmi {pl(missing, "ni prikazan|nista prikazana|niso prikazani|ni prikazanih")}.
         def `enable_controls`:
             Start: Začni
             Stop: Stoj
@@ -11295,18 +11349,17 @@ widgets/unsupervised/owsom.py:
             (N/A): (NN)
             \N{NON-BREAKING HYPHEN}: false
             '<table style="white-space: nowrap">': false
-            | 4
-                            <tr>
-                                <td>
-                                    <font color={color.name()}>■</font>
-                                    <b>{escape(val).replace("-", nbhp)}</b>:
-                                </td>
-                                <td>
-                                    {n} ({n / tot * 100:.1f}&nbsp;%)
-                                </td>
-                            </tr>
-                            
-            : false
+            '
+            <tr>
+                <td>
+                    <font color={color.name()}>■</font>
+                    <b>{escape(val).replace("-", nbhp)}</b>:
+                </td>
+                <td>
+                    {n} ({n / tot * 100:.1f}&nbsp;%)
+                </td>
+            </tr>
+            ': false
             </table>: false
         def `update_output`:
             Group: Skupina
@@ -11360,8 +11413,8 @@ widgets/unsupervised/owtsne.py:
         t-SNE-x: false
         t-SNE-y: false
         class `Information`:
-            'The parameter settings have been changed. Press ': "Parametri so spremenjeni. Pritisnite "
-            \"Start\" to rerun with the new settings.: "Začni" za ponovni izračun.
+            'The parameter settings have been changed. Press ': 'Parametri so spremenjeni. Pritisnite '
+            \"Start\" to rerun with the new settings.: '"Začni" za ponovni izračun.'
         class `Error`:
             Input data needs at least 2 rows: Podatki morajo vsebovati vsaj dva primera.
             Input data needs at least 2 attributes: Podatki morajo vsebovati vsaj dve spremenljivki.
@@ -11370,13 +11423,13 @@ widgets/unsupervised/owtsne.py:
         def `_add_controls_start_box`:
             Optimize: Optimizacija
             perplexity: false
-            'Perplexity:': Zmedenost (perplexity):
+            Perplexity:: Zmedenost (perplexity):
             multiscale: false
             Preserve global structure: Ohrani globalni razpored:
             exaggeration: false
-            'Exaggeration:': Pretiravanje (exaggeration):
+            Exaggeration:: Pretiravanje (exaggeration):
             pca_components: false
-            'PCA components:': Število komponent PCA:
+            PCA components:: Število komponent PCA:
             normalize: false
             Normalize data: Normiraj podatke
             Start: Začni
@@ -11442,7 +11495,7 @@ widgets/utils/__init__.py:
         def `show_part`:
             {} = {}: null
             ... and {} others: null
-            '<b>{}</b>:<br/>': null
+            <b>{}</b>:<br/>: false
             <br/>: null
         Class: null
         Classes: null
@@ -11471,50 +11524,6 @@ widgets/utils/buttons.py:
 widgets/utils/classdensity.py:
     def `compute_density`:
         C_CONTIGUOUS: false
-widgets/utils/colorbrewer.py:
-    Module 'colorbrewer' is obsolete and will be removed.\n: false
-    Use palettes from 'Orange.widget.utils.colorpalettes'.: false
-    diverging: false
-    RdYlGn: false
-    PRGn: false
-    RdBu: false
-    RdGy: false
-    RdYlBu: false
-    PiYG: false
-    PuOr: false
-    BrBG: false
-    spectral: false
-    Spectral: false
-    qualitative: false
-    Pastel2: false
-    Pastel1: false
-    Dark2: false
-    Accent: false
-    Paired: false
-    Set1: false
-    Set2: false
-    Set3: false
-    sequential: false
-    Reds: false
-    YlOrRd: false
-    RdPu: false
-    YlOrBr: false
-    Greens: false
-    YlGnBu: false
-    GnBu: false
-    BuPu: false
-    Greys: false
-    Oranges: false
-    OrRd: false
-    BuGn: false
-    PuBu: false
-    PuRd: false
-    Blues: false
-    PuBuGn: false
-    YlGn: false
-    Purples: false
-    pastels: false
-    Custom: false
 widgets/utils/colorgradientselection.py:
     class `ColorGradientSelection`:
         def `__init__`:
@@ -11522,178 +11531,13 @@ widgets/utils/colorgradientselection.py:
             Centered at: Sredina pri
             threshold-low-slider: false
             Low gradient threshold: Spodnja meja gradienta
-            'Applying a low threshold will squeeze the ': "Določa vrednost, pri kateri se začne "
+            'Applying a low threshold will squeeze the ': 'Določa vrednost, pri kateri se začne '
             gradient from the lower end: barva spreminjati
             High gradient threshold: Zgornja meja gradienta
-            'Applying a high threshold will squeeze the ': "Določa vrednost, pri kateri se barva "
+            'Applying a high threshold will squeeze the ': 'Določa vrednost, pri kateri se barva '
             gradient from the higher end: neha spreminjati
-            'Low:': Spodnja:
-            'High:': Zgornja:
-widgets/utils/colorpalette.py:
-    Module colorpalette is obsolete; use colorpalettes: false
-    class `ColorPaletteDlg`:
-        def `__init__`:
-            Color Palette: false
-            selectedSchemaIndex: false
-            Saved Profiles: false
-            OK: false
-            Cancel: false
-        def `acceptChanges`:
-            Default: false
-            Question: false
-            The color schema has changed. Save?: false
-        def `createColorButton`:
-            butt: false
-        def `createContinuousPalette`:
-            def `_set`:
-                cont{}{}: false
-            Left: false
-            View: false
-            Right: false
-            passThroughBlack: false
-            passThroughBlackCheckbox: false
-            cont: false
-            Pass through black: false
-        def `createExtendedContinuousPalette`:
-            def `_set`:
-                exCont{}{}: false
-            Left: false
-            View: false
-            Right: false
-            passThroughColors: false
-            passThroughColorsCheckbox: false
-            exCont: false
-            Use pass-through colors: false
-            Pass-through colors: false
-            passThroughColor: false
-            Checkbox: false
-            Use color: false
-            color: false
-            colorCount: false
-        def `createDiscretePalette`:
-            def `_set`:
-                disc{}{}: false
-            View: false
-            EditButt: false
-            Edit palette: false
-            Edit the order and colors of the palette: false
-            LoadButt: false
-            Load palette: false
-            Load a predefined color palette: false
-        def `editPalette`:
-            def `_set`:
-                disc{}{}: false
-            disc: false
-            EditButt: false
-            View: false
-        def `loadPalette`:
-            disc: false
-            LoadButt: false
-            View: false
-        def `getColor`:
-            butt: false
-        def `getContinuousPalette`:
-            cont: false
-            Left: false
-            Right: false
-            passThroughBlack: false
-        def `getExtendedContinuousPalette`:
-            exCont: false
-            Left: false
-            Right: false
-            passThroughColors: false
-            color: false
-            colorCount: false
-            passThroughColor: false
-        def `getDiscretePalette`:
-            disc: false
-            View: false
-        def `getCurrentState`:
-            butt: false
-            cont: false
-            Left: false
-            Right: false
-            passThroughBlack: false
-            disc: false
-            View: false
-            exCont: false
-            passThroughColors: false
-            color: false
-            passThroughColor: false
-            colorCount: false
-        def `setColorSchemas`:
-            Default: false
-            Save current palette as...: false
-        def `setCurrentState`:
-            butt: false
-            cont: false
-            Left: false
-            Right: false
-            passThroughBlack: false
-            passThroughBlackCheckbox: false
-            View: false
-            disc: false
-            exCont: false
-            passThroughColors: false
-            passThroughColorsCheckbox: false
-            passThroughColor: false
-            Checkbox: false
-            color: false
-            colorCount: false
-        def `paletteSelected`:
-            Name the current color settings.\n: false
-            Pressing 'Cancel' will cancel your changes and close the dialog.: false
-            Name Your Color Settings: false
-            default: false
-            The 'Default' settings cannot be changed.: false
-            'Enter a different name:': false
-    class `ColorPalleteListing`:
-        def `__init__`:
-            Color Palette List: false
-            Information: false
-            '<p align="center">This dialog shows a list of predefined ': false
-            'color palettes <br>from colorbrewer.org that can be used ': false
-            in Orange.<br/>You can select a palette by clicking on it.</p>: false
-            Default Palette: false
-            Default color palette: false
-            Qualitative: false
-            Spectral: false
-            Diverging: false
-            Sequential: false
-            Pastels: false
-            ' Palettes': false
-    class `PaletteEditor`:
-        def `__init__`:
-            Palette Editor: false
-            Information: false
-            <p align="center">You can reorder colors in the list using the: false
-            <br/>buttons on the right or by dragging and dropping the items.: false
-            '<br/>To change a specific color double click the item in the ': false
-            list.</p>: false
-            Move selected colors up: false
-            Move selected colors down: false
-            icons/Dlg_up3.png: false
-            icons/Dlg_down3.png: false
-            Color %d: false
-    class `ContinuousPaletteGenerator`:
-        def `__init__`:
-            '#000000': false
-    class `ColorPaletteGenerator`:
-        def `set_number_of_colors`:
-            Not enough colors: false
-    class `ColorButton`:
-        def `mousePressEvent`:
-            colorSchemaChange: false
-    def `main`:
-        continuousPalette: false
-        Continuous Palette: false
-        discPalette: false
-        Discrete Palette: false
-        otherColors: false
-        Colors: false
-        Canvas: false
-        Grid: false
-    __main__: false
+            Low:: Spodnja:
+            High:: Zgornja:
 widgets/utils/colorpalettes.py:
     Palette: false
     IndexedPalette: false
@@ -11799,9 +11643,14 @@ widgets/utils/combobox.py:
     ComboBoxSearch: false
     ComboBox: false
     ItemStyledComboBox: false
+    TextEditCombo: false
     class `ItemStyledComboBox`:
         def `initStyleOption`:
             QStyleOptionComboBox: false
+    class `TextEditCombo`:
+        def `__init__`:
+            editable: false
+            activated: false
 widgets/utils/concurrent.py:
     FutureWatcher: false
     FutureSetWatcher: false
@@ -12111,7 +11960,7 @@ widgets/utils/itemmodels.py:
             Orange.widgets.utils.itemmodels.AbstractSortTableModel.mapToSourceRows: false
     class `PyTableModel`:
         def `data`:
-            '{:.{}{}}': false
+            {:.{}{}}: false
             f: false
             e: false
         def `_check_sort_order`:
@@ -12122,7 +11971,7 @@ widgets/utils/itemmodels.py:
             None: false
         def `variable_labels_tooltip`:
             %s = %s: false
-            '<br/>Variable Labels:<br/>': '<br/>Oznake spremenljivke:<br/>'
+            <br/>Variable Labels:<br/>: <br/>Oznake spremenljivke:<br/>
             <br/>: false
         def `discrete_variable_tooltip`:
             '<b>%s</b><br/>Categorical with %i values: ': '<b>%s</b><br/>Kategorična, %i vrednost(i): '
@@ -12205,7 +12054,7 @@ widgets/utils/owbasesql.py:
             {}: true
         def `_setup_gui`:
             Server: Strežnik
-            '{}:{}': true
+            {}:{}: true
             Database[/Schema]: Baza[/Shema]
             Database or optionally Database/Schema: Baza ali, opcijsko, Baza/Shema
             {}/{}: true
@@ -12215,7 +12064,7 @@ widgets/utils/owbasesql.py:
         def `_credential_manager`:
             'SQL Table: {}:{}': true
         def `_parse_host_port`:
-            ':': false
+            :: false
         def `_check_db_settings`:
             /: false
         def `on_connection_success`:
@@ -12248,9 +12097,9 @@ widgets/utils/owlearnerwidget.py:
             Press Apply to submit changes.: Pritisnite Uveljavi za uveljavitev sprememb
         class `Information`:
             Ignoring default preprocessing.\n: Ignoriram privzete predprocesorje.\n
-            'Default preprocessing, such as scaling, one-hot encoding and ': "Privzeto predprocesiranje, kot je skaliranje, kodiranje z indikatorji in "
-            'treatment of missing data, has been replaced with user-specified ': "vstavljanje manjkajočih vrednosti, je zamenjano s predprocesorji, ki jih je "
-            'preprocessors. Problems may occur if these are inadequate ': "določil uporabnik. Če ti niso ustrezni za te podatke, bo modeliranje neuspešno."
+            'Default preprocessing, such as scaling, one-hot encoding and ': 'Privzeto predprocesiranje, kot je skaliranje, kodiranje z indikatorji in '
+            'treatment of missing data, has been replaced with user-specified ': 'vstavljanje manjkajočih vrednosti, je zamenjano s predprocesorji, ki jih je '
+            'preprocessors. Problems may occur if these are inadequate ': določil uporabnik. Če ti niso ustrezni za te podatke, bo modeliranje neuspešno.
             for the given data.: ""
         class `Inputs`:
             Data: Podatki
@@ -12359,7 +12208,7 @@ widgets/utils/slidergraph.py:
             bottom: false
             left: false
         def `_update_horizontal_lines`:
-            '{:.3f}': false
+            {:.3f}: false
 widgets/utils/spinbox.py:
     class `DoubleSpinBox`:
         def `__init__`:
@@ -12402,16 +12251,16 @@ widgets/utils/state_summary.py:
         # Tole mora biti prevedeno v ženski spol, ker format_variables_string
         # vrača pridevnike v ženskem spolu; lahko gre vse v moški spol,
         # samo da je povsod enak in da format_variables_string vrača tak spol...
-        'Features: {features} {features_missing}': 'Spremenljivke: {features} {features_missing}'
-        'Target: {targets}': 'Ciljna spremenljivka: {targets}'
-        'Metas: {metas}': 'Meta: {metas}'
+        'Features: {features} {features_missing}': Spremenljivke: {features} {features_missing}
+        'Target: {targets}': Ciljna spremenljivka: {targets}
+        'Metas: {metas}': Meta: {metas}
         '{name}: ': true
         {basic}\n{features}\n{targets}: true
         \n{metas}: true
         '<b><u>{escape(name)}</u></b>: {basic}': true
         <br/>: false
     def `missing_values`:
-        '({value*100:.1f}% missing values)': '({value*100:.1f}% manjkajočih vrednosti)'
+        ({value*100:.1f}% missing values): ({value*100:.1f}% manjkajočih vrednosti)
         (no missing values): (brez manjkajočih vrednosti)
     def `format_multiple_summaries`:
         input: vhodu
@@ -12419,7 +12268,7 @@ widgets/utils/state_summary.py:
             \n: false
             <br>: false
         No data on {type_io}.: Ni podatkov na {type_io}
-        '{name}:<br>{details}': false
+        {name}:<br>{details}: false
         <hr>: false
     def `_name_of`:
         name: false
@@ -12547,9 +12396,9 @@ widgets/utils/textimport.py:
             decimal-separator-combo-box: false
             Decimal separator: Ločilo za decimalni del
             (\.|,): false
-            'Grouping:': 'Skupine: '
-            'Decimal:': 'Decimalni del: '
-            'Number separators:': 'Ločila med števkami: '
+            Grouping:: 'Skupine: '
+            Decimal:: 'Decimalni del: '
+            Number separators:: 'Ločila med števkami: '
             column-type-edit-combo-box: false
             Auto: (prepoznaj)
             'The type will be determined automatically based ': 'Tip bo prepoznan samodejno '
@@ -12611,14 +12460,13 @@ widgets/utils/textimport.py:
         .: false
     def `format_exception_csv`:
         'CSV parsing error: ': 'Napaka pri branju: '
-    |
-        \
-         ,A,B,C,D
-        1,a,1,1,
-        2,b,2,2,
-        3,c,3,3,
-        4,d,4,4,,\
-    : false
+    '\
+ ,A,B,C,D
+1,a,1,1,
+2,b,2,2,
+3,c,3,3,
+4,d,4,4,,\
+': false
     def `main`:
         rb: false
     __main__: false
@@ -12976,7 +12824,7 @@ widgets/utils/tests/concurrent_example.py:
         Projection: false
         def `_add_controls`:
             param: false
-            'Parameter:': false
+            Parameter:: false
             Param A: false
             Param B: false
             Start: false
@@ -13041,15 +12889,15 @@ widgets/visualize/owbarplot.py:
         Enumeration: Zaporedne številke
         def `_add_controls`:
             selected_var: false
-            'Values:': Vrednosti:
+            Values:: Vrednosti:
             None: (Brez)
             group_var: false
-            'Group by:': Skupine:
+            Group by:: Skupine:
             annot_var: false
-            'Annotations:': Oznake:
+            Annotations:: Oznake:
             (Same color): (Enaka barva)
             color_var: false
-            'Color:': Barva:
+            Color:: Barva:
             auto_commit: false
         def `grouped_indices`:
             mergesort: false
@@ -13140,7 +12988,7 @@ widgets/visualize/owboxplot.py:
             median: false
             mean: false
         def `send_report`:
-            "Box plot for attribute '{self.attribute.name}' ": "Škatla za brki za spremenljivko '{self.attribute.name}' "
+            "Box plot for attribute '{self.attribute.name}' ": "Škatla z brki za spremenljivko '{self.attribute.name}' "
             grouped by '{self.group_var.name}': urejeno po '{self.group_var.name}'
     __main__: false
     heart_disease.tab: false
@@ -13233,15 +13081,15 @@ widgets/visualize/owdistributions.py:
             Frequency: Frekvenca
         def `_disc_plot`:
             bottom: false
-            "<p style='white-space:pre;'>": true
+            <p style='white-space:pre;'>: true
             '<b>{escape(desc)}</b>: {int(freq)} ': true
             '({100 * freq / len(self.valid_data):.2f} %) ': true
         def `_disc_split_plot`:
             bottom: false
         def `_cont_plot`:
-            "<p style='white-space:pre;'>": true
+            <p style='white-space:pre;'>: true
             '<b>{escape(desc)}</b>: ': true
-            '{freq} ({100 * freq / total:.2f} %)</p>': true
+            {freq} ({100 * freq / total:.2f} %)</p>: true
         def `_set_cont_ticks`:
             bottom: false
         def `_fit_approximation`:
@@ -13258,17 +13106,17 @@ widgets/visualize/owdistributions.py:
             "style='{cs} padding-left: 1em'": true
             style='{cs}': false
             "<table style='border-collapse: collapse'>": true
-            '<tr><th {s}>{escape(valname)}:</th>': true
+            <tr><th {s}>{escape(valname)}:</th>: true
             <td {snp}><b>{int(tot_group)}</b></td>: true
             <td/>: true
-            '<td {s}><b>{100 * tot_group / total:.2f} %</b></td></tr>': true
+            <td {s}><b>{100 * tot_group / total:.2f} %</b></td></tr>: true
             <tr><td/><td/><td {s}>(in group)</td><td {s}>(overall)</td>: true
             </tr>: true
             <tr>: true
-            '<th {s}>{value}:</th>': true
+            <th {s}>{value}:</th>: true
             <td {snp}><b>{int(freq)}</b></td>: true
-            '<td {s}>{100 * freq / div_group:.2f} %</td>': true
-            '<td {s}>{100 * freq / total:.2f} %</td>': true
+            <td {s}>{100 * freq / div_group:.2f} %</td>: true
+            <td {s}>{100 * freq / total:.2f} %</td>: true
             </table>: true
         def `_display_legend`:
             s: false
@@ -13279,9 +13127,9 @@ widgets/visualize/owdistributions.py:
             {var.name} ≥ {sx0}: true
             {sx0} ≤ {var.name} < {sx1}: true
         def `show_selection`:
-            "<p style='white-space:pre;'>": true
+            <p style='white-space:pre;'>: true
             '<b>{escape(valname)}</b>: ': true
-            '{inside} ({100 * inside / total:.2f} %)': true
+            {inside} ({100 * inside / total:.2f} %): true
         def `apply`:
             Bin: Koš
         def `_get_histogram_table`:
@@ -13317,14 +13165,14 @@ widgets/visualize/owfreeviz.py:
             At least two features are required.: Potrebni sta vsaj dve spremenljivki.
         class `Warning`:
             Categorical features with more than: Kategorične spremenljivke z več kot dvema
-            ' two values are not shown.': " vrednostima niso prikazane."
+            ' two values are not shown.': ' vrednostima niso prikazane.'
         def `_add_controls`:
-            'Hide radius:': 'Skriti krog:'
+            Hide radius:: Skriti krog:
             hide_radius: false
         def `__add_controls_start_box`:
             Optimize: Izris
             initialization: false
-            'Initialization:': Začetna pozicija:
+            Initialization:: Začetna pozicija:
             Start: Začni
         def `_toggle_run`:
             Resume: Nadaljuj
@@ -13383,8 +13231,8 @@ widgets/visualize/owheatmap.py:
             Not enough memory to show this data: Ni dovolj pomnilnika za prikaz podatkov.
         class `Warning`:
             Empty clusters were removed: Prazne gruče so odstranjene.
-        'For data with a meaningful mid-point, ': "Za podatke, ki imajo nevtralno, sredinsko vrednost "
-        choose one of diverging palettes.: "izberite divergentno barvno paleto."
+        'For data with a meaningful mid-point, ': 'Za podatke, ki imajo nevtralno, sredinsko vrednost '
+        choose one of diverging palettes.: izberite divergentno barvno paleto.
         diverging_palette: false
         def `__init__`:
             Color: Barva
@@ -13392,12 +13240,12 @@ widgets/visualize/owheatmap.py:
             merge_kmeans: false
             Merge by k-means: Združi v skupine (k-means)
             merge_kmeans_k: false
-            'Clusters:': Skupin:
+            Clusters:: Skupin:
             Clustering: Gručenje
             row_clustering: false
             col_clustering: false
-            'Rows:': Vrstice:
-            'Columns:': Stolpci:
+            Rows:: Vrstice:
+            Columns:: Stolpci:
             Split By: Razdelitev
             (None): (Brez)
             Split the heatmap vertically by a categorical column: Navpična delitev glede na kategorično spremenljivko
@@ -13428,7 +13276,6 @@ widgets/visualize/owheatmap.py:
             setShortcutVisibleInContextMenu: false
         def `set_dataset`:
             hidden: false
-            s: false
         def `_make_parts`:
             N/A: NN
         def `cluster_rows`:
@@ -13443,7 +13290,7 @@ widgets/visualize/owheatmap.py:
         def `__update_clustering_enable_state`:
             Parts: false
             'Row cluster ordering was disabled due to the ': Urejanje gruč vrstic
-            estimated runtime cost: " je ustavljeno, ker bi zahtevalo preveč časa."
+            estimated runtime cost: ' je ustavljeno, ker bi zahtevalo preveč časa.'
             'Row clustering was was disabled due to the ': Gručenje vrstic
             'Column cluster ordering was disabled due to ': Urejanje gruč stolpcev
             'Column clustering was disabled due to the ': Gručenje stolpcev
@@ -13453,11 +13300,11 @@ widgets/visualize/owheatmap.py:
         def `_on_view_context_menu`:
             Keep aspect ratio: false
         def `send_report`:
-            'Columns:': Stolpci
+            Columns:: Stolpci
             Clustering: Gručenje
             No sorting: Brez urejanja
-            'Rows:': Vrstice
-            'Split:': Delitev
+            Rows:: Vrstice
+            Split:: Delitev
             Row annotation: Oznake vrstic
         def `migrate_settings`:
             row_clustering: false
@@ -13503,9 +13350,11 @@ widgets/visualize/owlinearprojection.py:
         Principal Component Analysis: Analiza osnovnih komponent
         class `Error`:
             Plotting requires numeric features: Podatki ne vsebujejo številskih spremenljivk.
+        class `Information`:
+            LDA placement is disabled due to unsuitable target.\n{}: Razporejanje z LDA je izključeno, ker ni primerne ciljne spremenljivke.\n{}
         def `_add_controls`:
             Features: Spremenljivke
-            'Hide radius:': Skriti krog
+            Hide radius:: Skriti krog
             hide_radius: false
         def `_add_controls_variables`:
             Suggest Features: Predlagaj spremenljivke
@@ -13513,11 +13362,20 @@ widgets/visualize/owlinearprojection.py:
             placement: false
         def `_add_buttons`:
             auto_commit: false
+        def `_check_options`:
+            Current data has no target variable: Podatki nimajo ciljne spremenljivke.
+            {class_var.name} is not categorical: {class_var.name} ni kategorična spremenljivka.
+            Data has no defined values for {class_var.name}: Podatki nimajo definiranih vrednosti za {class_var.name}.
+            ' and ': ' in '
+            "'{class_var.values[int(i)]}'": false
+            "Data contains just {['one', 'two'][nclasses - 1]} distinct ": "Podatki vsebujejo le {plsi(nclasses - 1, 'eno vrednost|dve vrednosti|')} "
+            "{pl(nclasses, 'value')} ({vals}) for '{class_var.name}'; ": "spremenljivke '{class_var.name}'; "
+            at least three are required.: LDA potrebuje vsaj tri.
         def `_init_vizrank`:
             There is no data.: Ni podatkov.
             Color variable has to be selected: Potrebno je izbrati spremenljivko za barvo.
-            'Suggest Features does not work for Linear ': "Predlaganje spremenljivk ne deluje "
-            'Discriminant Analysis Projection when ': "za diskriminantno analizo pri barvanju "
+            'Suggest Features does not work for Linear ': 'Predlaganje spremenljivk ne deluje '
+            'Discriminant Analysis Projection when ': 'za diskriminantno analizo pri barvanju '
             continuous color variable is selected.: s številsko spremenljivko.
             Not enough available continuous variables: Ni dovolj številskih spremenljivk.
             Not enough valid data instances: Ni dovolj podatkov.
@@ -13643,7 +13501,7 @@ widgets/visualize/owmosaic.py:
         Mosaic Ranking: Ocenjevanje mozaikov
         def `__init__`:
             max_attrs: false
-            'Number of variables:': Število spremenljivk:
+            Number of variables:: Število spremenljivk:
             one: ena
             two: dve
             three: tri
@@ -13694,22 +13552,22 @@ widgets/visualize/owmosaic.py:
                 '{}&nbsp;&nbsp;&nbsp;&nbsp;{}: <b>{}</b><br/>': false
             def `add_rect`:
                 <hr/>: false
-                'Expected instances: %.1f<br>': 'Pričakovanih primerov: %.1f<br>'
-                'Actual instances: %d<br>': 'Dejanskih primerov: %d<br>'
-                'Standardized (Pearson) residual: %.1f': 'Standardiziran (Pearsonov) residual: %.1f'
+                'Expected instances: %.1f<br>': Pričakovanih primerov: %.1f<br>
+                'Actual instances: %d<br>': Dejanskih primerov: %d<br>
+                'Standardized (Pearson) residual: %.1f': Standardiziran (Pearsonov) residual: %.1f
                 -: true
                 <br/>: false
-                '<b>%s</b>: %d / %.1f%% (Expected %.1f / %.1f%%)': '<b>%s</b>: %d / %.1f%% (Pričakovano %.1f / %.1f%%)'
-                '{}<hr>Instances: {}<br><br>{}': '{}<hr>Primerov: {}<br><br>{}'
+                '<b>%s</b>: %d / %.1f%% (Expected %.1f / %.1f%%)': <b>%s</b>: %d / %.1f%% (Pričakovano %.1f / %.1f%%)
+                '{}<hr>Instances: {}<br><br>{}': {}<hr>Primerov: {}<br><br>{}
             def `create_legend`:
                 <-8: false
-                '-8:-4': false
-                '-4:-2': false
-                '-2:2': false
-                '2:4': false
-                '4:8': false
+                -8:-4: false
+                -4:-2: false
+                -2:2: false
+                2:4: false
+                4:8: false
                 >8: false
-                'Residuals:': 'Residuali:'
+                Residuals:: Residuali:
             Feature {} has no values: Spremenljivka {} nima vrednosti
         def `migrate_context`:
             (None): false)
@@ -13730,11 +13588,9 @@ widgets/visualize/ownomogram.py:
             Negative influence: Negativni vpliv
     class `DotItem`:
         'ul {margin-top: 1px; margin-bottom: 1px;}': false
-        |
-            <html><head><style type="text/css">{}</style>
-                </head><body><b>{}</b><hr/>{}</body></html>
-                
-        : false
+        '<html><head><style type="text/css">{}</style>
+    </head><body><b>{}</b><hr/>{}</body></html>
+    ': false
     class `ProbabilitiesDotItem`:
         def `get_tooltip_text`:
             'Total: {} <br/>Probability: {:.0%}': Vsota: {} <br/>Verjetnost: {:.0}&nbsp;%
@@ -13787,11 +13643,11 @@ widgets/visualize/ownomogram.py:
             'Order: ': 'Vrstni red: '
             display_index: false
             All features: Vse značilke
-            'Best ranked:': Prvih:
+            Best ranked:: Prvih:
             n_attributes: false
             'Show: ': 'Pokaži: '
             cont_feature_dim_index: false
-            'Numeric features:': Številske spremenljivke:
+            Numeric features:: Številske spremenljivke:
             1D projection: 1D projekcija
             2D curve: 2D krivulja
             class `GraphicsView`:
@@ -13804,6 +13660,8 @@ widgets/visualize/ownomogram.py:
             Probabilities (%): Verjetnosti (%)
         def `create_footer_nomogram`:
             {}='{}': false
+        def `reconstruct_domain`:
+            variable: false
         def `reset_settings`:
             ignore: false
             combo box 'target_class_index' is empty: false
@@ -13862,6 +13720,51 @@ widgets/visualize/owpythagorastree.py:
     __main__: false
     iris: false
 widgets/visualize/owpythagoreanforest.py:
+    '
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.forest_model_row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.forest_model_col {
+  flex: 10%;
+  max-width: 10%;
+  padding: 0 4px;
+}
+
+.forest_model_col img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 2200px) {
+  .forest_model_col {
+    flex: 25%;
+    max-width: 25%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .forest_model_col {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .forest_model_col {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
+': false
     class `PythagoreanForestModel`:
         def `data`:
             tree: false
@@ -13907,6 +13810,15 @@ widgets/visualize/owpythagoreanforest.py:
             Node color: Barva:
         def `_clear_info_box`:
             No forest on input.: Na vhodu ni gozda.
+        def `send_report`:
+            def `item_html`:
+                utf-8: null
+                '<img style="width:100%" ': null
+                src="data:image/png;base64,{img_encoded}"/>: null
+            <div class='forest_model_row'>: null
+            <div class='forest_model_col'>: null
+            </div>: null
+            <p>. . .</p>: false
     __main__: false
     iris: false
 widgets/visualize/owradviz.py:
@@ -13914,14 +13826,14 @@ widgets/visualize/owradviz.py:
         Score Plots: Ocenjevanje kombinacij
         def `__init__`:
             n_attrs: false
-            'Maximum number of variables: ': "Največje število spremenljivk: "
+            'Maximum number of variables: ': 'Največje število spremenljivk: '
         def `_evaluate_projection`:
             ignore: false
         def `_n_attrs_changed`:
             Start: Začni
             Continue: Nadaljuj
         def `progressBarSet`:
-            ' Evaluated {} permutations': ": Ocenjenih {} kombinacij"
+            ' Evaluated {} permutations': : Ocenjenih {} kombinacij
         def `row_for_state`:
             '[{:0.6f}] ': false
             ', ': false
@@ -13999,7 +13911,7 @@ widgets/visualize/owruleviewer.py:
                 =: false
                 .1f: false
                 ' : ': false
-                '{:.{}{}}': false
+                {:.{}{}}: false
                 f: false
                 e: false
             def `_tooltip_role`:
@@ -14007,7 +13919,7 @@ widgets/visualize/owruleviewer.py:
                 ' AND\n': ' IN\n'
                 \n: false
                 ': ': false
-                '{:.1f}': false
+                {:.1f}: false
                 %: false
     __main__: false
     iris: false
@@ -14024,7 +13936,7 @@ widgets/visualize/owscatterplot.py:
             label: false
     class `OWScatterPlotGraph`:
         def `_regression_line`:
-            'r = {rvalue:.2f}': true
+            r = {rvalue:.2f}: true
         def `_add_line`:
             label: false
         def `update_reg_line_label_colors`:
@@ -14054,9 +13966,9 @@ widgets/visualize/owscatterplot.py:
         def `_add_controls_axis`:
             Axes: Osi
             attr_x: false
-            'Axis x:': Os x:
+            Axis x:: Os x:
             attr_y: false
-            'Axis y:': Os y:
+            Axis y:: Os y:
             Find Informative Projections: Poišči informativne projekcije
         def `_add_controls_sampling`:
             auto_sample: false
@@ -14125,8 +14037,8 @@ widgets/visualize/owscatterplotgraph.py:
             %Y %b %d: true
             %Hh: true
             %d %Hh: true
-            '%H:%M': true
-            '%H:%M:%S': true
+            %H:%M: true
+            %H:%M:%S: true
             %S.%f: true
     class `ScatterBaseParameterSetter`:
         Categorical legend: Kategorična legenda
@@ -14166,7 +14078,7 @@ widgets/visualize/owsieve.py:
         Sieve Rank: Rangiranje
     class `OWSieveDiagram`:
         Sieve Diagram: Sievov diagram
-        'Visualize the observed and expected frequencies ': "Prikaz pričakovanih in opaženih pogostosti "
+        'Visualize the observed and expected frequencies ': 'Prikaz pričakovanih in opaženih pogostosti '
         for a combination of values.: za kombinacije spremenljivk.
         icons/SieveDiagram.svg: falase
         class `Inputs`:
@@ -14191,7 +14103,7 @@ widgets/visualize/owsieve.py:
             def `text`:
                 max_width: false
             def `fmt`:
-                '{:.2f}': false
+                {:.2f}: false
             def `make_tooltip`:
                 def `_oper`:
                     ' = ': false
@@ -14199,18 +14111,15 @@ widgets/visualize/owsieve.py:
                     <≥: false
                     ' in ': ' znotraj '
                 '<b>{attr}{eq}{val_name}</b>: {obs}/{n} ({p:.0f} %)': false
-                |
-                    <b>combination of values: </b><br/>
-                                       &nbsp;&nbsp;&nbsp;expected {exp} ({p_exp:.0f} %)<br/>
-                                       &nbsp;&nbsp;&nbsp;observed {obs} ({p_obs:.0f} %)
-                : |
-                    <b>kombinacija vrednosti: </b><br/>
-                       &nbsp;&nbsp;&nbsp;pričakovanih {exp} ({p_exp:.0f} %)<br/>
-                       &nbsp;&nbsp;&nbsp;opaženih {obs} ({p_obs:.0f} %)
+                '<b>combination of values: </b><br/>
+                   &nbsp;&nbsp;&nbsp;expected {exp} ({p_exp:.0f} %)<br/>
+                   &nbsp;&nbsp;&nbsp;observed {obs} ({p_obs:.0f} %)': '<b>kombinacija vrednosti: </b><br/>
+   &nbsp;&nbsp;&nbsp;pričakovanih {exp} ({p_exp:.0f} %)<br/>
+   &nbsp;&nbsp;&nbsp;opaženih {obs} ({p_obs:.0f} %)'
                 {xt}<br/>{yt}<hr/>{ct}: false
             Features {} and {} have no values: Spremenljivki {} in {} nimata znanih vrednosti.
             Feature {} has no values: Spremenljivka {} nima znanih vrednosti.
-            'χ²={:.2f}, p={:.3f}': true
+            χ²={:.2f}, p={:.3f}: true
             'N = ': true
         def `get_widget_name_extension`:
             {} vs {}: {} in {}
@@ -14254,9 +14163,9 @@ widgets/visualize/owsilhouetteplot.py:
             group_by_cluster: false
             Show in groups: Pokaži v skupinah
             Bars: Črte
-            'Bar width:': Širina črt
+            Bar width:: Širina črt:
             bar_size: false
-            'Annotations:': Oznake:
+            Annotations:: Oznake:
             annotation_var: false
             (increase the width to show): (povečajte širino, da bodo vidne)
             auto_commit: false
@@ -14339,7 +14248,7 @@ widgets/visualize/owtreeviewer.py:
             {} nodes, {} leaves: null
         def `node_tooltip`:
             &nbsp;&nbsp;&nbsp;: false
-            "<p style='white-space:pre'>": false
+            <p style='white-space:pre'>: false
             <br/>: false
             {indent}– {to_html(str(rule))}: false
             <p><b>Selection</b></p><p>{rule}</p>: <p><b>Kriterij</b></p><p>{rule}</p>
@@ -14349,13 +14258,13 @@ widgets/visualize/owtreeviewer.py:
             "<td><span style='color: {color_to_hex(color)}'>◼</span> ": false
             {escape(value)}</td>: false
             <td>{indent}</td>: false
-            "<td align='right'>{prop:g}</td>": false
-            "<td align='right'>{prop / total * 100:.1f} %</td>": false
+            <td align='right'>{prop:g}</td>: false
+            <td align='right'>{prop / total * 100:.1f} %</td>: false
             </tr>: false
             </table>: false
-            '{nbp}{class_var.name} = {mean:.3g} ± {var:.3g}<br/>': false
+            {nbp}{class_var.name} = {mean:.3g} ± {var:.3g}<br/>: false
             ({self.tree_adapter.num_samples(node.node_inst)} instances)</p>: ({self.tree_adapter.num_samples(node.node_inst)} {plsi(self.tree_adapter.num_samples(node.node_inst), "primer")})
-            "<p style='white-space:pre'><b>Next split: </b>{split}</p>": "<p style='white-space:pre'><b>Naslednja delitev: </b>{split}</p>"
+            "<p style='white-space:pre'><b>Next split: </b>{split}</p>": <p style='white-space:pre'><b>Naslednja delitev: </b>{split}</p>
             <hr/>: false
         def `send_report`:
             Tree size: Velikost drevesa
@@ -14370,9 +14279,9 @@ widgets/visualize/owtreeviewer.py:
         def `node_content_cls`:
             <b>{self.domain.class_vars[0].values[int(modus)]}</b><br/>: false
             100%, {total}/{total}: false
-            '{100 * tabs:2.1f}%, {int(total * tabs)}/{total}': false
+            {100 * tabs:2.1f}%, {int(total * tabs)}/{total}: false
         def `node_content_reg`:
-            '<b>{mean:.1f}</b> ± {var:.1f}<br/>': false
+            <b>{mean:.1f}</b> ± {var:.1f}<br/>: false
             {insts} instances: {insts} {plsi(insts, "primer")}
     __main__: false
     titanic: false
@@ -14414,11 +14323,9 @@ widgets/visualize/owtreeviewer2d.py:
             Fixed: Enaka
             Relative to root: Relativna glede na koren
             Relative to parent: Relativna glede na starša
-            |
-                QToolTip { padding: 3px;
-                                                                    border: 1px solid #C0C0C0;
-                                                      }
-            : false
+            'QToolTip { padding: 3px;
+                                                    border: 1px solid #C0C0C0;
+                                      }': false
         def `send_report`:
             Tree: Drevo
             .svg: false
@@ -14436,7 +14343,7 @@ widgets/visualize/owvenndiagram.py:
     Instance equality: Enakost vrstic
     class `OWVennDiagram`:
         Venn Diagram: Vennov diagram
-        'A graphical visualization of the overlap of data instances ': "Grafični prikaz skupnih podatkov v "
+        'A graphical visualization of the overlap of data instances ': 'Grafični prikaz skupnih podatkov v '
         from a collection of input datasets.: različnih tabelah.
         icons/VennDiagram.svg: false
         class `Inputs`:
@@ -14447,7 +14354,7 @@ widgets/visualize/owvenndiagram.py:
             Data sets do not contain the same instances.: Vhodni podatki ne vsebujejo istih primeov.
             Venn diagram accepts at most five datasets.: Vennov diagram lahko sprejme največ pet tabel.
         class `Warning`:
-            'Some variables have been renamed ': "Nekatere spremenljivke so preimenovane v izogib "
+            'Some variables have been renamed ': 'Nekatere spremenljivke so preimenovane v izogib '
             to avoid duplicates.\n{}: ponavljanju imen.\n{}
         scene: false
         attributes: false
@@ -14470,7 +14377,7 @@ widgets/visualize/owvenndiagram.py:
             Output duplicates: Ponovljeni primeri na izhodu.
             autocommit: false
         def `_createDiagram`:
-            '{} <i>(all: {})</i>': '{} <i>(vsi: {})</i>'
+            '{} <i>(all: {})</i>': {} <i>(vsi: {})</i>
             {}: false
             {0}: false
             <h4>|{}| = {}</h4>: false
@@ -14588,9 +14495,9 @@ widgets/visualize/owviolinplot.py:
             show_box_plot: false
             Box plot: Škatla z brki
             show_strip_plot: false
-            Strip plot: Proge
+            Density dots: Preproga točk
             show_rug_plot: false
-            Rug plot: Preproga
+            Density lines: Proge
             order_violins: false
             Order subgroups: Uredi skupine
             show_grid: false
@@ -14598,12 +14505,12 @@ widgets/visualize/owviolinplot.py:
             orientation_index: false
             Horizontal: Vodoravna
             Vertical: Navpična
-            'Orientation: ': "Smer: "
+            'Orientation: ': 'Smer: '
             Density Estimation: Ocenjevanje gostote
             kernel_index: false
-            'Kernel:': Jedro:
+            Kernel:: Jedro:
             scale_index: false
-            'Scale:': 'Velikost:'
+            Scale:: Velikost:
         def `init_list_view`:
             hidden: false
     __main__: false
@@ -14634,7 +14541,7 @@ widgets/visualize/pythagorastreeviewer.py:
         def `tooltip`:
             <br>: false
             <p>: false
-            '{}/{} samples ({:2.3f}%)': '{}/{} primerov ({:2.3f}%)'
+            {}/{} samples ({:2.3f}%): {}/{} primerov ({:2.3f}%)
             <hr>: false
             'Split by ': Delitev glede na
             <br><br>: false
@@ -14644,8 +14551,8 @@ widgets/visualize/pythagorastreeviewer.py:
         Mean: Povprečje
         Standard deviation: Standardni odklon
         def `tooltip`:
-            '<p>Mean: {:2.3f}': '<p>Povprečje: {:2.3f}'
-            '<br>Standard deviation: {:2.3f}': '<br>Standardni odklon: {:2.3f}'
+            '<p>Mean: {:2.3f}': <p>Povprečje: {:2.3f}
+            '<br>Standard deviation: {:2.3f}': <br>Standardni odklon: {:2.3f}
             <br>{} samples: <br>{} primerov
             <hr>: false
             'Split by ': Delitev glede na
@@ -14785,7 +14692,7 @@ widgets/visualize/utils/heatmap.py:
             sizePolicy: false
             top: false
         def `__update`:
-            '{:.6g}': false
+            {:.6g}: false
     class `CategoricalColorLegend`:
         def `__init__`:
             sizePolicy: false
@@ -14814,7 +14721,7 @@ widgets/visualize/utils/owlegend.py:
             bottomRight: false
     class `ContinuousLegendItem`:
         def `_format_values`:
-            '{:.3f}': false
+            {:.3f}: false
     class `OWDiscreteLegend`:
         def `set_domain`:
             '[OWDiscreteLegend] The class var provided ': false
@@ -14833,7 +14740,7 @@ widgets/visualize/utils/plotutils.py:
             mouseMode: false
     class `PaletteItemSample`:
         def `__init__`:
-            '{{:.{}f}}': false
+            {{:.{}f}}: false
             {} - {}: false
     class `StyledAxisItem`:
         def `__clear_labelStyle_color`:
@@ -14879,7 +14786,7 @@ widgets/visualize/utils/widget.py:
             def `show_part`:
                 {} = {}: false
                 ... and {over} {pl(over, 'other')}: ... in še {over}
-                '<b>{name}</b>:<br/>': false
+                <b>{name}</b>:<br/>: false
                 <br/>: false
             {pl(len(dom.class_vars), 'Class|Classes')}: {plsi(len(dom.class_vars), 'Razred|Razreda|Razredi')}
             {pl(len(dom.metas), 'Meta')}: Meta {plsi(len(dom.metas), 'spremenljivka|spremenljivki|spremenljivki')}
@@ -14896,7 +14803,7 @@ widgets/visualize/utils/widget.py:
             Selected Data: Izbrani podatki
         class `Warning`:
             Too many labels to show (zoom in or label only selected): Preveč oznak (povečaj ali izberi 'Označi samo izbor in podmnožico')
-            'Subset data contains some instances that do not appear in ': "Podmnožica podatkov vsebuje nekatere primer, ki niso med "
+            'Subset data contains some instances that do not appear in ': 'Podmnožica podatkov vsebuje nekatere primere, ki niso med '
             input data: vhodnimi podatki
             No subset data instances appear in input data: Vhodni podatki ne vsebujejo nobenega podatke iz podane podmnožice.
             Increase opacity if subset is difficult to see: Če je podmnožico težko videti, zmanjšaj prosojnost.
