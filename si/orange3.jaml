@@ -14335,8 +14335,8 @@ widgets/visualize/owtreeviewer.py:
             No tree.: Ni drevesa.
             'Target class: ': 'Ciljni razred: '
             None: Brez
-            'Color by: ': Obarvaj po
-            {} nodes, {} leaves: null
+            'Color by: ': 'Obarvaj po: '
+            {nodes} {pl(nodes, "node")}, {leaves} {pl(leaves, "leaf|leaves")}: {nodes} {plsi(nodes, "vozlišče|vozlišči|vozlišča|vozlišč")}, {leaves} {plsi(leaves, "list")}
         def `node_tooltip`:
             &nbsp;&nbsp;&nbsp;: false
             "<p style='white-space:pre'>": false
@@ -14408,7 +14408,7 @@ widgets/visualize/owtreeviewer2d.py:
             'Depth: ': 'Globina: '
             max_tree_depth: false
             Unlimited: Neomejena
-            {} levels: null
+            {x} levels: {x} {plsi(x, "nivo|nivoja|nivoji|nivojev")}
             'Edge width: ': 'Širina povezav: '
             line_width_method: false
             Fixed: Enaka
