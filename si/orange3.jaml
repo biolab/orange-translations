@@ -10583,17 +10583,28 @@ widgets/unsupervised/owdistancematrix.py:
     __main__: false
     zoo: falaseg
 widgets/unsupervised/owdistances.py:
-    Euclidean: evklidska
-    Manhattan: manhattanska
-    Cosine: kosinusna
-    Jaccard: Jaccardova
-    Spearman: Spearmanova
-    Absolute Spearman: absolutna Spearmanova
-    Pearson: Pearsonova
-    Absolute Pearson: absolutna Pearsonova
-    Hamming: Hammingova
+    Euclidean (normalized): Evklidska (normalizirana)
+    Square root of summed difference between normalized values: Kvadratni koren vsote razlik med normaliziranimi vrednostmi
+    Euclidean: Evklidska
+    Square root of summed difference between values: Kvadratni koren vsote razlik med vrednostmi
+    Manhattan (normalized): Manhattanska (normalizirana)
+    Sum of absolute differences between normalized values: Vsota absolutnih razlik med normaliziranimi vrednostmi
+    Manhattan: Manhattanska
+    Sum of absolute differences between values: Vsota absolutnih razlik med vrednostmi
     Mahalanobis: Mahalanobisova
-    Bhattacharyya: Bhattacharyyeva
+    Mahalanobis distance: Mahalanobisova razdalja
+    Hamming: Hammingova
+    Hamming distance: Hammingova razdalja
+    Cosine: kosinusna
+    Cosine distance: kosinusna razdalja
+    Pearson: Pearsonova
+    Pearson correlation; distance = 1 - ρ/2: Pearsonova korelacija; razdalja = 1 - ρ/2
+    Pearson (absolute): Pearsonova (absolutna)
+    Absolute value of Pearson correlation; distance = 1 - |ρ|: Absolutna vrednost Pearsonove korelacije; razdalja = 1 - |ρ|
+    Spearman: Spearmanova
+    Spearman (absolute): Spearmanova (absolutna)
+    Jaccard: Jaccardova
+    Jaccard distance: Jaccardova razdalja
     class `DistanceRunner`:
         def `run`:
             Calculating...: Računam ...
@@ -10619,19 +10630,18 @@ widgets/unsupervised/owdistances.py:
         class `Warning`:
             Ignoring categorical features: Kategoričnih spremenljivk ne upoštevam
             Ignoring non-binary features: Ne-binarnih spremenljivk ne upoštevam
+            Some metrics don't support sparse data\n: null
+            'and were disabled: {}': null
             Missing values were imputed: Manjkajoče vrednosti so bile nadomeščene
         def `__init__`:
             axis: false
-            Rows: Vrsticami
-            Columns: Stolpci
-            Distances between: Razdalje med
+            Rows: Vrstice
+            Columns: Stolpce
+            Compare: Primerjaj
             Distance Metric: Razdalja
-            metric_idx: false
-            normalized_dist: false
-            Normalized: Normalizirano
-            All dimensions are (implicitly) scaled to a common: 'Vse spremenljivke so preslikane na enak razpon, '
-            scale to normalize the influence across the domain.: s čimer se izenači njihov vpliv na izračunano razdaljo.
             autocommit: false
+        def `refresh_radios`:
+            ', ': null
         def `compute_distances`:
             def `_fix_discrete`:
                 fallback: false
