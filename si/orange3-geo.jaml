@@ -1,5 +1,6 @@
 __init__.py:
     datasets: false
+    get_column: false
 cc_cities.py:
     Kosovo: false
     Kosovo, Republic of: false
@@ -988,14 +989,12 @@ cc_cities.py:
 mapper.py:
     def `is_shapely_speedups_available`:
         ' -c ': false
-        |
-            "import json
-            from shapely.geometry import shape
-            import shapely.speedups
-            shapely.speedups.enable()
-            shape(json.load(open('%s'))['features'][0]['geometry'])
-            "
-        : false
+        """import json
+from shapely.geometry import shape
+import shapely.speedups
+shapely.speedups.enable()
+shape(json.load(open('%s'))['features'][0]['geometry'])
+""": null
         admin0.json: false
     geojson: false
     .: false
@@ -1015,8 +1014,8 @@ mapper.py:
         features: false
         properties: false
         geometry: false
-        latitude: false
-        longitude: false
+        latitude: višina
+        longitude: širina
         _id: false
         adm0_a3: false
         USA: false
@@ -1050,20 +1049,21 @@ mapper.py:
         C: false
         adm0_a3: false
     def `get_bounding_rect`:
-        longitude: false
-        latitude: false
+        longitude: širina
+        latitude: višina
     __main__: false
     RU: false
     SI: false
 utils.py:
     T: false
-    latitude|lat: latitude|lat|višina|viš
-    longitude|lng|long|lon: longitude|lng|long|lon|širina|šir
+    latitude, lat: latitude, lat, višina, viš
+    ', ': null
+    longitude, lng, long, lon: longitude, lng, long, lon, širina, šir
 widgets/__init__.py:
-    icons/category.svg: null
-    '#a0eaa0': null
-    {DEVELOP_ROOT}/doc/_build/html/index.html: null
-    http://orange3-geo.readthedocs.io/en/latest/: null
+    icons/category.svg: false
+    '#a0eaa0': false
+    {DEVELOP_ROOT}/doc/_build/html/index.html: false
+    http://orange3-geo.readthedocs.io/en/latest/: false
 widgets/owchoropleth.py:
     http://basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png: false
     &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, &copy; <a href="https://carto.com/attributions">CARTO</a>: false
@@ -1102,9 +1102,9 @@ widgets/owchoropleth.py:
     transform: false
     disc: false
     time: false
-    Count: Število
+    Instance Count: Število primerov
     size: false
-    Count defined: Število znanih
+    Defined Values Count: Število znanih vrednosti
     count: false
     Sum: Vsota
     sum: false
@@ -1146,7 +1146,7 @@ widgets/owchoropleth.py:
             agg_attr: false
             Values:: Vrednost:
             agg_func: false
-            Agg.:: Prikaz
+            Show:: Pokaži::
             binning_index: false
             Bin width:: Širina intervala
             graph.alpha_value: false
@@ -1156,21 +1156,13 @@ widgets/owchoropleth.py:
             auto_commit: false
         def `send_data`:
             Group: Skupina
-        def `get_palette`:
-            Count: Število
-            Count defined: Število znanih
         def `get_reduced_agg_data`:
             Other: Ostalo
         def `is_mode`:
             Mode: Večina
-        def `is_time`:
-            Count: Število
-            Count defined: Število znanih
         def `get_regions`:
             _id: false
         def `format_agg_val`:
-            Count: Število
-            Count defined: Število znanih
             {value:d}: false
         def `migrate_settings`:
             graph: false
@@ -1238,9 +1230,9 @@ widgets/owgeocoding.py:
             2nd-level subdivisions (1st-level & US counties): Drugi nivo delitve
             append_features: false
             E&xtend coded data with additional region properties: V tabelo dodaj razširjene podatke o regiji
-            Extend coded data with region properties, such as: "Dodaj lastnost, kot so koda ISO, celina, podregija, "
+            Extend coded data with region properties, such as: 'Dodaj lastnosti, kot so koda ISO, celina, podregija, '
             'ISO codes, continent, subregion, region type, ': ""
-            economy type, FIPS/HASC codes, region capital etc. as available.: "vrsta ekonomija, koda FIPS/NASC, glavno mesto ..."
+            economy type, FIPS/HASC codes, region capital etc. as available.: vrsta ekonomija, koda FIPS/NASC, glavno mesto ...
             autocommit: false
             &Apply: Uveljavi
             Unmatched Identifier: Imena, ki niso bila najdena
@@ -1291,7 +1283,7 @@ widgets/owgeotransform.py:
             attr_lon: false
             replace_original: false
             Replace original coordinates: Nadomesti izvirne koordinate
-            'If unchecked, the original coordinates are retained ': "Če polje ni izbrano, so nove koordinate pripete "
+            'If unchecked, the original coordinates are retained ': 'Če polje ni izbrano, so nove koordinate pripete '
             and new coordinates are added as separate variables.: kot ločen stolpec.
             Transformation:: Prevedba
             model: false
@@ -1321,10 +1313,10 @@ widgets/owmap.py:
         class `Error`:
             Data has no latitude and longitude variables.: Podatki ne vsebujejo zemljepisne višine in širine
         class `Warning`:
-            'Plot cannot be displayed because ''{}'' or ''{}'' ': "Podatkov ni mogoče pokazati, ker ima '{}' ali '{}' "
+            "Plot cannot be displayed because '{}' or '{}' ": "Podatkov ni mogoče pokazati, ker ima '{}' ali '{}' "
             is missing for all data points: same neznane vrednosti.
             Points with out of range latitude or longitude are not displayed.: Točke z neveljavno višino ali širino so izpuščene.
-            'Cannot fetch map from the internet. ': "Povezava z zemljevidi na internetu ne deluje. "
+            'Cannot fetch map from the internet. ': 'Povezava z zemljevidi na internetu ne deluje. '
             Displaying only cached parts.: Kažem predhodno shranjene dele.
         class `Information`:
             Points with missing '{}' or '{}' are not displayed: Točke z manjkajočo vrednostjo {} ali {} so izpuščene.
