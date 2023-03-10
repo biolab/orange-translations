@@ -68,6 +68,7 @@ image_grid.py:
             sqeuclidean: false
             lap: false
 import_images.py:
+    image: slika
     class `ImportImages`:
         ImgData: false
         path: false
@@ -89,7 +90,7 @@ import_images.py:
     def `create_table`:
         category: kategorija
         image name: ime slike
-        image: null
+        image: false
         type: false
         origin: false
         size: velikost
