@@ -9554,12 +9554,18 @@ widgets/model/owknn.py:
         knearest: najbližji
         neighbor: sosedi
         neighbour: ""
-        uniform: enake
-        distance: po razdalji
-        euclidean: Evklidska
-        manhattan: Manhattanska
-        chebyshev: Čebiševa
-        mahalanobis: Mahalanobisova
+        uniform: false
+        distance: false
+        euclidean: false
+        manhattan: false
+        chebyshev: false
+        mahalanobis: false
+        Uniform: Enake
+        By Distances: Po razdalji
+        Euclidean: Evklidska
+        Manhattan: Manhattanska
+        Chebyshev: Čebiševa
+        Mahalanobis: Mahalanobisova
         def `add_main_layout`:
             Neighbors: Sosedi
             n_neighbors: false
