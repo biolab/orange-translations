@@ -755,7 +755,7 @@ application/canvasmain.py:
             Please Restart: Ponovni zagon
             Please restart and reopen the file.: Ponovno zaženi in odpri delotok.
         def `install_requirements`:
-            Install required packages: Namesti potrebne dodatke
+            Install required packages: Nameščanje potrebnih dodatkov
         def `reload_last`:
             mainwindow/recent-items: false
             path: false
@@ -1495,8 +1495,8 @@ canvas/items/nodeitem.py:
     def `NodeItem_toolTipHelper`:
         <li>{0}</li>: false
         <b>{title}</b><hr/>: false
-        Inputs:<ul>{inputs}</ul><hr/>: Vhodi:<ul>{{inputs}}</ul><hr/>
-        Outputs:<ul>{outputs}</ul>: Izhodi:<ul>{{outputs}}</ul>
+        Inputs:<ul>{inputs}</ul><hr/>: Vhodi:<ul>{inputs}</ul><hr/>
+        Outputs:<ul>{outputs}</ul>: Izhodi:<ul>{outputs}</ul>
         No inputs<hr/>: Ni vhodov<hr/>
         No outputs: Ni izhodov<hr/>
         'ul { margin-top: 1px; margin-bottom: 1px; }': false
