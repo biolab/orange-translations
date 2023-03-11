@@ -18,19 +18,24 @@ jobs:
       uses: actions/setup-python@v3
       with:
         python-version: "3.10"
-    - name: Install dependencies
+    - name: Install Trubar
       run: |
         python -m pip install --upgrade pip
         python -m pip install trubar
+    - name: Checkout and translate core Orange
+      run: |
         git clone https://github.com/biolab/orange3.git
         git clone https://github.com/biolab/orange-widget-base.git
         git clone https://github.com/biolab/orange-canvas-core.git
-        git clone https://github.com/biolab/orange3-geo.git
-        git clone https://github.com/biolab/orange3-prototypes.git
-    - name: Translate
+        trubar translate -s orange-canvas-core/orangecanvas -d trans/orange-canvas-core/orangecanvas --static si/orange-canvas-static si/orange-canvas-core.yaml
+        trubar translate -s orange-widget-base/orangewidget -d trans/orange-widget-base/orangewidget si/orange-widget-base.yaml
+        trubar translate -s orange3/Orange -d trans/orange3/Orange si/orange3.jaml
+    - name: Checkout and translate add-ons
       run: |
-        trubar --conf si/trubar-config.yaml translate -s orange-canvas-core/orangecanvas -d trans/orange-canvas-core/orangecanvas --static si/orange-canvas-static si/orange-canvas-core.yaml
-        trubar --conf si/trubar-config.yaml translate -s orange-widget-base/orangewidget -d trans/orange-widget-base/orangewidget si/orange-widget-base.yaml
-        trubar --conf si/trubar-config.yaml translate -s orange3/Orange -d trans/orange3/Orange si/orange3.jaml
-        trubar --conf si/trubar-config.yaml translate -s orange3-geo/orangecontrib/geo -d trans/orange3-geo/orangecontrib/geo si/orange3-geo.jaml
-        # trubar --conf si/trubar-config.yaml translate -s orange3-prototypes/orangecontrib/prototypes -d trans/orange3-prototypes/orangecontrib/prototypes si/orange3-prototypes.jaml
+        for translation in si/orange3-*.jaml
+        do
+          name=${translation/si\/orange3-}
+          name=${name/.jaml}
+          git clone https://github.com/biolab/orange3-$name.git
+          trubar translate -s orange3-$name/orangecontrib/$name -d trans/orange3-$name/orangecontrib/$name si/orange3-$name.jaml
+        done
