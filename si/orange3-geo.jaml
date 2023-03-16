@@ -1123,7 +1123,7 @@ widgets/owchoropleth.py:
     class `OWChoropleth`:
         Choropleth Map: Barvni zemljevid
         'A thematic map in which areas are shaded in proportion ': Zemljevid, pobarvan po regijah glede na vrednost spremenljivke
-        to the measurement of the statistical variable being displayed.: ""
+        to the measurement of the statistical variable being displayed.: "."
         icons/Choropleth.svg: false
         class `Inputs`:
             Data: Podatki
@@ -1263,7 +1263,7 @@ widgets/owgeotransform.py:
         {i[0]}:{i[1]}: false
     class `OWGeoTransform`:
         Geo Transform: Prevedba koordinat
-        Transform geographic coordinates from one system to another.: Prevedba zemljepisnega koordinatnega sistema v drug sistem
+        Transform geographic coordinates from one system to another.: Prevedba zemljepisnega koordinatnega sistema v drug sistem.
         icons/GeoTransform.svg: false
         transform: false
         geo: false
@@ -1307,7 +1307,7 @@ widgets/owgeotransform.py:
 widgets/owmap.py:
     class `OWMap`:
         Geo Map: Zemljevid
-        Show data points on a world map.: Pokaži podatke na zemljevidu
+        Show data points on a world map.: Pokaži podatke na zemljevidu.
         icons/GeoMap.svg: false
         Orange.widgets.visualize.owmap.OWMap: false
         class `Error`:
