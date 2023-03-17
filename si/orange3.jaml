@@ -197,9 +197,9 @@ util.py:
         def `funcv`:
             unsafe: false
 version.py:
-    3.34.0: false
-    3.34.0.dev0+05c3601: false
-    05c36017572ecd891cecd67b2b5caa7a1e663b52: false
+    3.35.0: false
+    3.35.0.dev0+c42459a: false
+    c42459a428b30c90f3a1cfdb6d2ab0e755776c4a: false
     .dev: false
 canvas/__main__.py:
     ORANGE_STATISTICS_API_URL: false
@@ -1288,7 +1288,7 @@ data/table.py:
             Y: false
             metas: false
     class `Table`:
-        untitled: false
+        untitled: nepoimenovano
         def `_check_unlocked`:
             Table is read-only unless unlocked: false
         def `__setstate__`:
@@ -1377,7 +1377,7 @@ data/table.py:
             invalid axis: false
             need at least one table to concatenate: false
             attributes: false
-            untitled: false
+            untitled: nepoimenovano
         def `_concatenate_vertical`:
             concatenated tables must have the same domain: false
             X: false
@@ -1427,7 +1427,7 @@ data/table.py:
             and numeric values.: false
             f: false
         def `transpose`:
-            Feature name: false
+            Feature name: Ime spremenljivke
             Feature: false
             Transposing...: false
             old_domain: false
@@ -1804,6 +1804,9 @@ data/sql/table.py:
             ANALYZE: false
         def `_execute_sql_query`:
             Use backend.execute_sql_query: false
+        def `__get_nan_frequency`:
+            ' + ': null
+            COUNT(*) - COUNT({col.to_sql()}): null
 data/sql/backend/base.py:
     class `Backend`:
         def `list_tables`:
@@ -1931,9 +1934,11 @@ datasets/list_update.py:
 distance/base.py:
     class `Distance`:
         def `__new__`:
+            {cls.__name__} does not compute similarity: null
             domain: false
             is_sparse: false
             fallback: false
+            cosine: null
         def `check_no_discrete`:
             columns with discrete values are incommensurable: stolpci kategoričnih vrednosti niso primerljivi
     class `DistanceModel`:
@@ -3773,6 +3778,7 @@ tests/sql/test_sql_table.py:
         def `test_getitem_single_value`:
             postgres: false
             mssql: false
+            Iris-setosa: null
         def `test_type_hints`:
             postgres: false
             mssql: false
@@ -3989,6 +3995,9 @@ tests/sql/test_sql_table.py:
             INSERT INTO orange_tests.efgh (id) VALUES (2): false
             orange_tests: false
             efgh: false
+        def `test_nan_frequency`:
+            postgres: null
+            mssql: null
     __main__: false
 widgets/__init__.py:
     def `widget_discovery`:
@@ -4199,7 +4208,7 @@ widgets/data/owaggregatecolumns.py:
         variance: varianca
         class `Inputs`:
             Data: Podatki
-            Features: false
+            Features: Spremenljivke
         class `Outputs`:
             Data: Podatki
         class `Warning`:
@@ -4265,7 +4274,7 @@ widgets/data/owcolor.py:
                 Copy to all: Dodeli vsem
     class `OWColor`:
         Color: Obarvaj
-        Set color legend for variables.: Določi barvne legende za spremenljivke
+        Set color legend for variables.: Določi barvne legende za spremenljivke.
         icons/Colors.svg: false
         class `Inputs`:
             Data: Podatki
@@ -4334,7 +4343,7 @@ widgets/data/owcolor.py:
 widgets/data/owconcatenate.py:
     class `OWConcatenate`:
         Concatenate: Stakni tabele
-        Concatenate (append) two or more datasets.: Stakni več tabel eno pod drugo
+        Concatenate (append) two or more datasets.: Stakni več tabel eno pod drugo.
         Transform: Predelava podatkov
         icons/Concatenate.svg: false
         append: stakni
@@ -4399,69 +4408,69 @@ widgets/data/owconcatenate.py:
     zoo: false
 widgets/data/owcontinuize.py:
     class `OWContinuize`:
-        Continuize: null
-        'Transform categorical attributes into numeric and, ': null
-        optionally, normalize numeric values.: null
-        icons/Continuize.svg: null
+        Continuize: Kontinuizacija
+        'Transform categorical attributes into numeric and, ': 'Kategorične atribute pretvori v številčne in '
+        optionally, normalize numeric values.: po želji normalizira številčne vrednosti.
+        icons/Continuize.svg: false
         Transform: Predelava podatkov
-        encode: null
-        dummy: null
-        numeric: null
+        encode: kodiranje
+        dummy: navidezni
+        numeric: numerično
         one-hot: null
-        binary: null
-        treatment: null
-        contrast: null
+        binary: binarni
+        treatment: obdelava
+        contrast: kontrast
         class `Inputs`:
-            Data: null
+            Data: Podatki
         class `Outputs`:
-            Data: null
-        First value as base: null
-        Most frequent value as base: null
-        One attribute per value: null
-        Ignore multinomial attributes: null
-        Remove categorical attributes: null
-        Treat as ordinal: null
-        Divide by number of values: null
-        Leave them as they are: null
-        Standardize to μ=0, σ²=1: null
-        Center to μ=0: null
-        Scale to σ²=1: null
-        Normalize to interval [-1, 1]: null
-        Normalize to interval [0, 1]: null
-        Leave it as it is: null
-        One class per value: null
+            Data: Podatki
+        First value as base: Prva vrednost kot osnova
+        Most frequent value as base: Najpogostejša vrednost kot osnova
+        One attribute per value: En atribut na vrednost
+        Ignore multinomial attributes: Prezri multinomske atribute
+        Remove categorical attributes: Odstrani kategorične atribute
+        Treat as ordinal: Obravnavaj kot vrstne
+        Divide by number of values: Deli s številom vrednosti
+        Leave them as they are: Pusti takšne, kot so
+        Standardize to μ=0, σ²=1: Standardiziraj na μ=0, σ²=1
+        Center to μ=0: Centriraj na μ=0
+        Scale to σ²=1: Skaliraj na σ²=1
+        Normalize to interval [-1, 1]: Normaliziraj na interval [-1, 1]
+        Normalize to interval [0, 1]: Normaliziraj na interval [0, 1]
+        Leave it as it is: Pusti tako, kot je
+        One class per value: En razred na vrednost
         def `__init__`:
-            multinomial_treatment: null
-            Categorical Features: null
-            continuous_treatment: null
-            Numeric Features: null
-            class_treatment: null
-            Categorical Outcome(s): null
+            multinomial_treatment: false
+            Categorical Features: Kategorične spremenljivke
+            continuous_treatment: false
+            Numeric Features: Numerične spremenljivke
+            class_treatment: false
+            Categorical Outcome(s): Kategorični rezultat(i)
             autosend: null
         def `send_report`:
-            Settings: null
-            Categorical features: null
-            Numeric features: null
-            Class: null
+            Settings: Nastavitve
+            Categorical features: Kategorične spremenljivke
+            Numeric features: Numerične spremenljivke
+            Class: Razred
         def `migrate_settings`:
-            continuous_treatment: null
-            zero_based: null
+            continuous_treatment: false
+            zero_based: false
     def `make_indicator_var`:
-        {}={}: null
+        {}={}: false
     def `continuize_domain`:
-        continuizer requires data: null
+        continuizer requires data: false
     def `continuize_var`:
         def `continuize_discrete`:
-            {0.name} is a multinomial variable: null
-            Invalid value of `multinomial_treatment`: null
-        Non-primitive variables cannot be continuized: null
+            {0.name} is a multinomial variable: false
+            Invalid value of `multinomial_treatment`: false
+        Non-primitive variables cannot be continuized: false
     def `_ensure_dist`:
-        Need a distribution or data.: null
+        Need a distribution or data.: false
     class `DomainContinuizer`:
         def `__call__`:
-            Domain has multinomial attributes: null
-    __main__: null
-    iris: null
+            Domain has multinomial attributes: false
+    __main__: false
+    iris: false
 widgets/data/owcorrelations.py:
     class `CorrelationType`:
         def `items`:
@@ -4513,7 +4522,7 @@ widgets/data/owcreateclass.py:
             map_values: false
     class `OWCreateClass`:
         Create Class: Ustvari razrede
-        Create class attribute from a string attribute: Ustvari razrede iz besedilne spremenljivke
+        Create class attribute from a string attribute: Ustvari razrede iz besedilne spremenljivke.
         icons/CreateClass.svg: false
         Transform: Predelava podatkov
         class `Inputs`:
@@ -4599,7 +4608,7 @@ widgets/data/owcreateinstance.py:
             {TimeVariableEditor.TIME_FORMAT}: false
     class `OWCreateInstance`:
         Create Instance: Sestavi primer
-        Interactively create a data instance from sample dataset.: Ročno sestavi nov primer
+        Interactively create a data instance from sample dataset.: Ročno sestavi nov primer.
         icons/CreateInstance.svg: false
         Transform: Predelava podatkov
         simulator: nov
@@ -4731,7 +4740,7 @@ widgets/data/owcsvimport.py:
         iso8859-1: iso8859-2
     class `OWCSVFileImport`:
         CSV File Import: Uvoz datoteke CSV
-        Import a data table from a CSV formatted file.: Prebere podatkovno tabelo v obliki CSV
+        Import a data table from a CSV formatted file.: Prebere podatkovno tabelo v obliki CSV.
         icons/CSVFile.svg: false
         Data: Podatki
         file: datoteka
@@ -5037,15 +5046,20 @@ widgets/data/owdatasampler.py:
 widgets/data/owdatasets.py:
     def `format_exception`:
         \n: false
+    class `Namespace`:
+        def `__init__`:
+            English: false
     class `OWDataSets`:
         Datasets: Zbirke podatkov
-        Load a dataset from an online repository: Naloži podatke s spletnega skladišča
+        Load a dataset from an online repository: Naloži podatke s spletnega skladišča.
         icons/DataSets.svg: false
         orangecontrib.prototypes.widgets.owdatasets.OWDataSets: false
         online: true
         data sets: true
         https://datasets.biolab.si/: false
         datasets: false
+        English: Slovenščina
+        All Languages: (Vsi jeziki)
         islocal: false
         label: false
         title: false
@@ -5071,20 +5085,22 @@ widgets/data/owdatasets.py:
             label: false
             _header_index: false
             Search for data set ...: Poišči podatke ...
+            'Show data sets in ': 'Prikaži zbirke podatkov v jeziku '
             Press Return or double-click to send: Pritisni Enter ali dvoklikni za izbor
             Description: Opis
             splitter_state: false
             Initializing: Zaganjam
         def `_parse_info`:
             version: false
-        def `create_model`:
+        def `update_model`:
             ' ': false
-            ', ': true
+            ', ': false
         def `__set_index`:
             Error while fetching updated index: false
-            X: true
+        def `set_model`:
+            X: false
             '888 bytes ': '888 bajtov '
-            '9999.9 MB ': true
+            '9999.9 MB ': false
             100000000: false
             1000000: false
         def `__update_cached_state`:
@@ -5208,7 +5224,7 @@ widgets/data/owdiscretize.py:
     Custom: false
     class `OWDiscretize`:
         Discretize: Diskretizacija
-        Discretize numeric variables: Diskretizacija številskih spremenljivk
+        Discretize numeric variables: Diskretizacija številskih spremenljivk.
         Transform: Predelava podatkov
         icons/Discretize.svg: false
         bin: kategorije
@@ -5483,7 +5499,7 @@ widgets/data/oweditdomain.py:
             type-combo: false
     class `OWEditDomain`:
         Edit Domain: Uredi domeno
-        Rename variables, edit categories and variable annotations.: Preimenuj spremenljivke, uredi kategorije in oznake
+        Rename variables, edit categories and variable annotations.: Preimenuj spremenljivke, uredi kategorije in oznake.
         icons/EditDomain.svg: false
         rename: preimenuj
         drop: odstrani
@@ -5901,7 +5917,7 @@ widgets/data/owfeaturestatistics.py:
                 {missing} ({perc} %): false
     class `OWFeatureStatistics`:
         Feature Statistics: Statistika spremenljivk
-        Show basic statistics for data features.: Pokaže osnovno statistiko spremenljivk
+        Show basic statistics for data features.: Pokaže osnovno statistiko spremenljivk.
         icons/FeatureStatistics.svg: false
         class `Inputs`:
             Data: Podatki
@@ -5926,7 +5942,7 @@ widgets/data/owfile.py:
     class `OWFile`:
         File: Datoteka
         orange.widgets.data.file: false
-        'Read data from an input file or network ': Preberi podatke iz datoteke ali omrežja
+        'Read data from an input file or network ': Preberi podatke iz datoteke ali omrežja.
         and send a data table to the output.: ""
         icons/File.svg: false
         Data: Podatki
@@ -5998,9 +6014,6 @@ widgets/data/owfile.py:
         def `_get_reader`:
             Can not find reader "{qname}": Bralnik "{qname}" ne obstaja.
         def `_describe`:
-            def `missing_prop`:
-                ({prop * 100:.1f}% missing values): ({prop * 100:.1f}% manjkajočih vrednosti)
-                (no missing values): (ni manjkajočih vrednosti)
             attributes: false
             Name: Ime
             Description: Opis
@@ -6133,7 +6146,7 @@ widgets/data/owimpute.py:
         {}.{}: false
     class `OWImpute`:
         Impute: Nadomesti neznane vrednosti
-        Impute missing values in the data table.: Nadomesti neznane vrednosti v podatkih
+        Impute missing values in the data table.: Nadomesti neznane vrednosti v podatkih.
         icons/Impute.svg: false
         substitute: imputacija
         missing: manjkajoče
@@ -6187,7 +6200,7 @@ widgets/data/owmelt.py:
             idvar: false
     class `OWMelt`:
         Melt: Raztopi
-        Convert wide data to narrow data, a list of item-value pairs: Spremeni široke podatke v ozke, to je, seznam parov (stvar, vrednost)
+        Convert wide data to narrow data, a list of item-value pairs: Spremeni široke podatke v ozke, to je, seznam parov (stvar, vrednost).
         Transform: Predelava podatkov
         icons/Melt.svg: false
         shopping list: nakupovalni seznam
@@ -6198,7 +6211,7 @@ widgets/data/owmelt.py:
         class `Outputs`:
             Data: Podatki
         class `Information`:
-            No columns with unique values\n: Ni stolpcev z neponovljenimi vrednostmi.
+            No columns with unique values\n: Ni stolpcev z neponovljenimi vrednostmi.\n
             Only columns with unique valules are useful for row identifiers.: Kot identifikator vrstice so uporabni le stolpci, v katerih se vrednosti ne ponavljajo.
         def `__init__`:
             Unique Row Identifier: Identifikator vrstice
@@ -6542,7 +6555,7 @@ widgets/data/owpaintdata.py:
         Clear the plot: Pobriši vse točke
         ../../../icons/Dlg_clear.png: false
         Paint Data: Risanje podatkov
-        Create data by painting data points on a plane.: Risanje podatkov v graf
+        Create data by painting data points on a plane.: Risanje podatkov v graf.
         icons/PaintData.svg: false
         create: sestavi
         draw: nariši
@@ -6655,16 +6668,16 @@ widgets/data/owpivot.py:
             dtype: false
         def `count_defined`:
             nan: false
-        Count: null
-        Count defined: null
-        Sum: null
-        Mean: null
-        Min: null
-        Max: null
-        Mode: null
-        Median: null
-        Var: null
-        Majority: null
+        Count: Velikost skupine
+        Count defined: Število znanih
+        Sum: Vsota
+        Mean: Povprečje
+        Min: Najmanjša
+        Max: Največja
+        Mode: Najpogostejša
+        Median: Mediana
+        Var: Varianca
+        Majority: Večina
     class `PivotTableView`:
         Total: Skupno
         def `_draw_lines`:
@@ -6969,7 +6982,7 @@ widgets/data/owpreprocess.py:
     CUR Matrix Decomposition: Matrična dekompozicija CUR
     class `OWPreprocess`:
         Preprocess: Predprocesiranje
-        Construct a data preprocessing pipeline.: Sestavi zaporedje predprocesorjev
+        Construct a data preprocessing pipeline.: Sestavi zaporedje predprocesorjev.
         Transform: Predelava podatkov
         icons/Preprocess.svg: false
         process: false
@@ -7011,7 +7024,7 @@ widgets/data/owpreprocess.py:
 widgets/data/owpurgedomain.py:
     class `OWPurgeDomain`:
         Purge Domain: Očisti domeno
-        'Remove redundant values and features from the dataset. ': Odstrani neuporabljene vrednosti in spremenljivke
+        'Remove redundant values and features from the dataset. ': 'Odstrani neuporabljene vrednosti in spremenljivke. '
         Sort values.: Uredi vrednosti.
         icons/PurgeDomain.svg: false
         Transform: Predelava podatkov
@@ -7050,9 +7063,9 @@ widgets/data/owpurgedomain.py:
         reducedClasses: false
         Removed classes: Odstranjeni razredi
         removedClasses: false
-        Reduced metas: Poenostavljene meta spremeljivke
+        Reduced metas: Poenostavljene meta spremenljivke
         reducedMetas: false
-        Removed metas: Odstranjene meta spremeljivke
+        Removed metas: Odstranjene meta spremenljivke
         removedMetas: false
         def `__init__`:
             -: true
@@ -7199,7 +7212,7 @@ out_data = Table.from_numpy(domain, arr)
     filename: false
     class `OWPythonScript`:
         Python Script: Skripta v Pythonu
-        Write a Python script and run it on input data or models.: Poženi ročno napisan program v Pythonu
+        Write a Python script and run it on input data or models.: Poženi ročno napisan program v Pythonu.
         Transform: Predelava podatkov
         icons/PythonScript.svg: false
         program: program
@@ -7331,7 +7344,7 @@ out_data = Table.from_numpy(domain, arr)
 widgets/data/owrandomize.py:
     class `OWRandomize`:
         Randomize: Premešaj
-        Randomize features, class and/or metas in data table.: Premeša značilke, razrede in/ali meta spremenljivke
+        Randomize features, class and/or metas in data table.: Premeša značilke, razrede in/ali meta spremenljivke.
         Transform: Predelava podatkov
         icons/Random.svg: false
         class `Inputs`:
@@ -7400,7 +7413,7 @@ widgets/data/owrank.py:
         _: false
     class `OWRank`:
         Rank: Rangiranje
-        Rank and filter data features by their relevance.: Rangiraj in filtriraj spremenljivke glede na pomembnosti
+        Rank and filter data features by their relevance.: Rangiraj in filtriraj spremenljivke glede na pomembnosti.
         icons/Rank.svg: false
         class `Inputs`:
             Data: Podatki
@@ -7492,7 +7505,7 @@ widgets/data/owsave.py:
 widgets/data/owselectbydataindex.py:
     class `OWSelectByDataIndex`:
         Select by Data Index: Izberi iste vrstice
-        Match instances by index from data subset.: Izberi primere, ki ustrezajo vrsticam iz podmnožice
+        Match instances by index from data subset.: Izberi primere, ki ustrezajo vrsticam iz podmnožice.
         Transform: Predelava podatkov
         icons/SelectByDataIndex.svg: false
         class `Inputs`:
@@ -7552,7 +7565,7 @@ widgets/data/owselectcolumns.py:
     class `OWSelectAttributes`:
         Select Columns: Izbor stolpcev
         'Select columns from the data table and assign them to ': 'Izbor stolpcev in določitev njihovih vlog '
-        data features, classes or meta variables.: (spremenljivka, ciljna spremenljivka, meta spremenljivka)
+        data features, classes or meta variables.: (spremenljivka, ciljna spremenljivka, meta spremenljivka).
         Transform: Predelava podatkov
         icons/SelectColumns.svg: false
         filter: false
@@ -7759,7 +7772,7 @@ widgets/data/owsql.py:
     class `OWSql`:
         SQL Table: Branje SQL
         orange.widgets.data.sql: false
-        Load dataset from SQL.: Naloži podatke iz baze SQL
+        Load dataset from SQL.: Naloži podatke iz baze SQL.
         icons/SQLTable.svg: false
         Data: Podatki
         load: true
@@ -7846,7 +7859,7 @@ widgets/data/owtable.py:
     view: false
     class `OWDataTable`:
         Data Table: Tabela
-        View the dataset in a spreadsheet.: Pregled podatkov v tabeli
+        View the dataset in a spreadsheet.: Pregled podatkov v tabeli.
         icons/Table.svg: false
         class `Inputs`:
             Data: Podatki
@@ -7964,7 +7977,7 @@ spremenljivk iz obstoječih, kot na primer diskretizacijo, PCA in podobno.
 widgets/data/owtranspose.py:
     class `OWTranspose`:
         Transpose: Transponiraj
-        Transpose data table.: Spremeni vrstice v stolpce in obratno
+        Transpose data table.: Spremeni vrstice v stolpce in obratno.
         Transform: Predelava podatkov
         icons/Transpose.svg: false
         class `Inputs`:
@@ -8001,7 +8014,7 @@ widgets/data/owunique.py:
     class `OWUnique`:
         Unique: Enkratni
         icons/Unique.svg: false
-        Filter instances unique by specified key attribute(s).: Filtriraj primere tako, da se ključne vrednosti ne ponavljajo
+        Filter instances unique by specified key attribute(s).: Filtriraj primere tako, da se ključne vrednosti ne ponavljajo.
         Transform: Predelava podatkov
         class `Inputs`:
             Data: Podatki
@@ -8790,7 +8803,7 @@ widgets/evaluate/owpredictions.py:
     class `OWPredictions`:
         Predictions: Napovedi
         icons/Predictions.svg: false
-        Display predictions of models for an input dataset.: Pokaži napovedi modela na tabeli podatkov
+        Display predictions of models for an input dataset.: Pokaži napovedi modela na tabeli podatkov.
         class `Inputs`:
             Data: Podatki
             Predictors: Modeli
@@ -9039,7 +9052,7 @@ widgets/evaluate/owtestandscore.py:
         Cancelled: false
     class `OWTestAndScore`:
         Test and Score: Testiraj in meri
-        Cross-validation accuracy estimation.: Ocenjevanje modeliranja s prečnim preverjanjem
+        Cross-validation accuracy estimation.: Ocenjevanje modeliranja s prečnim preverjanjem.
         icons/TestLearners1.svg: false
         Cross Validation: Prečno preverjanje
         CV: CV
@@ -9280,7 +9293,7 @@ widgets/model/owcalibratedlearner.py:
     class `OWCalibratedLearner`:
         Calibrated Learner: Kalibriran model
         'Wraps another learner with probability calibration and ': 'Ovije drug učni algoritem z modelom za kalibracijo verjetnosti '
-        decision threshold optimization: in optimiranje klasifikacijskega praga
+        decision threshold optimization: in optimiranje klasifikacijskega praga.
         icons/CalibratedLearner.svg: false
         calibration: kalibracija
         threshold: prag
@@ -9385,7 +9398,7 @@ widgets/model/owcurvefit.py:
             maximum: false
     class `OWCurveFit`:
         Curve Fit: Prileganje krivulje
-        Fit a function to data.: Prilagodi krivuljo podatkom
+        Fit a function to data.: Prilagodi krivuljo podatkom.
         icons/CurveFit.svg: false
         function: false
         class `Outputs`:
@@ -9616,7 +9629,7 @@ widgets/model/owlinearregression.py:
             coef: false
             name: false
             intercept: false
-            coefficients: false
+            coefficients: koeficienti
         def `get_learner_parameters`:
             No Regularization: Brez regularizacije
             Ridge Regression (L2) with α={}: Ridge (L2) z α={}
@@ -9697,9 +9710,9 @@ widgets/model/owlogisticregression.py:
             Regularization: Regularizacija
             {}, C={}, class weights={}: {}, C={}, uteži razredov={}
     def `create_coef_table`:
-        name: false
-        intercept: false
-        coefficients: false
+        name: ime
+        intercept: odsek
+        coefficients: koeficienti
     __main__: false
     zoo: false
 widgets/model/ownaivebayes.py:
@@ -9717,8 +9730,8 @@ widgets/model/owneuralnetwork.py:
             future is already set: false
     class `OWNNLearner`:
         Neural Network: Nevronska mreža
-        'A multi-layer perceptron (MLP) algorithm with ': Večnivojski perceptron z vzvratnim širjenjem.
-        backpropagation.: ' (backpropagation)'
+        'A multi-layer perceptron (MLP) algorithm with ': Večnivojski perceptron z vzvratnim širjenjem
+        backpropagation.: ' (backpropagation).'
         icons/NN.svg: false
         mlp: false
         identity: false
@@ -9859,7 +9872,7 @@ widgets/model/owrules.py:
             unordered: neurejena
     class `OWRuleLearner`:
         CN2 Rule Induction: Odločitvena pravila
-        Induce rules from data using CN2 algorithm.: Sestavi odločitvena pravila z algoritmom CN2
+        Induce rules from data using CN2 algorithm.: Sestavi odločitvena pravila z algoritmom CN2.
         icons/CN2RuleInduction.svg: false
         Orange.widgets.classify.owrules.OWRuleLearner: false
         ordered: urejena
@@ -9936,7 +9949,7 @@ widgets/model/owsgd.py:
         Orange.widgets.regression.owsgdregression.OWSGDRegression: null
         sgd: null
         class `Outputs`:
-            Coefficients: null
+            Coefficients: Koeficienti
         Squared Loss: null
         squared_error: null
         Huber: null
@@ -10046,7 +10059,7 @@ widgets/model/owsgd.py:
             coef: null
             name: null
             intercept: null
-            coefficients: null
+            coefficients: koeficienti
         def `migrate_settings`:
             max_iter: null
             n_iter: null
@@ -10071,7 +10084,7 @@ widgets/model/owstack.py:
 widgets/model/owsvm.py:
     class `OWSVM`:
         SVM: true
-        'Support Vector Machines map inputs to higher-dimensional ': Metoda podpornih vektorjev
+        'Support Vector Machines map inputs to higher-dimensional ': Metoda podpornih vektorjev.
         feature spaces.: ""
         icons/SVM.svg: false
         Orange.widgets.classify.owsvmclassification.OWSVMClassification: false
@@ -10082,7 +10095,7 @@ widgets/model/owsvm.py:
             Support vectors: Podporni vektorji
         class `Warning`:
             Input data is sparse, default preprocessing is to scale it.: Podatki so redki; privzeti predprocesor jih skalira.
-        auto: avto
+        auto: true
         Linear: Linearno
         x⋅y: true
         Polynomial: Polinomsko
@@ -10389,7 +10402,7 @@ widgets/unsupervised/__init__.py:
 widgets/unsupervised/owcorrespondence.py:
     class `OWCorrespondenceAnalysis`:
         Correspondence Analysis: Korespondenčna analiza
-        Correspondence analysis for categorical multivariate data.: Korespondenčna analiza kategoričnih multivariatnih podatkov
+        Correspondence analysis for categorical multivariate data.: Korespondenčna analiza kategoričnih multivariatnih podatkov.
         icons/CorrespondenceAnalysis.svg: false
         class `Inputs`:
             Data: Podatki
@@ -10453,7 +10466,7 @@ widgets/unsupervised/owcorrespondence.py:
 widgets/unsupervised/owdbscan.py:
     class `OWDBSCAN`:
         DBSCAN: true
-        Density-based spatial clustering.: Gručenje na podlagi prostorske gostote
+        Density-based spatial clustering.: Gručenje na podlagi prostorske gostote.
         icons/DBSCAN.svg: false
         class `Inputs`:
             Data: Podatki
@@ -10493,7 +10506,7 @@ widgets/unsupervised/owdistancefile.py:
     class `OWDistanceFile`:
         Distance File: Branje razdalj
         orange.widgets.unsupervised.distancefile: false
-        Read distances from a file.: Prebere matriko razdalj iz datoteke
+        Read distances from a file.: Prebere matriko razdalj iz datoteke.
         icons/DistanceFile.svg: false
         load: true
         read: razdalje
@@ -10540,7 +10553,7 @@ widgets/unsupervised/owdistancemap.py:
             '{}, {}: {:.3f}': false
     class `OWDistanceMap`:
         Distance Map: Slika razdalj
-        Visualize a distance matrix.: Prikaže matriko razdalj s toplo gredo
+        Visualize a distance matrix.: Prikaže matriko razdalj s toplo gredo.
         icons/DistanceMap.svg: false
         class `Inputs`:
             Distances: Razdalje
@@ -10695,12 +10708,13 @@ widgets/unsupervised/owdistances.py:
         def `migrate_settings`:
             normalized_dist: false
             metric_idx: false
+            metric_id: null
     __main__: false
     iris: false
 widgets/unsupervised/owdistancetransformation.py:
     class `OWDistanceTransformation`:
         Distance Transformation: Transformacija razdalj
-        Transform distances according to selected criteria.: Transformira razdalje v matriki
+        Transform distances according to selected criteria.: Transformira razdalje v matriki.
         icons/DistancesTransformation.svg: false
         class `Inputs`:
             Distances: Razdalje
@@ -10770,6 +10784,7 @@ widgets/unsupervised/owhierarchicalclustering.py:
             Subset data refers to a different table: Podmnožica podatkov pripada drugi tabeli podatkov.
             Pruned cluster doesn't show colors and indicate subset: Porezano gručenje ne kaže barv in podmnožic.
         def `__init__`:
+            M: null
             linkage: false
             Linkage: Razdalja med gručami
             None: Brez
@@ -10788,7 +10803,7 @@ widgets/unsupervised/owhierarchicalclustering.py:
             Manual: Ročno
             Height ratio:: Razmerje višine:
             cut_ratio: false
-            %: true
+            ' %': true
             Top N:: Prvih N:
             top_n: false
             zoom_factor: false
@@ -10839,8 +10854,8 @@ widgets/unsupervised/owkmeans.py:
             NA: NN
     class `OWKMeans`:
         k-Means: K gruč
-        'k-Means clustering algorithm with silhouette-based ': Gručenje v k gruč in izbor s silhueto
-        quality estimation.: false
+        'k-Means clustering algorithm with silhouette-based ': Gručenje v k gruč in izbor s silhueto.
+        quality estimation.: ""
         icons/KMeans.svg: false
         kmeans: true
         clustering: gručenje
@@ -10907,7 +10922,7 @@ widgets/unsupervised/owlouvainclustering.py:
     cosine: false
     class `OWLouvainClustering`:
         Louvain Clustering: Louvainsko gručenje
-        Detects communities in a network of nearest neighbors.: Poišče zgostitve v mreži najbližjih sosedov
+        Detects communities in a network of nearest neighbors.: Poišče zgostitve v mreži najbližjih sosedov.
         icons/LouvainClustering.svg: false
         class `Inputs`:
             Data: Podatki
@@ -11149,6 +11164,7 @@ widgets/unsupervised/owmds.py:
             Start: Začni
             Refresh:: Izris:
             refresh_rate: false
+            'Kruskal Stress: -': 'Kruskalova napetost: -'
         def `_initialize`:
             labels: false
         def `init_attr_values`:
@@ -11161,13 +11177,17 @@ widgets/unsupervised/owmds.py:
             random: false
         def `on_done`:
             Start: Začni
+        def `update_stress`:
+            -: false
+            {self.stress:.3f}: false
+            'Kruskal Stress: {stress_val}': 'Kruskalova napetost: {stress_val}'
         def `on_exception`:
             Start: Začni
         def `do_initialization`:
             Start: Začni
         def `get_size_data`:
             Stress: Napetost
-        def `stress`:
+        def `get_stress`:
             euclidean: evklidski
         def `migrate_settings`:
             label_only_selected: false
@@ -11218,7 +11238,7 @@ widgets/unsupervised/owpca.py:
     cumulative variance: skupna varianca
     class `OWPCA`:
         PCA: PCA
-        Principal component analysis with a scree-diagram.: Analiza osnovnih komponent
+        Principal component analysis with a scree-diagram.: Analiza osnovnih komponent.
         icons/PCA.svg: false
         principal component analysis: osnovne komponente
         linear transformation: linearna transformacija
@@ -11259,7 +11279,7 @@ widgets/unsupervised/owpca.py:
             bottom: false
         def `commit`:
             variance: false
-            components: false
+            components: komponente
             PC{}: Komp{}
         def `send_report`:
             Normalize data: Normiranje podatkov
@@ -11278,7 +11298,7 @@ widgets/unsupervised/owpca.py:
 widgets/unsupervised/owsavedistances.py:
     class `OWSaveDistances`:
         Save Distance Matrix: Shrani matriko razdalj
-        Save distance matrix to an output file.: Shrani matriko razdalj v datoteko
+        Save distance matrix to an output file.: Shrani matriko razdalj v datoteko.
         icons/SaveDistances.svg: false
         distance matrix: false
         save: false
@@ -11308,7 +11328,7 @@ widgets/unsupervised/owsavedistances.py:
 widgets/unsupervised/owsom.py:
     class `OWSOM`:
         Self-Organizing Map: SOM
-        Computation of self-organizing map.: Samodejni zemljevid
+        Computation of self-organizing map.: Samodejni zemljevid.
         icons/SOM.svg: false
         SOM: true
         class `Inputs`:
@@ -11423,7 +11443,7 @@ widgets/unsupervised/owtsne.py:
             tsne_embedding: false
     class `OWtSNE`:
         t-SNE: false
-        Two-dimensional data projection with t-SNE.: Dvodimenzionalna projekcija podatkov s t-SNE
+        Two-dimensional data projection with t-SNE.: Dvodimenzionalna projekcija podatkov s t-SNE.
         icons/TSNE.svg: false
         tsne: false
         t-SNE-x: false
@@ -11544,16 +11564,12 @@ widgets/utils/colorgradientselection.py:
     class `ColorGradientSelection`:
         def `__init__`:
             gradient-combo-box: false
-            Centered at: Sredina pri
-            threshold-low-slider: false
             Low gradient threshold: Spodnja meja gradienta
             'Applying a low threshold will squeeze the ': 'Določa vrednost, pri kateri se začne '
             gradient from the lower end: barva spreminjati
-            High gradient threshold: Zgornja meja gradienta
-            'Applying a high threshold will squeeze the ': 'Določa vrednost, pri kateri se barva '
-            gradient from the higher end: neha spreminjati
-            Low:: Spodnja:
-            High:: Zgornja:
+            Range:: Razpon:
+        def `__update_center_visibility`:
+            Center at:: Središče v:
 widgets/utils/colorpalettes.py:
     Palette: false
     IndexedPalette: false
@@ -11728,6 +11744,9 @@ widgets/utils/dendrogram.py:
     class `DendrogramWidget`:
         def `_create_label`:
             C{i + 1}: false
+widgets/utils/distmatrixmodel.py:
+    class `DistMatrixModel`:
+        diverging_tritanopic_cwr_75_98_c20: false
 widgets/utils/domaineditor.py:
     class `VarTableModel`:
         feature: spremenljivka
@@ -11947,6 +11966,12 @@ widgets/utils/headerview.py:
 widgets/utils/image.py:
     def `qimage_from_array`:
         Wrong number of channels (need 3 or 4, got {c}: false
+widgets/utils/intervalslider.py:
+    class `IntervalSlider`:
+        def `__init__`:
+            set{opt[0].upper()}{opt[1:]}: false
+        def `setOrientation`:
+            IntervalSlider supports only horizontal direction: false
 widgets/utils/itemdelegates.py:
     class `FixedFormatNumericColumnDelegate`:
         def `displayText`:
@@ -11984,7 +12009,7 @@ widgets/utils/itemmodels.py:
     class `VariableListModel`:
         application/x-Orange-VariableList: false
         def `data`:
-            None: false
+            None: Brez
         def `variable_labels_tooltip`:
             %s = %s: false
             <br/>Variable Labels:<br/>: <br/>Oznake spremenljivke:<br/>
@@ -12290,9 +12315,20 @@ widgets/utils/state_summary.py:
         name: false
     def `_nobr`:
         <nobr>{s}</nobr>: false
-    def `summarize_`:
+    def `summarize_matrix`:
+        {w}×{h}: false
+        {w}×{h} distance matrix: {w}×{h} matrika razdalj
+    def `summarize_results`:
+        {nmethods}×{ninstances}: false
+        "{nmethods} {pl(nmethods, 'method')} ": "{nmethods} {plsi(nmethods, 'metoda')} "
+        on {ninstances} test {pl(ninstances, 'instance')}: na {ninstances} {plsi(ninstances, 'testnem primeru|testnih primerih|testnih primerih')}
+    def `summarize_attributes`:
+        empty list: prazen seznam
+        ', ': false
+        ' and {n - 2} others': ' in še {n - 2} {plsi(n - 2, "spremenljivka|spremenljivki|druge spremenljivke|drugih spremenljivk")}'
+    def `summarize_preprocessor`:
         <br/>: false
-        {_name_of(preprocessor)} (empty): {_name_of(preprocessor)} (prazno)
+        {_name_of(preprocessor)} (empty): (brez predprocesorjev)
         🄿: false
     &#9924;: false
     🄼: false
@@ -12998,6 +13034,8 @@ widgets/visualize/owboxplot.py:
             ?: true
         def `strudel`:
             missing '{attr.name}': (neznana vrednost)
+            add_lpad: false
+            add_rpad: false
             '{value}: {100 * freq / total:.2f}%': true
             '{value}: ({int(freq)})': true
         def `_show_posthoc`:
@@ -13168,7 +13206,7 @@ widgets/visualize/owfreeviz.py:
             Random: Naključna
     class `OWFreeViz`:
         FreeViz: Prostoskop
-        Displays FreeViz projection: Pokaže projekcijo s Prostoskopom
+        Displays FreeViz projection: Pokaže projekcijo s Prostoskopom.
         icons/Freeviz.svg: false
         viz: freeviz
         class `Error`:
@@ -13457,8 +13495,8 @@ widgets/visualize/owlineplot.py:
         def `update_sel_profiles_color`:
             pen: false
     class `OWLinePlot`:
-        Line Plot: false
-        Visualization of data profiles (e.g., time series).: Vizualizacija profilov podatkov, na primer časovnih vrst
+        Line Plot: Črtni diagram
+        Visualization of data profiles (e.g., time series).: Vizualizacija profilov podatkov, na primer časovnih vrst.
         icons/LinePlot.svg: false
         class `Inputs`:
             Data: Podatki
@@ -13686,7 +13724,7 @@ widgets/visualize/ownomogram.py:
 widgets/visualize/owpythagorastree.py:
     class `OWPythagorasTree`:
         Pythagorean Tree: Pitagorovo drevo
-        Pythagorean Tree visualization for tree like-structures.: Prikaz drevesne strukture s Pitagorovim drevesom
+        Pythagorean Tree visualization for tree like-structures.: Prikaz drevesne strukture s Pitagorovim drevesom.
         icons/PythagoreanTree.svg: false
         fractal: false
         class `Inputs`:
@@ -13792,14 +13830,14 @@ widgets/visualize/owpythagoreanforest.py:
             '#ebebeb': false
     class `OWPythagoreanForest`:
         Pythagorean Forest: Pitagorov gozd
-        Pythagorean forest for visualising random forests.: Prikaz naključnega gozda s Pitagorovimi drevesi
+        Pythagorean forest for visualising random forests.: Prikaz naključnega gozda s Pitagorovimi drevesi.
         icons/PythagoreanForest.svg: false
         fractal: false
         class `Inputs`:
             Random Forest: Naključni gozd
             Random forest: Naključni gozd
         class `Outputs`:
-            Tree: drevo
+            Tree: Drevo
         scene: false
         Normal: Sorazmerna
         Square root: Kvadratni koren
@@ -13861,7 +13899,7 @@ widgets/visualize/owradviz.py:
             ...: false
     class `OWRadviz`:
         Radviz: Radviz
-        Display Radviz projection: Projekcija z Radvizom
+        Display Radviz projection: Projekcija z Radvizom.
         icons/Radviz.svg: false
         viz: false
         class `Warning`:
@@ -13886,7 +13924,7 @@ widgets/visualize/owradviz.py:
 widgets/visualize/owruleviewer.py:
     class `OWRuleViewer`:
         CN2 Rule Viewer: Pregledovalnik pravil CN2
-        Review rules induced from data.: Pregled pravil, sestavljenih iz podatkov
+        Review rules induced from data.: Pregled pravil, sestavljenih iz podatkov.
         icons/CN2RuleViewer.svg: false
         class `Inputs`:
             Data: Podatki
@@ -13961,7 +13999,7 @@ widgets/visualize/owscatterplot.py:
             '#505050': false
     class `OWScatterPlot`:
         Scatter Plot: Razsevni diagram
-        'Interactive scatter plot visualization with ': Interaktivni prikaz podatkov z razsevnim diagramom
+        'Interactive scatter plot visualization with ': Interaktivni prikaz podatkov z razsevnim diagramom.
         intelligent data visualization enhancements.: ""
         icons/ScatterPlot.svg: false
         class `Inputs`:
@@ -14409,8 +14447,6 @@ widgets/visualize/owvenndiagram.py:
         def `extract_columnwise`:
             {var_name.name} ({idx}): false
             attributes: false
-            # Tole je najbrž ime stolpca, ki pove, ali je vrstica izbrana?!
-            # Ne vem, kje se to določi
             Selected: null
             ', ': false
         def `create_from_columns`:
@@ -14753,6 +14789,9 @@ widgets/visualize/utils/plotutils.py:
         setAnchor: false
     class `InteractiveViewBox`:
         def `mouseDragEvent`:
+            def `select`:
+                unsuspend_jittering: false
+                suspend_jittering: false
             mouseMode: false
     class `PaletteItemSample`:
         def `__init__`:
@@ -14847,7 +14886,7 @@ widgets/visualize/utils/widget.py:
             An error occurred while projecting data.\n{}: Napaka med projeciranjem podatkov.\n{}
         def `send_components`:
             component: false
-            components: false
+            components: komponente
     __main__: false
     class `OWProjectionWidgetWithName`:
         projection: false

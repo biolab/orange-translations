@@ -1642,7 +1642,7 @@ document/interactions.py:
         Optional[QWidget]: false
         Tuple[int, List[OIPair], List[OIPair]]: false
         Constructing a Link Editor dialog.: false
-        Edit Links: urejanje povezav
+        Edit Links: Urejanje povezav
         Executing a Link Editor Dialog.: false
     class `NewNodeAction`:
         def `create_new`:
@@ -1650,7 +1650,7 @@ document/interactions.py:
     class `EditNodeLinksAction`:
         def `edit_links`:
             Constructing a Link Editor dialog.: false
-            Edit Links: false
+            Edit Links: Urejanje povezav
             Executing a Link Editor Dialog.: false
     class `NewArrowAnnotation`:
         def `__init__`:

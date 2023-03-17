@@ -76,7 +76,7 @@ gui.py:
     def `auto_commit`:
         commit: false
         deferred: false
-        "{label.title()} Automatically": "{label.title()} samodejno"
+        '{label.title()} Automatically': '{label.title()} samodejno'
         addToLayout: false
         decorated: false
         '{type(master).__name__}.{commit_name} must be': false
@@ -138,7 +138,7 @@ gui.py:
         def `__init__`:
             '%%.%if': false
         def `displayText`:
-            NA: "??"
+            NA: ??
     class `VisibleHeaderSectionContextEventFilter`:
         def `eventFilter`:
             Visible headers: false
@@ -155,7 +155,7 @@ gui.py:
     class `CalendarWidgetWithTime`:
         def `__init__`:
             hh:mm:ss: true
-            'Time: ': "Čas: "
+            'Time: ': 'Čas: '
     class `DateTimeEditWCalendarTime`:
         def `__init__`:
             yyyy-MM-dd hh:mm:ss: true
@@ -280,9 +280,9 @@ settings.py:
             values=: false
             ): false
 version.py:
-    4.19.0: false
-    4.19.0.dev0+7cf3ab4: false
-    7cf3ab46771f9dbe968a2be3de243557c3505dc7: false
+    4.20.0: false
+    4.20.0.dev0+5c7b451: false
+    5c7b4516741fcbd2cfca1c6bae8485bd32713d78: false
     .dev: false
 widget.py:
     OWBaseWidget: false
@@ -295,6 +295,8 @@ widget.py:
     def `_load_styled_icon`:
         icons/: false
     class `WidgetMetaClass`:
+        def `__new__`:
+            ',': false
         def `__prepare__`:
             _final_class: false
     class `OWBaseWidget`:
@@ -310,8 +312,65 @@ widget.py:
             Help: Pomoč
             action-help: false
             Show help: Pokaži pomoč
-            Shift+F1: true
+            Report: Poročilo
+            action-report: false
+            Create and display a report: Ustvari in prikaži poročilo
+            alt+r: false
+            send_report: false
+            Save Image: Shrani sliko
+            action-save-image: false
+            Save image: Shrani sliko
+            alt+s: false
+            Reset: Ponastavi
+            action-reset-settings: false
+            Reset settings to default state: Ponastavi privzete nastavitve
+            reset_settings: false
+            Show View Options: Pokaži možnosti pogleda
+            action-visual-settings: false
+            set_visual_settings: false
+            Copy to Clipboard: Kopiraj v odložišče
+            action-copy-to-clipboard: false
+            Copy Image to Clipboard: Kopiraj sliko v odložišče
+            Minimize: Pomanjšaj
+            ctrl+m: false
+            Close: Zapri
+            action-close-window: false
+            ctrl+w: false
+            /menubar: false
+            use-native: false
+            visible: false
+            Show Menu Bar: Pokaži menijsko vrstico
+            action-show-menu-bar: false
+            ctrl+shift+m: false
+            menu-bar-visible-timer: false
+            alt-key-timeout: false
+            '&File': '&Datoteka'
+            menu-file: false
+            '&Edit': '&Uredi'
+            menu-edit: false
+            darwin: false
+            Cut: Izreži
+            Copy: Kopiraj
+            Paste: Prilepi
+            Select All: Izberi vse
+            '&View': '&Pogled'
+            menu-view: false
+            '&Window': '&Okno'
+            menu-window: false
+            '&Help': 'Pomoč'
+            help-menu: false
+            Quick Help Tip: Nasvet za hitro pomoč
+            action-quick-help-tip: false
+            shift+f1: false
+            Show Control Area: Pokaži območje nadzora
+            action-show-control-area: false
             Ctrl+Shift+D: true
+        def `__menuBarVisibleTimeout`:
+            __visible_from_alt_key_press: false
+        def `__setMenuBarVisible`:
+            __visible_from_alt_key_press: false
+            /menubar: false
+            visible: false
         def `__init_subclass__`:
             _final_class: false
             'subclassing of widget classes is deprecated and will be ': false
@@ -338,36 +397,31 @@ widget.py:
             def `minimumSizeHint`:
                 minimumSizeHint: false
         def `_create_default_buttons`:
-            '&Save Image': "&Shrani sliko'"
+            '&Save Image': '&Shrani sliko'
             send_report: false
-            '&Report': "&Poročilo"
-        def `set_basic_layout`:
-            ? "\n                div.field-text {\n                    white-space:\
-                \ pre;\n                }\n                div.field-detailed-text\
-                \ {\n                    margin-top: 0.5em;\n                    margin-bottom:\
-                \ 0.5em;\n                    margin-left: 1em;\n                \
-                \    margin-right: 1em;\n                }"
-            : false
+            '&Report': '&Poročilo'
         def `statusBar`:
             owwidget-status-bar: false
-            Show status bar: Pokaži statusno vrstico
+            Show Status Bar: Pokaži statusno vrstico
             action-show-status-bar: false
+            Show status bar: Pokaži statusno vrstico
             Shift+Ctrl+\\: false
-            help.svg: false
-            Show widget help: Pokaži pomoč za gradnik
-            chart.svg: false
-            Save Image: Shrani sliko
-            send_report: false
-            report.svg: false
-            Report: Poročilo
-            reset_settings: false
-            reset.svg: false
-            Reset settings to defaults: Ponastavi gradnik
-            set_visual_settings: false
-            visual-settings.svg: false
-            Set visual settings: Nastavi vizualne lastnosti
+            'div.field-text { white-space: pre; }\n': false
+            div.field-detailed-text {\n: false
+            '    margin-top: 0.5em; margin-bottom: 0.5em; \n': false
+            '    margin-left: 1em; margin-right: 1em;\n': false
+            '}': false
             buttons: false
+            hamburger.svg: false
+            Menu: Meni
+            status-bar-menu-button: false
+            help.svg: false
+            chart.svg: false
+            report.svg: false
+            reset.svg: false
+            visual-settings.svg: false
             in-out-msg: false
+            menu-view: false
         def `__info`:
             ? "\n            /* vertical row header cell */\n            tr > th.field-name\
                 \ {\n                text-align: right;\n                padding-right:\
@@ -375,15 +429,21 @@ widget.py:
                 \        dt {\n                font-weight: bold;\n            }\n\
                 \            "
             : false
+            in-out-msg: false
             input-summary: false
             output-summary: false
-            in-out-msg: false
             buttons: false
         def `info`:
             '''OWBaseWidget.info'' is a property since 3.19 and will be made read ': false
             only in v4.0.: false
             info: false
-        darwin: false
+        def `__setControlAreaVisible`:
+            action-show-control-area: false
+        def `__showStatusBarMenu`:
+            status-bar-menu-button: false
+            up: false
+        def `keyReleaseEvent`:
+            __visible_from_alt_key_press: false
         def `__showMessage`:
             Ok, got it: Aha, razumem!
             ? "\n            MessageOverlayWidget {\n                background: qlineargradient(\n\
@@ -400,6 +460,9 @@ widget.py:
                 '{}/confirmed': false
             def `_userconfirmed`:
                 '{}/confirmed': false
+        def `actionEvent`:
+            action-canvas-: false
+            menu-window: false
     k: false
     M: false
     G: false
@@ -506,8 +569,9 @@ report/owreport.py:
         def `permission_error`:
             PermissionError when trying to write report.: true
             Error: Napaka
-            Permission error when trying to write report.: Napaka pri shranjevanju poročila.
-            'Permission error occurred ': "Napaka pri shranjevanju '{}': "
+            Permission error when trying to write report.: Napaka pri shranjevanju
+                poročila.
+            'Permission error occurred ': 'Napaka pri shranjevanju ''{}'': '
             while saving '{}'.: shranjevanje v to mapo ni dovoljeno.
         def `set_instance`:
             OWReport.set_instance is deprecated: false
@@ -531,12 +595,15 @@ report/report.py:
     class `Report`:
         def `show_report`:
             Missing Component: Manjkajoča komponenta
-            'Orange can not display reports, because your installation ': "Orange ne more pokazati poročila, ker ne najde "
+            'Orange can not display reports, because your installation ': 'Orange
+                ne more pokazati poročila, ker ne najde '
             contains neither WebEngine nor WebKit.\n\n: komponente WabEngine ali WebKit.\n\n
-            'If you installed Orange with conda or pip, try using another ': "Če ste Orange namestili s conda ali pip, poskusite "
-            'PyQt distribution. ': "z drugo različico PyQt. "
-            'If you installed Orange with a standard installer, please ': "Če ste Orange namestili z običajno namestitvijo, "
-            report this bug.: "nas, prosimo, obvestite o tej napaki."
+            'If you installed Orange with conda or pip, try using another ': 'Če ste
+                Orange namestili s conda ali pip, poskusite '
+            'PyQt distribution. ': 'z drugo različico PyQt. '
+            'If you installed Orange with a standard installer, please ': 'Če ste
+                Orange namestili z običajno namestitvijo, '
+            report this bug.: nas, prosimo, obvestite o tej napaki.
         def `create_report_html`:
             <section class="section">: false
             <div class="content">\n: false
@@ -544,28 +611,25 @@ report/report.py:
         def `report_table`:
             def `report_abstract_model`:
                 def `item_html`:
+                    def `data`:
+                        ' ': false
+                    displayText: false
                     black: false
-                    transparent: false
                     '#ffffff': false
-                    'font-weight: bold;': false
+                    transparent: false
+                    'font-weight: bold; ': false
                     left: false
                     right: false
                     center: false
                     top: false
                     bottom: false
                     middle: false
-                    <{tag} style=": false
-                    color:{fgcolor};: false
-                    border:{border};: false
-                    background:{bgcolor};: false
-                    '{weight}': false
-                    text-align:{halign};: false
-                    vertical-align:{valign};">{decoration}: false
-                    '{text}</{tag}>': false
+                    style=": false
+                    color:{fgcolor}; background:{bgcolor}; {weight}: false
+                    text-align:{halign}; vertical-align:{valign};": false
                     th: false
                     td: false
-                    1px solid black: false
-                    '0': false
+                    <{tag} {style}>{decoration}{value}</{tag}>\n: false
                 <tr>: false
                 <th></th>: false
                 </tr>: false
@@ -575,7 +639,9 @@ report/report.py:
                 '  <tr>\n    {}</tr>\n': false
             ? "<tr><th></th><td colspan='{}'><b>+ {} more</b></td></tr>\n        \
                 \    "
-            : "<tr><th></th><td colspan='{}'><b>+ še {}</b></td></tr>\n"
+            : '<tr><th></th><td colspan=''{}''><b>+ še {}</b></td></tr>
+
+                '
             <table>\n: false
             </table>: false
         def `report_paragraph`:
@@ -584,6 +650,8 @@ report/report.py:
             <p class='caption'>{}</p>: false
     def `plural`:
         s: false
+        'Plural formed by this function is difficult to translate. ': false
+        Use orangecanvas.utils.localization.pl instead.: false
     def `plural_w`:
         s: false
         zero: false
@@ -597,15 +665,15 @@ report/report.py:
         nine: false
         ten: false
     def `bool_str`:
-        'Yes': "Da"
-        'No': "Ne"
+        'Yes': Da
+        'No': Ne
     def `clip_string`:
         '...': true
     def `clipped_list`:
         ', ': true
         ' ': false
     def `get_html_section`:
-        '%a %b %d %y, %H:%M:%S': true
+        '%a %b %d %y, %H:%M:%S': '%d. %m. %y, %H:%M:%S'
         <h1>{} <span class='timestamp'>{}</h1>: false
     def `get_html_subsection`:
         <h2>{}</h2>: false
@@ -624,7 +692,8 @@ report/report.py:
         PNG: false
         ' width="{}" height="{}"': false
         utf-8: false
-        <img src="data:image/png;base64,{}"{}/>: false
+        '<img style="display: inline; vertical-align: middle" ': false
+        src="data:image/png;base64,{img_encoded}"{size_part}/>: false
     def `colored_square`:
         '<span class="legend-square" ': false
         'style="background-color: rgb({}, {}, {})"></span>': false
@@ -691,6 +760,15 @@ tests/base.py:
             Error: false
             Warning: false
             Information: false
+    class `TestWidgetTest`:
+        def `test_get_single_output`:
+            class `A`:
+                A: false
+                class `Inputs`:
+                    Question: false
+                class `Outputs`:
+                    Answer: false
+            6 * 7: false
     class `BaseParameterMapping`:
         def `__init__`:
             both: false
@@ -741,6 +819,15 @@ utils/__init__.py:
     class `DeprecatedSignal`:
         def `__init__`:
             Deprecated: false
+    def `dropdown_popup_geometry`:
+        down: false
+        up: false
+        Invalid 'preferred_direction' ({preferred_direction}): false
+    def `graphemes`:
+        utf-16-le: false
+    def `grapheme_slice`:
+        negative start or end: false
+utils/buttons.py: {}
 utils/cache.py:
     class `LRUCache`:
         __dict: false
@@ -789,10 +876,11 @@ utils/concurrent.py:
 utils/filedialogs.py:
     def `fix_extension`:
         Mismatching extension: Napačna končnica
-        "Extension '{ext}' does not match the chosen file format, {format}.": "Končnica '{ext}' se ne ujema z izbrano obliko datoteke, {format}."
+        Extension '{ext}' does not match the chosen file format, {format}.: Končnica
+            '{ext}' se ne ujema z izbrano obliko datoteke, {format}.
         \n\nWould you like to fix this?: \n\nPopravim?
-        "Change extension to {suggested_ext}": "Spremeni končnico v {suggested_ext}"
-        'Save as ': "Shrani kot "
+        Change extension to {suggested_ext}: Spremeni končnico v {suggested_ext}
+        'Save as ': 'Shrani kot '
         Back: Nazaj
     def `format_filter`:
         '{} (*{})': false
@@ -1025,10 +1113,11 @@ utils/messagewidget.py:
             <div class="field-detailed-text">{}</div>: false
             \n: false
     def `summarize`:
-        "{nerrors} {pl(nerrors, 'error')}": "{nerrors} {plsi(nerrors, 'napaka')}"
-        "{nwarnings} {pl(nwarnings, 'warning')}": "{nwarnings} {plsi(nwarnings, 'opozorilo|opozorili|opozorila|opozoril')}"
-        "{ninfo} {pl(ninfo, 'message')}": "{ninfo} {plsi(ninfo, 'sporočilo|sporočili|sporočila|sporočil')}"
-        "{ninfo} other": "{ninfo} {plsi(ninfo, 'drugih sporočil|drugi sporočili|druga sporočila|drugih sporočil')}"
+        '{nerrors} {pl(nerrors, ''error'')}': '{nerrors} {plsi(nerrors, ''napaka'')}'
+        '{nwarnings} {pl(nwarnings, ''warning'')}': '{nwarnings} {plsi(nwarnings,
+            ''opozorilo|opozorili|opozorila|opozoril'')}'
+        '{ninfo} {pl(ninfo, ''message'')}': '{ninfo} {plsi(ninfo, ''sporočilo|sporočili|sporočila|sporočil'')}'
+        '{ninfo} other {pl(ninfo, ''message'')}': '{ninfo} {plsi(ninfo, ''drugo sporočilo|drugi sporočili|druga sporočila|drugih sporočil'')}'
         ' (': true
         ', ': true
         ): true
@@ -1092,7 +1181,8 @@ utils/saveplot.py:
         directories/last_graph_filter: false
         '~': false
         Error: Napaka
-        'Error occurred while saving file "{}": {}': 'Napaka pri shranjevanju datoteke "{}": {}'
+        'Error occurred while saving file "{}": {}': 'Napaka pri shranjevanju datoteke
+            "{}": {}'
     __main__: false
 utils/signals.py:
     ? '
@@ -1146,10 +1236,21 @@ utils/signals.py:
         def `convert_signals`:
             inputs: false
             outputs: false
+            Inputs: false
+            Outputs: false
         def `_check_input_handlers`:
             'unbound signal(s) in {}: {}': false
             ', ': false
             'missing handlers in {}: {}': false
+        def `_check_ids_unique`:
+            input: false
+            output: false
+            s: false
+            'Name {signal.name} refers to different {direction} ': false
+            signals of {cls.__name__}: false
+            'Id {signal.id} refers to different {direction} ': false
+            '{name} appears as a name and an id of two different ': false
+            '{direction} signals in {cls.__name__}': false
         def `_update_summary`:
             def `format_short`:
                 '-': true
@@ -1376,9 +1477,11 @@ workflow/errorreporting.py:
             Local Variables: false
         def `__init__`:
             Unexpected Error: Nepričakovana napaka
-            The program encountered an unexpected error. Please<br>: Program je naletel na nepričakovano napako. Prosimo<br/>
-            report it anonymously to the developers.<br><br>: za anonimno poročilo razvijalcem.<br/><br/>
-            'The following data will be reported:': "Poslani bodo naslednji podatki:"
+            The program encountered an unexpected error. Please<br>: Program je naletel
+                na nepričakovano napako. Prosimo<br/>
+            report it anonymously to the developers.<br><br>: za anonimno poročilo
+                razvijalcem.<br/><br/>
+            'The following data will be reported:': 'Poslani bodo naslednji podatki:'
             Monospace: false
             def `_reload_text`:
                 error-reporting/add-scheme: false
@@ -1392,7 +1495,8 @@ workflow/errorreporting.py:
                 '&nbsp;': false
                 <tr><th align="left">{}:</th><td>{}</td></tr>: false
                 </table>: false
-            Include workflow (data will NOT be transmitted): Pripni delotok (podatki NE BODO poslani)
+            Include workflow (data will NOT be transmitted): Pripni delotok (podatki
+                NE BODO poslani)
             error-reporting/add-scheme: false
             Send Report (Thanks!): Pošlji poročilo (Hvala!)
             Don't Send: Ne pošiljaj
@@ -1446,13 +1550,14 @@ workflow/mainwindow.py:
         def `reset_widget_settings`:
             Orange: true
             Clear settings: Pobriši shranjene nastavitve
-            "{name} needs to be restarted for the changes to take effect.": 'Da se nastavitve pobrišejo, se mora {name} ponovno zagnati.'
+            '{name} needs to be restarted for the changes to take effect.': Da se
+                nastavitve pobrišejo, se mora {name} ponovno zagnati.
             Press OK to restart {name} now.: Pritisnite OK za ponovni zagon.
             DELETE_ON_START: false
             a: false
             def `restart`:
                 Restart Cancelled: Ponovni zagon preklican
-                Settings will be reset on {}'s next restart: Nastavitve bodo pobrisane ob naslednjem zagonu.
+                Settings will be reset on {name}'s next restart: Nastavitve bodo ponastavljene ob naslednjem ponovnem zagonu
         def `ask_save_report`:
             Report window: Shranjevanje poročila
             The report contains unsaved changes.: Poročilom vsebuje neshranjene spremembe.
