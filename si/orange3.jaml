@@ -12980,9 +12980,9 @@ widgets/visualize/owboxplot.py:
         icons/BoxPlot.svg: false
         whisker: box
         class `Inputs`:
-            Data: false
+            Data: Podatki
         class `Outputs`:
-            Selected Data: false
+            Selected Data: Izbrani podatki
         class `Warning`:
             Data contains no categorical or numeric variables: Podatki ne vsebujejo kategoričnih ali številskih spremenljivk.
         median: false
