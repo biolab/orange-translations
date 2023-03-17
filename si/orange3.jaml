@@ -4431,17 +4431,17 @@ widgets/data/owcontinuize.py:
         Remove categorical attributes: Odstrani kategorične atribute
         Treat as ordinal: Obravnavaj kot vrstne
         Divide by number of values: Deli s številom vrednosti
-        Leave them as they are: Pusti takšne kot so
+        Leave them as they are: Pusti takšne, kot so
         Standardize to μ=0, σ²=1: Standardiziraj na μ=0, σ²=1
         Center to μ=0: Centriraj na μ=0
         Scale to σ²=1: Skaliraj na σ²=1
         Normalize to interval [-1, 1]: Normaliziraj na interval [-1, 1]
         Normalize to interval [0, 1]: Normaliziraj na interval [0, 1]
-        Leave it as it is: Pusti tako kot je
+        Leave it as it is: Pusti tako, kot je
         One class per value: En razred na vrednost
         def `__init__`:
             multinomial_treatment: false
-            Categorical Features: Kategorične spremeljivke
+            Categorical Features: Kategorične spremenljivke
             continuous_treatment: false
             Numeric Features: Numerične spremenljivke
             class_treatment: false
@@ -4449,7 +4449,7 @@ widgets/data/owcontinuize.py:
             autosend: null
         def `send_report`:
             Settings: Nastavitve
-            Categorical features: Kategorične spremeljivke
+            Categorical features: Kategorične spremenljivke
             Numeric features: Numerične spremenljivke
             Class: Razred
         def `migrate_settings`:
@@ -5099,7 +5099,7 @@ widgets/data/owdatasets.py:
             Error while fetching updated index: false
         def `set_model`:
             X: false
-            '888 bytes ': false
+            '888 bytes ': '888 bajtov '
             '9999.9 MB ': false
             100000000: false
             1000000: false
@@ -7063,9 +7063,9 @@ widgets/data/owpurgedomain.py:
         reducedClasses: false
         Removed classes: Odstranjeni razredi
         removedClasses: false
-        Reduced metas: Poenostavljene meta spremeljivke
+        Reduced metas: Poenostavljene meta spremenljivke
         reducedMetas: false
-        Removed metas: Odstranjene meta spremeljivke
+        Removed metas: Odstranjene meta spremenljivke
         removedMetas: false
         def `__init__`:
             -: true
@@ -9711,7 +9711,7 @@ widgets/model/owlogisticregression.py:
             {}, C={}, class weights={}: {}, C={}, uteži razredov={}
     def `create_coef_table`:
         name: ime
-        intercept: prestreženo
+        intercept: odsek
         coefficients: koeficienti
     __main__: false
     zoo: false
@@ -10803,7 +10803,7 @@ widgets/unsupervised/owhierarchicalclustering.py:
             Manual: Ročno
             Height ratio:: Razmerje višine:
             cut_ratio: false
-            ' %': null
+            ' %': true
             Top N:: Prvih N:
             top_n: false
             zoom_factor: false
@@ -11746,7 +11746,7 @@ widgets/utils/dendrogram.py:
             C{i + 1}: false
 widgets/utils/distmatrixmodel.py:
     class `DistMatrixModel`:
-        diverging_tritanopic_cwr_75_98_c20: null
+        diverging_tritanopic_cwr_75_98_c20: false
 widgets/utils/domaineditor.py:
     class `VarTableModel`:
         feature: spremenljivka
@@ -13034,8 +13034,8 @@ widgets/visualize/owboxplot.py:
             ?: true
         def `strudel`:
             missing '{attr.name}': (neznana vrednost)
-            add_lpad: null
-            add_rpad: null
+            add_lpad: false
+            add_rpad: false
             '{value}: {100 * freq / total:.2f}%': true
             '{value}: ({int(freq)})': true
         def `_show_posthoc`:
@@ -13495,7 +13495,7 @@ widgets/visualize/owlineplot.py:
         def `update_sel_profiles_color`:
             pen: false
     class `OWLinePlot`:
-        Line Plot: Linijski diagram
+        Line Plot: Črtni diagram
         Visualization of data profiles (e.g., time series).: Vizualizacija profilov podatkov, na primer časovnih vrst.
         icons/LinePlot.svg: false
         class `Inputs`:
@@ -14790,8 +14790,8 @@ widgets/visualize/utils/plotutils.py:
     class `InteractiveViewBox`:
         def `mouseDragEvent`:
             def `select`:
-                unsuspend_jittering: null
-                suspend_jittering: null
+                unsuspend_jittering: false
+                suspend_jittering: false
             mouseMode: false
     class `PaletteItemSample`:
         def `__init__`:

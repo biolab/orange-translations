@@ -397,7 +397,7 @@ widget.py:
             def `minimumSizeHint`:
                 minimumSizeHint: false
         def `_create_default_buttons`:
-            '&Save Image': '&Shrani sliko'''
+            '&Save Image': '&Shrani sliko'
             send_report: false
             '&Report': '&Poročilo'
         def `statusBar`:
@@ -1117,7 +1117,7 @@ utils/messagewidget.py:
         '{nwarnings} {pl(nwarnings, ''warning'')}': '{nwarnings} {plsi(nwarnings,
             ''opozorilo|opozorili|opozorila|opozoril'')}'
         '{ninfo} {pl(ninfo, ''message'')}': '{ninfo} {plsi(ninfo, ''sporočilo|sporočili|sporočila|sporočil'')}'
-        '{ninfo} other {pl(ninfo, ''message'')}': '{ninfo} {plsi(ninfo, ''ostalo sporočilo|ostali sporočili|ostala sporočila|ostalih sporočil'')}'
+        '{ninfo} other {pl(ninfo, ''message'')}': '{ninfo} {plsi(ninfo, ''drugo sporočilo|drugi sporočili|druga sporočila|drugih sporočil'')}'
         ' (': true
         ', ': true
         ): true
