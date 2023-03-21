@@ -1014,7 +1014,7 @@ shape(json.load(open('%s'))['features'][0]['geometry'])
         features: false
         properties: false
         geometry: false
-        latitude: višina
+        latitude: dolžina
         longitude: širina
         _id: false
         adm0_a3: false
@@ -1050,13 +1050,13 @@ shape(json.load(open('%s'))['features'][0]['geometry'])
         adm0_a3: false
     def `get_bounding_rect`:
         longitude: širina
-        latitude: višina
+        latitude: dolžina
     __main__: false
     RU: false
     SI: false
 utils.py:
     T: false
-    latitude, lat: latitude, lat, višina, viš
+    latitude, lat: latitude, lat, dolžina, dol
     ', ': null
     longitude, lng, long, lon: longitude, lng, long, lon, širina, šir
 widgets/__init__.py:
@@ -1131,13 +1131,13 @@ widgets/owchoropleth.py:
             Selected Data: Izbrani podatki
         graph.plot_widget.plotItem: false
         class `Error`:
-            Data has no latitude and longitude variables.: Podatki ne vsebujejo zemljepisne višine in širine
+            Data has no latitude and longitude variables.: Podatki ne vsebujejo zemljepisne dolžine in širine
         class `Warning`:
             {} points are not in any region.: {} točk(a) ne pripada nobeni regiji.
         def `_add_controls`:
             Map settings: Nastavitve zemljevida
             attr_lat: false
-            Latitude:: Višina:
+            Latitude:: Dolžina:
             attr_lon: false
             Longitude:: Širina:
             admin_level: false
@@ -1220,7 +1220,7 @@ widgets/owgeocoding.py:
             Identifier type:: Vrsta imena
             &Decode latitude and longitude into regions:: Določi ime glede na podane koordinate:
             lat_attr: false
-            Latitude:: Višina:
+            Latitude:: Dolžina:
             lon_attr: false
             Longitude:: Širina:
             admin: false
@@ -1244,12 +1244,12 @@ widgets/owgeocoding.py:
         def `encode`:
             Geocoding %d regions into coordinates: false
             {} / {}: false
-            latitude: višina
+            latitude: dolžina
             longitude: širina
         def `_to_addendum`:
             _id: false
             adm0_a3: false
-            latitude: višina
+            latitude: dolžina
             longitude: širina
         def `migrate_context`:
             str_attr: false
@@ -1274,10 +1274,10 @@ widgets/owgeotransform.py:
         Slovenia 1996 / Slovene National Grid: true
         WGS 84: true
         class `Error`:
-            Data has no latitude and longitude variables.: Podatki ne vsebujejo zemljepisne višine in širine
+            Data has no latitude and longitude variables.: Podatki ne vsebujejo zemljepisne dolžine in širine
         def `__init__`:
             Coordinates:: Koordinate
-            Latitude:: Višina:
+            Latitude:: Dolžina:
             attr_lat: false
             Longitude:: Širina:
             attr_lon: false
@@ -1293,12 +1293,12 @@ widgets/owgeotransform.py:
             to_idx: false
             &Commit: Uveljavi
         def `_transformed_domain`:
-            latitude: višina
+            latitude: dolžina
             longitude: širina
         def `send_report`:
             Original system: Začetni koordinatni sistem
             Conversion to: Prevedba v
-            Coordinate variables: Zemljevpisne koordinate
+            Coordinate variables: Zemljepisne koordinate
             {data.coord_names[0]} / {data.coord_names[1]}: false
             Output coordinates: Izhodne koordinate
             {data.transf_names[0]} / {data.transf_names[1]}: false
@@ -1311,21 +1311,21 @@ widgets/owmap.py:
         icons/GeoMap.svg: false
         Orange.widgets.visualize.owmap.OWMap: false
         class `Error`:
-            Data has no latitude and longitude variables.: Podatki ne vsebujejo zemljepisne višine in širine
+            Data has no latitude and longitude variables.: Podatki ne vsebujejo zemljepisne dolžine in širine
         class `Warning`:
             "Plot cannot be displayed because '{}' or '{}' ": "Podatkov ni mogoče pokazati, ker ima '{}' ali '{}' "
             is missing for all data points: same neznane vrednosti.
-            Points with out of range latitude or longitude are not displayed.: Točke z neveljavno višino ali širino so izpuščene.
+            Points with out of range latitude or longitude are not displayed.: Točke z neveljavno dolžino ali širino so izpuščene.
             'Cannot fetch map from the internet. ': 'Povezava z zemljevidi na internetu ne deluje. '
             Displaying only cached parts.: Kažem predhodno shranjene dele.
         class `Information`:
             Points with missing '{}' or '{}' are not displayed: Točke z manjkajočo vrednostjo {} ali {} so izpuščene.
         def `_add_controls`:
-            Layout: false
+            Layout: Postavitev
             graph.tile_provider_key: false
             Map:: Zemljevid:
             attr_lat: false
-            Latitude:: Višina:
+            Latitude:: Dolžina:
             attr_lon: false
             Longitude:: Širina:
             graph.freeze: false
