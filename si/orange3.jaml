@@ -5006,7 +5006,7 @@ widgets/data/owdatasampler.py:
             selectedFold: false
             Unused subset:: Neuporabljena podmnožica:
             Selected subset:: Izbrana podmnožica:
-            Bootstrap: Zankanje (bootstrap)
+            Bootstrap: Samovzorčenje (bootstrap)
             Time:: Čas:
             sampleSizeSqlTime: false
             ' sec': ' sek'
@@ -5028,7 +5028,7 @@ widgets/data/owdatasampler.py:
             , with replacement: , s ponavljanjem
             '{self.number_of_folds}-fold cross-validation ': '{self.number_of_folds}-kratno prečno preverjanje '
             without subset #{self.selectedFold}: brez podmnožice #{self.selectedFold}
-            Bootstrap: Zankanje
+            Bootstrap: Samovzorčenje
             , stratified (if possible): , stratificirano (če je možno)
             , deterministic: , ponovljivo
             Sampling type: Vrsta vzorčenja
