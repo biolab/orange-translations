@@ -198,8 +198,8 @@ util.py:
             unsafe: false
 version.py:
     3.35.0: false
-    3.35.0.dev0+c42459a: false
-    c42459a428b30c90f3a1cfdb6d2ab0e755776c4a: false
+    3.35.0.dev0+511fbaa: null
+    511fbaa29b98505c51f944353bad72378b34eb84: null
     .dev: false
 canvas/__main__.py:
     ORANGE_STATISTICS_API_URL: false
@@ -4218,7 +4218,7 @@ widgets/data/owaggregatecolumns.py:
         Product: Produkt
         Min: false
         Minimal value: Najmanjša vrednost
-        Max: Maksimum
+        Max: false
         Maximal value: Največja vrednost
         Mean: false
         Mean value: Povprečna vrednost
@@ -4308,7 +4308,7 @@ widgets/data/owcolor.py:
             Duplicated variable names: Podvojena imena spremenljivk
             Variables will not be renamed due to duplicated names.: Zaradi podvojenih imen spremenljivke ne bodo preimenovane.
             "'{name}'": false
-            'Definition for variable {names[0]}, which does not ': Nastavitve za spremenljivko {names[0]}, ki je ni v podatkih,
+            'Definition for variable {names[0]}, which does not ': 'Nastavitve za spremenljivko {names[0]}, ki je ni v podatkih, '
             appear in the data, was ignored.\n: niso uporabljene.\n
             'Definitions for variables ': Nastavitve za {plsi(len(names), "|spremenljivki|spremenljivke")}
             {", ".join(names[:-1])} and {names[-1]}: {", ".join(names[:-1])} in {names[-1]}
@@ -4593,7 +4593,7 @@ widgets/data/owcreateclass.py:
 widgets/data/owcreateinstance.py:
     class `DiscreteVariableEditor`:
         def `__init__`:
-            ?: (nedoločeno)
+            ?: false
     class `ContinuousVariableEditor`:
         def `__init__`:
             Min/Max cannot be NaN.: false
@@ -4665,7 +4665,7 @@ widgets/data/owcsvimport.py:
         def `__init__`:
             utf-8: false
             ColumnType: false
-            .: ,
+            .: true
         def `__repr__`:
             {}{!r}: false
         def `as_dict`:
@@ -4689,7 +4689,7 @@ widgets/data/owcsvimport.py:
             columntypes: false
             rowspec: false
             decimal_separator: false
-            .: ,
+            .: true
             group_separator: false
         def `spec_as_encodable`:
             start: false
@@ -4878,7 +4878,7 @@ widgets/data/owcsvimport.py:
             category: false
             object: false
         X.: false
-        .: ,
+        .: true
         decimal: false
         thousands: false
         float_precision: false
@@ -5483,7 +5483,7 @@ widgets/data/oweditdomain.py:
             ' (reinterpreted as ': ' (pretolmačena v '
             {self.ReinterpretNames[type(tr)]}): true
         def `helpEvent`:
-            Name `{name}` is duplicated: Ime '{ime}' je podvojeno.
+            Name `{name}` is duplicated: Ime '{name}' je podvojeno.
     class `ReinterpretVariableEditor`:
         def `__init__`:
             def `decorate`:
@@ -6710,7 +6710,7 @@ widgets/data/owpivot.py:
             row_feature: false
             Columns: Stolpci
             col_feature: false
-            (Same as rows): (Enako vrsticam)
+            (Same as rows): (Enako kot vrstice)
             Values: Vrednosti
             val_feature: false
             (None): (Brez)
@@ -7218,22 +7218,22 @@ out_data = Table.from_numpy(domain, arr)
         program: program
         function: funkcija
         class `Inputs`:
-            Data: Podatki
+            Data: false
             in_data: false
-            Learner: Učenec
+            Learner: false
             in_learner: false
-            Classifier: Model
+            Classifier: false
             in_classifier: false
-            Object: Objekt
+            Object: false
             in_object: false
         class `Outputs`:
-            Data: Podatki
+            Data: false
             out_data: false
-            Learner: Učenec
+            Learner: false
             out_learner: false
-            Classifier: Model
+            Classifier: false
             out_classifier: false
-            Object: Objekt
+            Object: false
             out_object: false
         data: false
         learner: false
@@ -7692,7 +7692,7 @@ widgets/data/owselectrows.py:
         ends with: se konča z
         end with: se končajo z
         All variables: Vse spremenljivke
-        All numeric variables: Vse številke spremenljivke
+        All numeric variables: Vse številske spremenljivke
         All string variables: Vse besedilne spremenljivke
         class `Error`:
             {}: false
@@ -7722,7 +7722,7 @@ widgets/data/owselectrows.py:
             Type %s not supported.: false
         def `set_new_values`:
             defined: znan
-            ' one of': ' eden izmed '
+            ' one of': ' eden izmed'
             ' and ': ' in '
         def `_values_to_floats`:
             Some values could not be parsed as floats: Nekaterih vrednosti ni mogoče prebrati kot števila
@@ -8859,7 +8859,7 @@ widgets/evaluate/owpredictions.py:
         def `_get_details`:
             Data:<br>: Podatki:<br>
             <hr>: false
-            'Model: {number} model{s}': Modeli: {number} {plsi(numerv, "model")}
+            "Model: {n_predictors} {pl(n_predictors, 'model')}": Modeli: {n_predictors} {plsi(n_predictors, "model")}
             ' ({n_predictors - n_valid} failed)': ' ({n_predictors - n_valid} z napako)'
             <ul>: false
             <li>{name}</li>: false
@@ -11164,7 +11164,7 @@ widgets/unsupervised/owmds.py:
             Start: Začni
             Refresh:: Izris:
             refresh_rate: false
-            'Kruskal Stress: -': 'Kruskalova napetost: -'
+            'Kruskal Stress: -': Kruskalova napetost: -
         def `_initialize`:
             labels: false
         def `init_attr_values`:
@@ -11180,7 +11180,7 @@ widgets/unsupervised/owmds.py:
         def `update_stress`:
             -: false
             {self.stress:.3f}: false
-            'Kruskal Stress: {stress_val}': 'Kruskalova napetost: {stress_val}'
+            'Kruskal Stress: {stress_val}': Kruskalova napetost: {stress_val}
         def `on_exception`:
             Start: Začni
         def `do_initialization`:
@@ -11188,7 +11188,7 @@ widgets/unsupervised/owmds.py:
         def `get_size_data`:
             Stress: Napetost
         def `get_stress`:
-            euclidean: evklidski
+            euclidean: false
         def `migrate_settings`:
             label_only_selected: false
             symbol_opacity: false
@@ -11755,7 +11755,7 @@ widgets/utils/domaineditor.py:
         skip: izpusti
         categorical: kategorična
         numeric: številska
-        text: besedila
+        text: besedilna
         datetime: časovna
         def `headerData`:
             Name: Ime
@@ -12047,10 +12047,6 @@ widgets/utils/itemmodels.py:
                 {}={}: false
             def `format_sparse_bool`:
                 ', ': false
-            def `make_basket_formater`:
-                sparse_x: false
-                sparse_y: false
-                sparse_metas: false
             len(sourcedata) > 2 ** 31 - 1: false
         def `columnSortKeyData`:
             Orange.widgets.utils.itemmodels.TableModel.sortColumnData: false
@@ -13647,7 +13643,7 @@ widgets/visualize/ownomogram.py:
     ': false
     class `ProbabilitiesDotItem`:
         def `get_tooltip_text`:
-            'Total: {} <br/>Probability: {:.0%}': Vsota: {} <br/>Verjetnost: {:.0}&nbsp;%
+            'Total: {} <br/>Probability: {:.0%}': Vsota: {} <br/>Verjetnost: {:.0%}
     class `DiscreteMovableDotItem`:
         def `get_tooltip_text`:
             'Points: {}': Točke: {}
