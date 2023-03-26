@@ -281,8 +281,8 @@ settings.py:
             ): false
 version.py:
     4.20.0: false
-    4.20.0.dev0+5c7b451: false
-    5c7b4516741fcbd2cfca1c6bae8485bd32713d78: false
+    4.20.0.dev0+12431b7: null
+    12431b706930fa29d882b62e8e6a43650206a3c6: null
     .dev: false
 widget.py:
     OWBaseWidget: false
@@ -357,7 +357,7 @@ widget.py:
             menu-view: false
             '&Window': '&Okno'
             menu-window: false
-            '&Help': 'Pomoč'
+            '&Help': Pomoč
             help-menu: false
             Quick Help Tip: Nasvet za hitro pomoč
             action-quick-help-tip: false
@@ -714,6 +714,7 @@ tests/base.py:
         def `wait_for_finished`:
             OWBaseWidget: false
     class `GuiTest`:
+        English: Slovenian
         def `setUpClass`:
             '-': false
             -widgetcount: false
@@ -722,6 +723,11 @@ tests/base.py:
         def `tearDownClass`:
             pyqtgraph: false
             exitCleanup: false
+        def `skipNonEnglish`:
+            English: false
+        def `runOnLanguage`:
+            def `decorator`:
+                Test is valid only for {lang} release: null
     class `WidgetTest`:
         def `__init_subclass__`:
             def `test_minimum_size`:
@@ -827,7 +833,6 @@ utils/__init__.py:
         utf-16-le: false
     def `grapheme_slice`:
         negative start or end: false
-utils/buttons.py: {}
 utils/cache.py:
     class `LRUCache`:
         __dict: false
@@ -1117,7 +1122,8 @@ utils/messagewidget.py:
         '{nwarnings} {pl(nwarnings, ''warning'')}': '{nwarnings} {plsi(nwarnings,
             ''opozorilo|opozorili|opozorila|opozoril'')}'
         '{ninfo} {pl(ninfo, ''message'')}': '{ninfo} {plsi(ninfo, ''sporočilo|sporočili|sporočila|sporočil'')}'
-        '{ninfo} other {pl(ninfo, ''message'')}': '{ninfo} {plsi(ninfo, ''drugo sporočilo|drugi sporočili|druga sporočila|drugih sporočil'')}'
+        '{ninfo} other {pl(ninfo, ''message'')}': '{ninfo} {plsi(ninfo, ''drugo sporočilo|drugi
+            sporočili|druga sporočila|drugih sporočil'')}'
         ' (': true
         ', ': true
         ): true
@@ -1557,7 +1563,8 @@ workflow/mainwindow.py:
             a: false
             def `restart`:
                 Restart Cancelled: Ponovni zagon preklican
-                Settings will be reset on {name}'s next restart: Nastavitve bodo ponastavljene ob naslednjem ponovnem zagonu
+                Settings will be reset on {name}'s next restart: Nastavitve bodo ponastavljene
+                    ob naslednjem ponovnem zagonu
         def `ask_save_report`:
             Report window: Shranjevanje poročila
             The report contains unsaved changes.: Poročilom vsebuje neshranjene spremembe.
