@@ -30,11 +30,17 @@ jobs:
         trubar translate -s orange-canvas-core/orangecanvas -d trans/orange-canvas-core/orangecanvas --static si/orange-canvas-static si/orange-canvas-core.yaml
         trubar translate -s orange-widget-base/orangewidget -d trans/orange-widget-base/orangewidget si/orange-widget-base.yaml
         trubar translate -s orange3/Orange -d trans/orange3/Orange si/orange3.jaml
+        trubar --conf si/test_config.yaml translate -p test_ -s orange3/Orange -d trans/orange3/Orange si/orange3-tests.jaml
     - name: Checkout and translate add-ons
       run: |
         for translation in si/orange3-*.jaml
         do
           name=${translation/si\/orange3-}
+          name=${name/.jaml}
+          if [[ $name == "tests" ]]
+          then
+            continue
+          fi
           name=${name/.jaml}
           git clone https://github.com/biolab/orange3-$name.git
           trubar translate -s orange3-$name/orangecontrib/$name -d trans/orange3-$name/orangecontrib/$name si/orange3-$name.jaml
