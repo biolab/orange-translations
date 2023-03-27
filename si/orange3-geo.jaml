@@ -1056,9 +1056,9 @@ shape(json.load(open('%s'))['features'][0]['geometry'])
     SI: false
 utils.py:
     T: false
-    latitude, lat: latitude, lat, širina, šir
+    latitude, lat: latitude, lat, širina
     ', ': null
-    longitude, lng, long, lon: longitude, lng, long, lon, dolžina, dol
+    longitude, lng, long, lon: longitude, lng, long, lon, dolžina
 widgets/__init__.py:
     icons/category.svg: false
     '#a0eaa0': false
