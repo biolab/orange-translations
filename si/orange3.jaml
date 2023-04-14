@@ -4198,14 +4198,7 @@ widgets/data/owaggregatecolumns.py:
         Compute a sum, max, min ... of selected columns.: Izračunaj vsoto, minimum, maksimum ... izbranih stolpcev.
         Transform: Predelava podatkov
         icons/AggregateColumns.svg: false
-        aggregate: agregacija
-        sum: vsota
-        product: zmnožek
-        max: maksimum
-        min: minimum
-        mean: povprečje
-        median: mediana
-        variance: varianca
+        aggregate columns, aggregate, sum, product, max, min, mean, median, variance: aggregate columns, aggregate, sum, product, max, min, mean, median, variance, agregacija, vsota, zmnožek, maksimum, minimum, povprečje, mediana, varianca
         class `Inputs`:
             Data: Podatki
             Features: Spremenljivke
@@ -4346,9 +4339,7 @@ widgets/data/owconcatenate.py:
         Concatenate (append) two or more datasets.: Stakni več tabel eno pod drugo.
         Transform: Predelava podatkov
         icons/Concatenate.svg: false
-        append: stakni
-        join: združi
-        extend: razširi
+        concatenate, append, join, extend: concatenate, append, join, extend, stakni, združi, razširi
         class `Inputs`:
             Primary Data: Osnovna tabela
             Additional Data: Dodatne tabele
@@ -4525,6 +4516,7 @@ widgets/data/owcreateclass.py:
         Create class attribute from a string attribute: Ustvari razrede iz besedilne spremenljivke.
         icons/CreateClass.svg: false
         Transform: Predelava podatkov
+        create class: create class, razred
         class `Inputs`:
             Data: Podatki
         class `Outputs`:
@@ -4611,7 +4603,7 @@ widgets/data/owcreateinstance.py:
         Interactively create a data instance from sample dataset.: Ročno sestavi nov primer.
         icons/CreateInstance.svg: false
         Transform: Predelava podatkov
-        simulator: nov
+        create instance, simulator: create instance, simulator, nov
         class `Inputs`:
             Data: Podatki
             Reference: Referenca
@@ -4743,11 +4735,7 @@ widgets/data/owcsvimport.py:
         Import a data table from a CSV formatted file.: Prebere podatkovno tabelo v obliki CSV.
         icons/CSVFile.svg: false
         Data: Podatki
-        file: datoteka
-        load: nalaganje
-        read: branje
-        open: odpri
-        csv: true
+        csv file import, file, load, read, open, csv: csv file import, file, load, read, open, csv, datoteka, nalaganje, branje, odpri
         class `Outputs`:
             Data: Podatki
             Loaded data set.: Prebrani podatki.
@@ -4903,8 +4891,7 @@ widgets/data/owdatainfo.py:
         Display basic information about the data set: Pokaže osnovne podatke o tabeli.
         icons/DataInfo.svg: false
         Data: Podatki
-        information: podatki
-        inspect: pregled
+        data info, information, inspect: data info, information, inspect, podatki, pregled
         class `Inputs`:
             Data: Podatki
         def `__init__`:
@@ -4972,7 +4959,7 @@ widgets/data/owdatasampler.py:
         from the input dataset.: iz vhodne tabele.
         icons/DataSampler.svg: false
         Transform: Predelava podatkov
-        random: naključno
+        data sampler, random: data sampler, random, naključno
         class `Inputs`:
             Data: Podatki
         class `Outputs`:
@@ -5227,10 +5214,7 @@ widgets/data/owdiscretize.py:
         Discretize numeric variables: Diskretizacija številskih spremenljivk.
         Transform: Predelava podatkov
         icons/Discretize.svg: false
-        bin: kategorije
-        categorical: intervali
-        nominal: številske
-        ordinal: ordinalne
+        discretize, bin, categorical, nominal, ordinal: discretize, bin, categorical, nominal, ordinal, kategorije, intervali, številske, ordinalne, spremenljivke
         class `Inputs`:
             Data: Podatki
             Input data table: Vhodni podatki
@@ -5501,10 +5485,7 @@ widgets/data/oweditdomain.py:
         Edit Domain: Uredi domeno
         Rename variables, edit categories and variable annotations.: Preimenuj spremenljivke, uredi kategorije in oznake.
         icons/EditDomain.svg: false
-        rename: preimenuj
-        drop: odstrani
-        reorder: preuredi
-        order: uredi
+        edit domain, rename, drop, reorder, order: edit domain, rename, drop, reorder, order, preimenuj, odstrani, preuredi, uredi
         class `Inputs`:
             Data: Podatki
         class `Outputs`:
@@ -5696,8 +5677,7 @@ Categorical features are passed as strings
         existing features in the input dataset.: iz obstoječih.
         Transform: Predelava podatkov
         icons/FeatureConstructor.svg: false
-        function: funkcija
-        lambda: formula
+        feature constructor, function, lambda: feature constructor, function, lambda, funkcija, formula, značilke
         class `Inputs`:
             Data: Podatki
         class `Outputs`:
@@ -5946,10 +5926,7 @@ widgets/data/owfile.py:
         and send a data table to the output.: ""
         icons/File.svg: false
         Data: Podatki
-        file: datoteka
-        load: naloži
-        read: preberi
-        open: odpri
+        file, load, read, open: file, load, read, open, datoteka, naloži, preberi, odpri
         class `Outputs`:
             Data: Podatki
             Attribute-valued dataset read from the input file.: Podatki iz datoteke ali omrežja
@@ -6112,8 +6089,7 @@ widgets/data/owgroupby.py:
         Group by: Združi po
         Transform: Predelava podatkov
         icons/GroupBy.svg: false
-        aggregate: agregiraj
-        group by: skupine
+        aggregate, group by: aggregate, group by, agregiraj, skupine
         class `Inputs`:
             Data: Podatki
             Input data table: Tabela vhodnih podatkov
@@ -6148,8 +6124,7 @@ widgets/data/owimpute.py:
         Impute: Nadomesti neznane vrednosti
         Impute missing values in the data table.: Nadomesti neznane vrednosti v podatkih.
         icons/Impute.svg: false
-        substitute: imputacija
-        missing: manjkajoče
+        impute, substitute, missing: impute, substitute, missing, vstavi, nadomesti, zamenjaj, manjkajoče
         Transform: Predelava podatkov
         class `Inputs`:
             Data: Podatki
@@ -6203,9 +6178,7 @@ widgets/data/owmelt.py:
         Convert wide data to narrow data, a list of item-value pairs: Spremeni široke podatke v ozke, to je, seznam parov (stvar, vrednost).
         Transform: Predelava podatkov
         icons/Melt.svg: false
-        shopping list: nakupovalni seznam
-        wide: širok
-        narrow: ozek
+        melt, shopping list, wide, narrow: melt, shopping list, wide, narrow, nakupovalni seznam, širok, ozek
         class `Inputs`:
             Data: Podatki
         class `Outputs`:
@@ -6276,7 +6249,7 @@ widgets/data/owmergedata.py:
         Merge datasets based on the values of selected features.: Združi tabele glede na vrednosti izbranih spremenljivk.
         Transform: Predelava podatkov
         icons/MergeData.svg: false
-        join: zlivanje
+        merge data, join: merge data, join, zlivanje
         class `Inputs`:
             Data: Podatki
             Data A: false
@@ -6557,8 +6530,7 @@ widgets/data/owpaintdata.py:
         Paint Data: Risanje podatkov
         Create data by painting data points on a plane.: Risanje podatkov v graf.
         icons/PaintData.svg: false
-        create: sestavi
-        draw: nariši
+        paint data, create, draw: paint data, create, draw, sestavi, nariši
         class `Inputs`:
             Data: Podatki
         class `Outputs`:
@@ -6689,9 +6661,7 @@ widgets/data/owpivot.py:
         Reshape data table based on column values.: Preoblikuj podatke glede na vrednosti stolpcev.
         Transform: Predelava podatkov
         icons/Pivot.svg: false
-        pivot: pivot
-        group: skupine
-        aggregate: agregacija
+        pivot table, pivot, group, aggregate: pivot table, pivot, group, aggregate, skupine, agregacija
         class `Inputs`:
             Data: Podatki
         class `Outputs`:
@@ -6985,7 +6955,7 @@ widgets/data/owpreprocess.py:
         Construct a data preprocessing pipeline.: Sestavi zaporedje predprocesorjev.
         Transform: Predelava podatkov
         icons/Preprocess.svg: false
-        process: false
+        preprocess, process: preprocess, process, proces
         class `Inputs`:
             Data: Podatki
         class `Outputs`:
@@ -7028,9 +6998,7 @@ widgets/data/owpurgedomain.py:
         Sort values.: Uredi vrednosti.
         icons/PurgeDomain.svg: false
         Transform: Predelava podatkov
-        remove: odstrani
-        delete: uredi
-        unused: neuporabljene
+        remove, delete, unused: remove, delete, unused, odstrani, uredi, neuporabljene
         class `Inputs`:
             Data: Podatki
         class `Outputs`:
@@ -7215,8 +7183,7 @@ out_data = Table.from_numpy(domain, arr)
         Write a Python script and run it on input data or models.: Poženi ročno napisan program v Pythonu.
         Transform: Predelava podatkov
         icons/PythonScript.svg: false
-        program: program
-        function: funkcija
+        program, function: program, function, funkcija
         class `Inputs`:
             Data: false
             in_data: false
@@ -7347,6 +7314,7 @@ widgets/data/owrandomize.py:
         Randomize features, class and/or metas in data table.: Premeša značilke, razrede in/ali meta spremenljivke.
         Transform: Predelava podatkov
         icons/Random.svg: false
+        randomize, random: randomize, random, naključno
         class `Inputs`:
             Data: Podatki
         class `Outputs`:
@@ -7415,6 +7383,7 @@ widgets/data/owrank.py:
         Rank: Rangiranje
         Rank and filter data features by their relevance.: Rangiraj in filtriraj spremenljivke glede na pomembnosti.
         icons/Rank.svg: false
+        rank, filter: rank, filter, filtriraj
         class `Inputs`:
             Data: Podatki
             Scorer: Kriterij
@@ -7466,7 +7435,7 @@ widgets/data/owsave.py:
         Save data to an output file.: Shrani podatke v datoteko.
         icons/Save.svg: false
         Data: Podatki
-        export: izvoz
+        save data, export: save data, export, izvoz
         class `Inputs`:
             Data: Podatki
         class `Error`:
@@ -7568,10 +7537,7 @@ widgets/data/owselectcolumns.py:
         data features, classes or meta variables.: (spremenljivka, ciljna spremenljivka, meta spremenljivka).
         Transform: Predelava podatkov
         icons/SelectColumns.svg: false
-        filter: false
-        attributes: false
-        target: false
-        variable: false
+        select columns, filter, attributes, target, variable: select columns, filter, attributes, target, variable, atributi, spremenljivke, stolpci
         class `Inputs`:
             Data: Podatki
             Features: Spremenljivke
@@ -7651,7 +7617,7 @@ widgets/data/owselectrows.py:
         Select rows from the data based on values of variables.: Izberi vrstice glede na vrednosti spremenljivk.
         icons/SelectRows.svg: false
         Transform: Predelava podatkov
-        filter: true
+        select rows, filter: select rows, filter, vrstice
         class `Inputs`:
             Data: Podatki
         class `Outputs`:
@@ -7775,7 +7741,7 @@ widgets/data/owsql.py:
         Load dataset from SQL.: Naloži podatke iz baze SQL.
         icons/SQLTable.svg: false
         Data: Podatki
-        load: true
+        sql table, load: sql table, load, naloži,
         class `Outputs`:
             Data: Podatki
             Attribute-valued dataset read from the input file.: Podatki prebrani iz baze
@@ -7945,7 +7911,7 @@ widgets/data/owtransform.py:
         Applies template domain on data table.: Spremeni vhodne podatke glede na domeno iz vzorca.
         Transform: Predelava podatkov
         icons/Transform.svg: false
-        transform: false
+        apply domain, transform: apply domain, transform, predelava
         class `Inputs`:
             Data: Podatki
             Template Data: Podatki z domeno
@@ -7980,6 +7946,7 @@ widgets/data/owtranspose.py:
         Transpose data table.: Spremeni vrstice v stolpce in obratno.
         Transform: Predelava podatkov
         icons/Transpose.svg: false
+        transpose: transpose, spremeni
         class `Inputs`:
             Data: Podatki
         class `Outputs`:
@@ -8494,6 +8461,7 @@ widgets/evaluate/owcalibrationplot.py:
         Calibration Plot: Kalibracijska krivulja
         Calibration plot based on evaluation of classifiers.: Kalibracijska krivulja na osnovi rezultatov vrednotenja modelov.
         icons/CalibrationPlot.svg: false
+        calibration plot: calibration plot, krivulja
         class `Inputs`:
             Evaluation Results: Rezultati vrednotenja
         class `Outputs`:
@@ -8610,6 +8578,7 @@ widgets/evaluate/owconfusionmatrix.py:
         'Display a confusion matrix constructed from ': 'Pokaži matriko zmot glede na '
         the results of classifier evaluations.: rezultate vrednotenja.
         icons/ConfusionMatrix.svg: false
+        confusion matrix: confusion matrix
         class `Inputs`:
             Evaluation Results: Rezultati vrednotenja
         class `Outputs`:
@@ -8687,11 +8656,7 @@ widgets/evaluate/owliftcurve.py:
         'Construct and display a performance curve ': 'Sestavi in pokaže krivuljo zmogljivosti '
         from the evaluation of classifiers.: iz rezultatov vrednotenja.
         icons/LiftCurve.svg: false
-        lift: dvig
-        cumulative gain: kumulativni dobiček
-        precision: preciznost
-        recall: priklic
-        curve: krivulja
+        performance curve, lift, cumulative gain, precision, recall, curve: performance curve, lift, cumulative gain, precision, recall, curve, dvig, kumulativni dobiček, preciznost, priklic, krivulja
         class `Inputs`:
             Evaluation Results: Rezultati vrednotenja
         class `Outputs`:
@@ -8804,6 +8769,7 @@ widgets/evaluate/owpredictions.py:
         Predictions: Napovedi
         icons/Predictions.svg: false
         Display predictions of models for an input dataset.: Pokaži napovedi modela na tabeli podatkov.
+        predictions: predictions
         class `Inputs`:
             Data: Podatki
             Predictors: Modeli
@@ -8954,6 +8920,7 @@ widgets/evaluate/owrocanalysis.py:
         'Display the Receiver Operating Characteristics curve ': 'Pokaže krivuljo ROC za '
         based on the evaluation of classifiers.: rezultate vrednotenja.
         icons/ROCAnalysis.svg: false
+        roc analysis, analyse: roc analysis, analyse
         class `Inputs`:
             Evaluation Results: Rezultati vrednotenja
         plot: false
@@ -9054,8 +9021,7 @@ widgets/evaluate/owtestandscore.py:
         Test and Score: Testiraj in meri
         Cross-validation accuracy estimation.: Ocenjevanje modeliranja s prečnim preverjanjem.
         icons/TestLearners1.svg: false
-        Cross Validation: Prečno preverjanje
-        CV: CV
+        test and score, cross validation, cv: test and score, cross validation, cv, prečno preverjanje
         Orange.widgets.evaluate.owtestlearners.OWTestLearners: false
         class `Inputs`:
             Data: Podatki
@@ -9254,7 +9220,7 @@ widgets/model/owadaboost.py:
         icons/AdaBoost.svg: false
         Orange.widgets.classify.owadaboost.OWAdaBoostClassification: false
         Orange.widgets.regression.owadaboostregression.OWAdaBoostRegression: false
-        boost: false
+        adaboost, boost: adaboost, boost
         class `Inputs`:
             Learner: Učni algoritem
         SAMME: true
@@ -9295,8 +9261,7 @@ widgets/model/owcalibratedlearner.py:
         'Wraps another learner with probability calibration and ': 'Ovije drug učni algoritem z modelom za kalibracijo verjetnosti '
         decision threshold optimization: in optimiranje klasifikacijskega praga.
         icons/CalibratedLearner.svg: false
-        calibration: kalibracija
-        threshold: prag
+        calibrated learner, calibration, threshold: calibrated learner, calibration, threshold, kalibracija, prag
         Sigmoid calibration: Sigmoidna kalibracija
         Isotonic calibration: Izotonična kalibracija
         No calibration: Brez kalibracije
@@ -9329,8 +9294,7 @@ widgets/model/owconstant.py:
         icons/Constant.svg: false
         Orange.widgets.classify.owmajority.OWMajority: false
         Orange.widgets.regression.owmean.OWMean: false
-        majority: false
-        mean: false
+        constant, majority, mean: constant, majority, mean, večina, povprečje
     __main__: false
     iris: false
 widgets/model/owcurvefit.py:
@@ -9400,7 +9364,7 @@ widgets/model/owcurvefit.py:
         Curve Fit: Prileganje krivulje
         Fit a function to data.: Prilagodi krivuljo podatkom.
         icons/CurveFit.svg: false
-        function: false
+        curve fit, function: curve fit, function, krivulja, prilagajanje
         class `Outputs`:
             Coefficients: Koeficienti
         class `Warning`:
@@ -9563,10 +9527,7 @@ widgets/model/owknn.py:
         icons/KNN.svg: false
         Orange.widgets.classify.owknn.OWKNNLearner: false
         Orange.widgets.regression.owknnregression.OWKNNRegression: false
-        k nearest: k sosedov
-        knearest: najbližji
-        neighbor: sosedi
-        neighbour: ""
+        knn, k nearest, knearest, neighbor, neighbour: knn, k nearest, knearest, neighbor, neighbour, najbližji, sosedi
         uniform: false
         distance: false
         euclidean: false
@@ -9600,9 +9561,7 @@ widgets/model/owlinearregression.py:
         L2 (ridge) or L1L2 (elastic net) regularization.: različnimi vrstami regularizacije.
         icons/LinearRegression.svg: false
         Orange.widgets.regression.owlinearregression.OWLinearRegression: false
-        ridge: true
-        lasso: true
-        elastic net: true
+        linear regression, ridge, lasso, elastic net: linear regression, ridge, lasso, elastic net, regresija, regularizacija
         class `Outputs`:
             Coefficients: Koeficienti
         No regularization: Brez regularizacije
@@ -9648,9 +9607,7 @@ widgets/model/owloadmodel.py:
         Load a model from an input file.: Preberi model iz datoteke.
         Orange.widgets.classify.owloadclassifier.OWLoadClassifier: false
         icons/LoadModel.svg: false
-        file: datoteka
-        open: odpri
-        model: model
+        load model, file, open, model: load model, file, open, model, datoteka, odpri
         class `Outputs`:
             Model: true
         class `Error`:
@@ -9677,6 +9634,7 @@ widgets/model/owlogisticregression.py:
         LASSO (L1) or ridge (L2) regularization.: ""
         icons/LogisticRegression.svg: false
         Orange.widgets.classify.owlogisticregression.OWLogisticRegression: false
+        logistic regression: logistic regression, regresija, regularizacija
         class `Outputs`:
             Coefficients: Koeficienti
         Lasso (L1): true
@@ -9722,6 +9680,7 @@ widgets/model/ownaivebayes.py:
         Bayes' theorem with the assumption of feature independence.: in predpostavlja pogojno neodvisnost spremenljivk.
         icons/NaiveBayes.svg: false
         Orange.widgets.classify.ownaivebayes.OWNaiveBayes: false
+        naive bayes: naive bayes, bayes, pogojna neodvisnost
     __main__: false
     iris: false
 widgets/model/owneuralnetwork.py:
@@ -9733,7 +9692,7 @@ widgets/model/owneuralnetwork.py:
         'A multi-layer perceptron (MLP) algorithm with ': Večnivojski perceptron z vzvratnim širjenjem
         backpropagation.: ' (backpropagation).'
         icons/NN.svg: false
-        mlp: false
+        neural network, mlp: neural network, mlp, večnivojskost, mreža
         identity: false
         logistic: false
         tanh: false
@@ -9796,6 +9755,7 @@ widgets/model/owrandomforest.py:
         icons/RandomForest.svg: false
         Orange.widgets.classify.owrandomforest.OWRandomForest: false
         Orange.widgets.regression.owrandomforestregression.OWRandomForestRegression: false
+        random forest: random forest, drevesa
         class `Error`:
             Insufficient number of attributes ({}): Nezadostno število spremenljivk ({})
         class `Warning`:
@@ -9875,6 +9835,7 @@ widgets/model/owrules.py:
         Induce rules from data using CN2 algorithm.: Sestavi odločitvena pravila z algoritmom CN2.
         icons/CN2RuleInduction.svg: false
         Orange.widgets.classify.owrules.OWRuleLearner: false
+        cn2 rule induction: cn2 rule induction
         ordered: urejena
         unordered: neurejena
         exclusive: eno pravilo
@@ -9934,6 +9895,7 @@ widgets/model/owsavemodel.py:
         Save a trained model to an output file.: Shrani model v datoteko.
         icons/SaveModel.svg: false
         Orange.widgets.classify.owsaveclassifier.OWSaveClassifier: false
+        save model, save: save model, save
         class `Inputs`:
             Model: true
         Pickled model (*.pkcls): Pickle z modelom (*.pickle)
@@ -10089,7 +10051,7 @@ widgets/model/owsvm.py:
         icons/SVM.svg: false
         Orange.widgets.classify.owsvmclassification.OWSVMClassification: false
         Orange.widgets.regression.owsvmregression.OWSVMRegression: false
-        support vector machines: podporni vektorji
+        svm, support vector machines: svm, support vector machines, podporni vektorji
         class `Outputs`:
             Support Vectors: Podporni vektorji
             Support vectors: Podporni vektorji
@@ -10172,7 +10134,7 @@ widgets/model/owtree.py:
         Orange.widgets.regression.owregressiontree.OWRegressionTree: false
         Orange.widgets.classify.owclassificationtree.OWTreeLearner: false
         Orange.widgets.regression.owregressiontree.OWTreeLearner: false
-        Classification Tree: Klasifikacijsko drevo
+        tree, classification tree: tree, classification tree, klasifikacijsko drevo
         'Min. number of instances in leaves: ': 'Min. število primerov v listu: '
         limit_min_leaf: false
         min_leaf: false
@@ -10404,6 +10366,7 @@ widgets/unsupervised/owcorrespondence.py:
         Correspondence Analysis: Korespondenčna analiza
         Correspondence analysis for categorical multivariate data.: Korespondenčna analiza kategoričnih multivariatnih podatkov.
         icons/CorrespondenceAnalysis.svg: false
+        correspondence analysis: correspondence analysis
         class `Inputs`:
             Data: Podatki
         class `Outputs`:
@@ -10508,9 +10471,7 @@ widgets/unsupervised/owdistancefile.py:
         orange.widgets.unsupervised.distancefile: false
         Read distances from a file.: Prebere matriko razdalj iz datoteke.
         icons/DistanceFile.svg: false
-        load: true
-        read: razdalje
-        open: file
+        distance file, load, read, open: distance file, load, read, open, naloži, preberi, odpri
         class `Outputs`:
             Distances: Razdalje
         class `Error`:
@@ -10555,6 +10516,7 @@ widgets/unsupervised/owdistancemap.py:
         Distance Map: Slika razdalj
         Visualize a distance matrix.: Prikaže matriko razdalj s toplo gredo.
         icons/DistanceMap.svg: false
+        distance map: distance map, slika razdalj
         class `Inputs`:
             Distances: Razdalje
         class `Outputs`:
@@ -10596,6 +10558,7 @@ widgets/unsupervised/owdistancematrix.py:
         Distance Matrix: Matrika razdalj
         View distance matrix.: Pokaže matriko razdalj.
         icons/DistanceMatrix.svg: false
+        distance matrix: distance matrix
         class `Inputs`:
             Distances: Razdalje
         class `Outputs`:
@@ -10668,6 +10631,7 @@ widgets/unsupervised/owdistances.py:
         Distances: Razdalje
         Compute a matrix of pairwise distances.: Izračunaj matriko razdalj.
         icons/Distance.svg: false
+        distances: distances
         class `Inputs`:
             Data: Podatki
         class `Outputs`:
@@ -10716,6 +10680,7 @@ widgets/unsupervised/owdistancetransformation.py:
         Distance Transformation: Transformacija razdalj
         Transform distances according to selected criteria.: Transformira razdalje v matriki.
         icons/DistancesTransformation.svg: false
+        distance transformation: distance transformation
         class `Inputs`:
             Distances: Razdalje
         class `Outputs`:
@@ -10766,6 +10731,7 @@ widgets/unsupervised/owhierarchicalclustering.py:
         'Display a dendrogram of a hierarchical clustering ': 'Prikaži dendrogram hierarhičnega razvrščanja v skupine, '
         constructed from the input distance matrix.: zgrajenega iz matrike razdalj.
         icons/HierarchicalClustering.svg: false
+        hierarchical clustering: hierarchical clustering, dendrogram, razvrščanje, skupine
         class `Inputs`:
             Distances: Razdalje
             Data Subset: Podmnožica primerov
@@ -10857,8 +10823,7 @@ widgets/unsupervised/owkmeans.py:
         'k-Means clustering algorithm with silhouette-based ': Gručenje v k gruč in izbor s silhueto.
         quality estimation.: ""
         icons/KMeans.svg: false
-        kmeans: true
-        clustering: gručenje
+        k-means, kmeans, clustering: k-means, kmeans, clustering, gručenje
         class `Inputs`:
             Data: Podatki
         class `Outputs`:
@@ -11131,8 +11096,7 @@ widgets/unsupervised/owmds.py:
         'Two-dimensional data projection by multidimensional ': 'Dvodimenzionalna projekcija večdimenzionalnih podatkov, '
         scaling constructed from a distance matrix.: ki poskuša ohraniti razdalje med primeri.
         icons/MDS.svg: false
-        multidimensional scaling: true
-        multi dimensional scaling: mds
+        mds, multidimensional scaling, multi dimensional scaling: mds, multidimensional scaling, multi dimensional scaling, večdimenzionalnost
         class `Inputs`:
             Distances: Razdalja
         Every iteration: po vsakem koraku
@@ -11240,8 +11204,7 @@ widgets/unsupervised/owpca.py:
         PCA: PCA
         Principal component analysis with a scree-diagram.: Analiza osnovnih komponent.
         icons/PCA.svg: false
-        principal component analysis: osnovne komponente
-        linear transformation: linearna transformacija
+        pca, principal component analysis, linear transformation: pca, principal component analysis, linear transformation, osnovne komponente, linearna transformacija
         class `Inputs`:
             Data: Podatki
         class `Outputs`:
@@ -11300,8 +11263,7 @@ widgets/unsupervised/owsavedistances.py:
         Save Distance Matrix: Shrani matriko razdalj
         Save distance matrix to an output file.: Shrani matriko razdalj v datoteko.
         icons/SaveDistances.svg: false
-        distance matrix: false
-        save: false
+        save distance matrix, distance matrix, save: save distance matrix, distance matrix, matrika, razdalje
         Excel File (*.xlsx): Excelova datoteka (*.xlsx)
         Distance File (*.dst): Datoteka razdalj (*.dst)
         class `Warning`:
@@ -11330,7 +11292,7 @@ widgets/unsupervised/owsom.py:
         Self-Organizing Map: SOM
         Computation of self-organizing map.: Samodejni zemljevid.
         icons/SOM.svg: false
-        SOM: true
+        self-organizing map, som: self-organizing map, som, samodejni zemljevid
         class `Inputs`:
             Data: Podatki
         class `Outputs`:
@@ -11445,7 +11407,7 @@ widgets/unsupervised/owtsne.py:
         t-SNE: false
         Two-dimensional data projection with t-SNE.: Dvodimenzionalna projekcija podatkov s t-SNE.
         icons/TSNE.svg: false
-        tsne: false
+        t-sne, tsne: tsne, projekcija podatkov
         t-SNE-x: false
         t-SNE-y: false
         class `Information`:
@@ -12922,7 +12884,7 @@ widgets/visualize/owbarplot.py:
         Bar Plot: Palice
         Visualizes comparisons among categorical variables.: Vizualna primerjava kategoričnih spremenljivk.
         icons/BarPlot.svg: false
-        chart: false
+        bar plot, chart: bar plot, chart, stolpčni diagram, grafikon
         class `Inputs`:
             Data: Podatki
             Data Subset: Podmnožica podatkov
@@ -12974,7 +12936,7 @@ widgets/visualize/owboxplot.py:
         Box Plot: Škatla z brki
         Visualize the distribution of feature values in a box plot.: Prikaži porazdelitev vrednosti spremenljivke v škatli z brki.
         icons/BoxPlot.svg: false
-        whisker: box
+        box plot, whisker: box plot, whisker
         class `Inputs`:
             Data: Podatki
         class `Outputs`:
@@ -13059,7 +13021,7 @@ widgets/visualize/owdistributions.py:
         Distributions: Porazdelitve
         Display value distributions of a data feature in a graph.: Pokaži porazdelitev vrednosti spremenljivke.
         icons/Distribution.svg: false
-        histogram: true
+        distributions, histogram: distributions, histogram
         class `Inputs`:
             Data: Podatki
             Set the input dataset: Določi vhodne podatke
@@ -13204,7 +13166,7 @@ widgets/visualize/owfreeviz.py:
         FreeViz: Prostoskop
         Displays FreeViz projection: Pokaže projekcijo s Prostoskopom.
         icons/Freeviz.svg: false
-        viz: freeviz
+        freeviz, viz: freeviz, viz
         class `Error`:
             Data must have a target variable.: Podatki morajo imeti ciljno spremenljivko.
             Data must have a single target variable.: Podatki morajo imeti eno ciljno spremenljivko.
@@ -13263,6 +13225,7 @@ widgets/visualize/owheatmap.py:
         Heat Map: Topla greda
         Plot a data matrix heatmap.: Pokaži podatke v topli gredi.
         icons/Heatmap.svg: false
+        heat map: heat map
         class `Inputs`:
             Data: Podatki
         class `Outputs`:
@@ -13395,6 +13358,7 @@ widgets/visualize/owlinearprojection.py:
         'A multi-axis projection of data onto ': 'Projekcija večdimenzionalnih podatkov '
         a two-dimensional plane.: v dve dimenziji.
         icons/LinearProjection.svg: false
+        linear projection: linear projection
         Circular Placement: Krožna postavitev
         Linear Discriminant Analysis: Linearna diskriminantna analiza
         Principal Component Analysis: Analiza osnovnih komponent
@@ -13494,6 +13458,7 @@ widgets/visualize/owlineplot.py:
         Line Plot: Črtni diagram
         Visualization of data profiles (e.g., time series).: Vizualizacija profilov podatkov, na primer časovnih vrst.
         icons/LinePlot.svg: false
+        line plot: line plot
         class `Inputs`:
             Data: Podatki
             Data Subset: Podmnožica podatkov
@@ -13575,6 +13540,7 @@ widgets/visualize/owmosaic.py:
         Mosaic Display: Mozaik
         Display data in a mosaic plot.: Pokaži mozaik za podatke.
         icons/MosaicDisplay.svg: false
+        mosaic display: mosaic display
         class `Inputs`:
             Data: Podatki
             Data Subset: Podmnožica podatkov
@@ -13667,6 +13633,7 @@ widgets/visualize/ownomogram.py:
         ' Nomograms for Visualization of Naive Bayesian': 'Nomogram za prikaz '
         ' and Logistic Regression Classifiers.': naivnega Bayesovega modela in logistične regresije.
         icons/Nomogram.svg: false
+        nomogram: nomogram
         class `Inputs`:
             Classifier: Model
             Data: Podatki
@@ -13722,7 +13689,7 @@ widgets/visualize/owpythagorastree.py:
         Pythagorean Tree: Pitagorovo drevo
         Pythagorean Tree visualization for tree like-structures.: Prikaz drevesne strukture s Pitagorovim drevesom.
         icons/PythagoreanTree.svg: false
-        fractal: false
+        pythagorean tree, fractal: pythagorean tree, fractal, fraktal
         class `Inputs`:
             Tree: Drevo
         class `Outputs`:
@@ -13828,13 +13795,12 @@ widgets/visualize/owpythagoreanforest.py:
         Pythagorean Forest: Pitagorov gozd
         Pythagorean forest for visualising random forests.: Prikaz naključnega gozda s Pitagorovimi drevesi.
         icons/PythagoreanForest.svg: false
-        fractal: false
+        pythagorean forest, fractal: pythagorean forest, fractal, fraktal, drevesa
         class `Inputs`:
             Random Forest: Naključni gozd
             Random forest: Naključni gozd
         class `Outputs`:
             Tree: Drevo
-        scene: false
         Normal: Sorazmerna
         Square root: Kvadratni koren
         Logarithmic: Logaritmična
@@ -13897,7 +13863,7 @@ widgets/visualize/owradviz.py:
         Radviz: Radviz
         Display Radviz projection: Projekcija z Radvizom.
         icons/Radviz.svg: false
-        viz: false
+        radviz, viz: radviz, viz
         class `Warning`:
             Categorical variables with more than two values are not shown.: Kategorične spremenljivke z več kot dvema vrednostima niso prikazane.
             Maximum number of selected variables reached.: Doseženo je največje možno število izbranih spremenljivk.
@@ -13922,6 +13888,7 @@ widgets/visualize/owruleviewer.py:
         CN2 Rule Viewer: Pregledovalnik pravil CN2
         Review rules induced from data.: Pregled pravil, sestavljenih iz podatkov.
         icons/CN2RuleViewer.svg: false
+        cn2 rule viewer: cn2 rule viewer
         class `Inputs`:
             Data: Podatki
             Classifier: Klasifikator
@@ -13998,6 +13965,7 @@ widgets/visualize/owscatterplot.py:
         'Interactive scatter plot visualization with ': Interaktivni prikaz podatkov z razsevnim diagramom.
         intelligent data visualization enhancements.: ""
         icons/ScatterPlot.svg: false
+        scatter plot: scatter plot, grafikon
         class `Inputs`:
             Features: Spremenljivki
         class `Outputs`:
@@ -14131,6 +14099,7 @@ widgets/visualize/owsieve.py:
         'Visualize the observed and expected frequencies ': 'Prikaz pričakovanih in opaženih pogostosti '
         for a combination of values.: za kombinacije spremenljivk.
         icons/SieveDiagram.svg: falase
+        sieve diagram: sieve diagram, grafikon
         class `Inputs`:
             Data: Podatki
             Features: Spremenljivki
@@ -14183,6 +14152,7 @@ widgets/visualize/owsilhouetteplot.py:
         'Visually assess cluster quality and ': Pokaže kvaliteto gručenja oz. skupin in pripadnost skupinam.
         the degree of cluster membership.: ""
         icons/SilhouettePlot.svg: false
+        silhouette plot: silhouette plot
         class `Inputs`:
             Data: Podatki
         class `Outputs`:
@@ -14270,6 +14240,7 @@ widgets/visualize/owtreeviewer.py:
     class `OWTreeGraph`:
         Tree Viewer: Drevogled
         icons/TreeViewer.svg: false
+        tree viewer: tree viewer
         class `Inputs`:
             Tree: Drevo
             Classification Tree: false
@@ -14396,6 +14367,7 @@ widgets/visualize/owvenndiagram.py:
         'A graphical visualization of the overlap of data instances ': 'Grafični prikaz skupnih podatkov v '
         from a collection of input datasets.: različnih tabelah.
         icons/VennDiagram.svg: false
+        venn diagram: venn diagram, grafikon
         class `Inputs`:
             Data: Podatki
         class `Outputs`:
@@ -14510,8 +14482,7 @@ widgets/visualize/owviolinplot.py:
         Visualize the distribution of feature: Porazdelitev vrednosti v
         ' values in a violin plot.': ' vizualizaciji z violinami.'
         icons/ViolinPlot.svg: false
-        kernel: gostota
-        density: porazdelitev
+        violin plot, kernel, density: violin plot, kernel, density, jedro, gostota, porazdelitev
         class `Inputs`:
             Data: Podatki
         class `Outputs`:
