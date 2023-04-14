@@ -27,7 +27,8 @@ image_embedder.py:
     squeezenet: false
     SqueezeNet: true
     Deep model for image recognition that achieves \n: Globok model za prepoznavanje slik, ki v podatkovni bazi ImageNet \n
-    AlexNet-level accuracy on ImageNet with 50x fewer parameters.: s 50-krat manj parametri dosega natančnost na ravni AlexNeta.
+    AlexNet-level accuracy on ImageNet with \n: s 50-krat manj parametri dosega natančnost \n
+    50x fewer parameters.: na ravni AlexNeta.
     is_local: false
     class `ImageEmbedder`:
         def `__init__`:
@@ -63,7 +64,7 @@ image_grid.py:
             precomputed: false
             PCA: false
             TSNE: false
-            pca: false 
+            pca: false
         def `_get_assignments`:
             sqeuclidean: false
             lap: false
@@ -90,8 +91,8 @@ import_images.py:
     def `create_table`:
         category: kategorija
         image name: ime slike
-        image: false
         type: false
+        image: false
         origin: false
         size: velikost
         width: širina
@@ -145,9 +146,7 @@ widgets/owimageembedding.py:
     class `OWImageEmbedding`:
         Image Embedding: Vložitev slik
         Image embedding through deep neural networks.: Vložitev slik z globokimi nevronskimi mrežami.
-        embedding: vložitev
-        image: slika
-        image embedding: vložitev slike
+        image embedding, embedding, image: image embedding, embedding, vložitev slike, slika
         icons/ImageEmbedding.svg: false
         class `Inputs`:
             Images: Slike
@@ -155,9 +154,9 @@ widgets/owimageembedding.py:
             Embeddings: Vložitev
             Skipped Images: Izpuščene slike
         class `Warning`:
-            'No internet connection: switched to local embedder': 'Ni internetne povezave: preklopite na lokalni vgrajevalnik'
+            'No internet connection: switched to local embedder': Ni internetne povezave: preklopite na lokalni vgrajevalnik
             Please provide data with an image attribute.: Prosimo, navedite podatke z atributom slike.
-            {} images are skipped.: 'Število izpuščenih slik: {}'
+            {} images are skipped.: Število izpuščenih slik: {}
         class `Error`:
             'Embedding error: {}': Napaka pri vložitvi: {}
         No data on input.: Ni podatkov o vnosu.
@@ -184,8 +183,6 @@ widgets/owimageembedding.py:
             {skip} images skipped.: {skip} {plsi(skip, 'slika je izpuščena|sliki sta izpuščeni|slike so izpuščene|slik je izpuščenih')}.
         def `_cb_embedder_changed`:
             description: false
-        def `on_exception`:
-            Exception: Izjema
         def `_switch_to_local_embedder`:
             squeezenet: false
     __main__: false
@@ -200,10 +197,8 @@ widgets/owimagegrid.py:
         Image Grid: Mreža slik
         Visualize images in a similarity grid: Vizualizacija slik v mreži podobnosti.
         icons/ImageGrid.svg: false
-        image: slika
-        grid: mreža
-        similarity: podobnost
-        scene: null
+        image grid, image, grid, similarity: image grid, grid, similarity, slika, mreža, podobnost
+        scene: false
         class `Inputs`:
             Embeddings: Vložitve
             Data Subset: Podskupina podatkov
@@ -212,7 +207,8 @@ widgets/owimagegrid.py:
             Images: Slike
         Resize: Spremeni velikost
         class `Warning`:
-            Data subset is incompatible with Data: Podskupina podatkov ni združljiva s Podatki
+            No Data Subset elements appear in the Data.: V podatkih ni elementov podskupine podatkov.
+            Some Data Subset elements do not appear in the Data.: Nekateri elementi podskupine podatkov niso prikazani v podatkih.
             No valid data: Ni veljavnih podatkov
         def `__init__`:
             (No labels): (Brez oznak)
@@ -245,9 +241,9 @@ widgets/owimagegrid.py:
             Number of images: Število slik
             Grid: Mreža
         def `_note_completed`:
-            'Error: %r': 'Napaka: %r'
+            'Error: %r': Napaka: %r
         def `_update_status`:
-            'No images found for column ''{attr.name}''! ': 'Ni najdenih slik za stolpec ''{attr.name}''! '
+            "No images found for column '{attr.name}'! ": "Ni najdenih slik za stolpec '{attr.name}'! "
             'Make sure to usa a column with valid image path ': 'Prepričajte se, da uporabljate stolpec z veljavno potjo '
             name or urls.: do slike ali URL-ji.
     class `GraphicsThumbnailWidget`:
@@ -259,7 +255,7 @@ widgets/owimagegrid.py:
     __main__: false
     squeezenet: false
     https://datasets.biolab.si/core/bone-healing.xlsx: false
-    Image: null
+    Image: false
 widgets/owimageimport.py:
     def `prettyfypath`:
         ~/: false
@@ -267,11 +263,7 @@ widgets/owimageimport.py:
     class `OWImportImages`:
         Import Images: Uvoz slik
         Import images from a directory(s): Uvoz slik iz imenika (imenikov).
-        import: uvoz
-        image: slika
-        import image: uvoz slike
-        read: preberi
-        load: naloži
+        import images, import, image, read, load: import images, image, read, load, uvoz slike, slika, preberi, naloži
         icons/ImportImages.svg: false
         class `Outputs`:
             Data: Podatki
@@ -326,9 +318,7 @@ widgets/owimageviewer.py:
     class `OWImageViewer`:
         Image Viewer: Pregledovalnik slik
         View images referred to in the data.: Ogled slik, navedenih v podatkih.
-        image viewer: pregledovalnik slik
-        viewer: pregled
-        image: slika
+        image viewer, viewer, image: image viewer, viewer, pregledovalnik slik, pregled, slika
         icons/ImageViewer.svg: false
         Orange.widgets.data.owimageviewer.OWImageViewer: false
         class `Inputs`:
@@ -336,8 +326,8 @@ widgets/owimageviewer.py:
         class `Outputs`:
             Selected Images: Izbrane slike
             Data: Podatki
-        thumbnailView: null
-        'Pressing the ''Space'' key while the thumbnail view has focus and ': 'Pritisnite preslednico (space) za ogled slike'
+        thumbnailView: false
+        "Pressing the 'Space' key while the thumbnail view has focus and ": Pritisnite preslednico (space) za ogled slike
         a selected item will open a window with a full image: ""
         preview-introduction: false
         def `__init__`:
@@ -355,10 +345,10 @@ widgets/owimageviewer.py:
         def `__on_load_finished`:
             Future[QImage]: false
         def `_noteCompleted`:
-            'Error: %r': 'Napaka: %r'
+            'Error: %r': Napaka: %r
         def `_updateStatus`:
             type: false
-            'No images could be ! Make sure the ''%s'' attribute ': 'Ni bilo mogoče najti nobene slike! Prepričajte se, da je atribut ''%s'' '
+            "No images could be ! Make sure the '%s' attribute ": "Ni bilo mogoče najti nobene slike! Prepričajte se, da je atribut '%s' "
             is tagged with 'type=image': označen s 'type=image'.
     T: false
     Some: false
@@ -368,15 +358,15 @@ widgets/owimageviewer.py:
     def `loader_local`:
         Future[QImage]: false
         def `load_local_file`:
-            'Read local: %s': 'Preberi lokalno: %s'
+            'Read local: %s': Preberi lokalno: %s
     def `loader_qnam`:
         Future[QImage]: false
         def `load_qnam`:
             Future[QImage]: false
             setTransferTimeout: false
-            'Fetch: %s': 'Pridobi: %s'
+            'Fetch: %s': Pridobi: %s
             def `abort_on_cancel`:
-                'Abort: %s': 'Prekinitev: %s'
+                'Abort: %s': Prekinitev: %s
             def `on_reply_finished`:
                 \n: false
                 '  (served from cache)': '  (servirano iz predpomnilnika)'
@@ -393,7 +383,7 @@ widgets/owimageviewer.py:
             https: false
             socks: false
             socks5: false
-            'Proxy for ''%s'': ''%s''': true
+            "Proxy for '%s': '%s'": true
             Proxy for '%s' - ignored: true
     class `ImageLoader`:
         def `networkAccessManagerInstance`:
@@ -410,7 +400,7 @@ widgets/owimageviewer.py:
     https://datasets.biolab.si/core/bone-healing.xlsx: false
 widgets/owsaveimages.py:
     png: false
-    jpeg: false
+    jpg: false
     gif: false
     tiff: false
     pdf: false
@@ -421,10 +411,7 @@ widgets/owsaveimages.py:
         Save Images: Shrani slike
         Save images in the directory structure.: Shrani slike v strukturo imenika.
         icons/SaveImages.svg: false
-        save: shrani
-        saveimages: shranislike
-        save images: shrani slike
-        images: slike
+        save images, save, images: save images, images, shrani slike, slike, slika
         ~{os.sep}: false
         class `Inputs`:
             Data: Podatki
@@ -462,9 +449,6 @@ widgets/owsaveimages.py:
             Resume save: Nadaljuj shranjevanje
         def `save_file_as`:
             Save as {os.path.basename(dirname)}: Shrani kot {os.path.basename(dirname)}
-        def `_update_status`:
-            'Data set {self.data.name or ''(no name)''} ': 'Nabor podatkov {self.data.name or ''(brez imena)''} '
-            with {len(self.data)} images.: {plsi_sz(len(self.data))} {len(self.data)} {plsi(len(self.data)), 'sliko|slikama|slikami'}
         def `get_save_filename`:
             Select directory to save: Izberite imenik za shranjevanje
             Overwrite file?: Nadomesti datoteke?
