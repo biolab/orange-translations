@@ -723,7 +723,7 @@ application/canvasmain.py:
             'Error was: {}': 'Napaka: {}'
             widget_manager: false
         def `new_scheme_from`:
-            rb: flase
+            rb: false
             Error: Napaka
             'Could not open: ''{}''': 'Ne morem odpreti: ''{}'''
             'Error was: {}': 'Napaka: {}'
@@ -1096,7 +1096,7 @@ application/settings.py:
             Nodes: Gradniki
             links: false
             Show channel names between widgets: Pokaži imena povezav med gradniki
-            show-channel-names: flase
+            show-channel-names: false
             'Show source and sink channel names ': "Pokaži ime izhoda in vhoda "
             over the links.: nad povezavami.
             schemeedit/show-channel-names: false
