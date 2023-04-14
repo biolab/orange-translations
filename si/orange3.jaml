@@ -11007,7 +11007,7 @@ widgets/unsupervised/owmanifoldlearning.py:
             early_exaggeration: false
             Early exaggeration:: Zgodnje pretiravanje (exaggeration):
             learning_rate: false
-            Learning rate:: Stopnja učenja:
+            Learning rate:: Hitrost učenja:
             n_iter: false
             Max iterations:: Največje število ponovitev:
             initialization: false
@@ -11019,7 +11019,7 @@ widgets/unsupervised/owmanifoldlearning.py:
             perplexity: false
             Early exaggeration: Zgodnje pretiravanje (exaggeration)
             early_exaggeration: false
-            Learning rate: Stopnja učenja
+            Learning rate: Hitrost učenja
             learning_rate: false
             Max iterations: Največje število ponovitev
             n_iter: false
