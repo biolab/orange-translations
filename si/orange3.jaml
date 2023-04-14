@@ -2887,7 +2887,7 @@ projection/manifold.py:
         w was not in ascending order: false
         {} of the {} eigenvalues were negative.: false
     class `MDS`:
-        MDS: false
+        MDS: true
         def `__init__`:
             euclidean: false
             random: false
@@ -2897,16 +2897,16 @@ projection/manifold.py:
             PCA: false
             n_components: false
     class `Isomap`:
-        Isomap: false
+        Isomap: true
         def `__init__`:
             auto: false
     class `LocallyLinearEmbedding`:
-        Locally Linear Embedding: false
+        Locally Linear Embedding: Lokalna linearna vložitev
         def `__init__`:
             auto: false
             standard: false
     class `SpectralEmbedding`:
-        Spectral Embedding: false
+        Spectral Embedding: Spektralna vložitev
         def `__init__`:
             nearest_neighbors: false
     class `TSNEModel`:
@@ -2922,7 +2922,7 @@ projection/manifold.py:
             inplace: false
             propagate_exception: false
     class `TSNE`:
-        t-SNE: false
+        t-SNE: true
         def `__init__`:
             pca: false
             euclidean: false
@@ -10999,124 +10999,161 @@ widgets/unsupervised/owlouvainclustering.py:
 widgets/unsupervised/owmanifoldlearning.py:
     class `ManifoldParametersEditor`:
         def `_create_spin_parameter`:
-            0: null
+            0: false
         def `_create_combo_parameter`:
-            _values: null
-            _index: null
+            _values: false
+            _index: false
         def `__combo_parameter_update`:
-            _index: null
-            _values: null
+            _index: false
+            _values: false
         def `_create_radio_parameter`:
-            _values: null
-            _index: null
+            _values: false
+            _index: false
         def `__radio_parameter_update`:
-            _index: null
-            _values: null
+            _index: false
+            _values: false
     class `TSNEParametersEditor`:
-        euclidean: null
-        manhattan: null
-        chebyshev: null
-        jaccard: null
-        pca: null
-        PCA: null
-        random: null
-        Random: null
+        euclidean: false
+        manhattan: false
+        chebyshev: false
+        jaccard: false
+        Euclidean: Evklidska
+        Manhattan: Manhattanska
+        Chebyshev: Čebiševa
+        Jaccard: Jaccardova
+        pca: false
+        PCA: true
+        random: false
+        Random: Naključno
         def `__init__`:
-            metric: null
-            Metric:: null
-            perplexity: null
-            Perplexity:: null
-            early_exaggeration: null
-            Early exaggeration:: null
-            learning_rate: null
-            Learning rate:: null
-            n_iter: null
-            Max iterations:: null
-            initialization: null
-            Initialization:: null
+            metric: false
+            Metric:: Metrika:
+            perplexity: false
+            Perplexity:: Zmedenost (perplexity):
+            early_exaggeration: false
+            Early exaggeration:: Zgodnje pretiravanje (exaggeration):
+            learning_rate: false
+            Learning rate:: Stopnja učenja:
+            n_iter: false
+            Max iterations:: Največje število ponovitev:
+            initialization: false
+            Initialization:: Uporabi:
+        def `get_report_parameters`:
+            Metric: Metrika
+            metric: false
+            Perplexity: Zmedenost (perplexity)
+            perplexity: false
+            Early exaggeration: Zgodnje pretiravanje (exaggeration)
+            early_exaggeration: false
+            Learning rate: Stopnja učenja
+            learning_rate: false
+            Max iterations: Največje število ponovitev
+            n_iter: false
+            Initialization: Uporabi
+            initialization: false
     class `MDSParametersEditor`:
-        PCA: null
-        PCA (Torgerson): null
-        random: null
-        Random: null
+        PCA: false
+        PCA (Torgerson): true
+        random: false
+        Random: Naključno
         def `__init__`:
-            max_iter: null
-            Max iterations:: null
-            init_type: null
-            Initialization:: null
+            max_iter: false
+            Max iterations:: Največje število ponovitev:
+            init_type: false
+            Initialization:: Uporabi:
         def `get_parameters`:
-            n_init: null
+            n_init: false
+        def `get_report_parameters`:
+            Max iterations: Največje število ponovitev
+            max_iter: false
+            Initialization: Uporabi
+            init_type: false
     class `IsomapParametersEditor`:
         def `__init__`:
-            n_neighbors: null
-            Neighbors:: null
+            n_neighbors: false
+            Neighbors:: Sosedi:
+        def `get_report_parameters`:
+            Neighbors: Sosedi
+            n_neighbors: false
     class `LocallyLinearEmbeddingParametersEditor`:
-        standard: null
-        Standard: null
-        modified: null
-        Modified: null
-        hessian: null
-        Hessian eigenmap: null
-        ltsa: null
-        Local: null
+        standard: false
+        Standard: Standardno
+        modified: false
+        Modified: Modificirano
+        hessian: false
+        Hessian eigenmap: Hessijev lastni zemljevid
+        ltsa: false
+        Local: Lokalno
         def `__init__`:
-            method: null
-            Method:: null
-            n_neighbors: null
-            Neighbors:: null
-            max_iter: null
-            Max iterations:: null
+            method: false
+            Method:: Metoda:
+            n_neighbors: false
+            Neighbors:: Sosedi:
+            max_iter: false
+            Max iterations:: Največje število ponovitev:
+        def `get_report_parameters`:
+            Method: Metoda
+            method: false
+            Neighbors: Sosedi
+            n_neighbors: false
+            Max iterations: Največje število ponovitev
+            max_iter: false
     class `SpectralEmbeddingParametersEditor`:
-        nearest_neighbors: null
-        Nearest neighbors: null
-        rbf: null
-        RBF kernel: null
+        nearest_neighbors: false
+        Nearest neighbors: Najbližji sosedje
+        rbf: false
+        RBF kernel: Jedro RBF
         def `__init__`:
-            affinity: null
-            Affinity:: null
+            affinity: false
+            Affinity:: Povezanost:
+        def `get_report_parameters`:
+            Affinity: Povezanost
+            affinity: false
     class `OWManifoldLearning`:
-        Manifold Learning: null
-        Nonlinear dimensionality reduction.: null
-        icons/Manifold.svg: null
+        Manifold Learning: Večplastno učenje
+        Nonlinear dimensionality reduction.: Nelinearno zmanjšanje dimenzionalnosti.
+        icons/Manifold.svg: false
+        manifold learning: manifold learning
         class `Inputs`:
-            Data: null
+            Data: Podatki
         class `Outputs`:
-            Transformed Data: null
-            Transformed data: null
+            Transformed Data: Spremenjeni podatki
+            Transformed data: Spremenjeni podatki
         class `Error`:
-            'For chosen method and components, ': null
-            neighbors must be greater than {}: null
-            {}: null
-            Sparse data is not supported.: null
-            Out of memory: null
+            'For chosen method and components, ': 'Za izbrano metodo in komponente '
+            neighbors must be greater than {}: morajo biti sosedje večji od {}
+            {}: false
+            Sparse data is not supported.: Redki podatki niso podprti.
+            Out of memory: Premalo pomnilnika
         class `Warning`:
-            Disconnected graph, embedding may not work: null
+            Disconnected graph, embedding may not work: Graf je nepovezan, vložitev morda ne bo delovala.
         def `migrate_settings`:
-            tsne_editor: null
-            init_index: null
-            initialization_index: null
-            metric_index: null
+            tsne_editor: false
+            init_index: false
+            initialization_index: false
+            metric_index: false
         def `__init__`:
-            Method: null
-            manifold_method_index: null
-            Output: null
-            n_components: null
-            Components:: število komponent:
-            0: null
+            Method: Metoda
+            manifold_method_index: false
+            Output: Izhod
+            n_components: false
+            Components:: Število komponent:
+            0: false
         def `commit`:
             def `_handle_disconnected_graph_warning`:
-                Graph is not fully connected: null
-            C{}: null
-            "for method='hessian', n_neighbors ": null
-            must be greater than [n_components: null
-            ' * (n_components + 3) / 2]': null
-            {}: null
+                Graph is not fully connected: Graf ni povsem povezan
+            C{}: false
+            "for method='hessian', n_neighbors ": false
+            must be greater than [n_components: false
+            ' * (n_components + 3) / 2]': false
+            {}: false
         def `send_report`:
-            Method: null
-            Method parameters: null
-            Data: null
-    __main__: null
-    brown-selected: null
+            Method: Metoda
+            Number of components: Število komponent
+            Method parameters: Parametri metode
+            Data: Podatki
+    __main__: false
+    brown-selected: false
 widgets/unsupervised/owmds.py:
     def `run_mds`:
         Running...: Tečem...
