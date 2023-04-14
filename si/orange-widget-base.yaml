@@ -179,6 +179,9 @@ io.py:
             '{}({{{}}})': false
             ', ': false
     class `ImgFormat`:
+        def `write_image`:
+            '{cls.__name__} ': false
+            cannot imagine {type(object).__name__}: false
         def `write`:
             scene: false
         def `img_writers`:
@@ -188,12 +191,23 @@ io.py:
         Portable Network Graphics: false
         def `_save_buffer`:
             png: false
+        def `_get_exporter`:
+            class `PngExporter`:
+                def `export`:
+                    width: false
+                    height: false
+                    'Cannot export image with size=0 (requested ': false
+                    export size is %dx%d): false
+                    background: false
+                    antialias: false
+                    painter: false
+                    resolutionScale: false
+                    invertValue: false
+                    little: false
         def `_export`:
             png: false
     class `ClipboardFormat`:
         System Clipboard: Odložišče
-        def `_export`:
-            image/png: false
     class `SvgFormat`:
         .svg: false
         Scalable Vector Graphics: false
@@ -281,8 +295,8 @@ settings.py:
             ): false
 version.py:
     4.20.0: false
-    4.20.0.dev0+12431b7: null
-    12431b706930fa29d882b62e8e6a43650206a3c6: null
+    4.20.0.dev0+5c7b451: false
+    5c7b4516741fcbd2cfca1c6bae8485bd32713d78: false
     .dev: false
 widget.py:
     OWBaseWidget: false
@@ -727,17 +741,21 @@ tests/base.py:
             English: false
         def `runOnLanguage`:
             def `decorator`:
-                Test is valid only for {lang} release: null
+                Test is valid only for {lang} release: false
     class `WidgetTest`:
         def `__init_subclass__`:
             def `test_minimum_size`:
                 widget: false
                 minimum size not tested as .widget was not set: false
+            def `test_image_export`:
+                widget: false
+                image exporting not tested as .widget was not set: false
             def `test_msg_base_class`:
                 widget: false
                 msg base class not tested as .widget was not set: false
             test_minimum_size: false
             test_msg_base_class: false
+            test_image_export: false
         def `setUpClass`:
             def `get_instance`:
                 TRAVIS: false
@@ -775,6 +793,11 @@ tests/base.py:
                 class `Outputs`:
                     Answer: false
             6 * 7: false
+        def `test_compute_lazy_signals`:
+            class `A`:
+                A: false
+                class `Outputs`:
+                    Answer: false
     class `BaseParameterMapping`:
         def `__init__`:
             both: false
