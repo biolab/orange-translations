@@ -994,7 +994,7 @@ from shapely.geometry import shape
 import shapely.speedups
 shapely.speedups.enable()
 shape(json.load(open('%s'))['features'][0]['geometry'])
-""": null
+""": false
         admin0.json: false
     geojson: false
     .: false
@@ -1057,7 +1057,7 @@ shape(json.load(open('%s'))['features'][0]['geometry'])
 utils.py:
     T: false
     latitude, lat: latitude, lat, širina
-    ', ': null
+    ', ': false
     longitude, lng, long, lon: longitude, lng, long, lon, dolžina
 widgets/__init__.py:
     icons/category.svg: false
@@ -1088,13 +1088,15 @@ widgets/owchoropleth.py:
             left: false
             bottom: false
         def `_create_drag_tooltip`:
-            'Shift: Add group': Shift: Dodaj skupino
-            'Shift-{}: Append to group': Shift-{}: Dodaj k skupini
+            '{}: Append to group': '{}: Dodaj v skupino'
             Cmd: false
             darwin: false
             Ctrl: false
+            'Shift: Add group': Shift: Dodaj skupino
             'Alt: Remove': false
+            <center>: false
             ', ': false
+            </center>: false
             <b>{}</b>: false
         def `_update_color_legend`:
             o: false
@@ -1123,8 +1125,9 @@ widgets/owchoropleth.py:
     class `OWChoropleth`:
         Choropleth Map: Barvni zemljevid
         'A thematic map in which areas are shaded in proportion ': Zemljevid, pobarvan po regijah glede na vrednost spremenljivke
-        to the measurement of the statistical variable being displayed.: "."
+        to the measurement of the statistical variable being displayed.: .
         icons/Choropleth.svg: false
+        choropleth map, geo: choropleth map, geo, zemljevid
         class `Inputs`:
             Data: Podatki
         class `Outputs`:
@@ -1197,6 +1200,7 @@ widgets/owgeocoding.py:
         'Encode region names into geographical coordinates, or ': Določi zemljepisne koordinate imenu ali obratno.
         reverse-geocode latitude and longitude pairs into regions.: ""
         icons/Geocoding.svg: false
+        geocoding, geo, coding: geocoding, geo, coding, kodiranje
         class `Inputs`:
             Data: Podatki
         class `Outputs`:
@@ -1265,8 +1269,7 @@ widgets/owgeotransform.py:
         Geo Transform: Prevedba koordinat
         Transform geographic coordinates from one system to another.: Prevedba zemljepisnega koordinatnega sistema v drug sistem.
         icons/GeoTransform.svg: false
-        transform: false
-        geo: false
+        geo transform, transform, geo: geo transform, transform, koordinate, transformacija
         class `Inputs`:
             Data: Podatki
         class `Outputs`:
@@ -1309,6 +1312,7 @@ widgets/owmap.py:
         Geo Map: Zemljevid
         Show data points on a world map.: Pokaži podatke na zemljevidu.
         icons/GeoMap.svg: false
+        geo map, map, geo: geo map, map
         Orange.widgets.visualize.owmap.OWMap: false
         class `Error`:
             Data has no latitude and longitude variables.: Podatki ne vsebujejo zemljepisne širine in dolžine
