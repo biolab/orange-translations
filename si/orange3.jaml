@@ -27,12 +27,12 @@ base.py:
             preprocessors: false
     class `Learner`:
         def `fit`:
-            Descendants of Learner must overload method fit or fit_storage: null
+            Descendants of Learner must overload method fit or fit_storage: false
         def `__call__`:
             Preprocessing...: Predprocesiranje...
-            "A keyword argument 'progress_callback' has been ": null
-            'added to the preprocess() signature. Implementing ': null
-            'the method without the argument is deprecated and ': null
+            "A keyword argument 'progress_callback' has been ": false
+            'added to the preprocess() signature. Implementing ': false
+            'the method without the argument is deprecated and ': false
             will result in an error in the future.: false
             %s doesn't support multiple class variables: false
             Fitting...: Učenje...
@@ -198,8 +198,8 @@ util.py:
             unsafe: false
 version.py:
     3.35.0: false
-    3.35.0.dev0+511fbaa: null
-    511fbaa29b98505c51f944353bad72378b34eb84: null
+    3.35.0.dev0+c42459a: false
+    c42459a428b30c90f3a1cfdb6d2ab0e755776c4a: false
     .dev: false
 canvas/__main__.py:
     ORANGE_STATISTICS_API_URL: false
@@ -413,7 +413,7 @@ canvas/mainwindow.py:
             reporting/send-statistics: false
             Anonymous Statistics: Anonimizirana statistika
             '<a ': false
-            href=\"https://orange.biolab.si/statistics-more-info\">: null
+            href=\"https://orange.biolab.si/statistics-more-info\">: false
             More info...: Več informacij...
             </a>: false
             Notifications: Obvestila
@@ -1040,7 +1040,7 @@ data/io.py:
         def `_suggest_filename`:
             [\\:/]: false
             _: false
-            filename\*?=(?:\"|.{0,10}?'[^']*')([^\"]+): null
+            filename\*?=(?:\"|.{0,10}?'[^']*')([^\"]+): false
 data/io_base.py:
     FileFormatBase: false
     Flags: false
@@ -1934,11 +1934,11 @@ datasets/list_update.py:
 distance/base.py:
     class `Distance`:
         def `__new__`:
-            {cls.__name__} does not compute similarity: null
+            {cls.__name__} does not compute similarity: false
             domain: false
             is_sparse: false
             fallback: false
-            cosine: null
+            cosine: false
         def `check_no_discrete`:
             columns with discrete values are incommensurable: stolpci kategoričnih vrednosti niso primerljivi
     class `DistanceModel`:
@@ -3018,7 +3018,7 @@ regression/base_regression.py:
     class `LearnerRegression`:
         def `incompatibility_reason`:
             Too many target variables.: Preveč ciljnih spremenljivk.
-            Numeric class variable expected.: Pričakujem številsko ciljno spremenljivko.
+            Numeric target variable expected.: Pričakujem številsko ciljno spremenljivko.
 regression/catgb.py:
     CatGBRegressor: false
 regression/curvefit.py:
@@ -3126,9 +3126,9 @@ regression/neural_network.py:
     NNRegressionLearner: false
     class `NNRegressionLearner`:
         def `_initialize_wrapped`:
-            callback: null
+            callback: false
 regression/random_forest.py:
-    RandomForestRegressionLearner: null
+    RandomForestRegressionLearner: false
     class `RandomForestRegressor`:
         def `trees`:
             def `wrap`:
@@ -4010,6 +4010,8 @@ widgets/__init__.py:
         Transform: Predelava podatkov
         '#FF9D5E': false
         data/icons/Transform.svg: false
+        Orange Obsolete: Zastarelo
+        Orange.widgets.obsolete.owtable: false
     {DEVELOP_ROOT}/doc/visual-programming/build/htmlhelp/index.html: false
     data: false
     share/help/en/orange3/htmlhelp/index.html: false
@@ -10305,46 +10307,25 @@ widgets/tests/base.py:
             Predictor: false
         def `test_has_unconditional_apply`:
             unconditional_apply: false
-        def `test_input_data`:
-            Data: false
-        def `test_input_data_disconnect`:
-            Data: false
-        def `test_input_data_learner_adequacy`:
-            Data: false
         def `test_input_preprocessor`:
-            Preprocessor: false
             Preprocessor not added to widget preprocessors: false
             Preprocessors were not passed to the learner: false
         def `test_input_preprocessors`:
-            Preprocessor: false
             `PreprocessorList` was not added to preprocessors: false
         def `test_input_preprocessor_disconnect`:
-            Preprocessor: false
             Preprocessors not removed on disconnect.: false
         def `test_output_learner`:
-            Learner: false
             Does not initialize the learner output: false
             Does not send a new learner instance on `Apply`.: false
-        def `test_output_model`:
-            Data: false
         def `test_output_learner_name`:
             Learner Name: false
-            Learner: false
         def `test_output_model_name`:
             Model Name: false
-            Data: false
-        def `test_output_model_picklable`:
-            Data: false
         def `_get_param_value`:
             both: false
-        def `test_parameters_default`:
-            Data: false
         def `test_parameters`:
-            Data: false
             Mismatching setting for parameter '%s': false
-            Learner: false
         def `test_params_trigger_settings_changed`:
-            Data: false
             apply(%s): false
         def `_should_check_parameter`:
             classification: false
@@ -10353,8 +10334,6 @@ widgets/tests/base.py:
     class `WidgetOutputsTestMixin`:
         def `init`:
             iris: false
-        def `test_outputs`:
-            Selected Data: false
         def `_select_data`:
             Subclasses should implement select_data: false
     class `ProjectionWidgetTestMixin`:
@@ -11603,17 +11582,17 @@ widgets/utils/__init__.py:
     _B: false
     def `instance_tooltip`:
         def `show_part`:
-            {} = {}: null
-            ... and {} others: null
+            {} = {}: false
+            ... and {n_vars - max_shown + 1} others: ... in še {n_vars - max_shown + 1} {plsi(n_vars - max_shown + 1, "spremenljivka|spremenljivki|druge spremenljivke|drugih spremenljivk")}
             <b>{}</b>:<br/>: false
-            <br/>: null
-        Class: null
-        Classes: null
-        Meta: null
-        Metas: null
-        Feature: null
-        Features: null
-        <br/>: null
+            <br/>: false
+        Class: Razred
+        Classes: Razredi
+        Meta: Meta
+        Metas: Meta
+        Feature: Spremenljivka
+        Features: Spremenljivke
+        <br/>: false
 widgets/utils/annotated_data.py:
     Data: Podatki
     Selected: Izbrani podatki
@@ -12456,15 +12435,15 @@ widgets/utils/textimport.py:
             Dialect(: false
             ): false
     class `ColumnType`:
-        Skip: null
-        Auto: null
-        Numeric: null
-        Categorical: null
-        Text: null
-        Time: null
+        Skip: Preskoči
+        Auto: true
+        Numeric: Numerično
+        Categorical: Kategorično
+        Text: Besedilo
+        Time: Čas
     class `LineEdit`:
         def `sizeHint`:
-            X: null
+            X: false
     class `CSVOptionsWidget`:
         Tab: Tabulator
         \t: false
