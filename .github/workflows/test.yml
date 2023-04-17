@@ -29,7 +29,7 @@ jobs:
         git clone https://github.com/biolab/orange-canvas-core.git
         trubar translate -s orange-canvas-core/orangecanvas -d trans/orange-canvas-core/orangecanvas --static si/orange-canvas-static si/orange-canvas-core.yaml
         trubar translate -s orange-widget-base/orangewidget -d trans/orange-widget-base/orangewidget si/orange-widget-base.yaml
-        trubar translate -s orange3/Orange -d trans/orange3/Orange si/orange3.jaml
+        trubar translate -s orange3/Orange -d trans/orange3/Orange --static si/orange3-static si/orange3.jaml
         trubar --conf si/test_config.yaml translate -p test_ -s orange3/Orange -d trans/orange3/Orange si/orange3-tests.jaml
     - name: Checkout and translate add-ons
       run: |
