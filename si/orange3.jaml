@@ -5021,13 +5021,13 @@ widgets/data/owdatasampler.py:
             Compatibility mode\n: Združljivostni način\n
             New versions of widget have swapped outputs for cross validation: Nova različica gradnika ima zamenjane izhode pri prečnem preverjanju
         class `Warning`:
-            Stratification failed.\n{}: null
-            Sample is bigger than input.: null
+            Stratification failed.\n{}: Stratifikacija ni uspela.\n{}
+            Sample is bigger than input.: Velikost vzorca ne more presegati števila vhodnih primerov.
         class `Error`:
-            Number of subsets exceeds data size.: null
-            Sample can't be larger than data.: null
-            Data is too small to stratify.: null
-            Dataset is empty.: null
+            Number of subsets exceeds data size.: Število podmnožic ne more presegati števila vhodnih primerov.
+            Sample can't be larger than data.: Vzorec ne sme biti večji od podatkov.
+            Data is too small to stratify.: Podatki so premajhni za stratifikacijo.
+            Dataset is empty.: Zbirka podatkov je prazna.
         def `__init__`:
             Sampling Type: Vrsta vzorčenja
             sampling_type: false
@@ -5093,8 +5093,7 @@ widgets/data/owdatasets.py:
         Load a dataset from an online repository: Naloži podatke s spletnega skladišča.
         icons/DataSets.svg: false
         orangecontrib.prototypes.widgets.owdatasets.OWDataSets: false
-        online: true
-        data sets: true
+        datasets, online, data, sets: datasets, online, data, sets, zbirka, podatki
         https://datasets.biolab.si/: false
         datasets: false
         English: Slovenščina
@@ -5133,6 +5132,7 @@ widgets/data/owdatasets.py:
             version: false
         def `update_model`:
             ' ': false
+            '  ': false
             ', ': false
         def `__set_index`:
             Error while fetching updated index: false
@@ -5144,6 +5144,7 @@ widgets/data/owdatasets.py:
             1000000: false
         def `__update_cached_state`:
             ' ': false
+            '  ': false
         def `commit`:
             Fetching...: Pobiram...
         def `__commit_complete`:
