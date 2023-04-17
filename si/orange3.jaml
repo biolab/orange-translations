@@ -1805,8 +1805,8 @@ data/sql/table.py:
         def `_execute_sql_query`:
             Use backend.execute_sql_query: false
         def `__get_nan_frequency`:
-            ' + ': null
-            COUNT(*) - COUNT({col.to_sql()}): null
+            ' + ': false
+            COUNT(*) - COUNT({col.to_sql()}): false
 data/sql/backend/base.py:
     class `Backend`:
         def `list_tables`:
@@ -3778,7 +3778,7 @@ tests/sql/test_sql_table.py:
         def `test_getitem_single_value`:
             postgres: false
             mssql: false
-            Iris-setosa: null
+            Iris-setosa: false
         def `test_type_hints`:
             postgres: false
             mssql: false
@@ -3996,8 +3996,8 @@ tests/sql/test_sql_table.py:
             orange_tests: false
             efgh: false
         def `test_nan_frequency`:
-            postgres: null
-            mssql: null
+            postgres: false
+            mssql: false
     __main__: false
 widgets/__init__.py:
     def `widget_discovery`:
@@ -7879,31 +7879,21 @@ widgets/data/owsql.py:
             password: false
     __main__: false
 widgets/data/owtable.py:
-    class `RichTableModel`:
-        def `__init__`:
-            _: false
-        def `headerData`:
-            \n: false
-    class `TableSliceProxy`:
-        def `setRowSlice`:
-            invalid stride: false
-    TableSlot: false
-    input_id: false
-    table: false
-    summary: false
-    view: false
-    class `OWDataTable`:
+    class `OWTable`:
         Data Table: Tabela
         View the dataset in a spreadsheet.: Pregled podatkov v tabeli.
         icons/Table.svg: false
+        data table, view: data table, view, pogled, podatki
         class `Inputs`:
             Data: Podatki
         class `Outputs`:
-            Selected Data: Izbor podatkov
+            Selected Data: Izbrani podatki
         class `Warning`:
-            Multiple Data inputs are deprecated.\n: false
-            This functionality will be removed soon.\n: false
-            Use multiple Tables instead.: false
+            Cannot restore sorting.\n: Razvrščanja ni mogoče obnoviti.\n
+            'Missing columns in input table: {}': Manjkajoči stolpci v vhodni tabeli: {}
+            Input table cannot be sorted due to implementation constraints.: Vhodne tabele ni mogoče razvrstiti zaradi izvedbenih omejitev.
+        rows: false
+        columns: false
         def `__init__`:
             Info: true
             Variables: Spremenljivke
@@ -7919,61 +7909,21 @@ widgets/data/owtable.py:
             Restore Original Order: Izvirni vrstni red
             Show rows in the original order: Pokaži vrstice v izvirnem vrstnem redu
             auto_commit: false
-        def `set_dataset`:
-            name: false
-            Data: Podatki
-        def `insert_dataset`:
-            name: false
-            Data: Podatki
         def `handleNewSignals`:
             def `update`:
                 _update_info: false
-        def `set_corner_text`:
-            btn: false
-            btnfailed: false
-            darwin: false
-        def `_set_input_summary`:
-            \n: false
-        def `_info_box_text`:
-            def `format_part`:
-                ' ({perc:.1f} % missing data)': ' ({perc:.1f} % manjkajočih podatkov)'
-                sparse: redki
-                tags: oznake
-                ' ({tag}, density {dens:.2f} %)': ' ({tag}, gostota {dens:.2f} %)'
+            rows: false
+            columns: false
+        def `_update_input_summary`:
             No data.: Ni podatkov.
-            {ninst} {pl(ninst, 'instance')}: {ninst} {plsi(ninst, "primer")}
-            ~{ninst} {pl(ninst, 'instance')}: ~{ninst} {plsi(ninst, "primer")}
-            ' (no missing data)': ' (ni manjkajočih podatkov)'
-            {nattrs}  {pl(nattrs, 'feature')}: {nattrs}  {plsi(nattrs, 'spremenljivka')}
-            No target variable.: Ni ciljne spremenljivke
-            {nclasses} {pl(nclasses, 'outcome')}: {nclasses} {plsi(nclasses, 'ciljna spremenljivka|ciljni spremenljivki|ciljne spremenljivke|ciljnih spremenljivk')}
-            Numeric outcome: Numerična ciljna spremenljivka
-            # A nisem tega že prevajal?!
-            Target with {nvalues} {pl(nvalues, 'value')}: Ciljna spremenljivka {plsi_sz(nvalues)} {z_besedo(nvalues, 6, "m")} {plsi(nvalues, "razredom|razredoma|razredi")}
-            {nmetas} {pl(nmetas, 'meta attribute')}: {nmetas} meta {plsi(nmetas, "spremenljivka")}
-            No meta attributes.: Ni meta spremenljivk
-        def `_update_variable_labels`:
-            _: false
             \n: false
-    DenseArray: false
-    nans: false
-    non_nans: false
-    stats: false
-    SparseArray: false
-    SparseBoolArray: false
-    NotAvailable: false
-    Summary: false
-    len: false
-    domain: false
-    X: false
-    Y: false
-    M: false
-    ApproxSummary: false
-    approx_len: false
+        def `__restore_sort`:
+            ', ': false
+        def `commit`:
+            rows: false
+            columns: false
     __main__: false
     iris: false
-    brown-selected: false
-    housing: false
 widgets/data/owtransform.py:
     class `OWTransform`:
         Apply Domain: Spremeni domeno
@@ -8116,6 +8066,34 @@ widgets/data/utils/preprocess.py:
             application/x-internal-move: false
         def `__startInternalDrag`:
             application/x-internal-move: false
+widgets/data/utils/tablesummary.py:
+    class `ApproxSummary`:
+        Future[int]: false
+    def `_sql_table_len`:
+        Future[int]: false
+    def `format_summary`:
+        def `format_part`:
+            ' ({perc:.1f} % missing data)': ' ({perc:.1f} % manjkajočih podatkov)'
+            sparse: redki
+            tags: oznake
+            ' ({tag}, density {dens:.2f} %)': ' ({tag}, gostota {dens:.2f} %)'
+        {ninst} {pl(ninst, 'instance')}: {ninst} {plsi(ninst, "primer")}
+        ~{ninst} {pl(ninst, 'instance')}: ~{ninst} {plsi(ninst, "primer")}
+        ' (no missing data)': ' (ni manjkajočih podatkov)'
+        {nattrs}  {pl(nattrs, 'feature')}: {nattrs}  {plsi(nattrs, 'spremenljivka')}
+        No target variable.: Ni ciljne spremenljivke.
+        {nclasses} {pl(nclasses, 'outcome')}: {nclasses} {plsi(nclasses, 'ciljna spremenljivka|ciljni spremenljivki|ciljne spremenljivke|ciljnih spremenljivk')}
+        Numeric outcome: Številska ciljna spremenljivka
+        Target with {nvalues} {pl(nvalues, 'value')}: Ciljna spremenljivka {plsi_sz(nvalues)} {z_besedo(nvalues, 6, "m")} {plsi(nvalues, "razredom|razredoma|razredi")}
+        {nmetas} {pl(nmetas, 'meta attribute')}: {nmetas} meta {plsi(nmetas, "spremenljivka")}
+        No meta attributes.: Ni meta spremenljivk.
+widgets/data/utils/tableview.py:
+    class `DataTableView`:
+        def `__init__`:
+            darwin: false
+    class `RichTableView`:
+        def `__headerDataChanged`:
+            \n: false
 widgets/data/utils/pythoneditor/brackethighlighter.py:
     class `BracketHighlighter`:
         '#0b0': false
@@ -10236,6 +10214,57 @@ widgets/model/owtree.py:
             Yes: Da
     __main__: false
     iris: false
+widgets/obsolete/owtable.py:
+    TableSlot: false
+    input_id: false
+    table: false
+    summary: false
+    view: false
+    class `OWDataTable`:
+        Orange Obsolete: Zastarelo
+        Orange.widgets.data.owtable.OWDataTable: false
+        Data Table: Tabela
+        View the dataset in a spreadsheet.: Pregled podatkov v tabeli.
+        ../data/icons/Table.svg: false
+        class `Inputs`:
+            Data: Podatki
+        class `Outputs`:
+            Selected Data: Izbrani podatki
+        class `Warning`:
+            Multiple Data inputs are deprecated.\n: Uporaba več podatkovnih vnosov je zastarela.\n
+            This functionality will be removed soon.\n: Ta funkcija bo kmalu odstranjena.\n
+            Use multiple Tables instead.: Namesto tega uporabite več tabel.
+        def `__init__`:
+            Info: true
+            Variables: Spremenljivke
+            show_attribute_labels: false
+            Show variable labels (if present): Pokaži oznake spremenljivk
+            show_distributions: false
+            Visualize numeric values: Vizualiziraj številske vrednosti
+            color_by_class: false
+            Color by instance classes: Obarvaj primere glede na razred
+            Selection: Izbor
+            select_rows: false
+            Select full rows: Izbiraj cele vrstice
+            Restore Original Order: Izvirni vrstni red
+            Show rows in the original order: Pokaži vrstice v izvirnem vrstnem redu
+            auto_commit: false
+        def `set_dataset`:
+            name: false
+            Data: Podatki
+        def `insert_dataset`:
+            name: false
+            Data: Podatki
+        def `handleNewSignals`:
+            def `update`:
+                _update_info: false
+        def `_set_input_summary`:
+            No data.: Ni podatkov.
+            \n: false
+    __main__: false
+    iris: false
+    brown-selected: false
+    housing: false
 widgets/report/owreport.py:
     OWReport: false
     HAVE_REPORT: false
