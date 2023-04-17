@@ -10646,8 +10646,8 @@ widgets/unsupervised/owdistances.py:
         class `Warning`:
             Ignoring categorical features: Kategoričnih spremenljivk ne upoštevam
             Ignoring non-binary features: Ne-binarnih spremenljivk ne upoštevam
-            Some metrics don't support sparse data\n: null
-            'and were disabled: {}': null
+            Some metrics don't support sparse data\n: Nekatere metrike ne podpirajo redkih podatkov\n
+            'and were disabled: {}': 'in so bile onemogočene: {}'
             Missing values were imputed: Manjkajoče vrednosti so bile nadomeščene
         def `__init__`:
             axis: false
@@ -10657,7 +10657,7 @@ widgets/unsupervised/owdistances.py:
             Distance Metric: Razdalja
             autocommit: false
         def `refresh_radios`:
-            ', ': null
+            ', ': false
         def `compute_distances`:
             def `_fix_discrete`:
                 fallback: false
@@ -10672,7 +10672,7 @@ widgets/unsupervised/owdistances.py:
         def `migrate_settings`:
             normalized_dist: false
             metric_idx: false
-            metric_id: null
+            metric_id: false
     __main__: false
     iris: false
 widgets/unsupervised/owdistancetransformation.py:
@@ -10750,7 +10750,7 @@ widgets/unsupervised/owhierarchicalclustering.py:
             Subset data refers to a different table: Podmnožica podatkov pripada drugi tabeli podatkov.
             Pruned cluster doesn't show colors and indicate subset: Porezano gručenje ne kaže barv in podmnožic.
         def `__init__`:
-            M: null
+            M: false
             linkage: false
             Linkage: Razdalja med gručami
             None: Brez
@@ -10801,7 +10801,7 @@ widgets/unsupervised/owhierarchicalclustering.py:
         def `send_report`:
             manual: ročno
             at {:.1f} of height: pri {:.1f} višine
-            top {self.top_n} clusters: vrhnjih {self.top_n} gruč
+            top {self.top_n} {pl(self.top_n, 'cluster')}: {plsi(self.top_n, 'vrhnja|vrhnji|vrhnje|vrhnjih')} {self.top_n} {plsi(self.top_n, 'gruča')}
             Linkage: Razdalja med gručami
             Annotation: Oznake
             Pruning: Rezanje
@@ -10935,7 +10935,7 @@ widgets/unsupervised/owlouvainclustering.py:
         def `clear`:
             No data on input.: Ni podatkov na vhodu.
         def `send_report`:
-            , {self.pca_components} {pl(self.pca_components, 'component')}: , {number} {plsi(number, "komponent")}
+            , {self.pca_components} {pl(self.pca_components, 'component')}: , {self.pca_components} {plsi(self.pca_components, "komponenta")}
             Normalize data: Normiranje podatkov
             PCA preprocessing: Predprocesiranje s PCA
             Metric: Mera razdalje
@@ -11090,7 +11090,7 @@ widgets/unsupervised/owmds.py:
     class `OWMDSGraph`:
         def `update_pairs`:
             pairs: false
-            on: null
+            on: false
     class `OWMDS`:
         MDS: Večrazsežnostno lestvičenje
         'Two-dimensional data projection by multidimensional ': 'Dvodimenzionalna projekcija večdimenzionalnih podatkov, '
@@ -11208,8 +11208,8 @@ widgets/unsupervised/owpca.py:
         class `Inputs`:
             Data: Podatki
         class `Outputs`:
-            Transformed Data: Transformirani podatki
-            Transformed data: Transformirani podatki
+            Transformed Data: Spremenjeni podatki
+            Transformed data: Spremenjeni podatki
             Data: Podatki
             Components: Komponente
             PCA: PCA
@@ -11275,8 +11275,8 @@ widgets/unsupervised/owsavedistances.py:
             columns: stolpcih
             rows: vrsticah
         def `send_report`:
-            Input:: Vhod:
-            none: false
+            Input: Vhod
+            none: brez
             File name: Ime datoteke
             not set: ni nastavljeno
         def `_description`:
