@@ -555,26 +555,26 @@ classification/outlier_detection.py:
             Predicting...: Napovedujem...
     class `_OutlierLearner`:
         def `_fit_model`:
-            Outlier: false
+            Outlier: Osamelec
             Yes: Da
             No: Ne
     class `OneClassSVMLearner`:
-        One class SVM: false
+        One class SVM: Enorazredni SVM
         def `__init__`:
             rbf: false
             auto: false
     class `LocalOutlierFactorLearner`:
-        Local Outlier Factor: false
+        Local Outlier Factor: Lokalni faktor odstopanja
         def `__init__`:
             auto: false
             minkowski: false
     class `IsolationForestLearner`:
-        Isolation Forest: false
+        Isolation Forest: Izolacijski gozd
         def `__init__`:
             auto: false
             deprecated: false
     class `EllipticEnvelopeLearner`:
-        Covariance Estimator: false
+        Covariance Estimator: Ocena kovariance
         def `_fit_model`:
             Mahalanobis: false
 classification/random_forest.py:
@@ -6359,117 +6359,131 @@ widgets/data/owneighbors.py:
     iris.tab: false
 widgets/data/owoutliers.py:
     def `run`:
-        Initializing...: null
+        Initializing...: Zaganjam...
     class `SVMEditor`:
         def `__init__`:
-            'An upper bound on the fraction of training errors and a ': null
-            lower bound of the fraction of support vectors: null
-            Nu:: null
-            nu: null
-            %d %%: null
-            gamma: null
-            Kernel coefficient:: null
+            'An upper bound on the fraction of training errors and a ': 'Zgornja meja deleža napak pri učenju in '
+            lower bound of the fraction of support vectors: spodnja meja deleža podpornih vektorjev
+            Nu:: 𝜈:
+            nu: false
+            %d %%: false
+            gamma: false
+            Kernel coefficient:: Koeficient jedra:
         def `get_parameters`:
-            nu: null
-            gamma: null
+            nu: false
+            gamma: false
+        def `get_report_parameters`:
+            Detection method: Metoda detekcije
+            One class SVM with non-linear kernel (RBF): SVM enega razreda z nelinearnim jedrom (RBF)
+            Regularization (nu): Regularizacija (število)
+            {self.nu/100:.0%}: false
+            Kernel coefficient: Koeficient jedra
     class `CovarianceEditor`:
         def `__init__`:
-            Contamination:: null
-            cont: null
-            %d %%: null
-            empirical_covariance: null
-            Support fraction:: null
-            support_fraction: null
+            Contamination:: Kontaminacija:
+            cont: false
+            %d %%: false
+            empirical_covariance: false
+            Support fraction:: Delež podpore:
+            support_fraction: false
         def `get_parameters`:
-            contamination: null
-            support_fraction: null
+            contamination: false
+            support_fraction: false
+        def `get_report_parameters`:
+            Detection method: Metoda zaznavanja
+            Covariance estimator: Ocena kovariance
+            Contamination: Kontaminacija
+            {self.cont/100:.0%}: false
+            Support fraction: Delež podpore
     class `LocalOutlierFactorEditor`:
-        euclidean: null
-        manhattan: null
-        cosine: null
-        jaccard: null
-        hamming: null
-        minkowski: null
+        euclidean: false
+        manhattan: false
+        cosine: false
+        jaccard: false
+        hamming: false
+        minkowski: false
+        Euclidean: Evklidska
+        Manhattan: Manhattanska
+        Cosine: Kosinusna
+        Jaccard: Jaccardova
+        Hamming: Hammingova
+        Minkowski: Minkowska
         def `__init__`:
-            Contamination:: null
-            cont: null
-            %d %%: null
-            n_neighbors: null
-            Neighbors:: null
-            metric_index: null
-            Metric:: null
+            Contamination:: Kontaminacija:
+            cont: false
+            %d %%: false
+            n_neighbors: false
+            Neighbors:: Sosedi:
+            metric_index: false
+            Metric:: Metrika:
         def `get_parameters`:
-            n_neighbors: null
-            contamination: null
-            algorithm: null
-            brute: null
-            metric: null
+            n_neighbors: false
+            contamination: false
+            algorithm: false
+            brute: false
+            metric: false
+        def `get_report_parameters`:
+            Detection method: Metoda detekcije
+            Local Outlier Factor: Lokalni faktor odstopanja
+            Contamination: Kontaminacija
+            {self.cont/100:.0%}: false
+            Number of neighbors: Število sosedov
+            Metric: Metrika
     class `IsolationForestEditor`:
         def `__init__`:
-            Contamination:: null
-            cont: null
-            %d %%: null
-            replicable: null
-            Replicable training: null
+            Contamination:: Kontaminacija:
+            cont: false
+            %d %%: false
+            replicable: false
+            Replicable training: Ponovno učenje
         def `get_parameters`:
-            contamination: null
-            random_state: null
+            contamination: false
+            random_state: false
+        def `get_report_parameters`:
+            Detection method: Metoda detekcije
+            Isolation Forest: Izolacijski gozd
+            Contamination: Kontaminacija
+            {self.cont/100:.0%}: false
+            Replicable training: Ponovno učenje
     class `OWOutliers`:
-        Outliers: null
-        Detect outliers.: null
-        icons/Outliers.svg: null
+        Outliers: Osamelci
+        Detect outliers.: Odkrivanje izstopajočih vrednosti.
+        icons/Outliers.svg: false
         Unsupervised: Nenadzorovano učenje
-        inlier: null
+        outliers, inlier: outliers, inlier, izstopajoče vrednosti
         class `Inputs`:
-            Data: null
+            Data: Podatki
         class `Outputs`:
-            Inliers: null
-            Outliers: null
-            Data: null
+            Inliers: Ostali primeri
+            Outliers: Osamelci
+            Data: Podatki
         class `Warning`:
-            Too many features for covariance estimation.: null
+            Too many features for covariance estimation.: Preveč spremenljivk za oceno kovariance.
         class `Error`:
-            Singular covariance matrix.: null
-            Not enough memory: null
+            Singular covariance matrix.: Kovariančna matrika je singularna.
+            Not enough memory: Premalo pomnilnika.
         def `init_gui`:
-            Method: null
-            outlier_method: null
-            auto_commit: null
+            Method: Metoda
+            outlier_method: false
+            auto_commit: false
         def `_init_editors`:
-            Parameters: null
+            Parameters: Parametri
         def `send_report`:
-            Data: null
-            Input instances: null
-            Inliers: null
-            Outliers: null
-            Detection: null
-            Detection method: null
-            One class SVM with non-linear kernel (RBF): null
-            Regularization (nu): null
-            nu: null
-            Kernel coefficient: null
-            gamma: null
-            Covariance estimator: null
-            Contamination: null
-            contamination: null
-            Support fraction: null
-            support_fraction: null
-            Local Outlier Factor: null
-            Number of neighbors: null
-            n_neighbors: null
-            Metric: null
-            metric: null
-            Isolation Forest: null
+            Data: Podatki
+            Input instances: Vhodni primeri
+            Inliers: Ostali primeri
+            Outliers: Osamelci
+            Detection: Detekcija
         def `migrate_settings`:
-            svm_editor: null
-            nu: null
-            gamma: null
-            empirical_covariance: null
-            support_fraction: null
-            cov_editor: null
-            cont: null
-    __main__: null
-    iris: null
+            svm_editor: false
+            nu: false
+            gamma: false
+            empirical_covariance: false
+            support_fraction: false
+            cov_editor: false
+            cont: false
+    __main__: false
+    iris: false
 widgets/data/owpaintdata.py:
     Append: false
     points: false
@@ -9047,7 +9061,7 @@ widgets/evaluate/owtestandscore.py:
             Number of folds exceeds the data size: Števil podmnožic presega število primerov.
             'Test and train datasets ': 'Učni in testni podatki '
             have different target variables.: nimajo iste ciljne spremenljivke.
-            Not enough memory.: Ni dovolj pomnilnika.
+            Not enough memory.: Premalo pomnilnika.
             Test data may be incompatible with train data.: Testni podatki niso združljivi z učnimi.
             {}: false
         class `Warning`:
@@ -10648,7 +10662,7 @@ widgets/unsupervised/owdistances.py:
             No numeric features: Ni številskih spremenljivk
             No binary features: Ni binarnih spremenljivk
             {} requires dense data.: {} zahteva goste podatke.
-            Not enough memory: Ni dovolj pomnilnika
+            Not enough memory: Premalo pomnilnika
             Problem in calculation:\n{}: Težava pri izračunu:\n{}
             Mahalanobis handles up to 1000 {}.: Mahalanobisova razdalja zmore do 1000 {}.
         class `Warning`:
@@ -13286,7 +13300,7 @@ widgets/visualize/owheatmap.py:
             Not enough features for column clustering: Ni dovolj spremenljivk za gručenje stolpcev.
             Not enough instances for clustering: Ni dovolj podatkov za gručenje vrstic.
             Not enough instances for k-means merging: Ni dovolj podatkov za združevanje.
-            Not enough memory to show this data: Ni dovolj pomnilnika za prikaz podatkov.
+            Not enough memory to show this data: Premalo pomnilnika za prikaz podatkov.
         class `Warning`:
             Empty clusters were removed: Prazne gruče so odstranjene.
         'For data with a meaningful mid-point, ': 'Za podatke, ki imajo nevtralno, sredinsko vrednost '
@@ -14211,7 +14225,7 @@ widgets/visualize/owsilhouetteplot.py:
         class `Error`:
             Need at least two non-empty clusters: Potrebni sta vsaj dve neprazni skupini
             All clusters are singletons: Vse skupine imajo le en sam element.
-            Not enough memory: Premalo pomnilnika.
+            Not enough memory: Premalo pomnilnika
             "Distances could not be computed: '{}'": Razdalj ni mogoče izračunati: '{}'
             {}: false
             Distance matrix is not symmetric.: Matrika razdalj ni simetrična.
