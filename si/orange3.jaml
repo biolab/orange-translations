@@ -13135,7 +13135,7 @@ widgets/visualize/owdistributions.py:
             bottom: false
             left: false
             Probability of '{self.cvar.name}' at given '{self.var.name}': Verjetnost '{self.cvar.name}' pri podani '{self.var.name}'
-            Frequency: Frekvenca
+            Frequency: Pogostost
         def `_disc_plot`:
             bottom: false
             <p style='white-space:pre;'>: true
@@ -13873,12 +13873,12 @@ widgets/visualize/owpythagoreanforest.py:
             No forest on input.: Na vhodu ni gozda.
         def `send_report`:
             def `item_html`:
-                utf-8: null
-                '<img style="width:100%" ': null
-                src="data:image/png;base64,{img_encoded}"/>: null
-            <div class='forest_model_row'>: null
-            <div class='forest_model_col'>: null
-            </div>: null
+                utf-8: false
+                '<img style="width:100%" ': false
+                src="data:image/png;base64,{img_encoded}"/>: false
+            <div class='forest_model_row'>: false
+            <div class='forest_model_col'>: false
+            </div>: false
             <p>. . .</p>: false
     __main__: false
     iris: false
@@ -13948,7 +13948,7 @@ widgets/visualize/owruleviewer.py:
             Length: Dolžina
             compact_view: false
             Compact view: Stisnjen pregled
-            Restore original order: Začetni vrstni red
+            Restore original order: Izvirni vrstni red
         def `set_classifier`:
             rule_list: false
         def `copy_to_clipboard`:
@@ -14460,7 +14460,7 @@ widgets/visualize/owvenndiagram.py:
         def `extract_columnwise`:
             {var_name.name} ({idx}): false
             attributes: false
-            Selected: null
+            Selected: false
             ', ': false
         def `create_from_columns`:
             attributes: false
