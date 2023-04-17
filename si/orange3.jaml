@@ -9924,130 +9924,130 @@ widgets/model/owsavemodel.py:
     __main__: false
 widgets/model/owsgd.py:
     class `OWSGD`:
-        Stochastic Gradient Descent: null
-        'Minimize an objective function using a stochastic ': null
-        approximation of gradient descent.: null
-        icons/SGD.svg: null
-        Orange.widgets.regression.owsgdregression.OWSGDRegression: null
-        sgd: null
+        Stochastic Gradient Descent: Stohastični gradientni spust
+        'Minimize an objective function using a stochastic ': 'Minimiziranje ciljne funkcije z uporabo stohastičnega '
+        approximation of gradient descent.: približka gradientnega spusta.
+        icons/SGD.svg: false
+        Orange.widgets.regression.owsgdregression.OWSGDRegression: false
+        stochastic gradient descent, sgd: stochastic gradient descent, sgd
         class `Outputs`:
             Coefficients: Koeficienti
-        Squared Loss: null
-        squared_error: null
-        Huber: null
-        huber: null
-        ε insensitive: null
-        epsilon_insensitive: null
-        Squared ε insensitive: null
-        squared_epsilon_insensitive: null
-        Hinge: null
-        hinge: null
-        Logistic regression: null
-        log: null
-        Modified Huber: null
-        modified_huber: null
-        Squared Hinge: null
-        squared_hinge: null
-        Perceptron: null
-        perceptron: null
-        None: null
-        none: null
-        Lasso (L1): null
-        l1: null
-        Ridge (L2): null
-        l2: null
-        Elastic Net: null
-        elasticnet: null
-        Constant: null
-        constant: null
-        Optimal: null
-        optimal: null
-        Inverse scaling: null
-        invscaling: null
-        SGD: null
+        Squared Loss: Kvadratna izguba
+        squared_error: false
+        Huber: Huberjeva
+        huber: false
+        ε insensitive: ε-neobčutljiva
+        epsilon_insensitive: false
+        Squared ε insensitive: Kvadratna ε-neobčutljiva
+        squared_epsilon_insensitive: false
+        Hinge: Rob (Hinge)
+        hinge: false
+        Logistic regression: Logistična regresija
+        log: false
+        Modified Huber: Modificirana Huberjeva
+        modified_huber: false
+        Squared Hinge: Kvadrat roba (Squared Hinge)
+        squared_hinge: false
+        Perceptron: true
+        perceptron: false
+        None: Brez
+        none: false
+        Lasso (L1): true
+        l1: false
+        Ridge (L2): true
+        l2: false
+        Elastic Net: Elastična mreža
+        elasticnet: false
+        Constant: Konstanta
+        constant: false
+        Optimal: Optimalno
+        optimal: false
+        Inverse scaling: Inverzno skaliranje
+        invscaling: false
+        SGD: Stohastični gradientni spust
         def `_add_algorithm_to_layout`:
-            Loss functions: null
-            cls_loss_function_index: null
-            cls_epsilon: null
-            'ε: ': null
-            'Classification: ': null
-            reg_loss_function_index: null
-            reg_epsilon: null
-            'Regression: ': null
+            Loss functions: Funkcije izgube
+            cls_loss_function_index: false
+            cls_epsilon: false
+            'ε: ': false
+            'Classification: ': 'Klasifikacija: '
+            reg_loss_function_index: false
+            reg_epsilon: false
+            'Regression: ': 'Regresija: '
         def `_add_regularization_to_layout`:
-            Regularization: null
-            penalty_index: null
-            l1_ratio: null
-            'Mixing: ': null
-            alpha: null
-            'Strength (α): ': null
+            Regularization: Regularizacija
+            penalty_index: false
+            l1_ratio: false
+            'Mixing: ': 'Mešanje: '
+            alpha: false
+            'Strength (α): ': 'Moč (α): '
         def `_add_learning_params_to_layout`:
-            Optimization: null
-            learning_rate_index: null
-            'Learning rate: ': null
-            eta0: null
-            'Initial learning rate (η<sub>0</sub>): ': null
-            power_t: null
-            'Inverse scaling exponent (t): ': null
-            max_iter: null
-            'Number of iterations: ': null
-            tol: null
-            'Tolerance (stopping criterion): ': null
-            tol_enabled: null
-            shuffle: null
-            Shuffle data after each iteration: null
-            random_state: null
-            'Fixed seed for random shuffling: ': null
-            use_random_state: null
+            Optimization: Optimizacija
+            learning_rate_index: false
+            'Learning rate: ': 'Hitrost učenja: '
+            eta0: false
+            'Initial learning rate (η<sub>0</sub>): ': 'Začetna hitrost učenja (η<sub>0</sub>): '
+            power_t: false
+            'Inverse scaling exponent (t): ': 'Inverzni eksponent skaliranja (t): '
+            max_iter: false
+            'Number of iterations: ': 'Število iteracij: '
+            tol: false
+            'Tolerance (stopping criterion): ': 'Toleranca (zaustavitveni kriterij): '
+            tol_enabled: false
+            shuffle: false
+            Shuffle data after each iteration: Premešaj podatke po vsaki iteraciji
+            random_state: false
+            'Fixed seed for random shuffling: ': 'Določeno seme za naključno mešanje: '
+            use_random_state: false
         def `_on_cls_loss_change`:
-            huber: null
-            epsilon_insensitive: null
-            squared_epsilon_insensitive: null
+            huber: false
+            epsilon_insensitive: false
+            squared_epsilon_insensitive: false
         def `_on_reg_loss_change`:
-            huber: null
-            epsilon_insensitive: null
-            squared_epsilon_insensitive: null
+            huber: false
+            epsilon_insensitive: false
+            squared_epsilon_insensitive: false
         def `_on_regularization_change`:
-            l1: null
-            l2: null
-            elasticnet: null
+            l1: false
+            l2: false
+            elasticnet: false
         def `_on_learning_rate_change`:
-            constant: null
-            invscaling: null
+            constant: false
+            invscaling: false
         def `create_learner`:
-            random_state: null
+            random_state: false
         def `get_learner_parameters`:
-            Classification loss function: null
-            huber: null
-            epsilon_insensitive: null
-            squared_epsilon_insensitive: null
-            Epsilon (ε) for classification: null
-            Regression loss function: null
-            Epsilon (ε) for regression: null
-            Regularization: null
-            l1: null
-            l2: null
-            elasticnet: null
-            Regularization strength (α): null
-            Elastic Net mixing parameter (L1 ratio): null
-            Learning rate: null
-            constant: null
-            invscaling: null
-            Initial learning rate (η<sub>0</sub>): null
-            Inverse scaling exponent (t): null
-            Shuffle data after each iteration: null
-            Random seed for shuffling: null
+            Classification loss function: Klasifikacijska funkcija izgube
+            huber: false
+            epsilon_insensitive: false
+            squared_epsilon_insensitive: false
+            Epsilon (ε) for classification: Epsilon (ε) za klasifikacijo
+            Regression loss function: Regresijska funkcija izgube
+            Epsilon (ε) for regression: Epsilon (ε) za regresijo
+            Regularization: Regularizacija
+            l1: false
+            l2: false
+            elasticnet: false
+            Regularization strength (α): Moč regularizacije (α)
+            Elastic Net mixing parameter (L1 ratio): Parameter mešanja pri elastični mreži (delež L1)
+            Learning rate: Hitrost učenja
+            constant: false
+            invscaling: false
+            Initial learning rate (η<sub>0</sub>): Začetna hitrost učenja (η<sub>0</sub>)
+            Inverse scaling exponent (t): Inverzni eksponent skaliranja (t)
+            Shuffle data after each iteration: Premešaj podatke po vsaki iteraciji
+            Random seed for shuffling: Naključno seme za mešanje
         def `update_model`:
-            coef: null
-            name: null
-            intercept: null
+            coef: false
+            name: false
+            intercept: false
             coefficients: koeficienti
         def `migrate_settings`:
-            max_iter: null
-            n_iter: null
-            tol_enabled: null
-    __main__: null
-    iris: null
+            max_iter: false
+            n_iter: false
+            tol_enabled: false
+    __main__: false
+    iris: false
 widgets/model/owstack.py:
     class `OWStackedLearner`:
         Stacking: Sklad modelov
