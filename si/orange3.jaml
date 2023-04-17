@@ -2414,7 +2414,7 @@ modelling/base.py:
 modelling/catgb.py:
     CatGBLearner: false
     class `CatGBLearner`:
-        Gradient Boosting (catboost): false
+        Gradient Boosting (catboost): true
         classification: false
         regression: false
 modelling/constant.py:
@@ -2425,7 +2425,7 @@ modelling/constant.py:
 modelling/gb.py:
     GBLearner: false
     class `GBLearner`:
-        Gradient Boosting (scikit-learn): false
+        Gradient Boosting (scikit-learn): true
         classification: false
         regression: false
 modelling/knn.py:
@@ -2485,11 +2485,11 @@ modelling/xgb.py:
     XGBLearner: false
     XGBRFLearner: false
     class `XGBLearner`:
-        Extreme Gradient Boosting (xgboost): false
+        Extreme Gradient Boosting (xgboost): true
         classification: false
         regression: false
     class `XGBRFLearner`:
-        Extreme Gradient Boosting Random Forest (xgboost): false
+        Extreme Gradient Boosting Random Forest (xgboost): true
         classification: false
         regression: false
 preprocess/continuize.py:
@@ -9491,113 +9491,106 @@ widgets/model/owcurvefit.py:
     housing: false
 widgets/model/owgradientboosting.py:
     class `LearnerItemModel`:
-        Extreme Gradient Boosting (xgboost): null
-        xgboost: null
-        Extreme Gradient Boosting Random Forest (xgboost): null
-        Gradient Boosting (catboost): null
-        catboost: null
+        Extreme Gradient Boosting (xgboost): true
+        xgboost: false
+        Extreme Gradient Boosting Random Forest (xgboost): true
+        Gradient Boosting (catboost): true
+        catboost: false
         def `_add_data`:
-            {name}: null
-            {lib} is not installed: null
+            {name}: false
+            {lib} is not installed: {lib} ni nameščen
     class `BaseEditor`:
         def `_add_main_layout`:
-            callback: null
-            alignment: null
-            controlWidth: null
-            Basic Properties: null
-            n_estimators: null
-            Number of trees:: null
-            learning_rate: null
-            'Learning rate: ': null
-            random_state: null
-            Replicable training: null
-            Growth Control: null
-            max_depth: null
-            'Limit depth of individual trees: ': null
-            Subsampling: null
+            callback: false
+            alignment: false
+            controlWidth: false
+            Basic Properties: Osnovne lastnosti
+            n_estimators: false
+            Number of trees:: Število dreves:
+            learning_rate: false
+            'Learning rate: ': 'Hitrost učenja: '
+            random_state: false
+            Replicable training: Ponovno učenje
+            Growth Control: Nadzor rasti
+            max_depth: false
+            'Limit depth of individual trees: ': 'Omejitev globine posamičnih dreves: '
+            Subsampling: Podvzorčenje
         def `get_arguments`:
-            n_estimators: null
-            learning_rate: null
-            random_state: null
-            max_depth: null
+            n_estimators: false
+            learning_rate: false
+            random_state: false
+            max_depth: false
         def `get_learner_parameters`:
-            Method: null
-            Number of trees: null
-            Learning rate: null
-            Replicable training: null
-            Yes: null
-            No: null
-            Maximum tree depth: null
+            Method: Metoda
+            Number of trees: Število dreves
+            Learning rate: Hitrost učenja
+            Replicable training: Ponovno učenje
+            Yes: Da
+            No: Ne
+            Maximum tree depth: Največja globina drevesa
     class `RegEditor`:
         def `_add_main_layout`:
-            Regularization:: null
-            lambda_index: null
+            Regularization:: Regularizacija
+            lambda_index: false
         def `_set_lambda_label`:
-            'Lambda: {}': null
+            'Lambda: {}': true
         def `get_arguments`:
-            reg_lambda: null
+            reg_lambda: false
         def `get_learner_parameters`:
-            Regularization strength: null
+            Regularization strength: Moč regularizacije
     class `GBLearnerEditor`:
         def `_add_main_layout`:
-            subsample: null
-            'Fraction of training instances: ': null
-            min_samples_split: null
-            'Do not split subsets smaller than: ': null
+            subsample: false
+            'Fraction of training instances: ': 'Delež učnih primerov: '
+            min_samples_split: false
+            'Do not split subsets smaller than: ': 'Ne deli podmnožic manjših od: '
         def `get_arguments`:
-            subsample: null
-            min_samples_split: null
+            subsample: false
+            min_samples_split: false
         def `get_learner_parameters`:
-            Fraction of training instances: null
-            Stop splitting nodes with maximum instances: null
+            Fraction of training instances: Delež učnih primerov
+            Stop splitting nodes with maximum instances: Ne deli vozlišč z manj primeri kot
     class `CatGBLearnerEditor`:
         def `_add_main_layout`:
-            colsample_bylevel: null
-            'Fraction of features for each tree: ': null
+            colsample_bylevel: false
+            'Fraction of features for each tree: ': 'Delež spremenljivk za vsako drevo: '
         def `get_arguments`:
-            colsample_bylevel: null
+            colsample_bylevel: false
         def `get_learner_parameters`:
-            Fraction of features for each tree: null
+            Fraction of features for each tree: Delež spremenljivk za vsako drevo
     class `XGBBaseEditor`:
         def `_add_main_layout`:
-            callback: null
-            alignment: null
-            controlWidth: null
-            subsample: null
-            'Fraction of training instances: ': null
-            colsample_bytree: null
-            'Fraction of features for each tree: ': null
-            colsample_bylevel: null
-            'Fraction of features for each level: ': null
-            colsample_bynode: null
-            'Fraction of features for each split: ': null
+            callback: false
+            alignment: false
+            controlWidth: false
+            subsample: false
+            'Fraction of training instances: ': 'Delež učnih primerov: '
+            colsample_bytree: false
+            'Fraction of features for each tree: ': 'Delež spremenljivk za posamezno drevo: '
+            colsample_bylevel: false
+            'Fraction of features for each level: ': 'Delež spremenljivk za posamezno stopnjo: '
+            colsample_bynode: false
+            'Fraction of features for each split: ': 'Delež spremenljivk za posamezno delitev: '
         def `get_arguments`:
-            subsample: null
-            colsample_bytree: null
-            colsample_bylevel: null
-            colsample_bynode: null
+            subsample: false
+            colsample_bytree: false
+            colsample_bylevel: false
+            colsample_bynode: false
         def `get_learner_parameters`:
-            Fraction of training instances: null
-            Fraction of features for each tree: null
-            Fraction of features for each level: null
-            Fraction of features for each split: null
+            Fraction of training instances: Delež učnih primerov
+            Fraction of features for each tree: Delež spremenljivk za vsako drevo
+            Fraction of features for each level: Delež spremenljivk za posamezno stopnjo
+            Fraction of features for each split: Delež spremenljivk za posamezno delitev
     class `OWGradientBoosting`:
-        Gradient Boosting: null
-        Predict using gradient boosting on decision trees.: null
-        icons/GradientBoosting.svg: null
-        catboost: null
-        gradient: null
-        boost: null
-        tree: null
-        forest: null
-        xgb: null
-        gb: null
-        extreme: null
+        Gradient Boosting: true
+        Predict using gradient boosting on decision trees.: Napovedovanje z modelom Gradient Boosting na odločitvenih drevesih.
+        icons/GradientBoosting.svg: false
+        gradient boosting, catboost, gradient, boost, tree, forest, xgb, gb, extreme: gradient boosting, catboost, gradient, boost, tree, forest, xgb, gb, extreme, drevo, gozd
         def `add_main_layout`:
-            Method: null
-            method_index: null
-    __main__: null
-    iris: null
+            Method: Metoda
+            method_index: false
+    __main__: false
+    iris: false
 widgets/model/owknn.py:
     class `OWKNNLearner`:
         kNN: k sosedov
