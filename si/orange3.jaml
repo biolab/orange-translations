@@ -4398,70 +4398,122 @@ widgets/data/owconcatenate.py:
     iris: false
     zoo: false
 widgets/data/owcontinuize.py:
+    Use preset: Uporabi privzeto
+    preset: privzeto
+    Treat the variable as defined in preset: Obravnavaj spremenljivko, kot je določeno v prednastavitvi
+    Keep categorical: Ohrani kategorično
+    keep as is: ohrani, kot je
+    Keep the variable discrete: Ohrani spremenljivko diskretno
+    First value as base: Prva vrednost kot osnova
+    first as base: prva kot osnova
+    One indicator variable for each value except the first: Ena indikatorska spremenljivka za vsako vrednost, razen za prvo
+    Most frequent as base: Najpogostejša vrednost kot osnova
+    frequent as base: najpogostejša kot osnova
+    One indicator variable for each value except the most frequent: Ena indikatorska spremenljivka za vsako vrednost, razen za najpogostejšo
+    One-hot encoding: Enično kodiranje
+    one-hot: enično kodiranje
+    One indicator variable for each value: Ena indikatorska spremenljivka za vsako vrednost
+    Remove if more than 2 values: Odstrani, če ima več kot dve vrednosti
+    remove if >2: odstrani, če >2
+    Remove variables with more than two values; indicator otherwise: Odstrani spremenljivke z več kot dvema vrednostma; sicer indikator
+    Remove: Odstrani
+    remove: odstrani
+    Remove variable: Odstrani spremenljivko
+    Treat as ordinal: Obravnavaj kot ordinalno
+    as ordinal: kot ordinalna
+    Each value gets a consecutive number from 0 to number of values - 1: Vsaka vrednost dobi zaporedno številko od 0 do števila vrednosti - 1
+    Treat as normalized ordinal: Obravnavaj kot normalizirane vrstne
+    as norm. ordinal: obravnavaj kot normalizirane vrstne
+    Same as above, but scaled to [0, 1]: Enako kot zgoraj, vendar skalirano na [0, 1]
+    Treat the variable as defined in 'default setting': Obravnavaj spremenljivko, kot je prenastavljena.
+    Keep as it is: Ohrani tako, kot je
+    no change: brez sprememb
+    Keep the variable as it is: Ohrani spremenljivko tako, kot je
+    Standardize to μ=0, σ²=1: Standardiziraj na μ=0, σ²=1
+    standardize: standardizirano
+    Subtract the mean and divide by standard deviation: Odštej povprečje in deli s standardnim odklonom
+    Center to μ=0: Centriraj na μ=0
+    center: centriraj
+    Subtract the mean: Odštej povprečje
+    Scale to σ²=1: Skaliraj na σ²=1
+    scale: skaliraj
+    Divide by standard deviation: Deli s standardnim odklonom
+    Normalize to interval [-1, 1]: Normaliziraj na interval [-1, 1]
+    to [-1, 1]: na interval [-1, 1]
+    Linear transformation into interval [-1, 1]: Linearna transformacija v interval [-1, 1]
+    Normalize to interval [0, 1]: Normaliziraj na interval [0, 1]
+    to [0, 1]: na interval [0, 1]
+    Linear transformation into interval [0, 1]: Linearna transformacija v interval [0, 1]
+    class `ContDomainModel`:
+        def `__init__`:
+            Meta attributes: Meta spremenljivke
+            Targets: Ciljne spremenljivke
+        def `data`:
+            {name} {hint[0]}: false
+    class `DefaultContModel`:
+        def `__init__`:
+            ★: false
+        def `data`:
+            'Preset: {self.method}': Prednastavljeno: {self.method}
+            Default for variables without specific settings: Privzeto za spremenljivke brez posebnih nastavitev
+    class `ListViewSearch`:
+        class `Delegate`:
+            def `displayText`:
+                ': {hint}': false
     class `OWContinuize`:
         Continuize: Kontinuizacija
         'Transform categorical attributes into numeric and, ': 'Kategorične atribute pretvori v številčne in '
-        optionally, normalize numeric values.: po želji normalizira številčne vrednosti.
+        optionally, scale numeric values.: po želji normalizira številčne vrednosti.
         icons/Continuize.svg: false
         Transform: Predelava podatkov
-        encode: kodiranje
-        dummy: navidezni
-        numeric: numerično
-        one-hot: null
-        binary: binarni
-        treatment: obdelava
-        contrast: kontrast
+        continuize, encode, dummy, numeric, one-hot, binary, treatment, contrast: continuize, encode, dummy, numeric, one-hot, binary, treatment, contrast, kodiranje, navidezni, numerično, binarni, obdelava, kontrast
         class `Inputs`:
             Data: Podatki
         class `Outputs`:
             Data: Podatki
-        First value as base: Prva vrednost kot osnova
-        Most frequent value as base: Najpogostejša vrednost kot osnova
-        One attribute per value: En atribut na vrednost
-        Ignore multinomial attributes: Prezri multinomske atribute
-        Remove categorical attributes: Odstrani kategorične atribute
-        Treat as ordinal: Obravnavaj kot vrstne
-        Divide by number of values: Deli s številom vrednosti
-        Leave them as they are: Pusti takšne, kot so
-        Standardize to μ=0, σ²=1: Standardiziraj na μ=0, σ²=1
-        Center to μ=0: Centriraj na μ=0
-        Scale to σ²=1: Skaliraj na σ²=1
-        Normalize to interval [-1, 1]: Normaliziraj na interval [-1, 1]
-        Normalize to interval [0, 1]: Normaliziraj na interval [0, 1]
-        Leave it as it is: Pusti tako, kot je
-        One class per value: En razred na vrednost
+        class `Error`:
+            'Some chosen methods do not support sparse data: {}': 'Nekatere izbrane metode ne podpirajo redkih podatkov: {}'
         def `__init__`:
-            multinomial_treatment: false
-            Categorical Features: Kategorične spremenljivke
-            continuous_treatment: false
-            Numeric Features: Numerične spremenljivke
-            class_treatment: false
-            Categorical Outcome(s): Kategorični rezultat(i)
-            autosend: null
+            Categorical Variables: Kategorične spremenljivke
+            Numeric Variables: Številske spremenljivke
+            Reset All: Ponastavi vse
+            autosend: false
+        def `_prepare_output`:
+            \n: false
+            ', ': false
+        def `_get`:
+            min: false
+            max: false
+            mean: false
+            std: false
+            major: false
+        def `_scaled_vars`:
+            mean: false
+            std: false
+            hint={hint}?!: false
+            min: false
+            max: false
+        def `_continuized_vars`:
+            major: false
+            hint={hint}?!: false
+            {var.name}={value}: false
         def `send_report`:
-            Settings: Nastavitve
-            Categorical features: Kategorične spremenljivke
-            Numeric features: Numerične spremenljivke
-            Class: Razred
+            Categorical variables: Kategorične spremenljivke
+            Numeric variables: Numerične spremenljivke
+            Preset: Prednastavljeno
+            Unlisted: Nerazvrščeno
+            'Any unlisted attributes default to preset option, and ': 'Za atribute, ki niso izpisani, je uporabljena privzeta nastavitev, '
+            'unlisted meta attributes and target variables are kept ': 'neizpisani meta atributi pa ostajajo '
+            as they are: nespremenjeni.
         def `migrate_settings`:
             continuous_treatment: false
             zero_based: false
-    def `make_indicator_var`:
-        {}={}: false
-    def `continuize_domain`:
-        continuizer requires data: false
-    def `continuize_var`:
-        def `continuize_discrete`:
-            {0.name} is a multinomial variable: false
-            Invalid value of `multinomial_treatment`: false
-        Non-primitive variables cannot be continuized: false
-    def `_ensure_dist`:
-        Need a distribution or data.: false
-    class `DomainContinuizer`:
-        def `__call__`:
-            Domain has multinomial attributes: false
+            cont_var_hints: false
+            disc_var_hints: false
+            multinomial_treatment: false
+            class_treatment: false
     __main__: false
-    iris: false
+    heart_disease: false
 widgets/data/owcorrelations.py:
     class `CorrelationType`:
         def `items`:
