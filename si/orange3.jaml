@@ -9219,8 +9219,8 @@ widgets/evaluate/tests/base.py:
 widgets/model/__init__.py:
     Model: true
     Prediction.: Modeliranje in napovedovanje
-    '#FAC1D9': null
-    icons/Category-Model.svg: null
+    '#FAC1D9': false
+    icons/Category-Model.svg: false
 widgets/model/owadaboost.py:
     class `OWAdaBoost`:
         AdaBoost: true
@@ -9552,7 +9552,7 @@ widgets/model/owknn.py:
         def `add_main_layout`:
             Neighbors: Sosedi
             n_neighbors: false
-            Number of neighbors:: Število sosedov
+            Number of neighbors:: Število sosedov:
             metric_index: false
             Metric:: Metrika:
             weight_index: false
@@ -9675,7 +9675,7 @@ widgets/model/owlogisticregression.py:
             none: false
         def `get_learner_parameters`:
             Regularization: Regularizacija
-            {}, C={}, class weights={}: {}, C={}, uteži razredov={}
+            '{}, C={}, class weights: {}': '{}, C={}, uteži razredov: {}'
     def `create_coef_table`:
         name: ime
         intercept: odsek
@@ -9744,7 +9744,7 @@ widgets/model/owneuralnetwork.py:
             Hidden layers: Skriti nivoji
             ', ': false
             Activation: Aktivacija
-            Solver: Algoritem reševanja:
+            Solver: Algoritem reševanja
             Alpha: Alfa
             Max iterations: Omejitev števila ponovitev
             Replicable training: Ponovljivo učenje
@@ -9864,7 +9864,6 @@ widgets/model/owrules.py:
             Weighted: Uteženo
             gamma: false
             γ:: true
-            weighted: false
             Rule search: Iskanje pravil
             evaluation_measure: false
             Evaluation measure:: Mera kvalitete:
@@ -9884,8 +9883,6 @@ widgets/model/owrules.py:
             parent_alpha: false
             Relative significance (parent α):: Relativna značilnost (predniko α):
             checked_parent_alpha: false
-        def `settings_changed`:
-            weighted: false
         def `get_learner_parameters`:
             Rule ordering: Urejenost pravil
             Covering algorithm: Način prekrivanja
@@ -10163,9 +10160,11 @@ widgets/model/owtree.py:
         def `get_learner_parameters`:
             Pruning: Rezanje
             ', ': true
-            at least {number} instance{s} in leaves: null
-            at least {number} instance{s} in internal nodes: null
-            maximum depth {}: dovoljena globina {}
+            'at least {self.min_leaf} ': 'vsaj {self.min_leaf} '
+            {pl(self.min_leaf, "instance")} in leaves: {plsi(self.min_leaf, "primer")} v  listih
+            'at least {self.min_internal} ': 'vsaj {self.min_internal} '
+            {pl(self.min_internal, "instance")} in internal nodes: {plsi(self.min_internal, "primer")} v notranjih vozliščih
+            maximum depth {self.max_depth}: dovoljena globina je {self.max_depth}
             None: Brez
             Splitting: Delitev
             'Stop splitting when majority reaches %d%% ': Ustavi, ko delež večinskega razreda doseže %d%%
