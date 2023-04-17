@@ -8416,8 +8416,8 @@ widgets/data/utils/pythoneditor/tests/run_all.py:
 widgets/evaluate/__init__.py:
     Evaluate: Vrednotenje
     Evaluate classification/regression performance.: Vrednotenje napovednih modelov
-    '#C3F3F3': null
-    icons/Category-Evaluate.svg: null
+    '#C3F3F3': false
+    icons/Category-Evaluate.svg: false
 widgets/evaluate/owcalibrationplot.py:
     metric_definition: false
     name: false
@@ -8634,7 +8634,7 @@ widgets/evaluate/owconfusionmatrix.py:
             t: false
             l: false
         def `send_report`:
-            Confusion matrix for {} (showing {}): Matrika zmot za {} (prikazano {})
+            Confusion matrix for {} (showing {}): Matrika zmot za model {} (prikazano {})
         def `migrate_settings`:
             selected_learner: false
     __main__: false
@@ -8804,7 +8804,7 @@ widgets/evaluate/owpredictions.py:
             'Shown regression error: ': Prikazana napaka:
             show_reg_errors: false
             See tooltips for individual options: Poglej namige ob posameznih možnostih
-            Restore Original Order: Začetni vrstni red
+            Restore Original Order: Izvirni vrstni red
             Show rows in the original order: Pokaži vrstice v izvirnem vrstnem redu
             show_scores: false
             Show perfomance scores: Pokaži rezultate vrednotenja
@@ -8840,11 +8840,11 @@ widgets/evaluate/owpredictions.py:
             \n: false
             <br>: false
             '<br>Showing probabilities for ': '<br/>Verjetnosti za '
-            all classes known to the model: razrede, ki jih napovedujejo modeli
-            all classes that appear in the data: razrede, ki se pojavijo v podatkih
+            all classes known to the model.: razrede, ki jih napovedujejo modeli.
+            all classes that appear in the data.: razrede, ki se pojavijo v podatkih.
             'all classes that appear in the data ': 'razrede, ki jih napovedujejo modeli '
-            and are known to the model: in se pojavljajo v podatkih
-            "'{self.class_var.values[class_idx]}'": false
+            and are known to the model.: in se pojavljajo v podatkih.
+            "'{self.class_var.values[class_idx]}.'": false
             Info: true
             Data & Predictions: Podatki in napovedi
             Scores: Rezultati
@@ -9046,7 +9046,7 @@ widgets/evaluate/owtestandscore.py:
             Missing separate test data input.: Na vhodu ni testnih primerov.
             Some scores could not be computed.: Nekaterih mer ni bilo mogoče izračunati.
             'Test data is present but unused. ': 'Testni primeri so podani, a neuporabljeni. '
-            Select 'Test on test data' to use it.: Izberite "Testiraj na učnih primerih".
+            Select 'Test on test data' to use it.: Izberite "Testiraj na testnih primerih".
             "Can't run stratified {}-fold cross validation; ": 'Ne morem uporabiti {}-kratnega stratificiranega prečnega preverjanja; '
             the least common class has only {} instances.: najmanjši razred ima samo {} primerov.
         class `Information`:
@@ -9073,8 +9073,8 @@ widgets/evaluate/owtestandscore.py:
             {} %: false
             shuffle_stratified: false
             Leave one out: Izpusti enega
-            Test on train data: false
-            Test on test data: Testiraj na učnih primerih
+            Test on train data: Testiraj na učnih primerih
+            Test on test data: Testiraj na testnih primerih
             class_selection: false
             Evaluation results for target: Rezultati vrednotenja za cilj
             comparison_criterion: false
@@ -9177,11 +9177,11 @@ widgets/evaluate/utils.py:
     def `scorer_caller`:
         def `thunked`:
             ignore: false
-            ((F-score|Precision)) is ill-defined.*: null
-            weighted: null
-    Model_: null
-    Train_: null
-    Test_: null
+            ((F-score|Precision)) is ill-defined.*: false
+            weighted: false
+    Model_: false
+    Train_: false
+    Test_: false
     class `SelectableColumnsHeader`:
         def `__init__`:
             'border: none; background-color: {col.name(QColor.NameFormat.HexRgb)}': false
