@@ -4554,9 +4554,9 @@ widgets/data/owcreateclass.py:
             def `_set_labels`:
                 {}: true
                 + {}: true
-                {n_before} o: null
-                "f {n_total} matching {pl(n_total, 'instance')} ": null
-                {pl(n_before, 'is|are')} already covered above.: null
+                {n_before} o: {n_before} od
+                "f {n_total} matching {pl(n_total, 'instance')} ": " {n_total} {plsi(n_total, 'pojavitve|pojavitev|pojavitev')} "
+                {pl(n_before, 'is|are')} already covered above.: {plsi(n_before, 'je že pokrita|sta že pokriti|so že pokrite|je že pokritih')} s predhodnimi vzorci.
                 All matching instances are already covered above: Vse pojavitve so že pokrite s predhodnimi vzorci.
             def `_set_placeholders`:
                 (remaining instances): (preostali primeri)
@@ -4567,13 +4567,13 @@ widgets/data/owcreateclass.py:
                 if <b>{self.attribute.name}</b> contains <b>{patt}</b>: če <b>{self.attribute.name}</b> vsebuje <b>{patt}</b>
                 otherwise: sicer
             def `_count_part`:
-                already covered above: null
-                the single matching instance is {aca}: null
-                both matching instances are {aca}: null
-                all {n_total} matching instances are {aca}: null
+                already covered above: s predhodnimi vzorci
+                the single matching instance is {aca}: pojavitev je že pokrita {aca}
+                both matching instances are {aca}: obe pojavitvi sta že pokriti {aca}
+                all {n_total} matching instances are {aca}: {plsi(n_total, 'edina|obe|vse|vseh')} {n_total} {plsi(n_total, 'pojavitev je že pokrita|pojavitvi sta že pokriti|pojavitve so že pokrite|pojavitev je že pokritih')} {aca}
                 {n_matched} {pl(n_matched, 'instance')}: {n_matched} {plsi(n_matched, 'primer')}
                 {n_matched} matching {pl(n_matched, 'instance')}: {n_matched} {plsi(n_matched, 'pojavitev|pojavitvi|pojavitve|pojavitev')}
-                " (+{n_already} that {pl(n_already, 'is|are')} {aca})": null
+                " (+{n_already} that {pl(n_already, 'is|are')} {aca})": " (+{n_already}, ki {pl(n_already, 'je že pokrita|sta že pokriti|so že pokrite|je že pokritih')} {aca})"
             Input: Vhod
             Source attribute: Izvorni stolpec
             <li>{}; {}</li>: false
@@ -4874,7 +4874,7 @@ widgets/data/owcsvimport.py:
         round_trip: false
         rb: false
         read: false
-        {prefix}{column}: null
+        {prefix}{column}: false
     def `guess_data_type`:
         category: false
     class `TaskState`:
@@ -5576,7 +5576,7 @@ widgets/data/oweditdomain.py:
         unsafe: false
     def `datetime_to_epoch`:
         1970-01-01: false
-        UTC: null
+        UTC: false
         1s: false
     class `ReparseTimeTransform`:
         def `transform`:
@@ -5591,7 +5591,7 @@ widgets/data/owfeatureconstructor.py:
     FeatureDescriptor: false
     name: false
     expression: false
-    meta: null
+    meta: false
     ContinuousDescriptor: false
     number_of_decimals: false
     DateTimeDescriptor: false
@@ -5875,10 +5875,10 @@ widgets/data/owfeaturestatistics.py:
             def `__mode`:
                 C: false
         def `get_statistics_table`:
-            Entropy: null
-            Feature: null
-            Mode: null
-            {self.table.name} (Feature Statistics): null
+            Entropy: Entropija
+            Feature: Spremenljivka
+            Mode: Najpogostejša
+            {self.table.name} (Feature Statistics): {self.table.name} (Statistika spremenljivk)
         def `_sortColumnData`:
             Data should be at most 2-dimensional: false
         def `_argsortData`:
@@ -6002,7 +6002,7 @@ widgets/data/owfile.py:
             '<br/>Classification; categorical class ': '<br/>Klasifikacija: '
             with {nvals} {pl(nvals, 'value')} {missing_in_class}: {plsi_sz(nvals)} {nvals} {plsi(nvals, 'razredom|razredoma|razredi')} {missing_in_class}
             '<br/>Multi-target; ': '<br/>Večrazredni; '
-            "{ntargets} target {pl(ntargets, 'variable')} ": null
+            "{ntargets} target {pl(ntargets, 'variable')} ": "{ntargets} {plsi(ntargets, 'ciljna spremenljivka|ciljni spremenljivki|ciljne spremenljivke|ciljnih spremenljivk')} "
             {missing_in_class}: true
             <br/>Data has no target variable.: <br/>Podatki nimajo ciljne spremenljivke.
             <br/>{nmetas} {pl(nmetas, 'meta attribute')}: <br/>{nmetas} {plsi(nmetas, 'meta spremenljivka')}
@@ -6045,9 +6045,9 @@ widgets/data/owgroupby.py:
     def `concatenate`:
         ' ': false
     def `var`:
-        1970-01-01: null
-        UTC: null
-        1s: null
+        1970-01-01: false
+        UTC: false
+        1s: false
     Mean: Povprečje
     mean: false
     Median: Mediana
@@ -6105,8 +6105,8 @@ widgets/data/owgroupby.py:
             ' ': false
             Aggregations: Funkcije
         def `migrate_context`:
-            aggregations: null
-            Sum: null
+            aggregations: false
+            Sum: false
     __main__: false
     iris: false
 widgets/data/owimpute.py:
@@ -6544,7 +6544,7 @@ widgets/data/owpaintdata.py:
         class `Warning`:
             Input data has no variables: Vhodni podatki nimajo spremenljivk
             Numeric target value can not be used.: Numerične ciljne spremenljivke ne morem uporabiti
-            Sparse data is ignored.: Ignoriram redke podatke
+            Sparse data is ignored.: Ignoriram redke podatke.
             'Some variables have been renamed ': 'Spremenljivke s podvojenimi imeni '
             to avoid duplicates.\n{}: so preimenovane.\n{}
         class `Information`:
@@ -7506,7 +7506,7 @@ identiteto vrstic.
 '
         def `send_report`:
             def `data_info_text`:
-                No data.: -
+                No data.: Ni podatkov.
                 '{data.name}, ': true
                 "{len(data)} {pl(len(data), 'instance')}, ": "{len(data)} {plsi(len(data), 'vrstica')}, "
                 {nvars} {pl(nvars, 'variable')}: {nvars} {plsi(nvars, 'spremenljivka')}
@@ -7668,7 +7668,7 @@ widgets/data/owselectrows.py:
             Add All Variables: Dodaj vse spremenljivke
             Remove All: Odstrani vse
             purge_attributes: false
-            Remove unused features: Odstrani neuporabljene vrednosti
+            Remove unused values and constant features: Odstrani neuporabljene vrednosti in konstantne spremenljivke
             purge_classes: false
             Remove unused classes: Odstrani prazne razrede
             auto_commit: false
@@ -8018,6 +8018,15 @@ widgets/data/utils/histogram.py:
     __main__: false
     iris: false
     '#000': false
+widgets/data/utils/models.py:
+    class `RichTableModel`:
+        def `__init__`:
+            _: false
+        def `headerData`:
+            \n: false
+    class `TableSliceProxy`:
+        def `setRowSlice`:
+            invalid stride: false
 widgets/data/utils/preprocess.py:
     class `StandardItemModel`:
         def `moveRow`:
