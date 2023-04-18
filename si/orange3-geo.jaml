@@ -1088,7 +1088,7 @@ widgets/owchoropleth.py:
             left: false
             bottom: false
         def `_create_drag_tooltip`:
-            '{}: Append to group': '{}: Dodaj v skupino'
+            '{}: Append to group': {}: Dodaj v skupino
             Cmd: false
             darwin: false
             Ctrl: false
