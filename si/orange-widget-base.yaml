@@ -1565,7 +1565,7 @@ workflow/mainwindow.py:
             Open Report...: Odpri poročilo...
             action-open-report: false
             Open a saved report: Odpri shranjeno poročilo...
-            Reset Widget Settings...: Ponastavi gradnik...
+            Reset Widget Settings...: Pobriši nastavitve gradnikov...
             file-menu: false
             open-actions-separator: false
             view-menu: false
@@ -1590,7 +1590,7 @@ workflow/mainwindow.py:
                     ob naslednjem ponovnem zagonu
         def `ask_save_report`:
             Report window: Shranjevanje poročila
-            The report contains unsaved changes.: Poročilom vsebuje neshranjene spremembe.
+            The report contains unsaved changes.: Poročilo vsebuje neshranjene spremembe.
             Would you like to save the report?: Želite shraniti poročilo?
 workflow/utils.py:
     T: false
