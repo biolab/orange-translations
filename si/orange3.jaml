@@ -6331,17 +6331,17 @@ widgets/data/owmergedata.py:
         class `Warning`:
             'Some variables have been renamed ': Zaradi podvojenih imen so nekatere spremenljivke preimenovane.\n
             to avoid duplicates.\n{}: {}
+            'Some (unused) combinations of values in Data appear in ': 'Nekatere (neuporabljene) kombinacije vrednosti v podatkih se pojavijo '
+            multiple rows.: v več vrsticah.
+            'Some (unused) combinations of values in Extra Data appear in ': 'Nekatere (neuporabljene) kombinacije vrednosti v dodatnih podatkih se pojavijo '
         class `Error`:
             Numeric and non-numeric columns ({} and {}) cannot be matched.: Številskih in kategoričnih stolpcev ({} in {}) ni mogoče primerjati.
             Row index cannot be matched with {}.: Številke vrstice ni mogoče primerjati z {}.
             Instance cannot be matched with {}.: Identitete vrstice ni mogoče primerjati z {}.
-            Some combinations of values on the left appear in multiple rows.\n: Nekatere kombinacije vrednosti na levi se pojavijo v več vrsticah.\n
-            'For this type of merging, every possible combination of values ': Za to vrsto združevanja morajo biti vse kombinacije unikatne.
-            on the left should appear at most once.: ""
-            Some combinations of values on the right appear in multiple rows.: Nekatere kombinacije vrednosti na desni se pojavijo v več vrsticah.
-            \n: true
-            'Every possible combination of values on the right should appear ': Vsaka kombinacija vrednosti se sme pojaviti največ enkrat.
-            at most once.: ""
+            Some combinations of values in Data appear in multiple rows.: Nekatere kombinacije vrednosti v podatkih se pojavijo v več vrsticah.
+            \nEvery matched combination may appear at most once.: \nVsaka ujemajoča se kombinacija se lahko pojavi največ enkrat.
+            \nEvery combination may appear at most once.: \nVsaka kombinacija se lahko pojavi največ enkrat.
+            Some combinations of values in Extra Data appear in multiple rows.: Nekatere kombinacije vrednosti v dodatnih podatkih se pojavijo v več vrsticah.
         def `__init__`:
             merging: false
             Merging: Združevanje
@@ -7919,6 +7919,15 @@ widgets/data/owtable.py:
             \n: false
         def `__restore_sort`:
             ', ': false
+        def `__encode_column_id`:
+            def `escape`:
+                \\: false
+            TARGET: false
+            META: false
+            FEATURES: false
+            \\BASKET({lookup[coldesc.role]}): false
+        def `__decode_column_id`:
+            \\: false
         def `commit`:
             rows: false
             columns: false
