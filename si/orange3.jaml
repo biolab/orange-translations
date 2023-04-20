@@ -4402,7 +4402,7 @@ widgets/data/owconcatenate.py:
 widgets/data/owcontinuize.py:
     Use preset: Uporabi privzeto
     preset: privzeto
-    Treat the variable as defined in preset: Obravnavaj spremenljivko, kot je določeno v prednastavitvi
+    Treat the variable as defined in preset: Obravnavaj spremenljivko, kot je privzeto določena
     Keep categorical: Ohrani kategorično
     keep as is: ohrani, kot je
     Keep the variable discrete: Ohrani spremenljivko diskretno
@@ -4424,8 +4424,8 @@ widgets/data/owcontinuize.py:
     Treat as ordinal: Obravnavaj kot ordinalno
     as ordinal: kot ordinalna
     Each value gets a consecutive number from 0 to number of values - 1: Vsaka vrednost dobi zaporedno številko od 0 do števila vrednosti - 1
-    Treat as normalized ordinal: Obravnavaj kot normalizirane vrstne
-    as norm. ordinal: obravnavaj kot normalizirane vrstne
+    Treat as normalized ordinal: Obravnavaj kot normalizirano ordinalno
+    as norm. ordinal: kot norm. ordinalna
     Same as above, but scaled to [0, 1]: Enako kot zgoraj, vendar skalirano na [0, 1]
     Treat the variable as defined in 'default setting': Obravnavaj spremenljivko, kot je prenastavljena.
     Keep as it is: Ohrani tako, kot je
@@ -4456,7 +4456,7 @@ widgets/data/owcontinuize.py:
         def `__init__`:
             ★: false
         def `data`:
-            'Preset: {self.method}': Prednastavljeno: {self.method}
+            'Preset: {self.method}': Privzeto: {self.method}
             Default for variables without specific settings: Privzeto za spremenljivke brez posebnih nastavitev
     class `ListViewSearch`:
         class `Delegate`:
@@ -4502,7 +4502,7 @@ widgets/data/owcontinuize.py:
         def `send_report`:
             Categorical variables: Kategorične spremenljivke
             Numeric variables: Numerične spremenljivke
-            Preset: Prednastavljeno
+            Preset: Privzeto
             Unlisted: Nerazvrščeno
             'Any unlisted attributes default to preset option, and ': 'Za atribute, ki niso izpisani, je uporabljena privzeta nastavitev, '
             'unlisted meta attributes and target variables are kept ': 'neizpisani meta atributi pa ostajajo '
