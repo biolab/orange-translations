@@ -4474,7 +4474,7 @@ widgets/data/owcontinuize.py:
         class `Outputs`:
             Data: Podatki
         class `Error`:
-            'Some chosen methods do not support sparse data: {}': 'Nekatere izbrane metode ne podpirajo redkih podatkov: {}'
+            'Some chosen methods do not support sparse data: {}': Nekatere izbrane metode ne podpirajo redkih podatkov: {}
         def `__init__`:
             Categorical Variables: Kategorične spremenljivke
             Numeric Variables: Številske spremenljivke
@@ -9724,7 +9724,7 @@ widgets/model/owlogisticregression.py:
             none: false
         def `get_learner_parameters`:
             Regularization: Regularizacija
-            '{}, C={}, class weights: {}': '{}, C={}, uteži razredov: {}'
+            '{}, C={}, class weights: {}': {}, C={}, uteži razredov: {}
     def `create_coef_table`:
         name: ime
         intercept: odsek
@@ -10732,7 +10732,7 @@ widgets/unsupervised/owdistances.py:
             Ignoring categorical features: Kategoričnih spremenljivk ne upoštevam
             Ignoring non-binary features: Ne-binarnih spremenljivk ne upoštevam
             Some metrics don't support sparse data\n: Nekatere metrike ne podpirajo redkih podatkov\n
-            'and were disabled: {}': 'in so bile onemogočene: {}'
+            'and were disabled: {}': in so bile onemogočene: {}
             Missing values were imputed: Manjkajoče vrednosti so bile nadomeščene
         def `__init__`:
             axis: false
