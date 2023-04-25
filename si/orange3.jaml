@@ -1608,6 +1608,7 @@ data/variable.py:
         %m/%d/%y: false
         20211125: false
         2021-11-25 00:00:00: false
+        %Y-%m-%d %H:%M%z: false
         25.11.2021 00:00:00: false
         %d.%m.%Y %H:%M: false
         %d. %m. %Y %H:%M: false
@@ -7548,7 +7549,7 @@ widgets/data/owselectbydataindex.py:
         icons/SelectByDataIndex.svg: false
         class `Inputs`:
             Data: Podatki
-            Data Subset: Podmnožica
+            Data Subset: Podmnožica podatkov
         class `Outputs`:
             Matching Data: Izbrani podatki
             Data: false
@@ -7580,7 +7581,7 @@ identiteto vrstic.
                 "{len(data)} {pl(len(data), 'instance')}, ": "{len(data)} {plsi(len(data), 'vrstica')}, "
                 {nvars} {pl(nvars, 'variable')}: {nvars} {plsi(nvars, 'spremenljivka')}
             Data: Podatki
-            Data Subset: Podmnožica
+            Data Subset: Podmnožica podatkov
     __main__: false
     iris.tab: false
 widgets/data/owselectcolumns.py:
@@ -7867,11 +7868,13 @@ widgets/data/owsql.py:
             No: Ne
             Yes, on a sample: Da, na vzorcu
             'Data appears to be big. Do you really ': 'Podatki so videti veliki. Jih res želite '
-            want to download it to local memory?: naložiti v pomnilnik?
+            want to download it to local memory?\n: naložiti v pomnilnik?\n
+            'Table length: {:,}. Limit {:,}': 'Dolžina tabele: {:,}. Omejitev {:,}'
             Yes, a sample: Da, vzorec
             Warning: Opozorilo
             Data is too big to download.\n: Podatki so preveliki.
             Question: Vprašanje
+            want to download it to local memory?: naložiti v pomnilnik?
         def `migrate_settings`:
             host: false
             port: false
@@ -7879,6 +7882,12 @@ widgets/data/owsql.py:
             password: false
     __main__: false
 widgets/data/owtable.py:
+    class `HeaderViewWithSubsetIndicator`:
+        \N{BULLET}: false
+        def `paintSection`:
+            ' ': false
+        def `sectionSizeFromContents`:
+            ' ': false
     class `OWTable`:
         Data Table: Tabela
         View the dataset in a spreadsheet.: Pregled podatkov v tabeli.
@@ -7886,6 +7895,7 @@ widgets/data/owtable.py:
         data table, view: data table, view, pogled, podatki
         class `Inputs`:
             Data: Podatki
+            Data Subset: Podmnožica podatkov
         class `Outputs`:
             Selected Data: Izbrani podatki
         class `Warning`:
@@ -7909,9 +7919,10 @@ widgets/data/owtable.py:
             Restore Original Order: Izvirni vrstni red
             Show rows in the original order: Pokaži vrstice v izvirnem vrstnem redu
             auto_commit: false
-        def `handleNewSignals`:
+        def `set_dataset`:
             def `update`:
                 _update_info: false
+        def `handleNewSignals`:
             rows: false
             columns: false
         def `_update_input_summary`:
@@ -10819,7 +10830,7 @@ widgets/unsupervised/owhierarchicalclustering.py:
         hierarchical clustering: hierarchical clustering, dendrogram, razvrščanje, skupine
         class `Inputs`:
             Distances: Razdalje
-            Data Subset: Podmnožica primerov
+            Data Subset: Podmnožica podatkov
         class `Outputs`:
             Selected Data: Izbrani podatki
         Enumeration: Številčenje
@@ -11489,6 +11500,8 @@ widgets/unsupervised/owsom.py:
             ≥ {labels[-1]}: true
         def `send_report`:
             Self-organizing map colored by '{self.attr_color.name}': Samodejni zemljevid, pobarvan glede na '{self.attr_color.name}'
+        def `migrate_settings`:
+            selection: false
     __main__: false
     iris: false
 widgets/unsupervised/owtsne.py:

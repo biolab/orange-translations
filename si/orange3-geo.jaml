@@ -1060,6 +1060,8 @@ utils.py:
     ', ': false
     longitude, lng, long, lon: longitude, lng, long, lon, dolžina
 widgets/__init__.py:
+    Geo: true
+    Transformation and visualization of geographical data.: Preoblikovanje in vizualizacija geografskih podatkov.
     icons/category.svg: false
     '#a0eaa0': false
     {DEVELOP_ROOT}/doc/_build/html/index.html: false
