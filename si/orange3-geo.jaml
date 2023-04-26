@@ -1151,7 +1151,7 @@ widgets/owchoropleth.py:
             agg_attr: false
             Values:: Vrednost:
             agg_func: false
-            Show:: Pokaži::
+            Show:: Pokaži:
             binning_index: false
             Bin width:: Širina intervala
             graph.alpha_value: false
