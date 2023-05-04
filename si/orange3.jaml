@@ -198,8 +198,8 @@ util.py:
             unsafe: false
 version.py:
     3.35.0: false
-    3.35.0.dev0+c42459a: false
-    c42459a428b30c90f3a1cfdb6d2ab0e755776c4a: false
+    3.35.0.dev0+3cc58b4: false
+    3cc58b4a6c4a9120c74a9664f45465e913c2e635: false
     .dev: false
 canvas/__main__.py:
     ORANGE_STATISTICS_API_URL: false
@@ -4855,13 +4855,13 @@ widgets/data/owcsvimport.py:
             qint64: false
         def `cancel`:
             Cancelled: Prekinjeno
-            <div>Cancelled<br/><small>Press 'Reload' to try again</small></div>: <div>Prekinjeno<br/><small>Pritisni 'Naloži ponovno', da ponovim poskus</small></div>
+            <div>Cancelled<br/><small>Press 'Reload' to try again</small></div>: <div>Prekinjeno<br/><small>Pritisni 'Ponovno naloži', da ponovim poskus</small></div>
         def `__set_running_state`:
             Running: V teku
             Restart: Ponovno
             '<div>Loading: <i>{}</i><br/>': <div>Branje: <i>{}</i><br/>
         def `__clear_running_state`:
-            Reload: Naloži ponovno
+            Reload: Ponovno naloži
         def `__set_error_state`:
             '<div><i>{basename}</i> was not loaded due to a text encoding ': Datoteke <div><i>{basename}</i> ne morem prebrati, ker je shranjena v neznanem
             'error. The file might be saved in an unknown or invalid ': kodiranju ali pa je binarna.
@@ -7869,7 +7869,7 @@ widgets/data/owsql.py:
             Yes, on a sample: Da, na vzorcu
             'Data appears to be big. Do you really ': 'Podatki so videti veliki. Jih res želite '
             want to download it to local memory?\n: naložiti v pomnilnik?\n
-            'Table length: {:,}. Limit {:,}': 'Dolžina tabele: {:,}. Omejitev {:,}'
+            'Table length: {:,}. Limit {:,}': Dolžina tabele: {:,}. Omejitev {:,}
             Yes, a sample: Da, vzorec
             Warning: Opozorilo
             Data is too big to download.\n: Podatki so preveliki.
@@ -10577,7 +10577,7 @@ widgets/unsupervised/owdistancefile.py:
         def `__init__`:
             Distance File: Datoteka z razdaljami
             ...: true
-            Reload: Naloži ponovno
+            Reload: Ponovno naloži
             Options: Opcije
             auto_symmetric: false
             Treat triangular matrices as symmetric: Obravnavaj trikotne matrike kot simetrične
@@ -11438,6 +11438,9 @@ widgets/unsupervised/owsom.py:
         spin_y: false
         initialization: false
         start: false
+        class `Information`:
+            'The parameter settings have been changed. Press "Start" to ': 'Parametri so bili spremenjeni. Pritisnite "Ponovno poženi", da '
+            rerun with the new settings.: zaženete z novimi nastavitvami.
         class `Warning`:
             SOM ignores categorical variables.: SOM ne upošteva kategoričnih spremenljivk.
             Some data instances have undefined value of '{}'.: Nekatere vrstice imajo neznane vrednosti '{}'.
@@ -13721,7 +13724,7 @@ widgets/visualize/owmosaic.py:
                 Residuals:: Residuali:
             Feature {} has no values: Spremenljivka {} nima vrednosti
         def `migrate_context`:
-            (None): false)
+            (None): false
     def `get_conditional_distribution`:
         COUNT(*): false
         ?: false
