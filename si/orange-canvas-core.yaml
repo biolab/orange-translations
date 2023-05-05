@@ -231,9 +231,9 @@ application/aboutdialog.py:
 
         <center>
 
-        <h4>{{name}}</h4>
+        <h4>{name}</h4>
 
-        <p>Različica: {{version}}</p>
+        <p>Različica: {version}</p>
 
         </center>
 
@@ -242,56 +242,6 @@ application/aboutdialog.py:
         def `__init__`:
             darwin: false
 application/addons.py:
-    A: false
-    B: false
-    def `normalize_name`:
-        '[-_.]+': false
-        '-': false
-    def `prettify_name`:
-        '-': false
-        orange: false
-        orange3: false
-        ' ': false
-        (?<!^)((?<![\s\d])[A-Z][a-z]|(?<=[a-z])[A-Z]): false
-        ' \1': false
-    class `Installable`:
-        Installable: false
-        name: false
-        version: false
-        summary: false
-        description: false
-        package_url: false
-        release_urls: false
-        ReleaseUrl: false
-        requirements: false
-        description_content_type: false
-        force: false
-    class `ReleaseUrl`:
-        ReleaseUrl: false
-        filename: false
-        url: false
-        size: false
-        python_version: false
-        package_type: false
-    class `Available`:
-        Available: false
-        installable: false
-    class `Installed`:
-        Installed: false
-        installable: false
-        local: false
-        Distribution: false
-        required: false
-        constraint: false
-    def `get_meta_from_archive`:
-        def `is_metadata`:
-            PKG-INFO: false
-            METADATA: false
-        .zip: false
-        .whl: false
-        utf-8: false
-        .tar.gz: false
-        .tgz: false
     def `description_rich_text`:
         Description: false
         Summary: false
@@ -325,12 +275,13 @@ application/addons.py:
         def `start`:
             Retrieving package list: Prejemam seznam dodatkov
         def `__on_query_done`:
-            Error fetching package list: Napaka pri prejemu seznama dodatkov
-            There's an issue with the internet connection.: Težava z mrežno povezavo
-            Error: Napaka
-            Please check you are connected to the internet.\n\n: Preverite delovanje omrežne povezave.
-            'If you are behind a proxy, please set it in Preferences ': Če uporabljate dostop prek proxyja, ga lahko nastavite v Nastavitve
-            '- Network.': ' - Povezava'
+            def `network_warning`:
+                Error fetching package list: Napaka pri prejemu seznama dodatkov
+                There's an issue with the internet connection.: Težava z mrežno povezavo.
+                Error: Napaka
+                Please check you are connected to the internet.\n\n: Preverite delovanje omrežne povezave.\n\n
+                'If you are behind a proxy, please set it in Preferences ': Če uporabljate dostop prek proxyja, ga lahko nastavite v Nastavitve
+                '- Network.': ' - Povezava'
         def `itemState`:
             Action: false
         def `setItemState`:
@@ -341,8 +292,8 @@ application/addons.py:
         def `__run_add_package_dialog`:
             Add add-on by name: Dodaj dodatek po imenu
             Package name: Ime dodatka
-            'Enter a package name as displayed on ': Vnesti ime dodatka, kot je
-            PyPI (capitalization is not important): navaden na PyPI
+            'Enter a package name as displayed on ': 'Vnesi ime dodatka, kot je '
+            PyPI (capitalization is not important): naveden na PyPI
             'Name:': ime
             Add: Dodaj
         def `__show_error_for_query`:
@@ -376,118 +327,17 @@ application/addons.py:
         def `__on_installer_error`:
             An error occurred while running a subprocess: Napaka ob izvajanju opravila
             Error: Napaka
-            '{} exited with non zero status.': 'Ukaz {} se je končal z napako.'
+            '{} exited with non zero status.': Ukaz {} se je končal z napako.
         def `__on_installer_finished`:
             Orange: false
             def `message_restart`:
                 Information: Obvestilo
-                '{} needs to be restarted for the changes to take effect.': 'Za dokončanje se mora {} zagnati znova.'
+                '{} needs to be restarted for the changes to take effect.': Za dokončanje se mora {} zagnati znova.
                 Press OK to restart {} now.: Pritisnite OK, da se {} ponovno zažene takoj.
                 Close later: Zapri kasneje
             def `restart`:
                 Restart Cancelled: Ponovni zagon prekinjen
                 Changes will be applied on {}'s next restart: Spremembe bodo uveljavljene, ko se {} požene naslednjič.
-    https://pypi.org/pypi/{name}/json: false
-    def `installable_from_json_response`:
-        info: false
-        name: false
-        version: false
-        '0': false
-        summary: false
-        description: false
-        description_content_type: false
-        package_url: false
-        releases: false
-        filename: false
-        url: false
-        size: false
-        python_version: false
-        packagetype: false
-        requires_dist: false
-    def `_session`:
-        networkcache: false
-        requests: false
-    def `list_available_versions`:
-        def `getname`:
-            info: false
-            name: false
-    def `have_install_permissions`:
-        purelib: false
-        test_write_: false
-        w: false
-    class `Command`:
-        Install: Namesti
-        Upgrade: Posodobi
-        Uninstall: Odstrani
-    class `CommandFailed`:
-        def `__init__`:
-            ' ': false
-    class `Installer`:
-        def `_next`:
-            Installing {}: Nameščanje {}
-            Upgrading {}: Posodabljanje {}
-            Uninstalling {}: Odstranjevanje {}
-            'Command failed: python {}': 'Ukaz ni uspel: python {}'
-    class `PipInstaller`:
-        def `__init__`:
-            add-ons/pip-install-arguments: false
-        def `install`:
-            python: false
-            -m: false
-            pip: false
-            install: false
-            --upgrade: false
-            --upgrade-strategy=only-if-needed: false
-            http://: false
-            https://: false
-            =={}: false
-        def `upgrade`:
-            python: false
-            -m: false
-            pip: false
-            install: false
-            --upgrade: false
-            --upgrade-strategy=only-if-needed: false
-            http://: false
-            https://: false
-            =={}: false
-        def `uninstall`:
-            python: false
-            -m: false
-            pip: false
-            uninstall: false
-            --yes: false
-    class `CondaInstaller`:
-        def `__init__`:
-            add-ons/allow-conda: false
-        def `_find_conda`:
-            conda: false
-            Scripts: false
-            conda.bat: false
-            CONDA_PREFIX: false
-            CONDA_DEFAULT_ENV: false
-        def `install`:
-            ={}: false
-            install: false
-            --yes: false
-            --quiet: false
-            --satisfied-skip-solve: false
-        def `upgrade`:
-            ={}: false
-            install: false
-            --yes: false
-            --quiet: false
-            --satisfied-skip-solve: false
-        def `uninstall`:
-            uninstall: false
-            --yes: false
-    def `run_command`:
-        Running %s: false
-        ' ': false
-        python: false
-    def `run_process`:
-        subprocess.Popen: false
-        file: false
     def `main`:
         --config: false
         CLASSNAME: false
@@ -548,11 +398,15 @@ application/canvasmain.py:
             canvas-tool-dock: false
             canvas-toolbox: false
             'h3, a {color: orange;}': false
-            Select a widget to show its description.: Ob izboru gradnika se pokaže njegov opis.
+            Select a widget to show its description.: Ob izboru gradnika se pokaže
+                njegov opis.
             <br/><br/>: false
-            'See <a href=''action:examples-action''>workflow examples</a>, ': 'Poglejte <a href=''action:examples-action''>primere delotokov</a>, '
-            '<a href=''action:screencasts-action''>YouTube tutorials</a>, ': '<a href=''action:screencasts-action''>vodiče na YouTube</a>, '
-            or open the <a href='action:welcome-action'>welcome screen</a>.: ali odprite <a href='action:welcome-action'>začetno okno.</a>.
+            'See <a href=''action:examples-action''>workflow examples</a>, ': 'Poglejte
+                <a href=''action:examples-action''>primere delotokov</a>, '
+            '<a href=''action:screencasts-action''>YouTube tutorials</a>, ': '<a href=''action:screencasts-action''>vodiče
+                na YouTube</a>, '
+            or open the <a href='action:welcome-action'>welcome screen</a>.: ali odprite
+                <a href='action:welcome-action'>začetno okno.</a>.
             Show Help: Pokaži pomoč
             Info.svg: false
             canvas-quick-dock: false
@@ -641,13 +495,13 @@ application/canvasmain.py:
             Manage add-ons.: Upravljaj z dodatki
             '&Log': Dnevnik sporočil
             Show application standard output.: Pokaži izpise programa
-            darwin: false
             Minimize: Pomanjšaj
             Ctrl+M: false
+            darwin: false
             Zoom: Povečaj
             application-zoom: false
             Freeze: Zamrzni
-            Shift+F: False
+            Shift+F: false
             signal-freeze-action: false
             Freeze signal propagation (Shift+F): Zamrzni tok signalov (Shift+F)
             Pause.svg: fals
@@ -657,7 +511,8 @@ application/canvasmain.py:
             Show Workflow Margins: Rob okrog delotoka
             Show margins around the workflow view.: Pokaži rob okrog okna z delotokom
             Display Widgets on Top: Obdrži gradnike na vrhu
-            Widgets are always displayed above other windows.: Gradniki so vedno nad drugimi okni
+            Widgets are always displayed above other windows.: Gradniki so vedno nad
+                drugimi okni
         def `setup_menu`:
             darwin: false
             '&File': Datoteka
@@ -674,11 +529,11 @@ application/canvasmain.py:
             workflow-window-groups-actions-separator: false
             view-visible-actions-separator: false
             view-zoom-actions-separator: false
-            bring-widgets-to-front-action: false
             '&Options': Nastavitve
             options-menu: false
             Window: Okna
             window-menu: false
+            bring-widgets-to-front-action: false
             '&Help': Pomoč
             help-menu: false
         def `restore`:
@@ -693,6 +548,8 @@ application/canvasmain.py:
         def `__update_window_title`:
             Untitled [*]: Nepoimenovan [*]
         def `setWindowFilePath`:
+            def `icon_for_path`:
+                QIcon: false
             darwin: false
             ' ': false
         def `set_document_title`:
@@ -717,8 +574,9 @@ application/canvasmain.py:
             rb: false
             Error: Napaka
             Unsupported format version: Nepodprta različica
-            'The file was saved in a format not supported by this ': "Datoteka je shranjena v obliki, ki je ta program "
-            application.: "ne podpira."
+            'The file was saved in a format not supported by this ': 'Datoteka je
+                shranjena v obliki, ki je ta program '
+            application.: ne podpira.
             'Could not open: ''{}''': 'Ne morem odpreti: ''{}'''
             'Error was: {}': 'Napaka: {}'
             widget_manager: false
@@ -729,29 +587,34 @@ application/canvasmain.py:
             'Error was: {}': 'Napaka: {}'
         def `new_scheme_from_contents_and_path`:
             basedir: false
-            Could not load an Orange Workflow file.: Ne morem naložiti datoteke z delotokokm.
+            Could not load an Orange Workflow file.: Ne morem naložiti datoteke z
+                delotokokm.
             Error: Napaka
             'An unexpected error occurred ': 'Nepričakovana napaka ob '
             while loading '%s'.: branju '%s'.
             Could not load the full workflow.: Ne morem naložiti celotnega delotoka.
             Workflow Partially Loaded: Delotok je naložen delno.
-            'Some of the nodes/links could not be reconstructed ': 'Nekaterih gradnikov ali povezav ni mogoče postaviti, '
-            and were omitted from the workflow.: 'zato niso vključene v delotok.'
+            'Some of the nodes/links could not be reconstructed ': 'Nekaterih gradnikov
+                ali povezav ni mogoče postaviti, '
+            and were omitted from the workflow.: zato niso vključene v delotok.
         def `check_requires`:
             <h4>Required packages:</h4><ul>: <h4>Potrebni dodatki:</h4><ul>
             <li>{}</li>: false
             </ul>: false
             install-requirements-message-box: false
             Install Additional Packages: Namesti dodatne pakete
-            'Workflow you are trying to load contains widgets ': 'Delotok vključuje gradnike '
+            'Workflow you are trying to load contains widgets ': 'Delotok vključuje
+                gradnike '
             from missing add-ons.: iz manjkajočih dodatkov.
             <br/>: false
             Would you like to install them now?: Jih namestim?
-            'After installation you will have to restart the ': "Po namestitvi bo potrebno ponovno "
+            'After installation you will have to restart the ': 'Po namestitvi bo
+                potrebno ponovno '
             application and reopen the workflow.: zagnati program in odpreti delotok.
             Install add-ons: Namesti dodatke
             Ignore missing widgets: Izpusti manjkajoče gradnike
-            Load partial workflow by omitting missing nodes and links.: Naloži del delotoka in izpusti manjkajoče gradnike in povezave.
+            Load partial workflow by omitting missing nodes and links.: Naloži del
+                delotoka in izpusti manjkajoče gradnike in povezave.
             Please Restart: Ponovni zagon
             Please restart and reopen the file.: Ponovno zaženi in odpri delotok.
         def `install_requirements`:
@@ -768,7 +631,8 @@ application/canvasmain.py:
             Do you want to save changes made to %s?: Shranim spremembe delotoka %s?
             Do you want to save this workflow?: Shranim delotok?
             Save Changes?: Shranim spremembe?
-            Your changes will be lost if you do not save them.: Spremembe ne bodo ohranjene, če jih ne shranite.
+            Your changes will be lost if you do not save them.: Spremembe ne bodo
+                ohranjene, če jih ne shranite.
         def `save_scheme_as`:
             mainwindow: false
             last-scheme-dir: false
@@ -779,18 +643,22 @@ application/canvasmain.py:
             untitled: nepoimenovan
             basedir: false
             Error saving %r to %r: false
-            'An error occurred while trying to save workflow ': 'Napaka pri shranjevanju delotoka'
+            'An error occurred while trying to save workflow ': Napaka pri shranjevanju
+                delotoka
             '"%s" to "%s"': '"%s" v "%s"'
             Error saving %s: Napaka pri shranjevanju %s
             wb: false
             '%s saving ''%s''': false
-            'Workflow "%s" could not be saved. The path does ': 'Delotoka "%s" ni mogoče shraniti. '
+            'Workflow "%s" could not be saved. The path does ': 'Delotoka "%s" ni
+                mogoče shraniti. '
             not exist: Pot ne obstaja.
             Choose another location.: Izberite drugo mapo.
-            'Workflow "%s" could not be saved. You do not ': 'Delotoka ni mogoče shraniti, ker nimate pravice '
+            'Workflow "%s" could not be saved. You do not ': 'Delotoka ni mogoče shraniti,
+                ker nimate pravice '
             have write permissions.: pisati v izbrano mapo.
-            'Change the file system permissions or choose ': 'Spremenite nastavitve mape ali pa izberite '
-            another location.: 'drugo mapo.'
+            'Change the file system permissions or choose ': 'Spremenite nastavitve
+                mape ali pa izberite '
+            another location.: drugo mapo.
             Workflow "%s" could not be saved.: Delotoka "%s" ni mogoče shraniti.
         def `save_swp_to`:
             wb: false
@@ -804,8 +672,10 @@ application/canvasmain.py:
             Restore unsaved changes from crash?: Obnovim neshranjene spremembe?
             Orange: false
             Restore Changes?: Obnovitev neshranjenih sprememb.
-            '{} seems to have crashed at some point.\n': 'Videti je, da se je {} nepričakovano zaprl.\n'
-            Changes will be discarded if not restored now.: 'Če sprememb ne obnovite, bodo zavržene.'
+            '{} seems to have crashed at some point.\n': Videti je, da se je {} nepričakovano
+                zaprl.\n
+            Changes will be discarded if not restored now.: Če sprememb ne obnovite,
+                bodo zavržene.
         def `load_swp_from`:
             rb: false
             'Could not load swp file: %r': false
@@ -860,8 +730,10 @@ application/canvasmain.py:
         def `open_addons`:
             Orange: false
             'Add-ons: insufficient permissions': 'Dodatki: nezadostne pravice'
-            'Insufficient permissions to install add-ons. Try starting {name} ': 'Nimate pravice nameščati dodatkov. Poskusite zagnati {{name}}'
-            as a system administrator or install {name} in user folders.: kot sistemski administrator ali pa namestiti {{name}} v uporabniško mapo.
+            'Insufficient permissions to install add-ons. Try starting {name} ': Nimate
+                pravice nameščati dodatkov. Poskusite zagnati {name}
+            as a system administrator or install {name} in user folders.: kot sistemski
+                administrator ali pa namestiti {name} v uporabniško mapo.
             Installer: Nameščanje
         def `add_recent_scheme`:
             '{} (''{}'')': false
@@ -885,7 +757,8 @@ application/canvasmain.py:
             geometry: false
             state: false
         def `__handle_help_query_response`:
-            There is no documentation for this widget.: Pomoč za ta gradnik ni na voljo.
+            There is no documentation for this widget.: Pomoč za ta gradnik ni na
+                voljo.
             No help found: Temu gradniku ni pomoči
             no-help-found-message-box: false
         def `whatsThisClickedEvent`:
@@ -898,7 +771,6 @@ application/canvasmain.py:
         def `show_help`:
             'Setting help to url: %r': false
             help/open-in-external-browser: false
-        darwin: false
         def `__update_from_settings`:
             mainwindow: false
             toolbox-dock-floatable: false
@@ -925,7 +797,7 @@ application/canvasmain.py:
     K: false
     V: false
     def `render_error_details`:
-        'Missing node definitions:': "Manjkajoči gradniki:"
+        'Missing node definitions:': 'Manjkajoči gradniki:'
         '  \N{BULLET} ': false
         'Incompatible connection types:': 'Nezdružljive vrste povezav:'
         'Unqualified errors:': 'Ostale napake:'
@@ -1057,7 +929,8 @@ application/schemeinfo.py:
             auto-show-container: false
             Show when I make a New Workflow.: Pokaži ob sestavljanju novega delotoka
             auto-show-check: false
-            'You can also edit Workflow Info later ': ' Te podatke lahko urejate tudi kasneje '
+            'You can also edit Workflow Info later ': ' Te podatke lahko urejate tudi
+                kasneje '
             (File -> Workflow Info).: (Datoteka -> Podatki o delotoku).
             auto-show-info: false
 application/settings.py:
@@ -1084,12 +957,15 @@ application/settings.py:
             nodes: false
             Enable node animations: Animiraj gradnike
             enable-node-animations: false
-            'Enable shadow and ping animations for nodes ': 'Dodaj sence in animacijo ob dotiku gradnikov '
+            'Enable shadow and ping animations for nodes ': 'Dodaj sence in animacijo
+                ob dotiku gradnikov '
             in the workflow.: v delotoku.
             Open anchors on hover: Pokaži vhode in izhode ob prehodu miške
             open-anchors-on-hover: false
-            'Open/expand node anchors on mouse hover (if unchecked the ': "Razširi in poimenuj vhode in izhode ob povezovanju "
-            anchors are expanded when Shift key is pressed).: (če ni vključeno, dosežemo isti učinek s pritiskom tipke Shift)
+            'Open/expand node anchors on mouse hover (if unchecked the ': 'Razširi
+                in poimenuj vhode in izhode ob povezovanju '
+            anchors are expanded when Shift key is pressed).: (če ni vključeno, dosežemo
+                isti učinek s pritiskom tipke Shift)
             checked: false
             schemeedit/enable-node-animations: false
             schemeedit/open-anchors-on-hover: false
@@ -1097,7 +973,7 @@ application/settings.py:
             links: false
             Show channel names between widgets: Pokaži imena povezav med gradniki
             show-channel-names: false
-            'Show source and sink channel names ': "Pokaži ime izhoda in vhoda "
+            'Show source and sink channel names ': 'Pokaži ime izhoda in vhoda '
             over the links.: nad povezavami.
             schemeedit/show-channel-names: false
             Links: Povezave
@@ -1106,15 +982,19 @@ application/settings.py:
             'Open quick menu on a double click ': Ob dvojnem kliku na praznem mestu
             on an empty spot in the canvas: odpri menu za izbor gradnikov
             Open on right click: Odpri z desnim klikom
-            'Open quick menu on a right click ': Ob kliku na desno tipko miške odpri menu za izbor gradnikov.
+            'Open quick menu on a right click ': Ob kliku na desno tipko miške odpri
+                menu za izbor gradnikov.
             Open on space key press: Odpri s preslednico
-            'Open quick menu on Space key press ': "Ob pritisku na preslednico odpri menu za izbor gradnikov, "
+            'Open quick menu on Space key press ': 'Ob pritisku na preslednico odpri
+                menu za izbor gradnikov, '
             while the mouse is hovering over the canvas.: če se miška nahaja na platnu.
             Open on any key press: Odpri s poljubno tipko
-            'Open quick menu on any key press ': Odpri menu s pritiskom na poljubno tipko
+            'Open quick menu on any key press ': Odpri menu s pritiskom na poljubno
+                tipko
             Show categories: Pokaži kategorije
-            'In addition to searching, allow filtering ': Poleg iskanja omogoči iskanje po kategorijah.
-            by categories.: ""
+            'In addition to searching, allow filtering ': Poleg iskanja omogoči iskanje
+                po kategorijah.
+            by categories.: ''
             quickmenu/trigger-on-double-click: false
             quickmenu/trigger-on-right-click: false
             quickmenu/trigger-on-space-key: false
@@ -1126,7 +1006,8 @@ application/settings.py:
             show-splash-screen: false
             Show welcome screen: Pokaži začetno okno
             show-welcome-screen: false
-            Load crashed scratch workflows: Po nepričakovanem zaprtju ponovno naloži delotok
+            Load crashed scratch workflows: Po nepričakovanem zaprtju ponovno naloži
+                delotok
             load-crashed-workflows: false
             startup/show-splash-screen: false
             startup/show-welcome-screen: false
@@ -1165,7 +1046,7 @@ application/settings.py:
             add-ons/allow-conda: false
             Conda: true
             Pip: true
-            'Pip install arguments:': "Argumenti za pip:"
+            'Pip install arguments:': 'Argumenti za pip:'
             text: false
             add-ons/pip-install-arguments: false
             Network: Omrežje
@@ -1201,7 +1082,8 @@ application/settings.py:
             dark: false
             Style: Slog
             Color theme: Barvna tema
-            <small>Changes will be applied on next application startup.</small>: <small>Spremembe bodo uveljavljene po ponovnem zagonu.</small>
+            <small>Changes will be applied on next application startup.</small>: <small>Spremembe
+                bodo uveljavljene po ponovnem zagonu.</small>
         def `_update_colors_enabled_state`:
             fusion: false
             windows: false
@@ -1254,6 +1136,158 @@ application/widgettoolbox.py:
         def `__insertItem`:
             tab-title: false
             widgets-toolbox-grid: false
+application/utils/addons.py:
+    https://pypi.org/pypi/{name}/json: false
+    A: false
+    B: false
+    def `normalize_name`:
+        '[-_.]+': false
+        '-': false
+    def `prettify_name`:
+        '-': false
+        orange: false
+        orange3: false
+        ' ': false
+        (?<!^)((?<![\s\d])[A-Z][a-z]|(?<=[a-z])[A-Z]): false
+        ' \1': false
+    class `Installable`:
+        Installable: false
+        name: false
+        version: false
+        summary: false
+        description: false
+        package_url: false
+        release_urls: false
+        ReleaseUrl: false
+        requirements: false
+        description_content_type: false
+        force: false
+    class `ReleaseUrl`:
+        ReleaseUrl: false
+        filename: false
+        url: false
+        size: false
+        python_version: false
+        package_type: false
+    class `Available`:
+        Available: false
+        installable: false
+    class `Installed`:
+        Installed: false
+        installable: false
+        local: false
+        Distribution: falses
+        required: false
+        constraint: false
+    def `get_meta_from_archive`:
+        def `is_metadata`:
+            PKG-INFO: false
+            METADATA: false
+        .zip: false
+        .whl: false
+        utf-8: false
+        .tar.gz: false
+        .tgz: false
+    def `installable_from_json_response`:
+        info: false
+        name: false
+        version: false
+        '0': false
+        summary: false
+        description: false
+        description_content_type: false
+        package_url: false
+        releases: false
+        filename: false
+        url: false
+        size: false
+        python_version: false
+        packagetype: false
+        requires_dist: false
+    def `_session`:
+        networkcache: false
+        requests: false
+    def `list_available_versions`:
+        def `getname`:
+            info: false
+            name: false
+    def `have_install_permissions`:
+        purelib: false
+        test_write_: false
+        w: false
+    class `Command`:
+        Install: Namesti
+        Upgrade: Posodobi
+        Uninstall: Odstrani
+    class `CommandFailed`:
+        def `__init__`:
+            ' ': false
+    class `Installer`:
+        def `_next`:
+            Installing {}: Nameščanje {}
+            Upgrading {}: Posodabljanje {}
+            Uninstalling {}: Odstranjevanje {}
+            'Command failed: python {}': 'Ukaz ni uspel: python {}'
+    class `PipInstaller`:
+        def `__init__`:
+            add-ons/pip-install-arguments: false
+        def `install`:
+            python: false
+            -m: false
+            pip: false
+            install: false
+            --upgrade: false
+            --upgrade-strategy=only-if-needed: false
+            http://: false
+            https://: false
+            =={}: false
+        def `upgrade`:
+            python: false
+            -m: false
+            pip: false
+            install: false
+            --upgrade: false
+            --upgrade-strategy=only-if-needed: false
+            http://: false
+            https://: false
+            =={}: false
+        def `uninstall`:
+            python: false
+            -m: false
+            pip: false
+            uninstall: false
+            --yes: false
+    class `CondaInstaller`:
+        def `__init__`:
+            add-ons/allow-conda: false
+        def `_find_conda`:
+            conda: false
+            Scripts: false
+            conda.bat: false
+            CONDA_PREFIX: false
+            CONDA_DEFAULT_ENV: false
+        def `install`:
+            ={}: false
+            install: false
+            --yes: false
+            --quiet: false
+            --satisfied-skip-solve: false
+        def `upgrade`:
+            ={}: false
+            install: false
+            --yes: false
+            --quiet: false
+            --satisfied-skip-solve: false
+        def `uninstall`:
+            uninstall: false
+            --yes: false
+    def `run_command`:
+        Running %s: false
+        ' ': false
+        python: false
+    def `run_process`:
+        subprocess.Popen: false
+        file: false
 canvas/__init__.py:
     scene: false
     layout: false
@@ -1301,6 +1335,10 @@ canvas/view.py:
         def `__init__`:
             Zoom in: Povečaj
             action-zoom-in: false
+            Cmd: false
+            darwin: false
+            Ctrl: false
+            +=: false
             Zoom out: Pomanjšaj
             action-zoom-out: false
             Reset Zoom: Ponastavi velikost
@@ -1581,6 +1619,7 @@ document/editlinksdialog.py:
         def `addLink`:
             '%r is not an output channel of %r': false
             '%r is not an input channel of %r': false
+            Click to remove the link.: Kliknite, da odstranite povezavo.
         def `removeLink`:
             No such link {0.name!r} -> {1.name!r}.: false
         def `__updateState`:
@@ -1597,26 +1636,19 @@ document/editlinksdialog.py:
             right: false
             left: false
             description: false
-    class `ChannelAnchor`:
-        def `__init__`:
-            '#000000': false
-            '#FFFFFF': false
-            '#BBBBBB': false
-    class `LinkLineItem`:
-        def `__init__`:
-            '#383838': false
-            '#000000': false
-            '#9CACB4': false
 document/interactions.py:
     A: false
     class `NewLinkAction`:
         def `mousePressEvent`:
             Create a new link: Dodaj novo povezavo
             <h3>Create new link</h3>: <h3>Dodaj novo povezavo</h3>
-            '<p>Drag a link to an existing node or release on ': '<p>Povlecite povezavo do obstoječega gradnika ali pa '
-            an empty spot to create a new node.</p>: 'na prazno mesto, da tam postavite nov gradnik.</p>'
-            '<p>Hold Shift when releasing the mouse button to ': '<p>Držite tipko Shift za urejanje povezav.</p>'
-            edit connections.</p>: ""
+            '<p>Drag a link to an existing node or release on ': '<p>Povlecite povezavo
+                do obstoječega gradnika ali pa '
+            an empty spot to create a new node.</p>: na prazno mesto, da tam postavite
+                nov gradnik.</p>
+            '<p>Hold Shift when releasing the mouse button to ': <p>Držite tipko Shift
+                za urejanje povezav.</p>
+            edit connections.</p>: ''
         def `mouseMoveEvent`:
             '%r is no longer the target.': false
             '%r is the new target.': false
@@ -1656,15 +1688,18 @@ document/interactions.py:
         def `__init__`:
             red: false
         def `start`:
-            Click and drag to create a new arrow: Povlecite in spustite, da narišete puščico.
+            Click and drag to create a new arrow: Povlecite in spustite, da narišete
+                puščico.
             <h3>New arrow annotation</h3>: <h3>Risanje oznake s puščico</h3>
-            <p>Click and drag to create a new arrow annotation</p>: <p>Povlecite in spustite, da ustvarite oznako s puščico.</p>
+            <p>Click and drag to create a new arrow annotation</p>: <p>Povlecite in
+                spustite, da ustvarite oznako s puščico.</p>
     class `NewTextAnnotation`:
         def `start`:
             Click to create a new text annotation: Kliknite, da dodate besedilno oznako.
             <h3>New text annotation</h3>: <h3>Nova besedilna oznaka</h3>
-            '<p>Click (and drag to resize) on the canvas to create ': <p>Kliknite (in vlecite, da določite velikost), da dodate novo besedilno oznako.</p>
-            a new text annotation item.</p>: ""
+            '<p>Click (and drag to resize) on the canvas to create ': <p>Kliknite
+                (in vlecite, da določite velikost), da dodate novo besedilno oznako.</p>
+            a new text annotation item.</p>: ''
         def `createNewAnnotation`:
             family: false
             size: false
@@ -1845,8 +1880,6 @@ document/schemeedit.py:
             '#662D91': false
             '#1F9CDF': false
             '#39B54A': false
-            Undo: Razveljavi
-            Redo: Obnovi
             undo-action: false
             redo-action: false
             Select all: Izberi vse
@@ -1946,8 +1979,9 @@ document/schemeedit.py:
             help://search?: false
             id: false
         def `__showHelpFor`:
-            'Sorry there is no documentation available for ': "Dokumentacija za ta gradnik "
-            this widget.: "ne obstaja."
+            'Sorry there is no documentation available for ': 'Dokumentacija za ta
+                gradnik '
+            this widget.: ne obstaja.
         def `__toggleLinkEnabled`:
             enabled: false
             Set enabled: false
@@ -1981,14 +2015,17 @@ document/schemeedit.py:
     class `SaveWindowGroup`:
         def `__init__`:
             Window Group 1: Skupina oken 1
-            'Save As:': "Shrani kot:"
+            'Save As:': 'Shrani kot:'
             Use as default: Uporabi privzeto
-            Automatically use this preset when opening the workflow.: Samodejno uporabi to nastavitev ob odpiranju delotoka.
-            'Save the current open widgets'' window arrangement to the ': 'Shrani trenuten razpored odprtih gradnikov '
-            workflow view presets.: "kot prednastavitev delotoka."
+            Automatically use this preset when opening the workflow.: Samodejno uporabi
+                to nastavitev ob odpiranju delotoka.
+            'Save the current open widgets'' window arrangement to the ': 'Shrani
+                trenuten razpored odprtih gradnikov '
+            workflow view presets.: kot prednastavitev delotoka.
         def `__accept_check`:
             Confirm Overwrite: Potrdi spremembo
-            'The window group ''{}'' already exists. Do you want ': 'Skupina ''{}'' že obstaja. '
+            'The window group ''{}'' already exists. Do you want ': 'Skupina ''{}''
+                že obstaja. '
             to replace it?: Jo zamenjam s trenutno?
             Replace: Zamenjaj
     Cc: false
@@ -2062,12 +2099,14 @@ document/usagestatistics.py:
             Launch Count: false
             startup/launch-count: false
             Session: false
-            w: false
         def `filename`:
             usage-statistics.json: false
         def `load`:
             List[dict]: false
             r: false
+            utf-8: false
+        def `store`:
+            w: false
             utf-8: false
 gui/dock.py:
     class `CollapsibleDockWidget`:
@@ -2258,7 +2297,8 @@ gui/utils.py:
         Error: Napaka
     def `message_warning`:
         Death could come at any moment.: Smrt pride nepričakovano.
-        Murphy lurks about. Remember to save frequently.: Murphy je vedno na preži. Ne pozabi na pogosto shranjevanje.
+        Murphy lurks about. Remember to save frequently.: Murphy je vedno na preži.
+            Ne pozabi na pogosto shranjevanje.
         Warning: Opozorilo
     def `message_information`:
         Information: Informacije
@@ -2275,6 +2315,17 @@ gui/utils.py:
     def `innerShadowPixmap`:
         'InnerShadow ': false
         ' ': false
+gui/windowlistmanager.py:
+    WindowListManager: false
+    class `WindowListManager`:
+        def `instance`:
+            WindowListManager: false
+        def `__init__`:
+            window-list-manager-action-group: false
+        def `addWindow`:
+            '{window} already added': false
+        def `createActionForWindow`:
+            action-canvas-window-list-manager-window-action: false
 gui/examples/dock.py:
     def `main`:
         Expand: false
@@ -2641,8 +2692,9 @@ registry/discovery.py:
     exc_type: false
     exc_val: false
     description: false
-    def `default_category_for_module`:
+    def `default_category_name_for_module`:
         .: false
+        widgets: false
     class `WidgetDiscovery`:
         def `__init__`:
             '''WidgetRegistry'', ''Handler'' or None expected': false
@@ -2764,7 +2816,6 @@ registry/utils.py:
         BACKGROUND: false
         REPLACES: false
     def `category_from_package_globals`:
-        .: false
         NAME: false
         DESCRIPTION: false
         LONG_DESCRIPTION: false
@@ -2814,6 +2865,7 @@ registry/tests/__init__.py:
         zero: false
         value: false
         int: false
+        val: false
         one: false
         unit: false
         tuple: false
@@ -2824,6 +2876,7 @@ registry/tests/__init__.py:
         set_left: false
         right: false
         set_right: false
+        droite: false
         result: false
         sub: false
         mult: false
@@ -2863,8 +2916,7 @@ scheme/events.py:
     WorkflowEnvChanged: false
 scheme/link.py:
     def `resolve_types`:
-        'Failed to resolve name {!r} to a type: {!s}': false
-        \n: false
+        An unexpected error while resolving type {!r}:\n{}: false
     def `_get_first_type`:
         'Multiple types specified, but using only the first. ': false
         Use `{newname}` instead.: false
@@ -2886,9 +2938,9 @@ scheme/link.py:
 scheme/node.py:
     class `SchemeNode`:
         def `input_channel`:
-            '%r is not a valid input channel name for %r.': false
+            '%r is not a valid input channel for %r.': false
         def `output_channel`:
-            '%r is not a valid output channel name for %r.': false
+            '%r is not a valid output channel for %r.': false
         def `set_state_message`:
             '''message'' with no id was ignored. ': false
             This will raise an error in the future.: false
@@ -2928,7 +2980,9 @@ scheme/readwrite.py:
     source_node_id: false
     sink_node_id: false
     source_channel: false
+    source_channel_id: false
     sink_channel: false
+    sink_channel_id: false
     enabled: false
     type: false
     params: false
@@ -2961,7 +3015,9 @@ scheme/readwrite.py:
         source_node_id: false
         sink_node_id: false
         source_channel: false
+        source_channel_id: false
         sink_channel: false
+        sink_channel_id: false
         enabled: false
         'true': false
         annotations/*: false
@@ -3003,6 +3059,12 @@ scheme/readwrite.py:
         text: false
         arrow: false
         'Ignoring unknown annotation type: %r': false
+    def `_find_source_channel`:
+        '{link.source_channel!r} is not a valid output channel ': false
+        for {node.description.name!r}.: false
+    def `_find_sink_channel`:
+        '{link.sink_channel!r} is not a valid input channel ': false
+        for {node.description.name!r}.: false
     def `scheme_to_etree`:
         literal: false
         scheme: false
@@ -3027,6 +3089,8 @@ scheme/readwrite.py:
         enabled: false
         'true': false
         'false': false
+        source_channel_id: false
+        sink_channel_id: false
         link: false
         annotations: false
         text: false
@@ -3136,6 +3200,10 @@ scheme/signalmanager.py:
         Type[Update]: false
         Type[Close]: false
     enabled: false
+    class `_LazyValueType`:
+        class `LazyValueMeta`:
+            def `__repr__`:
+                LazyValue[{cls.type().__name__}]: false
     class `_OutputState`:
         flags: false
         outputs: false
@@ -3201,6 +3269,8 @@ scheme/widgetmanager.py:
             Normal: false
             Immediate: false
             OnDemand: false
+        def `__init__`:
+            action-canvas-windows-list-head: false
         def `__add_widget_for_node`:
             Creating widget for node %s: false
             widgetmanager-error-placeholder: false
@@ -3208,18 +3278,24 @@ scheme/widgetmanager.py:
             </pre>: false
             Raise Canvas to Front: Pokaži platno
             action-canvas-raise-canvas: false
-            Raise containing canvas workflow window: Postavi platno z delotokom v ospredje
+            Raise containing canvas workflow window: Postavi platno z delotokom v
+                ospredje
             Ctrl+Up: false
             Raise Descendants: Pokaži naslednike
             action-canvas-raise-descendants: false
-            Raise all immediate descendants of this node: Postavi v ospredje gradnike, ki sledijo izbranemu
+            Raise all immediate descendants of this node: Postavi v ospredje gradnike,
+                ki sledijo izbranemu
             Ctrl+Shift+Right: false
             Raise Ancestors: Pokaži prednike
             action-canvas-raise-ancestors: false
-            Raise all immediate ancestors of this node: Postavi v ospredje gradnike, ki so pred izbranim
+            Raise all immediate ancestors of this node: Postavi v ospredje gradnike,
+                ki so pred izbranim
             Ctrl+Shift+Left: false
         def `__process_init_queue`:
             '__process_init_queue: ''%s''': false
+        def `__update_actions_state`:
+            action-canvas-raise-ancestors: false
+            action-canvas-raise-descendants: false
 styles/__init__.py:
     def `breeze_light`:
         '#30363C': false
@@ -3238,7 +3314,7 @@ styles/__init__.py:
     dark: false
     def `style_sheet`:
         def `process_qss`:
-            ^\s@([a-zA-Z0-9_]+?)\s*:\s*([a-zA-Z0-9_/]+?);\s*$: false
+            ^\s*@([a-zA-Z0-9_]+?)\s*:\s*([a-zA-Z0-9_/]+?);\s*$: false
         r: false
         utf-8: false
         qss: false
@@ -3536,3 +3612,10 @@ utils/shtools.py:
     def `temp_named_file`:
         utf-8: false
         wt: false
+utils/localization/__init__.py:
+    def `pl`:
+        '|': false
+        yY: false
+        aeiouAEIOU: false
+        ies: false
+        s: false
