@@ -179,6 +179,10 @@ io.py:
             '{}({{{}}})': false
             ', ': false
     class `ImgFormat`:
+        def `_meta_data`:
+            width: false
+            height: false
+            pixel_ratio: false
         def `write_image`:
             '{cls.__name__} ': false
             cannot imagine {type(object).__name__}: false
@@ -208,6 +212,8 @@ io.py:
             png: false
     class `ClipboardFormat`:
         System Clipboard: Odložišče
+        def `_save_buffer`:
+            pixel_ratio: false
     class `SvgFormat`:
         .svg: false
         Scalable Vector Graphics: false
@@ -700,8 +706,11 @@ report/report.py:
         '<b>{}</b>: {}': false
     def `get_html_img`:
         utf-8: false
-        <img {} src="data:image/png;base64,{}"/>: false
-        'style="max-height: {}px"': false
+        'max-height: {max_height}px': false
+        pixel_ratio: false
+        'zoom: {1 / ratio:.1f}': false
+        ' style="{"; ".join(style_opts)}"': false
+        <img{style} src="data:image/png;base64,{img_encoded}"/>: false
     def `get_icon_html`:
         PNG: false
         ' width="{}" height="{}"': false
