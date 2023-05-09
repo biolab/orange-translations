@@ -588,7 +588,7 @@ application/canvasmain.py:
         def `new_scheme_from_contents_and_path`:
             basedir: false
             Could not load an Orange Workflow file.: Ne morem naložiti datoteke z
-                delotokokm.
+                delotokom.
             Error: Napaka
             'An unexpected error occurred ': 'Nepričakovana napaka ob '
             while loading '%s'.: branju '%s'.
