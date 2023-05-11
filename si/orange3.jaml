@@ -2475,11 +2475,11 @@ modelling/tree.py:
     SklTreeLearner: false
     TreeLearner: false
     class `SklTreeLearner`:
-        tree: false
+        tree: drevo
         classification: false
         regression: false
     class `TreeLearner`:
-        tree: false
+        tree: drevo
         classification: false
         regression: false
 modelling/xgb.py:
@@ -5584,6 +5584,12 @@ widgets/data/oweditdomain.py:
             StringVariable: false
             String: false
             _domain_change_store: false
+        def `migrate_settings`:
+            context_settings: false
+            __version__: false
+            _domain_change_store: false
+            output_table_name: false
+            _domain_change_hints: false
     def `enumerate_columns`:
         x: false
         y: false
@@ -12589,7 +12595,7 @@ widgets/utils/textimport.py:
     def `icon_for_column_type`:
         N: false
         red: false
-        C: nufalsell
+        C: false
         green: false
         S: false
         black: false

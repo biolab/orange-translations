@@ -30,6 +30,7 @@ image_embedder.py:
     AlexNet-level accuracy on ImageNet with \n: s 50-krat manj parametri dosega natančnost \n
     50x fewer parameters.: na ravni AlexNeta.
     is_local: false
+    model: false
     class `ImageEmbedder`:
         def `__init__`:
             inception-v3: false
@@ -100,6 +101,7 @@ import_images.py:
 local_embedder.py:
     class `LocalEmbedder`:
         def `__init__`:
+            model: false
             target_image_size: false
             .ImageEmbedder.httpcache: false
 server_embedder.py:

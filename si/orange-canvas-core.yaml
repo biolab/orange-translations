@@ -279,8 +279,10 @@ application/addons.py:
                 Error fetching package list: Napaka pri prejemu seznama dodatkov
                 There's an issue with the internet connection.: Težava z mrežno povezavo.
                 Error: Napaka
-                Please check you are connected to the internet.\n\n: Preverite delovanje omrežne povezave.\n\n
-                'If you are behind a proxy, please set it in Preferences ': Če uporabljate dostop prek proxyja, ga lahko nastavite v Nastavitve
+                Please check you are connected to the internet.\n\n: Preverite delovanje
+                    omrežne povezave.\n\n
+                'If you are behind a proxy, please set it in Preferences ': Če uporabljate
+                    dostop prek proxyja, ga lahko nastavite v Nastavitve
                 '- Network.': ' - Povezava'
         def `itemState`:
             Action: false
@@ -319,7 +321,8 @@ application/addons.py:
             Requires-Dist: false
         def `__accepted`:
             Warning: Opozorilo
-            This action will upgrade some core packages:\n: S tem boste posodobili osnovne dele:\n
+            This action will upgrade some core packages:\n: S tem boste posodobili
+                osnovne dele:\n
             \n: false
             Do you want to continue?: Želite nadaljevati?
             ::InstallerThread: false
@@ -332,12 +335,15 @@ application/addons.py:
             Orange: false
             def `message_restart`:
                 Information: Obvestilo
-                '{} needs to be restarted for the changes to take effect.': Za dokončanje se mora {} zagnati znova.
-                Press OK to restart {} now.: Pritisnite OK, da se {} ponovno zažene takoj.
+                '{} needs to be restarted for the changes to take effect.': Za dokončanje
+                    se mora {} zagnati znova.
+                Press OK to restart {} now.: Pritisnite OK, da se {} ponovno zažene
+                    takoj.
                 Close later: Zapri kasneje
             def `restart`:
                 Restart Cancelled: Ponovni zagon prekinjen
-                Changes will be applied on {}'s next restart: Spremembe bodo uveljavljene, ko se {} požene naslednjič.
+                Changes will be applied on {}'s next restart: Spremembe bodo uveljavljene,
+                    ko se {} požene naslednjič.
     def `main`:
         --config: false
         CLASSNAME: false
@@ -432,7 +438,8 @@ application/canvasmain.py:
             Open.svg: false
             Open and Freeze: Odpri in zamrzni
             action-open-and-freeze: false
-            'Open a new workflow and freeze signal ': Odpri delotok z ustavljenim tokom
+            'Open a new workflow and freeze signal ': Odpri delotok z ustavljenim
+                tokom
             propagation.: signalov.
             Ctrl+Alt+O: false
             Close Window: Zapri okno
