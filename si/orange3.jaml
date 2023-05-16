@@ -7597,6 +7597,13 @@ widgets/data/owselectcolumns.py:
             _items: false
         def `dropMimeData`:
             _items: false
+            _moved: false
+    class `SelectedVarsView`:
+        def `startDrag`:
+            _moved: false
+    class `PrimitivesView`:
+        def `acceptsDropEvent`:
+            _items: false
     class `SelectAttributesDomainContextHandler`:
         def `encode_setting`:
             domain_role_hints: false
