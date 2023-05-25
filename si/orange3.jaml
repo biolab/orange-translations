@@ -4550,6 +4550,7 @@ widgets/data/owcorrelations.py:
             removed: false
         def `commit`:
             Correlation: Korelacije
+            uncorrected p: nepopravljen p
             FDR: FDR
             Feature 1: Spremenljivka 1
             Feature 2: Spremenljivka 2
