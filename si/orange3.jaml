@@ -912,8 +912,8 @@ data/filter.py:
     class `FilterString`:
         FilterString: false
         Equal, NotEqual, Less, LessEqual, Greater,: false
-        GreaterEqual, Between, Outside, Contains,: false
-        StartsWith, EndsWith, IsDefined: false
+        GreaterEqual, Between, Outside, Contains, NotContain,: false
+        StartsWith, NotStartsWith, EndsWith, NotEndsWith, IsDefined, NotIsDefined: false
         def `__init__`:
             min: false
             FilterContinuous got unexpected keyword arguments: false
@@ -7737,10 +7737,18 @@ widgets/data/owselectrows.py:
         are equal or after: so enake ali za
         contains: vsebuje
         contain: vsebujejo
-        begins with: se začne z
-        begin with: se začnejo z
-        ends with: se konča z
-        end with: se končajo z
+        does not contain: ne vsebuje
+        do not contain: ne vsebujejo
+        begins with: se začne na
+        begin with: se začnejo na
+        does not begin with: se ne začne na
+        do not begin with: se ne začnejo na
+        ends with: se konča na
+        end with: se končajo na
+        does not end with: se ne konča na
+        do not end with: se ne končajo na
+        is not defined: ni definiran
+        are not defined: niso definirani
         All variables: Vse spremenljivke
         All numeric variables: Vse številske spremenljivke
         All string variables: Vse besedilne spremenljivke
@@ -12946,6 +12954,11 @@ widgets/utils/save/owsavebase.py:
     class `OWSaveBase`:
         class `Information`:
             Empty input; nothing was saved.: Ni podatkov.
+        class `Warning`:
+            Auto save disabled.\n: Samodejno shranjevanje je onemogočeno.\n
+            'Due to security reasons auto save is only restored for paths ': 'Zaradi varnostnih razlogov se samodejno shranjevanje obnovi samo za poti, '
+            'that are in the same directory as the workflow file or in a ': 'ki so v istem imeniku kot delotok ali v '
+            subtree of that directory.: poddrevesu tega imenika.
         class `Error`:
             File name is not set.: Ime datoteke ni določeno.
             File format is unsupported.\n{}: Format datoteke ni podprt.\n{}
