@@ -1183,7 +1183,7 @@ application/utils/addons.py:
         Installed: false
         installable: false
         local: false
-        Distribution: falses
+        Distribution: false
         required: false
         constraint: false
     def `get_meta_from_archive`:
@@ -1213,7 +1213,8 @@ application/utils/addons.py:
         requires_dist: false
     def `_session`:
         networkcache: false
-        requests: false
+        requests.sqlite: false
+        sqlite: false
     def `list_available_versions`:
         def `getname`:
             info: false
