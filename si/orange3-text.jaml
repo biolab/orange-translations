@@ -1,0 +1,5182 @@
+__init__.py:
+    NLTK_DATA: false
+annotate_documents.py:
+    def `annotate_documents`:
+        There are no clusters using current settings.: false
+    class `ClusterDocuments`:
+        covariance_type: false
+        full: false
+        max_iter: false
+        random_state: false
+    __main__: false
+    book-excerpts: false
+    \w+: false
+    English: false
+    '#377eb8': false
+    '#ff7f00': false
+    '#4daf4a': false
+    '#f781bf': false
+    '#a65628': false
+    '#984ea3': false
+    '#999999': false
+    '#e41a1c': false
+    '#dede00': false
+    \n: false
+    \n\n{label_ + 1}: false
+    center: false
+concave_hull.py:
+    def `_get_shape_around_points`:
+        inf: false
+    def `compute_concave_hulls`:
+        Embedding must have two columns: Vložitev mora imeti dva stolpca
+    __main__: false
+    iris: false
+    o: false
+corpus.py:
+    def `get_sample_corpora_dir`:
+        datasets: false
+    def `_check_arrays`:
+        Argument {} should be of type np.array, sparse or None.: false
+        Leading dimension mismatch: false
+    class `Corpus`:
+        ' ': false
+        def `__new__`:
+            domain: false
+            'Signature of Corpus constructor when called with numpy ': false
+            'arrays will change in the future to be equal to Corpus.from_numpy. ': false
+            To avoid issues use Corpus.from_numpy instead.: false
+            X: false
+            Y: false
+            metas: false
+            W: false
+            text_features: false
+            ids: false
+        def `_setup_corpus`:
+            language: false
+        def `set_text_features`:
+            Feature "{}" not found.: false
+            Text features must be unique.: false
+        def `set_title_variable`:
+            title: false
+        def `_set_unique_titles`:
+            title: false
+            Document {}: Dokument {}
+        def `_unique_titles`:
+            ' ({cur_appearances[t]})': false
+        def `_infer_text_features`:
+            include: false
+            True: false
+        def `language`:
+            language: false
+        def `__setstate__`:
+            language: false
+        def `documents_from_features`:
+            ' ': false
+        def `ngrams_iterator`:
+            _: false
+        def `from_documents`:
+            title: false
+            language: false
+        def `from_numpy`:
+            language: false
+        def `from_list`:
+            language: false
+        def `from_table_rows`:
+            _titles: false
+        def `from_file`:
+            .tab: false
+        def `retain_preprocessing`:
+            Indexing by type {} not supported.: false
+    def `summarize_corpus`:
+        '<br/><nobr>Tokens: {sum(map(len, corpus.tokens))}, ': '<br/><nobr>Število členov: {sum(map(len, corpus.tokens))}, '
+        'Types: {len(corpus.dictionary)}</nobr>': Število različnih členov: {len(corpus.dictionary)}</nobr>
+        <br/><nobr>Corpus is not preprocessed</nobr>: <br/><nobr>Korpus ni predprocesiran</nobr>
+        not set: false
+        '<br/><nobr>Language: {language}</nobr>': <br/><nobr>Jezik: {language}</nobr>
+corpus_to_network.py:
+    class `CorpusToNetwork`:
+        def `__init__`:
+            Given parameter must be instance of Corpus.: false
+        def `__call__`:
+            Threshold must be at least 1.: false
+            Window size must be at least 1.: false
+            Frequency threshold must be at least 1.: false
+            Document_nodes must be bool.: false
+        def `_generate_document_network`:
+            Document Network: Mreža dokumentov
+        def `_generate_word_network`:
+            Word Network: Mreža besed
+            word_frequency: false
+            word: false
+country_codes.py:
+    _0: false
+    Kosovo: true
+    Kosovo, Republic of: Republika Kosovo
+    -99: false
+    N. Cyprus: S. Ciper
+    North Cyprus: Severni Ciper
+    AD: false
+    AND: false
+    Andorra: Andora
+    AL: false
+    ALB: false
+    Albania: Albanija
+    AT: false
+    AUT: false
+    Austria: Avstrija
+    AX: false
+    ALA: false
+    Åland Islands: Alandski otoki
+    Aland: true
+    BA: false
+    BIH: false
+    Bosnia and Herzegovina: Bosna in Hercegovina
+    Bosnia and Herz.: Bosna in Herc.
+    BE: false
+    BEL: false
+    Belgium: 'Belgija '
+    BG: false
+    BGR: false
+    Bulgaria: Bulgarija
+    BY: false
+    BLR: false
+    Belarus: Belorusija
+    CH: false
+    CHE: false
+    Switzerland: Švica
+    CY: false
+    CYP: false
+    Cyprus: Ciper
+    CZ: false
+    CZE: false
+    Czech Republic: Češka republika
+    Czech Rep.: Češka
+    DE: false
+    DEU: false
+    Germany: Nemčija
+    DK: false
+    DNK: false
+    Denmark: Danska
+    DZ: false
+    DZA: false
+    Algeria: Alžirija
+    EE: false
+    EST: false
+    Estonia: Estonija
+    EG: false
+    EGY: false
+    Egypt: Egipt
+    ES: false
+    ESP: false
+    Spain: Španija
+    FI: false
+    FIN: false
+    Finland: Finska
+    FO: false
+    FRO: false
+    Faroe Islands: Ferski otoki
+    Faeroe Is.: Ferski ot.
+    FR: false
+    FRA: false
+    France: Francija
+    GB: false
+    GBR: false
+    United Kingdom: Združeno kraljestvo
+    Great Britain: Velika Britanija
+    England: Anglija
+    GE: false
+    GEO: false
+    Georgia: Gruzija
+    GG: false
+    GGY: false
+    Guernsey: true
+    GR: false
+    GRC: false
+    Greece: Grčija
+    HR: false
+    HRV: false
+    Croatia: Hrvaška
+    HU: false
+    HUN: false
+    Hungary: Madžarska
+    IE: false
+    IRL: false
+    Ireland: Irska
+    IL: false
+    ISR: false
+    Israel: Izrael
+    IM: false
+    IMN: false
+    Isle of Man: Otok  Man
+    IQ: false
+    IRQ: false
+    Iraq: Irak
+    IS: false
+    ISL: false
+    Iceland: Islandija
+    IT: false
+    ITA: false
+    Italy: Italija
+    JE: false
+    JEY: false
+    Jersey: true
+    JO: false
+    JOR: false
+    Jordan: Jordanija
+    LB: false
+    LBN: false
+    Lebanon: Libanon
+    LI: false
+    LIE: false
+    Liechtenstein: Lihtenštajn
+    LT: false
+    LTU: false
+    Lithuania: Litva
+    LU: false
+    LUX: false
+    Luxembourg: Luksemburg
+    LV: false
+    LVA: false
+    Latvia: Latvija
+    LY: false
+    LBY: false
+    Libya: Libija
+    MA: false
+    MAR: false
+    Morocco: Maroko
+    MD: false
+    MDA: false
+    Moldova, Republic of: Republika Moldavija
+    Moldova: Moldavija
+    ME: false
+    MNE: false
+    Montenegro: Črna gora
+    MK: false
+    MKD: false
+    Macedonia, Republic of: Republika Makedonija
+    Macedonia: Makedonija
+    MT: false
+    MLT: false
+    Malta: true
+    NL: false
+    NLD: false
+    Netherlands: Nizozemska
+    NO: false
+    NOR: false
+    Norway: Norveška
+    PL: false
+    POL: false
+    Poland: Poljska
+    PS: false
+    PSE: false
+    Palestine, State of: Palestina
+    Palestine: Palestina
+    PT: false
+    PRT: false
+    Portugal: Portugalska
+    RO: false
+    ROU: false
+    Romania: Romunija
+    RS: false
+    SRB: false
+    Serbia: Srbija
+    RU: false
+    RUS: false
+    Russian Federation: Ruska federacija
+    Russia: Rusija
+    SA: false
+    SAU: false
+    Saudi Arabia: Savdska Arabija
+    SE: false
+    SWE: false
+    Sweden: Švedska
+    SI: false
+    SVN: false
+    Slovenia: Slovenija
+    SK: false
+    SVK: false
+    Slovakia: Slovaška
+    SM: false
+    SMR: false
+    San Marino: true
+    SY: false
+    SYR: false
+    Syrian Arab Republic: Sirija
+    Syria: Sirija
+    TN: false
+    TUN: false
+    Tunisia: Tunizija
+    TR: false
+    TUR: false
+    Turkey: Turčija
+    UA: false
+    UKR: false
+    Ukraine: Ukrajina
+    _1: false
+    Somaliland: Somalija
+    AE: false
+    ARE: false
+    United Arab Emirates: Združeni Arabski Emirati
+    AF: false
+    AFG: false
+    Afghanistan: Afganistan
+    AM: false
+    ARM: false
+    Armenia: Armenija
+    AO: false
+    AGO: false
+    Angola: true
+    AR: false
+    ARG: false
+    Argentina: true
+    AU: false
+    AUS: false
+    Australia: Avstralija
+    AZ: false
+    AZE: false
+    Azerbaijan: Azerbajdžan
+    BD: false
+    BGD: false
+    Bangladesh: Bangladeš
+    BF: false
+    BFA: false
+    Burkina Faso: true
+    BI: false
+    BDI: false
+    Burundi: true
+    BJ: false
+    BEN: false
+    Benin: true
+    BN: false
+    BRN: false
+    Brunei Darussalam: Sultanat Brunej
+    Brunei: Brunej
+    BO: false
+    BOL: false
+    Bolivia, Plurinational State of: Večnacionalna država Bolivija
+    Bolivia: Bolivija
+    BR: false
+    BRA: false
+    Brazil: Brazilija
+    BS: false
+    BHS: false
+    Bahamas: Bahami
+    BT: false
+    BTN: false
+    Bhutan: Butan
+    BW: false
+    BWA: false
+    Botswana: Bocvana
+    BZ: false
+    BLZ: false
+    Belize: true
+    CA: false
+    CAN: false
+    Canada: Kanada
+    CD: false
+    COD: false
+    Congo, The Democratic Republic of the: Kongo, Demokratična republika Kongo
+    Dem. Rep. Congo: Dem. rep. Kongo
+    CF: false
+    CAF: false
+    Central African Republic: Srednjeafriška republika
+    Central African Rep.: Srednjeafriška rep.
+    CG: false
+    COG: false
+    Congo: Kongo
+    CI: false
+    CIV: false
+    Côte d'Ivoire: Slonokoščena obala
+    CL: false
+    CHL: false
+    Chile: Čile
+    CM: false
+    CMR: false
+    Cameroon: Kamerun
+    CN: false
+    CHN: false
+    China: Kitajska
+    CO: false
+    COL: false
+    Colombia: Kolumbija
+    CR: false
+    CRI: false
+    Costa Rica: Kostarika
+    CU: false
+    CUB: false
+    Cuba: Kuba
+    DJ: false
+    DJI: false
+    Djibouti: Džibuti
+    DO: false
+    DOM: false
+    Dominican Republic: Dominikanska republika
+    Dominican Rep.: Dominikanska rep.
+    EC: false
+    ECU: false
+    Ecuador: Ekvador
+    EH: false
+    ESH: false
+    Western Sahara: Zahodna Sahara
+    W. Sahara: Z. Sahara
+    ER: false
+    ERI: false
+    Eritrea: Eritreja
+    ET: false
+    ETH: false
+    Ethiopia: Etiopija
+    FJ: false
+    FJI: false
+    Fiji: Fidži
+    FK: false
+    FLK: false
+    Falkland Islands [Malvinas]: Falklandski otoki [Malvini]
+    Falkland Is.: Falklandski ot.
+    GA: false
+    GAB: false
+    Gabon: true
+    GH: false
+    GHA: false
+    Ghana: Gana
+    GL: false
+    GRL: false
+    Greenland: Grenlandija
+    GM: false
+    GMB: false
+    Gambia: Gambija
+    GN: false
+    GIN: false
+    Guinea: Gvineja
+    GQ: false
+    GNQ: false
+    Equatorial Guinea: Ekvatorialna Gvineja
+    Eq. Guinea: Ek. Gvineja
+    GT: false
+    GTM: false
+    Guatemala: Gvatemala
+    GW: false
+    GNB: false
+    Guinea-Bissau: Gvineja Bissau
+    GY: false
+    GUY: false
+    Guyana: Gvajana
+    HN: false
+    HND: false
+    Honduras: true
+    HT: false
+    HTI: false
+    Haiti: true
+    ID: false
+    IDN: false
+    Indonesia: Indonezija
+    IN: false
+    IND: false
+    India: Indija
+    IR: false
+    IRN: false
+    Iran, Islamic Republic of: Iran, Islamska republika
+    Iran: true
+    JM: false
+    JAM: false
+    Jamaica: Jamajka
+    JP: false
+    JPN: false
+    Japan: Japonska
+    KE: false
+    KEN: false
+    Kenya: Kenija
+    KG: false
+    KGZ: false
+    Kyrgyzstan: Kirgizistan
+    KH: false
+    KHM: false
+    Cambodia: Kambodža
+    KP: false
+    PRK: false
+    Korea, Democratic People's Republic of: Koreja, Demokratična ljudska republika
+    Dem. Rep. Korea: Dem. rep. Koreja
+    North Korea: Severna Koreja
+    KR: false
+    KOR: false
+    Korea, Republic of: Koreja, Republika Koreja
+    Korea: Koreja
+    South Korea: Južna Koreja
+    KW: false
+    KWT: false
+    Kuwait: Kuvajt
+    KZ: false
+    KAZ: false
+    Kazakhstan: Kazahstan
+    LA: false
+    LAO: false
+    Lao People's Democratic Republic: Laoška ljudska demokratična republika
+    Lao PDR: Laos
+    LK: false
+    LKA: false
+    Sri Lanka: Šrilanka
+    LR: false
+    LBR: false
+    Liberia: Liberija
+    LS: false
+    LSO: false
+    Lesotho: Lesoto
+    MG: false
+    MDG: false
+    Madagascar: Madagaskar
+    ML: false
+    MLI: false
+    Mali: true
+    MM: false
+    MMR: false
+    Myanmar: Mjanmar
+    MN: false
+    MNG: false
+    Mongolia: Mongolija
+    MR: false
+    MRT: false
+    Mauritania: Mavretanija
+    MW: false
+    MWI: false
+    Malawi: Malavi
+    MX: false
+    MEX: false
+    Mexico: Mehika
+    MY: false
+    MYS: false
+    Malaysia: Malezija
+    MZ: false
+    MOZ: false
+    Mozambique: Mozambik
+    NA: false
+    NAM: false
+    Namibia: Namibija
+    NC: false
+    NCL: false
+    New Caledonia: Nova Kaledonija
+    NE: false
+    NER: false
+    Niger: true
+    NG: false
+    NGA: false
+    Nigeria: Nigerija
+    NI: false
+    NIC: false
+    Nicaragua: Nikaragva
+    NP: false
+    NPL: false
+    Nepal: true
+    NZ: false
+    NZL: false
+    New Zealand: Nova Zelandija
+    OM: false
+    OMN: false
+    Oman: true
+    PA: false
+    PAN: false
+    Panama: true
+    PE: false
+    PER: false
+    Peru: true
+    PG: false
+    PNG: false
+    Papua New Guinea: Papua Nova Gvineja
+    PH: false
+    PHL: false
+    Philippines: Filipini
+    PK: false
+    PAK: false
+    Pakistan: true
+    PR: false
+    PRI: false
+    Puerto Rico: Portoriko
+    PY: false
+    PRY: false
+    Paraguay: Paragvaj
+    QA: false
+    QAT: false
+    Qatar: Katar
+    RW: false
+    RWA: false
+    Rwanda: Ruanda
+    SB: false
+    SLB: false
+    Solomon Islands: Salomonovi otoki
+    Solomon Is.: Salomonovi ot.
+    SD: false
+    SDN: false
+    Sudan: true
+    SL: false
+    SLE: false
+    Sierra Leone: true
+    SN: false
+    SEN: false
+    Senegal: true
+    SO: false
+    SOM: false
+    Somalia: Somalija
+    SR: false
+    SUR: false
+    Suriname: Surinam
+    SS: false
+    SSD: false
+    South Sudan: Južni Sudan
+    S. Sudan: J. Sudan
+    SV: false
+    SLV: false
+    El Salvador: Salvador
+    SZ: false
+    SWZ: false
+    Swaziland: Svazi
+    TD: false
+    TCD: false
+    Chad: true
+    TF: false
+    ATF: false
+    French Southern Territories: Francoska južna ozemlja
+    Fr. S. Antarctic Lands: Francoska južna in antarktična ozemlja
+    TG: false
+    TGO: false
+    Togo: true
+    TH: false
+    THA: false
+    Thailand: Tajska
+    TJ: false
+    TJK: false
+    Tajikistan: Tadžikistan
+    TL: false
+    TLS: false
+    Timor-Leste: Vzhodni Timor
+    TM: false
+    TKM: false
+    Turkmenistan: true
+    TT: false
+    TTO: false
+    Trinidad and Tobago: Trinidad in Tobago
+    TW: false
+    TWN: false
+    Taiwan, Province of China: Tajvan, provinca Kitajska
+    Taiwan: Tajvan
+    TZ: false
+    TZA: false
+    Tanzania, United Republic of: Tanzanija, Združena republika
+    Tanzania: Tanzanija
+    UG: false
+    UGA: false
+    Uganda: true
+    US: false
+    USA: false
+    United States: Združene države
+    United States of America: Združene države Amerike
+    UY: false
+    URY: false
+    Uruguay: Urugvaj
+    UZ: false
+    UZB: false
+    Uzbekistan: true
+    VE: false
+    VEN: false
+    Venezuela, Bolivarian Republic of: Venezuela, Bolivarska republika
+    Venezuela: true
+    VN: false
+    VNM: false
+    Viet Nam: Vietnam
+    Vietnam: true
+    VU: false
+    VUT: false
+    Vanuatu: true
+    YE: false
+    YEM: false
+    Yemen: Jemen
+    ZA: false
+    ZAF: false
+    South Africa: Južna Afrika
+    ZM: false
+    ZMB: false
+    Zambia: Zambija
+    ZW: false
+    ZWE: false
+    Zimbabwe: Zimbabve
+    US-AK: false
+    AK: false
+    Alaska: Aljaska
+    US-AL: false
+    Alabama: true
+    US-AR: false
+    Arkansas: true
+    US-AZ: false
+    Arizona: true
+    US-CA: false
+    California: Kalifornija
+    US-CO: false
+    Colorado: Kolorado
+    US-CT: false
+    CT: false
+    Connecticut: true
+    US-DC: false
+    DC: false
+    District of Columbia: Zvezno okrožje Kolumbija
+    US-DE: false
+    Delaware: true
+    US-FL: false
+    FL: false
+    Florida: true
+    US-GA: false
+    US-HI: false
+    HI: false
+    Hawaii: Havaji
+    US-IA: false
+    IA: false
+    Iowa: true
+    US-ID: false
+    Idaho: true
+    US-IL: false
+    Illinois: true
+    US-IN: false
+    Indiana: true
+    US-KS: false
+    KS: false
+    Kansas: true
+    US-KY: false
+    KY: false
+    Kentucky: true
+    US-LA: false
+    Louisiana: true
+    US-MA: false
+    Massachusetts: true
+    US-MD: false
+    Maryland: true
+    US-ME: false
+    Maine: true
+    US-MI: false
+    MI: false
+    Michigan: true
+    US-MN: false
+    Minnesota: true
+    US-MO: false
+    MO: false
+    Missouri: true
+    US-MS: false
+    MS: false
+    Mississippi: true
+    US-MT: false
+    Montana: true
+    US-NC: false
+    North Carolina: Severna Karolina
+    N. Carolina: S. Karolina
+    US-ND: false
+    ND: false
+    North Dakota: Severna Dakota
+    N. Dakota: S. Dakota
+    US-NE: false
+    Nebraska: true
+    US-NH: false
+    NH: false
+    New Hampshire: true
+    US-NJ: false
+    NJ: false
+    New Jersey: true
+    US-NM: false
+    NM: false
+    New Mexico: Nova Mehika
+    US-NV: false
+    NV: false
+    Nevada: true
+    US-NY: false
+    NY: false
+    New York: true
+    US-OH: false
+    OH: false
+    Ohio: true
+    US-OK: false
+    OK: false
+    Oklahoma: true
+    US-OR: false
+    OR: false
+    Oregon: true
+    US-PA: false
+    Pennsylvania: Pensilvanija
+    US-RI: false
+    RI: false
+    Rhode Island: true
+    US-SC: false
+    SC: false
+    South Carolina: Južna Karolina
+    S. Carolina: J. Karolina
+    US-SD: false
+    South Dakota: Južna Dakota
+    S. Dakota: J. Dakota
+    US-TN: false
+    Tennessee: true
+    US-TX: false
+    TX: false
+    Texas: Teksas
+    US-UT: false
+    UT: false
+    Utah: true
+    US-VA: false
+    VA: false
+    Virginia: Virginija
+    US-VT: false
+    VT: false
+    Vermont: true
+    US-WA: false
+    WA: false
+    Washington: true
+    US-WI: false
+    WI: false
+    Wisconsin: true
+    US-WV: false
+    WV: false
+    West Virginia: Zahodna Virginija
+    US-WY: false
+    WY: false
+    Wyoming: true
+    Anchorage: true
+    Birmingham: true
+    Montgomery: true
+    Mobile: true
+    Huntsville: true
+    Little Rock: true
+    Phoenix: true
+    Tucson: true
+    Mesa: true
+    Chandler: true
+    Gilbert: true
+    Glendale: true
+    Scottsdale: true
+    Tempe: true
+    Peoria: true
+    Surprise: true
+    Los Angeles: true
+    San Diego: true
+    San Jose: true
+    San Francisco: true
+    Fresno: true
+    Sacramento: true
+    Long Beach: true
+    Oakland: true
+    Bakersfield: true
+    Anaheim: true
+    Santa Ana: true
+    Riverside: true
+    Stockton: true
+    Chula Vista: true
+    Irvine: true
+    Fremont: true
+    San Bernardino: true
+    Modesto: true
+    Oxnard: true
+    Fontana: true
+    Moreno Valley: true
+    Huntington Beach: true
+    Santa Clarita: true
+    Garden Grove: true
+    Oceanside: true
+    Rancho Cucamonga: true
+    Santa Rosa: true
+    Ontario: true
+    Elk Grove: true
+    Corona: true
+    Lancaster: true
+    Palmdale: true
+    Salinas: true
+    Hayward: true
+    Pomona: true
+    Escondido: true
+    Sunnyvale: true
+    Torrance: true
+    Pasadena: true
+    Orange: true
+    Fullerton: true
+    Thousand Oaks: true
+    Visalia: true
+    Roseville: true
+    Concord: true
+    Simi Valley: true
+    Santa Clara: true
+    Victorville: true
+    Vallejo: true
+    Berkeley: true
+    El Monte: true
+    Downey: true
+    Costa Mesa: true
+    Carlsbad: true
+    Inglewood: true
+    Fairfield: true
+    Ventura: true
+    Temecula: true
+    Antioch: true
+    Richmond: true
+    West Covina: true
+    Murrieta: true
+    Norwalk: true
+    Daly City: true
+    Burbank: true
+    Santa Maria: true
+    El Cajon: true
+    San Mateo: true
+    Rialto: true
+    Clovis: true
+    East Los Angeles: true
+    Denver: true
+    Colorado Springs: true
+    Aurora: true
+    Fort Collins: true
+    Lakewood: true
+    Thornton: true
+    Arvada: true
+    Westminster: true
+    Pueblo: true
+    Centennial: true
+    Boulder: true
+    Bridgeport: true
+    New Haven: true
+    Stamford: true
+    Hartford: true
+    Waterbury: true
+    Jacksonville: true
+    Miami: true
+    Tampa: true
+    Orlando: true
+    St. Petersburg: true
+    Hialeah: true
+    Tallahassee: true
+    Fort Lauderdale: true
+    Port St. Lucie: true
+    Cape Coral: true
+    Pembroke Pines: true
+    Hollywood: true
+    Miramar: true
+    Gainesville: true
+    Coral Springs: true
+    Miami Gardens: true
+    Clearwater: true
+    Pompano Beach: true
+    Palm Bay: true
+    West Palm Beach: true
+    Lakeland: true
+    Brandon: true
+    Atlanta: true
+    Columbus: true
+    Augusta: true
+    Macon: true
+    Savannah: true
+    Athens: true
+    Sandy Springs: true
+    Honolulu: true
+    Des Moines: true
+    Cedar Rapids: true
+    Davenport: true
+    Boise: true
+    Chicago: true
+    Rockford: true
+    Joliet: true
+    Naperville: true
+    Springfield: true
+    Elgin: true
+    Indianapolis: true
+    Fort Wayne: true
+    Evansville: true
+    South Bend: true
+    Wichita: true
+    Overland Park: true
+    Kansas City: true
+    Olathe: true
+    Topeka: true
+    Louisville: true
+    Lexington: true
+    New Orleans: true
+    Baton Rouge: true
+    Shreveport: true
+    Lafayette: true
+    Metairie: true
+    Boston: true
+    Worcester: true
+    Lowell: true
+    Cambridge: true
+    Baltimore: true
+    Detroit: true
+    Grand Rapids: true
+    Warren: true
+    Sterling Heights: true
+    Ann Arbor: true
+    Lansing: true
+    Minneapolis: true
+    St. Paul: true
+    Rochester: true
+    St. Louis: true
+    Independence: true
+    Columbia: true
+    Jackson: true
+    Billings: true
+    Charlotte: true
+    Raleigh: true
+    Greensboro: true
+    Durham: true
+    Winston–Salem: true
+    Fayetteville: true
+    Cary: true
+    Wilmington: true
+    High Point: true
+    Fargo: true
+    Omaha: true
+    Lincoln: true
+    Manchester: true
+    Newark: true
+    Jersey City: true
+    Paterson: true
+    Elizabeth: true
+    Albuquerque: true
+    Las Cruces: true
+    Las Vegas: true
+    Henderson: true
+    Reno: true
+    North Las Vegas: true
+    Paradise: true
+    Sunrise Manor: true
+    Spring Valley: true
+    Enterprise: true
+    New York City: true
+    Buffalo: true
+    Yonkers: true
+    Syracuse: true
+    Cleveland: true
+    Cincinnati: true
+    Toledo: true
+    Akron: true
+    Dayton: true
+    Oklahoma City: true
+    Tulsa: true
+    Norman: true
+    Broken Arrow: true
+    Portland: true
+    Salem: true
+    Eugene: true
+    Gresham: true
+    Philadelphia: true
+    Pittsburgh: true
+    Allentown: true
+    Providence: true
+    Charleston: true
+    North Charleston: true
+    Sioux Falls: true
+    Memphis: true
+    Nashville: true
+    Knoxville: true
+    Chattanooga: true
+    Clarksville: true
+    Murfreesboro: true
+    Houston: true
+    San Antonio: true
+    Dallas: true
+    Austin: true
+    Fort Worth: true
+    El Paso: true
+    Arlington: true
+    Corpus Christi: true
+    Plano: true
+    Laredo: true
+    Lubbock: true
+    Garland: true
+    Irving: true
+    Amarillo: true
+    Grand Prairie: true
+    Brownsville: true
+    McKinney: true
+    Frisco: true
+    Mesquite: true
+    McAllen: true
+    Killeen: true
+    Waco: true
+    Carrollton: true
+    Denton: true
+    Midland: true
+    Abilene: true
+    Beaumont: true
+    Odessa: true
+    Round Rock: true
+    Richardson: true
+    Wichita Falls: true
+    College Station: true
+    Pearland: true
+    Lewisville: true
+    Tyler: true
+    Salt Lake City: true
+    West Valley City: true
+    Provo: true
+    West Jordan: true
+    Virginia Beach: true
+    Norfolk: true
+    Chesapeake: true
+    Newport News: true
+    Alexandria: true
+    Hampton: true
+    Arlington County: true
+    Seattle: true
+    Spokane: true
+    Tacoma: true
+    Vancouver: true
+    Bellevue: true
+    Kent: true
+    Everett: true
+    Milwaukee: true
+    Madison: true
+    Green Bay: true
+    Pristina: true
+    Priština: true
+    Prishtina: true
+    Prishtinë: true
+    North Nicosia: true
+    Andorra la Vella: true
+    Tirana: true
+    Vienna: true
+    Wien: true
+    Mariehamn: true
+    Sarajevo: true
+    Brussels: true
+    Bruxelles: true
+    Brussel: true
+    Sofia: true
+    Minsk: true
+    Bern: true
+    Zürich: true
+    Geneva: true
+    Nicosia: true
+    Prague: true
+    Praha: true
+    Praga: true
+    Berlin: true
+    Hanover: true
+    Hamburg: true
+    Munich: true
+    München: true
+    Stuttgart: true
+    Frankfurt: true
+    Düsseldorf: true
+    Cologne: true
+    Essen: true
+    Dresden: true
+    Leipzig: true
+    Copenhagen: true
+    København: true
+    Algiers: true
+    Tallinn: true
+    Cairo: true
+    Madrid: true
+    Barcelona: true
+    Murcia: true
+    Malaga: true
+    Seville: true
+    Bilbao: true
+    Zaragoza: true
+    Valencia: true
+    Helsinki: true
+    Tórshavn: true
+    Torshavn: true
+    Paris: true
+    Nice: true
+    Montpellier: true
+    Marseille: true
+    Lyon: true
+    Toulouse: true
+    Bordeaux: true
+    Nantes: true
+    London: true
+    London Heathrow: true
+    Liverpool: true
+    Bristol: true
+    Cardiff: true
+    Oxford: true
+    Glasgow: true
+    Edinburgh: true
+    Belfast: true
+    Tbilisi: true
+    Saint Peter Port: true
+    Thessaloniki: true
+    Zagreb: true
+    Budapest: true
+    Dublin: true
+    Jerusalem: true
+    Tel Aviv: true
+    Douglas: true
+    Baghdad: true
+    Reykjavik: true
+    Rome: true
+    Roma: true
+    Saint Helier: true
+    Amman: true
+    Beirut: true
+    Vaduz: true
+    Vilnius: true
+    Riga: true
+    Tripoli: true
+    Rabat: true
+    Fes: true
+    Casablanca: true
+    Marrakesh: true
+    Marrakech: true
+    Tangier: true
+    Chisinau: true
+    Chișinău: true
+    Podgorica: true
+    Skopje: true
+    Valletta: true
+    Amsterdam: true
+    The Hague: true
+    Rotterdam: true
+    Oslo: true
+    Bergen: true
+    Trondheim: true
+    Warsaw: true
+    Warszawa: true
+    Krakow: true
+    Lublin: true
+    Bialystok: true
+    Lodz: true
+    Gdansk: true
+    Wroclaw: true
+    Lisbon: true
+    Porto: true
+    Bucharest: true
+    București: true
+    Belgrade: true
+    Beograd: true
+    Moscow: true
+    Moskva: true
+    Saint Petersburg: true
+    Kazan: true
+    Vladivostok: true
+    Irkutsk: true
+    Novosibirsk: true
+    Krasnoyarsk: true
+    Nizhny Novgorod: true
+    Riyadh: true
+    Stockholm: true
+    Gothenburg: true
+    Malmo: true
+    Ljubljana: true
+    Bratislava: true
+    Damascus: true
+    Tunis: true
+    Ankara: true
+    Istanbul: true
+    Constantinople: true
+    Kyiv: true
+    Kiev: true
+    Kharkiv: true
+    Lviv: true
+    Hargeisa: true
+    Abu Dhabi: true
+    Kabul: true
+    Yerevan: true
+    Luanda: true
+    Buenos Aires: true
+    Canberra: true
+    Sydney: true
+    Melbourne: true
+    Cairns: true
+    Adelaide: true
+    Perth: true
+    Baku: true
+    Dhaka: true
+    Ouagadougou: true
+    Bujumbura: true
+    Porto-Novo: true
+    Porto Novo: true
+    Cotonou: true
+    Bandar Seri Begawani: true
+    La Paz: true
+    Sucre: true
+    Brasília: true
+    Brasilia: true
+    Sao Paulo: true
+    Rio de Janeiro: true
+    Nassau: true
+    Thimphu: true
+    Gaborone: true
+    Belmopan: true
+    Ottawa: true
+    Calgary: true
+    Edmonton: true
+    Winnipeg: true
+    Toronto: true
+    Montreal: true
+    Québec: true
+    Quebec: true
+    Kinshasa: true
+    Bangui: true
+    Brazzaville: true
+    Yamoussoukro: true
+    Abidjan: true
+    Santiago: true
+    Yaoundé: true
+    Yaounde: true
+    Beijing: true
+    Bogotá: true
+    Bogota: true
+    San José: true
+    Havana: true
+    Santo Domingo: true
+    Quito: true
+    Laayoune: true
+    Asmara: true
+    Addis Ababa: true
+    Suva: true
+    Stanley: true
+    Libreville: true
+    Accra: true
+    Nuuk: true
+    Banjul: true
+    Conakry: true
+    Malabo: true
+    Guatemala City: true
+    Bissau: true
+    Georgetown: true
+    Tegucigalpa: true
+    Port-au-Prince: true
+    Port au Prince: true
+    Jakarta: true
+    New Delhi: true
+    Mumbai: true
+    Bombay: true
+    Bengaluru: true
+    Hyderabad: true
+    Tehran: true
+    Kingston: true
+    Tokyo: true
+    Osaka: true
+    Hiroshima: true
+    Fukuoka: true
+    Sapporo: true
+    Nairobi: true
+    Bishkek: true
+    Phnom Penh: true
+    Pyongyang: true
+    Seoul: true
+    Kuwait City: true
+    Astana: true
+    Vientiane: true
+    Sri Jayawardenepura Kotte: true
+    Colombo: true
+    Monrovia: true
+    Maseru: true
+    Antananarivo: true
+    Bamako: true
+    Naypyidaw: true
+    Ulaanbaatar: true
+    Ulan Bator: true
+    Nouakchott: true
+    Lilongwe: true
+    Mexico City: true
+    Kuala Lumpur: true
+    Putrajaya: true
+    Maputo: true
+    Windhoek: true
+    Nouméa: true
+    Noumea: true
+    Niamey: true
+    Abuja: true
+    Managua: true
+    Kathmandu: true
+    Wellington: true
+    Auckland: true
+    Christchurch: true
+    Queenstown: true
+    Muscat: true
+    Panama City: true
+    Lima: true
+    Port Moresby: true
+    Manila: true
+    Islamabad: true
+    San Juan: true
+    Asunción: true
+    Asuncion: true
+    Doha: true
+    Kigali: true
+    Honiara: true
+    Khartoum: true
+    Freetown: true
+    Dakar: true
+    Mogadishu: true
+    Paramaribo: true
+    Juba: true
+    San Salvador: true
+    Mbabane: true
+    Lobamba: true
+    N\'Djamena: true
+    NDjamena: true
+    N Djamena: true
+    Lomé: true
+    Lome: true
+    Bangkok: true
+    Dushanbe: true
+    Dili: true
+    Ashgabat: true
+    Port of Spain: true
+    Taipei: true
+    Dodoma: true
+    Kampala: true
+    Washington, D.C.: true
+    Washington D.C.: true
+    Montevideo: true
+    Tashkent: true
+    Caracas: true
+    Hanoi: true
+    Ho Chi Minh: true
+    Port Vila: true
+    Sana\'a: true
+    Sanaa: true
+    Pretoria: true
+    Bloemfontein: true
+    Cape Town: true
+    Johannesburg: true
+    Lusaka: true
+    Harare: true
+guardian.py:
+    http://content.guardianapis.com/search: false
+    class `TheGuardianCredentials`:
+        def `valid`:
+            api-key: false
+    class `TheGuardianAPI`:
+        Section: Razdelek
+        sectionName: false
+        Headline: Naslov
+        fields: false
+        headline: false
+        Content: Vsebina
+        bodyText: false
+        Trail Text: Opis
+        trailText: false
+        HTML: true
+        body: false
+        Publication Date: Datum objave
+        webPublicationDate: false
+        Type: Vrsta
+        type: false
+        Language: Jezik
+        lang: false
+        Tags: Oznake
+        ', ': false
+        webTitle: false
+        tags: false
+        URL: true
+        webUrl: false
+        Word Count: Število besed
+        wordcount: false
+        def `_search`:
+            UTF-8: false
+            API limit exceeded: false
+            response: false
+            pages: false
+            results: false
+        def `_build_query`:
+            q: false
+            api-key: false
+            page: false
+            show-fields: false
+            headline,trailText,body,bodyText,lang,wordcount: false
+            show-tags: false
+            all: false
+            from-date: false
+            to-date: false
+        def `search`:
+            The Guardian: true
+            Language: Jezik
+    __main__: false
+    THE_GUARDIAN_API_KEY: false
+    test: false
+    refugees: false
+import_documents.py:
+    docx: false
+    odt: false
+    txt: false
+    pdf: false
+    xml: false
+    conllu: false
+    Text: Besedilo
+    name: false
+    path: false
+    ext: false
+    category: false
+    content: false
+    TextDataError: false
+    error: false
+    error_str: false
+    class `Reader`:
+        def `read`:
+            Error reading failed: false
+        def `read_file`:
+            No reader for {}: false
+        def `make_text_data`:
+            None: false
+            \s+: false
+            ' ': false
+    class `TxtReader`:
+        .txt: false
+        def `read_file`:
+            r: false
+    class `DocxReader`:
+        .docx: false
+    class `OdtReader`:
+        .odt: false
+        def `read_file`:
+            ' ': false
+    class `PdfReader`:
+        .pdf: false
+        def `read_file`:
+            rb: false
+            ' ': false
+            \x00: false
+    class `XmlReader`:
+        .xml: false
+        def `read_file`:
+            \n: false
+    class `CsvMetaReader`:
+        .csv: false
+    class `YamlMetaReader`:
+        .yaml: false
+        def `read_file`:
+            r: false
+    class `TsvMetaReader`:
+        .tsv: false
+        def `read_file`:
+            \t: false
+    def `quote_url`:
+        def `quote_byte`:
+            %{:02X}: false
+        utf-8: false
+    class `ConlluReader`:
+        Text: Besedilo
+        name: false
+        path: false
+        ext: false
+        category: false
+        doc_id: false
+        content: false
+        .conllu: false
+        def `parse_ner`:
+            misc: false
+            NER: false
+            O: false
+            lemma: false
+            ' ': false
+        def `read_file`:
+            r: false
+            utf-8: false
+            newdoc id: false
+            ' ': false
+            text: false
+            lemma: false
+            upos: false
+            ', ': false
+        def `make_text_data`:
+            None: false
+            text: false
+            \s+: false
+            ' ': false
+            newdoc id: false
+    class `ImportDocuments`:
+        Text file: Besedilna datoteka
+        ID: false
+        def `__init__`:
+            /: false
+        def `_retrieve_paths`:
+            *.{}: false
+            *.csv: false
+            *.yaml: false
+            *.yml: false
+            *.tsv: false
+        def `_create_corpus`:
+            name: false
+            path: false
+            content: false
+            utterance: false
+            category: false
+            NFC: false
+            title: false
+        def `_add_metadata`:
+            path: false
+            utterance: false
+            first: false
+        def `scan`:
+            *: false
+            .*: false
+        def `scan_url`:
+            *: false
+            .*: false
+            /: false
+language.py:
+    af: false
+    Afrikaans: false
+    am: false
+    Amharic: false
+    ar: false
+    Arabic: false
+    az: false
+    Azerbaijani: false
+    be: false
+    Belarusian: false
+    bg: false
+    Bulgarian: false
+    bn: false
+    Bengali: false
+    bo: false
+    Tibetan: false
+    br: false
+    Breton: false
+    bs: false
+    Bosnian: false
+    ca: false
+    Catalan: false
+    ckb: false
+    Central Kurdish: false
+    cop: false
+    Coptic: false
+    cs: false
+    Czech: false
+    cu: false
+    Old Church Slavonic: false
+    cy: false
+    Welsh: false
+    da: false
+    Danish: false
+    de: false
+    German: false
+    dv: false
+    Divehi: false
+    el: false
+    Greek: false
+    en: false
+    English: false
+    es: false
+    Spanish: false
+    et: false
+    Estonian: false
+    eu: false
+    Basque: false
+    fa: false
+    Persian: false
+    fi: false
+    Finnish: false
+    fr: false
+    French: false
+    ga: false
+    Irish: false
+    gl: false
+    Galician: false
+    got: false
+    Gothic: false
+    grc: false
+    Ancient greek: false
+    gu: false
+    Gujarati: false
+    he: false
+    Hebrew: false
+    hi: false
+    Hindi: false
+    hi-Latn: false
+    Hindi (latin): false
+    hr: false
+    Croatian: false
+    ht: false
+    Haitian: false
+    hu: false
+    Hungarian: false
+    hy: false
+    Armenian: false
+    id: false
+    Indonesian: false
+    is: false
+    Icelandic: false
+    it: false
+    Italian: false
+    ja: false
+    Japanese: false
+    ka: false
+    Georgian: false
+    kk: false
+    Kazakh: false
+    km: false
+    Central Khmer: false
+    kn: false
+    Kannada: false
+    ko: false
+    Korean: false
+    la: false
+    Latin: false
+    lo: false
+    Lao: false
+    lt: false
+    Lithuanian: false
+    lv: false
+    Latvian: false
+    mk: false
+    Macedonian: false
+    ml: false
+    Malayalam: false
+    mr: false
+    Marathi: false
+    my: false
+    Burmese: false
+    nb: false
+    Norwegian Bokmål: false
+    ne: false
+    Nepali: false
+    nl: false
+    Dutch: false
+    nn: false
+    Norwegian Nynorsk: false
+    no: false
+    Norwegian: false
+    or: false
+    Oriya: false
+    pa: false
+    Punjabi: false
+    pl: false
+    Polish: false
+    ps: false
+    Pashto: false
+    pt: false
+    Portuguese: false
+    ro: false
+    Romanian: false
+    ru: false
+    Russian: false
+    sa: false
+    Sanskrit: false
+    sd: false
+    Sindhi: false
+    si: false
+    Sinhala: false
+    sk: false
+    Slovak: false
+    sl: false
+    Slovenian: false
+    sr: false
+    Serbian: false
+    sv: false
+    Swedish: false
+    ta: false
+    Tamil: false
+    te: false
+    Telugu: false
+    tg: false
+    Tajik: false
+    th: false
+    Thai: false
+    tl: false
+    Tagalog: false
+    tr: false
+    Turkish: false
+    ug: false
+    Uyghur: false
+    uk: false
+    Ukrainian: false
+    ur: false
+    Urdu: false
+    vi: false
+    Vietnamese: false
+    zh: false
+    Chinese: false
+    zh_char: false
+    Chinese - Chinese Characters: false
+    class `LanguageModel`:
+        def `data`:
+            (no language): (brez jezika)
+    def `detect_language`:
+        Corpus: Korpus
+        ' ': false
+        \n: false
+nyt.py:
+    http://api.nytimes.com/svc/search/v2/articlesearch.json: false
+    def `keywords`:
+        keywords: false
+        ', ': false
+        value: false
+        name: false
+    def `parse_date`:
+        pub_date: false
+    class `NYT`:
+        Section: Razdelek
+        section_name: false
+        Headline: Naslov
+        headline: false
+        main: false
+        Abstract: Povzetek
+        abstract: false
+        Snippet: Izvleček
+        snippet: false
+        Lead Paragraph: Glavni odstavek
+        lead_paragraph: false
+        Subject Keywords: Ključne besede zadeve
+        subject: false
+        URL: false
+        web_url: false
+        Locations: Lokacije
+        glocations: false
+        Persons: Osebe
+        persons: false
+        Organizations: Organizacije
+        organizations: false
+        Creative Works: Ustvarjalna dela
+        creative_works: false
+        Publication Date: Datum objave
+        Article Type: Vrsta članka
+        type_of_material: false
+        Word Count: Število besed
+        word_count: false
+        def `api_key_valid`:
+            test: false
+        def `search`:
+            response: false
+            docs: false
+            meta: false
+            hits: false
+            NY Times: true
+            language: false
+            en: false
+        def `_cache_init`:
+            nytcache: false
+            query_cache: false
+            'Could not initialize NYT cache: {}': Predpomnilnika NYT ni bilo mogoče inicializirati: {}
+        def `_fetch_page`:
+            utf-8: false
+            'NYT api returned HTTPError with code 403 ': 'NYT api je vrnil HTTP napako s kodo 403 '
+            (Forbidden)! Skipping this page ...: (Prepovedano)! Preskočite to stran ...
+            response: false
+            docs: false
+        def `_encode_url`:
+            fq: false
+            The New York Times: false
+            api-key: false
+            q: false
+            page: false
+            begin_date: false
+            %Y%m%d: false
+            end_date: false
+            {}?{}: false
+ontology.py:
+    class `Tree`:
+        def `__init__`:
+            Vertices must be enumerated from 0 to n.: Vozlišča morajo biti oštevilčena od 0 do n.
+            adj_list and labels must be of same length: adj_list in labels morata biti enke dolžine
+        def `from_dict`:
+            Not a tree: Ni drevo
+    class `FitnessFunction`:
+        def `score`:
+            ' ': false
+pubmed.py:
+    http://www.ncbi.nlm.nih.gov/pubmed/?term=: false
+    authors: false
+    title: false
+    MESH headings: false
+    abstract: false
+    url: false
+    date: false
+    FAU: false
+    TI: false
+    MH: false
+    AB: false
+    PMID: false
+    DP: false
+    def `_mesh_headings_to_class`:
+        /: false
+        ' ': false
+        *: false
+    def `_date_to_iso`:
+        %Y %b %d: %d %b %Y
+        %Y %b: %b %Y
+        %Y: false
+        fall: false
+        Sep: false
+        autumn: false
+        winter: false
+        Dec: false
+        spring: false
+        Mar: false
+        summer: false
+        Jun: false
+        -: false
+        Could not parse "{}" into a date.: {} ni bilo mogoče razčleniti v datum.
+    def `_records_to_corpus_entries`:
+        ' ': false
+        {}{}: false
+        MH: false
+        OT: false
+    def `_corpus_from_records`:
+        title: false
+        section: false
+        en: false
+    class `Pubmed`:
+        def `__init__`:
+            pubmedcache: false
+            query_cache: false
+        def `_search_for_records`:
+            db: false
+            pubmed: false
+            usehistory: false
+            y: false
+            retmax: false
+            term: false
+            Author: Avtor
+            ' AND ': ' in'
+            {} is not a valid data type for the field "authors".: {} ni veljaven podatkovni tip za polje "Avtorji".
+            All fields: Vsa polja
+            ' OR ': ' ali'
+            {} is not a valid data type for the field "terms".: {} ni veljaven podatkovni tip za polje "pogoji".
+            {}[{}]: false
+            ({}): false
+            mindate: false
+            -: false
+            /: false
+            maxdate: false
+            datetype: false
+            pdat: false
+            An exception occurred ({0}).: Zgodila se je izjema ({0}).
+            IdList: false
+            Count: false
+            WebEnv: false
+            QueryKey: false
+        def `_retrieve_record_batch`:
+            No WebEnv or QueryKey data in this PubMed class instance.: false
+            pubmed: false
+            medline: false
+            text: false
+        def `_retrieve_records`:
+            pubmed: false
+            ,: false
+            An exception occurred ({0}).: Zgodila se je izjema ({0}).
+            WebEnv: false
+            QueryKey: false
+            PMID: false
+semantic_search.py:
+    class `SemanticSearch`:
+        def `__init__`:
+            semantic-search: false
+            https://api.garaza.io: false
+            text: false
+        def `encode_queries`:
+            utf-8: false
+            replace: false
+        def `encode_text`:
+            utf-8: false
+            replace: false
+    class `_ServerCommunicator`:
+        def `__init__`:
+            application/json: false
+        def `_encode_data_instance`:
+            utf-8: false
+            replace: false
+    __main__: false
+    grimm-tales-selected: false
+    book: false
+    is: false
+    rum: false
+    are: false
+stats.py:
+    def `hypergeom_p_values`:
+        Number of columns does not match.: false
+tweet_profiler.py:
+    class `TweetProfiler`:
+        https://raw.githubusercontent.com/biolab/: false
+        orange3-text/master/SERVERS.txt: false
+        def `transform`:
+            tweets: false
+            model_name: false
+            output_mode: false
+            tweet_profiler: false
+            classes: false
+            profile: false
+            target_mode: false
+            Embeddings: Vložitve
+            hidden: false
+            Probabilities: Verjetnosti
+            Classes: Razredi
+            mc: false
+            Emotion: Čustva
+            ml: false
+            no: false
+            yes: false
+        def `get_server_address`:
+            'Could not access server list at: {}\n.': false
+            \n: false
+        def `check_server_alive`:
+            Server {} is not responding.: false
+        def `server_call`:
+            /: false
+        def `set_configuration`:
+            get_configurations: false
+            models: false
+            output_modes: false
+twitter.py:
+    am: false
+    ar: false
+    bg: false
+    bn: false
+    bo: false
+    ca: false
+    ckb: false
+    cs: false
+    cy: false
+    da: false
+    de: false
+    dv: false
+    el: false
+    en: false
+    es: false
+    et: false
+    eu: false
+    fa: false
+    fi: false
+    fr: false
+    gu: false
+    he: false
+    hi: false
+    hi-Latn: false
+    ht: false
+    hu: false
+    hy: false
+    id: false
+    is: false
+    it: false
+    ja: false
+    ka: false
+    km: false
+    kn: false
+    ko: false
+    lo: false
+    lt: false
+    lv: false
+    ml: false
+    mr: false
+    my: false
+    ne: false
+    nl: false
+    no: false
+    or: false
+    pa: false
+    pl: false
+    ps: false
+    pt: false
+    ro: false
+    ru: false
+    sd: false
+    si: false
+    sl: false
+    sr: false
+    sv: false
+    ta: false
+    te: false
+    th: false
+    tl: false
+    tr: false
+    ug: false
+    uk: false
+    ur: false
+    vi: false
+    zh: false
+    def `coordinates`:
+        coordinates: false
+    def `country_code`:
+        place_id: false
+    Content: Vsebina
+    Author: Avtor
+    @: false
+    Date: Datum
+    Language: Jezik
+    Location: Lokacija
+    Number of Likes: Število všečkov
+    like_count: false
+    Number of Retweets: Število ponovnih tvitov
+    retweet_count: false
+    In Reply To: V odgovor na
+    Author Name: Ime avtorja
+    Author Description: Opis avtorja
+    Author Tweets Count: Število tvitov avtorja
+    tweet_count: false
+    Author Following Count: Število uporabnikov, ki jim avtor sledi
+    following_count: false
+    Author Followers Count: Število uporabnikov, ki sledijo avtorju
+    followers_count: false
+    Author Listed Count: Število naštetih avtorjev
+    listed_count: false
+    Author Verified: Preverjen avtor
+    Longitude: Zemljepisna dolžina
+    Latitude: Zemljepisna širina
+    tweet_fields: false
+    lang: false
+    public_metrics: false
+    in_reply_to_user_id: false
+    author_id: false
+    geo: false
+    created_at: false
+    user_fields: false
+    description: false
+    verified: false
+    place_fields: false
+    country_code: false
+    expansions: false
+    geo.place_id: false
+    max_results: false
+    class `TwitterAPI`:
+        def `search_content`:
+            def `build_query`:
+                At leas one keyword required: Zahteva se vsaj ena ključna beseda
+                ' OR ': ' ali'
+                '"{}"': false
+                ' -is:retweet': -je: ponovni tvit
+                ' lang:{lang}': ' jezik: {lang}'
+            Content: Vsebina
+            Any: vsi
+        def `search_authors`:
+            Author: Avtor
+        def `_fetch`:
+            users: false
+            places: false
+            TooManyRequests raised: false
+        def `_create_corpus`:
+            Language: Jezik
+            Content: Vsebina
+        def `append_history`:
+            Query: Poizvedba
+            Search by: Iskanje po
+            Language: Jezik
+            Allow retweets: Dovoli ponovne tvite
+            Tweets count: Število tvitov
+util.py:
+    def `create_corpus`:
+        title: false
+wikipedia_api.py:
+    class `WikipediaAPI`:
+        Title: Naslov
+        title: false
+        Content: Vsebina
+        content: false
+        Summary: Povzetek
+        summary: false
+        Url: URL
+        url: false
+        Page ID: ID strani
+        pageid: false
+        Revision ID: ID revizije
+        revision_id: false
+        Query: Poizvedba
+        query: false
+        def `search`:
+            Wikipedia: Wikipedija
+keywords/__init__.py:
+    Arabic: false
+    ar: false
+    Armenian: false
+    hy: false
+    Breton: false
+    br: false
+    Bulgarian: false
+    bg: false
+    Chinese: false
+    zh: false
+    Croatian: false
+    hr: false
+    Czech: false
+    cz: false
+    Danish: false
+    da: false
+    Dutch: false
+    nl: false
+    English: false
+    en: false
+    Estonian: false
+    et: false
+    Finnish: false
+    fi: false
+    French: false
+    fr: false
+    German: false
+    de: false
+    Greek: false
+    el: false
+    Hindi: false
+    hi: false
+    Hungarian: false
+    hu: false
+    Indonesian: false
+    id: false
+    Italian: false
+    it: false
+    Japanese: false
+    ja: false
+    Latvian: false
+    lv: false
+    Lithuanian: false
+    lt: false
+    Norwegian: false
+    no: false
+    Persian: false
+    fa: false
+    Polish: false
+    pl: false
+    Portuguese: false
+    pt: false
+    Romanian: false
+    ro: false
+    Russian: false
+    ru: false
+    Slovak: false
+    sk: false
+    Slovenian: false
+    sl: false
+    Spanish: false
+    es: false
+    Swedish: false
+    sv: false
+    Turkish: false
+    tr: false
+    Ukrainian: false
+    uk: false
+    def `yake_keywords`:
+        English: false
+    def `rake_keywords`:
+        English: false
+        'Language must be one of: {RAKE_LANGUAGES}': Jezik mora biti eden od naslednjih: {RAKE_LANGUAGES}
+    class `ScoringMethods`:
+        TF-IDF: true
+        Rake: true
+        YAKE!: true
+        mBERT: true
+    class `AggregationMethods`:
+        Mean: Povprečje
+        Median: Mediana
+        Min: Minimum
+        Max: Maksimum
+keywords/mbert.py:
+    def `_split_key_phrases`:
+        ' ': false
+    def `mbert_keywords`:
+        mbert-keywords: false
+        https://api.garaza.io: false
+        text: false
+    class `_BertServerCommunicator`:
+        def `__init__`:
+            application/octet-stream: false
+        def `_encode_data_instance`:
+            utf-8: false
+            replace: false
+    __main__: false
+    "
+    I propose that an employer who orders workers to work overtime, and who also has people working part-time because they cannot be put in other jobs, must pay those whom he orders to work overtime at least double the crisis allowance.
+    This would avoid the employer milking the state at the expense of the corona of a law that is designed to address a shortage of work, and would really only order overtime when it could not be done otherwise. Because the reality is that the picture is very different now, and employers are exploiting some workers with overtime, while keeping others on part-time contracts. I believe that the corona law to help businesses is not intended to do this, but to keep businesses alive with as few redundancies as possible.
+    The loophole in the law which reads 'During the subsidy period and for one month thereafter, an employer may not order overtime, unevenly distribute or temporarily reallocate working time, provided that he can carry out this work with workers who are ordered to work part-time.'. has come in very handy for some employers to make additional use of, as it is an individual judgement.
+    However, a double allowance would prevent such exploitation of both the State and
+    ": false
+    Text: Besedilo
+keywords/rake.py:
+    def `is_number`:
+        .: false
+    def `separate_words`:
+        [^a-zA-Z0-9_\\+\\-/]: false
+    def `split_sentences`:
+        [\\[\\]\n.!?,;:\t\\-\\"\\(\\)\\\'\u2019\u2013]: false
+    def `build_stop_word_regex`:
+        \\b: false
+        '|': false
+    def `adjoined_candidates_from_sentence`:
+        ' ': false
+    def `generate_candidate_keywords`:
+        '|': false
+misc/nltk_data_download.py:
+    wait_nltk_data: false
+    nltk_data_dir: false
+    wordnet: false
+    stopwords: false
+    punkt: false
+    opinion_lexicon: false
+    vader_lexicon: false
+    averaged_perceptron_tagger: false
+    maxent_treebank_pos_tagger: false
+    omw-1.4: false
+    def `nltk_data_dir`:
+        Orange: false
+        nltk_data: false
+    http: false
+    80: false
+    https: false
+    443: false
+    socks4: false
+    1080: false
+    socks: false
+    quic: false
+    def `_get_proxy_address`:
+        https://: false
+        'Using proxy for NLTK: {proxy}': false
+        {}:{}: false
+preprocess/filter.py:
+    BaseTokenFilter: false
+    StopwordsFilter: false
+    LexiconFilter: false
+    RegexpFilter: false
+    FrequencyFilter: false
+    MostFrequentTokensFilter: false
+    PosTagFilter: false
+    NumbersFilter: false
+    WithNumbersFilter: false
+    class `BaseTokenFilter`:
+        def `_filter_tokens`:
+            Filtering...: Filtriranje...
+    class `FileWordListMixin`:
+        def `from_file`:
+            utf-8: false
+            Couldn't determine file encoding: false
+    class `StopwordsFilter`:
+        Stopwords: Zaustavitvene besede
+        def `__init__`:
+            English: false
+    class `LexiconFilter`:
+        Lexicon: true
+    class `RegexpFilter`:
+        Regexp: true
+        def `__init__`:
+            \.|,|:|!|\?: false
+    class `NumbersFilter`:
+        Numbers: Števila
+    class `WithNumbersFilter`:
+        Includes Numbers: Vsebuje števila
+        def `__init__`:
+            [0-9]: false
+    class `FitDictionaryFilter`:
+        def `__call__`:
+            Fitting filter...: Namestitev filtra...
+    class `FrequencyFilter`:
+        Document frequency: Pogostost dokumentov
+    class `MostFrequentTokensFilter`:
+        Most frequent tokens: Najpogostejši členi
+    class `PosTagFilter`:
+        POS tags: POS oznake
+        def `__init__`:
+            ,: false
+        def `validate_tags`:
+            ,: false
+        def `_filter_tokens`:
+            Filtering...: Filtriranje...
+preprocess/normalize.py:
+    BaseNormalizer: false
+    WordNetLemmatizer: false
+    PorterStemmer: false
+    SnowballStemmer: false
+    UDPipeLemmatizer: false
+    LemmagenLemmatizer: false
+    class `BaseNormalizer`:
+        def `__call__`:
+            Normalizing...: Normaliziranje...
+        def `__getstate__`:
+            _normalization_cache: false
+    class `WordNetLemmatizer`:
+        WordNet Lemmatizer: true
+    class `PorterStemmer`:
+        Porter Stemmer: true
+    class `SnowballStemmer`:
+        Snowball Stemmer: true
+        def `__init__`:
+            English: false
+    def `language_to_name`:
+        ' ': false
+        ud: false
+    def `file_to_name`:
+        -: false
+        _: false
+    def `file_to_language`:
+        ud: false
+        -: false
+        ' ': false
+        _: false
+    class `UDPipeModels`:
+        https://file.biolab.si/files/udpipe/: false
+        def `__init__`:
+            udpipe/: false
+    class `UDPipeLemmatizer`:
+        UDPipe Lemmatizer: true
+        def `__init__`:
+            English: false
+        def `__call__`:
+            Normalizing...: Normaliziranje...
+        def `__getstate__`:
+            _UDPipeLemmatizer__model: false
+            models: false
+    class `LemmagenLemmatizer`:
+        Lemmagen Lemmatizer: true
+        Bulgarian: false
+        bg: false
+        Croatian: false
+        hr: false
+        Czech: false
+        cs: false
+        English: false
+        en: false
+        Estonian: false
+        et: false
+        Farsi/Persian: false
+        fa: false
+        French: false
+        fr: false
+        German: false
+        de: false
+        Hungarian: false
+        hu: false
+        Italian: false
+        it: false
+        Macedonian: false
+        mk: false
+        Polish: false
+        pl: false
+        Romanian: false
+        ro: false
+        Russian: false
+        ru: false
+        Serbian: false
+        sr: false
+        Slovak: false
+        sk: false
+        Slovenian: false
+        sl: false
+        Spanish: false
+        es: false
+        Ukrainian: false
+        uk: false
+        def `__init__`:
+            English: false
+preprocess/preprocess.py:
+    Preprocessor: false
+    TokenizedPreprocessor: false
+    NGrams: false
+    PreprocessorList: false
+    class `NGrams`:
+        N-grams Range: Obseg N-gramov
+preprocess/tokenize.py:
+    BaseTokenizer: false
+    WordPunctTokenizer: false
+    PunktSentenceTokenizer: false
+    RegexpTokenizer: false
+    WhitespaceTokenizer: false
+    TweetTokenizer: false
+    BASE_TOKENIZER: false
+    class `BaseTokenizer`:
+        def `__call__`:
+            Tokenizing...: Členjenje...
+    class `WordPunctTokenizer`:
+        Word & Punctuation: Besede in ločila
+    class `PunktSentenceTokenizer`:
+        Sentence: Stavek
+    class `WhitespaceTokenizer`:
+        Whitespace: Presledek
+    class `RegexpTokenizer`:
+        Regexp: true
+        def `__init__`:
+            \w+: false
+        def `__call__`:
+            Tokenizing...: Členjenje...
+    class `TweetTokenizer`:
+        Tweet: Tvit
+preprocess/transform.py:
+    BaseTransformer: false
+    HtmlTransformer: false
+    LowercaseTransformer: false
+    StripAccentsTransformer: false
+    UrlRemover: false
+    BASE_TRANSFORMER: false
+    class `BaseTransformer`:
+        def `__call__`:
+            Transforming...: Preoblikovanje...
+    class `LowercaseTransformer`:
+        Lowercase: Male črke
+    class `StripAccentsTransformer`:
+        Remove accents: Odstrani naglase
+    class `HtmlTransformer`:
+        Parse html: Razčleni html
+        def `_preprocess`:
+            html.parser: false
+    class `UrlRemover`:
+        Remove urls: Odstrani URL naslov
+        def `__call__`:
+            ((https?):((//)|(\\\\))+([\w\d:#@%/;$()~_?\+-=\\\.&](#!)?)*): false
+sentiment/__init__.py:
+    def `read_file`:
+        r: false
+        utf8: false
+        \n: false
+    def `read_pickle`:
+        rb: false
+    class `LiuHuSentiment`:
+        sentiment: Sentiment
+        Liu Hu: true
+        class `SloSentiment`:
+            def `positive`:
+                resources/positive_words_Slolex.txt: false
+            def `negative`:
+                resources/negative_words_Slolex.txt: false
+        en: false
+        sl: false
+    class `VaderSentiment`:
+        positive: Pozitivno
+        negative: Negativno
+        neutral: Nevtralno
+        compound: Sestavljana ocena
+        Vader: true
+        def `get_scores`:
+            pos: false
+            neg: false
+            neu: false
+            compound: false
+    class `SentimentDictionaries`:
+        def `__init__`:
+            sentiment/: false
+    class `MultisentimentDictionaries`:
+        http://file.biolab.si/files/sentiment/: false
+        def `__getitem__`:
+            positive_words_{language}.txt: false
+            negative_words_{language}.txt: false
+    class `MultiSentiment`:
+        sentiment: Sentiment
+        Multilingual Sentiment: true
+        en: false
+        af: false
+        ar: false
+        az: false
+        be: false
+        bg: false
+        bs: false
+        ca: false
+        cs: false
+        da: false
+        de: false
+        el: false
+        es: false
+        et: false
+        fa: false
+        fi: false
+        fr: false
+        ga: false
+        he: false
+        hi: false
+        hr: false
+        hu: false
+        id: false
+        it: false
+        ja: false
+        ko: false
+        la: false
+        lt: false
+        lv: false
+        mk: false
+        nl: false
+        nn: false
+        no: false
+        pl: false
+        pt: false
+        ro: false
+        ru: false
+        sk: false
+        sl: false
+        sr: false
+        sv: false
+        tr: false
+        uk: false
+        zh: false
+        zh_char: false
+    class `SentiArtDictionaries`:
+        http://file.biolab.si/files/sentiart/: false
+        def `__getitem__`:
+            SentiArt_{language}.pickle: false
+    class `SentiArt`:
+        sentiment: Sentiment
+        anger: Jeza
+        fear: Strah
+        disgust: Gnus
+        happiness: Sreča
+        sadness: Žalost
+        surprise: Presenečenje
+        SentiArt: true
+        en: false
+        de: false
+    class `LilahDictionaries`:
+        http://file.biolab.si/files/sentiment-lilah/: false
+        def `__getitem__`:
+            LiLaH-{language}.pickle: false
+    class `LilahSentiment`:
+        Positive: Pozitivno
+        Negative: Negativno
+        Anger: Jeza
+        Anticipation: Pričakovanje
+        Disgust: Gnus
+        Fear: Strah
+        Joy: Veselje
+        Sadness: Žalost
+        Surprise: Presenečenje
+        Trust: Zaupanje
+        LiLaH Sentiment: true
+        sl: false
+        hr: false
+        nl: false
+    class `CustomDictionaries`:
+        sentiment: false
+        Custom Dictionaries: Slovarji po meri
+    __main__: false
+    deerwester: false
+sentiment/filter_lexicon.py:
+    class `FilterSentiment`:
+        def `read_file`:
+            *.pickle: false
+            rb: false
+            r: false
+            \n: false
+    class `SloSentiment`:
+        def `positive`:
+            resources/positive_words_Slolex.txt: false
+        def `negative`:
+            resources/negative_words_Slolex.txt: false
+tag/pos.py:
+    POSTagger: false
+    StanfordPOSTagger: false
+    AveragedPerceptronTagger: false
+    MaxEntTagger: false
+    class `POSTagger`:
+        def `__call__`:
+            POS Tagging...: POS označevanje...
+    class `StanfordPOSTagger`:
+        Stanford POS Tagger: Stanfordov POS označevalnik
+        def `check`:
+            'Either Java SDK not installed or some of the ': false
+            files are invalid.\n: false
+            ' =\n': false
+    class `AveragedPerceptronTagger`:
+        Averaged Perceptron Tagger: Označevalnik s povprečnim perceptronom
+    class `MaxEntTagger`:
+        Treebank POS Tagger (MaxEnt): Označevalnik POS drevesne banke (MaxEnt)
+        def `__init__`:
+            taggers/maxent_treebank_pos_tagger/english.pickle: false
+topics/hdp.py:
+    class `HdpWrapper`:
+        Hierarchical Dirichlet Process: Hierarhični Dirichletov proces (HDP)
+topics/lda.py:
+    class `LdaWrapper`:
+        Latent Dirichlet Allocation: Latentna Dirichletova porazdelitev (LDA)
+topics/lsi.py:
+    class `LsiWrapper`:
+        Latent Semantic Indexing: Latentno semantično indeksiranje (LSI)
+topics/nmf.py:
+    class `NmfWrapper`:
+        Negative Matrix Factorization: Faktorizacija negativnih matrikl (NMF)
+topics/topics.py:
+    class `GensimProgressCallback`:
+        def `__init__`:
+            shell: false
+            Progress: Napredek
+    def `infer_ngrams_corpus`:
+        bow-feature: false
+    class `GensimWrapper`:
+        def `fit`:
+            chunk_number: false
+            chunk_number is deprecated and will be removed in orange3-text 1.7: chunk_number je zastarel in bo odstranjen v orange3-text 1.7
+            callbacks: false
+            Topic {}: Tema {}
+        def `reset_model`:
+            'reset_model is deprecated and will be removed in orange3-text 1.7. ': 'reset_model je zastarel in bo odstranjen v orange3-text 1.7. '
+            Model resets with calling fit.: Model se ponastavi s klicem fit.
+        def `update`:
+            update is deprecated and will be removed in orange3-text 1.7.: posodobitev je zastarela in bo odstranjena v različici orange3-text 1.7.
+        def `get_topics_table_by_id`:
+            Too large topic ID.: false
+            Topic {} weights: Tema {} uteži
+            %.2e: false
+            Topic {}: Tema {}
+            topic-method-name: false
+        def `get_all_topics_table`:
+            Topics: Teme
+            Marginal Topic Probability: Mejna verjetnost teme
+            All topics: Vse teme
+            Model: true
+            {self.name}: false
+            Number of tokens: Število členov
+        def `get_top_words_by_id`:
+            Invalid {}: false
+vectorization/bagofwords.py:
+    class `BowVectorizer`:
+        BoW Vectorizer: Vektorizator vreče besed
+        Count: false
+        Binary: false
+        Sublinear: false
+        (None): false
+        IDF: false
+        Smooth IDF: false
+        L1 (Sum of elements): false
+        L2 (Euclidean): false
+        l1: false
+        l2: false
+        def `_transform`:
+            ' ': false
+            bow-feature: false
+vectorization/base.py:
+    class `BaseVectorizer`:
+        def `add_features`:
+            hidden: false
+            skip-normalization: false
+    class `VectorizationComputeValue`:
+        def `__setstate__`:
+            variable: false
+vectorization/document_embedder.py:
+    mean: false
+    sum: false
+    max: false
+    min: false
+    Mean: Povprečje
+    Sum: Vsota
+    Max: Maksimum
+    Min: Minimum
+    en: false
+    sl: false
+    de: false
+    ar: false
+    az: false
+    bn: false
+    zh: false
+    da: false
+    nl: false
+    fi: false
+    fr: false
+    el: false
+    he: false
+    hi: false
+    hu: false
+    id: false
+    it: false
+    ja: false
+    kk: false
+    ko: false
+    ne: false
+    no: false
+    nn: false
+    pl: false
+    pt: false
+    ro: false
+    ru: false
+    es: false
+    sv: false
+    tg: false
+    tr: false
+    class `DocumentEmbedder`:
+        def `__init__`:
+            Mean: Povprečje
+            'Language should be one of: {LANGUAGES}': Jezik bi moral biti eden od: {LANGUAGES}
+            'Aggregator should be one of: {AGGREGATORS_ITEMS}': Izračunam lahko le enega izmed: {AGGREGATORS_ITEMS}
+        def `_transform`:
+            The FastText embedding does not support the Corpus's language.: Vložitev FastText ne podpira jezika korpusa.
+            fasttext-: true
+            https://api.garaza.io: false
+            text: false
+            Dim{}: Dimenzija {}
+            embedding-feature: false
+            hidden: false
+            Skipped documents: Izpuščeni dokumenti
+            'Some documents were not embedded for unknown reason. Those ': Nekateri dokumenti iz neznanega razloga niso bili vloženi. Ti
+            documents are skipped.: dokumenti so izpuščeni.
+        def `clear_cache`:
+            fasttext-{language}: false
+    class `_ServerEmbedder`:
+        def `__init__`:
+            application/json: false
+        def `_encode_data_instance`:
+            utf-8: false
+            replace: false
+            data: false
+            aggregator: false
+    __main__: false
+    deerwester: false
+vectorization/sbert.py:
+    class `SBERT`:
+        def `__init__`:
+            sbert: false
+            https://api.garaza.io: false
+            text: false
+        def `_transform`:
+            Dim{}: Dimenzija {}
+            embedding-feature: false
+            hidden: false
+            Skipped documents: Izpuščeni dokumenti
+            'Some documents were not embedded for unknown reason. Those ': Nekateri dokumenti iz neznanega razloga niso bili vstavljeni. Ti
+            documents are skipped.: dokumenti so izpuščeni.
+        def `report`:
+            Embedder: Vlagalnik
+            Multilingual SBERT: true
+    class `_ServerCommunicator`:
+        def `__init__`:
+            application/json: false
+        def `_encode_data_instance`:
+            def `compress_text`:
+                utf-8: false
+                replace: false
+            utf-8: false
+            replace: false
+vectorization/simhash.py:
+    class `SimhashVectorizer`:
+        Simhash: true
+        def `__init__`:
+            {:0%db}: false
+        def `_transform`:
+            simhash_{}: false
+            hidden: false
+        def `report`:
+            Hash length: Dolžina šifrirnega zapisa
+            Shingle length: Dolžina rezin
+widgets/__init__.py:
+    icons/category.svg: false
+    light-blue: false
+    {DEVELOP_ROOT}/doc/_build/html/index.html: false
+    {}/help/orange3-text/index.html: false
+    data: false
+    https://orange3-text.readthedocs.io/en/latest/: false
+widgets/owannotator.py:
+    def `run`:
+        Calculating...: Računanje...
+    def `index_to_cluster_label`:
+        C{int(index) + 1}: false
+    class `CenteredTextItem`:
+        def `__init__`:
+            <br>: false
+    class `OWAnnotatorGraph`:
+        def `_update_cluster_labels`:
+            \n: false
+            {round(p * 100)}%  {label}: false
+    class `AnnotatorContextHandler`:
+        def `match`:
+            cluster_var: false
+    class `OWAnnotator`:
+        Annotated Corpus Map: Anotirani zemljevid korpusa
+        Annotates projection clusters.: Anotira projekcijske gruče.
+        icons/Annotator.svg: false
+        annotated corpus map, annotator: annotated corpus map, annotator, anotator
+        class `Inputs`:
+            Corpus: Korpus
+        class `Outputs`:
+            Selected Docs: Izbrani dokumenti
+            Corpus: Korpus
+            Scores: Rezultati
+        class `Warning`:
+            'Selected features for Axis x ': 'Izbrane funkcije za os x '
+            and Axis y should differ.: in os y se morajo razlikovati.
+        class `Error`:
+            Data has no continuous variables.: Podatki nimajo številskih spremenljivk.
+            Not enough instances in data.: V podatkih ni dovolj primerov.
+            An error occurred while annotating data.\n{}: Pri anotiranju podatkov je prišlo do napake.\n{}
+        def `_add_controls`:
+            Cluster labels:: Oznake gruč:
+            n_cluster_labels: false
+            show_cluster_hull: false
+            Show cluster hull: Pokaži trup gruče
+            color_by_cluster: false
+            Color points by cluster: Pobarvaj točke glede na gručo
+        def `__add_annotation_controls`:
+            labelWidth: false
+            orientation: false
+            searchable: false
+            sendSelectedValue: false
+            contentsLength: false
+            Axes: Osi
+            attr_x: false
+            Axis x:: Os x:
+            attr_y: false
+            Axis y:: Os y:
+            Annotation: Oznake
+            clustering_type: false
+            DBSCAN: true
+            use_epsilon: false
+            epsilon:: true
+            epsilon: false
+            Gaussian mixture models: Gaussovi mešani modeli
+            use_n_components: false
+            clusters:: gruče:
+            n_components: false
+            From variable: Iz spremenljivk
+            cluster_var: false
+            p_threshold: false
+            FDR threshold:: FDR prag:
+        def `_run`:
+            No valid embedding data.: Ni veljavnih podatkov za vložitev.
+        def `send_scores`:
+            Scores: Rezultati
+            Score({label}): Rezultat({label})
+            p_value({label}): p-vrednost({label})
+        def `_get_projection_data`:
+            Cluster: Gruča
+        def `_get_send_report_caption`:
+            Clusters: Gruče
+            Color: Barva
+            Label: Oznaka
+            Shape: Oblika
+            Size: Velikost
+            Jittering: Tresenje
+            {} %: false
+    __main__: false
+    book-excerpts: false
+    \w+: false
+    English: false
+widgets/owbagofwords.py:
+    class `OWTBagOfWords`:
+        Bag of Words: Vreča besed
+        Generates a bag of words from the input corpus.: Iz vhodnega korpusa ustvari vrečo besed.
+        icons/BagOfWords.svg: false
+        bag of words, bow: bag of words, bow, besedilo
+        Count: Štetje
+        Binary: Binarno
+        Sublinear: Sublinearno
+        (None): (Brez)
+        IDF: true
+        Smooth IDF: Gladek IDF
+        L1 (Sum of elements): L1 (vsota elementov)
+        L2 (Euclidean): L2 (evklidsko)
+        def `create_configuration_layout`:
+            wlocal: false
+            Term Frequency:: Pogostost izrazov:
+            wglobal: false
+            Document Frequency:: Pogostost dokumentov:
+            normalization: false
+            Regularization:: Regularizacija:
+        def `send_report`:
+            Term Frequency: Pogostost izrazov
+            Document Frequency: Pogostost dokumentov
+            Regularization: Regularizacija
+    __main__: false
+    book-excerpts: false
+widgets/owcollocations.py:
+    score_meta: false
+    name: false
+    scorer: false
+    Pointwise Mutual Information: Točkovna vzajemna informacija
+    Chi Square: Hi-kvadrat
+    Dice: DICE
+    Fisher: Fisherjev
+    Jaccard: Jaccardov
+    Likelihood ratio: Verjetnostno razmerje
+    Mi Like: true
+    Phi Square: Phi-kvadrat
+    Poisson Stirling: true
+    Raw Frequency: Surova pogostost
+    Student's T: Študentova T porazdelitev
+    class `OWCollocations`:
+        Collocations: Kolokacije
+        Compute significant bigrams and trigrams.: Izračun pomembnih bigramov in trigramov.
+        collocations, pmi: collocations, pmi
+        icons/Collocations.svg: false
+        class `Inputs`:
+            Corpus: Korpus
+        class `Outputs`:
+            Table: Tabela
+        def `__init__`:
+            Settings: Nastavitve
+            type_index: false
+            Bigrams: Bigrami
+            Trigrams: Trigrami
+            freq_filter: false
+            Frequency: Pogostost
+            Scoring Method: Način vrednotenja
+            selected_method: false
+            Restore Original Order: Izvirni vrstni red
+            Show rows in the original order: Pokaži vrstice v izvirnem vrstnem redu
+            Method: Metoda
+            Score: Rezultat
+        def `compute_scores`:
+            ' ': false
+        def `create_scores_table`:
+            Collocations: Kolokacije
+            Scores: Rezultati
+            Collocation Scores: Rezultati kolokacij
+        def `send_report`:
+            Collocations: Kolokacije
+            N-grams: N-grami
+            Bigrams: Bigrami
+            Trigrams: Trigrami
+            Method: Metoda
+            Frequency: Pogostost
+    __main__: false
+    deerwester.tab: false
+widgets/owconcordance.py:
+    class `ConcordanceModel`:
+        def `data`:
+            ' ': false
+        def `get_data`:
+            Conc. {}: Sorodnost {}
+            Document: Dokument
+            ' ': false
+    class `OWConcordance`:
+        Concordance: Sorodnost
+        Display the context of the word.: Prikaže kontekst besede.
+        icons/Concordance.svg: false
+        concordance, context: concordance, context
+        class `Inputs`:
+            Corpus: Korpus
+            Query Word: Poizvedbena beseda
+        class `Outputs`:
+            Selected Documents: Izbrani dokumenti
+            Concordances: Sorodnost
+        class `Warning`:
+            'Multiple query words on input. ': 'Na vhodu je več poizvedbenih besed. '
+            Only the first one is considered!: Upošteva se samo prva!
+        def `__init__`:
+            Info: true
+            'Tokens: %(n_tokens)s': Členi: %(n_tokens)s
+            'Types: %(n_types)s': Število različnih členov: %(n_types)s
+            'Matching: %(n_matching)s': Ujemanje: %(n_matching)s
+            context_width: false
+            Number of words:: Število besed:
+            word: false
+            Query:: Poizvedba:
+            autocommit: false
+            Commit: Potrdi
+            Auto commit is on: Samodejna potrditev je vklopljena
+        def `update_widget`:
+            {}/{}: false
+        def `send_report`:
+            Concordances: Sorodnost
+            Query: Poizvedba
+            Tokens: Členi
+            Types: Število različnih členov
+            Matching: Ujemanje
+    __main__: false
+    book-excerpts: false
+widgets/owcorpus.py:
+    class `CorpusContextHandler`:
+        def `match`:
+            documents_hash: false
+            language: false
+        def `__compute_hash`:
+            ' ': false
+            utf-8: false
+    class `OWCorpus`:
+        Corpus: Korpus
+        Load a corpus of text documents.: Naloži korpus besedilnih dokumentov.
+        icons/TextFile.svg: false
+        corpus, text: corpus, text, besedilo
+        orangecontrib.text.widgets.owloadcorpus.OWLoadCorpus: false
+        class `Inputs`:
+            Data: Podatki
+        class `Outputs`:
+            Corpus: Korpus
+        All readable files ({});;: Vse znane datoteke ({});;
+        *: false
+        ' *': false
+        ;;: false
+        {} (*{}): false
+        book-excerpts.tab: false
+        grimm-tales-selected.tab: false
+        election-tweets-2016.tab: false
+        friends-transcripts.tab: false
+        andersen.tab: false
+        English: false
+        class `Error`:
+            Can't read file ({}): Datoteke ni mogoče prebrati ({})
+            At least one text feature must be used.: Uporabiti je treba vsaj eno besedilno spremenljivko.
+            Corpus doesn't have any textual features.: Korpus nima nobenih besedilnih spremenljivk.
+        def `__init__`:
+            Corpus file: Datoteka s korpusom
+            Open Orange Document Corpus: Odpri...
+            Reload: Ponovno naloži
+            Browse: ...
+            (no title): (brez naslova)
+            Corpus settings: Nastavitve korpusa
+            title_variable: false
+            Title variable: Naslov:
+            language: false
+            Language: Jezik:
+            Used text features: Uporabljene besedilne spremenljivke
+            Ignored text features: Neupoštevane besedilne spremenljivke
+            Browse documentation corpora: Odpri podatke iz dokumentacije
+        def `_load_corpus`:
+            Loading: Nalaganje
+            name: false
+        def `_setup_title_dropdown`:
+            title: false
+            heading: false
+            filename: false
+        def `update_feature_selection`:
+            language: false
+        def `send_report`:
+            def `describe`:
+                ', ': false
+                (none): (brez)
+            Corpus: Korpus
+            File: Datoteka
+            Documents: Dokuments
+            Used text features: Uporabljene besedilne spremenljivke
+            Ignored text features: Neupoštevane besedilne spremenljivke
+            Other features: Ostale spremenljivke
+            Target: Ciljna spremenljivka
+    __main__: false
+widgets/owcorpustonetwork.py:
+    class `OWCorpusToNetwork`:
+        Corpus to Network: Korpus v omrežje
+        Constructs network from given corpus.: Iz danega korpusa konstruira omrežje.
+        corpus to network, network: corpus to network, network, omrežje
+        icons/CorpusToNetwork.svg: false
+        class `Inputs`:
+            Corpus: Korpus
+        class `Outputs`:
+            Network: Omrežje
+            orangecontrib.network.Network: false
+            Node Data: Podatki o vozlišču
+        class `Error`:
+            'Unknown error: {}': Neznana napaka: {}
+            Please install network add-on to use this widget.: Za uporabo tega gradnika si namestite dodatek Network.
+        class `Information`:
+            Parameters have been changed. Press Start to: Parametri so bili spremenjeni. Pritisnite 'Začni', da
+            ' run with new parameters.': ' zaženete z novimi parametri.'
+        def `__init__`:
+            Document: Dokument
+            Word: Beseda
+            waiting: false
+        def `_setup_layout`:
+            Settings: Nastavitve
+            node_type: false
+            Node type: Vrsta vozlišča
+            threshold: false
+            Threshold: Prag:
+            window_size: false
+            Window size: Velikost okna:
+            freq_threshold: false
+            Frequency Threshold: Pogostost praga:
+            Start: Začni
+        def `set_data`:
+            running: false
+            Stop: true
+        def `_option_changed`:
+            running: false
+        def `_toggle`:
+            waiting: false
+            running: false
+            Stop: true
+        def `cancel`:
+            waiting: false
+            Start: Začni
+        def `on_done`:
+            waiting: false
+            Start: Začni
+    __main__: false
+    book-excerpts: false
+widgets/owcorpusviewer.py:
+    "
+<!doctype html>
+<html>
+<head>
+<script type=""text/javascript"" src=""resources/jquery-3.1.1.min.js"">
+</script>
+<script type=""text/javascript"" src=""resources/jquery.mark.min.js"">
+</script>
+<script type=""text/javascript"" src=""resources/highlighter.js"">
+</script>
+<meta charset='utf-8'>
+<style>
+
+table {{ border-collapse: collapse; }}
+mark {{ background: #FFCD28; }}
+
+tr > td {{
+    padding-bottom: 3px;
+    padding-top: 3px;
+}}
+
+body {{
+    font-family: Helvetica;
+    font-size: 10pt;
+}}
+
+.line {{ border-bottom: 1px solid #000; }}
+.separator {{ height: 5px; }}
+
+.variables {{
+    vertical-align: top;
+    padding-right: 10px;
+}}
+
+.content {{
+    /* Adopted from https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/ */
+
+    /* These are technically the same, but use both */
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+
+    -ms-word-break: break-all;
+    /* This is the dangerous one in WebKit, as it breaks things wherever */
+    word-break: break-all;
+    /* Instead use this non-standard one: */
+    word-break: break-word;
+
+    /* Adds a hyphen where the word breaks, if supported (No Blink) */
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}}
+
+.token {{
+    padding: 3px;
+    border: 1px #B0B0B0 solid;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    display: inline-block;
+}}
+
+img {{
+    max-width: 100%;
+}}
+
+</style>
+</head>
+<body>
+{}
+</body>
+</html>
+": false
+    "
+    '<tr class=""line separator""><td/><td/></tr><tr class=""separator""><td/><td/></tr>'
+": false
+    def `_count_matches`:
+        '|': false
+    class `DocumentsFilterProxyModel`:
+        def `set_filter_string`:
+            '|': false
+    class `OWCorpusViewer`:
+        Corpus Viewer: Pregledovalnik korpusa
+        Display corpus contents.: Prikaže vsebino korpusa.
+        icons/CorpusViewer.svg: false
+        corpus viewer, display: corpus viewer, display, prikaži
+        class `Inputs`:
+            Corpus: Korpus
+            Data: Podatki
+        class `Outputs`:
+            Matching Docs: Ujemajoči dokumenti
+            Other Docs: Ostali dokumenti
+            Corpus: Korpus
+        class `Warning`:
+            No features included in search.: V iskanje niso vključene nobene spremenljivke.
+            No features selected for display.: Za prikaz ni izbranih nobenih spremenljivk.
+        def `__init__`:
+            Info: true
+            'Tokens: %(n_tokens)s': Členi: %(n_tokens)s
+            'Types: %(n_types)s': Število različnih členov: %(n_types)s
+            'Matching documents: %(n_matching)s': Ujemajoči dokumenti: %(n_matching)s
+            'Matches: %(n_matches)s': Ujemanja: %(n_matches)s
+            Search features: Išči po spremenljivkah:
+            Display features: Prikaži spremenljivke:
+            show_tokens: false
+            Show Tokens && Tags: Prikaži člene && oznake
+            autocommit: false
+            Send data: Pošlji podatke
+            Auto send is on: Samodejno pošiljanje je vklopljeno
+            regexp_filter: false
+            RegExp Filter:: Poizvedba:
+        def `show_docs`:
+            \n: false
+            <br/>: false
+            type: false
+            image: false
+            ?: false
+            origin: false
+            <img src="{}"></img>: false
+            <tr><td class="variables"><strong>{feature.name}:</strong></td>: false
+            <td class="content">{value}</td></tr>: false
+            <span class="token">{token}</span>: false
+            <tr><td class="variables"><strong>Tokens & Tags:</strong></td>: <tr><td class="variables"><strong>Členi & oznake:</strong></td>
+            <td>{tokens_}</td></tr>: false
+            <table>{joined}</table>: false
+        def `__mark_text`:
+            '|': false
+            '<mark data-markjs="true">{"".join(text[m.start(): m.end()])}</mark>': false
+        def `on_done`:
+            n/a: false
+        def `update_info`:
+            {self.doc_list.model().rowCount()}/{len(self.corpus)}: false
+            n/a: false
+        def `send_report`:
+            Query: Poizvedba
+            Matching documents: Ujemajoči dokumenti
+            Matches: Ujemanja
+        def `migrate_context`:
+            display_features: false
+            display_indices: false
+            search_indices: false
+            search_features: false
+            class_vars: false
+    __main__: false
+    book-excerpts: false
+widgets/owcreatecorpus.py:
+    class `DocumentEditor`:
+        def `__init__`:
+            Document title: Naslov dokumenta
+            Document text: Vsebina dokumenta
+            x: true
+    class `OWCreateCorpus`:
+        Create Corpus: Ustvari korpus
+        Write/paste documents to create a corpus: Napiši/prilepi dokumente, da ustvariš korpus.
+        icons/CreateCorpus.svg: false
+        create corpus, write: create corpus, write, paste, napiši, prilepi
+        class `Outputs`:
+            Corpus: Korpus
+        def `__init__`:
+            language: false
+            Language: Jezik
+            Add document: Dodaj dokument
+            auto_commit: false
+        def `commit`:
+            Document: Dokument
+            Title: Naslov
+    __main__: false
+widgets/owdocmap.py:
+    [\w\s\.\-]+: false
+    class `Map`:
+        world_mill_en: false
+        europe_mill_en: false
+        us_aea_en: false
+        World: Svet
+        Europe: Evropa
+        USA: ZDA
+    class `OWDocMap`:
+        Document Map: Zemljevid dokumentov
+        icons/DocMap.svg: false
+        orangecontrib.text.widgets.owgeomap.OWGeoMap: false
+        document map, geomap: document map, geomap, map
+        class `Inputs`:
+            Data: Podatki
+        class `Outputs`:
+            Corpus: Korpus
+        def `region_selected`:
+            ,: false
+            \b{}\b: false
+            \b|\b: false
+        def `_create_layout`:
+            horizontal: false
+            selected_attr: false
+            Region attribute:: Atribut območja:
+            selected_map: false
+            Map type:: Vrsta zemljevida:
+            file:: false
+            resources: false
+            owdocmap.html: false
+            REGIONS = {};: false
+        def `_repopulate_attr_combo`:
+            country: false
+            location: false
+            region: false
+        def `on_data`:
+            DATA = {}; renderMap();: false
+        def `on_map_change`:
+            DATA = {};: false
+            MAP_CODE = "{}";: false
+            SELECTED_REGIONS = {};: false
+            renderMap();: false
+    def `main`:
+        Slovenia Slovenia SVN USA Iraq Iraq Iraq Iraq France FR: false
+        Slovenia Slovenia SVN France FR Austria NL GB GB GB: false
+        Alabama AL Texas TX TX TX MS Montana US-MT MT: false
+        World: Svet
+        Europe: Evropa
+        USA: ZDA
+    __main__: false
+widgets/owdocumentembedding.py:
+    class `OWDocumentEmbedding`:
+        Document Embedding: Vložitev dokumentov
+        Document embedding using pretrained models.: Vložitev dokumentov z uporabo predhodno usposobljenih modelov.
+        embedding, document embedding, fasttext, bert, sbert: embedding, document embedding, fasttext, bert, sbert, dokument
+        icons/TextEmbedding.svg: false
+        English: false
+        class `Outputs`:
+            Skipped documents: Izpuščeni dokumenti
+        class `Error`:
+            'No internet connection. Please establish a connection or use ': 'Ni internetne povezave. Prosimo vzpostavite povezavo ali uporabite '
+            another vectorizer.: drug vektorizator.
+            'Embedding error: {}': Napaka pri vložitvi: {}
+        class `Warning`:
+            Some embeddings were unsuccessful.: Nekatere vložitve niso bile uspešne.
+        Mean: Povprečje
+        def `__init__`:
+            Cancel: Prekliči
+        def `create_configuration_layout`:
+            method: false
+            Multilingual SBERT: true
+            fastText:: true
+            language: false
+            Language:: Jezik:
+            aggregator: false
+            Aggregator:: Izračunaj:
+        def `migrate_settings`:
+            language: false
+            aggregator: false
+        def `send_report`:
+            Embedder: Vlagalnik
+            Multilingual SBERT: true
+            fastText: true
+            Language: Jezik
+            Aggregator: Izračunaj
+    __main__: false
+    book-excerpts: false
+widgets/owduplicates.py:
+    class `OWDuplicates`:
+        Duplicate Detection: Detekcija dvojnikov
+        Detect & remove duplicates from a corpus.: Zaznavanje in odstranjevanje dvojnikov iz korpusa.
+        icons/Duplicates.svg: false
+        duplicate detection, detect, remove: duplicate detection, detect, remove, duplikat, zaznavanje, odstranitev
+        class `Inputs`:
+            Distances: Razdalje
+        class `Outputs`:
+            Corpus Without Duplicates: Korpus brez dvojnikov
+            Duplicates Cluster: Gruča dvojnikov
+            Corpus: Korpus
+        class `Error`:
+            'Duplicate detection only supports ': 'Detekcija dvojnikov podpira samo razdalje, '
+            distances calculated between rows.: izračunane med vrsticami.
+            More than one document is required.: Potreben je več kot en dokument.
+        Single: Enotna
+        Average: Povprečna
+        Complete: Popolna
+        Weighted: Obtežena
+        Ward: Wardova
+        def `__init__`:
+            Info: true
+            'Documents: %(n_documents)s': Dokumenti: %(n_documents)s
+            '  ◦ unique: %(n_unique)s': '  ◦ edinstveni: %(n_unique)s'
+            '  ◦ duplicates: %(n_duplicates)s': '  ◦ dvojniki: %(n_duplicates)s'
+            Cluster: Gruča
+            Size: Velikost
+            linkage_method: false
+            Linkage: Povezava
+            threshold: false
+            inf: false
+            Distance threshold: Prag razdalje
+            Distances: Razdalje
+        def `send_corpus`:
+            Duplicates Cluster: Gruča dvojnikov
+        def `send_corpus_without_duplicates`:
+            {} (Without Duplicates): {} (Brez dvojnikov)
+        def `send_duplicates`:
+            {} {}: false
+        def `send_report`:
+            Linkage: Povezava
+            Distance threshold: Prag razdalje
+            {:.2f}: false
+            Documents: Dokumenti
+            Unique: Edinstveni
+            Duplicates: Dvojniki
+    class `Cluster`:
+        def `__str__`:
+            C{}: false
+    background: false
+    w: false
+    foreground: false
+    k: false
+    class `Histogram`:
+        def `__init__`:
+            b: false
+            center: false
+            '#02f1': false
+            '#02f3': false
+        def `_update_region`:
+            right: false
+    __main__: false
+    iris: false
+widgets/owguardian.py:
+    class `OWGuardian`:
+        class `CredentialsDialog`:
+            The Guardian Credentials: Pooblastila časopisa The Guardian
+            test: false
+            class `Error`:
+                These credentials are invalid.: Ta pooblastila so neveljavna.
+            def `__init__`:
+                The Guardian API Key: API ključ časopisa The Guardian
+                key_input: false
+                Key:: Ključ:
+                OK: true
+        The Guardian: The Guardian
+        Fetch articles from The Guardian API.: Pridobi članke iz časopisa The Guardian preko API ključa.
+        icons/TheGuardian.svg: false
+        the guardian, articles: the guardian, articles, članki, časopis
+        class `Outputs`:
+            Corpus: Korpus
+        class `Warning`:
+            Text features are inferred when none are selected.: Če besedilne spremenljivke niso izbrane se sklepajo.
+        class `Error`:
+            Please provide a valid API key.: Navedite veljavni ključ API.
+            Please provide a query.: Navedite poizvedbo.
+            Requests limit reached.: Omejitev zahtevkov je dosežena.
+        def `__init__`:
+            The Guardian API Key: API ključ časopisa The Guardian
+            Query: Poizvedba
+            date_from: false
+            date_to: false
+            Text includes: Besedilo vsebuje
+            text_includes: false
+            Output: Izhod
+            'Articles: %(output_info)s': Članki: %(output_info)s
+            Search: Išči
+        def `run_search`:
+            api: false
+            no_api: false
+            recent_queries: false
+            no_query: false
+        def `progress_with_info`:
+            {}/{}: false
+        def `on_start`:
+            Stop: true
+        def `on_result`:
+            Search: Išči
+        def `send_report`:
+            Query: Poizvedba
+            Date from: Od
+            Date to: Do
+            Text includes: Besedilo vsebuje
+            ', ': false
+            Output: Izhod
+            Nothing: /
+    __main__: false
+widgets/owimportdocuments.py:
+    name: false
+    path: false
+    def `prettifypath`:
+        ~/: false
+        ~: false
+    class `OWImportDocuments`:
+        Import Documents: Uvoz dokumentov
+        Import text documents from folders.: Uvoz besedilnih dokumentov iz map.
+        icons/ImportDocuments.svg: false
+        import documents: import documents
+        class `Outputs`:
+            Corpus: Korpus
+            Skipped documents: Izpuščeni dokumenti
+        English: false
+        class `Warning`:
+            {} couldn't be read.: {} ni bilo mogoče prebrati.
+        def `__init__`:
+            Source: Vir
+            source: false
+            Folder:: Mapa:
+            Open/Load Documents: Odpri/naloži dokumente
+            \N{HORIZONTAL ELLIPSIS}: false
+            Select a folder from which to load the documents: Izberite mapo, iz katere želite naložiti dokumente.
+            Reload: Ponovno naloži
+            Reload current document set: Ponovno naloži trenutni nabor dokumentov
+            URL:: true
+            language: false
+            Language: Jezik
+            Conllu import options: Možnosti uvoza Conllu
+            lemma_cb: false
+            Lemma: Lema
+            pos_cb: false
+            POS tags: POS oznake
+            ner_cb: false
+            NER: true
+            Info: true
+            No document set selected: Nabor dokumentov ni izbran.
+            Cancel: Prekini
+        def `_url_set`:
+            http://: false
+        def `__runOpenDialog`:
+            ~/: false
+            Select Top Level Folder: Izberite mapo na najvišji ravni
+        def `__updateInfo`:
+            No document set selected: Nabor dokumentov ni izbran.
+            Processing: Obdelava
+            {nvalid} {pl(nvalid, "document")}: {nvalid} {plsi(nvalid, "dokument")}
+            {nvalid} {pl(nvalid, "document")} / {ncategories} {pl(ncategories, "category")}: {nvalid} {plsi(nvalid, "dokument")} / {ncategories} {plsi(ncategories, "kategorija")}
+            , {n_skipped} skipped: , {n_skipped} {plsi(n_skipped, "izpuščen|izpuščena|izpuščeni|izpuščenih")}
+            Cancelled: Preklicano
+            Error state: Stanje napake
+        def `setCurrentPath`:
+            "'{}' does not exist": "'{}' ne obstaja"
+            "'{}' is not a folder": "'{}' ni mapa"
+        def `__setRuntimeState`:
+            Processing: Obdelava
+            Cancelled: Preklicano
+            Error during processing: Napaka med obdelavo
+        def `start`:
+            'Starting a new task while one is in progress. ': false
+            Cancel the existing task (dir:'{}'): false
+            __onReportProgress: false
+            def `cancel`:
+                The task did not stop in in a timely manner: false
+        def `__onRunFinished`:
+            Folder contains no readable files.: Mapa ne vsebuje berljivih datotek.
+            Documents: Dokumenti
+            Some files: Nekaj dokumentov
+            One file: En dokument
+        def `add_features`:
+            named entities: false
+        def `commit`:
+            language: false
+            Skipped documents: Izpuščeni dokumenti
+        def `send_report`:
+            Path: Pot
+            Number of documents: Število dokumentov
+            Categories: Kategorije
+            Number of skipped: Število izpuščenih
+    __main__: false
+widgets/owkeywords.py:
+    def `run`:
+        Calculating...: Računanje...
+        progress_callback: false
+        Words: Besede
+        index: false
+    class `SelectionMethods`:
+        None: Nobene
+        All: Vse
+        Manual: Ročno
+        Top words: Najpogostejše
+    class `KeywordsTableModel`:
+        def `_argsortData`:
+            mergesort: false
+    class `OWKeywords`:
+        Extract Keywords: Ključne besede
+        Infers characteristic words from the input corpus.: Iz vhodnega korpusa izlušči značilne besede.
+        icons/Keywords.svg: false
+        extract keywords, characteristic, term: extract keywords, characteristic, term, keyword, značilnosti, izraz
+        English: false
+        class `Inputs`:
+            Corpus: Korpus
+            Words: Besede
+        class `Outputs`:
+            Words: Besede
+        class `Warning`:
+            Input is missing 'Words' column.: V vnosu manjka stolpec 'Besede'.
+        def `_setup_gui`:
+            Scoring Methods: Metode vrednotenja
+            yake_lang_index: false
+            rake_lang_index: false
+            Aggregation: Izračunaj
+            agg_method: false
+            Select Words: Izberi besede
+            n_selected: false
+            auto_apply: false
+            Filter...: Filtriraj...
+        def `set_words`:
+            type: false
+            words: false
+        def `update_scores`:
+            language: false
+            max_len: false
+        def `on_done`:
+            Word: Beseda
+        def `send_report`:
+            Corpus: Korpus
+            Words: Besede
+            ', ': false
+            Keywords: Ključne besede
+            {:.3f}: false
+    __main__: false
+    human: false
+    graph: false
+    minors: false
+    trees: false
+    deerwester: false
+widgets/owldavis.py:
+    class `ParameterSetter`:
+        Gridlines: Mreža
+        Show: Pokaži
+        def `axis_items`:
+            item: false
+    class `BarPlotGraph`:
+        Overall term frequency: Splošna pogostost izrazov
+        Term frequency within topic: Pogostost izrazov znotraj teme
+        def `__init__`:
+            w: false
+            left: false
+            top: false
+            bottom: false
+        def `clear_all`:
+            left: false
+            top: false
+        def `update_graph`:
+            Overall term frequency: Splošna pogostost izrazov
+            Term frequency within topic: Pogostost izrazov znotraj teme
+            '{w} - Frequency withing topic: {tf:.3f}, Overall frequency {mp:.3f}': {w} - Pogostost znotraj teme: {tf:.3f}, Splošna pogostost {mp:.3f}
+        def `update_axes`:
+            left: false
+            top: false
+            words: besede
+            weights: uteži
+        def `__get_index_at`:
+            width: false
+    class `OWLDAvis`:
+        LDAvis: true
+        Interactive exploration of LDA topics.: Interaktivno raziskovanje LDA tematik.
+        icons/LDAvis.svg: false
+        ldavis: ldavis
+        graph.plotItem: false
+        class `Inputs`:
+            Topics: Teme
+        class `Error`:
+            Relevant Terms only accepts output from LDA.: Ustrezni izrazi sprejemajo samo rezultate iz LDA.
+        def `_create_layout`:
+            Relevance: Pripadnost
+            relevance: false
+            %.1f: false
+            selected_topic: false
+            topic_list: false
+            Topics: Teme
+        def `compute_distributions`:
+            Marginal Topic Probability: Mejna verjetnost teme
+        def `set_data`:
+            Model: true
+            Latent Dirichlet Allocation: Latentna Dirichletova porazdelitev (LDA)
+            Topics: Teme
+            Words: Besede
+            Number of tokens: Število členov
+        def `send_report`:
+            Relevance: Pripadnost
+            Shown topic: Prikazana tema
+    __main__: false
+    deerwester: false
+widgets/ownyt.py:
+    class `OWNYT`:
+        class `APICredentialsDialog`:
+            New York Times API key: API ključ časopisa New York Times
+            class `Error`:
+                'This credentials are invalid. ': 'Ta pooblastila so neveljavna. '
+                Check the key and your internet connection.: Preverite ključ in internetno povezavo.
+            def `__init__`:
+                NY Times API Key: API ključ časopisa New York Times
+                key_input: false
+                Key:: Ključ:
+                OK: true
+        NY Times: true
+        Fetch articles from the New York Times search API.: Pridobi članke iz časopisa New York Times preko API ključa.
+        icons/NYTimes.svg: false
+        new york times, ny times, articles: new york times, ny times, articles, članki
+        class `Outputs`:
+            Corpus: Korpus
+        class `Warning`:
+            Text features are inferred when none are selected.: Če besedilne spremenljivke niso izbrane se sklepajo.
+        class `Error`:
+            Please provide a valid API key.: Navedite veljavni ključ API.
+            Please provide a query.: Navedite poizvedbo.
+            No internet connection.: Ni internetne povezave.
+            'API error: {}': API napaka: {}
+            Rate limit exceeded. Please try again later.: Omejitev stopnje je presežena. Poskusite znova pozneje.
+        def `__init__`:
+            Article API Key: API ključ članka
+            Query: Poizvedba
+            date_from: false
+            date_to: false
+            Text includes: Besedilo vsebuje
+            text_includes: false
+            Output: Izhod
+            'Articles: %(output_info)s': Članki: %(output_info)s
+            Search: Išči
+        def `run_search`:
+            nyt_api: false
+            no_api: false
+            recent_queries: false
+            no_query: false
+        def `on_start`:
+            Stop: true
+        def `on_result`:
+            Search: Išči
+        def `update_info_label`:
+            {}/{}: false
+        def `send_report`:
+            Query: Poizvedba
+            Date from: Od
+            Date to: Do
+            Text includes: Besedilo vsebuje
+            ', ': false
+            Output: Izhod
+            Nothing: /
+    __main__: false
+widgets/owontology.py:
+    OntoType: OntoTip
+    resources: false
+    def `_run`:
+        Calculating...: Računanje...
+    def `_tree_to_html`:
+        <ul>: false
+        <li>{k}{_tree_to_html(v)}</li>: false
+        </ul>: false
+    def `_onto_to_tree`:
+        \n: false
+        ' ': false
+    class `TreeView`:
+        '
+    QTreeView::branch {{
+        background: palette(base);
+    }}
+    QTreeView::branch:has-siblings:!adjoins-item {{
+        border-image: url({resources_path}/vline.png) 0;
+    }}
+
+    QTreeView::branch:has-siblings:adjoins-item {{
+        border-image: url({resources_path}/branch-more.png) 0;
+    }}
+
+    QTreeView::branch:!has-children:!has-siblings:adjoins-item {{
+        border-image: url({resources_path}/branch-end.png) 0;
+    }}
+
+    QTreeView::branch:has-children:!has-siblings:closed,
+    QTreeView::branch:closed:has-children:has-siblings {{
+            border-image: none;
+            image: url({resources_path}/branch-closed.png);
+    }}
+
+    QTreeView::branch:open:has-children:!has-siblings,
+    QTreeView::branch:open:has-children:has-siblings  {{
+            border-image: none;
+            image: url({resources_path}/branch-open.png);
+    }}
+    ': false
+    class `EditableTreeView`:
+        def `__init__`:
+            +: false
+            Add a new word: Dodaj novo besedo
+            \N{MINUS SIGN}: false
+            Remove word: Odstrani besedo
+            \N{MINUS SIGN}R: false
+            Remove word recursively (incl. children): Rekurzivno odstranjevanje besed (vključno z otroki)
+            Undo: Razveljavi
+            Redo: Povrni
+    class `Ontology`:
+        def `as_dict`:
+            name: false
+            ontology: false
+            filename: false
+            error_msg: false
+        def `from_dict`:
+            Ontology: Ontologija
+            name: false
+            ontology: false
+            filename: false
+            error_msg: false
+        def `generate_name`:
+            Untitled: Nepoimenovano
+            {default_name} {index}: false
+    class `UrlDialog`:
+        def `__init__`:
+            Open: Odpri
+            URL:: true
+    JSON file (*.json): false
+    Pickled Python object file (*.pkl): false
+    OWL file (*.owl): false
+    def `read_from_url`:
+        Open Ontology: Odpri ontologijo
+        wb: false
+    def `read_from_file`:
+        Open Ontology: Odpri ontologijo
+        ~/: false
+        ;;: false
+    def `_read_from_source`:
+        .json: false
+        .pkl: false
+        rb: false
+        .owl: false
+        No readers for file {name}: false
+    def `save_ontology`:
+        Save Ontology: Shrani ontologijo
+        ;;: false
+        .json: false
+        w: false
+        .pkl: false
+        wb: false
+    class `LibraryItemDelegate`:
+        def `displayText`:
+            *: false
+    class `OWOntology`:
+        Ontology: Ontologija
+        icons/Ontology.svg: false
+        ontology, hierarchy: ontology, metaphysics, hierarhija
+        Generate: Ustvari
+        Include: Vključi
+        name: false
+        ontology: false
+        class `Inputs`:
+            Words: Besede
+        class `Outputs`:
+            Words: Besede
+        class `Warning`:
+            Input is missing 'Words' column.: V vnosu manjka stolpec 'Besede'.
+            {} terms are skipped due to server connection error.: {} izrazi so izpuščeni zaradi napake pri povezovanju s strežnikom.
+        class `Error`:
+            {}: false
+        def `_setup_gui`:
+            Library: Knjižnica
+            Add a new ontology to the library: Dodaj novo ontologijo v knjižnico
+            +: false
+            Remove the ontology from the library: Odstrani ontologijo iz knjižnice
+            \N{MINUS SIGN}: false
+            Save changes in the editor to the library: Shrani spremembe iz urejevalnika v knjižnico
+            Update: Posodobi
+            More: Več
+            More actions: Več dejanj
+            Import Ontology from File: Uvozi ontologijo iz datoteke
+            Import Ontology from URL: Uvozi ontologijo iz naslova URL
+            Save Ontology to File: Shrani ontologijo v datoteko
+            Input: Vhod
+            Include selected words into the ontology: Vključi izbrane besede v ontologijo
+            include_children: false
+            Include subtree: Vključi poddrevo
+            Output: Izhod
+            Ontology info: Informacije o ontologiji
+            %(ontology_info)s: false
+            auto_commit: false
+        def `__on_save`:
+            ~/: false
+        def `set_words`:
+            type: false
+            words: false
+        def `_run`:
+            Stop: true
+        def `_run_insert`:
+            Stop: true
+        def `__update_score`:
+            /: false
+            'Score: {score}': Rezultat: {score}
+        def `send_report`:
+            /: false
+            Settings: Nastavitve
+            Library: Knjižnica
+            '
+        <style>
+            ul {
+                padding-top: 0px;
+                padding-right: 0px;
+                padding-bottom: 0px;
+                padding-left: 20px;
+            }
+        </style>
+        ': false
+            Ontology: Ontologija
+    __main__: false
+    Stvar: false
+    Agent: false
+    Organ: false
+    Državni organ: false
+    Drug državni organ: false
+    Organ državne uprave: false
+    Organ lokalne skupnosti: false
+    Organ občine: false
+    Organ upravljanja: false
+    Registrski organ: false
+    Nadzorni organ: false
+    Upravni organ: false
+    Ministrstvo: false
+    Organ v sestavi ministrstva: false
+    Upravna enota: false
+    Bančni račun: false
+    Transakcijski račun: false
+    Delež: false
+    Delež v družbi: false
+    Lastniški delež: false
+    Dovoljenje: false
+    Dražba: false
+    Izplačilo: false
+    Plača: false
+    Pravni akt: false
+    Odločba: false
+    Sklep: false
+widgets/owpreprocess.py:
+    (none): (brez)
+    def `icon_path`:
+        icons/: false
+    class `ValidatedLineEdit`:
+        def `__validate`:
+            gray: false
+            red: false
+            'QLineEdit {{ border : 1px solid {color};}}': false
+    class `RangeSpecialValueSpins`:
+        def `__init__`:
+            max: false
+    class `FileLoader`:
+        def `__init__`:
+            ...: false
+        def `browse`:
+            ~/: false
+            Text files (*.txt): Besedilni dokumenti (.txt)
+            All files (*): Vse datoteke (*)
+            Open...: Odpri...
+            ;;: false
+        def `set_current_file`:
+            (none): (brez)
+    class `PreprocessorModule`:
+        def `get_tooltip`:
+            ' ': false
+            \n: false
+            .: false
+    class `SingleMethodModule`:
+        def `setParameters`:
+            method: false
+        def `parameters`:
+            method: false
+    class `MultipleMethodModule`:
+        def `setParameters`:
+            methods: false
+        def `parameters`:
+            methods: false
+        def `__repr__`:
+            ', ': false
+    class `TransformationModule`:
+        def `createinstance`:
+            methods: false
+    class `TokenizerModule`:
+        \w+: false
+        def `__init__`:
+            Pattern:: Vzorec:
+        def `setParameters`:
+            pattern: false
+        def `parameters`:
+            pattern: false
+        def `createinstance`:
+            method: false
+            pattern: false
+        def `__repr__`:
+            {text} ({self.__pattern}): false
+    class `NormalizationModule`:
+        English: false
+        def `__init__`:
+            UDPipe tokenizer: UDPipe členitev
+            Language:: Jezik:
+        def `setParameters`:
+            snowball_language: false
+            udpipe_language: false
+            udpipe_tokenizer: false
+            lemmagen_language: false
+        def `parameters`:
+            snowball_language: false
+            udpipe_language: false
+            udpipe_tokenizer: false
+            lemmagen_language: false
+        def `createinstance`:
+            method: false
+            language: false
+            snowball_language: false
+            udpipe_language: false
+            use_tokenizer: false
+            udpipe_tokenizer: false
+            lemmagen_language: false
+        def `__repr__`:
+            {text} ({self.__snowball_lang}): false
+            '{text} ({self.__udpipe_lang}, ': false
+            "Tokenize: {['No', 'Yes'][self.__use_tokenizer]})": Členitev: {['Ne', 'Da'][self.__use_tokenizer]})
+            {text} ({self.__lemmagen_lang}): false
+    class `FilteringModule`:
+        English: false
+        \.|,|:|;|!|\?|\(|\)|\||\+|\'|\"|‘|’|“|”|\'|: false
+        \’|…|\-|–|—|\$|&|\*|>|<|\/|\[|\]: false
+        NOUN,VERB: false
+        def `__init__`:
+            Relative:: Relativna:
+            Absolute:: Absolutna:
+        def `setParameters`:
+            language: false
+            sw_path: false
+            sw_list: false
+            lx_path: false
+            lx_list: false
+            incl_num: false
+            pattern: false
+            freq_type: false
+            rel_start: false
+            rel_end: false
+            abs_start: false
+            abs_end: false
+            n_tokens: false
+            pos_tags: false
+        def `parameters`:
+            language: false
+            sw_path: false
+            sw_list: false
+            lx_path: false
+            lx_list: false
+            incl_num: false
+            pattern: false
+            freq_type: false
+            rel_start: false
+            rel_end: false
+            abs_start: false
+            abs_end: false
+            n_tokens: false
+            pos_tags: false
+            invalidated: false
+        def `createinstance`:
+            methods: false
+            language: false
+            sw_path: false
+            lx_path: false
+            incl_num: false
+            pattern: false
+            freq_type: false
+            rel_start: false
+            rel_end: false
+            abs_start: false
+            abs_end: false
+            n_tokens: false
+            pos_tags: false
+        def `__repr__`:
+            'Language: {self.__sw_lang}, ': 'Jezik: {self.__sw_lang}, '
+            'File: {_to_abspath(self.__sw_file)}': Datoteka: {_to_abspath(self.__sw_file)}
+            'File: {_to_abspath(self.__lx_file)}': Datoteka: {_to_abspath(self.__lx_file)}
+            "Includes numbers: {['No', 'Yes'][self.__incl_num]})": Vsebuje števila: {['Ne', 'Da'][self.__incl_num]})
+            {self.__pattern}: false
+            [{self.__rel_freq_st}, {self.__rel_freq_en}]: false
+            [{self.__abs_freq_st}, {self.__abs_freq_en}]: false
+            {self.__n_token}: false
+            {self.__pos_tag}: false
+            {self.Methods[method].name} ({append}): false
+            ', ': false
+    class `NgramsModule`:
+        def `__init__`:
+            Range:: Obseg:
+        def `setParameters`:
+            start: false
+            end: false
+        def `parameters`:
+            start: false
+            end: false
+        def `__repr__`:
+            ({self.__start}, {self.__end}): false
+        def `createinstance`:
+            start: false
+            end: false
+    class `POSTaggingModule`:
+        def `createinstance`:
+            method: false
+    Transformation: Preoblikovanje
+    preprocess.transform: false
+    Transform.svg: false
+    Tokenization: Členjenje
+    preprocess.tokenize: false
+    Tokenize.svg: false
+    Normalization: Normiranje
+    preprocess.normalize: false
+    Normalize.svg: false
+    Filtering: Filtriranje
+    preprocess.filter: false
+    Filter.svg: false
+    N-grams Range: Obseg N-gramov
+    preprocess.ngrams: false
+    NGrams.svg: false
+    POS Tagger: POS označevalnik
+    tag.pos: false
+    POSTag.svg: false
+    class `OWPreprocess`:
+        Preprocess Text: Predprocesiranje besedila
+        Construct a text pre-processing pipeline.: Sestavi zaporedje predprocesorjev za besedila.
+        icons/TextPreprocess.svg: false
+        preprocess text, text: preprocess text, text, besedilo
+        class `Inputs`:
+            Corpus: Korpus
+        class `Outputs`:
+            Corpus: Korpus
+        class `Error`:
+            {}: false
+            No UDPipe model is selected.: Noben UDPipe model ni izbran.
+            File not found.: Datoteka ni najdena.
+            'Invalid file encoding. Please save the ': 'Napačno kodiranje datoteke. Shranite '
+            file as UTF-8 and try again.: datoteko kot UTF-8 in poskusite znova.
+            Problem loading Stanford POS Tagger:\n{}: Težava z nalaganjem Stanfordovega POS označevalnika:\n{}
+        class `Warning`:
+            No tokens on the output.: Na izhodu ni členov.
+            No internet connection. UDPipe: Ni internetne povezave. UDPipe
+            ' works with local models.': ' deluje z lokalnimi modeli.'
+            'No internet connection. ': 'Ni internetne povezave. '
+            UDPipe model is not available.: UDPipe model ni na voljo.
+            'Tokenization should be placed before ': 'Členjenje je potrebno uvrstiti pred '
+            'Normalization, Filtering, n-grams and ': 'Normiranjem, Filtriranjem, N-grami in '
+            POS Tagger.: POS označevalnikom.
+            'Tokenization has been ignored due to ': 'Členjenje ni bilo upoštevano zaradi '
+            UDPipe tokenizer.: UDPipe členitve.
+            'Filtering has been ignored due to ': 'Filtriranje ni bilo upoštevano zaradi '
+        'Some preprocessing methods require data (like word ': 'Nekatere metode predprocesiranja zahtevajo podatke (kot so '
+        'relationships, stop words, punctuation rules etc.) ': 'besedna razmerja, zaustavitvene besede, pravila ločil itd.) '
+        from the NLTK package. This data was downloaded to:: iz paketa NLTK. Ti podatki so bili preneseni na:
+        ' {nltk_data_dir()}': false
+        nltk_data: false
+        preprocessors: false
+        preprocess.transform: false
+        preprocess.tokenize: false
+        preprocess.filter: false
+        def `__init__`:
+            Preview: Predogled
+            %(preview)s: false
+            Output: Izhod
+            %(output_info)s: false
+        def `load`:
+            preprocessors: false
+            preprocess.filter: false
+        def `__update_filtering_params`:
+            sw_path: false
+            sw_list: false
+            lx_path: false
+            lx_list: false
+        def `__relocate_file`:
+            basedir: false
+        def `update_preview`:
+            ', ': false
+            'Tokens: {n_tokens}\nTypes: {n_types}': Število členov: {n_tokens}\nŠtevilo različnih členov: {n_types}
+        def `workflowEnvChanged`:
+            basedir: false
+            sw_path: false
+            lx_path: false
+        def `migrate_settings`:
+            storedsettings: false
+            preprocessors: false
+            transformers: false
+            enabled: false
+            methods: false
+            checked: false
+            preprocess.transform: false
+            tokenizer: false
+            method: false
+            method_index: false
+            pattern: false
+            preprocess.tokenize: false
+            normalizer: false
+            snowball_language: false
+            udpipe_language: false
+            udpipe_tokenizer: false
+            preprocess.normalize: false
+            filters: false
+            recent_sw_files: false
+            recent_lexicon_files: false
+            language: false
+            stopwords_language: false
+            sw_path: false
+            sw_list: false
+            lx_path: false
+            lx_list: false
+            start: false
+            min_df: false
+            end: false
+            max_df: false
+            n_tokens: false
+            keep_n: false
+            preprocess.filter: false
+            ngrams_range: false
+            preprocess.ngrams: false
+            pos_tagger: false
+            tag.pos: false
+            rel_start: false
+            rel_end: false
+            abs_start: false
+            abs_end: false
+    __main__: false
+    deerwester: false
+widgets/owpubmed.py:
+    def `_i`:
+        icons: false
+    [^@]+@[^@]+\.[^@]+: false
+    class `OWPubmed`:
+        class `EmailCredentialsDialog`:
+            Pubmed Email: PubMed Email
+            class `Error`:
+                This email is invalid.: Ta email ni veljaven.
+            def `__init__`:
+                Email: true
+                email_input: false
+                Email:: true
+                OK: true
+        Pubmed: PubMed
+        Fetch data from Pubmed.: Pridobi podatke iz PubMed.
+        icons/Pubmed.svg: false
+        pubmed: pubmed
+        yyyy-MM-dd: false
+        %Y-%m-%d: false
+        class `Outputs`:
+            Corpus: Korpus
+        class `Warning`:
+            Please specify the keywords for this query.: Navedite ključne besede za to poizvedbo.
+        class `Error`:
+            'API error: {}.': API napaka: {}
+            Email not set. Pleas set it with the email button.: Email ni nastavljen. Prosimo, nastavite ga z gumbom Email.
+        def `__init__`:
+            Email: true
+            author: false
+            Author:: Avtor:
+            pub_date_from: false
+            pub_date_to: false
+            From:: Od:
+            to:: Do:
+            Query:: Poizvedba:
+            Regular search: Običajno iskanje
+            Advanced search: Napredno iskanje
+            'Number of records found: /': Število najdenih zapisov: /
+            Find records: Išči zapise
+            'Performs a search for articles that fit the ': 'Opravi iskanje člankov, ki ustrezajo '
+            specified parameters.: določenim parametrom.
+            Text includes: Besedilo vsebuje
+            includes_authors: false
+            Authors: Avtorji
+            includes_title: false
+            Article title: Naslov članka
+            includes_mesh: false
+            Mesh headings: Naslov medicinske teme
+            includes_abstract: false
+            Abstract: Povzetek
+            includes_url: false
+            URL: true
+            Retrieve: Pridobi
+            num_records: false
+            records from /.: zapisov od /.
+            Retrieve records: Pridobi zapise
+            Retrieves the specified documents.: Pridobi določene dokumente.
+            'Number of records retrieved: /': Število pridobljenih zapisov: /
+        def `retrieve_records`:
+            Retrieve records: Pridobi zapise
+            Stop retrieving: Prenehanj pridobivati
+        def `update_search_info`:
+            'Number of retrievable records for ': 'Število pridobljenih zapisov za '
+            'this search query: {} ': 'to iskalno poizvedbo: {} '
+            records from {}.: zapisov od {}.
+        def `update_retrieval_info`:
+            'Number of records retrieved: {} ': 'Število pridobljenih zapisov: {} '
+        def `set_keyword_list`:
+            orchid: false
+            hypertension: false
+            blood pressure: false
+            radiology: false
+        def `open_calendar`:
+            Date picker: Izberi datum
+        def `send_report`:
+            Query: Poizvedba
+            Authors: Avtorji
+            Date: Datum
+            from {} to {}: od {} do {}
+            Number of records retrieved: Število pridobljenih zapisov
+            {}/{}: false
+    class `CalendarDialog`:
+        def `__init__`:
+            Date picker: Izberi datum
+            yyyy/MM/dd: false
+            OK: true
+        def `set_date`:
+            yyyy/MM/dd: false
+    __main__: false
+widgets/owscoredocuments.py:
+    def `_embedding_similarity`:
+        Some documents not embedded; try to rerun scoring: false
+        Some words not embedded; try to rerun scoring: false
+    word_frequency: false
+    Word count: Število besed
+    Frequency of the word in the document.: Pogostost besede v dokumentu.
+    word_appearance: false
+    Word presence: Prisotnost besed
+    Score word with one if it appears in the document, with zero otherwise.: Oceni besedo z ena, če se pojavi v dokumentu, v nasprotnem primeru pa z nič.
+    embedding_similarity: false
+    Similarity: Podobnost
+    Cosine similarity between the document embedding and the word embedding.: Kosinusna podobnost med vloženim dokumentom in vloženo besedo.
+    Mean: Povprečje
+    Median: Mediana
+    Min: Minimum
+    Max: Maksimum
+    def `_preprocess_words`:
+        words: false
+    def `_run`:
+        Empty word list after preprocessing. Please provide a valid set of words.: false
+    class `SelectionMethods`:
+        None: Nobenega
+        All: Vse
+        Manual: Ročno
+        Top documents: Najpogostejše
+    class `ScoreDocumentsProxyModel`:
+        def `_alphanum_key`:
+            ([0-9]+): false
+    class `ScoreDocumentsTableModel`:
+        def `simplify`:
+            \n\t\r: false
+            ' ': false
+    class `OWScoreDocuments`:
+        Score Documents: Oceni dokumente
+        icons/ScoreDocuments.svg: false
+        score documents: score documents, ocenjevanje, vrednotenje, točkovanje
+        class `Inputs`:
+            Corpus: Korpus
+            Words: Besede
+        class `Outputs`:
+            Selected documents: Izbrani dokumenti
+            Corpus: Korpus
+        class `Warning`:
+            Use Preprocess Text to normalize corpus.: Uporabi gradnik Predprocesiranje besedila da normiraš korpus.
+            {}: false
+        class `Error`:
+            {}: false
+        def `_setup_control_area`:
+            Word Scoring Methods: Metode za ocenjevanje besed
+            Aggregation: Izračunaj
+            aggregation: false
+            Select Documents: Izberi dokumente
+            n_selected: false
+            auto_commit: false
+        def `_setup_main_area`:
+            Filter...: Filtriraj...
+            Document: Dokument
+        def `_get_word_attribute`:
+            type: false
+            words: false
+        def `_fill_table`:
+            Document: Dokument
+        def `on_partial_result`:
+            '{SCORING_METHODS[sc_method][0]} failed: {scores}': {SCORING_METHODS[sc_method][0]} neuspešno: {scores}
+    __main__: false
+    book-excerpts: false
+    house: false
+    doctor: false
+    boy: false
+    way: false
+    Rum: false
+widgets/owsemanticviewer.py:
+    "
+<!doctype html>
+<html>
+<head>
+<script type=""text/javascript"" src=""resources/jquery-3.1.1.min.js"">
+</script>
+<script type=""text/javascript"" src=""resources/jquery.mark.min.js"">
+</script>
+<script type=""text/javascript"" src=""resources/highlighter.js"">
+</script>
+<meta charset='utf-8'>
+<style>
+
+mark {{ 
+    background: #FFCD28;
+}}
+body {{
+    font-family: Helvetica;
+    font-size: 10pt;
+}}
+hr {{
+    border: none;
+    height: 1px;
+    background-color: #000;
+
+}}
+
+</style>
+</head>
+<body>
+{}
+</body>
+</html>
+": false
+    def `run`:
+        Calculating...: Računanje...
+    class `DocumentsModel`:
+        def `_argsortData`:
+            mergesort: false
+    class `DisplayDocument`:
+        Document: Dokument
+        Section: Razdelek
+        Sentence: Stavek
+        <mark data-markjs='true'>: false
+        </mark>: false
+        {START_TAG}{{}}{END_TAG}: false
+        \n: false
+        ...: false
+        def `__call__`:
+            {self.SECTION_SEP}+: false
+            ' ': false
+        def `_replace_sentences`:
+            def `replace_unmatched`:
+                ' ': false
+    class `OWSemanticViewer`:
+        Semantic Viewer: Semantični pregledovalnik
+        Infers characteristic words from the input corpus.: Iz vhodnega korpusa izpelje karakteristične besede.
+        icons/SemanticViewer.svg: false
+        semantic viewer, search: semantic viewer, search, iskanje, pregledovalnik, semantika
+        class `Inputs`:
+            Corpus: Korpus
+            Words: Besede
+        class `Outputs`:
+            Matching Docs: Ujemajoči dokumenti
+            Other Docs: Ostali dokumenti
+            Corpus: Korpus
+        class `Warning`:
+            Input is missing 'Words' column.: V vnosu manjka stolpec 'Besede'.
+        def `_setup_gui`:
+            Filtering: Filtriranje
+            threshold: false
+            'Threshold: ': 'Prag: '
+            Display: Prikaži
+            display_index: false
+        def `set_words`:
+            type: false
+            words: false
+        def `_list_documents`:
+            Match: Ujemanje
+            Score: Rezultat
+            Document: Dokument
+            def `get_avg_score`:
+                NA: /
+        def `_show_documents`:
+            \n: false
+            <br/>: false
+            <p>{text}</p>: false
+            <hr>: false
+        def `send_report`:
+            Corpus: Korpus
+            Words: Besede
+            ', ': false
+            {:.3f}: false
+    __main__: false
+    human: false
+    graph: false
+    minors: false
+    trees: false
+    deerwester: false
+widgets/owsentimentanalysis.py:
+    class `OWSentimentAnalysis`:
+        Sentiment Analysis: Analiza sentimenta
+        Compute sentiment from text.: Izračun sentimenta (čustev) iz besedila.
+        icons/SentimentAnalysis.svg: false
+        sentiment analysis, emotion: sentiment analysis, emotion, čustva, občutki, razpoloženje
+        class `Inputs`:
+            Corpus: Korpus
+        class `Outputs`:
+            Corpus: Korpus
+        class `Warning`:
+            Only one dictionary loaded.: Naložen je samo en slovar.
+            No dictionaries loaded.: Slovarji niso naloženi.
+        class `Error`:
+            'Sentiment cannot be computed since you are offline and the ': '"Sentimenta ni mogoče izračunati, ker ste brez povezave in '
+            required dictionary is unavailable locally.: zahtevani slovar lokalno ni na voljo.
+        def `__init__`:
+            method_idx: false
+            Method: Metoda
+            Liu Hu: true
+            liu_language: false
+            Vader: true
+            'Multilingual ': true
+            sentiment: true
+            multi_language: false
+            SentiArt: true
+            senti_language: false
+            Lilah sentiment: true
+            lilah_language: false
+            Custom dictionary: Slovar po meri
+            Language:: Jezik:
+            '   English': false
+            Positive:: Pozitivno:
+            Negative:: Negativno:
+            autocommit: false
+        def `__set_language_settings`:
+            liu_language: false
+            multi_language: false
+            senti_language: false
+            lilah_language: false
+        def `_compute_sentiment`:
+            Liu Hu: true
+            Multilingual Sentiment: true
+            SentiArt: true
+            LiLaH Sentiment: true
+            Custom Dictionaries: true
+        def `send_report`:
+            Method: Metoda
+        def `migrate_settings`:
+            method_idx: false
+            metric_idx: false
+    __main__: false
+    book-excerpts: false
+widgets/owsimhash.py:
+    class `OWSimhash`:
+        Similarity Hashing: Hash podobnost
+        Computes documents hashes.: Izračuna hashe dokumentov.
+        icons/Simhash.svg: false
+        similarity hashing, simhash: similarity hashing, simhash, hash, podobnost
+        def `create_configuration_layout`:
+            f: false
+            Simhash size:: Dolžina šifrirnega zapisa
+            shingle_len: false
+            Shingle length:: Dolžina rezin
+    __main__: false
+    book-excerpts: false
+widgets/owstatistics.py:
+    def `words_count`:
+        Word count: Število besed
+    def `characters_count`:
+        Character count: Število znakov
+    def `n_gram_count`:
+        N-gram count: Število N-gramov
+    def `average_word_len`:
+        Average word length: Povprečna dolžina besede
+    def `punctuation_count`:
+        Punctuation count: Število ločil
+    def `capital_count`:
+        Capital letter count: Število velikih črk
+    def `vowel_count`:
+        ,: false
+        Vowel count: Število samoglasnikov
+    def `consonant_count`:
+        ,: false
+        Consonant count: Število soglasnikov
+    def `per_cent_unique_words`:
+        % unique words: % unikatnih besed
+    def `starts_with`:
+        Starts with {prefix}: Začne se na {prefix}
+    def `ends_with`:
+        Ends with {postfix}: Konča se na {postfix}
+    def `contains`:
+        Contains {text}: Vsebuje {text}
+    def `regex`:
+        Regex {expression}: true
+    def `pos_tags`:
+        ,: false
+        POS tags {pos_tags}: POS oznake {pos_tags}
+    def `yule`:
+        Yule's I: true
+    def `lix`:
+        LIX index: true
+    Word count: Število besed
+    Character count: Število znakov
+    N-gram count: Število N-gramov
+    Average word length: Povprečna dolžina besede
+    Punctuation count: Število ločil
+    Capital letter count: Število velikih črk
+    Vowel count: Število samoglasnikov
+    a,e,i,o,u: false
+    Consonant count: Število soglasnikov
+    b,c,d,f,g,h,j,k,l,m,n,p,q,r,s,t,v,w,x,y,z: false
+    Per cent unique words: Delež unikatnih besed
+    Starts with: Začne se na
+    Ends with: Konča se na
+    Contains: Vsebuje
+    Regex: true
+    POS tag: POS oznake
+    NN,VV,JJ: false
+    Yule's I: true
+    LIX index: true
+    class `OWStatistics`:
+        Statistics: Statistika
+        Create new statistic variables for documents.: Ustvari nove statistične spremenljivke za dokumente.
+        statistics: statistics
+        icons/Statistics.svg: false
+        class `Inputs`:
+            Corpus: Korpus
+        class `Outputs`:
+            Corpus: Korpus
+        class `Warning`:
+            {} statistics cannot be computed and is omitted from results.: {} statistike ni mogoče izračunati in je v rezultatih izpuščena.
+        def `_init_controls`:
+            Apply: Uveljavi
+        def `_init_statistics_box`:
+            +: false
+            Feature: Spremenljivka
+            Pattern: Vzorec
+        def `adjust_n_rule_rows`:
+            def `_add_line`:
+                ×: false
+        def `output_results`:
+            ', ': false
+    __main__: false
+    book-excerpts: false
+widgets/owtopicmodeling.py:
+    class `TopicWidget`:
+        {description}:: false
+    class `LdaWidget`:
+        num_topics: false
+        Number of topics: Število tem
+    class `LsiWidget`:
+        num_topics: false
+        Number of topics: Število tem
+    class `HdpWidget`:
+        {description}:: false
+        gamma: false
+        First level concentration (γ): Prva raven koncentracije (γ)
+        alpha: false
+        Second level concentration (α): Druga raven koncentracije (α)
+        eta: false
+        The topic Dirichlet (α): Dirichletova tema (α)
+        T: false
+        Top level truncation level (Τ): Najvišja raven stopnje obrezovanja (Τ)
+        K: false
+        Second level truncation level (Κ): Druga raven stopnje obrezovanja (Κ)
+        kappa: false
+        Learning rate (κ): Hitrost učenja (κ)
+        tau: false
+        Slow down parameter (τ): Parameter upočasnitve (τ)
+    class `NmfWidget`:
+        num_topics: false
+        Number of topics: Število tem
+    class `OWTopicModeling`:
+        Topic Modelling: Modeliranje tem
+        Uncover the hidden thematic structure in a corpus.: Odkrivanje skrite tematske strukture v korpusu.
+        icons/TopicModeling.svg: false
+        topic modelling, lda: topic modelling, lda
+        class `Inputs`:
+            Corpus: Korpus
+        class `Outputs`:
+            Corpus: Korpus
+            Selected Topic: Izbrane teme
+            All Topics: Vse teme
+        lsi: false
+        lda: false
+        hdp: false
+        nmf: false
+        class `Warning`:
+            Less topics found than requested.: Najdenih je bilo manj tem, kot je bilo zahtevanih.
+        class `Error`:
+            {}: false
+        def `__init__`:
+            n/a: /
+            autocommit: false
+            Commit: Potrdi
+            Options: Možnosti
+            Topic evaluation: Vrednotenje teme
+            'Log perplexity: %(perplexity)s': Logaritemska perpleksnost: %(perplexity)s
+            'Topic coherence: %(coherence)s': Koherentnost teme: %(coherence)s
+        def `on_done`:
+            Latent Dirichlet Allocation: Latentna Dirichletova porazdelitev (LDA)
+            {:.5f}: false
+            c_v: false
+        def `send_report`:
+            Topics: Teme
+    class `TopicViewerTreeWidgetItem`:
+        def `__init__`:
+            {:d}: false
+            ', ': false
+            _: false
+        def `_color`:
+            '#ff6600': false
+            '#00cc00': false
+            '<span style="color: {}">{}</span>': false
+    class `TopicViewer`:
+        Topic: Tema
+        Topic keywords: Ključne besede teme
+    __main__: false
+    deerwester: false
+widgets/owtweetprofiler.py:
+    class `OWTweetProfiler`:
+        Tweet Profiler: Profiliranje tvitov
+        "Detect Ekman's, Plutchik's or Profile of Mood States's ": 'Zaznavanje čustev v tvitih po Ekmanovi, Plutchikovi ali POMS-ovi (Profile of Mood States) '
+        emotions in tweets.: kategorizaciji.
+        icons/TweetProfiler.svg: false
+        tweet profiler, twitter: tweet profiler, twitter, tvit, zaznavanje, čustva
+        class `Inputs`:
+            Corpus: Korpus
+        class `Outputs`:
+            Corpus: Korpus
+        class `Error`:
+            'Our servers are not responding. ': 'Naši strežniki se ne odzivajo. '
+            Please try again later.: Prosimo, poskusite pozneje.
+            'Unknown error: {}': Neznana napaka: {}
+        def `__init__`:
+            auto_commit: false
+            Commit: Potrdi
+            Cancel: Prekliči
+        def `generate_grid_layout`:
+            Options: Možnosti
+            tweet_attr: false
+            Attribute:: Atribut:
+            model_name: false
+            Emotions:: Čustva:
+            output_mode: false
+            Output:: Izhod:
+        def `send_report`:
+            Attribute: Atribut
+            Emotions: Čustva
+            Output: Izhod
+    __main__: false
+    election-tweets-2016.tab: false
+widgets/owtwitter.py:
+    def `search`:
+        content: false
+        @: false
+    class `OWTwitter`:
+        Twitter: true
+        Load tweets from the Twitter API.: Nalaganje tvitov iz družbenega omrežja Twitter preko API ključa.
+        icons/Twitter.svg: false
+        twitter, tweet: twitter, tweet, tvit
+        class `Outputs`:
+            Corpus: Korpus
+        class `Info`:
+            Downloaded fewer tweets than requested, since not enough tweets or rate limit reached: Prenesenih je bilo manj tvitov, kot je bilo zahtevanih, ker jih ni bilo dovolj ali ker je bila dosežena omejitev hitrosti.
+        class `Error`:
+            'Api error: {}': API napaka: {}
+            Please provide {}.: Navedite {}.
+            Please provide a valid API token.: Navedite veljavni API.
+            Author '{}' does not exist.: Avtor '{}' ne obstaja.
+        Content: Vsebina
+        Author: Avtor
+        class `APICredentialsDialog`:
+            Twitter API Credentials: Pooblastila Twitter API ključa.
+            def `__init__`:
+                Twitter Bearer Token: true
+                Bearer Token: true
+                OK: true
+        def `__init__`:
+            Twitter API Key: API ključi družbenega omrežja Twitter
+            Set the API key for this widget.: Nastavi API ključ za za gradnik.
+            Query: Poizvedba
+            Query word list:: Seznam besed za poizvedbo:
+            word_list: false
+            Multiple lines are joined with OR.: Več vrstic je združenih z OR.
+            Search by:: Išči po:
+            mode: false
+            Any: (vsi)
+            language: false
+            Language:: Jezik:
+            Max tweets:: Največje število tvitov:
+            max_tweets: false
+            limited_search: false
+            allow_retweets: false
+            Allow retweets:: Dovoli ponovne tvite:
+            Collect results:: Zberi rezultate:
+            collecting: false
+            Search: Išči
+        def `start_stop`:
+            Search: Išči
+        def `run_search`:
+            api: false
+            key_missing: false
+        def `search`:
+            keywords: false
+            authors: false
+            content: false
+            Stop: true
+        def `on_done`:
+            Search: Išči
+        def `on_exception`:
+            Search: Išči
+        def `send_report`:
+            api: false
+            key_missing: false
+    __main__: false
+widgets/owwikipedia.py:
+    class `OWWikipedia`:
+        Wikipedia: Wikipedija
+        icons/Wikipedia.svg: false
+        wikipedia: wikipedia
+        class `Outputs`:
+            Corpus: Korpus
+        en: false
+        Articles count {:d}: Število člankov: {:d}
+        class `Error`:
+            'API error: {}': API napaka: {}
+        class `Warning`:
+            Text features are inferred when none are selected.: Če besedilne spremenljivke niso izbrane se sklepajo.
+        def `__init__`:
+            Query: Poizvedba
+            query_list: false
+            'Each line represents a ': 'Vsaka vrstica predstavlja '
+            separate query.: ločeno poizvedbo.
+            Query word list:: Seznam besed za poizvedbo:
+            language: false
+            Language:: Jezik:
+            Articles per query:: Število člankov na poizvedbo:
+            articles_per_query: false
+            Text includes: Besedilo vsebuje
+            text_includes: false
+            Info: true
+            Search: Išči
+        def `on_start`:
+            Stop: true
+        def `on_result`:
+            Search: Išči
+        def `send_report`:
+            Language: Jezik
+            Query: Poizvedba
+            Articles count: Število člankov
+    __main__: false
+widgets/owwordcloud.py:
+    '#da1': false
+    '#629': false
+    '#787': false
+    '#000': false
+    '#444': false
+    '#777': false
+    '#aaa': false
+    '#ff6600': false
+    '#00cc00': false
+    no: ne
+    30°: false
+    45°: false
+    60°: false
+    def `_bow_words`:
+        bow-feature: false
+    def `count_words`:
+        Calculating...: Računanje...
+    class `TableModel`:
+        def `data`:
+            {value:.{self.precision}f}: false
+    class `OWWordCloud`:
+        Word Cloud: Oblak besed
+        icons/WordCloud.svg: false
+        word cloud: word cloud, besede
+        class `Inputs`:
+            Corpus: Korpus
+            Topic: Tema
+        class `Outputs`:
+            Corpus: Korpus
+            Selected Words: Izbrane besede
+            Word Counts: Štetje besed
+        webview: false
+        class `Warning`:
+            Input signal Topic takes priority over Corpus: Vhodni signal 'Tema' ima prednost pred korpusom
+        class `Info`:
+            Showing bag of words weights.: Prikaz uteži vreče besed.
+        def `_new_webview`:
+            '
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+html, body {margin:0px;padding:0px;width:100%;height:100%;
+            cursor:default; -webkit-user-select: none; user-select: none;
+            overflow: hidden;}
+span:hover {color:OrangeRed !important}
+span.selected {color:red !important}
+</style>
+</head>
+<body id="canvas">
+<script src="resources/wordcloud2.js"></script>
+<script src="resources/wordcloud-script.js"></script>
+</body>
+</html>': false
+            class `Bridge`:
+                def `update_selection`:
+                    QVariantList: false
+            class `Webview`:
+                def `update_selection`:
+                    SELECTED_WORDS = {}; selectWords();: false
+        def `_create_layout`:
+            Cloud preferences: Nastavitve oblaka
+            words_color: false
+            Color words: Obarvaj besede
+            words_tilt: false
+            Words tilt:: Naklon besed:
+            Words && weights: Besede && uteži
+            Weight: Utež
+            Word: Beseda
+        def `define_colors`:
+            topic-method-name: false
+            LsiModel: false
+        def `on_cloud_pref_change`:
+            colorList = {colors_dict}: false
+            'OPTIONS["color"] = function (word) {
+            return colorList[word];
+            }': false
+            textAreaEstimation = {self.combined_size_length}: false
+            'OPTIONS["minRotation"] = {}; \
+                             OPTIONS["maxRotation"] = {};': false
+            OPTIONS["rotateRatio"] = {};: false
+            OPTIONS["list"] = {};: false
+            redrawWordCloud();: false
+        def `_apply_topic`:
+            weights: false
+        def `create_weight_list`:
+            Word Count: Število besed
+            Word: Beseda
+            Word Counts: Štetje besed
+        def `commit`:
+            Selected Words: Izbrane besede
+        def `send_report`:
+            >: false
+            <body: false
+            </body>: false
+            document.getElementById('canvas').clientHeight: false
+            "<div style='position: relative; height: ": false
+            {height}px;'>{body}</div>: false
+    __main__: false
+    book-excerpts: false
+widgets/owwordenrichment.py:
+    class `Runner`:
+        def `run`:
+            Listing words: Naštevanje besed
+            Computing p-values: Računanje p-vrednosti
+            Computing FDR values: Računanje FDR vrednosti
+    class `OWWordEnrichment`:
+        Word Enrichment: Obogatitev besed
+        Word enrichment analysis for selected documents.: Analiza obogatitve besed za izbrane dokumente.
+        icons/SetEnrichment.svg: false
+        word enrichment: word enrichment, beseda
+        class `Inputs`:
+            Selected Data: Izbrani podatki
+            Data: Podatki
+        class `Outputs`:
+            Words: Besede
+        class `Error`:
+            No bag-of-words features!: Ni spremenljivk iz Vreče besed!
+            No words overlap!: Besede se ne prekrivajo!
+            Selected data is empty!: Izbrani podatki so prazni!
+            All examples can not be selected!: Vseh primerov ni mogoče izbrati!
+        def `__init__`:
+            Info: true
+            'Words displayed: 0': Prikazane besede: 0
+            Filter: true
+            filter_by_p: false
+            p-value: p-vrednost
+            Filter by word p-value: Filtriranje po besedi (p-vrednost)
+            filter_p_value: false
+            Max p-value for word: Največja p-vrednost za besedo
+            filter_by_fdr: false
+            FDR: true
+            Filter by word FDR: Filtriranje po besedi (FDR)
+            filter_fdr_value: false
+            auto_apply: false
+            Word: Beseda
+        def `get_bow_domain`:
+            bow-feature: false
+        def `set_displayed_info`:
+            'Words displayed: {count}': Prikazane besede: {count}
+        def `commit`:
+            p-values: p-vrednosti
+            FDR values: FDR vrednosti
+        def `send_report`:
+            Enriched words: Obogatene besede
+    %0.5f: false
+    %0.1e: false
+    %0.9f: false
+    %0.5e: false
+    __main__: false
+    book-excerpts: false
+widgets/owwordlist.py:
+    class `WordList`:
+        def `as_dict`:
+            name: false
+            words: false
+            filename: false
+        def `from_dict`:
+            WordList: false
+            name: false
+            words: false
+            filename: false
+        def `generate_word_list_name`:
+            Untitled: Nepoimenovano
+            {default_name} {index}: false
+    class `UpdateRules`:
+        Intersection: Presek
+        Union: Unija
+        Only input: Samo vhod
+        Ignore input: Neupoštevaj vhoda
+    class `WordListItemDelegate`:
+        def `displayText`:
+            *: false
+    class `OWWordList`:
+        Word List: Seznam besed
+        Create a list of words.: Ustvari seznam besed.
+        icons/WordList.svg: false
+        word list: word list, besede
+        class `Inputs`:
+            Words: Besede
+        class `Outputs`:
+            Selected Words: Izbrane besede
+            Words: Besede
+        class `Warning`:
+            Input needs at least one Text variable.: Na vhodu je potrebna vsaj ena besedilna spremenljivka.
+        name: false
+        words: false
+        def `__init__`:
+            Library: Knjižnica
+            Input: Vhod
+        def `_setup_library_box`:
+            +: false
+            Add a new word list to the library: Dodaj nov seznam besed v knjižnico
+            \N{MINUS SIGN}: false
+            Remove word list from library: Odstrani seznam besed iz knjižnice
+            Update: Posodobi
+            Save changes in the editor to library: Shrani spremembe iz urejevalnika v knjižnico
+            More: Več
+            More actions: Več dejanj
+            Import Words from File: Uvozi besede iz datoteke
+            Save Words to File: Shrani besede v datoteko
+        def `__on_import_word_list`:
+            Open Word List: Odpri seznam besed
+            ~/: false
+            Text files (*.txt)\nAll files(*.*): Besedilni dokumenti (*.txt)\nVse datoteke (*.*)
+            utf-8: false
+        def `__on_save_word_list`:
+            ~/: false
+            Save Word List: Shrani seznam besed
+            Text files (*.txt)\nAll files(*.*): Besedilni dokumenti (*.txt)\nVse datoteke (*.*)
+            .txt: false
+            w: false
+            utf-8: false
+            {word}\n: false
+        def `_setup_input_box`:
+            words_var: false
+            Word variable:: Besedna spremenljivka:
+            update_rule_index: false
+            'Update: ': 'Posodobi: '
+        def `_setup_words_box`:
+            +: false
+            Add a new word: Dodaj novo besedo
+            \N{MINUS SIGN}: false
+            Remove word: Odstrani besedo
+            Sort: Razvrsti
+            Sort words alphabetically: Razvrsti besede po abecedi
+        def `send_report`:
+            /: false
+            Library: Knjižnica
+            Input Words: Vhodne besede
+            Word variable: Besedna spremenljivka
+            Update: Posodobi
+            Settings: Nastavitve
+            Words: Besede
+            ', ': false
+    __main__: false
+    S1: false
+    S2: false
+    foo: false
+    A: false
+    bar: false
+    B: false
+    foobar: false
+    C: false
+widgets/utils/concurrent.py:
+    class `CallbackMethod`:
+        def `__call__`:
+            call: false
+widgets/utils/owbasevectorizer.py:
+    class `Vectorizer`:
+        def `_hide_attrs`:
+            hidden: false
+    class `OWBaseVectorizer`:
+        class `Inputs`:
+            Corpus: Korpus
+        class `Outputs`:
+            Corpus: Korpus
+            Embeddings: Vložitve
+        def `__init__`:
+            Options: Možnosti
+            hidden_cb: false
+            Hide bow attributes: Skrij atribute vreče besed
+            autocommit: false
+            Commit: Potrdi
+widgets/utils/widgets.py:
+    class `ListEdit`:
+        def `__init__`:
+            \n: false
+        def `value`:
+            \n: false
+    class `DatePicker`:
+        yyyy-MM-dd: false
+        %Y-%m-%d: false
+    class `DatePickerInterval`:
+        def `__init__`:
+            From:: Od:
+            To:: Do:
+    class `FileWidget`:
+        def `__init__`:
+            ~/: false
+            Browse: Prebrskaj
+            Reload: Ponovno naloži
+            (none): (brez)
+    class `ValidatedLineEdit`:
+        def `on_change`:
+            'QLineEdit { border : 1px solid gray;}': false
+            'QLineEdit { border : 2px solid red;}': false
+            Invalid '{}' value.: Neveljavna vrednost: '{}'.
+    class `AbsoluteRelativeSpinBox`:
+        def `__init__`:
+            value: false
+    class `ResourceLoader`:
+        def `__init__`:
+            Model: true
+            Provider: Ponudnik
+            Load model: Naloži model
+            Load provider: Naloži ponudnika
+widgets/utils/words.py:
+    Words: Besede
+    def `create_words_table`:
+        type: false
+        words: false
+        Words: Besede
