@@ -293,7 +293,7 @@ widgets/owimageimport.py:
             "'{}' does not exist": "'{}' ne obstaja"
             "'{}' is not a directory": "'{}' ni imenik"
         def `_search_paths`:
-            basedir: falses
+            basedir: false
         def `__setRuntimeState`:
             Processing: Obdelava
             Cancelled: Preklicano
@@ -314,6 +314,7 @@ widgets/owimageviewer.py:
     url: false
     future: false
     Future[QImage]: false
+    attr_value: false
     class `DeferredIconViewDelegate`:
         def `renderThumbnail`:
             Future[QImage]: false
@@ -328,30 +329,29 @@ widgets/owimageviewer.py:
         class `Outputs`:
             Selected Images: Izbrane slike
             Data: Podatki
+        class `Error`:
+            'Unable to display images! Please ensure that the chosen ': 'Ni mogoče prikazati slik! Prepričajte se, da je izbrani '
+            Image Filename Attribute store the correct paths to the images.: stolpec z imenom datoteke s sliko shranil pravilne poti do slik.
         thumbnailView: false
         "Pressing the 'Space' key while the thumbnail view has focus and ": Pritisnite preslednico (space) za ogled slike
         a selected item will open a window with a full image: ""
         preview-introduction: false
         def `__init__`:
-            imageAttr: false
+            image_attr: false
             Image Filename Attribute: Stolpec z imenom datoteke s sliko
             Attribute with image filenames: Stolpec z imeni datotek s slikami
-            titleAttr: false
+            title_attr: false
             Title Attribute: Stolpec z naslovom
             Attribute with image title: Stolpec z naslovom slike
-            'combobox-popup: 0;': false
             imageSize: false
             Image Size: Velikost slike
             autoCommit: false
             Send: Uveljavi
+        def `__select_image_attr`:
+            type: false
+            image: false
         def `__on_load_finished`:
             Future[QImage]: false
-        def `_noteCompleted`:
-            'Error: %r': Napaka: %r
-        def `_updateStatus`:
-            type: false
-            "No images could be ! Make sure the '%s' attribute ": "Ni bilo mogoče najti nobene slike! Prepričajte se, da je atribut '%s' "
-            is tagged with 'type=image': označen s 'type=image'.
     T: false
     Some: false
     val: false
