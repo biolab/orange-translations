@@ -213,6 +213,9 @@ resources.py:
             _*: false
         def `is_icon_glob`:
             _*: false
+        def `get`:
+            .svg: false
+            current-color-scheme: false
     def `load_styled_svg_icon`:
         icons/{name}: false
 application/aboutdialog.py:
@@ -2131,6 +2134,22 @@ gui/dropshadow.py:
 gui/framelesswindow.py:
     class `FramelessWindow`:
         Window border radius: false
+gui/iconengine.py:
+    StyledIconEngine: false
+    SymbolIconEngine: false
+    class `StyledIconEngine`:
+        __palette: false
+        __styleObject: false
+        def `paletteFromStyleObject`:
+            palette: false
+    class `SymbolIconEngine`:
+        def `__renderStyledPixmap`:
+            '{__name__}:SymbolIconEngine/{self.__cache_key}': false
+            '{size.width()}x{size.height()}': false
+            '{hex(palette.cacheKey())}-{cg}-{role}': false
+            '{namespace}/{cachekey}/{style_key}': false
+        def `clone`:
+            QIconEngine: false
 gui/iconview.py:
     class `LinearIconView`:
         def `sizeHint`:
@@ -2182,20 +2201,14 @@ gui/svgiconengine.py:
     class `StyledSvgIconEngine`:
         __contents: false
         __styled_contents_cache: false
-        __palette: false
         __renderer: false
         __cache_key: false
-        __style_object: false
         def `__init__`:
             only one of palette or styleObject can be defined: false
-        def `__paletteFromPaintDevice`:
-            palette: false
-        def `__paletteFromStyleObject`:
-            palette: false
         def `__renderStyledPixmap`:
-            '{}:{}/{}/': false
-            '{}-{}-{}': false
-            /{}x{}: false
+            '{__name__}:{__class__.__name__}/{self.__cache_key}': false
+            '{hex(palette.cacheKey())}-{cg}-{role}': false
+            '{namespace}/{style_key}/{size.width()}x{size.height()}': false
         def `clone`:
             QIconEngine: false
     ? "\n* {{\n    color: {text};\n}}\n.ColorScheme-Text {{\n    color: {text};\n\
@@ -3305,6 +3318,7 @@ scheme/widgetmanager.py:
             action-canvas-raise-ancestors: false
             action-canvas-raise-descendants: false
 styles/__init__.py:
+    _T: false
     def `breeze_light`:
         '#30363C': false
         '#888786': false
@@ -3410,6 +3424,9 @@ utils/graph.py:
     traverse_bf: false
     strongly_connected_components: false
     H: false
+utils/image.py:
+    def `qimage_copy_from_buffer`:
+        Wrong data.shape (expected ({w}, {h}) got {data.shape}): false
 utils/markup.py:
     def `render_plain`:
         '<p style="white-space: pre-wrap;">': false
