@@ -1856,7 +1856,7 @@ data/sql/backend/mssql.py:
             SHOWPLAN permission denied: false
             SHOWPLAN permission denied, count approximates will not be used: false
         def `distinct_values_query`:
-            {field}, Cast({field} as binary): false
+            {field}, Cast({field} as binary), DATALENGTH({field}): false
 data/sql/backend/postgres.py:
     tsm_system_time: false
     quantile: false
@@ -4352,6 +4352,8 @@ widgets/data/owconcatenate.py:
             Inputs must be of the same type.: Podatki morajo biti enake vrste.
         class `Warning`:
             Variables with duplicated names have been renamed.: Spremenljivk s podvojenimi imeni so preimenovane.
+            'Some variables may not be concatenated correctly due ': 'Nekatere spremenljivke morda ne bodo pravilno združene zaradi '
+            to attributes difference ({}).: razlike v atributih ({}).
         Source ID: Vir
         all variables that appear in input tables: spremenljivke iz vseh tabel
         only variables that appear in all tables: spremenljivke, ki se pojavijo v vseh tabelah
