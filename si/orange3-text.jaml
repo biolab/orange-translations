@@ -375,7 +375,7 @@ country_codes.py:
     Canada: Kanada
     CD: false
     COD: false
-    Congo, The Democratic Republic of the: Kongo, Demokratična republika Kongo
+    Congo, The Democratic Republic of the: Demokratična republika Kongo
     Dem. Rep. Congo: Dem. rep. Kongo
     CF: false
     CAF: false
@@ -474,7 +474,7 @@ country_codes.py:
     India: Indija
     IR: false
     IRN: false
-    Iran, Islamic Republic of: Iran, Islamska republika
+    Iran, Islamic Republic of: Islamska republika Iran
     Iran: true
     JM: false
     JAM: false
@@ -493,12 +493,12 @@ country_codes.py:
     Cambodia: Kambodža
     KP: false
     PRK: false
-    Korea, Democratic People's Republic of: Koreja, Demokratična ljudska republika
+    Korea, Democratic People's Republic of: Demokratična ljudska republika Koreja
     Dem. Rep. Korea: Dem. rep. Koreja
     North Korea: Severna Koreja
     KR: false
     KOR: false
-    Korea, Republic of: Koreja, Republika Koreja
+    Korea, Republic of: Republika Koreja
     Korea: Koreja
     South Korea: Južna Koreja
     KW: false
@@ -658,7 +658,7 @@ country_codes.py:
     Taiwan: Tajvan
     TZ: false
     TZA: false
-    Tanzania, United Republic of: Tanzanija, Združena republika
+    Tanzania, United Republic of: Združena republika Tanzanija
     Tanzania: Tanzanija
     UG: false
     UGA: false
@@ -675,7 +675,7 @@ country_codes.py:
     Uzbekistan: true
     VE: false
     VEN: false
-    Venezuela, Bolivarian Republic of: Venezuela, Bolivarska republika
+    Venezuela, Bolivarian Republic of: Bolivarska republika Venezuela
     Venezuela: true
     VN: false
     VNM: false
@@ -1842,7 +1842,7 @@ nyt.py:
         def `_fetch_page`:
             utf-8: false
             'NYT api returned HTTPError with code 403 ': 'NYT api je vrnil HTTP napako s kodo 403 '
-            (Forbidden)! Skipping this page ...: (Prepovedano)! Preskočite to stran ...
+            (Forbidden)! Skipping this page ...: (Prepovedano)! Preskakovanje te strani
             response: false
             docs: false
         def `_encode_url`:
@@ -1884,8 +1884,8 @@ pubmed.py:
         ' ': false
         *: false
     def `_date_to_iso`:
-        %Y %b %d: %d %b %Y
-        %Y %b: %b %Y
+        %Y %b %d: false
+        %Y %b: false
         %Y: false
         fall: false
         Sep: false
@@ -1918,11 +1918,11 @@ pubmed.py:
             y: false
             retmax: false
             term: false
-            Author: Avtor
-            ' AND ': ' in'
+            Author: false
+            ' AND ': false
             {} is not a valid data type for the field "authors".: {} ni veljaven podatkovni tip za polje "Avtorji".
             All fields: Vsa polja
-            ' OR ': ' ali'
+            ' OR ': false
             {} is not a valid data type for the field "terms".: {} ni veljaven podatkovni tip za polje "pogoji".
             {}[{}]: false
             ({}): false
@@ -2122,10 +2122,10 @@ twitter.py:
         def `search_content`:
             def `build_query`:
                 At leas one keyword required: Zahteva se vsaj ena ključna beseda
-                ' OR ': ' ali'
+                ' OR ': false
                 '"{}"': false
-                ' -is:retweet': -je: ponovni tvit
-                ' lang:{lang}': ' jezik: {lang}'
+                ' -is:retweet': false
+                ' lang:{lang}': false
             Content: Vsebina
             Any: vsi
         def `search_authors`:
@@ -2663,7 +2663,7 @@ topics/lsi.py:
         Latent Semantic Indexing: Latentno semantično indeksiranje (LSI)
 topics/nmf.py:
     class `NmfWrapper`:
-        Negative Matrix Factorization: Faktorizacija negativnih matrikl (NMF)
+        Negative Matrix Factorization: Negativna matrična faktorizacija (NMF)
 topics/topics.py:
     class `GensimProgressCallback`:
         def `__init__`:
@@ -2674,17 +2674,17 @@ topics/topics.py:
     class `GensimWrapper`:
         def `fit`:
             chunk_number: false
-            chunk_number is deprecated and will be removed in orange3-text 1.7: chunk_number je zastarel in bo odstranjen v orange3-text 1.7
+            chunk_number is deprecated and will be removed in orange3-text 1.7: false
             callbacks: false
             Topic {}: Tema {}
         def `reset_model`:
-            'reset_model is deprecated and will be removed in orange3-text 1.7. ': 'reset_model je zastarel in bo odstranjen v orange3-text 1.7. '
-            Model resets with calling fit.: Model se ponastavi s klicem fit.
+            'reset_model is deprecated and will be removed in orange3-text 1.7. ': false
+            Model resets with calling fit.: false
         def `update`:
-            update is deprecated and will be removed in orange3-text 1.7.: posodobitev je zastarela in bo odstranjena v različici orange3-text 1.7.
+            update is deprecated and will be removed in orange3-text 1.7.: false
         def `get_topics_table_by_id`:
             Too large topic ID.: false
-            Topic {} weights: Tema {} uteži
+            Topic {} weights: Uteži teme {}
             %.2e: false
             Topic {}: Tema {}
             topic-method-name: false
@@ -2804,7 +2804,7 @@ vectorization/sbert.py:
             documents are skipped.: dokumenti so izpuščeni.
         def `report`:
             Embedder: Vlagalnik
-            Multilingual SBERT: true
+            Multilingual SBERT: Večjezični SBERT
     class `_ServerCommunicator`:
         def `__init__`:
             application/json: false
@@ -2859,7 +2859,7 @@ widgets/owannotator.py:
             Corpus: Korpus
             Scores: Rezultati
         class `Warning`:
-            'Selected features for Axis x ': 'Izbrane funkcije za os x '
+            'Selected features for Axis x ': 'Izbrane značilke za os x '
             and Axis y should differ.: in os y se morajo razlikovati.
         class `Error`:
             Data has no continuous variables.: Podatki nimajo številskih spremenljivk.
@@ -2869,7 +2869,7 @@ widgets/owannotator.py:
             Cluster labels:: Oznake gruč:
             n_cluster_labels: false
             show_cluster_hull: false
-            Show cluster hull: Pokaži trup gruče
+            Show cluster hull: Pokaži ovojnico gruče
             color_by_cluster: false
             Color points by cluster: Pobarvaj točke glede na gručo
         def `__add_annotation_controls`:
@@ -2922,7 +2922,7 @@ widgets/owbagofwords.py:
         Bag of Words: Vreča besed
         Generates a bag of words from the input corpus.: Iz vhodnega korpusa ustvari vrečo besed.
         icons/BagOfWords.svg: false
-        bag of words, bow: bag of words, bow, besedilo
+        bag of words, bow: bag of words, bow
         Count: Štetje
         Binary: Binarno
         Sublinear: Sublinearno
@@ -3081,7 +3081,7 @@ widgets/owcorpus.py:
             (no title): (brez naslova)
             Corpus settings: Nastavitve korpusa
             title_variable: false
-            Title variable: Naslov:
+            Title variable: Spremenljivka naslova:
             language: false
             Language: Jezik:
             Used text features: Uporabljene besedilne spremenljivke
@@ -3139,7 +3139,7 @@ widgets/owcorpustonetwork.py:
             window_size: false
             Window size: Velikost okna:
             freq_threshold: false
-            Frequency Threshold: Pogostost praga:
+            Frequency Threshold: Prag frekvence:
             Start: Začni
         def `set_data`:
             running: false
@@ -3380,7 +3380,7 @@ widgets/owdocmap.py:
 widgets/owdocumentembedding.py:
     class `OWDocumentEmbedding`:
         Document Embedding: Vložitev dokumentov
-        Document embedding using pretrained models.: Vložitev dokumentov z uporabo predhodno usposobljenih modelov.
+        Document embedding using pretrained models.: Vložitev dokumentov z uporabo predhodno naučenih modelov.
         embedding, document embedding, fasttext, bert, sbert: embedding, document embedding, fasttext, bert, sbert, dokument
         icons/TextEmbedding.svg: false
         English: false
@@ -3397,21 +3397,21 @@ widgets/owdocumentembedding.py:
             Cancel: Prekliči
         def `create_configuration_layout`:
             method: false
-            Multilingual SBERT: true
+            Multilingual SBERT: Večjezični SBERT
             fastText:: true
             language: false
             Language:: Jezik:
             aggregator: false
-            Aggregator:: Izračunaj:
+            Aggregator:: Agregacija:
         def `migrate_settings`:
             language: false
             aggregator: false
         def `send_report`:
             Embedder: Vlagalnik
-            Multilingual SBERT: true
+            Multilingual SBERT: Večjezični SBERT
             fastText: true
             Language: Jezik
-            Aggregator: Izračunaj
+            Aggregator: Agregacija
     __main__: false
     book-excerpts: false
 widgets/owduplicates.py:
@@ -3561,7 +3561,7 @@ widgets/owimportdocuments.py:
             URL:: true
             language: false
             Language: Jezik
-            Conllu import options: Možnosti uvoza Conllu
+            Conllu import options: Možnosti uvoza iz Conllu datotek
             lemma_cb: false
             Lemma: Lema
             pos_cb: false
@@ -3639,12 +3639,12 @@ widgets/owkeywords.py:
         class `Outputs`:
             Words: Besede
         class `Warning`:
-            Input is missing 'Words' column.: V vnosu manjka stolpec 'Besede'.
+            Input is missing 'Words' column.: V vhodni tabeli manjka stolpec 'Besede'.
         def `_setup_gui`:
             Scoring Methods: Metode vrednotenja
             yake_lang_index: false
             rake_lang_index: false
-            Aggregation: Izračunaj
+            Aggregation: Agregacija
             agg_method: false
             Select Words: Izberi besede
             n_selected: false
@@ -3753,7 +3753,7 @@ widgets/ownyt.py:
             Please provide a query.: Navedite poizvedbo.
             No internet connection.: Ni internetne povezave.
             'API error: {}': API napaka: {}
-            Rate limit exceeded. Please try again later.: Omejitev stopnje je presežena. Poskusite znova pozneje.
+            Rate limit exceeded. Please try again later.: Presegli ste limit APIja. Poskusite znova pozneje.
         def `__init__`:
             Article API Key: API ključ članka
             Query: Poizvedba
@@ -4294,7 +4294,7 @@ widgets/owpubmed.py:
             pub_date_from: false
             pub_date_to: false
             From:: Od:
-            to:: Do:
+            to:: do:
             Query:: Poizvedba:
             Regular search: Običajno iskanje
             Advanced search: Napredno iskanje
@@ -4384,7 +4384,7 @@ widgets/owscoredocuments.py:
             \n\t\r: false
             ' ': false
     class `OWScoreDocuments`:
-        Score Documents: Oceni dokumente
+        Score Documents: Točkuj dokumente
         icons/ScoreDocuments.svg: false
         score documents: score documents, ocenjevanje, vrednotenje, točkovanje
         class `Inputs`:
@@ -4399,8 +4399,8 @@ widgets/owscoredocuments.py:
         class `Error`:
             {}: false
         def `_setup_control_area`:
-            Word Scoring Methods: Metode za ocenjevanje besed
-            Aggregation: Izračunaj
+            Word Scoring Methods: Metode za točkovanje besed
+            Aggregation: Agregacija
             aggregation: false
             Select Documents: Izberi dokumente
             n_selected: false
@@ -4479,7 +4479,7 @@ hr {{
                 ' ': false
     class `OWSemanticViewer`:
         Semantic Viewer: Semantični pregledovalnik
-        Infers characteristic words from the input corpus.: Iz vhodnega korpusa izpelje karakteristične besede.
+        Infers characteristic words from the input corpus.: false
         icons/SemanticViewer.svg: false
         semantic viewer, search: semantic viewer, search, iskanje, pregledovalnik, semantika
         class `Inputs`:
@@ -4490,7 +4490,7 @@ hr {{
             Other Docs: Ostali dokumenti
             Corpus: Korpus
         class `Warning`:
-            Input is missing 'Words' column.: V vnosu manjka stolpec 'Besede'.
+            Input is missing 'Words' column.: V vhodni tabeli manjka stolpec 'Besede'.
         def `_setup_gui`:
             Filtering: Filtriranje
             threshold: false
@@ -4536,7 +4536,7 @@ widgets/owsentimentanalysis.py:
             Only one dictionary loaded.: Naložen je samo en slovar.
             No dictionaries loaded.: Slovarji niso naloženi.
         class `Error`:
-            'Sentiment cannot be computed since you are offline and the ': '"Sentimenta ni mogoče izračunati, ker ste brez povezave in '
+            'Sentiment cannot be computed since you are offline and the ': 'Sentimenta ni mogoče izračunati, ker ste brez povezave in '
             required dictionary is unavailable locally.: zahtevani slovar lokalno ni na voljo.
         def `__init__`:
             method_idx: false
@@ -4577,7 +4577,7 @@ widgets/owsentimentanalysis.py:
     book-excerpts: false
 widgets/owsimhash.py:
     class `OWSimhash`:
-        Similarity Hashing: Hash podobnost
+        Similarity Hashing: Zgoščevaje po podobnosti
         Computes documents hashes.: Izračuna hashe dokumentov.
         icons/Simhash.svg: false
         similarity hashing, simhash: similarity hashing, simhash, hash, podobnost
@@ -4787,11 +4787,11 @@ widgets/owtwitter.py:
         class `Outputs`:
             Corpus: Korpus
         class `Info`:
-            Downloaded fewer tweets than requested, since not enough tweets or rate limit reached: Prenesenih je bilo manj tvitov, kot je bilo zahtevanih, ker jih ni bilo dovolj ali ker je bila dosežena omejitev hitrosti.
+            Downloaded fewer tweets than requested, since not enough tweets or rate limit reached: Prenesenih je bilo manj tvitov, kot je bilo zahtevanih, ker jih ni bilo dovolj ali ker je bila dosežena omejitev dovoljenih prenosov iz APIja.
         class `Error`:
             'Api error: {}': API napaka: {}
             Please provide {}.: Navedite {}.
-            Please provide a valid API token.: Navedite veljavni API.
+            Please provide a valid API token.: Navedite veljavni žeton za API.
             Author '{}' does not exist.: Avtor '{}' ne obstaja.
         Content: Vsebina
         Author: Avtor
@@ -5004,12 +5004,12 @@ widgets/owwordenrichment.py:
             Filter: true
             filter_by_p: false
             p-value: p-vrednost
-            Filter by word p-value: Filtriranje po besedi (p-vrednost)
+            Filter by word p-value: Filtriranje po p-vrednosti besed
             filter_p_value: false
             Max p-value for word: Največja p-vrednost za besedo
             filter_by_fdr: false
             FDR: true
-            Filter by word FDR: Filtriranje po besedi (FDR)
+            Filter by word FDR: Filtriranje po FDR vrednosti besed
             filter_fdr_value: false
             auto_apply: false
             Word: Beseda
