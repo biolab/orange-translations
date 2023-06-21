@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="Predprocesiranje besedila" description="Prvi korak pri besedilnem rudarjenju je predprocesiranje, ki določa osnovne enote analize - člene.&#10;&#10;Ta potek dela prikazuje, kako preoblikovati podatke, jih razčleniti, normalizirati in filtrirati nepotrebne dele. Rezultate predprocesiranja si lahko ogledaš v interaktivni vizualizaciji oblaka besed.">
+	<nodes>
+		<node id="0" name="Korpus" qualified_name="orangecontrib.text.widgets.owcorpus.OWCorpus" project_name="Orange3-Text" version="" title="Korpus" position="(115.0, 163.0)" />
+		<node id="1" name="Pregledovalnik korpusa" qualified_name="orangecontrib.text.widgets.owcorpusviewer.OWCorpusViewer" project_name="Orange3-Text" version="" title="Pregledovalnik korpusa" position="(282.0, 114.0)" />
+		<node id="2" name="Predprocesiranje besedila" qualified_name="orangecontrib.text.widgets.owpreprocess.OWPreprocess" project_name="Orange3-Text" version="" title="Predprocesiranje besedila" position="(283.0, 227.0)" />
+		<node id="3" name="Oblak besed" qualified_name="orangecontrib.text.widgets.owwordcloud.OWWordCloud" project_name="Orange3-Text" version="" title="Oblak besed" position="(453.0, 228.0)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="0" sink_node_id="1" source_channel="Korpus" sink_channel="Korpus" enabled="true" source_channel_id="corpus" sink_channel_id="corpus" />
+		<link id="1" source_node_id="0" sink_node_id="2" source_channel="Korpus" sink_channel="Korpus" enabled="true" source_channel_id="corpus" sink_channel_id="corpus" />
+		<link id="2" source_node_id="2" sink_node_id="3" source_channel="Korpus" sink_channel="Korpus" enabled="true" source_channel_id="corpus" sink_channel_id="corpus" />
+	</links>
+	<annotations>
+		<text id="0" type="text/plain" rect="(34.0, 319.0, 158.0, 64.0)" font-family="Helvetica" font-size="16">Naloži 'grimm-tales-selected.tab'.</text>
+		<arrow id="1" start="(106.99999999999999, 316.0)" end="(111.99999999999997, 226.0)" fill="#39B54A" />
+		<arrow id="2" start="(292.00000000000006, 378.0)" end="(287.00000000000006, 310.0)" fill="#C1272D" />
+		<text id="3" type="text/plain" rect="(218.0, 379.0, 183.0, 132.0)" font-family="Helvetica" font-size="16">Predprocesiranje besedila pretvori besedilo v male črke, ga razdeli na člene in filtrira odvečne besede (zaustavitvene besede).</text>
+		<arrow id="4" start="(468.0, 354.0)" end="(457.0, 293.0)" fill="#C1272D" />
+		<text id="5" type="text/plain" rect="(437.0, 359.0, 165.0, 80.0)" font-family="Helvetica" font-size="16">Opazuj rezultate predhodne obdelave v Oblaku besed.</text>
+		<arrow id="6" start="(453.0, 98.99999999999999)" end="(334.0, 111.0)" fill="#C1272D" />
+		<text id="7" type="text/plain" rect="(468.0, 79.0, 200.0, 65.0)" font-family="Helvetica" font-size="16">Preveri izpis korpusa v Pregledovalniku korpusa.</text>
+	</annotations>
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="pickle">gASVXAIAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjAxyZWNlbnRfZmlsZXOUXZQojBhn
+cmltbS10YWxlcy1zZWxlY3RlZC50YWKUjBFib29rLWV4Y2VycHRzLnRhYpSMGGVsZWN0aW9uLXR3
+ZWV0cy0yMDE2LnRhYpSMF2ZyaWVuZHMtdHJhbnNjcmlwdHMudGFilIwMYW5kZXJzZW4udGFilGWM
+E3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAAwkAAAFlAAAFigAAA2MAAAMKAAABgwAA
+BYkAAANiAAAAAAAAAAAIkgAAAwoAAAGDAAAFiQAAA2KUjAtfX3ZlcnNpb25fX5RLAYwQY29udGV4
+dF9zZXR0aW5nc5RdlIwVb3Jhbmdld2lkZ2V0LnNldHRpbmdzlIwHQ29udGV4dJSTlCmBlH2UKIwG
+dmFsdWVzlH2UKIwIbGFuZ3VhZ2WUjAdFbmdsaXNolEr+////hpSMDnRpdGxlX3ZhcmlhYmxllIwF
+VGl0bGWUS2eGlIwKdXNlZF9hdHRyc5RdlIwHQ29udGVudJRLZ4aUYUr9////hpRoC0sBdYwKYXR0
+cmlidXRlc5R9lIwJQVRVIFRvcGljlEsBc4wFbWV0YXOUfZQojAVUaXRsZZRLA4wIQWJzdHJhY3SU
+SwOMB0NvbnRlbnSUSwOMDUFUVSBOdW1lcmljYWyUSwOMCEFUVSBUeXBllEsBdYwOZG9jdW1lbnRz
+X2hhc2iUihC1tu659YPsR8bsb3F2Zhc7jAhsYW5ndWFnZZSMAmVulHViYXUu
+</properties>
+		<properties node_id="1" format="pickle">gASVCgIAAAAAAAB9lCiMCmF1dG9jb21taXSUiIwSY29udHJvbEFyZWFWaXNpYmxllIiME3NhdmVk
+V2lkZ2V0R2VvbWV0cnmUQzIB2dDLAAIAAAAAAOYAAABhAAAEpQAAAs4AAADmAAAAdwAABKUAAALO
+AAAAAAAAAAAFoJSMEnNlbGVjdGVkX2RvY3VtZW50c5SPlChLAJCMC3Nob3dfdG9rZW5zlImMC19f
+dmVyc2lvbl9flEsCjBBjb250ZXh0X3NldHRpbmdzlF2UjBVvcmFuZ2V3aWRnZXQuc2V0dGluZ3OU
+jAdDb250ZXh0lJOUKYGUfZQojAZ2YWx1ZXOUfZQojBBkaXNwbGF5X2ZlYXR1cmVzlF2UKIwJQVRV
+IFRvcGljlEtlhpSMBVRpdGxllEtnhpSMCEFic3RyYWN0lEtnhpSMB0NvbnRlbnSUS2eGlIwNQVRV
+IE51bWVyaWNhbJRLZ4aUjAhBVFUgVHlwZZRLZYaUZUr9////hpSMDXJlZ2V4cF9maWx0ZXKUjACU
+Sv7///+GlIwPc2VhcmNoX2ZlYXR1cmVzlF2UKGgUS2WGlGgWS2eGlGgYS2eGlGgaS2eGlGgcS2eG
+lGgeS2WGlGVK/f///4aUaAhLAnWMCmF0dHJpYnV0ZXOUfZRoFEsBc4wFbWV0YXOUfZQoaBZLA2gY
+SwNoGksDaBxLA2geSwF1dWJhdS4=
+</properties>
+		<properties node_id="2" format="pickle">gASVRwMAAAAAAAB9lCiMCmF1dG9jb21taXSUiIwSY29udHJvbEFyZWFWaXNpYmxllIiME3NhdmVk
+V2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAABB0AAAF0AAAHBgAAA1MAAAQdAAABdAAABwYAAANT
+AAAAAAAAAAAIkgAABB0AAAF0AAAHBgAAA1OUjA5zdG9yZWRzZXR0aW5nc5R9lCiMBG5hbWWUjACU
+jA1wcmVwcm9jZXNzb3JzlF2UKIwUcHJlcHJvY2Vzcy50cmFuc2Zvcm2UfZSMB21ldGhvZHOUXZRL
+AGFzhpSME3ByZXByb2Nlc3MudG9rZW5pemWUfZQojAZtZXRob2SUSwOMB3BhdHRlcm6UjANcdyuU
+dYaUjBFwcmVwcm9jZXNzLmZpbHRlcpR9lCiMB2Fic19lbmSUSwqMCWFic19zdGFydJRLAYwJZnJl
+cV90eXBllEsAjAhpbmNsX251bZSJjAtpbnZhbGlkYXRlZJSJjAhsYW5ndWFnZZSMB0VuZ2xpc2iU
+jAdseF9saXN0lF2UjB5vcmFuZ2V3aWRnZXQudXRpbHMuZmlsZWRpYWxvZ3OUjApSZWNlbnRQYXRo
+lJOUKYGUfZQojAdhYnNwYXRolIwUQzovVXNlcnMvQW5qYS8obm9uZSmUjAZwcmVmaXiUTowHcmVs
+cGF0aJROjAV0aXRsZZRoCIwFc2hlZXSUaAiMC2ZpbGVfZm9ybWF0lE51YmGMB2x4X3BhdGiUTowH
+bWV0aG9kc5RdlEsAYYwIbl90b2tlbnOUS2SMB3BhdHRlcm6UjE9cLnwsfDp8O3whfFw/fFwofFwp
+fFx8fFwrfCd8InzigJh84oCZfOKAnHzigJ18J3xc4oCZfOKApnxcLXzigJN84oCUfFwkfCZ8XCp8
+Pnw8lIwIcG9zX3RhZ3OUjAlOT1VOLFZFUkKUjAdyZWxfZW5klEc/7MzMzMzMzYwJcmVsX3N0YXJ0
+lEc/uZmZmZmZmowHc3dfbGlzdJRdlGgjKYGUfZQoaCaMFEM6L1VzZXJzL0FuamEvKG5vbmUplGgo
+TmgpTmgqaAhoK2gIaCxOdWJhjAdzd19wYXRolE51hpRldYwLX192ZXJzaW9uX1+USwN1Lg==
+</properties>
+		<properties node_id="3" format="pickle">gASVpwAAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNzYXZlZFdpZGdldEdlb21ldHJ5
+lEMyAdnQywACAAAAAAD6AAAAYQAABJIAAALOAAAA+gAAAHcAAASSAAACzgAAAAAAAAAABaCUjA5z
+ZWxlY3RlZF93b3Jkc5SPlIwLd29yZHNfY29sb3KUiIwKd29yZHNfdGlsdJRLAowLX192ZXJzaW9u
+X1+USwF1Lg==
+</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>

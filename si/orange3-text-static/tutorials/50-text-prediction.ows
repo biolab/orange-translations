@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="Napovedovanje pri besedilih" description="Imamo tri ljudske pravljice, za katere bi radi napovedali tip. Ali gre za živalske ali čarobne pravljice? &#10;&#10;Najprej izdelamo model tako, da korpus z Grimmovimi pravljicami (učna množica) povežemo v vrečo besed in nato v logistično regresijo. Ko je model naučen, ga lahko uporabimo na novem korpusu Andersenovih pravljic in opazujemo napovedano vrsto za vsako pravljico.">
+	<nodes>
+		<node id="0" name="Korpus" qualified_name="orangecontrib.text.widgets.owcorpus.OWCorpus" project_name="Orange3-Text" version="" title="Korpus Grimm" position="(96.0, 107.0)" />
+		<node id="1" name="Predprocesiranje besedila" qualified_name="orangecontrib.text.widgets.owpreprocess.OWPreprocess" project_name="Orange3-Text" version="" title="Predprocesiranje besedila" position="(235.0, 108.0)" />
+		<node id="2" name="Vreča besed" qualified_name="orangecontrib.text.widgets.owbagofwords.OWTBagOfWords" project_name="Orange3-Text" version="" title="Vreča besed" position="(369.0, 108.0)" />
+		<node id="3" name="Logistična regresija" qualified_name="Orange.widgets.model.owlogisticregression.OWLogisticRegression" project_name="Orange3" version="" title="Logistična regresija" position="(524.0, 160.0)" />
+		<node id="4" name="Korpus" qualified_name="orangecontrib.text.widgets.owcorpus.OWCorpus" project_name="Orange3-Text" version="" title="Korpus Andersen" position="(355.0, 269.0)" />
+		<node id="5" name="Napovedi" qualified_name="Orange.widgets.evaluate.owpredictions.OWPredictions" project_name="Orange3" version="" title="Napovedi" position="(703.0, 262.0)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="0" sink_node_id="1" source_channel="Korpus" sink_channel="Korpus" enabled="true" source_channel_id="corpus" sink_channel_id="corpus" />
+		<link id="1" source_node_id="3" sink_node_id="5" source_channel="Model" sink_channel="Modeli" enabled="true" source_channel_id="model" sink_channel_id="predictors" />
+		<link id="2" source_node_id="1" sink_node_id="2" source_channel="Korpus" sink_channel="Korpus" enabled="true" source_channel_id="corpus" sink_channel_id="corpus" />
+		<link id="3" source_node_id="2" sink_node_id="3" source_channel="Korpus" sink_channel="Podatki" enabled="true" source_channel_id="corpus" sink_channel_id="data" />
+		<link id="4" source_node_id="4" sink_node_id="5" source_channel="Korpus" sink_channel="Podatki" enabled="true" source_channel_id="corpus" sink_channel_id="data" />
+	</links>
+	<annotations>
+		<arrow id="0" start="(352.0, 391.0)" end="(352.99999999999994, 333.0)" fill="#39B54A" />
+		<text id="1" type="text/plain" rect="(255.0, 395.0, 198.0, 93.0)" font-family="Helvetica" font-size="16">Naloži 'andersen.tab'. Na treh novih Andersenovih pravljicah bomo poskušali napovedati vrsto pravljice.</text>
+		<arrow id="2" start="(709.0, 147.0)" end="(703.0, 214.0)" fill="#C1272D" />
+		<text id="3" type="text/plain" rect="(665.0, 69.0, 140.0, 72.0)" font-family="Helvetica" font-size="16">Odpri gradnik in si oglej rezultate napovedi.</text>
+	</annotations>
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="pickle">gASVRQIAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjAxyZWNlbnRfZmlsZXOUXZQojBhn
+cmltbS10YWxlcy1zZWxlY3RlZC50YWKUjBFib29rLWV4Y2VycHRzLnRhYpSMGGVsZWN0aW9uLXR3
+ZWV0cy0yMDE2LnRhYpSMF2ZyaWVuZHMtdHJhbnNjcmlwdHMudGFilIwMYW5kZXJzZW4udGFilGWM
+E3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAAwkAAAFlAAAFigAAA2MAAAMKAAABgwAA
+BYkAAANiAAAAAAAAAAAIkgAAAwoAAAGDAAAFiQAAA2KUjAtfX3ZlcnNpb25fX5RLAYwQY29udGV4
+dF9zZXR0aW5nc5RdlIwVb3Jhbmdld2lkZ2V0LnNldHRpbmdzlIwHQ29udGV4dJSTlCmBlH2UKIwG
+dmFsdWVzlH2UKIwIbGFuZ3VhZ2WUjAdFbmdsaXNolEr+////hpSMDnRpdGxlX3ZhcmlhYmxllIwF
+VGl0bGWUS2eGlIwKdXNlZF9hdHRyc5RdlIwHQ29udGVudJRLZ4aUYUr9////hpRoC0sBdYwKYXR0
+cmlidXRlc5R9lIwJQVRVIFRvcGljlEsBc4wFbWV0YXOUfZQoaBlLA4wIQWJzdHJhY3SUSwNoHUsD
+jA1BVFUgTnVtZXJpY2FslEsDjAhBVFUgVHlwZZRLAXWMDmRvY3VtZW50c19oYXNolIoQtbbuufWD
+7EfG7G9xdmYXO2gVjAJlbpR1YmF1Lg==
+</properties>
+		<properties node_id="1" format="pickle">gASVRwMAAAAAAAB9lCiMCmF1dG9jb21taXSUiIwSY29udHJvbEFyZWFWaXNpYmxllIiME3NhdmVk
+V2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAAj4AAAFVAAAFJwAAAzQAAAI+AAABVQAABScAAAM0
+AAAAAAAAAAAIkgAAAj4AAAFVAAAFJwAAAzSUjA5zdG9yZWRzZXR0aW5nc5R9lCiMBG5hbWWUjACU
+jA1wcmVwcm9jZXNzb3JzlF2UKIwUcHJlcHJvY2Vzcy50cmFuc2Zvcm2UfZSMB21ldGhvZHOUXZRL
+AGFzhpSME3ByZXByb2Nlc3MudG9rZW5pemWUfZQojAZtZXRob2SUSwOMB3BhdHRlcm6UjANcdyuU
+dYaUjBFwcmVwcm9jZXNzLmZpbHRlcpR9lCiMB2Fic19lbmSUSwqMCWFic19zdGFydJRLAYwJZnJl
+cV90eXBllEsAjAhpbmNsX251bZSJjAtpbnZhbGlkYXRlZJSJjAhsYW5ndWFnZZSMB0VuZ2xpc2iU
+jAdseF9saXN0lF2UjB5vcmFuZ2V3aWRnZXQudXRpbHMuZmlsZWRpYWxvZ3OUjApSZWNlbnRQYXRo
+lJOUKYGUfZQojAdhYnNwYXRolIwUQzovVXNlcnMvQW5qYS8obm9uZSmUjAZwcmVmaXiUTowHcmVs
+cGF0aJROjAV0aXRsZZRoCIwFc2hlZXSUaAiMC2ZpbGVfZm9ybWF0lE51YmGMB2x4X3BhdGiUTowH
+bWV0aG9kc5RdlEsAYYwIbl90b2tlbnOUS2SMB3BhdHRlcm6UjE9cLnwsfDp8O3whfFw/fFwofFwp
+fFx8fFwrfCd8InzigJh84oCZfOKAnHzigJ18J3xc4oCZfOKApnxcLXzigJN84oCUfFwkfCZ8XCp8
+Pnw8lIwIcG9zX3RhZ3OUjAlOT1VOLFZFUkKUjAdyZWxfZW5klEc/7MzMzMzMzYwJcmVsX3N0YXJ0
+lEc/uZmZmZmZmowHc3dfbGlzdJRdlGgjKYGUfZQoaCaMFEM6L1VzZXJzL0FuamEvKG5vbmUplGgo
+TmgpTmgqaAhoK2gIaCxOdWJhjAdzd19wYXRolE51hpRldYwLX192ZXJzaW9uX1+USwN1Lg==
+</properties>
+		<properties node_id="2" format="literal">{'autocommit': True, 'controlAreaVisible': True, 'hidden_cb': True, 'normalization': '(None)', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x03\xf0\x00\x00\x01\xdd\x00\x00\x04\xa1\x00\x00\x02\xb0\x00\x00\x03\xf1\x00\x00\x01\xfb\x00\x00\x04\xa0\x00\x00\x02\xaf\x00\x00\x00\x00\x00\x00\x00\x00\x08\x92\x00\x00\x03\xf1\x00\x00\x01\xfb\x00\x00\x04\xa0\x00\x00\x02\xaf', 'wglobal': '(None)', 'wlocal': 'Count', '__version__': 1}</properties>
+		<properties node_id="3" format="literal">{'C_index': 61, 'auto_apply': True, 'class_weight': False, 'controlAreaVisible': True, 'learner_name': '', 'penalty_type': 1, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x03\xf1\x00\x00\x01\xe9\x00\x00\x04\xa1\x00\x00\x02\xc0\x00\x00\x03\xf1\x00\x00\x01\xe9\x00\x00\x04\xa1\x00\x00\x02\xc0\x00\x00\x00\x00\x00\x00\x00\x00\x08\x92\x00\x00\x03\xf1\x00\x00\x01\xe9\x00\x00\x04\xa1\x00\x00\x02\xc0', '__version__': 2}</properties>
+		<properties node_id="4" format="pickle">gASV0AIAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjAxyZWNlbnRfZmlsZXOUXZQojAxh
+bmRlcnNlbi50YWKUjBhncmltbS10YWxlcy1zZWxlY3RlZC50YWKUjBFib29rLWV4Y2VycHRzLnRh
+YpSMGGVsZWN0aW9uLXR3ZWV0cy0yMDE2LnRhYpSMF2ZyaWVuZHMtdHJhbnNjcmlwdHMudGFilGWM
+E3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAAwkAAAFlAAAFigAAA2MAAAMKAAABgwAA
+BYkAAANiAAAAAAAAAAAIkgAAAwoAAAGDAAAFiQAAA2KUjAtfX3ZlcnNpb25fX5RLAYwQY29udGV4
+dF9zZXR0aW5nc5RdlCiMFW9yYW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiM
+BnZhbHVlc5R9lCiMCGxhbmd1YWdllIwHRW5nbGlzaJRK/v///4aUjA50aXRsZV92YXJpYWJsZZSM
+BVRpdGxllEtnhpSMCnVzZWRfYXR0cnOUXZSMB0NvbnRlbnSUS2eGlGFK/f///4aUaAtLAXWMCmF0
+dHJpYnV0ZXOUfZSMBW1ldGFzlH2UKIwFVGl0bGWUSwOMB0NvbnRlbnSUSwN1jA5kb2N1bWVudHNf
+aGFzaJSKELMECmyM/va3yANc7khsPQxoFYwCZW6UdWJoECmBlH2UKGgTfZQoaBWMB0VuZ2xpc2iU
+Sv7///+GlGgYjAVUaXRsZZRLZ4aUaBtdlIwHQ29udGVudJRLZ4aUYUr9////hpRoC0sBdWggfZSM
+CUFUVSBUb3BpY5RLAXNoIn2UKGgtSwOMCEFic3RyYWN0lEsDaDBLA4wNQVRVIE51bWVyaWNhbJRL
+A4wIQVRVIFR5cGWUSwF1aCaKELW27rn1g+xHxuxvcXZmFztoFYwCZW6UdWJldS4=
+</properties>
+		<properties node_id="5" format="pickle">gASV7AIAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNzYXZlZFdpZGdldEdlb21ldHJ5
+lENCAdnQywADAAAAAAO5AAABLwAAB3oAAANyAAADuQAAAS8AAAd6AAADcgAAAAAAAAAACJIAAAO5
+AAABLwAAB3oAAANylIwJc2VsZWN0aW9ulF2UjAtzaG93X3Njb3Jlc5SIjAtzY29yZV90YWJsZZR9
+lIwQc2hvd19zY29yZV9oaW50c5R9lCiMBk1vZGVsX5SIjAZUcmFpbl+UiYwFVGVzdF+UiYwCQ0GU
+iIwXUHJlY2lzaW9uUmVjYWxsRlN1cHBvcnSUiIwLVGFyZ2V0U2NvcmWUiIwJUHJlY2lzaW9ulIiM
+BlJlY2FsbJSIjAJGMZSIjANBVUOUiIwHTG9nTG9zc5SJjAtTcGVjaWZpY2l0eZSJjBdNYXR0aGV3
+c0NvcnJDb2VmZmljaWVudJSIjANNU0WUiIwEUk1TRZSIjANNQUWUiIwCUjKUiIwGQ1ZSTVNFlImM
+D0NsdXN0ZXJpbmdTY29yZZSIjApTaWxob3VldHRllIiMF0FkanVzdGVkTXV0dWFsSW5mb1Njb3Jl
+lIh1c4wLX192ZXJzaW9uX1+USwKMEGNvbnRleHRfc2V0dGluZ3OUXZQojBVvcmFuZ2V3aWRnZXQu
+c2V0dGluZ3OUjAdDb250ZXh0lJOUKYGUfZQojAZ2YWx1ZXOUfZQojBdzaG93X3Byb2JhYmlsaXR5
+X2Vycm9yc5SIjA9zaG93X3JlZ19lcnJvcnOUSwGMC3Nob3duX3Byb2JzlEsCjAx0YXJnZXRfY2xh
+c3OUjBooUG92cHJlxI1qZSBwcmVrIHJhenJlZG92KZRoB32UaCBLAnWMB2NsYXNzZXOUKXViaCUp
+gZR9lChoKH2UKGgqiGgrSwFoLEsBaC1oLmgHfZRoIEsCdWgwjAxBbmltYWwgVGFsZXOUjA5UYWxl
+cyBvZiBNYWdpY5SGlHViZXUu
+</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>

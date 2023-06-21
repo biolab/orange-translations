@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="Sorodnost" description="Interaktivno raziskovanje podatkov je ključna značilnost programa Orange in večina vizualizacij podpira posredovanje izbranih podatkov nadaljnjim gradnikom.&#10;&#10;Izberi besedo iz oblaka besed in jo posreduj gradniku Sorodnost, da opazuješ kontekst, v katerem se izbrana beseda pojavlja. Razišči različne besede tako, da jih izbereš v oblaku besed in takoj opazuješ rezultate v gradniku Sorodnost.">
+	<nodes>
+		<node id="0" name="Pregledovalnik korpusa" qualified_name="orangecontrib.text.widgets.owcorpusviewer.OWCorpusViewer" project_name="Orange3-Text" version="" title="Corpus Viewer" position="(733.0, 85.0)" />
+		<node id="1" name="Korpus" qualified_name="orangecontrib.text.widgets.owcorpus.OWCorpus" project_name="Orange3-Text" version="" title="Korpus" position="(109.0, 87.0)" />
+		<node id="2" name="Predprocesiranje besedila" qualified_name="orangecontrib.text.widgets.owpreprocess.OWPreprocess" project_name="Orange3-Text" version="" title="Predprocesiranje besedila" position="(244.0, 195.0)" />
+		<node id="3" name="Oblak besed" qualified_name="orangecontrib.text.widgets.owwordcloud.OWWordCloud" project_name="Orange3-Text" version="" title="Oblak besed" position="(363.0, 196.0)" />
+		<node id="4" name="Sorodnost" qualified_name="orangecontrib.text.widgets.owconcordance.OWConcordance" project_name="Orange3-Text" version="" title="Sorodnost" position="(501.0, 85.0)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="1" sink_node_id="2" source_channel="Korpus" sink_channel="Korpus" enabled="true" source_channel_id="corpus" sink_channel_id="corpus" />
+		<link id="1" source_node_id="2" sink_node_id="3" source_channel="Korpus" sink_channel="Korpus" enabled="true" source_channel_id="corpus" sink_channel_id="corpus" />
+		<link id="2" source_node_id="3" sink_node_id="4" source_channel="Izbrane besede" sink_channel="Poizvedbena beseda" enabled="true" source_channel_id="selected_words" sink_channel_id="query_word" />
+		<link id="3" source_node_id="1" sink_node_id="4" source_channel="Korpus" sink_channel="Korpus" enabled="true" source_channel_id="corpus" sink_channel_id="corpus" />
+		<link id="4" source_node_id="4" sink_node_id="0" source_channel="Izbrani dokumenti" sink_channel="Korpus" enabled="true" source_channel_id="selected_documents" sink_channel_id="corpus" />
+	</links>
+	<annotations>
+		<text id="0" type="text/plain" rect="(41.0, 233.0, 111.0, 76.0)" font-family="Helvetica" font-size="16">Naložen je 'grimm-tales-selected.tab'.</text>
+		<arrow id="1" start="(201.0, 364.0)" end="(227.00000000000006, 274.0)" fill="#C1272D" />
+		<text id="2" type="text/plain" rect="(115.0, 367.0, 161.0, 99.0)" font-family="Helvetica" font-size="16">Predprocesiranje besedila opredeljuje osnovne enote analize - člene.</text>
+		<arrow id="3" start="(360.99999999999994, 341.0)" end="(359.99999999999994, 264.0)" fill="#C1272D" />
+		<text id="4" type="text/plain" rect="(315.0, 345.0, 181.0, 173.0)" font-family="Helvetica" font-size="16">Izberi besedo v oblaku besed. Izbrali smo besedo "king", vendar jo lahko spremeniš. Izbrana beseda bo poslana v Sorodnost kot poizvedbena beseda.</text>
+		<arrow id="5" start="(538.0, 254.0)" end="(510.00000000000006, 148.0)" fill="#C1272D" />
+		<text id="6" type="text/plain" rect="(516.0, 256.0, 267.0, 96.0)" font-family="Helvetica" font-size="16">Sorodnost poišče vse pojavitve besede iz oblaka besed v korpusu. Izberi zanimive dokumente in jih opazuj v pregledovalniku korpusa.</text>
+		<arrow id="7" start="(90.0, 227.0)" end="(102.0, 151.0)" fill="#C1272D" />
+	</annotations>
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="pickle">gASVGgIAAAAAAAB9lCiMCmF1dG9jb21taXSUiIwSY29udHJvbEFyZWFWaXNpYmxllIiME3NhdmVk
+V2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAAwkAAAFlAAAGtQAAA14AAAMKAAABgwAABrQAAANd
+AAAAAAAAAAAIkgAAAwoAAAGDAAAGtAAAA12UjBJzZWxlY3RlZF9kb2N1bWVudHOUj5QoSwCQjAtz
+aG93X3Rva2Vuc5SJjAtfX3ZlcnNpb25fX5RLAowQY29udGV4dF9zZXR0aW5nc5RdlIwVb3Jhbmdl
+d2lkZ2V0LnNldHRpbmdzlIwHQ29udGV4dJSTlCmBlH2UKIwGdmFsdWVzlH2UKIwQZGlzcGxheV9m
+ZWF0dXJlc5RdlCiMCUFUVSBUb3BpY5RLZYaUjAVUaXRsZZRLZ4aUjAhBYnN0cmFjdJRLZ4aUjAdD
+b250ZW50lEtnhpSMDUFUVSBOdW1lcmljYWyUS2eGlIwIQVRVIFR5cGWUS2WGlGVK/f///4aUjA1y
+ZWdleHBfZmlsdGVylIwAlEr+////hpSMD3NlYXJjaF9mZWF0dXJlc5RdlChoFEtlhpRoFktnhpRo
+GEtnhpRoGktnhpRoHEtnhpRoHktlhpRlSv3///+GlGgISwJ1jAphdHRyaWJ1dGVzlH2UaBRLAXOM
+BW1ldGFzlH2UKGgWSwNoGEsDaBpLA2gcSwNoHksBdXViYXUu
+</properties>
+		<properties node_id="1" format="pickle">gASVTgIAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjAxyZWNlbnRfZmlsZXOUXZQojBhn
+cmltbS10YWxlcy1zZWxlY3RlZC50YWKUjBFib29rLWV4Y2VycHRzLnRhYpSMGGVsZWN0aW9uLXR3
+ZWV0cy0yMDE2LnRhYpSMF2ZyaWVuZHMtdHJhbnNjcmlwdHMudGFilIwMYW5kZXJzZW4udGFilGWM
+E3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAAwkAAAFlAAAFigAAA2MAAAMKAAABgwAA
+BYkAAANiAAAAAAAAAAAIkgAAAwoAAAGDAAAFiQAAA2KUjAtfX3ZlcnNpb25fX5RLAYwQY29udGV4
+dF9zZXR0aW5nc5RdlIwVb3Jhbmdld2lkZ2V0LnNldHRpbmdzlIwHQ29udGV4dJSTlCmBlH2UKIwG
+dmFsdWVzlH2UKIwIbGFuZ3VhZ2WUjAdFbmdsaXNolEr+////hpSMDnRpdGxlX3ZhcmlhYmxllIwF
+VGl0bGWUS2eGlIwKdXNlZF9hdHRyc5RdlIwHQ29udGVudJRLZ4aUYUr9////hpRoC0sBdYwKYXR0
+cmlidXRlc5R9lIwJQVRVIFRvcGljlEsBc4wFbWV0YXOUfZQoaBlLA4wIQWJzdHJhY3SUSwNoHUsD
+jA1BVFUgTnVtZXJpY2FslEsDjAhBVFUgVHlwZZRLAXWMDmRvY3VtZW50c19oYXNolIoQtbbuufWD
+7EfG7G9xdmYXO4wIbGFuZ3VhZ2WUjAJlbpR1YmF1Lg==
+</properties>
+		<properties node_id="2" format="pickle">gASVRwMAAAAAAAB9lCiMCmF1dG9jb21taXSUiIwSY29udHJvbEFyZWFWaXNpYmxllIiME3NhdmVk
+V2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAABB0AAAF0AAAHBgAAA1MAAAQdAAABdAAABwYAAANT
+AAAAAAAAAAAIkgAABB0AAAF0AAAHBgAAA1OUjA5zdG9yZWRzZXR0aW5nc5R9lCiMBG5hbWWUjACU
+jA1wcmVwcm9jZXNzb3JzlF2UKIwUcHJlcHJvY2Vzcy50cmFuc2Zvcm2UfZSMB21ldGhvZHOUXZRL
+AGFzhpSME3ByZXByb2Nlc3MudG9rZW5pemWUfZQojAZtZXRob2SUSwOMB3BhdHRlcm6UjANcdyuU
+dYaUjBFwcmVwcm9jZXNzLmZpbHRlcpR9lCiMB2Fic19lbmSUSwqMCWFic19zdGFydJRLAYwJZnJl
+cV90eXBllEsAjAhpbmNsX251bZSJjAtpbnZhbGlkYXRlZJSJjAhsYW5ndWFnZZSMB0VuZ2xpc2iU
+jAdseF9saXN0lF2UjB5vcmFuZ2V3aWRnZXQudXRpbHMuZmlsZWRpYWxvZ3OUjApSZWNlbnRQYXRo
+lJOUKYGUfZQojAdhYnNwYXRolIwUQzovVXNlcnMvQW5qYS8obm9uZSmUjAZwcmVmaXiUTowHcmVs
+cGF0aJROjAV0aXRsZZRoCIwFc2hlZXSUaAiMC2ZpbGVfZm9ybWF0lE51YmGMB2x4X3BhdGiUTowH
+bWV0aG9kc5RdlEsAYYwIbl90b2tlbnOUS2SMB3BhdHRlcm6UjE9cLnwsfDp8O3whfFw/fFwofFwp
+fFx8fFwrfCd8InzigJh84oCZfOKAnHzigJ18J3xc4oCZfOKApnxcLXzigJN84oCUfFwkfCZ8XCp8
+Pnw8lIwIcG9zX3RhZ3OUjAlOT1VOLFZFUkKUjAdyZWxfZW5klEc/7MzMzMzMzYwJcmVsX3N0YXJ0
+lEc/uZmZmZmZmowHc3dfbGlzdJRdlGgjKYGUfZQoaCaMFEM6L1VzZXJzL0FuamEvKG5vbmUplGgo
+TmgpTmgqaAhoK2gIaCxOdWJhjAdzd19wYXRolE51hpRldYwLX192ZXJzaW9uX1+USwN1Lg==
+</properties>
+		<properties node_id="3" format="pickle">gASVwAAAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNzYXZlZFdpZGdldEdlb21ldHJ5
+lENCAdnQywADAAAAAALEAAABcgAABbsAAANXAAACxQAAAZAAAAW6AAADVgAAAAAAAAAACJIAAALF
+AAABkAAABboAAANWlIwOc2VsZWN0ZWRfd29yZHOUj5QojARraW5nlJCMC3dvcmRzX2NvbG9ylIiM
+CndvcmRzX3RpbHSUSwKMC19fdmVyc2lvbl9flEsBdS4=
+</properties>
+		<properties node_id="4" format="literal">{'autocommit': True, 'context_width': 5, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02\xdc\x00\x00\x01P\x00\x00\x05\xa4\x00\x00\x03b\x00\x00\x02\xdd\x00\x00\x01n\x00\x00\x05\xa3\x00\x00\x03a\x00\x00\x00\x00\x00\x00\x00\x00\x08\x92\x00\x00\x02\xdd\x00\x00\x01n\x00\x00\x05\xa3\x00\x00\x03a', 'selected_rows': [], '__version__': 1, 'context_settings': []}</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>

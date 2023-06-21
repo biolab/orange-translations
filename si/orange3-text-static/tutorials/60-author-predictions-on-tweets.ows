@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="Napovedovanje avtorja iz vsebine tvita" description="Ali se vsebina na Twitterju razlikuje glede na avtorje? Ali lahko na podlagi vsebine razločimo, kdo je napisal tvit?&#10;&#10;Ta primer prikazuje, kako naložiti tvite dveh glavnih kandidatov za predsedniške volitve v ZDA leta 2016. Po predprocesiranju in obdelavi z vrečo besed, vrednotimo različne učne modele v prečnem preverjanju.&#10;&#10;&#10;Namesto nalaganja tvitov volivcev, bi lahko uporabili gradnik Twitter za nalaganje tvitov za poljuben nabor avtorjev.">
+	<nodes>
+		<node id="0" name="Korpus" qualified_name="orangecontrib.text.widgets.owcorpus.OWCorpus" project_name="Orange3-Text" version="" title="Korpus" position="(104.0, 217.0)" />
+		<node id="1" name="Predprocesiranje besedila" qualified_name="orangecontrib.text.widgets.owpreprocess.OWPreprocess" project_name="Orange3-Text" version="" title="Predprocesiranje besedila" position="(262.0, 292.0)" />
+		<node id="2" name="Vreča besed" qualified_name="orangecontrib.text.widgets.owbagofwords.OWTBagOfWords" project_name="Orange3-Text" version="" title="Vreča besed" position="(395.0, 195.0)" />
+		<node id="3" name="Vzorčenje" qualified_name="Orange.widgets.data.owdatasampler.OWDataSampler" project_name="Orange3" version="" title="Vzorčenje" position="(577.0, 172.0)" />
+		<node id="4" name="Testiraj in meri" qualified_name="Orange.widgets.evaluate.owtestandscore.OWTestAndScore" project_name="Orange3" version="" title="Testiraj in meri" position="(798.0, 208.0)" />
+		<node id="5" name="Konstanta" qualified_name="Orange.widgets.model.owconstant.OWConstant" project_name="Orange3" version="" title="Konstanta" position="(473.0, 319.0)" />
+		<node id="6" name="Naivni Bayes" qualified_name="Orange.widgets.model.ownaivebayes.OWNaiveBayes" project_name="Orange3" version="" title="Naivni Bayes" position="(528.0, 394.0)" />
+		<node id="7" name="Naključni gozd" qualified_name="Orange.widgets.model.owrandomforest.OWRandomForest" project_name="Orange3" version="" title="Naključni gozd" position="(583.0, 474.0)" />
+		<node id="8" name="Logistična regresija" qualified_name="Orange.widgets.model.owlogisticregression.OWLogisticRegression" project_name="Orange3" version="" title="Logistična regresija" position="(634.0, 568.0)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="0" sink_node_id="1" source_channel="Korpus" sink_channel="Korpus" enabled="true" source_channel_id="corpus" sink_channel_id="corpus" />
+		<link id="1" source_node_id="1" sink_node_id="2" source_channel="Korpus" sink_channel="Korpus" enabled="true" source_channel_id="corpus" sink_channel_id="corpus" />
+		<link id="2" source_node_id="2" sink_node_id="3" source_channel="Korpus" sink_channel="Podatki" enabled="true" source_channel_id="corpus" sink_channel_id="data" />
+		<link id="3" source_node_id="3" sink_node_id="4" source_channel="Vzorec podatkov" sink_channel="Podatki" enabled="true" source_channel_id="data_sample" sink_channel_id="train_data" />
+		<link id="4" source_node_id="5" sink_node_id="4" source_channel="Učni algoritem" sink_channel="Algoritmi učenja" enabled="true" source_channel_id="learner" sink_channel_id="learner" />
+		<link id="5" source_node_id="6" sink_node_id="4" source_channel="Učni algoritem" sink_channel="Algoritmi učenja" enabled="true" source_channel_id="learner" sink_channel_id="learner" />
+		<link id="6" source_node_id="7" sink_node_id="4" source_channel="Učni algoritem" sink_channel="Algoritmi učenja" enabled="true" source_channel_id="learner" sink_channel_id="learner" />
+		<link id="7" source_node_id="8" sink_node_id="4" source_channel="Učni algoritem" sink_channel="Algoritmi učenja" enabled="true" source_channel_id="learner" sink_channel_id="learner" />
+		<link id="8" source_node_id="1" sink_node_id="5" source_channel="Korpus" sink_channel="Podatki" enabled="true" source_channel_id="corpus" sink_channel_id="data" />
+		<link id="9" source_node_id="1" sink_node_id="6" source_channel="Korpus" sink_channel="Podatki" enabled="true" source_channel_id="corpus" sink_channel_id="data" />
+		<link id="10" source_node_id="1" sink_node_id="7" source_channel="Korpus" sink_channel="Podatki" enabled="true" source_channel_id="corpus" sink_channel_id="data" />
+		<link id="11" source_node_id="1" sink_node_id="8" source_channel="Korpus" sink_channel="Podatki" enabled="true" source_channel_id="corpus" sink_channel_id="data" />
+	</links>
+	<annotations>
+		<arrow id="0" start="(94.00000000000006, 364.0)" end="(102.00000000000006, 279.0)" fill="#C1272D" />
+		<text id="1" type="text/plain" rect="(37.0, 367.0, 151.0, 52.0)" font-family="Helvetica" font-size="16">Naloži volilne tvite Donalda in Hillary.</text>
+		<arrow id="2" start="(241.0, 146.0)" end="(256.00000000000006, 249.99999999999997)" fill="#C1272D" />
+		<text id="3" type="text/plain" rect="(147.0, 30.0, 194.0, 116.0)" font-family="Helvetica" font-size="16">Predprocesiranje tvitov; ohrani le 250 najpogostejših členov. Ali dodajanje večjega števila izboljša uspešnost?</text>
+		<arrow id="4" start="(806.0, 107.99999999999994)" end="(803.0, 168.99999999999997)" fill="#C1272D" />
+		<text id="5" type="text/plain" rect="(732.0, 33.0, 132.0, 95.0)" font-family="Helvetica" font-size="16">Opazuj, kako natančni smo pri napovedovanju avtorja.</text>
+		<text id="6" type="text/plain" rect="(326.0, 503.0, 108.0, 72.0)" font-family="Helvetica" font-size="16">Prdobi nekaj modelov za vrednotenje.</text>
+		<arrow id="7" start="(441.0, 558.0)" end="(578.0, 575.0)" fill="#C1272D" />
+		<arrow id="8" start="(433.0, 507.0)" end="(497.0, 454.0)" fill="#C1272D" />
+		<text id="9" type="text/plain" rect="(496.0, 13.0, 174.0, 51.0)" font-family="Helvetica" font-size="16">Vzorčenje podatkov za hitrejše vrednotenje.</text>
+		<arrow id="10" start="(576.0, 66.99999999999997)" end="(577.0000000000001, 138.99999999999991)" fill="#C1272D" />
+		<arrow id="11" start="(381.0, 496.0)" end="(440.99999999999994, 357.0)" fill="#C1272D" />
+		<arrow id="12" start="(444.0, 531.0)" end="(530.0, 497.0)" fill="#C1272D" />
+	</annotations>
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="pickle">gASVaAMAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjAxyZWNlbnRfZmlsZXOUXZQojBhl
+bGVjdGlvbi10d2VldHMtMjAxNi50YWKUjBhncmltbS10YWxlcy1zZWxlY3RlZC50YWKUjBFib29r
+LWV4Y2VycHRzLnRhYpSMF2ZyaWVuZHMtdHJhbnNjcmlwdHMudGFilIwMYW5kZXJzZW4udGFilGWM
+E3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAAwkAAAFlAAAFigAAA2MAAAMKAAABgwAA
+BYkAAANiAAAAAAAAAAAIkgAAAwoAAAGDAAAFiQAAA2KUjAtfX3ZlcnNpb25fX5RLAYwQY29udGV4
+dF9zZXR0aW5nc5RdlCiMFW9yYW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiM
+BnZhbHVlc5R9lCiMCGxhbmd1YWdllIwHRW5nbGlzaJRK/v///4aUjA50aXRsZV92YXJpYWJsZZSM
+B0NvbnRlbnSUS2eGlIwKdXNlZF9hdHRyc5RdlGgZS2eGlGFK/f///4aUaAtLAXWMCmF0dHJpYnV0
+ZXOUfZQojApJcyByZXR3ZWV0lEsBjARUaW1llEsEjAhMYW5ndWFnZZRLAYwNUmV0d2VldCBjb3Vu
+dJRLAowORmF2b3JpdGUgY291bnSUSwKMCUxvbmdpdHVkZZRLAowITGF0aXR1ZGWUSwKMBkF1dGhv
+cpRLAXWMBW1ldGFzlH2UKIwKU291cmNlIFVSTJRLA4wHQ29udGVudJRLA4wPT3JpZ2luYWwgYXV0
+aG9ylEsDjAVQbGFjZZRLA3WMDmRvY3VtZW50c19oYXNolIoQgK7GwKjpk9KtOhM/x8AFf4wIbGFu
+Z3VhZ2WUjAJlbpR1YmgQKYGUfZQoaBN9lChoFYwHRW5nbGlzaJRK/v///4aUaBiMBVRpdGxllEtn
+hpRoG12UjAdDb250ZW50lEtnhpRhSv3///+GlGgLSwF1aB99lIwJQVRVIFRvcGljlEsBc2gpfZQo
+aDdLA4wIQWJzdHJhY3SUSwNoOksDjA1BVFUgTnVtZXJpY2FslEsDjAhBVFUgVHlwZZRLAXVoL4oQ
+tbbuufWD7EfG7G9xdmYXO2gwjAJlbpR1YmV1Lg==
+</properties>
+		<properties node_id="1" format="pickle">gASVTgMAAAAAAAB9lCiMCmF1dG9jb21taXSUiIwSY29udHJvbEFyZWFWaXNpYmxllIiME3NhdmVk
+V2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAANIAAAE5AAADuwAAAxgAAADSAAABOQAAA7sAAAMY
+AAAAAAAAAAAIkgAAANIAAAE5AAADuwAAAxiUjA5zdG9yZWRzZXR0aW5nc5R9lCiMBG5hbWWUjACU
+jA1wcmVwcm9jZXNzb3JzlF2UKIwUcHJlcHJvY2Vzcy50cmFuc2Zvcm2UfZSMB21ldGhvZHOUXZRL
+AGFzhpSME3ByZXByb2Nlc3MudG9rZW5pemWUfZQojAZtZXRob2SUSwSMB3BhdHRlcm6UjANcdyuU
+dYaUjBFwcmVwcm9jZXNzLmZpbHRlcpR9lCiMB2Fic19lbmSUSwqMCWFic19zdGFydJRLAYwJZnJl
+cV90eXBllEsAjAhpbmNsX251bZSJjAtpbnZhbGlkYXRlZJSJjAhsYW5ndWFnZZSMB0VuZ2xpc2iU
+jAdseF9saXN0lF2UjB5vcmFuZ2V3aWRnZXQudXRpbHMuZmlsZWRpYWxvZ3OUjApSZWNlbnRQYXRo
+lJOUKYGUfZQojAdhYnNwYXRolIwUQzovVXNlcnMvQW5qYS8obm9uZSmUjAZwcmVmaXiUTowHcmVs
+cGF0aJROjAV0aXRsZZRoCIwFc2hlZXSUaAiMC2ZpbGVfZm9ybWF0lE51YmGMB2x4X3BhdGiUTowH
+bWV0aG9kc5RdlChLAEsCSwNLBGWMCG5fdG9rZW5zlEv6jAdwYXR0ZXJulIxPXC58LHw6fDt8IXxc
+P3xcKHxcKXxcfHxcK3wnfCJ84oCYfOKAmXzigJx84oCdfCd8XOKAmXzigKZ8XC184oCTfOKAlHxc
+JHwmfFwqfD58PJSMCHBvc190YWdzlIwJTk9VTixWRVJClIwHcmVsX2VuZJRHP+zMzMzMzM2MCXJl
+bF9zdGFydJRHP7mZmZmZmZqMB3N3X2xpc3SUXZRoIymBlH2UKGgmjBRDOi9Vc2Vycy9BbmphLyhu
+b25lKZRoKE5oKU5oKmgIaCtoCGgsTnViYYwHc3dfcGF0aJROdYaUZXWMC19fdmVyc2lvbl9flEsD
+dS4=
+</properties>
+		<properties node_id="2" format="literal">{'autocommit': True, 'controlAreaVisible': True, 'hidden_cb': True, 'normalization': '(None)', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x03\xf0\x00\x00\x01\xdd\x00\x00\x04\xa1\x00\x00\x02\xb0\x00\x00\x03\xf1\x00\x00\x01\xfb\x00\x00\x04\xa0\x00\x00\x02\xaf\x00\x00\x00\x00\x00\x00\x00\x00\x08\x92\x00\x00\x03\xf1\x00\x00\x01\xfb\x00\x00\x04\xa0\x00\x00\x02\xaf', 'wglobal': '(None)', 'wlocal': 'Count', '__version__': 1}</properties>
+		<properties node_id="3" format="literal">{'compatibility_mode': False, 'controlAreaVisible': True, 'number_of_folds': 10, 'replacement': False, 'sampleSizeNumber': 1, 'sampleSizePercentage': 20, 'sampleSizeSqlPercentage': 0.1, 'sampleSizeSqlTime': 1, 'sampling_type': 0, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x03-\x00\x00\x00\xb8\x00\x00\x03\xe7\x00\x00\x02\x17\x00\x00\x03.\x00\x00\x00\xd6\x00\x00\x03\xe6\x00\x00\x02\x16\x00\x00\x00\x00\x00\x00\x00\x00\x08\x92\x00\x00\x03.\x00\x00\x00\xd6\x00\x00\x03\xe6\x00\x00\x02\x16', 'selectedFold': 1, 'sql_dl': False, 'stratify': True, 'use_seed': True, '__version__': 2}</properties>
+		<properties node_id="4" format="pickle">gASVIQQAAAAAAAB9lCiMFGNvbXBhcmlzb25fY3JpdGVyaW9ulEsAjBJjb250cm9sQXJlYVZpc2li
+bGWUiIwNY3Zfc3RyYXRpZmllZJSIjAduX2ZvbGRzlEsDjAluX3JlcGVhdHOUSwOMCnJlc2FtcGxp
+bmeUSwCMBHJvcGWURz+5mZmZmZmajAtzYW1wbGVfc2l6ZZRLCYwTc2F2ZWRXaWRnZXRHZW9tZXRy
+eZRDQgHZ0MsAAwAAAAAB9gAAAT8AAAUBAAADMgAAAfYAAAE/AAAFAQAAAzIAAAAAAAAAAAiSAAAB
+9gAAAT8AAAUBAAADMpSMEnNodWZmbGVfc3RyYXRpZmllZJSIjAh1c2Vfcm9wZZSJjAtzY29yZV90
+YWJsZZR9lIwQc2hvd19zY29yZV9oaW50c5R9lCiMBk1vZGVsX5SIjAZUcmFpbl+UiYwFVGVzdF+U
+iYwCQ0GUiIwXUHJlY2lzaW9uUmVjYWxsRlN1cHBvcnSUiIwLVGFyZ2V0U2NvcmWUiIwJUHJlY2lz
+aW9ulIiMBlJlY2FsbJSIjAJGMZSIjANBVUOUiIwHTG9nTG9zc5SJjAtTcGVjaWZpY2l0eZSJjBdN
+YXR0aGV3c0NvcnJDb2VmZmljaWVudJSIjANNU0WUiIwEUk1TRZSIjANNQUWUiIwCUjKUiIwGQ1ZS
+TVNFlImMD0NsdXN0ZXJpbmdTY29yZZSIjApTaWxob3VldHRllIiMF0FkanVzdGVkTXV0dWFsSW5m
+b1Njb3JllIh1c4wLX192ZXJzaW9uX1+USwSMEGNvbnRleHRfc2V0dGluZ3OUXZSMFW9yYW5nZXdp
+ZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVlc5R9lCiMD2NsYXNzX3NlbGVj
+dGlvbpSMJyhCcmV6LCBwb2thxb5pIHBvcHJlxI1qZSBwcmVrIHJhenJlZG92KZRK/////4aUjAxm
+b2xkX2ZlYXR1cmWUTkr+////hpSMFWZvbGRfZmVhdHVyZV9zZWxlY3RlZJSJSv7///+GlGgNfZRo
+JksEdYwKYXR0cmlidXRlc5QojApJcyByZXR3ZWV0lEsBhpSMBFRpbWWUSwSGlIwITGFuZ3VhZ2WU
+SwGGlIwNUmV0d2VldCBjb3VudJRLAoaUjA5GYXZvcml0ZSBjb3VudJRLAoaUjAlMb25naXR1ZGWU
+SwKGlIwITGF0aXR1ZGWUSwKGlIwHaGlsbGFyeZRLAoaUjAV0cnVtcJRLAoaUdJSMBW1ldGFzlCiM
+ClNvdXJjZSBVUkyUSwOGlIwHQ29udGVudJRLA4aUjA9PcmlnaW5hbCBhdXRob3KUSwOGlIwFUGxh
+Y2WUSwOGlHSUjApjbGFzc192YXJzlIwGQXV0aG9ylEsBhpSFlHViYXUu
+</properties>
+		<properties node_id="5" format="literal">{'auto_apply': True, 'controlAreaVisible': True, 'learner_name': 'Konstanta', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x04\x0b\x00\x00\x02!\x00\x00\x04\x87\x00\x00\x02\x89\x00\x00\x04\x0b\x00\x00\x02!\x00\x00\x04\x87\x00\x00\x02\x89\x00\x00\x00\x00\x00\x00\x00\x00\x08\x92\x00\x00\x04\x0b\x00\x00\x02!\x00\x00\x04\x87\x00\x00\x02\x89', '__version__': 1}</properties>
+		<properties node_id="6" format="literal">{'auto_apply': True, 'controlAreaVisible': True, 'learner_name': 'Naivni Bayes', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x04\n\x00\x00\x02\x03\x00\x00\x04\x88\x00\x00\x02\x8a\x00\x00\x04\x0b\x00\x00\x02!\x00\x00\x04\x87\x00\x00\x02\x89\x00\x00\x00\x00\x00\x00\x00\x00\x08\x92\x00\x00\x04\x0b\x00\x00\x02!\x00\x00\x04\x87\x00\x00\x02\x89', '__version__': 1}</properties>
+		<properties node_id="7" format="literal">{'auto_apply': True, 'class_weight': False, 'controlAreaVisible': True, 'index_output': 0, 'learner_name': 'Naključni gozd', 'max_depth': 3, 'max_features': 5, 'min_samples_split': 5, 'n_estimators': 10, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02\xc3\x00\x00\x01\xfa\x00\x00\x03\xca\x00\x00\x03\x0c\x00\x00\x02\xc3\x00\x00\x01\xfa\x00\x00\x03\xca\x00\x00\x03\x0c\x00\x00\x00\x00\x00\x00\x00\x00\x08\x92\x00\x00\x02\xc3\x00\x00\x01\xfa\x00\x00\x03\xca\x00\x00\x03\x0c', 'use_max_depth': False, 'use_max_features': False, 'use_min_samples_split': True, 'use_random_state': False, '__version__': 1}</properties>
+		<properties node_id="8" format="literal">{'C_index': 61, 'auto_apply': True, 'class_weight': False, 'controlAreaVisible': True, 'learner_name': 'Logistična regresija', 'penalty_type': 1, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02\x8a\x00\x00\x01\xf7\x00\x00\x03&lt;\x00\x00\x02\xed\x00\x00\x02\x8b\x00\x00\x02\x15\x00\x00\x03;\x00\x00\x02\xec\x00\x00\x00\x00\x00\x00\x00\x00\x08\x92\x00\x00\x02\x8b\x00\x00\x02\x15\x00\x00\x03;\x00\x00\x02\xec', '__version__': 2}</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>
