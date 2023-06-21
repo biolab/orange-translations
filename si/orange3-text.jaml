@@ -2673,15 +2673,8 @@ topics/topics.py:
         bow-feature: false
     class `GensimWrapper`:
         def `fit`:
-            chunk_number: false
-            chunk_number is deprecated and will be removed in orange3-text 1.7: false
             callbacks: false
             Topic {}: Tema {}
-        def `reset_model`:
-            'reset_model is deprecated and will be removed in orange3-text 1.7. ': false
-            Model resets with calling fit.: false
-        def `update`:
-            update is deprecated and will be removed in orange3-text 1.7.: false
         def `get_topics_table_by_id`:
             Too large topic ID.: false
             Topic {} weights: Uteži teme {}
@@ -4479,7 +4472,7 @@ hr {{
                 ' ': false
     class `OWSemanticViewer`:
         Semantic Viewer: Semantični pregledovalnik
-        Infers characteristic words from the input corpus.: false
+        Find documents and parts of documents semantically similar to input words: Iskanje dokumentov in delov dokumentov, ki so semantično podobni vhodnim besedam
         icons/SemanticViewer.svg: false
         semantic viewer, search: semantic viewer, search, iskanje, pregledovalnik, semantika
         class `Inputs`:
@@ -4657,9 +4650,9 @@ widgets/owstatistics.py:
         def `_init_controls`:
             Apply: Uveljavi
         def `_init_statistics_box`:
-            +: false
             Feature: Spremenljivka
             Pattern: Vzorec
+            +: false
         def `adjust_n_rule_rows`:
             def `_add_line`:
                 ×: false

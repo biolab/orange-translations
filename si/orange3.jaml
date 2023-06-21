@@ -2054,6 +2054,7 @@ evaluation/scoring.py:
     MSE: false
     RMSE: false
     MAE: false
+    MAPE: false
     R2: false
     LogLoss: false
     MatthewsCorrCoefficient: false
@@ -2111,6 +2112,9 @@ evaluation/scoring.py:
     class `MAE`:
         MAE: true
         Mean absolute error: Povprečna absolutna napaka
+    class `MAPE`:
+        MAPE: true
+        Mean absolute percentage error: Povprečna absolutna odstotna napaka
     class `R2`:
         R2: true
         # Je to OK?
@@ -6164,6 +6168,7 @@ widgets/data/owgroupby.py:
         class `Error`:
             {}: false
         def `__init_control_area`:
+            gb_attrs: false
             Group by: Združi po
             auto_commit: false
         def `__init_main_area`:
