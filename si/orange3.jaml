@@ -5420,9 +5420,11 @@ widgets/data/oweditdomain.py:
         def `__init__`:
             Key: Ime oznake
             Value: Vrednost
-    class `VariableEditor`:
+    class `BaseEditor`:
         def `__init__`:
             editor-form-layout: false
+    class `VariableEditor`:
+        def `__init__`:
             name-editor: false
             Name:: Ime:
             Unlink variable from its source variable: Prekini povezavo z izvorno spremenljivko
@@ -5509,11 +5511,11 @@ widgets/data/oweditdomain.py:
             Merge infrequent: Združi redke
             Values:: Vrednosti:
         def `set_data_categorical`:
-            'invalid mapping: {!r}': false
+            'invalid mapping: {tr.mapping}': false
         def `get_data`:
             {mapping}, {var}: false
         def `_remove_category`:
-            invalid state '{}' for {}: false
+            invalid state '{state}' for {index.row()}: false
         def `_merge_categories`:
             Import Options: Združevanje
     class `TimeVariableEditor`:
@@ -5526,7 +5528,7 @@ widgets/data/oweditdomain.py:
         string: besedilno
         time: časovno
         def `initStyleOption`:
-            {} \N{RIGHTWARDS ARROW} {}: false
+            {var.name} \N{RIGHTWARDS ARROW} {tr.name}: false
             ' (reinterpreted as ': ' (pretolmačena v '
             {self.ReinterpretNames[type(tr)]}): true
         def `helpEvent`:
@@ -5539,10 +5541,15 @@ widgets/data/oweditdomain.py:
                 Numeric: Številska
                 Text: Besedilna
                 Time: Časovna
+                (Restore original): (Obnovi izvorno)
                 Type:: Vrsta:
-        def `set_data`:
+        def `_set_data_single`:
             type-combo: false
-        def `__reinterpret_activated`:
+        def `_set_data_multi`:
+            type-combo: false
+        def `__reinterpret_activated_single`:
+            type-combo: false
+        def `__reinterpret_activated_multi`:
             type-combo: false
     class `OWEditDomain`:
         Edit Domain: Uredi domeno
@@ -5570,12 +5577,12 @@ widgets/data/oweditdomain.py:
             button-apply: false
             Apply changes and commit data on output.: Potrdi spremembe in pošlji podatke na izhod.
         def `_restore_transform`:
-            'Failed to restore transform: {}, {!r}': false
+            'Failed to restore transform: {t}, {err}': false
         def `_set_modified`:
             button-apply: false
         def `send_report`:
             <ul>: false
-            <li>{}</li>: false
+            <li>{part}</li>: false
             </ul>: false
             No changes: Ni sprememb
         def `migrate_context`:
@@ -5613,13 +5620,14 @@ widgets/data/oweditdomain.py:
         def `type_char`:
             ?: false
         def `strike`:
-            <s>{}</s>: false
+            <s>{escape(text)}</s>: false
         def `i`:
-            <i>{}</i>: false
+            <i>{escape(text)}</i>: false
         def `text`:
-            <span>{}</span>: false
-        {} → ({}) {}: false
-        {} → {}: false
+            <span>{escape(text)}</span>: false
+        '{var.name} → ({type_char(reinterpret)}) ': false
+        {rename.name if rename is not None else var.name}: false
+        {var.name} → {rename.name}: false
         (unlinked from source): (odvezana od vira)
         Values: Vrednosti
         &nbsp;: false
@@ -5630,8 +5638,8 @@ widgets/data/oweditdomain.py:
         ' : ': true
         </s>: true
         (new): (nova)
-        "<div style='font-weight: bold;'>{}</div>": false
-        <div>{}:</div>: false
+        "<div style='font-weight: bold;'>{header}</div>": false
+        <div>{title}:</div>: false
         <br/>\n: false
         "<div style='padding-left: 1em;'>": false
         </div>: false
@@ -5639,7 +5647,7 @@ widgets/data/oweditdomain.py:
     def `abstract`:
         f: false
     def `_parse_attributes`:
-        {}={}: false
+        {item[0]}={item[1]}: false
     nan: false
     def `as_float_or_nan`:
         unsafe: false
