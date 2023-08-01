@@ -1143,9 +1143,21 @@ application/widgettoolbox.py:
             application/vnd.orange-canvas.registry.qualified-name: false
             utf-8: false
     class `WidgetToolBox`:
+        def `__init__`:
+            Search.svg: false
+            Search: Iskanje
+            filter-edit-line: false
+            Filter...: Filtriranje...
+            Filter/search the list of available widgets.: Filtriranje/iskanje po seznamu razpoložljivih gradnikov.
+            Open all: Odpri vse
+            Close all: Zapri vse
         def `__insertItem`:
             tab-title: false
             widgets-toolbox-grid: false
+        def `__openAllTabsForFilter`:
+            '!__exclusive': false
+        def `__restoreAllTabsForFilter`:
+            '!__exclusive': false
 application/utils/addons.py:
     https://pypi.org/pypi/{name}/json: false
     A: false
@@ -1801,9 +1813,6 @@ document/quickmenu.py:
     class `SortFilterProxyModel`:
         def `setFilterFunc`:
             A callable object or None expected.: false
-        def `filterAcceptsRow`:
-            '-': false
-            ' ': false
         def `lessThan`:
             ' ': false
     class `SearchWidget`:
@@ -2853,6 +2862,9 @@ registry/utils.py:
         BACKGROUND: false
         HIDDEN: false
         prototypes: false
+    def `search_filter_query_helper`:
+        '-': false
+        ' ': false
 registry/tests/__init__.py:
     def `make_module`:
         '{}.{}': false
