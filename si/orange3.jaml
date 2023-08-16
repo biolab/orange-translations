@@ -2811,6 +2811,13 @@ projection/base.py:
         projection: false
         def `fit`:
             Classes derived from Projector must overload method fit: false
+        def `__call__`:
+            Preprocessing...: Predprocesiranje...
+            "A keyword argument 'progress_callback' has been ": false
+            'added to the preprocess() signature. Implementing ': false
+            'the method without the argument is deprecated and ': false
+            will result in an error in the future.: false
+            Fitting...: Prileganje...
         def `__getstate__`:
             _Projector__tls: false
     class `DomainProjection`:
