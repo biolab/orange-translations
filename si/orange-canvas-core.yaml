@@ -1148,7 +1148,8 @@ application/widgettoolbox.py:
             Search: Iskanje
             filter-edit-line: false
             Filter...: Filtriranje...
-            Filter/search the list of available widgets.: Filtriranje/iskanje po seznamu razpoložljivih gradnikov.
+            Filter/search the list of available widgets.: Filtriranje/iskanje po seznamu
+                razpoložljivih gradnikov.
             Open all: Odpri vse
             Close all: Zapri vse
         def `__insertItem`:
