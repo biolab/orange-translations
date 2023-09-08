@@ -919,6 +919,8 @@ utils/filedialogs.py:
         Change extension to {suggested_ext}: Spremeni končnico v {suggested_ext}
         'Save as ': 'Shrani kot '
         Back: Nazaj
+    def `unambiguous_paths`:
+        '{sep}|{re.escape(os.path.altsep)}': false
     def `format_filter`:
         '{} (*{})': false
         ' *': false

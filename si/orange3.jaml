@@ -3998,6 +3998,8 @@ tests/sql/test_sql_table.py:
             iris: false
         def `test_pickling_restores_connection_pool`:
             postgres: false
+        def `test_pickling_respects_downloaded_state`:
+            postgres: false
         def `test_list_tables_with_schema`:
             postgres: false
             DROP SCHEMA IF EXISTS orange_tests CASCADE: false
@@ -8522,9 +8524,6 @@ widgets/data/utils/pythoneditor/vim.py:
             \n: false
         def `cmdCompositeDelete`:
             gg: false
-widgets/data/utils/pythoneditor/tests/base.py:
-    class `SimpleWidget`:
-        Simple widget: false
 widgets/data/utils/pythoneditor/tests/run_all.py:
     __main__: false
     .: false
@@ -8979,6 +8978,8 @@ widgets/evaluate/owpredictions.py:
             {probs} → {{value!s}}: true
             {value!s}: false
             p({', '.join(tooltip_probabilities)}): true
+        def `sizeHint`:
+            {x}.{x}{x}: false
     class `ErrorDelegate`:
         def `sizeHint`:
             X: false
@@ -9956,7 +9957,6 @@ widgets/model/owrules.py:
         entropy: entropija
         laplace: Laplacova natančnost
         wracc: WRACC
-        CN2 rule inducer: Odločitvena pravila
         def `add_main_layout`:
             Rule ordering: Urejenost pravil
             rule_ordering: false
@@ -10054,7 +10054,6 @@ widgets/model/owsgd.py:
         optimal: false
         Inverse scaling: Inverzno skaliranje
         invscaling: false
-        SGD: Stohastični gradientni spust
         def `_add_algorithm_to_layout`:
             Loss functions: Funkcije izgube
             cls_loss_function_index: false
@@ -11420,12 +11419,12 @@ widgets/unsupervised/owpca.py:
         def `commit`:
             variance: false
             components: komponente
-            PC{}: Komp{}
+            PC{i + 1}: Komp{i + 1}
         def `send_report`:
             Normalize data: Normiranje podatkov
             Selected components: Število komponent
             Explained variance: Razložena varianca
-            {:.3f} %: false
+            {self.variance_covered:.3f} %: false
         def `migrate_settings`:
             variance_covered: false
             ncomponents: false
@@ -11465,6 +11464,9 @@ widgets/unsupervised/owsavedistances.py:
     __main__: false
     iris: false
 widgets/unsupervised/owsom.py:
+    class `SomSharedValueCompute`:
+        def `__getstate__`:
+            __hash: false
     class `OWSOM`:
         Self-Organizing Map: SOM
         Computation of self-organizing map.: Samodejni zemljevid.
@@ -11483,7 +11485,7 @@ widgets/unsupervised/owsom.py:
         initialization: false
         start: false
         class `Information`:
-            'The parameter settings have been changed. Press "Start" to ': 'Parametri so bili spremenjeni. Pritisnite "Ponovno poženi", da '
+            'The parameter settings have been changed. Press "Start" to ': 'Parametri so bili spremenjeni. Pritisnite "Začni", da '
             rerun with the new settings.: zaženete z novimi nastavitvami.
         class `Warning`:
             SOM ignores categorical variables.: SOM ne upošteva kategoričnih spremenljivk.
@@ -11540,7 +11542,14 @@ widgets/unsupervised/owsom.py:
             ': false
             </table>: false
         def `update_output`:
-            Group: Skupina
+            som_cell: false
+            r{row + 1}c{col + 1}: false
+            som_row: false
+            som_col: false
+            som_error: false
+            Unselected: Neizbrani
+            No: Ne
+            Yes: Da
         def `_bin_names`:
             < {labels[0]}: true
             {x} - {y}: true
@@ -11687,10 +11696,13 @@ widgets/utils/__init__.py:
 widgets/utils/annotated_data.py:
     Data: Podatki
     Selected: Izbrani podatki
+    def `domain_with_annotation_column`:
+        No: Ne
+        Yes: Da
     def `create_annotated_table`:
         No: Ne
         Yes: Da
-    def `create_groups_table`:
+    def `group_values`:
         G{}: true
         Unselected: Neizbrani
 widgets/utils/buttons.py:
@@ -12423,26 +12435,23 @@ widgets/utils/state_summary.py:
         {sum(counts)} ({", ".join(var_string)}): false
         {counts[0]} {attrs[0]}: {counts[0]} {plsi(counts[0], dict(kategorična="kategorična|kategorični|kategorične|kategoričnih", številska="številska|številski|številske|številskih", besedilna="besedilna|besedilni|besedilne|besedilnih", časovna="časovna|časovni|časovne|časovnih")[attrs[0]])}
     def `format_summary_details`:
-        def `b`:
-            <b>{s}</b>: false
         name: false
         untitled: nepoimenovano
         '{len(data):n} {pl(len(data), "instance")}, ': '{len(data):n} {plsi(len(data), "primer")}, '
         {n_features} {pl(n_features, "variable")}: {n_features} {plsi(n_features, "spremenljivka")}
-        # Tole mora biti prevedeno v ženski spol, ker format_variables_string
-        # vrača pridevnike v ženskem spolu; lahko gre vse v moški spol,
-        # samo da je povsod enak in da format_variables_string vrača tak spol...
-        'Features: {features} {features_missing}': Spremenljivke: {features} {features_missing}
+        'Features: {features}{features_missing}': Spremenljivke: {features} {features_missing}
         'Target: {targets}': Ciljna spremenljivka: {targets}
         'Metas: {metas}': Meta: {metas}
         '{name}: ': true
+        'Table with ': null
         {basic}\n{features}\n{targets}: true
         \n{metas}: true
         '<b><u>{escape(name)}</u></b>: {basic}': true
+        Table with {basic}: null
         <br/>: false
     def `missing_values`:
-        ({value*100:.1f}% missing values): ({value*100:.1f}% manjkajočih vrednosti)
-        (no missing values): (brez manjkajočih vrednosti)
+        ' ({value*100:.1f}% missing values)': ({value*100:.1f}% manjkajočih vrednosti)
+        ' (no missing values)': (brez manjkajočih vrednosti)
     def `format_multiple_summaries`:
         input: vhodu
         def `new_line`:
@@ -12455,6 +12464,12 @@ widgets/utils/state_summary.py:
         name: false
     def `_nobr`:
         <nobr>{s}</nobr>: false
+    def `summarize_table`:
+        length: false
+        ?: false
+        missing: false
+        domain: false
+        data available, but not prepared yet: false
     def `summarize_matrix`:
         {w}×{h}: false
         {w}×{h} distance matrix: {w}×{h} matrika razdalj
