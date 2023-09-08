@@ -24,14 +24,6 @@ annotate_documents.py:
     \n: false
     \n\n{label_ + 1}: false
     center: false
-concave_hull.py:
-    def `_get_shape_around_points`:
-        inf: false
-    def `compute_concave_hulls`:
-        Embedding must have two columns: Vložitev mora imeti dva stolpca
-    __main__: false
-    iris: false
-    o: false
 corpus.py:
     def `get_sample_corpora_dir`:
         datasets: false
@@ -72,6 +64,11 @@ corpus.py:
             language: false
         def `documents_from_features`:
             ' ': false
+        def `store_tokens`:
+            dictionary argument is deprecated and doesn't have effect.: false
+            It will be removed in future orange3-text 1.15.: false
+        def `dictionary`:
+            dictionary is deprecated and will be removed in Orange3-text 1.15: false
         def `ngrams_iterator`:
             _: false
         def `from_documents`:
@@ -88,8 +85,8 @@ corpus.py:
         def `retain_preprocessing`:
             Indexing by type {} not supported.: false
     def `summarize_corpus`:
-        '<br/><nobr>Tokens: {sum(map(len, corpus.tokens))}, ': '<br/><nobr>Število členov: {sum(map(len, corpus.tokens))}, '
-        'Types: {len(corpus.dictionary)}</nobr>': Število različnih členov: {len(corpus.dictionary)}</nobr>
+        '<br/><nobr>Tokens: {corpus.count_tokens()}, ': '<br/><nobr>Število členov: {corpus.count_tokens()}, '
+        'Types: {corpus.count_unique_tokens()}</nobr>': Število različnih členov: {corpus.count_unique_tokens()}</nobr>
         <br/><nobr>Corpus is not preprocessed</nobr>: <br/><nobr>Korpus ni predprocesiran</nobr>
         not set: false
         '<br/><nobr>Language: {language}</nobr>': <br/><nobr>Jezik: {language}</nobr>
@@ -1865,6 +1862,8 @@ ontology.py:
     class `FitnessFunction`:
         def `score`:
             ' ': false
+    class `OntologyHandler`:
+        <R-O-O-T>: false
 pubmed.py:
     http://www.ncbi.nlm.nih.gov/pubmed/?term=: false
     authors: false
@@ -2164,6 +2163,32 @@ wikipedia_api.py:
         query: false
         def `search`:
             Wikipedia: Wikipedija
+hull/cluster_hull.py:
+    def `compute_hulls`:
+        Embedding must have two columns: Vložitev mora imeti dva stolpca
+    __main__: false
+    iris: false
+    o: false
+hull/concave_hull.py:
+    def `_handle_special_cases`:
+        euclidean: false
+    __main__: false
+    Hull computed in: false
+    s: false
+    o: false
+hull/alphashape/alphashape.py:
+    alphashape: false
+    def `alphasimplices`:
+        'Singular matrix. Likely caused by all points ': false
+        lying in an N-1 space.: false
+hull/alphashape/optimizealpha.py:
+    optimizealpha: false
+    def `optimizealpha`:
+        The lower bounds must be at least 0: Spodnje meje morajo biti vsaj 0
+        'The upper bounds must be less than or equal to {sys.float_info.max} ': 'Zgornje meje morajo biti manjše ali enake {sys.float_info.max} '
+        on your system: na vašem sistemu
+        'maximum allowed iterations reached while ': false
+        optimizing the alpha parameter: false
 keywords/__init__.py:
     Arabic: false
     ar: false
@@ -3607,6 +3632,8 @@ widgets/owimportdocuments.py:
             Number of skipped: Število izpuščenih
     __main__: false
 widgets/owkeywords.py:
+    '{ScoringMethods.MBERT} could not extract keywords from some ': '{ScoringMethods.MBERT} ni mogel izvleči ključnih besed iz nekaterih '
+    documents due to connection error. Please rerun keyword extraction.: dokumentov zaradi napake v povezavi. Znova zaženite ekstrakcijo ključnih besed.
     def `run`:
         Calculating...: Računanje...
         progress_callback: false
@@ -3633,6 +3660,7 @@ widgets/owkeywords.py:
             Words: Besede
         class `Warning`:
             Input is missing 'Words' column.: V vhodni tabeli manjka stolpec 'Besede'.
+            {}: false
         def `_setup_gui`:
             Scoring Methods: Metode vrednotenja
             yake_lang_index: false
@@ -3651,6 +3679,7 @@ widgets/owkeywords.py:
             max_len: false
         def `on_done`:
             Word: Beseda
+            \n: false
         def `send_report`:
             Corpus: Korpus
             Words: Besede
@@ -4782,7 +4811,8 @@ widgets/owtwitter.py:
         class `Info`:
             Downloaded fewer tweets than requested, since not enough tweets or rate limit reached: Prenesenih je bilo manj tvitov, kot je bilo zahtevanih, ker jih ni bilo dovolj ali ker je bila dosežena omejitev dovoljenih prenosov iz APIja.
         class `Error`:
-            'Api error: {}': API napaka: {}
+            'Api error: {}. Check if your API plan includes Tweets retrieval. ': 'API napaka: {}. Preverite, ali vaš API vključuje pridobivanje tvitov. '
+            The free plan doesn't allow Tweets retrieval anymore.: Brezplačni način ne omogoča več pridobivanja tvitov.
             Please provide {}.: Navedite {}.
             Please provide a valid API token.: Navedite veljavni žeton za API.
             Author '{}' does not exist.: Avtor '{}' ne obstaja.
@@ -4828,6 +4858,8 @@ widgets/owtwitter.py:
             Search: Išči
         def `on_exception`:
             Search: Išči
+            \n: false
+            ' ': false
         def `send_report`:
             api: false
             key_missing: false
@@ -5149,24 +5181,11 @@ widgets/utils/widgets.py:
             To:: Do:
     class `FileWidget`:
         def `__init__`:
-            ~/: false
             Browse: Prebrskaj
             Reload: Ponovno naloži
             (none): (brez)
-    class `ValidatedLineEdit`:
-        def `on_change`:
-            'QLineEdit { border : 1px solid gray;}': false
-            'QLineEdit { border : 2px solid red;}': false
-            Invalid '{}' value.: Neveljavna vrednost: '{}'.
-    class `AbsoluteRelativeSpinBox`:
-        def `__init__`:
-            value: false
-    class `ResourceLoader`:
-        def `__init__`:
-            Model: true
-            Provider: Ponudnik
-            Load model: Naloži model
-            Load provider: Naloži ponudnika
+        def `__start_dir`:
+            ~/: false
 widgets/utils/words.py:
     Words: Besede
     def `create_words_table`:
