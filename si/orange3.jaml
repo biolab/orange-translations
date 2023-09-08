@@ -5758,12 +5758,12 @@ Categorical features are passed as strings
             eval: false
             __GLOBALS: false
     class `OWFeatureConstructor`:
-        Feature Constructor: Sestavi značilke
+        Formula: true
         'Construct new features (data columns) from a set of ': Sestavi nove značilke, izračunane
         existing features in the input dataset.: iz obstoječih.
         Transform: Predelava podatkov
         icons/FeatureConstructor.svg: false
-        feature constructor, function, lambda: feature constructor, function, lambda, funkcija, formula, značilke
+        feature constructor, function, lambda, calculation: feature constructor, function, lambda, calculation, funkcija, formula, izračun, enačba
         class `Inputs`:
             Data: Podatki
         class `Outputs`:
@@ -12443,11 +12443,11 @@ widgets/utils/state_summary.py:
         'Target: {targets}': Ciljna spremenljivka: {targets}
         'Metas: {metas}': Meta: {metas}
         '{name}: ': true
-        'Table with ': null
+        'Table with ': 'Tabela: '
         {basic}\n{features}\n{targets}: true
         \n{metas}: true
         '<b><u>{escape(name)}</u></b>: {basic}': true
-        Table with {basic}: null
+        Table with {basic}: 'Tabela: {basic}'
         <br/>: false
     def `missing_values`:
         ' ({value*100:.1f}% missing values)': ({value*100:.1f}% manjkajočih vrednosti)
