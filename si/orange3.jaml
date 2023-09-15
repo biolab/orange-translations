@@ -12447,7 +12447,7 @@ widgets/utils/state_summary.py:
         {basic}\n{features}\n{targets}: true
         \n{metas}: true
         '<b><u>{escape(name)}</u></b>: {basic}': true
-        Table with {basic}: 'Tabela: {basic}'
+        Table with {basic}: Tabela: {basic}
         <br/>: false
     def `missing_values`:
         ' ({value*100:.1f}% missing values)': ({value*100:.1f}% manjkajočih vrednosti)
@@ -13387,6 +13387,9 @@ widgets/visualize/owfreeviz.py:
             Optimize: Izris
             initialization: false
             Initialization:: Začetna pozicija:
+            balance: false
+            Gravity: Gravitacija
+            gravity_index: false
             Start: Začni
         def `_toggle_run`:
             Resume: Nadaljuj

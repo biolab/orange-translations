@@ -98,12 +98,12 @@ import_images.py:
         size: velikost
         width: širina
         height: višina
+        /: false
 local_embedder.py:
     class `LocalEmbedder`:
         def `__init__`:
             model: false
             target_image_size: false
-            .ImageEmbedder.httpcache: false
 server_embedder.py:
     class `ServerEmbedder`:
         def `__init__`:
@@ -111,7 +111,9 @@ server_embedder.py:
 utils/embedder_utils.py:
     class `ImageLoader`:
         def `__init__`:
-            .ImageEmbedder.httpcache: false
+            networkcache: false
+            image_loader.sqlite: false
+            sqlite: false
         def `load_image_or_none`:
             RGB: false
         def `load_image_bytes`:
