@@ -197,9 +197,9 @@ util.py:
         def `funcv`:
             unsafe: false
 version.py:
-    3.35.0: false
-    3.35.0.dev0+3cc58b4: false
-    3cc58b4a6c4a9120c74a9664f45465e913c2e635: false
+    3.37.0: false
+    3.37.0.dev0+480930e: false
+    480930ef9b9253b8d7a5106d19c466c8a23d7cb0: false
     .dev: false
 canvas/__main__.py:
     ORANGE_STATISTICS_API_URL: false
@@ -5153,6 +5153,7 @@ widgets/data/owdatasets.py:
             ' ': false
             '  ': false
             ', ': false
+            /: false
         def `__set_index`:
             Error while fetching updated index: false
         def `set_model`:
@@ -5164,10 +5165,16 @@ widgets/data/owdatasets.py:
         def `__update_cached_state`:
             ' ': false
             '  ': false
+        def `__on_selection`:
+            /: false
         def `commit`:
             Fetching...: Pobiram...
         def `__commit_complete`:
             Error:: Napaka:
+        def `migrate_settings`:
+            selected_id: false
+            \\: false
+            /: false
     def `variable_icon`:
         categorical: false
         x: false
@@ -13344,6 +13351,9 @@ widgets/visualize/owdistributions.py:
             <p style='white-space:pre;'>: true
             '<b>{escape(valname)}</b>: ': true
             {inside} ({100 * inside / total:.2f} %): true
+        def `migrate_context`:
+            selection: false
+            selected_bars: false
         def `apply`:
             Bin: Koš
         def `_get_histogram_table`:
