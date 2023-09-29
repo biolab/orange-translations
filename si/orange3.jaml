@@ -8962,6 +8962,8 @@ widgets/evaluate/owpredictions.py:
             .*All-NaN.*: false
         def `_add_classification_out_columns`:
             {name} ({value}): false
+        def `_add_error_out_columns`:
+            {slot.predictor.name} (error): {slot.predictor.name} (napaka)
         def `send_report`:
             \n: false
             <br>: false
