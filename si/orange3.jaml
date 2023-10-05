@@ -80,6 +80,10 @@ base.py:
             'Wrapped scikit-learn methods do not support ': false
             multinomial variables.: false
         def `supports_weights`:
+            'SklLearner.supports_weights property is deprecated. All ': false
+            'subclasses should redefine the supports_weights attribute. ': false
+            The property will be removed in 3.39.: false
+            __wrapped__: false
             sample_weight: false
     class `KNNBase`:
         def `__init__`:
